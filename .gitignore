@@ -1,0 +1,19 @@
+# MkDocs build output — generated, never committed (CI rebuilds it).
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Screenshot tooling (Playwright) — local installs and auth artifacts.
+tooling/screenshots/node_modules/
+tooling/screenshots/playwright/.auth/
+tooling/screenshots/test-results/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

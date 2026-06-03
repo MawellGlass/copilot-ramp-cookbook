@@ -1,0 +1,53 @@
+# Build the MkDocs site and publish it to GitHub Pages on every push to main.
+# One-time setup in the repo: Settings → Pages → Build and deployment → Source = "GitHub Actions".
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # lets you trigger a manual rebuild from the Actions tab
+
+# Permissions the deploy job needs to publish to Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment; don't cancel an in-progress run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the site
+        run: mkdocs build --strict   # --strict fails the build on broken internal links
+
+      - name: Upload the built site as a Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site   # mkdocs build outputs to ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

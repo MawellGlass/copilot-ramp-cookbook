@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Copilot Ramp Cookbook — rendered slice</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --surface-2: #f0f2f5;
+    --ink: #1b1f24;
+    --ink-soft: #4a5260;
+    --ink-faint: #6b7480;
+    --line: #e2e6ec;
+    --line-strong: #cdd4dd;
+    --accent: #2f5bd0;
+    --accent-soft: #e8eefc;
+    --accent-ink: #1f3f9c;
+    --star: #d98a00;
+    --warn-bg: #fff7e6;
+    --warn-line: #f0d089;
+    --code-bg: #1d2430;
+    --code-ink: #e7ecf3;
+    --chip-bg: #eef1f5;
+    --chip-ink: #3a4350;
+    --shadow: 0 1px 2px rgba(20,30,50,.06), 0 6px 18px rgba(20,30,50,.06);
+    --radius: 12px;
+    --maxw: 1060px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: "SF Mono", "Cascadia Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181e;
+      --surface: #1b212a;
+      --surface-2: #222a35;
+      --ink: #e8ecf2;
+      --ink-soft: #b3bccb;
+      --ink-faint: #8a94a3;
+      --line: #2c343f;
+      --line-strong: #3a4452;
+      --accent: #7aa2ff;
+      --accent-soft: #20304f;
+      --accent-ink: #b9cdff;
+      --star: #f0b54b;
+      --warn-bg: #2c2716;
+      --warn-line: #5a4d22;
+      --code-bg: #0f141b;
+      --code-ink: #e7ecf3;
+      --chip-bg: #28313d;
+      --chip-ink: #c3ccd9;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+
+  /* ---------- top bar ---------- */
+  header.topbar {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--surface);
+    border-block-end: 1px solid var(--line);
+    backdrop-filter: saturate(1.1);
+  }
+  .topbar-inner {
+    max-width: var(--maxw); margin: 0 auto;
+    display: flex; align-items: center; gap: 18px;
+    padding: 12px 22px;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700; letter-spacing: -.01em; cursor: pointer;
+    background: none; border: 0; color: var(--ink); font-size: 16px;
+    font-family: var(--font); padding: 0;
+  }
+  .brand .mark {
+    inline-size: 26px; block-size: 26px; border-radius: 7px;
+    background: linear-gradient(135deg, var(--accent), #7c4dd0);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 800; font-size: 14px;
+  }
+  .brand small { color: var(--ink-faint); font-weight: 500; font-size: 11px; display:block; margin-block-start:-3px;}
+  nav.stages { display: flex; gap: 4px; margin-inline-start: auto; flex-wrap: wrap; }
+  nav.stages button {
+    font-family: var(--font); font-size: 13px; color: var(--ink-soft);
+    background: none; border: 0; padding: 7px 11px; border-radius: 8px; cursor: pointer;
+    white-space: nowrap;
+  }
+  nav.stages button:hover { background: var(--surface-2); color: var(--ink); }
+  nav.stages button.active { background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
+
+  /* ---------- unofficial ribbon ---------- */
+  .ribbon {
+    background: var(--warn-bg);
+    border-block-end: 1px solid var(--warn-line);
+    color: var(--ink-soft);
+    font-size: 12.5px; text-align: center; padding: 7px 16px;
+  }
+  .ribbon strong { color: var(--ink); }
+
+  main { max-width: var(--maxw); margin: 0 auto; padding: 30px 22px 80px; }
+  .view { display: none; }
+  .view.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px);} to {opacity:1; transform:none;} }
+
+  /* ---------- hero ---------- */
+  .hero h1 { font-size: 34px; line-height: 1.15; letter-spacing: -.02em; margin: 6px 0 10px; }
+  .hero p.lede { font-size: 17px; color: var(--ink-soft); max-width: 64ch; margin: 0 0 26px; }
+  .eyebrow { color: var(--accent-ink); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+
+  /* ---------- journey ribbon ---------- */
+  .journey {
+    display: flex; align-items: stretch; gap: 0; flex-wrap: wrap;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 8px; box-shadow: var(--shadow); margin: 0 0 34px;
+  }
+  .journey .step {
+    flex: 1 1 160px; min-inline-size: 150px; text-align: start;
+    border: 0; background: none; cursor: pointer; font-family: var(--font);
+    padding: 14px 14px; border-radius: 9px; color: var(--ink); position: relative;
+  }
+  .journey .step:hover { background: var(--surface-2); }
+  .journey .step .n { font-size: 11px; color: var(--ink-faint); font-weight: 700; }
+  .journey .step .t { font-weight: 650; font-size: 14.5px; margin: 3px 0 4px; letter-spacing: -.01em; }
+  .journey .step .d { font-size: 12px; color: var(--ink-faint); line-height: 1.4; }
+  .journey .arrow { align-self: center; color: var(--line-strong); font-size: 18px; padding: 0 2px; }
+  .journey .step.dest .t { color: var(--accent-ink); }
+  .journey .step.dest::after {
+    content: "destination"; position: absolute; inset-block-start: 8px; inset-inline-end: 10px;
+    font-size: 9px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-ink);
+    background: var(--accent-soft); padding: 2px 6px; border-radius: 20px; font-weight: 700;
+  }
+
+  .audience { color: var(--ink-soft); font-size: 14px; border-inline-start: 3px solid var(--line-strong); padding-inline-start: 14px; margin: 0 0 8px;}
+
+  /* ---------- home: role × tool relevance matrix ---------- */
+  .section-lead { margin: 38px 0 4px; }
+  .section-lead h2 { font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
+  .section-lead p { color: var(--ink-soft); margin: 0 0 16px; max-width: 74ch; font-size: 14.5px; }
+  .matrix-wrap { overflow-x: auto; margin: 0 0 12px; -webkit-overflow-scrolling: touch; }
+  table.matrix {
+    border-collapse: collapse; inline-size: 100%; min-inline-size: 580px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; box-shadow: var(--shadow);
+  }
+  table.matrix th, table.matrix td {
+    padding: 11px 8px; text-align: center; border-block-end: 1px solid var(--line);
+    border-inline-start: 1px solid var(--line); font-size: 13px;
+  }
+  table.matrix th:first-child, table.matrix td:first-child { border-inline-start: 0; }
+  table.matrix thead th { background: var(--surface-2); color: var(--ink-soft); font-weight: 700; vertical-align: bottom; }
+  table.matrix thead th.corner { text-align: start; font-size: 12px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .05em; }
+  table.matrix thead th button {
+    font-family: var(--font); font-size: 12.5px; font-weight: 700; color: var(--accent-ink);
+    background: none; border: 0; cursor: pointer; padding: 2px 4px; border-radius: 6px; line-height: 1.25;
+  }
+  table.matrix thead th button:hover { background: var(--accent-soft); }
+  table.matrix thead th .stagenum { display: block; font-size: 9.5px; color: var(--ink-faint); font-weight: 700; letter-spacing: .04em; }
+  table.matrix tbody th {
+    text-align: start; font-weight: 650; color: var(--ink); white-space: nowrap; background: var(--surface);
+    font-size: 13.5px;
+  }
+  table.matrix tbody tr:last-child th, table.matrix tbody tr:last-child td { border-block-end: 0; }
+  table.matrix td .dot { font-size: 13px; letter-spacing: 2px; }
+  td.lvl3 { background: var(--accent-soft); }
+  td.lvl3 .dot { color: var(--accent); font-weight: 800; }
+  td.lvl2 .dot { color: var(--accent); }
+  td.lvl1 .dot { color: var(--ink-faint); }
+  td.lvl0 .dot { color: var(--line-strong); }
+  .matrix-key { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-faint); margin: 0 0 8px; }
+  .matrix-key b { letter-spacing: 2px; margin-inline-end: 5px; }
+  .matrix-key .k3 b { color: var(--accent); font-weight: 800; }
+  .matrix-key .k2 b { color: var(--accent); }
+  .matrix-key .k1 b { color: var(--ink-faint); }
+  .matrix-key .k0 b { color: var(--line-strong); }
+
+  /* ---------- stage header + filters ---------- */
+  .stage-head { margin: 4px 0 18px; }
+  .stage-head h2 { font-size: 26px; letter-spacing: -.02em; margin: 4px 0 6px; }
+  .stage-head p { color: var(--ink-soft); margin: 0; max-width: 70ch; }
+  .filters { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 20px 0 22px; }
+  .filters .lbl { font-size: 12px; color: var(--ink-faint); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; margin-inline-end: 4px; }
+  .chip {
+    font-family: var(--font); font-size: 13px; cursor: pointer;
+    background: var(--chip-bg); color: var(--chip-ink); border: 1px solid transparent;
+    padding: 6px 13px; border-radius: 999px;
+  }
+  .chip:hover { border-color: var(--line-strong); }
+  .chip.on { background: var(--accent); color: #fff; }
+  .filter-note { font-size: 13px; color: var(--ink-faint); margin: -8px 0 18px; }
+
+  /* ---------- cards ---------- */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 16px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+    transition: border-color .15s, transform .15s;
+  }
+  .card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
+  .card.hide { display: none; }
+  .card .star { color: var(--star); font-weight: 700; }
+  .card h3 { font-size: 16px; margin: 0 0 8px; letter-spacing: -.01em; line-height: 1.3; }
+  .roles { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 10px; }
+  .role {
+    font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+    background: var(--accent-soft); color: var(--accent-ink); letter-spacing: .01em;
+  }
+  .card .val { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 12px; flex: 1; }
+  .card .prompt {
+    font-family: var(--mono); font-size: 12px; color: var(--code-ink);
+    background: var(--code-bg); border-radius: 8px; padding: 10px 11px; line-height: 1.45;
+    overflow: hidden; max-block-size: 5.6em; position: relative;
+  }
+  .card .prompt::after {
+    content: ""; position: absolute; inset-inline: 0; inset-block-end: 0; block-size: 22px;
+    background: linear-gradient(transparent, var(--code-bg));
+  }
+  .card .cardfoot { display: flex; align-items: center; justify-content: space-between; margin-block-start: 13px; }
+  .card .tagstatus { font-size: 11px; color: var(--ink-faint); }
+  .btn {
+    font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer;
+    background: var(--accent); color: #fff; border: 0; padding: 7px 13px; border-radius: 8px;
+  }
+  .btn:hover { filter: brightness(1.05); }
+  .btn.ghost { background: none; color: var(--accent); border: 1px solid var(--line-strong); }
+  .btn.ghost:hover { background: var(--surface-2); }
+  .btn.sm { padding: 5px 10px; font-size: 12px; }
+
+  /* ---------- empty stage state ---------- */
+  .placeholder {
+    background: var(--surface); border: 1px dashed var(--line-strong); border-radius: var(--radius);
+    padding: 34px; text-align: center; color: var(--ink-soft);
+  }
+  .placeholder .big { font-size: 16px; color: var(--ink); font-weight: 650; margin-block-end: 6px; }
+  .placeholder code { background: var(--surface-2); padding: 2px 7px; border-radius: 6px; font-family: var(--mono); font-size: 12.5px;}
+
+  /* ---------- walkthrough ---------- */
+  .wt { max-width: 760px; }
+  .breadcrumb { font-size: 13px; color: var(--ink-faint); margin-block-end: 14px; display: flex; gap: 8px; align-items: center;}
+  .breadcrumb button { background: none; border: 0; color: var(--accent); cursor: pointer; font-family: var(--font); font-size: 13px; padding: 0;}
+  .wt h1 { font-size: 30px; letter-spacing: -.02em; margin: 4px 0 14px; line-height: 1.2;}
+  .oneline {
+    background: var(--accent-soft); border-radius: 10px; padding: 13px 16px;
+    color: var(--accent-ink); font-size: 15px; margin: 0 0 16px;
+  }
+  .metaline { font-size: 13px; color: var(--ink-faint); margin: 0 0 26px; display: flex; gap: 8px; flex-wrap: wrap;}
+  .metaline span { background: var(--surface-2); padding: 3px 10px; border-radius: 7px; }
+  .wt h2 {
+    font-size: 19px; letter-spacing: -.01em; margin: 30px 0 10px;
+    padding-block-end: 6px; border-block-end: 1px solid var(--line);
+  }
+  .wt p { color: var(--ink); margin: 0 0 12px; }
+  .wt ul, .wt ol { margin: 0 0 14px; padding-inline-start: 22px; }
+  .wt li { margin: 0 0 7px; }
+  pre.code {
+    background: var(--code-bg); color: var(--code-ink); border-radius: 10px;
+    padding: 15px 16px; overflow-x: auto; font-family: var(--mono); font-size: 13px;
+    line-height: 1.55; margin: 0 0 16px;
+  }
+  .callout {
+    background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 10px;
+    padding: 13px 15px; font-size: 14px; color: var(--ink-soft); margin: 0 0 14px;
+  }
+  .why { font-size: 14px; color: var(--ink-soft); font-style: italic; margin: 0 0 14px; }
+  .shot-anchor { font-size: 13px; color: var(--ink-faint); margin: 4px 0 4px; padding-inline-start: 4px; }
+
+  /* screenshot gallery — honest "not captured yet" state */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 12px; margin: 6px 0 14px; }
+  .frame {
+    border: 1px dashed var(--line-strong); border-radius: 10px; background: var(--surface-2);
+    aspect-ratio: 16/10; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 12px; color: var(--ink-faint); gap: 6px;
+  }
+  .frame .cam { font-size: 24px; }
+  .frame .cap { font-size: 12px; line-height: 1.35; }
+  .frame .nn { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); }
+
+  .ramp {
+    background: linear-gradient(135deg, var(--accent-soft), transparent);
+    border: 1px solid var(--line); border-inline-start: 3px solid var(--accent);
+    border-radius: 10px; padding: 15px 17px; margin: 8px 0 14px;
+  }
+  .ramp .lead { font-weight: 650; color: var(--accent-ink); margin: 0 0 6px; }
+
+  /* ---------- resource rail (the "one-stop-shop" callouts) ---------- */
+  .resources {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 20px 20px; box-shadow: var(--shadow); margin: 30px 0 0;
+  }
+  .resources h3 {
+    font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-faint);
+    margin: 0 0 4px; font-weight: 700;
+  }
+  .resources .sub { font-size: 13px; color: var(--ink-faint); margin: 0 0 14px; max-width: 70ch; }
+  .reslist { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px,1fr)); gap: 10px; }
+  .reslink {
+    display: block; text-decoration: none; color: inherit; background: var(--surface-2);
+    border: 1px solid var(--line); border-radius: 9px; padding: 11px 13px;
+    transition: border-color .15s, transform .15s;
+  }
+  .reslink:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .reslink .rt { font-size: 13.5px; font-weight: 650; color: var(--accent-ink); display: flex; gap: 7px; align-items: baseline; }
+  .reslink .rd { font-size: 12px; color: var(--ink-soft); margin-block-start: 3px; line-height: 1.4; }
+  .reslink .src { font-size: 10.5px; color: var(--ink-faint); margin-block-start: 6px; letter-spacing: .04em; font-weight: 600; text-transform: uppercase; }
+  .reslink .src.community { color: var(--star); }
+  .res-rule { font-size: 12px; color: var(--ink-faint); margin: 14px 0 0; padding-block-start: 11px; border-block-start: 1px dashed var(--line); }
+
+  /* inline "learn more" callout, woven into walkthrough prose */
+  .learnmore {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: var(--accent-soft); border-radius: 10px; padding: 11px 14px; margin: 0 0 14px;
+    font-size: 13.5px; color: var(--accent-ink); line-height: 1.5;
+  }
+  .learnmore .ic { font-size: 15px; }
+  .learnmore a { color: var(--accent-ink); font-weight: 650; }
+
+  footer.foot { border-block-start: 1px solid var(--line); color: var(--ink-faint); font-size: 12.5px; }
+  .foot-inner { max-width: var(--maxw); margin: 0 auto; padding: 22px; }
+  .mock-note {
+    margin: 2px 0 26px; font-size: 12.5px; color: var(--ink-faint);
+    background: var(--surface-2); border-radius: 8px; padding: 9px 13px; display: inline-block;
+  }
+</style>
+</head>
+<body>
+<div class="ribbon">
+  <strong>⚠️ Unofficial.</strong> A personal / community project — not affiliated with, endorsed by, or an official resource of Microsoft. Product names &amp; trademarks belong to Microsoft.
+</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="brand" data-go="home" type="button">
+      <span class="mark">C</span>
+      <span>Copilot Ramp Cookbook<small>use it → build it</small></span>
+    </button>
+    <nav class="stages" id="stagenav">
+      <button data-go="home" type="button">Home</button>
+      <button data-go="stage-chat" type="button">Chat</button>
+      <button data-go="stage-firstparty" type="button">First-Party</button>
+      <button data-go="stage-cowork" type="button">Cowork</button>
+      <button data-go="stage-agentbuilder" type="button">Agent Builder</button>
+      <button data-go="stage-studio" type="button">Studio</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="mock-note">Rendered slice · Stage 1 + the exemplar walkthrough are fully wired; other stages show the “breadth next” state. Try the role chips and open the walkthrough.</p>
+
+  <!-- ============ HOME ============ -->
+  <section class="view active" id="home">
+    <div class="hero">
+      <span class="eyebrow">From your first chat to production agents</span>
+      <h1>Get started with Microsoft Copilot — then grow all the way to building agents.</h1>
+      <p class="lede">Most people stall at “I have Copilot, now what?” This cookbook lays out a natural ramp: start by <em>using</em> Copilot, get comfortable letting agents do work for you, then take the leap to <em>building</em> your own — first in Agent Builder, then in Copilot Studio.</p>
+    </div>
+
+    <div class="journey">
+      <button class="step" data-go="stage-chat" type="button"><div class="n">STAGE 1</div><div class="t">Copilot Chat</div><div class="d">A daily habit and a first “wow.”</div></button>
+      <span class="arrow">→</span>
+      <button class="step" data-go="stage-firstparty" type="button"><div class="n">STAGE 2</div><div class="t">First-Party Agents</div><div class="d">Delegate to what Microsoft already built.</div></button>
+      <span class="arrow">→</span>
+      <button class="step" data-go="stage-cowork" type="button"><div class="n">STAGE 3</div><div class="t">Cowork</div><div class="d">Hand off whole multi-step tasks.</div></button>
+      <span class="arrow">→</span>
+      <button class="step" data-go="stage-agentbuilder" type="button"><div class="n">STAGE 4</div><div class="t">Agent Builder</div><div class="d">Your first taste of <em>making</em>.</div></button>
+      <span class="arrow">→</span>
+      <button class="step dest" data-go="stage-studio" type="button"><div class="n">STAGE 5</div><div class="t">Copilot Studio</div><div class="d">Build real, production-grade agents.</div></button>
+    </div>
+
+    <p class="audience"><strong>Who it’s for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · IT/admins enabling each stage safely.</p>
+
+    <div class="section-lead">
+      <h2>Find your starting point</h2>
+      <p>Not every tool is for every person. This is where each role tends to spend time day to day — a heavier dot means you’re more likely to live there. Tap any tool to jump to its stage.</p>
+    </div>
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th class="corner" scope="col">Your role</th>
+            <th scope="col"><button data-go="stage-chat" type="button"><span class="stagenum">STAGE 1</span>Copilot Chat</button></th>
+            <th scope="col"><button data-go="stage-firstparty" type="button"><span class="stagenum">STAGE 2</span>First-Party</button></th>
+            <th scope="col"><button data-go="stage-cowork" type="button"><span class="stagenum">STAGE 3</span>Cowork</button></th>
+            <th scope="col"><button data-go="stage-agentbuilder" type="button"><span class="stagenum">STAGE 4</span>Agent Builder</button></th>
+            <th scope="col"><button data-go="stage-studio" type="button"><span class="stagenum">STAGE 5</span>Studio</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">End user</th>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl1" title="Occasional"><span class="dot">●○○</span></td>
+            <td class="lvl0" title="Rarely"><span class="dot">○○○</span></td>
+            <td class="lvl0" title="Rarely"><span class="dot">○○○</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Champion</th>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl1" title="Occasional"><span class="dot">●○○</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Manager</th>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl1" title="Occasional"><span class="dot">●○○</span></td>
+            <td class="lvl1" title="Occasional"><span class="dot">●○○</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Maker</th>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+          </tr>
+          <tr>
+            <th scope="row">IT / admin</th>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl1" title="Occasional"><span class="dot">●○○</span></td>
+            <td class="lvl2" title="Regular"><span class="dot">●●○</span></td>
+            <td class="lvl3" title="Primary — lives here"><span class="dot">●●●</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="matrix-key">
+      <span class="k3"><b>●●●</b>Primary — lives here</span>
+      <span class="k2"><b>●●○</b>Regular</span>
+      <span class="k1"><b>●○○</b>Occasional</span>
+      <span class="k0"><b>○○○</b>Rarely</span>
+    </div>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin:0 0 8px;">A directional guide, not a rule — anyone can use any tool. End users anchor on Chat; makers and IT/admins ramp toward building and governing in Studio.</p>
+
+    <p style="color:var(--ink-soft);font-size:14px;margin-block-start:30px;">Each stage has an <strong>overview</strong>, <strong>use cases</strong> you can filter by your role, and <strong>curated Microsoft resources</strong>. Start anywhere — but the ramp is the point.</p>
+    <p><button class="btn" data-go="stage-chat" type="button">Start at Stage 1 → Copilot Chat</button></p>
+
+    <aside class="resources">
+      <h3>📚 Start learning right now — the cross-journey set</h3>
+      <p class="sub">You don’t have to drill into a stage to start. These first-party hubs span the whole journey — the best front doors for any role. Every link is Microsoft-direct.</p>
+      <div class="reslist">
+        <a class="reslink" href="https://learn.microsoft.com/en-us/copilot/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Which Copilot is right for you</span>
+          <span class="rd">Microsoft Learn hub mapping every Copilot — M365, Studio, Power Platform, Security, Fabric, Azure, GitHub.</span>
+          <span class="src">Microsoft · learn.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://adoption.microsoft.com/en-us/copilot/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>M365 Copilot Adoption Hub</span>
+          <span class="rd">The flagship adoption site — get started, leaders, communities, and “go further.”</span>
+          <span class="src">Microsoft · adoption.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://adoption.microsoft.com/en-us/copilot/success-kit/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Copilot Success Kit</span>
+          <span class="rd">Role-based downloadable kit: implementation framework, technical readiness, enablement templates.</span>
+          <span class="src">Microsoft · adoption.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://adoption.microsoft.com/en-us/scenario-library/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Microsoft Scenario Library</span>
+          <span class="rd">Role / function / industry use cases with sample prompts — the deepest first-party use-case bank.</span>
+          <span class="src">Microsoft · adoption.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://aka.ms/agentresources" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Agent Resources (CAT front door)</span>
+          <span class="rd">Curated hub for all things agents, from the Microsoft Copilot Acceleration Team.</span>
+          <span class="src">Microsoft · aka.ms</span>
+        </a>
+        <a class="reslink" href="https://www.youtube.com/c/MicrosoftMechanicsSeries" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">▶</span>Microsoft Mechanics</span>
+          <span class="rd">Microsoft’s official “how the tech works” channel, hosted by Jeremy Chapman (Director, M365).</span>
+          <span class="src">Microsoft · YouTube</span>
+        </a>
+      </div>
+      <p class="res-rule">Stage-specific links live on each stage page and in full in <code>RESOURCES.md</code>.</p>
+    </aside>
+  </section>
+
+  <!-- ============ STAGE 1 · CHAT ============ -->
+  <section class="view" id="stage-chat">
+    <div class="stage-head">
+      <span class="eyebrow">Stage 1 of 5</span>
+      <h2>Copilot Chat</h2>
+      <p>Everyone starts here. The goal is a daily habit and a first “wow” — low-risk, instantly useful wins inside the tools you already live in.</p>
+    </div>
+
+    <div class="filters" id="chatfilters">
+      <span class="lbl">Filter by role</span>
+      <button class="chip on" data-role="all" type="button">All</button>
+      <button class="chip" data-role="end-user" type="button">End user</button>
+      <button class="chip" data-role="champion" type="button">Champion</button>
+      <button class="chip" data-role="manager" type="button">Manager</button>
+      <button class="chip" data-role="maker" type="button">Maker</button>
+      <button class="chip" data-role="it-admin" type="button">IT / admin</button>
+    </div>
+    <p class="filter-note" id="chatcount"></p>
+
+    <div class="grid" id="chatgrid">
+      <div class="card" data-roles="end-user champion">
+        <div class="roles"><span class="role">End user</span><span class="role">Champion</span></div>
+        <h3><span class="star">★</span> Turn a meeting into tracked follow-ups</h3>
+        <p class="val">Decisions, owners, and due dates captured in 5 minutes instead of re-watching the recording.</p>
+        <div class="prompt">Summarize "[meeting]" — decisions, action items with owners + due dates, open questions. Table format.</div>
+        <div class="cardfoot"><span class="tagstatus">✓ Full walkthrough</span><button class="btn sm" data-go="walkthrough" type="button">Read walkthrough →</button></div>
+      </div>
+
+      <div class="card" data-roles="end-user">
+        <div class="roles"><span class="role">End user</span></div>
+        <h3>Catch up on a Teams thread you were @mentioned in</h3>
+        <p class="val">Get the gist and what’s being asked of you without scrolling 80 messages.</p>
+        <div class="prompt">Summarize this chat and tell me specifically what’s being asked of me and by when.</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+
+      <div class="card" data-roles="end-user manager">
+        <div class="roles"><span class="role">End user</span><span class="role">Manager</span></div>
+        <h3>Draft a status update from your week’s activity</h3>
+        <p class="val">Turn a week of emails, chats, and meetings into a crisp update.</p>
+        <div class="prompt">Based on my last 5 working days of email and Teams activity, draft a 5-bullet status update for my manager.</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+
+      <div class="card" data-roles="end-user">
+        <div class="roles"><span class="role">End user</span></div>
+        <h3>Rewrite an email for a tougher audience</h3>
+        <p class="val">Make a rambling draft tighter, clearer, and appropriately diplomatic.</p>
+        <div class="prompt">Rewrite this email to be 40% shorter, more direct, and polite to a skeptical exec. Keep the ask obvious.</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+
+      <div class="card" data-roles="end-user manager">
+        <div class="roles"><span class="role">End user</span><span class="role">Manager</span></div>
+        <h3>Get up to speed on a long document fast</h3>
+        <p class="val">A 30-page doc reduced to what matters for <em>your</em> role.</p>
+        <div class="prompt">Summarize this document for a [sales engineer]. What are the 3 things I most need to know and any risks?</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+
+      <div class="card" data-roles="manager end-user">
+        <div class="roles"><span class="role">Manager</span><span class="role">End user</span></div>
+        <h3>Prep for a 1:1 in two minutes</h3>
+        <p class="val">Walk into a 1:1 with talking points pulled from recent shared work.</p>
+        <div class="prompt">Help me prep for my 1:1 with [name]. Summarize our recent threads and suggest 3 topics to raise.</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+
+      <div class="card" data-roles="champion manager">
+        <div class="roles"><span class="role">Champion</span><span class="role">Manager</span></div>
+        <h3>Build a first-draft project plan</h3>
+        <p class="val">Go from a blank page to a structured plan you can edit.</p>
+        <div class="prompt">Draft a project plan for [goal]: phases, milestones, owners, and risks. Table format.</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+
+      <div class="card" data-roles="champion">
+        <div class="roles"><span class="role">Champion</span></div>
+        <h3>Champion kit: run a “Prompt of the Day” for your team</h3>
+        <p class="val">A repeatable adoption ritual that builds the habit across a team.</p>
+        <div class="prompt">Give me 5 starter prompts a [marketing] team could use daily, each with the business value in one line.</div>
+        <div class="cardfoot"><span class="tagstatus">Stub · in catalog</span></div>
+      </div>
+    </div>
+
+    <aside class="resources">
+      <h3>📚 Learn more — Stage 1 resources</h3>
+      <p class="sub">Don’t reinvent these — link straight to them. Every resource here is Microsoft-direct or published by a named Microsoft employee.</p>
+      <div class="reslist">
+        <a class="reslink" href="https://m365.cloud.microsoft/copilot-prompts" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Copilot Prompt Gallery (in-product)</span>
+          <span class="rd">Paste-and-go prompts for Word, Excel, PowerPoint, and Outlook — your best “borrowed content.”</span>
+          <span class="src">Microsoft · m365.cloud.microsoft</span>
+        </a>
+        <a class="reslink" href="https://adoption.microsoft.com/en-us/copilot/prompt-gallery/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Prompting principles (adoption guide)</span>
+          <span class="rd">The “how to prompt well” framing, packaged for enablement and Prompt-a-thons.</span>
+          <span class="src">Microsoft · adoption.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://www.youtube.com/playlist?list=PLXtHYVsvn_b8MTl8mD8FBJIB_cSGkEaT9" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">▶</span>M365 Copilot Mechanics playlist</span>
+          <span class="rd">Official Microsoft Mechanics deep-dives on Copilot across the M365 apps.</span>
+          <span class="src">Microsoft · YouTube</span>
+        </a>
+        <a class="reslink" href="https://adoption.microsoft.com/en-us/scenario-library/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Microsoft Scenario Library</span>
+          <span class="rd">Role / function / industry use cases with sample prompts — the deepest first-party use-case bank.</span>
+          <span class="src">Microsoft · adoption.microsoft.com</span>
+        </a>
+      </div>
+      <p class="res-rule">Full link set with verification notes lives in <code>RESOURCES.md</code> → Copilot Chat.</p>
+    </aside>
+  </section>
+
+  <!-- ============ OTHER STAGES (breadth-next state) ============ -->
+  <section class="view" id="stage-firstparty">
+    <div class="stage-head"><span class="eyebrow">Stage 2 of 5</span><h2>First-Party Agents</h2><p>Use what Microsoft already built. The goal: experience delegation before building anything.</p></div>
+    <div class="placeholder"><div class="big">7 use cases drafted as catalog stubs</div><p>Facilitator auto-recap (★), Researcher deep-dives, Analyst on a spreadsheet, Interpreter, Project Manager agent, adoption insights, agents in channels.</p><p>This is the <strong>breadth-next</strong> step — promote these stubs into full walkthroughs using the same template as Stage 1. Stubs live in <code>CATALOG.md</code>.</p></div>
+
+    <aside class="resources">
+      <h3>📚 Learn more — Stage 2 resources</h3>
+      <p class="sub">The Adoption Hub already describes Researcher and Analyst in plain language — quote a line and link out rather than re-explaining each agent.</p>
+      <div class="reslist">
+        <a class="reslink" href="https://adoption.microsoft.com/en-us/copilot/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Agents in Microsoft 365 (Adoption Hub)</span>
+          <span class="rd">Overview of the prebuilt agents — Researcher, Analyst, Facilitator — and the Agent Store.</span>
+          <span class="src">Microsoft · adoption.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://aka.ms/m365copilot/resources" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>M365 Copilot resources (CAT)</span>
+          <span class="rd">Curated adopt / deploy / extend hub for M365 Copilot and its agents.</span>
+          <span class="src">Microsoft · aka.ms</span>
+        </a>
+        <a class="reslink" href="https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Enabling human-agent teams</span>
+          <span class="rd">Nicole Herskowitz (CVP, M365 Copilot) on how prebuilt agents work alongside people.</span>
+          <span class="src">Microsoft · M365 blog</span>
+        </a>
+      </div>
+      <p class="res-rule">Full link set lives in <code>RESOURCES.md</code> → First-Party Agents.</p>
+    </aside>
+  </section>
+  <section class="view" id="stage-cowork">
+    <div class="stage-head"><span class="eyebrow">Stage 3 of 5</span><h2>Cowork</h2><p>Let Copilot run multi-step work for you. The goal: comfort delegating whole tasks, not single prompts.</p></div>
+    <div class="placeholder"><div class="big">5 use cases drafted as catalog stubs</div><p>End-to-end task hand-off (★), a recurring weekly digest, multi-document synthesis, deck-from-notes, and a “Cowork recipe” library for your org.</p><p>We link out to Sean Galliher’s <strong>Cowork Cookbook</strong> here rather than competing — see <code>RESOURCES.md</code>.</p></div>
+
+    <aside class="resources">
+      <h3>📚 Learn more — Stage 3 resources</h3>
+      <p class="sub">Rather than compete with Sean’s process-based Cowork recipes, we link to them — and keep our Cowork content focused on how it fits the ramp toward building agents.</p>
+      <div class="reslist">
+        <a class="reslink" href="https://coworkcookbook.com/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Sean Galliher’s Cowork Cookbook</span>
+          <span class="rd">The inspiration — Cowork applied across 15 end-to-end business processes.</span>
+          <span class="src community">Community · unofficial</span>
+        </a>
+        <a class="reslink" href="https://aka.ms/m365copilot/resources" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>M365 Copilot resources (CAT)</span>
+          <span class="rd">Cowork sits within the broader M365 Copilot experience covered in this CAT hub.</span>
+          <span class="src">Microsoft · aka.ms</span>
+        </a>
+      </div>
+      <p class="res-rule">The Cowork Cookbook is flagged <strong>community</strong>, not first-party — it’s our explicit inspiration, linked transparently.</p>
+    </aside>
+  </section>
+  <section class="view" id="stage-agentbuilder">
+    <div class="stage-head"><span class="eyebrow">Stage 4 of 5</span><h2>Agent Builder</h2><p>Build simple declarative agents inside M365 Copilot. The goal: first taste of <em>making</em>, not just using.</p></div>
+    <div class="placeholder"><div class="big">5 use cases drafted as catalog stubs</div><p>“Team knowledge” agent over SharePoint (★), focused persona + instructions, starter prompts, share-and-gather-feedback, and the “declarative vs. Studio” decision.</p><p>Promote to walkthroughs next. Stubs live in <code>CATALOG.md</code>.</p></div>
+
+    <aside class="resources">
+      <h3>📚 Learn more — Stage 4 resources</h3>
+      <p class="sub">The Agent Library’s prebuilt templates (e.g. “Plan My Day”) are perfect “look, you didn’t even have to build it” demos that warm customers up before they build their own.</p>
+      <div class="reslist">
+        <a class="reslink" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Agent Library</span>
+          <span class="rd">Marketplace-style catalog of production-ready agent templates — declarative and Studio.</span>
+          <span class="src">Microsoft · learn.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://aka.ms/agentresources" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Agent Platform Advisor</span>
+          <span class="rd">Interactive “which platform should I build on” recommender, on the CAT agent hub.</span>
+          <span class="src">Microsoft · aka.ms</span>
+        </a>
+        <a class="reslink" href="https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">▶</span>April’s AI Agents Academy</span>
+          <span class="rd">Step-by-step agent-building series by April Dunnam, Principal Cloud Advocate at Microsoft.</span>
+          <span class="src">Named Microsoft employee · YouTube</span>
+        </a>
+      </div>
+      <p class="res-rule">Full link set lives in <code>RESOURCES.md</code> → Agent Builder.</p>
+    </aside>
+  </section>
+  <section class="view" id="stage-studio">
+    <div class="stage-head"><span class="eyebrow">Stage 5 of 5 · the destination</span><h2>Copilot Studio</h2><p>Build real, production-grade agents. The destination of the whole ramp.</p></div>
+    <div class="placeholder"><div class="big">6 use cases drafted as catalog stubs</div><p>First Studio agent with knowledge + topic (★), connectors/actions, MCP/tool integration, publish to Teams &amp; web, govern-and-monitor at scale, and ROI / business case.</p><p>Richest stage for makers + IT/admins. Curated Studio docs, samples, and the Power CAT kit are in <code>RESOURCES.md</code>.</p></div>
+
+    <aside class="resources">
+      <h3>📚 Learn more — Stage 5 resources (the destination)</h3>
+      <p class="sub">This is the deepest stage. Point makers at the official docs and a hands-on workshop; point IT/admins at the governance set in <code>RESOURCES.md</code>.</p>
+      <div class="reslist">
+        <a class="reslink" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Copilot Studio official docs</span>
+          <span class="rd">The canonical Learn set — get started → build → test → publish → govern.</span>
+          <span class="src">Microsoft · learn.microsoft.com</span>
+        </a>
+        <a class="reslink" href="https://aka.ms/copilotstudio/resources" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Copilot Studio Resources (CAT)</span>
+          <span class="rd">Curated news, adoption, building, governance, samples, community — updated continuously.</span>
+          <span class="src">Microsoft · aka.ms</span>
+        </a>
+        <a class="reslink" href="https://aka.ms/CSIAD" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">→</span>Copilot Studio in a Day</span>
+          <span class="rd">Free Microsoft hands-on workshop — instructor-led or self-paced.</span>
+          <span class="src">Microsoft · aka.ms</span>
+        </a>
+        <a class="reslink" href="https://www.youtube.com/@MicrosoftCopilotStudio" target="_blank" rel="noopener">
+          <span class="rt"><span aria-hidden="true">▶</span>Microsoft Copilot Studio (channel)</span>
+          <span class="rd">The product team’s own YouTube — feature demos, product tours, readiness framework.</span>
+          <span class="src">Microsoft · YouTube</span>
+        </a>
+      </div>
+      <p class="res-rule">Full Stage 5 link set — docs, samples, Power CAT kit, governance — lives in <code>RESOURCES.md</code> → Copilot Studio.</p>
+    </aside>
+  </section>
+
+  <!-- ============ WALKTHROUGH ============ -->
+  <section class="view" id="walkthrough">
+    <div class="wt">
+      <div class="breadcrumb"><button data-go="stage-chat" type="button">Copilot Chat</button><span>›</span><span>Turn a meeting into tracked follow-ups</span></div>
+      <h1>Turn a meeting into tracked follow-ups</h1>
+      <div class="oneline"><strong>One-line value.</strong> Walk out of any meeting and have decisions, owners, and due dates captured in under five minutes — without re-watching the recording.</div>
+      <div class="metaline"><span>Stage · Copilot Chat</span><span>For · End user, Champion</span><span>Level · Starter</span><span>Time · 5 min</span></div>
+
+      <h2>When to use this</h2>
+      <p>You just finished a 45-minute project sync. Three decisions were made, half a dozen tasks got handed out, and two things were left hanging — all of it living in your memory and a wall of chat. Instead of scrubbing the recording tonight, you let Copilot read the meeting and hand you a clean list while it’s fresh.</p>
+      <p>This is the single best “first win” for a new Copilot user: low-risk, instantly useful, and it shows the magic on day one.</p>
+
+      <h2>What you’ll need</h2>
+      <ul>
+        <li><strong>M365 Copilot license</strong> (Copilot in Teams / Microsoft 365 Copilot Chat)</li>
+        <li>The meeting had <strong>transcription or recording on</strong> (Copilot reads the transcript, not the audio)</li>
+        <li>You were an attendee, or have access to the meeting recap</li>
+      </ul>
+
+      <h2>Try it now — the prompt</h2>
+      <pre class="code">Summarize the meeting "[meeting name]" from [today/this morning]. Give me:
+- Decisions made
+- Action items, each with an owner and a due date
+- Any open questions that were not resolved
+Format the action items as a table I can paste into an email.</pre>
+      <p class="why"><strong>Why this prompt works:</strong> it names the meeting (so Copilot grounds on the right transcript), asks for <em>specific</em> outputs instead of a vague “summary,” and dictates the output format (“a table I can paste”). Specific asks + named format = dramatically better results.</p>
+
+      <div class="learnmore"><span class="ic" aria-hidden="true">📚</span><span><strong>Learn more:</strong> want a deeper library of patterns like this? The <a href="https://m365.cloud.microsoft/copilot-prompts" target="_blank" rel="noopener">Copilot Prompt Gallery</a> has paste-and-go prompts for every M365 app, and the <a href="https://adoption.microsoft.com/en-us/copilot/prompt-gallery/" target="_blank" rel="noopener">prompting principles guide</a> explains <em>why</em> they work.</span></div>
+
+      <h2>Step by step</h2>
+      <ol>
+        <li><strong>Open Copilot in Teams.</strong> From the meeting’s recap page, the Copilot side panel, or Microsoft 365 Copilot Chat at office.com. You’ll see the chat box.</li>
+      </ol>
+      <div class="shot-anchor">📷 Screenshot 01 — Copilot side panel open next to a Teams meeting recap.</div>
+      <ol start="2">
+        <li><strong>Paste the prompt</strong> (swap in your meeting name). Copilot reads the transcript and returns a structured summary — a decisions list, an action-item table with owners and dates, and an open-questions list.</li>
+      </ol>
+      <div class="shot-anchor">📷 Screenshot 02 — the prompt typed into the Copilot chat box.</div>
+      <div class="shot-anchor">📷 Screenshot 03 — Copilot’s structured response: decisions, action-item table, open questions.</div>
+      <ol start="3">
+        <li><strong>Sanity-check owners and dates.</strong> Skim the table. A missing due date or wrong owner is expected — you’ll fix it next.</li>
+        <li><strong>Refine in plain language:</strong></li>
+      </ol>
+      <pre class="code">Any action item without a due date — set it to end of this week.
+And the second item should be owned by Priya, not me.</pre>
+      <p>Copilot updates the table in place.</p>
+      <div class="shot-anchor">📷 Screenshot 04 — the refined table after the follow-up prompt.</div>
+
+      <h2>Screenshots</h2>
+      <p style="font-size:14px;color:var(--ink-soft);">Captured from the real product with the Playwright tool in <code style="font-family:var(--mono);font-size:12.5px;background:var(--surface-2);padding:2px 6px;border-radius:5px;">tooling/screenshots/</code>. Below is the honest “not captured yet” state — placeholders hold the slot until the capture run produces the PNGs.</p>
+      <div class="gallery">
+        <div class="frame"><span class="cam">📷</span><span class="nn">01 · not captured</span><span class="cap">Copilot side panel open next to the meeting recap</span></div>
+        <div class="frame"><span class="cam">📷</span><span class="nn">02 · not captured</span><span class="cap">Prompt typed into the chat box</span></div>
+        <div class="frame"><span class="cam">📷</span><span class="nn">03 · not captured</span><span class="cap">Structured response with action-item table</span></div>
+        <div class="frame"><span class="cam">📷</span><span class="nn">04 · not captured</span><span class="cap">Refined table after the follow-up</span></div>
+      </div>
+      <div class="callout">Run <code>cd tooling/screenshots &amp;&amp; npm install &amp;&amp; npm run auth &amp;&amp; npm run capture</code>, then the captured PNGs replace these placeholders. A missing image is fine; a fabricated one isn’t.</div>
+
+      <h2>Make it better</h2>
+      <p>Once the table is right, chain follow-ups to turn a summary into progress:</p>
+      <ul>
+        <li><code>Draft a short email to each owner with just their action items and due dates.</code></li>
+        <li><code>Flag any action item that depends on another one finishing first.</code></li>
+        <li><code>Rewrite the open questions as agenda items for next week’s sync.</code></li>
+      </ul>
+
+      <h2>Watch out for</h2>
+      <ul>
+        <li><strong>No transcript, no summary.</strong> If recording/transcription was off, Copilot has nothing to read. Turn it on at the <em>start</em> of meetings going forward.</li>
+        <li><strong>Owner attribution can slip.</strong> Copilot infers who owns what from who spoke — verify before you send. The 30-second check is worth it.</li>
+        <li><strong>Name the meeting precisely.</strong> “This morning’s sync” works if you only had one; otherwise use the exact title.</li>
+      </ul>
+
+      <h2>Where this leads (the ramp)</h2>
+      <div class="ramp">
+        <p class="lead">You’re ready for Stage 2.</p>
+        <p style="margin:0;color:var(--ink-soft);font-size:14px;">Doing this after <em>every</em> meeting is the tell. The first-party <strong>Facilitator agent</strong> generates recaps and follow-ups automatically — no prompt required — and agents in Teams channels can post the action items for the team. You’ve just learned by hand what an agent will soon do on autopilot.</p>
+        <p style="margin:10px 0 0;font-size:13px;color:var(--ink-soft);">📚 Read how Microsoft frames this shift: <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/" target="_blank" rel="noopener">Enabling human-agent teams</a> (Nicole Herskowitz, CVP).</p>
+        <p style="margin:10px 0 0;"><button class="btn sm" data-go="stage-firstparty" type="button">Next → First-Party Agents</button></p>
+      </div>
+
+      <h2>Related</h2>
+      <ul>
+        <li>Chat → Catch up on a Teams thread you were @mentioned in</li>
+        <li>Chat → Draft a status update from your week’s activity</li>
+        <li>Stage 1 Resources — see <code>RESOURCES.md</code> → Copilot Chat</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    Inspired by the Cowork Cookbook by Sean Galliher — another unofficial, community-built Copilot resource. · This page is a rendered design slice, not the published site.
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var views = Array.prototype.slice.call(document.querySelectorAll('.view'));
+    var navButtons = Array.prototype.slice.call(document.querySelectorAll('#stagenav button'));
+    var navMap = {
+      'home': 'Home', 'stage-chat': 'Chat', 'stage-firstparty': 'First-Party',
+      'stage-cowork': 'Cowork', 'stage-agentbuilder': 'Agent Builder',
+      'stage-studio': 'Studio', 'walkthrough': 'Chat'
+    };
+
+    function go(id) {
+      views.forEach(function (v) { v.classList.toggle('active', v.id === id); });
+      var navKey = navMap[id] || 'Home';
+      navButtons.forEach(function (b) { b.classList.toggle('active', b.textContent === navKey); });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.body.addEventListener('click', function (e) {
+      var t = e.target.closest('[data-go]');
+      if (t) { go(t.getAttribute('data-go')); }
+    });
+
+    // role filter chips
+    var chips = Array.prototype.slice.call(document.querySelectorAll('#chatfilters .chip'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('#chatgrid .card'));
+    var countEl = document.getElementById('chatcount');
+
+    function applyFilter(role) {
+      var shown = 0;
+      cards.forEach(function (c) {
+        var roles = c.getAttribute('data-roles').split(' ');
+        var match = (role === 'all') || roles.indexOf(role) !== -1;
+        c.classList.toggle('hide', !match);
+        if (match) { shown++; }
+      });
+      var label = role === 'all' ? 'all roles' : role.replace('-', ' / ');
+      countEl.textContent = 'Showing ' + shown + ' of ' + cards.length + ' use cases · ' + label;
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('on'); });
+        chip.classList.add('on');
+        applyFilter(chip.getAttribute('data-role'));
+      });
+    });
+
+    applyFilter('all');
+  })();
+</script>
+</body>
+</html>

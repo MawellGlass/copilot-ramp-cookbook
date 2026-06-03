@@ -1,0 +1,5 @@
+# Build dependencies for the Copilot Ramp Cookbook (MkDocs Material).
+# Pinned so local builds and the GitHub Pages CI build match exactly.
+# Install locally with:  pip install -r requirements.txt
+
+mkdocs-material==9.5.39

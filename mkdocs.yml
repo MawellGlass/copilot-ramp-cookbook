@@ -1,0 +1,150 @@
+# ── Copilot Ramp Cookbook — MkDocs configuration ────────────────────────────
+# Unofficial, community-built. Not affiliated with or endorsed by Microsoft.
+#
+# Local preview:  mkdocs serve   (then open http://127.0.0.1:8000)
+# Build static:   mkdocs build   (outputs to ./site)
+# Deploy Pages:   mkdocs gh-deploy   (or use the GitHub Action in .github/workflows)
+
+site_name: Copilot Ramp Cookbook
+site_description: >-
+  A grassroots ramp through the Microsoft Copilot maturity journey —
+  from your first chat to building production agents in Copilot Studio.
+  Unofficial and community-built.
+site_author: Copilot Ramp Cookbook contributors
+
+# ⚠️ Replace <org-or-user> with your GitHub account when you create the repo.
+# These three lines drive the repo link, edit button, and Pages base path.
+site_url: https://MawellGlass.github.io/copilot-ramp-cookbook/
+repo_url: https://github.com/MawellGlass/copilot-ramp-cookbook
+repo_name: copilot-ramp-cookbook
+edit_uri: edit/main/docs/
+
+# Markdown source lives in docs/ (walkthroughs, catalog, resources, stage pages).
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs            # top-level stages as tabs
+    - navigation.tabs.sticky
+    - navigation.sections        # group walkthroughs under each stage
+    - navigation.top             # back-to-top button
+    - navigation.footer          # prev/next links at page bottom
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy          # copy button on the prompt code blocks
+    - content.action.edit
+  palette:
+    # Light mode (default) with a toggle to dark
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/home.css
+
+plugins:
+  - search
+  - tags                         # powers the role/stage tag filtering
+
+markdown_extensions:
+  - admonition                   # the > **Next:** / 📚 callouts render as cards
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MawellGlass/copilot-ramp-cookbook
+  generator: false               # drop the "Made with Material for MkDocs" footer line
+
+# ── Navigation — journey-first (stages are the spine; role is a filter) ──────
+nav:
+  - Home: index.md
+  - Start Here: start-here.md
+
+  - "Stage 1 · Chat":
+      - Overview: stages/stage-1-chat.md
+      - Turn a meeting into tracked follow-ups: walkthroughs/chat-meeting-followups.md
+      - Draft a status update from your week: walkthroughs/chat-weekly-status.md
+      - Prep for a 1:1 in two minutes: walkthroughs/chat-prep-1on1.md
+      - Get up to speed on a long document fast: walkthroughs/chat-document-catch-up.md
+      - Catch up on a Teams thread: walkthroughs/chat-catch-up-thread.md
+      - Build a first-draft project plan: walkthroughs/chat-project-plan.md
+      - Rewrite an email for a tougher audience: walkthroughs/chat-rewrite-email.md
+      - Run a "Prompt of the Day" for your team: walkthroughs/chat-prompt-of-the-day.md
+
+  - "Stage 2 · First-Party Agents":
+      - Overview: stages/stage-2-first-party.md
+      - The agents in your license: walkthroughs/first-party-agents-overview.md
+      - Auto-recap every meeting with Facilitator: walkthroughs/first-party-facilitator-auto-recap.md
+      - Deep-dive a topic with Researcher: walkthroughs/first-party-researcher-deep-dive.md
+      - Analyze a dataset with Analyst: walkthroughs/first-party-analyst-dataset.md
+      - Translate a meeting live with Interpreter: walkthroughs/first-party-interpreter-live-translation.md
+      - Answer HR & IT questions with Employee Self-Service: walkthroughs/first-party-employee-self-service.md
+      - Keep a project on track with Project Manager: walkthroughs/first-party-project-manager.md
+      - Upskill with the Learning agent: walkthroughs/first-party-learning-agent.md
+      - Post team-wide answers with Agents in Channels: walkthroughs/first-party-agents-in-channels.md
+      - Answer common questions with Agents in Communities: walkthroughs/first-party-agents-in-communities.md
+      - Find where Copilot is landing with Workforce insights: walkthroughs/first-party-workforce-insights.md
+
+  - "Stage 3 · Cowork":
+      - Overview: stages/stage-3-cowork.md
+      - Hand off an end-to-end task to Cowork: walkthroughs/cowork-end-to-end-task.md
+      - Stand up a recurring weekly digest: walkthroughs/cowork-recurring-weekly-digest.md
+      - Synthesize many documents into one brief: walkthroughs/cowork-multi-doc-synthesis.md
+      - Build a deck from raw notes: walkthroughs/cowork-deck-from-notes.md
+      - Build a "Cowork recipe" library for your org: walkthroughs/cowork-recipe-library.md
+
+  - "Stage 4 · Agent Builder":
+      - Overview: stages/stage-4-agent-builder.md
+      - Build a team-knowledge agent over SharePoint: walkthroughs/agent-builder-team-knowledge.md
+      - Give your agent a persona and instructions that stick: walkthroughs/agent-builder-persona-instructions.md
+      - Seed your agent with starter prompts: walkthroughs/agent-builder-starter-prompts.md
+      - Pilot your agent and gather feedback: walkthroughs/agent-builder-share-and-feedback.md
+      - Know when to graduate to Copilot Studio: walkthroughs/agent-builder-vs-studio.md
+
+  - "Stage 5 · Copilot Studio":
+      - Overview: stages/stage-5-studio.md
+      - Build your first Studio agent: walkthroughs/studio-first-agent.md
+      - Give a Studio agent a real action with a connector: walkthroughs/studio-connector-action.md
+      - Add an MCP tool integration: walkthroughs/studio-mcp-tool-integration.md
+      - Publish and govern your agent: walkthroughs/studio-publish.md
+      - Govern and monitor your agents at scale: walkthroughs/studio-govern-monitor.md
+      - Make the ROI case for your agent: walkthroughs/studio-roi-business-case.md
+
+  - Use-Case Catalog: CATALOG.md
+  - Resources: RESOURCES.md
+  - About / Disclaimer: about.md
+
+copyright: >-
+  Unofficial and community-built. Not affiliated with, authorized by, or
+  endorsed by Microsoft. Product names are trademarks of their respective owners.

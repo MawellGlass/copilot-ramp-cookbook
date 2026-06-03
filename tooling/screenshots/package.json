@@ -1,0 +1,15 @@
+{
+  "name": "copilot-ramp-cookbook-screenshots",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright screenshot-capture tool for the Copilot Ramp Cookbook walkthroughs. Run each scenario in the real product and save numbered PNGs for the docs.",
+  "scripts": {
+    "auth": "playwright test --project=setup --headed",
+    "capture": "playwright test --project=capture --headed",
+    "capture:headless": "playwright test --project=capture",
+    "codegen": "playwright codegen https://m365.cloud.microsoft/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}
