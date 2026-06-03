@@ -27,23 +27,16 @@ You have a Microsoft 365 Copilot license and want quick wins that fit your exist
 
 Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups.md) is the gateway use case everything else builds from.
 
-### [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)
-The fastest "aha."
+??? note "Show all walkthroughs"
 
-### [Draft a status update from your week's activity](../walkthroughs/chat-weekly-status.md)
-
-### [Prep for a 1:1 in two minutes](../walkthroughs/chat-prep-1on1.md)
-
-### [Get up to speed on a long document fast](../walkthroughs/chat-document-catch-up.md)
-
-### [Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)
-
-### [Build a first-draft project plan](../walkthroughs/chat-project-plan.md)
-
-### [Rewrite an email for a tougher audience](../walkthroughs/chat-rewrite-email.md)
-
-### [Run a "Prompt of the Day" for your team](../walkthroughs/chat-prompt-of-the-day.md)
-For champions driving adoption.
+    - [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md) — the fastest “aha.”
+    - [Draft a status update from your week's activity](../walkthroughs/chat-weekly-status.md)
+    - [Prep for a 1:1 in two minutes](../walkthroughs/chat-prep-1on1.md)
+    - [Get up to speed on a long document fast](../walkthroughs/chat-document-catch-up.md)
+    - [Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)
+    - [Build a first-draft project plan](../walkthroughs/chat-project-plan.md)
+    - [Rewrite an email for a tougher audience](../walkthroughs/chat-rewrite-email.md)
+    - [Run a “Prompt of the Day” for your team](../walkthroughs/chat-prompt-of-the-day.md) — for champions driving adoption.
 
 ---
 

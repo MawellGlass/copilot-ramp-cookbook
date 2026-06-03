@@ -27,17 +27,13 @@ You trust Copilot for single prompts and find yourself wishing it could just *fi
 
 Start with the end-to-end hand-off — it's the page that makes delegation click.
 
-### [Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md)
-**Start here.**
+??? note "Show all walkthroughs"
 
-### [Stand up a recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)
-
-### [Synthesize many documents into one brief](../walkthroughs/cowork-multi-doc-synthesis.md)
-
-### [Build a deck from raw notes](../walkthroughs/cowork-deck-from-notes.md)
-
-### [Build a "Cowork recipe" library for your org](../walkthroughs/cowork-recipe-library.md)
-For champions scaling the pattern.
+    - [Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md) — **start here.**
+    - [Stand up a recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)
+    - [Synthesize many documents into one brief](../walkthroughs/cowork-multi-doc-synthesis.md)
+    - [Build a deck from raw notes](../walkthroughs/cowork-deck-from-notes.md)
+    - [Build a “Cowork recipe” library for your org](../walkthroughs/cowork-recipe-library.md) — for champions scaling the pattern.
 
 ---
 
