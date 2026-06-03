@@ -23,24 +23,33 @@ Chat is muscle memory and you want more horsepower for specific jobs — deep re
 
 ---
 
-## Start with the roster
+## Walkthroughs in this stage
 
-If you read one page in this stage, make it the roster — it maps every included agent to what it's for, so you know which specialist to reach for.
+Start with the roster — it maps every included agent to what it's for, so you know which specialist to reach for.
 
-- [The first-party agents included with your M365 Copilot license](../walkthroughs/first-party-agents-overview.md) — **start here.**
+### [The agents included in your M365 Copilot license](../walkthroughs/first-party-agents-overview.md)
+**Start here.** The complete roster with what each agent is for.
 
-## The agents, one walkthrough each
+### [Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)
 
-- [Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)
-- [Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)
-- [Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md)
-- [Translate a meeting in real time with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md)
-- [Answer routine HR and IT questions with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md)
-- [Keep a project on track with the Project Manager agent](../walkthroughs/first-party-project-manager.md)
-- [Upskill in the flow of work with the Learning agent](../walkthroughs/first-party-learning-agent.md)
-- [Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md)
-- [Answer common questions with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md)
-- [Find where Copilot is landing with Workforce insights](../walkthroughs/first-party-workforce-insights.md) — for champions and managers.
+### [Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)
+
+### [Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md)
+
+### [Translate a meeting in real time with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md)
+
+### [Answer routine HR and IT questions with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md)
+
+### [Keep a project on track with the Project Manager agent](../walkthroughs/first-party-project-manager.md)
+
+### [Upskill in the flow of work with the Learning agent](../walkthroughs/first-party-learning-agent.md)
+
+### [Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md)
+
+### [Answer common questions with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md)
+
+### [Find where Copilot is landing with Workforce insights](../walkthroughs/first-party-workforce-insights.md)
+For champions and managers.
 
 ---
 

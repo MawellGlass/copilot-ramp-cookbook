@@ -27,12 +27,20 @@ Your declarative agents are bumping into limits: you need a real action against 
 
 Build in order — start with your first agent, then add actions, tools, publishing, and governance.
 
-- [Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md) — **start here.**
-- [Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)
-- [Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)
-- [Publish and govern your agent](../walkthroughs/studio-publish.md)
-- [Govern and monitor your agents at scale](../walkthroughs/studio-govern-monitor.md) — for IT/admin.
-- [Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md) — for managers and champions.
+### [Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
+**Start here.**
+
+### [Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)
+
+### [Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)
+
+### [Publish and govern your agent](../walkthroughs/studio-publish.md)
+
+### [Govern and monitor your agents at scale](../walkthroughs/studio-govern-monitor.md)
+For IT/admin.
+
+### [Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)
+For managers and champions.
 
 ---
 
