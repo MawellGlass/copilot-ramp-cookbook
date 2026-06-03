@@ -92,6 +92,7 @@ nav:
   - Start Here: start-here.md
 
   - The Journey:
+      - the-journey.md
       - "Stage 1 · Chat": stages/stage-1-chat.md
       - "Stage 2 · First-Party Agents": stages/stage-2-first-party.md
       - "Stage 3 · Cowork": stages/stage-3-cowork.md
