@@ -93,7 +93,7 @@ nav:
 
   - The Journey:
       - "Stage 1 · Chat":
-          - Overview: stages/stage-1-chat.md
+          - stages/stage-1-chat.md
           - Turn a meeting into tracked follow-ups: walkthroughs/chat-meeting-followups.md
           - Draft a status update from your week: walkthroughs/chat-weekly-status.md
           - Prep for a 1:1 in two minutes: walkthroughs/chat-prep-1on1.md
@@ -104,7 +104,7 @@ nav:
           - Run a "Prompt of the Day" for your team: walkthroughs/chat-prompt-of-the-day.md
 
       - "Stage 2 · First-Party Agents":
-          - Overview: stages/stage-2-first-party.md
+          - stages/stage-2-first-party.md
           - The agents in your license: walkthroughs/first-party-agents-overview.md
           - Auto-recap every meeting with Facilitator: walkthroughs/first-party-facilitator-auto-recap.md
           - Deep-dive a topic with Researcher: walkthroughs/first-party-researcher-deep-dive.md
@@ -118,7 +118,7 @@ nav:
           - Find where Copilot is landing with Workforce insights: walkthroughs/first-party-workforce-insights.md
 
       - "Stage 3 · Cowork":
-          - Overview: stages/stage-3-cowork.md
+          - stages/stage-3-cowork.md
           - Hand off an end-to-end task to Cowork: walkthroughs/cowork-end-to-end-task.md
           - Stand up a recurring weekly digest: walkthroughs/cowork-recurring-weekly-digest.md
           - Synthesize many documents into one brief: walkthroughs/cowork-multi-doc-synthesis.md
@@ -126,7 +126,7 @@ nav:
           - Build a "Cowork recipe" library for your org: walkthroughs/cowork-recipe-library.md
 
       - "Stage 4 · Agent Builder":
-          - Overview: stages/stage-4-agent-builder.md
+          - stages/stage-4-agent-builder.md
           - Build a team-knowledge agent over SharePoint: walkthroughs/agent-builder-team-knowledge.md
           - Give your agent a persona and instructions that stick: walkthroughs/agent-builder-persona-instructions.md
           - Seed your agent with starter prompts: walkthroughs/agent-builder-starter-prompts.md
@@ -134,7 +134,7 @@ nav:
           - Know when to graduate to Copilot Studio: walkthroughs/agent-builder-vs-studio.md
 
       - "Stage 5 · Copilot Studio":
-          - Overview: stages/stage-5-studio.md
+          - stages/stage-5-studio.md
           - Build your first Studio agent: walkthroughs/studio-first-agent.md
           - Give a Studio agent a real action with a connector: walkthroughs/studio-connector-action.md
           - Add an MCP tool integration: walkthroughs/studio-mcp-tool-integration.md
