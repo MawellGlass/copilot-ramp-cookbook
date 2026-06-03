@@ -22,13 +22,13 @@ the matching stage page on the site. These are the "broad set of resources to le
 
 | Resource | What it is | Link |
 |----------|-----------|------|
-| **Which Copilot is right for you** | Microsoft Learn hub mapping every Copilot (M365, Studio, Power Platform, Security, Fabric, Azure, GitHub) | https://learn.microsoft.com/en-us/copilot/ |
-| **Microsoft 365 Copilot Adoption Hub** | The flagship adoption site — get started, leaders, communities, "go further" | https://adoption.microsoft.com/en-us/copilot/ |
-| **Copilot Success Kit** | Role-based downloadable kit: implementation framework, technical readiness, user enablement templates | https://adoption.microsoft.com/en-us/copilot/success-kit/ |
-| **Agent Resources (CAT front door)** | Curated hub for all things agents, by the Microsoft Copilot Acceleration Team | https://aka.ms/agentresources |
-| **Microsoft Scenario Library** | Role / function / industry Copilot scenarios with sample prompts and downloadable kits — the deepest first-party use-case bank | https://adoption.microsoft.com/en-us/scenario-library/ |
-| **Microsoft Mechanics (official video series)** | Microsoft's official "how the tech works" channel — hosted by Jeremy Chapman (Director, M365) | https://www.youtube.com/c/MicrosoftMechanicsSeries |
-| **Microsoft 365 (official channel)** | Official M365 product channel — feature walkthroughs and Copilot demos | https://www.youtube.com/@microsoft365 |
+| **Which Copilot is right for you** | Microsoft Learn hub mapping every Copilot (M365, Studio, Power Platform, Security, Fabric, Azure, GitHub) | [learn.microsoft.com/copilot](https://learn.microsoft.com/en-us/copilot/) |
+| **Microsoft 365 Copilot Adoption Hub** | The flagship adoption site — get started, leaders, communities, "go further" | [adoption.microsoft.com/copilot](https://adoption.microsoft.com/en-us/copilot/) |
+| **Copilot Success Kit** | Role-based downloadable kit: implementation framework, technical readiness, user enablement templates | [adoption.microsoft.com/success-kit](https://adoption.microsoft.com/en-us/copilot/success-kit/) |
+| **Agent Resources (CAT front door)** | Curated hub for all things agents, by the Microsoft Copilot Acceleration Team | [aka.ms/agentresources](https://aka.ms/agentresources) |
+| **Microsoft Scenario Library** | Role / function / industry Copilot scenarios with sample prompts and downloadable kits — the deepest first-party use-case bank | [adoption.microsoft.com/scenario-library](https://adoption.microsoft.com/en-us/scenario-library/) |
+| **Microsoft Mechanics (official video series)** | Microsoft's official "how the tech works" channel — hosted by Jeremy Chapman (Director, M365) | [YouTube channel](https://www.youtube.com/c/MicrosoftMechanicsSeries) |
+| **Microsoft 365 (official channel)** | Official M365 product channel — feature walkthroughs and Copilot demos | [YouTube channel](https://www.youtube.com/@microsoft365) |
 
 ---
 
@@ -36,10 +36,10 @@ the matching stage page on the site. These are the "broad set of resources to le
 
 | Resource | What it is | Link |
 |----------|-----------|------|
-| **Copilot Prompt Gallery (in-product)** | Ready-to-use prompts for Word, Excel, PowerPoint, Outlook — paste-and-go | https://m365.cloud.microsoft/copilot-prompts |
-| **Prompt Gallery (adoption guide)** | The prompting principles + curated prompt set, framed for enablement | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ |
-| **The Art of the Prompt (session)** | Recorded customer-hub session on prompting best practice + Prompt-a-thons | https://adoption.microsoft.com/en-us/customer-hub/drive-adoption-of-microsoft-365-copilot/session-2/ |
-| **M365 Copilot Mechanics playlist** | Official Microsoft Mechanics deep-dives on Copilot in the M365 apps | https://www.youtube.com/playlist?list=PLXtHYVsvn_b8MTl8mD8FBJIB_cSGkEaT9 |
+| **Copilot Prompt Gallery (in-product)** | Ready-to-use prompts for Word, Excel, PowerPoint, Outlook — paste-and-go | [m365.cloud.microsoft/copilot-prompts](https://m365.cloud.microsoft/copilot-prompts) |
+| **Prompt Gallery (adoption guide)** | The prompting principles + curated prompt set, framed for enablement | [adoption.microsoft.com/prompt-gallery](https://adoption.microsoft.com/en-us/copilot/prompt-gallery/) |
+| **The Art of the Prompt (session)** | Recorded customer-hub session on prompting best practice + Prompt-a-thons | [adoption.microsoft.com/session-2](https://adoption.microsoft.com/en-us/customer-hub/drive-adoption-of-microsoft-365-copilot/session-2/) |
+| **M365 Copilot Mechanics playlist** | Official Microsoft Mechanics deep-dives on Copilot in the M365 apps | [YouTube playlist](https://www.youtube.com/playlist?list=PLXtHYVsvn_b8MTl8mD8FBJIB_cSGkEaT9) |
 
 **Reuse tip:** the Prompt Gallery is your best "borrowed content" — link directly to it from every
 Stage 1 walkthrough instead of re-listing prompts.
@@ -50,11 +50,11 @@ Stage 1 walkthrough instead of re-listing prompts.
 
 | Resource | What it is | Link |
 |----------|-----------|------|
-| **Agents in Microsoft 365 (dedicated hub)** | The canonical roster of the prebuilt agents included with M365 Copilot (Researcher, Analyst, Facilitator, Interpreter, …) — what each does, in plain language | https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/ |
-| **Agents in Microsoft 365 (Adoption Hub → agents section)** | Overview of prebuilt agents and the Agent Store, within the broader adoption hub | https://adoption.microsoft.com/en-us/copilot/ |
-| **M365 Copilot resources (CAT)** | CAT-curated adopt/deploy/extend hub for M365 Copilot + its agents | https://aka.ms/m365copilot/resources |
-| **Researcher & Analyst now GA (M365 blog)** | Jared Spataro (CMO, AI at Work) announcing the two reasoning agents reaching general availability — what each is built for | https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/ |
-| **Enabling human-agent teams (M365 blog)** | Nicole Herskowitz (CVP, Microsoft 365 Copilot) on how prebuilt agents work alongside people | https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/ |
+| **Agents in Microsoft 365 (dedicated hub)** | The canonical roster of the prebuilt agents included with M365 Copilot (Researcher, Analyst, Facilitator, Interpreter, …) — what each does, in plain language | [adoption.microsoft.com/ai-agents](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/) |
+| **Agents in Microsoft 365 (Adoption Hub → agents section)** | Overview of prebuilt agents and the Agent Store, within the broader adoption hub | [adoption.microsoft.com/copilot](https://adoption.microsoft.com/en-us/copilot/) |
+| **M365 Copilot resources (CAT)** | CAT-curated adopt/deploy/extend hub for M365 Copilot + its agents | [aka.ms/m365copilot/resources](https://aka.ms/m365copilot/resources) |
+| **Researcher & Analyst now GA (M365 blog)** | Jared Spataro (CMO, AI at Work) announcing the two reasoning agents reaching general availability — what each is built for | [microsoft.com/m365-blog](https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/) |
+| **Enabling human-agent teams (M365 blog)** | Nicole Herskowitz (CVP, Microsoft 365 Copilot) on how prebuilt agents work alongside people | [microsoft.com/m365-blog](https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/) |
 
 **Reuse tip:** the dedicated **Agents in Microsoft 365 hub** is the roster source of truth — it lists
 each included agent and what it's for, so link to it from the Stage 2 overview rather than re-documenting
@@ -66,8 +66,8 @@ the lineup (which changes as Microsoft adds and graduates agents).
 
 | Resource | What it is | Link |
 |----------|-----------|------|
-| **Sean Galliher's Cowork Cookbook** | The inspiration — Cowork applied across 15 end-to-end business processes (community, unofficial) | https://coworkcookbook.com/ |
-| **M365 Copilot resources (CAT)** | Same CAT hub; Cowork sits within the broader M365 Copilot experience | https://aka.ms/m365copilot/resources |
+| **Sean Galliher's Cowork Cookbook** | The inspiration — Cowork applied across 15 end-to-end business processes (community, unofficial) | [coworkcookbook.com](https://coworkcookbook.com/) |
+| **M365 Copilot resources (CAT)** | Same CAT hub; Cowork sits within the broader M365 Copilot experience | [aka.ms/m365copilot/resources](https://aka.ms/m365copilot/resources) |
 
 **Reuse tip:** rather than competing with Sean's process-based Cowork recipes, *link to them* from
 this stage and keep our Cowork content focused on "how Cowork fits the ramp toward building agents."
@@ -78,10 +78,10 @@ this stage and keep our Cowork content focused on "how Cowork fits the ramp towa
 
 | Resource | What it is | Link |
 |----------|-----------|------|
-| **Agent Library** | Marketplace-style catalog of production-ready agent templates (declarative + Studio) | https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview |
-| **Agent Builder vs Studio vs Foundry (decision framework)** | CAT/Partner guidance on picking the right authoring surface by skill + complexity | https://aka.ms/copilotstudio/resources |
-| **Agent Platform Advisor** | Interactive "which platform should I build on" recommender | https://aka.ms/agentresources |
-| **April's AI Agents Academy (April Dunnam)** | Step-by-step agent-building series by April Dunnam, Principal Cloud Advocate at Microsoft | https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V |
+| **Agent Library** | Marketplace-style catalog of production-ready agent templates (declarative + Studio) | [learn.microsoft.com/agent-library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview) |
+| **Agent Builder vs Studio vs Foundry (decision framework)** | CAT/Partner guidance on picking the right authoring surface by skill + complexity | [aka.ms/copilotstudio/resources](https://aka.ms/copilotstudio/resources) |
+| **Agent Platform Advisor** | Interactive "which platform should I build on" recommender | [aka.ms/agentresources](https://aka.ms/agentresources) |
+| **April's AI Agents Academy (April Dunnam)** | Step-by-step agent-building series by April Dunnam, Principal Cloud Advocate at Microsoft | [YouTube playlist](https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V) |
 
 **Reuse tip:** the Agent Library's prebuilt templates (e.g., "Plan My Day") are perfect "look, you
 didn't even have to build it" demos that warm customers up before they build their own.
@@ -92,12 +92,12 @@ didn't even have to build it" demos that warm customers up before they build the
 
 | Resource | What it is | Link |
 |----------|-----------|------|
-| **Copilot Studio official docs** | The canonical Learn documentation set — get started → build → test → publish → govern | https://learn.microsoft.com/en-us/microsoft-copilot-studio/ |
-| **Copilot Studio Resources (CAT)** | Curated news, adoption, building, governance, samples, community — updated continuously | https://aka.ms/copilotstudio/resources |
-| **Copilot Studio & agent samples** | Microsoft-owned + community GitHub repos: low-code and pro-code starting points | https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples |
-| **Power CAT Copilot Studio Kit** | Reusable patterns, scenarios, and guidance for building real agents | https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples |
-| **Copilot Studio Agent Academy** | Curated hands-on lessons for building Studio agents | https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples |
-| **agent-resources GitHub repo** | The CAT static-site repo itself — a working model for how *we* could build this site | https://github.com/microsoft/agent-resources |
+| **Copilot Studio official docs** | The canonical Learn documentation set — get started → build → test → publish → govern | [learn.microsoft.com/copilot-studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) |
+| **Copilot Studio Resources (CAT)** | Curated news, adoption, building, governance, samples, community — updated continuously | [aka.ms/copilotstudio/resources](https://aka.ms/copilotstudio/resources) |
+| **Copilot Studio & agent samples** | Microsoft-owned + community GitHub repos: low-code and pro-code starting points | [learn.microsoft.com/agent-samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) |
+| **Power CAT Copilot Studio Kit** | Reusable patterns, scenarios, and guidance for building real agents | [learn.microsoft.com/agent-samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) |
+| **Copilot Studio Agent Academy** | Curated hands-on lessons for building Studio agents | [learn.microsoft.com/agent-samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) |
+| **agent-resources GitHub repo** | The CAT static-site repo itself — a working model for how *we* could build this site | [github.com/microsoft/agent-resources](https://github.com/microsoft/agent-resources) |
 | **Microsoft Copilot Studio (official channel)** | The product team's own YouTube — feature demos, product tours, readiness framework | https://www.youtube.com/@MicrosoftCopilotStudio |
 | **Mastering Copilot Studio (Learn Shows)** | Microsoft Learn video series — "create your first agent" through advanced authoring | https://learn.microsoft.com/en-us/shows/mastering-copilot-studio/ |
 | **Copilot Studio in a Day (instructor-led + self-paced)** | Free Microsoft hands-on workshop; register at the link, or self-pace the Learn path | https://aka.ms/CSIAD |
