@@ -98,7 +98,7 @@ extra:
 nav:
   - Home: index.md
   - Start Here:
-      - start-here.md
+      - "Start by Stage": start-here.md
       - "Start by Role": start-by-role.md
 
   - The Journey:
