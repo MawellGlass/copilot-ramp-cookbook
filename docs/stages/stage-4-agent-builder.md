@@ -27,13 +27,17 @@ You've handed Copilot the same kind of multi-step task more than once and though
 
 Start with the flagship — a team-knowledge agent is the most useful first build for most people.
 
-??? note "Show all walkthroughs"
+### [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
+**The flagship.**
 
-    - [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md) — **the flagship.**
-    - [Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)
-    - [Seed your agent with starter prompts](../walkthroughs/agent-builder-starter-prompts.md)
-    - [Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)
-    - [Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md) — the decision page that points at Stage 5.
+### [Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)
+
+### [Seed your agent with starter prompts](../walkthroughs/agent-builder-starter-prompts.md)
+
+### [Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)
+
+### [Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)
+The decision page that points at Stage 5.
 
 ---
 
