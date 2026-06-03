@@ -74,4 +74,4 @@ The full curated set for this stage lives in [Resources → Stage 5](../RESOURCE
 
 There's no "Stage 6" — from here you build, ship, and govern real agents. Keep a backlog of agents worth building from the [Use-Case Catalog](../CATALOG.md), and make the [ROI case](../walkthroughs/studio-roi-business-case.md) for the ones that matter.
 
-[:octicons-arrow-right-24: Back to the full Use-Case Catalog](../CATALOG.md)
+[→ Back to the full Use-Case Catalog](../CATALOG.md)

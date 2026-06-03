@@ -17,7 +17,7 @@ Five stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** you have a Copilot license and want quick, paste-and-go wins.
 
-    [:octicons-arrow-right-24: Go to Stage 1](stages/stage-1-chat.md)
+    [→ Go to Stage 1](stages/stage-1-chat.md)
 
 -   **Stage 2 · First-Party Agents**
 
@@ -27,7 +27,7 @@ Five stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** you're fluent in Chat and want more without building anything.
 
-    [:octicons-arrow-right-24: Go to Stage 2](stages/stage-2-first-party.md)
+    [→ Go to Stage 2](stages/stage-2-first-party.md)
 
 -   **Stage 3 · Cowork**
 
@@ -37,7 +37,7 @@ Five stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** you trust Copilot for individual steps and want to delegate whole workflows.
 
-    [:octicons-arrow-right-24: Go to Stage 3](stages/stage-3-cowork.md)
+    [→ Go to Stage 3](stages/stage-3-cowork.md)
 
 -   **Stage 4 · Agent Builder**
 
@@ -47,7 +47,7 @@ Five stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** you've thought "I wish this just existed" more than once.
 
-    [:octicons-arrow-right-24: Go to Stage 4](stages/stage-4-agent-builder.md)
+    [→ Go to Stage 4](stages/stage-4-agent-builder.md)
 
 -   **Stage 5 · Copilot Studio**
 
@@ -57,7 +57,7 @@ Five stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** your agents need to call APIs, go beyond SharePoint, or be governed at scale.
 
-    [:octicons-arrow-right-24: Go to Stage 5](stages/stage-5-studio.md)
+    [→ Go to Stage 5](stages/stage-5-studio.md)
 
 </div>
 

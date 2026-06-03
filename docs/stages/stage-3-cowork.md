@@ -63,4 +63,4 @@ The full curated set for this stage lives in [Resources → Stage 3](../RESOURCE
 
 After you've delegated the same kind of task a few times, you'll wish it just *existed* as a reusable thing. That wish is the doorway to building — and Agent Builder is the no-code way in.
 
-[:octicons-arrow-right-24: Stage 4 · Agent Builder](stage-4-agent-builder.md)
+[→ Stage 4 · Agent Builder](stage-4-agent-builder.md)

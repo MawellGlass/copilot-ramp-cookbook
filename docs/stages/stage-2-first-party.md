@@ -77,4 +77,4 @@ The full curated set for this stage lives in [Resources → Stage 2](../RESOURCE
 
 Once you've leaned on a few prebuilt specialists, the natural question is: *can Copilot run a whole task for me, not just one step?* That's Cowork.
 
-[:octicons-arrow-right-24: Stage 3 · Cowork](stage-3-cowork.md)
+[→ Stage 3 · Cowork](stage-3-cowork.md)

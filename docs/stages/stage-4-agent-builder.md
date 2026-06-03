@@ -65,4 +65,4 @@ The full curated set for this stage lives in [Resources → Stage 4](../RESOURCE
 
 When your simple agents start hitting limits — you need real actions, richer knowledge, multiple topics, or governance — you've outgrown declarative building. That's the cue for the destination.
 
-[:octicons-arrow-right-24: Stage 5 · Copilot Studio](stage-5-studio.md)
+[→ Stage 5 · Copilot Studio](stage-5-studio.md)

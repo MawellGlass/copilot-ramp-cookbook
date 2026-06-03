@@ -9,7 +9,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
 
 <div class="grid cards" markdown>
 
--   :material-account: **End User / Individual Contributor**
+-   👤 **End User / Individual Contributor**
 
     ---
 
@@ -23,9 +23,9 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Catch up on a Teams thread in seconds](walkthroughs/chat-catch-up-thread.md)
     - [Catch up on a long email thread in seconds](walkthroughs/chat-email-chain-summary.md)
 
-    [:octicons-arrow-right-24: Stage 1 · Chat](stages/stage-1-chat.md)
+    [→ Stage 1 · Chat](stages/stage-1-chat.md)
 
--   :material-account-tie: **Manager**
+-   🧑‍💼 **Manager**
 
     ---
 
@@ -39,9 +39,9 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Draft a 30/60/90-day onboarding plan](walkthroughs/cowork-onboarding-plan.md)
     - [Build a meeting-prep agent for recurring 1:1s](walkthroughs/agent-builder-meeting-prep-agent.md)
 
-    [:octicons-arrow-right-24: Stage 3 · Cowork](stages/stage-3-cowork.md)
+    [→ Stage 3 · Cowork](stages/stage-3-cowork.md)
 
--   :material-bullhorn: **Champion / Adoption Lead**
+-   📣 **Champion / Adoption Lead**
 
     ---
 
@@ -55,9 +55,9 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Build an FAQ agent for a recurring process](walkthroughs/agent-builder-faq-agent.md)
     - [Build a Cowork recipe library for your org](walkthroughs/cowork-recipe-library.md)
 
-    [:octicons-arrow-right-24: Stage 4 · Agent Builder](stages/stage-4-agent-builder.md)
+    [→ Stage 4 · Agent Builder](stages/stage-4-agent-builder.md)
 
--   :material-code-braces: **Maker / Developer**
+-   💻 **Maker / Developer**
 
     ---
 
@@ -71,9 +71,9 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Configure an autonomous event-triggered agent](walkthroughs/studio-autonomous-triggers.md)
     - [Test and evaluate before publishing](walkthroughs/studio-test-evaluate.md)
 
-    [:octicons-arrow-right-24: Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+    [→ Stage 5 · Copilot Studio](stages/stage-5-studio.md)
 
--   :material-shield-lock: **IT Admin**
+-   🔒 **IT Admin**
 
     ---
 
@@ -87,7 +87,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Find where Copilot is landing with Workforce insights](walkthroughs/first-party-workforce-insights.md)
     - [Know when to graduate from Agent Builder to Studio](walkthroughs/agent-builder-vs-studio.md)
 
-    [:octicons-arrow-right-24: Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+    [→ Stage 5 · Copilot Studio](stages/stage-5-studio.md)
 
 </div>
 
@@ -95,4 +95,4 @@ Not sure where to jump in? Pick your role below — each section shows the highe
 
 > **Not sure which role fits?** Start with [Stage 1 · Chat](stages/stage-1-chat.md) — it applies to everyone regardless of role, and you'll quickly find your footing from there.
 >
-> [:octicons-arrow-right-24: See the full journey](the-journey.md)
+> [→ See the full journey](the-journey.md)

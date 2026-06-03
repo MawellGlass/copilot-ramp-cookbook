@@ -75,4 +75,4 @@ The full curated set for this stage lives in [Resources → Stage 1](../RESOURCE
 
 Once chat is muscle memory, the next surprise is that you don't have to build anything to go further — Microsoft already ships purpose-built agents with your license.
 
-[:octicons-arrow-right-24: Stage 2 · First-Party Agents](stage-2-first-party.md)
+[→ Stage 2 · First-Party Agents](stage-2-first-party.md)
