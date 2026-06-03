@@ -39,6 +39,12 @@ Start with the flagship — a team-knowledge agent is the most useful first buil
 ### [Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)
 The decision page that points at Stage 5.
 
+### [Build an onboarding agent for new hires](../walkthroughs/agent-builder-onboarding-agent.md)
+
+### [Build an FAQ agent for a recurring process](../walkthroughs/agent-builder-faq-agent.md)
+
+### [Build a meeting-prep agent for a recurring 1:1 or standup](../walkthroughs/agent-builder-meeting-prep-agent.md)
+
 ---
 
 ## Borrow, don't build

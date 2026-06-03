@@ -42,6 +42,16 @@ For IT/admin.
 ### [Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)
 For managers and champions.
 
+### [Trigger a Power Automate flow from inside a Studio agent](../walkthroughs/studio-power-automate-flow.md)
+
+### [Design a multi-turn conversation with fallback and clarification](../walkthroughs/studio-multi-turn-conversation.md)
+
+### [Configure an autonomous event-triggered agent](../walkthroughs/studio-autonomous-triggers.md)
+
+### [Secure a Studio agent with authentication](../walkthroughs/studio-authentication.md)
+
+### [Test and evaluate a Studio agent before publishing](../walkthroughs/studio-test-evaluate.md)
+
 ---
 
 ## Borrow, don't build

@@ -51,6 +51,12 @@ Start with the roster — it maps every included agent to what it's for, so you 
 ### [Find where Copilot is landing with Workforce insights](../walkthroughs/first-party-workforce-insights.md)
 For champions and managers.
 
+### [Share and co-edit an AI output with Copilot Pages](../walkthroughs/first-party-copilot-pages.md)
+
+### [Track project milestones with the Planner agent](../walkthroughs/first-party-planner-agent.md)
+
+### [Find answers across your org's content with BizChat](../walkthroughs/first-party-bizchat-grounded.md)
+
 ---
 
 ## Borrow, don't build

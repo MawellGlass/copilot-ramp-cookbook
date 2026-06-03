@@ -44,7 +44,17 @@ The fastest “aha.”
 
 ### [Run a “Prompt of the Day” for your team](../walkthroughs/chat-prompt-of-the-day.md)
 For champions driving adoption.
+### [Draft an exec briefing from background materials](../walkthroughs/chat-exec-briefing.md)
 
+### [Catch up on a long email thread in seconds](../walkthroughs/chat-email-chain-summary.md)
+
+### [Build a meeting agenda from context and notes](../walkthroughs/chat-meeting-agenda.md)
+
+### [Brainstorm solutions with structured tradeoffs](../walkthroughs/chat-brainstorm.md)
+
+### [Adapt a document or message for a different audience](../walkthroughs/chat-adapt-audience.md)
+
+### [Plan your week from your calendar and inbox](../walkthroughs/chat-plan-week.md)
 ---
 
 ## Borrow, don't build

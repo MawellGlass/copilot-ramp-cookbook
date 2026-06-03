@@ -1,0 +1,99 @@
+---
+title: Trigger a Power Automate flow from inside a Studio agent
+stage: studio
+roles: [maker, it-admin]
+tags: [power-automate, studio, actions, connectors]
+level: intermediate
+time: 30 min
+status: walkthrough
+prereqs: [copilot-studio-license, power-automate-access, environment-access]
+updated: 2026-06-03
+---
+
+# Trigger a Power Automate flow from inside a Studio agent
+
+> **One-line value.** Connect your agent to real business systems — create a ticket, update a record, send a notification — triggered by a natural-language conversation.
+
+**Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Intermediate · **Time:** 30 min
+
+## When to use this
+
+Your agent is answering questions well, but users need it to *do* something in a downstream system: open a support ticket, update a Dataverse record, send an approval email, write a row to a SharePoint list, or log a request in ServiceNow. 
+
+Actions bridge the gap between "agent answers" and "agent acts." This walkthrough covers connecting a Copilot Studio agent to a Power Automate flow so it can trigger real-world operations from a conversation.
+
+## What you'll need
+
+- **Copilot Studio** access and an existing agent to extend
+- **Power Automate** access in the same environment
+- A clear action scenario: what the user will say to trigger the action, and what the flow should do
+
+## Architecture overview
+
+```
+User says: "Submit a request for [X]"
+    ↓
+Studio topic recognizes the intent
+    ↓
+Topic collects required variables (what, who, when)
+    ↓
+Topic calls a Power Automate flow via the "Call an action" node
+    ↓
+Flow executes in Power Automate (creates record, sends email, etc.)
+    ↓
+Flow returns a result to Studio
+    ↓
+Agent confirms to the user: "Done — your request has been submitted."
+```
+
+## Step by step
+
+### 1. Build the Power Automate flow first
+
+In Power Automate, create a new **Instant cloud flow** with the trigger `"When Copilot Studio calls a flow"`. Define the input parameters the flow will receive from Studio (e.g., `RequestType`, `RequesterName`, `Description`).
+
+Add the action steps: create a Planner task, write a SharePoint list row, send an email — whatever the scenario requires.
+
+Add a **Return value(s) to Power Virtual Agents** step at the end. Return at minimum a confirmation string: `"SubmissionStatus": "Success"` or an error message.
+
+Save and test the flow in Power Automate before connecting it.
+
+### 2. Add the action to your Studio agent
+
+In Copilot Studio, open your agent. Go to **Actions** → **Add an action** → **Power Automate flows**. Select the flow you just created. Studio will automatically expose its input parameters as variables.
+
+### 3. Create a topic that calls the action
+
+Create a new topic. Define trigger phrases that match what users will naturally say:
+
+- `"Submit a request for..."`
+- `"Open a ticket for..."`
+- `"Log a [type] request"`
+
+In the topic, add **Question** nodes to collect each required input parameter. Then add a **Call an action** node pointing to your Power Automate flow. Map the collected variables to the flow's input parameters.
+
+After the action node, add a **Message** node that uses the flow's return value to confirm the action:
+
+```
+Your request has been submitted. You'll receive a confirmation email shortly.
+Reference: {SubmissionStatus}
+```
+
+### 4. Test end-to-end
+
+In the Studio test panel, trigger the topic with one of your trigger phrases. Walk through the question/answer flow, then verify the action executed in the downstream system.
+
+### 5. Handle errors gracefully
+
+Add a **Condition** node after the action call that checks the return status. If the flow returned an error, route to a message: `"Something went wrong. Please try again or contact [support]."` — never let the agent silently fail.
+
+## Tips and variants
+
+- **Use child flows for reuse:** if multiple topics need the same action (e.g., "notify a manager"), put the logic in a single Power Automate child flow and call it from each parent flow.
+- **Approval flows:** Power Automate's approval connector lets your agent submit multi-step approvals — the agent collects the request, the flow routes it for sign-off, and the agent confirms back when approved.
+- **Adaptive Cards for confirmation:** instead of a text confirmation, return an Adaptive Card from the flow to give users a rich summary of what was created.
+- **Debugging:** use Power Automate's run history to debug flow failures — Studio won't show you what happened inside the flow.
+
+## Next:
+
+[:octicons-arrow-right-24: Govern and monitor your agents at scale](studio-govern-monitor.md)

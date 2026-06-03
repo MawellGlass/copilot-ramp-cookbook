@@ -38,7 +38,13 @@ Start with the end-to-end hand-off — it's the page that makes delegation click
 
 ### [Build a “Cowork recipe” library for your org](../walkthroughs/cowork-recipe-library.md)
 For champions scaling the pattern.
+### [Research a market and write a landscape brief](../walkthroughs/cowork-market-research-brief.md)
 
+### [Draft a 30/60/90-day onboarding plan for a new team member](../walkthroughs/cowork-onboarding-plan.md)
+
+### [Build a competitive comparison from multiple source documents](../walkthroughs/cowork-competitive-comparison.md)
+
+### [Draft an RFP or proposal response from scattered source docs](../walkthroughs/cowork-rfp-response.md)
 ---
 
 ## Borrow, don't build

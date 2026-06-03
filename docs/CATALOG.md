@@ -62,6 +62,42 @@ A repeatable adoption ritual that builds the habit across a team.
 **Sample prompt:** `Give me 5 starter prompts a [marketing] team could use daily, each with the business value in one line.`
 → Fully written: `walkthroughs/chat-prompt-of-the-day.md`
 
+### Draft an exec briefing from background materials → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Turn a pile of source docs into sharp, audience-calibrated talking points before any exec meeting.
+**Sample prompt:** `Based on this document, draft a 5-point exec briefing for a 10-minute conversation with [audience]. Lead with the business outcome.`
+→ Fully written: `walkthroughs/chat-exec-briefing.md`
+
+### Catch up on a long email thread in seconds → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Know where a 40-message thread stands — and what's being asked of you — in under a minute.
+**Sample prompt:** `Summarize this email thread: core issue, options raised, current status, and what's being asked of me.`
+→ Fully written: `walkthroughs/chat-email-chain-summary.md`
+
+### Build a meeting agenda from context and notes → walkthrough
+**For:** end-user, manager, champion · `status: walkthrough`
+Go from prep materials to a structured, time-slotted agenda in two minutes.
+**Sample prompt:** `I'm running a [30-minute project sync] with [audience]. Based on these notes, draft an agenda with time slots and a one-line goal for each item.`
+→ Fully written: `walkthroughs/chat-meeting-agenda.md`
+
+### Brainstorm solutions with structured tradeoffs → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Get past the blank page — structured options with benefits, risks, and what each would take.
+**Sample prompt:** `I'm trying to [problem]. Generate 5 approaches with key benefit, biggest risk, and what it would take to execute each.`
+→ Fully written: `walkthroughs/chat-brainstorm.md`
+
+### Adapt a document or message for a different audience → walkthrough
+**For:** end-user, manager, champion · `status: walkthrough`
+Transform content for a new audience in one prompt — no rewriting from scratch.
+**Sample prompt:** `Rewrite this [doc/email] for [target audience]. They care most about [outcome]. Adjust tone, remove jargon, lead with the ask.`
+→ Fully written: `walkthroughs/chat-adapt-audience.md`
+
+### Plan your week from your calendar and inbox → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Start every Monday with a clear view of what matters, what needs prep, and what to defer.
+**Sample prompt:** `Look at my calendar and inbox for this week. Tell me my three most important commitments, open threads to close, and one thing I can safely deprioritize.`
+→ Fully written: `walkthroughs/chat-plan-week.md`
+
 ---
 
 ## Stage 2 · First-Party Agents
@@ -137,6 +173,24 @@ Benefits, policies, and "how do I…" answered from approved sources — no tick
 **Sample prompt:** `How much PTO do I have left and how do I request it?`
 → Fully written: `walkthroughs/first-party-employee-self-service.md`
 
+### Share and co-edit an AI output with Copilot Pages → walkthrough
+**For:** end-user, champion, manager · `status: walkthrough`
+Turn any Copilot response into a shared, editable collaborative page in one click.
+**Sample prompt:** (Use the "Edit in Pages" button after any Copilot Chat response.)
+→ Fully written: `walkthroughs/first-party-copilot-pages.md`
+
+### Track project milestones with the Planner agent → walkthrough
+**For:** manager, champion · `status: walkthrough`
+Describe a project and get a structured, assigned task plan — no manual form-filling.
+**Sample prompt:** `Create a project plan for [project]. Team: [names]. Milestones: [list]. Break each into 3-5 tasks and suggest assignments.`
+→ Fully written: `walkthroughs/first-party-planner-agent.md`
+
+### Find answers across your org's content with BizChat → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Search your entire company's SharePoint, emails, and Teams in one question — and get a cited answer.
+**Sample prompt:** `Find information about [topic] from across our company's SharePoint, emails, and Teams. Summarize and cite sources.`
+→ Fully written: `walkthroughs/first-party-bizchat-grounded.md`
+
 ---
 
 ## Stage 3 · Cowork
@@ -172,6 +226,30 @@ Curate reusable multi-step tasks the whole team can rerun (à la coworkcookbook.
 **Sample prompt:** `Draft 5 reusable Cowork task descriptions for a [finance] team, each with the inputs it needs.`
 → Fully written: `walkthroughs/cowork-recipe-library.md`
 
+### Research a market and write a landscape brief → walkthrough
+**For:** manager, end-user · `status: walkthrough`
+Hand Cowork a topic and source docs — get back a structured market brief in one session.
+**Sample prompt:** `Research the [market] landscape and write a brief covering market size, key players, trends, risks, and implication for us.`
+→ Fully written: `walkthroughs/cowork-market-research-brief.md`
+
+### Draft a 30/60/90-day onboarding plan for a new team member → walkthrough
+**For:** manager · `status: walkthrough`
+Go from "someone starts Monday" to a complete, personalized onboarding plan in one Cowork session.
+**Sample prompt:** `Draft a 30/60/90 onboarding plan for a new [role]. Team context: [description]. Include learning, relationship, and delivery goals per phase.`
+→ Fully written: `walkthroughs/cowork-onboarding-plan.md`
+
+### Build a competitive comparison from multiple source documents → walkthrough
+**For:** manager, end-user · `status: walkthrough`
+Turn a folder of competitor research into a structured comparison matrix and narrative brief.
+**Sample prompt:** `Build a competitive comparison of [A], [B], [C] across capabilities, target customer, pricing, strengths, and weaknesses.`
+→ Fully written: `walkthroughs/cowork-competitive-comparison.md`
+
+### Draft an RFP or proposal response from scattered source docs → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Cross-reference an RFP against your internal docs and produce a first-draft response with flagged gaps.
+**Sample prompt:** `Draft a response to this RFP using the attached source docs. Flag any section where our docs don't have strong coverage as [NEEDS HUMAN INPUT].`
+→ Fully written: `walkthroughs/cowork-rfp-response.md`
+
 ---
 
 ## Stage 4 · Agent Builder
@@ -206,6 +284,24 @@ Pilot with a small group and iterate on the instructions.
 Know when you've outgrown Agent Builder and need Studio's power.
 **Sample prompt:** `Compare what I can do in Agent Builder vs Copilot Studio for [my use case]. When should I graduate?`
 → Fully written: `walkthroughs/agent-builder-vs-studio.md`
+
+### Build an onboarding agent for new hires → walkthrough
+**For:** manager, champion, hr · `status: walkthrough`
+Give new team members a self-service agent that answers their first-week questions on demand.
+**Sample prompt (config):** `Instructions: Answer questions about our team's tools, processes, and org structure. Cite the source document for every answer.`
+→ Fully written: `walkthroughs/agent-builder-onboarding-agent.md`
+
+### Build an FAQ agent for a recurring process → walkthrough
+**For:** champion, it-admin, manager · `status: walkthrough`
+Redirect the "quick questions" that consume your week to an agent that answers 24/7 from your docs.
+**Sample prompt (config):** `Instructions: Answer questions about [expense policy / IT request process]. Only use the attached document. If outside scope, redirect to [team].`
+→ Fully written: `walkthroughs/agent-builder-faq-agent.md`
+
+### Build a meeting-prep agent for a recurring 1:1 or standup → walkthrough
+**For:** manager, end-user · `status: walkthrough`
+Auto-generate talking points and agenda items before every recurring meeting — no manual pulling.
+**Sample prompt (config):** `Instructions: When asked to prep for the weekly 1:1, summarize recent activity, list open items, and suggest 3-5 agenda topics.`
+→ Fully written: `walkthroughs/agent-builder-meeting-prep-agent.md`
 
 ---
 
@@ -248,14 +344,44 @@ Tie agent usage to outcomes to justify and expand the program.
 **Sample prompt:** `Help me build an ROI model for our [support] agent: inputs, assumptions, and the metrics to track.`
 → Fully written: `walkthroughs/studio-roi-business-case.md`
 
+### Trigger a Power Automate flow from inside a Studio agent → walkthrough
+**For:** maker, it-admin · `status: walkthrough`
+Connect your agent to real business systems — create tickets, update records, send notifications — from a natural-language conversation.
+**Sample prompt:** `Design the action flow for an agent that collects a request from the user and submits it to [system] via Power Automate.`
+→ Fully written: `walkthroughs/studio-power-automate-flow.md`
+
+### Design a multi-turn conversation with fallback and clarification → walkthrough
+**For:** maker · `status: walkthrough`
+Build an agent that asks what it needs to know before it answers — and recovers gracefully from unexpected inputs.
+**Sample prompt:** `Design a conversation flow for an agent that asks clarifying questions to identify [product / region / role] before answering.`
+→ Fully written: `walkthroughs/studio-multi-turn-conversation.md`
+
+### Configure an autonomous event-triggered agent → walkthrough
+**For:** maker, it-admin · `status: walkthrough`
+Build an agent that acts when something happens — without waiting for a user to start a conversation.
+**Sample prompt:** `Design an autonomous agent that summarizes new SharePoint files added to [library] and posts a brief to [Teams channel].`
+→ Fully written: `walkthroughs/studio-autonomous-triggers.md`
+
+### Secure a Studio agent with authentication → walkthrough
+**For:** maker, it-admin · `status: walkthrough`
+Ensure only the right people can use your agent — and that it acts with the right identity when accessing data.
+**Sample prompt:** `Walk me through configuring Entra ID authentication for a Copilot Studio agent that accesses our SharePoint HR site.`
+→ Fully written: `walkthroughs/studio-authentication.md`
+
+### Test and evaluate a Studio agent before publishing → walkthrough
+**For:** maker, champion · `status: walkthrough`
+Run structured test cases across intent recognition, answer quality, edge cases, and adversarial inputs before broad rollout.
+**Sample prompt:** `Build a test case table for my [expense policy] agent: golden path, paraphrase variants, boundary cases, and adversarial inputs.`
+→ Fully written: `walkthroughs/studio-test-evaluate.md`
+
 ---
 
-_Count: 5 stages, ~35 use cases, spanning all 5 roles. **The catalog is now fully written — 35 of ~35
-full walkthroughs, 0 stubs remaining.** Every entry across all five stages is a rich, template-locked
-walkthrough with screenshot scaffolding and grounded resource links. The **flagship spine** (all five ★
-starters) anchors the journey end-to-end; **Stage 2 is fully written** (the roster overview plus a
-dedicated page for every Microsoft-built agent — Researcher, Analyst, Facilitator, Interpreter, Project
-Manager, Agents in Channels, Agents in Communities, Workforce insights, Learning, Employee Self-Service);
-and the final five (1 Chat champion ritual, 1 Cowork recipe library, 1 Agent Builder pilot, 2 Studio
-maker/admin pages) close out the backlog. Next milestone is **Phase 7 · Go public** (MkDocs Material +
-GitHub Pages) and the screenshot-capture pass._
+_Count: 5 stages, **56 use cases**, spanning all 5 roles. Every entry is a fully written walkthrough
+with a sample prompt, step-by-step guidance, and tips. The **flagship spine** (all five ★ starters)
+anchors the journey end-to-end. Stage 1 covers the full chat habit loop (14 walkthroughs). Stage 2
+covers the complete first-party agent roster plus Copilot Pages, Planner, and BizChat (14 walkthroughs).
+Stage 3 adds multi-step delegation patterns including market research, onboarding, competitive analysis,
+and RFP response (9 walkthroughs). Stage 4 covers no-code agent building including onboarding, FAQ,
+and meeting-prep agents (8 walkthroughs). Stage 5 covers production Studio builds including Power
+Automate integration, multi-turn conversation design, autonomous triggers, authentication, and
+pre-publish evaluation (11 walkthroughs)._
