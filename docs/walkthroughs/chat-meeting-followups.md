@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Walk out of any meeting and have decisions, owners, and due dates captured in
 > under five minutes — without re-watching the recording.
 
-**Stage:** Copilot Chat · **For:** End user, Champion · **Level:** Starter · **Time:** 5 min
+**Stage:** Copilot Chat · **For:** End user, Champion · **Level:** Starter · **Time:** 5 min · **Saves:** ~25 min vs. manual
 
 ## When to use this
 You just finished a 45-minute project sync. Three decisions were made, half a dozen tasks got handed
@@ -41,6 +41,15 @@ Summarize the meeting "[meeting name]" from [today/this morning]. Give me:
 - Any open questions that were not resolved
 Format the action items as a table I can paste into an email.
 ```
+
+!!! example "Filled in — a product roadmap sync"
+    ```
+    Summarize the meeting "Q3 Product Roadmap Review" from this morning. Give me:
+    - Decisions made
+    - Action items, each with an owner and a due date
+    - Any open questions that were not resolved
+    Format the action items as a table I can paste into an email.
+    ```
 
 **Why this prompt works:** it names the meeting (so Copilot grounds on the right transcript), asks for
 *specific* outputs instead of a vague "summary," and dictates the output format ("a table I can paste").

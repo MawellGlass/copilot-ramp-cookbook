@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Adoption isn't a launch, it's a habit. A 30-second daily prompt drip turns "we have
 > Copilot" into "we use Copilot" — one small, specific win at a time.
 
-**Stage:** Copilot Chat · **For:** Champion · **Level:** Starter · **Time:** 10 min
+**Stage:** Copilot Chat · **For:** Champion · **Level:** Starter · **Time:** 10 min · **Saves:** ~30 min/week vs. manual
 
 ## When to use this
 Your team has licenses. A few people are flying; most opened Copilot once and drifted back to the old way.
@@ -40,6 +40,14 @@ Give me 5 starter prompts a [marketing] team could paste into Copilot daily —
 each tied to a real task they do every week, with the business value in one line.
 Order them easiest-win first so early tries succeed.
 ```
+
+!!! example "Filled in — a customer success team"
+    ```
+    Give me 5 starter prompts a customer success team could paste into Copilot daily —
+    each tied to a real task they do every week (customer check-ins, renewal prep,
+    escalation handling, QBR writing, onboarding), with the business value in one line.
+    Order them easiest-win first so early tries succeed.
+    ```
 
 **Why this works:** it asks for **role-specific, real-task** prompts (not generic demos), forces a
 **one-line value** so people see the point instantly, and **sequences easiest-first** so the first try

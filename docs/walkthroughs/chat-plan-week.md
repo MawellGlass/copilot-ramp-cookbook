@@ -14,7 +14,7 @@ updated: 2026-06-03
 
 > **One-line value.** Start every Monday with a clear view of what matters, what needs prep, and what you can safely defer — without spending an hour triaging manually.
 
-**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min
+**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~20 min vs. manual
 
 ## When to use this
 

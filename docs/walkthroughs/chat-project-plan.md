@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Go from a blank page and a vague goal to a structured plan — phases, milestones,
 > owners, risks — that you can edit in five minutes instead of staring at for an hour.
 
-**Stage:** Copilot Chat · **For:** Champion, Manager · **Level:** Starter · **Time:** 5 min
+**Stage:** Copilot Chat · **For:** Champion, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~45 min vs. manual
 
 ## When to use this
 You've been handed an initiative — roll out a tool, run an event, ship a pilot — and you need a plan.
@@ -39,6 +39,14 @@ Draft a first-cut project plan for [goal] by [deadline]. Break it into phases wi
 milestones, suggest an owner role for each workstream, and list the top 5 risks with
 a mitigation for each. Put the milestones in a table. Flag any assumptions you made.
 ```
+
+!!! example "Filled in — a CRM migration project"
+    ```
+    Draft a first-cut project plan for migrating our sales team from Salesforce to
+    Microsoft Dynamics 365 by end of Q4 2026. Break it into phases with milestones,
+    suggest an owner role for each workstream, and list the top 5 risks with a mitigation
+    for each. Put the milestones in a table. Flag any assumptions you made.
+    ```
 
 **Why this works:** it specifies the *goal and deadline*, the *structure* (phases → milestones →
 owners), a *concrete artifact* (a table), and asks Copilot to **surface its assumptions** — so you can

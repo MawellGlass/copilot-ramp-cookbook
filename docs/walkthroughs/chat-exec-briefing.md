@@ -14,7 +14,7 @@ updated: 2026-06-03
 
 > **One-line value.** Walk into any exec meeting with sharp talking points — pulled from your docs, not written from scratch at 8 PM.
 
-**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 10 min
+**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 10 min · **Saves:** ~30 min vs. manual
 
 ## When to use this
 

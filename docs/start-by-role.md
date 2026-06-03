@@ -1,0 +1,98 @@
+---
+title: Start by Role
+hide: [toc]
+---
+
+# Start by Role
+
+Not sure where to jump in? Pick your role below — each section shows the highest-value walkthroughs for how you actually spend your day.
+
+<div class="grid cards" markdown>
+
+-   :material-account: **End User / Individual Contributor**
+
+    ---
+
+    You want quick wins that fit your existing day — no building, no setup. Start at Stage 1 and build a daily habit.
+
+    **Start with:**
+
+    - [Turn a meeting into tracked follow-ups](walkthroughs/chat-meeting-followups.md) — the fastest "aha"
+    - [Draft a status update from your week](walkthroughs/chat-weekly-status.md)
+    - [Get up to speed on a long document fast](walkthroughs/chat-document-catch-up.md)
+    - [Catch up on a Teams thread in seconds](walkthroughs/chat-catch-up-thread.md)
+    - [Catch up on a long email thread in seconds](walkthroughs/chat-email-chain-summary.md)
+
+    [:octicons-arrow-right-24: Stage 1 · Chat](stages/stage-1-chat.md)
+
+-   :material-account-tie: **Manager**
+
+    ---
+
+    You want to run meetings better, delegate effectively, and keep projects on track with less manual effort.
+
+    **Start with:**
+
+    - [Prep for a 1:1 in two minutes](walkthroughs/chat-prep-1on1.md)
+    - [Plan your week from your calendar and inbox](walkthroughs/chat-plan-week.md)
+    - [Draft an exec briefing from background materials](walkthroughs/chat-exec-briefing.md)
+    - [Draft a 30/60/90-day onboarding plan](walkthroughs/cowork-onboarding-plan.md)
+    - [Build a meeting-prep agent for recurring 1:1s](walkthroughs/agent-builder-meeting-prep-agent.md)
+
+    [:octicons-arrow-right-24: Stage 3 · Cowork](stages/stage-3-cowork.md)
+
+-   :material-bullhorn: **Champion / Adoption Lead**
+
+    ---
+
+    You're driving Copilot adoption for your team or org. Your job is to build the habit, surface wins, and scale what works.
+
+    **Start with:**
+
+    - [Run a "Prompt of the Day" for your team](walkthroughs/chat-prompt-of-the-day.md)
+    - [Find where Copilot is landing with Workforce insights](walkthroughs/first-party-workforce-insights.md)
+    - [Build a team-knowledge agent over SharePoint](walkthroughs/agent-builder-team-knowledge.md)
+    - [Build an FAQ agent for a recurring process](walkthroughs/agent-builder-faq-agent.md)
+    - [Build a Cowork recipe library for your org](walkthroughs/cowork-recipe-library.md)
+
+    [:octicons-arrow-right-24: Stage 4 · Agent Builder](stages/stage-4-agent-builder.md)
+
+-   :material-code-braces: **Maker / Developer**
+
+    ---
+
+    You're ready to build agents that do real work in production — knowledge sources, actions, MCP tools, and governance.
+
+    **Start with:**
+
+    - [Build your first Studio agent](walkthroughs/studio-first-agent.md)
+    - [Trigger a Power Automate flow from inside a Studio agent](walkthroughs/studio-power-automate-flow.md)
+    - [Design a multi-turn conversation with fallback](walkthroughs/studio-multi-turn-conversation.md)
+    - [Configure an autonomous event-triggered agent](walkthroughs/studio-autonomous-triggers.md)
+    - [Test and evaluate before publishing](walkthroughs/studio-test-evaluate.md)
+
+    [:octicons-arrow-right-24: Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+
+-   :material-shield-lock: **IT Admin**
+
+    ---
+
+    You're responsible for governance, security, and making sure agents behave correctly in production at scale.
+
+    **Start with:**
+
+    - [Secure a Studio agent with authentication](walkthroughs/studio-authentication.md)
+    - [Govern and monitor agents at scale](walkthroughs/studio-govern-monitor.md)
+    - [Publish and govern your agent](walkthroughs/studio-publish.md)
+    - [Find where Copilot is landing with Workforce insights](walkthroughs/first-party-workforce-insights.md)
+    - [Know when to graduate from Agent Builder to Studio](walkthroughs/agent-builder-vs-studio.md)
+
+    [:octicons-arrow-right-24: Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+
+</div>
+
+---
+
+> **Not sure which role fits?** Start with [Stage 1 · Chat](stages/stage-1-chat.md) — it applies to everyone regardless of role, and you'll quickly find your footing from there.
+>
+> [:octicons-arrow-right-24: See the full journey](the-journey.md)

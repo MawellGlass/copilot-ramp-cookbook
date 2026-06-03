@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Take the rambling, slightly-too-honest draft you'd never actually send and turn
 > it into something tight, diplomatic, and impossible to misread — in one prompt.
 
-**Stage:** Copilot Chat · **For:** End user · **Level:** Starter · **Time:** 3 min
+**Stage:** Copilot Chat · **For:** End user · **Level:** Starter · **Time:** 3 min · **Saves:** ~10 min vs. manual
 
 ## When to use this
 You've written the email. It says what you mean — but it's three paragraphs too long, a little defensive,
@@ -38,6 +38,14 @@ Rewrite this email to be about 40% shorter and more direct, with a polite,
 confident tone for a skeptical executive who skims. Lead with the ask, keep one
 clear next step, and cut anything defensive. Don't change the facts.
 ```
+
+!!! example "Filled in — a budget approval request to a CFO"
+    ```
+    Rewrite this email to be about 40% shorter and more direct, with a polite,
+    confident tone for a CFO who is skeptical about the ROI and skims everything.
+    Lead with the budget ask and the expected return. Keep one clear next step.
+    Cut anything defensive or that explains why we need the budget. Don't change the facts.
+    ```
 
 **Why this works:** it names the *reader* (skeptical exec), the *constraint* (40% shorter), the
 *structure* (lead with the ask), and the *guardrail* (don't change the facts). Generic "make this

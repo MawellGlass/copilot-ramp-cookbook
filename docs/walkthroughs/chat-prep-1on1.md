@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Walk into your next 1:1 with talking points pulled from the work you actually
 > shared this week — not a blank notepad and a vague "so, how's it going?"
 
-**Stage:** Copilot Chat · **For:** Manager, End user · **Level:** Starter · **Time:** 2 min
+**Stage:** Copilot Chat · **For:** Manager, End user · **Level:** Starter · **Time:** 2 min · **Saves:** ~15 min vs. manual
 
 ## When to use this
 Your 1:1 with someone starts in five minutes and you haven't thought about it since last week. You
@@ -39,6 +39,13 @@ Help me prep for my 1:1 with [name]. Summarize what we've been working on togeth
 over the last two weeks across email and Teams, flag anything still open or waiting
 on either of us, and suggest 3 topics worth raising. Keep it to half a screen.
 ```
+
+!!! example "Filled in — a weekly 1:1 with a direct report"
+    ```
+    Help me prep for my 1:1 with Jordan. Summarize what we've been working on together
+    over the last two weeks across email and Teams, flag anything still open or waiting
+    on either of us, and suggest 3 topics worth raising. Keep it to half a screen.
+    ```
 
 **Why this works:** it scopes the input (*last two weeks, you two*), asks for the part that's easy to
 forget (*what's still open or waiting*), and ends with an actionable output (*3 topics*). You're not

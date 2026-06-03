@@ -14,7 +14,7 @@ updated: 2026-06-03
 
 > **One-line value.** Open a 40-message thread and know exactly where things stand — and what's being asked of you — in under a minute.
 
-**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min
+**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~15 min vs. manual
 
 ## When to use this
 

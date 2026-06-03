@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** A 30-page document reduced to the handful of things *your* role actually needs to
 > know — plus the risks hiding on page 22 — before the meeting where everyone pretends they read it.
 
-**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 3 min
+**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 3 min · **Saves:** ~20 min vs. manual
 
 ## When to use this
 Someone drops a long spec, contract, strategy doc, or research report in your lap and the review is
@@ -40,6 +40,13 @@ Summarize this document for a [sales engineer]. Give me the 3 things I most need
 know, anything that affects a customer commitment, and any risks or open questions
 I should raise. Skip the background — assume I know the basics.
 ```
+
+!!! example "Filled in — a solutions architect reviewing a security whitepaper"
+    ```
+    Summarize this document for a solutions architect. Give me the 3 things I most need to
+    know, anything that could affect a production deployment commitment, and any risks or
+    open questions I should raise with the customer. Skip the background — assume I know the basics.
+    ```
 
 **Why this works:** the role tag (*for a sales engineer*) and the "what matters to me" framing (*affects
 a customer commitment*) turn a flat summary into a filtered one. You're telling Copilot which 5% of the

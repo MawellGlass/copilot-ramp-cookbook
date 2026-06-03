@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Get pulled into an 80-message thread and know — in 30 seconds — what's being asked
 > of you and by when, without scrolling to the top.
 
-**Stage:** Copilot Chat · **For:** End user · **Level:** Starter · **Time:** 3 min
+**Stage:** Copilot Chat · **For:** End user · **Level:** Starter · **Time:** 3 min · **Saves:** ~10 min vs. manual
 
 ## When to use this
 You come back from a meeting to a Teams thread with your name in it and 80 messages of back-and-forth.
@@ -38,6 +38,14 @@ Summarize this Teams thread for me. I was @mentioned but haven't read it. Tell m
 specifically: what's being asked of me, by when, and what I'd need to decide or
 reply to — plus the 2–3 lines of context I need to respond intelligently.
 ```
+
+!!! example "Filled in — a 50-message channel thread about a release decision"
+    ```
+    Summarize this Teams thread for me. I was @mentioned but haven't read it.
+    The thread is about the upcoming v2.4 release decision.
+    Tell me specifically: what's being asked of me, by when, and what I'd need to
+    decide or reply to — plus the 2–3 lines of context I need to respond intelligently.
+    ```
 
 **Why this works:** it doesn't ask for a generic summary — it asks for *your* action ("what's being
 asked of me, by when"). That single shift turns a wall of text into a to-do with a deadline and just

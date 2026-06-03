@@ -15,7 +15,7 @@ updated: 2026-06-03
 > **One-line value.** Turn a week of scattered emails, chats, and meetings into a crisp five-bullet
 > update for your manager — in the time it takes to refill your coffee.
 
-**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min
+**Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~20 min vs. manual
 
 ## When to use this
 It's Friday at 4pm and you owe your manager a status update. The work happened — across a dozen email
@@ -39,6 +39,14 @@ Based on my last 5 working days of email, Teams messages, and meetings, draft a
 5-bullet status update for my manager — what shipped, what's in progress, and
 what's blocked. Keep each bullet to one line, plain and skimmable.
 ```
+
+!!! example "Filled in — a product manager on an engineering team"
+    ```
+    Based on my last 5 working days of email, Teams messages, and meetings, draft a
+    5-bullet status update for my manager — what shipped, what's in progress, and
+    what's blocked. Keep each bullet to one line, plain and skimmable.
+    Rewrite the "in progress" bullets to be specific about the feature name, not just the project.
+    ```
 
 **Why this works:** it names the **window** (5 working days), the **sources** (email, Teams, meetings),
 the **structure** (shipped / in-progress / blocked), the **audience** (manager), and the **format**
