@@ -101,7 +101,7 @@ Doing this after *every* meeting is the tell that you're ready for **Stage 2**. 
 agents in Teams channels can post the action items to the team for you. You've just learned to do by
 hand what an agent will soon do on autopilot.
 
-> **Next:** [First-Party Agents → Auto-recap every meeting with Facilitator](../first-party/facilitator-auto-recap.md)
+> **Next:** [First-Party Agents → Auto-recap every meeting with Facilitator](first-party-facilitator-auto-recap.md)
 
 ## Related
 - [Chat → Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)
