@@ -1,0 +1,17 @@
+/* Centering and spacing for self-rendered mermaid diagrams. */
+.mermaid-rendered {
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.mermaid-rendered svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Before JS renders, show the source as a plain code block (no flash of raw markup). */
+pre.mermaid-diagram {
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}

@@ -64,6 +64,11 @@ Each stage has an **overview**, **use cases** you can filter by your role, and *
 
 [Start at Stage 1 → Copilot Chat](stages/stage-1-chat.md){ .md-button .md-button--primary }
 
+!!! tip "Leading a rollout, not just learning yourself?"
+    The stages above ramp an *individual*. If you're standing up Copilot for an *organization*, see
+    **[Build your AI empowerment team](empowerment/index.md)** — who's on the team, and a
+    [decision tree](empowerment/decision-tree.md) for routing each idea to the right tool.
+
 ---
 
 <div class="home-resources">

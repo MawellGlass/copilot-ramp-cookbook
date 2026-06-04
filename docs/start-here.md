@@ -11,6 +11,11 @@ This site is a ladder, not a library. You don't need to read it front to back â€
 !!! tip "Prefer to start from your job, not your skill level?"
     Head to **[Start by Role](start-by-role.md)** â€” the same walkthroughs, grouped by how you actually spend your day.
 
+!!! note "Rolling Copilot out for a team or org?"
+    This page finds *your* rung. To organize everyone else's, see
+    **[Build your AI empowerment team](empowerment/index.md)** and the
+    **[Choose the Right Path](empowerment/decision-tree.md)** decision tree.
+
 ---
 
 ## The 2-minute self-check

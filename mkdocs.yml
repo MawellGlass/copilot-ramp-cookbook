@@ -61,9 +61,11 @@ theme:
 extra_css:
   - stylesheets/home.css
   - stylesheets/catalog.css
+  - stylesheets/mermaid.css
 
 extra_javascript:
   - javascripts/catalog.js
+  - javascripts/mermaid-render.js
 
 plugins:
   - search
@@ -83,7 +85,11 @@ plugins:
 markdown_extensions:
   - admonition                   # the > **Next:** / 📚 callouts render as cards
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid          # rendered by javascripts/mermaid-render.js (Material's
+          class: mermaid-diagram # built-in mermaid integration renders empty in this setup)
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -127,6 +133,9 @@ nav:
       - "Legal & Compliance Guidance Agent": solutions/legal-compliance-agent.md
       - "IT Access Request Agent": solutions/it-access-request-agent.md
       - "Sales Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
+  - AI Empowerment:
+      - empowerment/index.md
+      - "Choose the Right Path": empowerment/decision-tree.md
   - Resources:
       - Use-Case Catalog: CATALOG.md
       - Quick Wins: quick-wins.md
