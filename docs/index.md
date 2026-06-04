@@ -26,7 +26,7 @@ hide:
   <span class="arrow">→</span>
   <a class="step dest" href="stages/stage-5-studio/"><span class="n">STAGE 5</span><span class="t">Copilot Studio</span><span class="d">Build real, production-grade agents.</span></a>
   <span class="arrow">→</span>
-  <a class="step" href="stages/stage-6-foundry/"><span class="n">STAGE 6</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
+  <a class="step dest" href="stages/stage-6-foundry/"><span class="n">STAGE 6</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
 </div>
 
 <p class="audience"><strong>Who it's for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · IT/admins enabling each stage safely.</p>
