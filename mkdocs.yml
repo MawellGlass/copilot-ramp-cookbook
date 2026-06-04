@@ -75,6 +75,10 @@ plugins:
       date_from_meta:
         as_creation: updated
       length: 20
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+      fallback_to_build_date: true   # avoid --strict failures for untracked files
 
 markdown_extensions:
   - admonition                   # the > **Next:** / 📚 callouts render as cards

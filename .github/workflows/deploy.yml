@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so git-revision-date can read accurate "last updated" dates
 
       - name: Set up Python
         uses: actions/setup-python@v5
