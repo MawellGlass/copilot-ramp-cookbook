@@ -122,6 +122,8 @@ nav:
   - Resources:
       - Use-Case Catalog: CATALOG.md
       - Quick Wins: quick-wins.md
+      - "Licensing & Prerequisites": prerequisites.md
+      - Glossary: glossary.md
       - Credit Estimator: credit-estimator.md
       - "What's New": whats-new.md
       - Resources: RESOURCES.md
