@@ -106,6 +106,18 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
   transition: background 0.15s, color 0.15s;
 }
 .btn-add-row:hover { background: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
+.btn-add-row.btn-escalation { border-color: var(--md-accent-fg-color, #e65100); color: var(--md-accent-fg-color, #e65100); }
+.btn-add-row.btn-escalation:hover { background: var(--md-accent-fg-color, #e65100); color: #fff; }
+
+/* escalation section */
+.section-divider-row td {
+  background: var(--md-code-bg-color); padding: 0.35rem 0.75rem;
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--md-default-fg-color--light);
+  border-top: 2px solid var(--md-default-fg-color--lightest);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.escalation-row > td:first-child { border-left: 3px solid var(--md-accent-fg-color, #e65100); }
 
 /* deploy toggle */
 .deploy-toggle { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
@@ -211,6 +223,15 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <input type="number" id="avgInteractions" min="1" value="10" oninput="recalc()">
     <div class="hint">How many times does a typical active user interact with this agent each month</div>
   </div>
+  <div class="calc-field">
+    <label>Escalation rate</label>
+    <div class="range-row">
+      <input type="range" id="escalationRateSlider" min="0" max="100" value="20" oninput="syncRange('escalationRate','escalationRateSlider');recalc()">
+      <input type="number" id="escalationRate" min="0" max="100" value="20" oninput="syncRange('escalationRateSlider','escalationRate');recalc()">
+      <span>%</span>
+    </div>
+    <div class="hint">% of interactions that require additional handling beyond the normal path</div>
+  </div>
 </div>
 
 <hr class="calc-divider">
@@ -229,7 +250,12 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
         <th></th>
       </tr>
     </thead>
-    <tbody id="prompt-tbody"></tbody>
+    <tbody id="normal-tbody"></tbody>
+    <tbody id="escalation-tbody">
+      <tr class="section-divider-row">
+        <td colspan="5">Escalation path — <span id="esc-pct-label">20</span>% of interactions trigger these additional steps</td>
+      </tr>
+    </tbody>
     <tfoot>
       <tr>
         <td class="foot-label">Total</td>
@@ -242,7 +268,10 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
   </table>
 </div>
 
-<button class="btn-add-row" onclick="addRow()">+ Add prompt type</button>
+<div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+  <button class="btn-add-row" style="margin-bottom:0" onclick="addRow('',1,1,false)">+ Add normal step</button>
+  <button class="btn-add-row btn-escalation" style="margin-bottom:0" onclick="addRow('',1,1,true)">+ Add escalation step</button>
+</div>
 
 <hr class="calc-divider">
 
@@ -302,25 +331,29 @@ function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
-function addRow(name, count, credits) {
+function addRow(name, count, credits, isEscalation) {
   var id = ++rowId;
   var tr = document.createElement('tr');
   tr.dataset.rowId = id;
+  if (isEscalation) tr.classList.add('escalation-row');
   tr.innerHTML =
     '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(count||1)+'" oninput="recalc()"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
     '<td><button class="pt-del" title="Remove row" onclick="removeRow('+id+')">✕</button></td>';
-  document.getElementById('prompt-tbody').appendChild(tr);
+  var tbody = isEscalation ? document.getElementById('escalation-tbody') : document.getElementById('normal-tbody');
+  tbody.appendChild(tr);
   recalc();
 }
 
 function removeRow(id) {
-  var tbody = document.getElementById('prompt-tbody');
-  if (tbody.rows.length <= 1) return;
   var tr = document.querySelector('[data-row-id="'+id+'"]');
-  if (tr) { tr.remove(); recalc(); }
+  if (!tr) return;
+  var tbody = tr.parentElement;
+  var dataRows = tbody.querySelectorAll('tr:not(.section-divider-row)');
+  if (dataRows.length <= 1 && tbody.id === 'normal-tbody') return;
+  tr.remove(); recalc();
 }
 
 function recalc() {
@@ -328,6 +361,7 @@ function recalc() {
   var licPct   = parseFloat(document.getElementById('licensePct').value)   || 0;
   var adoptPct = parseFloat(document.getElementById('adoptionRate').value) || 0;
   var avgInt   = parseFloat(document.getElementById('avgInteractions').value) || 0;
+  var escPct   = parseFloat(document.getElementById('escalationRate').value)  || 0;
 
   var embedded   = document.getElementById('toggle-embedded').classList.contains('active');
   var licensed   = Math.round(total * licPct / 100);
@@ -336,7 +370,7 @@ function recalc() {
   var active     = Math.round(billedBase * adoptPct / 100);
 
   var totalCpud = 0;
-  document.querySelectorAll('#prompt-tbody tr').forEach(function(tr) {
+  document.querySelectorAll('#normal-tbody tr').forEach(function(tr) {
     var ins = tr.querySelectorAll('.pt-num');
     var n = parseFloat(ins[0].value) || 0;
     var c = parseFloat(ins[1].value) || 0;
@@ -345,8 +379,19 @@ function recalc() {
     var cell = document.getElementById('row-sub-'+tr.dataset.rowId);
     if (cell) cell.textContent = fmtDec(sub);
   });
+  document.querySelectorAll('#escalation-tbody tr:not(.section-divider-row)').forEach(function(tr) {
+    var ins = tr.querySelectorAll('.pt-num');
+    var n = parseFloat(ins[0].value) || 0;
+    var c = parseFloat(ins[1].value) || 0;
+    var sub = n * c;
+    totalCpud += sub * escPct / 100;
+    var cell = document.getElementById('row-sub-'+tr.dataset.rowId);
+    if (cell) cell.textContent = fmtDec(sub);
+  });
 
   document.getElementById('foot-credits').textContent = fmtDec(totalCpud);
+  var escLabel = document.getElementById('esc-pct-label');
+  if (escLabel) escLabel.textContent = Math.round(escPct);
 
   var monthlyP = active * avgInt;
   var monthlyC = active * avgInt * totalCpud;
@@ -393,10 +438,10 @@ function setDeployMode(mode) {
 }
 
 var scenarios = {
-  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80 },
-  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70 },
-  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65 },
-  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60 },
+  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80, escalationRate: 10 },
+  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70, escalationRate: 20 },
+  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65, escalationRate: 20 },
+  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60, escalationRate: 15 },
 };
 
 function applyScenario(key, evt) {
@@ -406,12 +451,14 @@ function applyScenario(key, evt) {
   document.getElementById('licensePctSlider').value   = s.licensePct;
   document.getElementById('adoptionRate').value       = s.adoptionRate;
   document.getElementById('adoptionRateSlider').value = s.adoptionRate;
+  document.getElementById('escalationRate').value       = s.escalationRate;
+  document.getElementById('escalationRateSlider').value = s.escalationRate;
   document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
   if (evt && evt.target) evt.target.classList.add('active');
   recalc();
 }
 
-defaultRows.forEach(function(r){ addRow(r.name, r.count, r.credits); });
+defaultRows.forEach(function(r){ addRow(r.name, r.count, r.credits, false); });
 recalc();
 </script>
 
