@@ -207,9 +207,9 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <div class="hint" id="adopt-hint">% of unlicensed users who actively use the agent each month (embedded mode)</div>
   </div>
   <div class="calc-field">
-    <label for="workDays">Average working days / month</label>
-    <input type="number" id="workDays" min="1" max="31" value="22" oninput="recalc()">
-    <div class="hint">Standard = 22; divides the monthly interaction total to derive the avg interactions / day result</div>
+    <label for="avgInteractions">Avg interactions / user / month</label>
+    <input type="number" id="avgInteractions" min="1" value="10" oninput="recalc()">
+    <div class="hint">How many times does a typical active user interact with this agent each month</div>
   </div>
 </div>
 
@@ -223,8 +223,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <thead>
       <tr>
         <th>Agent feature / interaction type</th>
-        <th class="col-num">Interactions / user / month</th>
-        <th class="col-num">Copilot Credits / interaction</th>
+        <th class="col-num">Credits / interaction</th>
         <th class="col-num">Credits / user / month</th>
         <th></th>
       </tr>
@@ -233,7 +232,6 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <tfoot>
       <tr>
         <td class="foot-label">Total</td>
-        <td class="foot-val" id="foot-prompts" style="text-align:right">—</td>
         <td></td>
         <td class="foot-val" id="foot-credits" style="text-align:right">—</td>
         <td></td>
@@ -251,7 +249,6 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 <div class="results-grid">
   <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl"><span id="lbl-billed">Unlicensed users (billed)</span></div></div>
   <div class="result-card"><div class="val" id="res-active">—</div><div class="lbl"><span id="lbl-active">Active unlicensed / month</span></div></div>
-  <div class="result-card"><div class="val" id="res-daily">—</div><div class="lbl">Avg interactions / day</div></div>
   <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total interactions / month</div></div>
   <div class="result-card"><div class="val" id="res-credits">—</div><div class="lbl">Credits / month (org)</div></div>
   <div class="result-card"><div class="val" id="res-per-user">—</div><div class="lbl">Credits / active user / month</div></div>
@@ -281,20 +278,20 @@ function syncRange(toId, fromId) {
 
 var defaultRows = [
   // ── Core agent interactions ──
-  { name: 'Classic answer',                                    prompts: 1,    credits: 1    },
-  { name: 'Generative answer',                                 prompts: 1,    credits: 2    },
-  { name: 'Agent action',                                      prompts: 1,    credits: 5    },
-  { name: 'Tenant graph grounding for messages',               prompts: 1,    credits: 10   },
-  { name: 'Agent flow actions (per 100 actions = 13 credits)', prompts: 1,    credits: 13   },
+  { name: 'Classic answer',                                    credits: 1    },
+  { name: 'Generative answer',                                 credits: 2    },
+  { name: 'Agent action',                                      credits: 5    },
+  { name: 'Tenant graph grounding for messages',               credits: 10   },
+  { name: 'Agent flow actions (per 100 actions = 13 credits)', credits: 13   },
   // ── AI tools ──
-  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    prompts: 1, credits: 0.1  },
-  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', prompts: 1, credits: 1.5  },
-  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', prompts: 1, credits: 10   },
-  { name: 'AI tool — Content processing (per page = 8 credits)',                prompts: 1, credits: 8    },
+  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    credits: 0.1  },
+  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', credits: 1.5  },
+  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', credits: 10   },
+  { name: 'AI tool — Content processing (per page = 8 credits)',                credits: 8    },
   // ── Voice (if applicable) ──
-  { name: 'Voice — Basic (classic orchestration)',             prompts: 1,    credits: 10   },
-  { name: 'Voice — Standard (generative orchestration)',       prompts: 1,    credits: 35   },
-  { name: 'Voice — Premium (real-time)',                       prompts: 1,    credits: 75   },
+  { name: 'Voice — Basic (classic orchestration)',             credits: 10   },
+  { name: 'Voice — Standard (generative orchestration)',       credits: 35   },
+  { name: 'Voice — Premium (real-time)',                       credits: 75   },
 ];
 
 var rowId = 0;
@@ -303,13 +300,12 @@ function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
-function addRow(name, prompts, credits) {
+function addRow(name, credits) {
   var id = ++rowId;
   var tr = document.createElement('tr');
   tr.dataset.rowId = id;
   tr.innerHTML =
     '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+
-    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(prompts||1)+'" oninput="recalc()"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
     '<td><button class="pt-del" title="Remove row" onclick="removeRow('+id+')">✕</button></td>';
@@ -328,7 +324,7 @@ function recalc() {
   var total    = parseFloat(document.getElementById('totalUsers').value)   || 0;
   var licPct   = parseFloat(document.getElementById('licensePct').value)   || 0;
   var adoptPct = parseFloat(document.getElementById('adoptionRate').value) || 0;
-  var workDays = parseFloat(document.getElementById('workDays').value)     || 22;
+  var avgInt   = parseFloat(document.getElementById('avgInteractions').value) || 0;
 
   var embedded   = document.getElementById('toggle-embedded').classList.contains('active');
   var licensed   = Math.round(total * licPct / 100);
@@ -336,24 +332,20 @@ function recalc() {
   var billedBase = embedded ? unlicensed : total;
   var active     = Math.round(billedBase * adoptPct / 100);
 
-  var totalPpud = 0, totalCpud = 0;
+  var totalCpud = 0;
   document.querySelectorAll('#prompt-tbody tr').forEach(function(tr) {
-    var ins = tr.querySelectorAll('.pt-num');
-    var p = parseFloat(ins[0].value) || 0;
-    var c = parseFloat(ins[1].value) || 0;
-    totalPpud += p;
-    totalCpud += p * c;
+    var c = parseFloat(tr.querySelector('.pt-num').value) || 0;
+    var sub = avgInt * c;
+    totalCpud += sub;
     var cell = document.getElementById('row-sub-'+tr.dataset.rowId);
-    if (cell) cell.textContent = fmtDec(p * c);
+    if (cell) cell.textContent = fmtDec(sub);
   });
 
-  document.getElementById('foot-prompts').textContent = fmtDec(totalPpud);
   document.getElementById('foot-credits').textContent = fmtDec(totalCpud);
 
-  var monthlyP = active * totalPpud;
-  var dailyP   = workDays > 0 ? monthlyP / workDays : 0;
+  var monthlyP = active * avgInt;
   var monthlyC = active * totalCpud;
-  var perUser  = active > 0 ? monthlyC / active : 0;
+  var perUser  = totalCpud;
 
   var lblBilled = document.getElementById('lbl-billed');
   var lblActive = document.getElementById('lbl-active');
@@ -367,7 +359,6 @@ function recalc() {
 
   document.getElementById('res-licensed').textContent        = fmt(billedBase);
   document.getElementById('res-active').textContent          = fmt(active);
-  document.getElementById('res-daily').textContent           = fmt(dailyP);
   document.getElementById('res-monthly-prompts').textContent = fmt(monthlyP);
   document.getElementById('res-credits').textContent         = fmt(monthlyC);
   document.getElementById('res-per-user').textContent        = fmt(perUser);
@@ -397,10 +388,10 @@ function setDeployMode(mode) {
 }
 
 var scenarios = {
-  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80, workDays: 22 },
-  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70, workDays: 22 },
-  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65, workDays: 22 },
-  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60, workDays: 22 },
+  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80 },
+  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70 },
+  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65 },
+  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60 },
 };
 
 function applyScenario(key, evt) {
@@ -410,13 +401,12 @@ function applyScenario(key, evt) {
   document.getElementById('licensePctSlider').value   = s.licensePct;
   document.getElementById('adoptionRate').value       = s.adoptionRate;
   document.getElementById('adoptionRateSlider').value = s.adoptionRate;
-  document.getElementById('workDays').value           = s.workDays;
   document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
   if (evt && evt.target) evt.target.classList.add('active');
   recalc();
 }
 
-defaultRows.forEach(function(r){ addRow(r.name, r.prompts, r.credits); });
+defaultRows.forEach(function(r){ addRow(r.name, r.credits); });
 recalc();
 </script>
 
