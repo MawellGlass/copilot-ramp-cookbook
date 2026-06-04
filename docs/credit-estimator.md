@@ -210,15 +210,6 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <div class="hint" id="license-hint">Embedded mode: licensed users accrue zero credits — only unlicensed users are billed. Pilots typically 10–20 %; full rollouts 60–100 %</div>
   </div>
   <div class="calc-field">
-    <label>Expected adoption rate</label>
-    <div class="range-row">
-      <input type="range" id="adoptionRateSlider" min="0" max="100" value="70" oninput="syncRange('adoptionRate','adoptionRateSlider');recalc()">
-      <input type="number" id="adoptionRate" min="0" max="100" value="70" oninput="syncRange('adoptionRateSlider','adoptionRate');recalc()">
-      <span>%</span>
-    </div>
-    <div class="hint" id="adopt-hint">% of unlicensed users who actively use the agent each month (embedded mode)</div>
-  </div>
-  <div class="calc-field">
     <label for="avgInteractions">Avg interactions / user / month</label>
     <input type="number" id="avgInteractions" min="1" value="10" oninput="recalc()">
     <div class="hint">How many times does a typical active user interact with this agent each month</div>
@@ -279,7 +270,6 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 <div class="section-label">Estimated monthly consumption</div>
 <div class="results-grid">
   <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl"><span id="lbl-billed">Unlicensed users (billed)</span></div></div>
-  <div class="result-card"><div class="val" id="res-active">—</div><div class="lbl"><span id="lbl-active">Active unlicensed / month</span></div></div>
   <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total interactions / month</div></div>
   <div class="result-card"><div class="val" id="res-credits">—</div><div class="lbl">Credits / month (org)</div></div>
   <div class="result-card"><div class="val" id="res-per-user">—</div><div class="lbl">Credits / active user / month</div></div>
@@ -359,7 +349,6 @@ function removeRow(id) {
 function recalc() {
   var total    = parseFloat(document.getElementById('totalUsers').value)   || 0;
   var licPct   = parseFloat(document.getElementById('licensePct').value)   || 0;
-  var adoptPct = parseFloat(document.getElementById('adoptionRate').value) || 0;
   var avgInt   = parseFloat(document.getElementById('avgInteractions').value) || 0;
   var escPct   = parseFloat(document.getElementById('escalationRate').value)  || 0;
 
@@ -367,7 +356,7 @@ function recalc() {
   var licensed   = Math.round(total * licPct / 100);
   var unlicensed = total - licensed;
   var billedBase = embedded ? unlicensed : total;
-  var active     = Math.round(billedBase * adoptPct / 100);
+  var active     = billedBase;
 
   var totalCpud = 0;
   document.querySelectorAll('#normal-tbody tr').forEach(function(tr) {
@@ -398,17 +387,9 @@ function recalc() {
   var perUser  = avgInt * totalCpud;
 
   var lblBilled = document.getElementById('lbl-billed');
-  var lblActive = document.getElementById('lbl-active');
   if (lblBilled) lblBilled.textContent = embedded ? 'Unlicensed users (billed)' : 'Total users (all billed)';
-  if (lblActive) lblActive.textContent = embedded ? 'Active unlicensed / month' : 'Active users / month';
-
-  var adoptHint = document.getElementById('adopt-hint');
-  if (adoptHint) adoptHint.textContent = embedded
-    ? '% of unlicensed users who actively use the agent each month (embedded mode)'
-    : '% of all users in scope who actively use the agent each month (standalone mode)';
 
   document.getElementById('res-licensed').textContent        = fmt(billedBase);
-  document.getElementById('res-active').textContent          = fmt(active);
   document.getElementById('res-monthly-prompts').textContent = fmt(monthlyP);
   document.getElementById('res-credits').textContent         = fmt(monthlyC);
   document.getElementById('res-per-user').textContent        = fmt(perUser);
@@ -420,7 +401,7 @@ function recalc() {
     if (ratio <= 1) {
       resultEl.innerHTML = '✅ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> fits within budget — <strong>'+fmt(budget-monthlyC)+' credits headroom</strong> ('+Math.round((1-ratio)*100)+'% spare).';
     } else {
-      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce prompt volume, adoption rate, or credit mix.';
+      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce interactions per user, escalation rate, or the credit mix.';
     }
   } else { resultEl.innerHTML = ''; }
 }
@@ -438,19 +419,17 @@ function setDeployMode(mode) {
 }
 
 var scenarios = {
-  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80, escalationRate: 10 },
-  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70, escalationRate: 20 },
-  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65, escalationRate: 20 },
-  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60, escalationRate: 15 },
+  pilot:      { totalUsers:   50, licensePct: 100, escalationRate: 10 },
+  dept:       { totalUsers:  500, licensePct:  80, escalationRate: 20 },
+  org:        { totalUsers: 5000, licensePct:  60, escalationRate: 20 },
+  enterprise: { totalUsers:25000, licensePct:  40, escalationRate: 15 },
 };
 
 function applyScenario(key, evt) {
   var s = scenarios[key];
-  document.getElementById('totalUsers').value         = s.totalUsers;
-  document.getElementById('licensePct').value         = s.licensePct;
-  document.getElementById('licensePctSlider').value   = s.licensePct;
-  document.getElementById('adoptionRate').value       = s.adoptionRate;
-  document.getElementById('adoptionRateSlider').value = s.adoptionRate;
+  document.getElementById('totalUsers').value           = s.totalUsers;
+  document.getElementById('licensePct').value           = s.licensePct;
+  document.getElementById('licensePctSlider').value     = s.licensePct;
   document.getElementById('escalationRate').value       = s.escalationRate;
   document.getElementById('escalationRateSlider').value = s.escalationRate;
   document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
