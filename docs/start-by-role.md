@@ -7,6 +7,9 @@ hide: [toc]
 
 Not sure where to jump in? Pick your role below — each section shows the highest-value walkthroughs for how you actually spend your day.
 
+!!! tip "Know your skill level already?"
+    If you'd rather start from where you are on the ramp, use **[Start by Stage](start-here.md)** and its 2-minute self-check.
+
 <div class="grid cards" markdown>
 
 -   👤 **End User / Individual Contributor**
@@ -95,4 +98,4 @@ Not sure where to jump in? Pick your role below — each section shows the highe
 
 > **Not sure which role fits?** Start with [Stage 1 · Chat](stages/stage-1-chat.md) — it applies to everyone regardless of role, and you'll quickly find your footing from there.
 >
-> [→ See the full journey](the-journey.md)
+> Or take the [2-minute self-check](start-here.md) to find your rung, then [see the full journey](the-journey.md).
