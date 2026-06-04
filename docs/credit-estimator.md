@@ -225,7 +225,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
         <th>Agent feature / interaction type</th>
         <th class="col-num">Uses / interaction</th>
         <th class="col-num">Credits / use</th>
-        <th class="col-num">Credits / user / month</th>
+        <th class="col-num">Credits / interaction</th>
         <th></th>
       </tr>
     </thead>
@@ -340,7 +340,7 @@ function recalc() {
     var ins = tr.querySelectorAll('.pt-num');
     var n = parseFloat(ins[0].value) || 0;
     var c = parseFloat(ins[1].value) || 0;
-    var sub = avgInt * n * c;
+    var sub = n * c;
     totalCpud += sub;
     var cell = document.getElementById('row-sub-'+tr.dataset.rowId);
     if (cell) cell.textContent = fmtDec(sub);
@@ -349,8 +349,8 @@ function recalc() {
   document.getElementById('foot-credits').textContent = fmtDec(totalCpud);
 
   var monthlyP = active * avgInt;
-  var monthlyC = active * totalCpud;
-  var perUser  = totalCpud;
+  var monthlyC = active * avgInt * totalCpud;
+  var perUser  = avgInt * totalCpud;
 
   var lblBilled = document.getElementById('lbl-billed');
   var lblActive = document.getElementById('lbl-active');
