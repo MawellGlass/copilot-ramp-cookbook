@@ -23,34 +23,90 @@ Your declarative agents are bumping into limits: you need a real action against 
 
 ---
 
-## Walkthroughs in this stage
+## Walkthroughs — technical foundations
 
-Build in order — start with your first agent, then add actions, tools, publishing, and governance.
+Build these in order to establish the platform skills all functional agents depend on.
 
-### [Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
-**Start here.**
+??? note "Core Studio walkthroughs"
 
-### [Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)
+    ### [Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
+    **Start here.** Go from Agent Builder to a real designed conversation with topics and grounding.
 
-### [Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)
+    ### [Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)
+    Let the agent do things, not just answer — look up records, create tickets, trigger workflows.
 
-### [Publish and govern your agent](../walkthroughs/studio-publish.md)
+    ### [Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)
+    Extend the agent with external tools.
 
-### [Govern and monitor your agents at scale](../walkthroughs/studio-govern-monitor.md)
-For IT/admin.
+    ### [Trigger a Power Automate flow from inside a Studio agent](../walkthroughs/studio-power-automate-flow.md)
+    Connect your agent to real business systems via Power Automate.
 
-### [Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)
-For managers and champions.
+    ### [Design a multi-turn conversation with fallback and clarification](../walkthroughs/studio-multi-turn-conversation.md)
+    Build an agent that asks what it needs to know and recovers gracefully.
 
-### [Trigger a Power Automate flow from inside a Studio agent](../walkthroughs/studio-power-automate-flow.md)
+    ### [Configure an autonomous event-triggered agent](../walkthroughs/studio-autonomous-triggers.md)
+    Build an agent that acts when something happens — no user prompt required.
 
-### [Design a multi-turn conversation with fallback and clarification](../walkthroughs/studio-multi-turn-conversation.md)
+    ### [Secure a Studio agent with authentication](../walkthroughs/studio-authentication.md)
+    Ensure only the right people can use your agent. For IT/admin.
 
-### [Configure an autonomous event-triggered agent](../walkthroughs/studio-autonomous-triggers.md)
+    ### [Test and evaluate a Studio agent before publishing](../walkthroughs/studio-test-evaluate.md)
+    Structured test cases before broad rollout.
 
-### [Secure a Studio agent with authentication](../walkthroughs/studio-authentication.md)
+    ### [Publish and govern your agent](../walkthroughs/studio-publish.md)
+    Ship to Teams and the web with a governance checklist.
 
-### [Test and evaluate a Studio agent before publishing](../walkthroughs/studio-test-evaluate.md)
+    ### [Govern and monitor your agents at scale](../walkthroughs/studio-govern-monitor.md)
+    ALM, analytics, and guardrails for a fleet of agents.
+
+    ### [Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)
+    Tie agent usage to outcomes. For managers and champions.
+
+---
+
+## Walkthroughs — functional use cases
+
+Agents designed for a specific business function. Each pairs with a [Solution Template](../solutions/index.md) you can copy, adapt, and build from directly.
+
+??? example "HR — Answer employee questions with a policies agent"
+
+    **[HR: Answer employee questions with a policies agent](../walkthroughs/studio-functional-hr-policy-faq.md)**
+
+    Give every employee a 24/7 HR FAQ agent grounded on your policy docs — consistent, cited answers and a structured escalation path for anything that needs a human.
+
+    Pairs with: [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md)
+
+??? example "IT — Triage support requests and answer from the knowledge base"
+
+    **[IT: Triage support requests and answer from the knowledge base](../walkthroughs/studio-functional-it-helpdesk.md)**
+
+    Deflect tier-1 IT tickets with instant KB answers — and for anything that needs a human, collect the right information and raise the ticket automatically.
+
+    Pairs with: [IT Helpdesk Triage Agent solution template](../solutions/it-helpdesk-triage-agent.md)
+
+??? example "Finance — Self-service expense and procurement guidance"
+
+    **[Finance: Self-service expense and procurement guidance](../walkthroughs/studio-functional-finance-expense.md)**
+
+    Give employees instant answers on expense policy and procurement rules — and guide them into the right process rather than leaving them to hunt through the intranet.
+
+    Pairs with: [Policy FAQ Agent solution template — Finance tab](../solutions/policy-faq-agent.md)
+
+??? example "Sales — Product intel and objection handling"
+
+    **[Sales: Product intel and objection handling for sales reps](../walkthroughs/studio-functional-sales-intel.md)**
+
+    Give every rep instant access to the right product story, competitive positioning, and objection responses — grounded on your actual sales content, available mid-call.
+
+    Pairs with: [Sales Enablement Agent solution template](../solutions/sales-enablement-agent.md)
+
+??? example "Legal & Compliance — Policy guidance and process navigation"
+
+    **[Legal & Compliance: Policy guidance and process navigation](../walkthroughs/studio-functional-legal-compliance.md)**
+
+    Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
+
+    Pairs with: [Policy FAQ Agent solution template — Legal tab](../solutions/policy-faq-agent.md)
 
 ---
 

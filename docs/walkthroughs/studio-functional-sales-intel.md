@@ -84,3 +84,8 @@ answer format for a competitive objection query.
 - **Pricing.** Never include current list prices in the knowledge source unless Finance has signed off on the agent surfacing them. Pricing changes faster than the agent's knowledge base. Always escalate to the deal desk.
 
 > **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+
+---
+
+!!! tip "Ready to build? Use the solution template."
+    The [Sales Enablement Agent solution template](../solutions/sales-enablement-agent.md) gives you the system prompt, all four topics spec’d out, starter prompts validated for reps, a test case table including adversarial pricing tests, and a deployment checklist.

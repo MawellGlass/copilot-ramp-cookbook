@@ -109,12 +109,12 @@ nav:
       - "Stage 4 · Agent Builder": stages/stage-4-agent-builder.md
       - "Stage 5 · Copilot Studio": stages/stage-5-studio.md
 
-  - Solution Templates:
+  - Studio Solution Templates:
       - solutions/index.md
       - "Policy FAQ Agent": solutions/policy-faq-agent.md
       - "IT Helpdesk Triage Agent": solutions/it-helpdesk-triage-agent.md
       - "Onboarding Buddy Agent": solutions/onboarding-buddy-agent.md
-
+      - "Sales Enablement Agent": solutions/sales-enablement-agent.md
   - Resources:
       - Use-Case Catalog: CATALOG.md
       - Quick Wins: quick-wins.md

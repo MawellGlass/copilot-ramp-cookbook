@@ -419,6 +419,11 @@ A complete, copy-paste-ready agent spec: system prompt, topics, starter prompts,
 Triage pattern: deflect with KB answers, collect structured fields, create ticket via Power Automate. Includes P1 escalation topic, known issues check, full PA action spec, and 8 test cases.
 → Fully written: `solutions/it-helpdesk-triage-agent.md`
 
+### Sales Enablement Agent → solution template
+**For:** maker, champion, manager · `status: solution-template`
+Multi-source knowledge pattern: competitive objections with talk tracks, case study finder, persona-based pitching, and discovery questions — grounded on battle cards, product decks, and the case study library.
+→ Fully written: `solutions/sales-enablement-agent.md`
+
 ### Onboarding Buddy Agent → solution template
 **For:** maker, champion, hr · `status: solution-template`
 Personalisation pattern: collects role, team, and start week to tailor first-week guidance. Includes welcome flow, checklist topic, conversation variables spec, and role-adaptive content structure.
