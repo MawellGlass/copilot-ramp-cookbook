@@ -27,35 +27,49 @@ Chat is muscle memory and you want more horsepower for specific jobs — deep re
 
 Start with the roster — it maps every included agent to what it's for, so you know which specialist to reach for.
 
-### [The agents included in your M365 Copilot license](../walkthroughs/first-party-agents-overview.md)
-**Start here.** The complete roster with what each agent is for.
+??? note "First-party agent walkthroughs"
 
-### [Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)
+    ### [The agents included in your M365 Copilot license](../walkthroughs/first-party-agents-overview.md)
+    **Start here.** You're probably paying for agents you've never opened — this is the complete map.
 
-### [Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)
+    ### [Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)
+    Stop prompting for meeting notes — Facilitator captures decisions, summaries, and action items automatically.
 
-### [Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md)
+    ### [Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)
+    Hand a hard question to Researcher and get back a cited, structured report — not a list of links to follow.
 
-### [Translate a meeting in real time with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md)
+    ### [Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md)
+    Ask a spreadsheet questions in plain English and get back the answer and the working — no formula needed.
 
-### [Answer routine HR and IT questions with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md)
+    ### [Translate a meeting in real time with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md)
+    Run a cross-language Teams meeting without a human interpreter — real-time captions, any language pair.
 
-### [Keep a project on track with the Project Manager agent](../walkthroughs/first-party-project-manager.md)
+    ### [Answer routine HR and IT questions with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md)
+    Get the PTO balance, the policy answer, or the 'how do I' answer in seconds — from approved sources.
 
-### [Upskill in the flow of work with the Learning agent](../walkthroughs/first-party-learning-agent.md)
+    ### [Keep a project on track with the Project Manager agent](../walkthroughs/first-party-project-manager.md)
+    Hand the agent your plan and let it track action items, flag blockers, and send nudges.
 
-### [Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md)
+    ### [Upskill in the flow of work with the Learning agent](../walkthroughs/first-party-learning-agent.md)
+    Learn the thing right when you need it — surfaced in the flow of work, not a scheduled course.
 
-### [Answer common questions with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md)
+    ### [Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md)
+    Drop a shared agent into a Teams channel so the whole team can @mention it and get instant answers.
 
-### [Find where Copilot is landing with Workforce insights](../walkthroughs/first-party-workforce-insights.md)
-For champions and managers.
+    ### [Answer common questions with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md)
+    Drop a shared agent into a Viva Engage community so the most-asked questions answer themselves.
 
-### [Share and co-edit an AI output with Copilot Pages](../walkthroughs/first-party-copilot-pages.md)
+    ### [Find where Copilot is landing with Workforce Insights](../walkthroughs/first-party-workforce-insights.md)
+    **For champions and managers.** See where Copilot is sticking and where to focus adoption energy.
 
-### [Track project milestones with the Planner agent](../walkthroughs/first-party-planner-agent.md)
+    ### [Share and co-edit an AI output with Copilot Pages](../walkthroughs/first-party-copilot-pages.md)
+    Turn any Copilot response into a shared, editable page — no copying, no formatting, no emailing a draft.
 
-### [Find answers across your org's content with BizChat](../walkthroughs/first-party-bizchat-grounded.md)
+    ### [Track project milestones with the Planner agent](../walkthroughs/first-party-planner-agent.md)
+    Describe a project in plain language — get back a structured, assigned plan in the Planner app.
+
+    ### [Find answers across your org's content with BizChat](../walkthroughs/first-party-bizchat-grounded.md)
+    Search SharePoint, emails, and Teams in one question — and get a cited answer, not a list of links.
 
 ---
 

@@ -27,34 +27,56 @@ You have a Microsoft 365 Copilot license and want quick wins that fit your exist
 
 Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups.md) is the gateway use case everything else builds from.
 
-### [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)
-The fastest “aha.”
+??? note "Chat walkthroughs"
 
-### [Draft a status update from your week's activity](../walkthroughs/chat-weekly-status.md)
+    ??? note "Chat walkthroughs"
 
-### [Prep for a 1:1 in two minutes](../walkthroughs/chat-prep-1on1.md)
+    ### [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)
+    **The gateway use case.** Walk out of any meeting with decisions, owners, and due dates — in under a minute.
 
-### [Get up to speed on a long document fast](../walkthroughs/chat-document-catch-up.md)
+    ### [Draft a status update from your week's activity](../walkthroughs/chat-weekly-status.md)
+    Turn a scattered week of emails, chats, and meetings into a crisp five-bullet status update in 30 seconds.
 
-### [Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)
+    ### [Prep for a 1:1 in two minutes](../walkthroughs/chat-prep-1on1.md)
+    Walk into any 1:1 with sharp talking points pulled from the work you've actually done that week.
 
-### [Build a first-draft project plan](../walkthroughs/chat-project-plan.md)
+    ### [Get up to speed on a long document fast](../walkthroughs/chat-document-catch-up.md)
+    Get the three things your role actually needs from a 30-page document — without reading all of it.
 
-### [Rewrite an email for a tougher audience](../walkthroughs/chat-rewrite-email.md)
+    ### [Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)
+    Know what happened and what you're being asked — in 30 seconds, from a thread you didn't follow.
 
-### [Run a “Prompt of the Day” for your team](../walkthroughs/chat-prompt-of-the-day.md)
-For champions driving adoption.
-### [Draft an exec briefing from background materials](../walkthroughs/chat-exec-briefing.md)
+    ### [Build a first-draft project plan](../walkthroughs/chat-project-plan.md)
+    Go from a vague goal to a structured plan with phases, milestones, and owners — in one session.
 
-### [Catch up on a long email thread in seconds](../walkthroughs/chat-email-chain-summary.md)
+    ### [Rewrite an email for a tougher audience](../walkthroughs/chat-rewrite-email.md)
+    Turn the draft you'd never send into a message that actually lands — sharper, cleaner, more appropriate.
 
-### [Build a meeting agenda from context and notes](../walkthroughs/chat-meeting-agenda.md)
+    ### [Run a "Prompt of the Day" for your team](../walkthroughs/chat-prompt-of-the-day.md)
+    **For champions.** Turn "we have Copilot" into a real daily habit with a 30-second team drip.
 
-### [Brainstorm solutions with structured tradeoffs](../walkthroughs/chat-brainstorm.md)
+    ### [Draft an exec briefing from background materials](../walkthroughs/chat-exec-briefing.md)
+    Walk into any exec meeting with sharp talking points pulled from your docs — not written from scratch at 8 PM.
 
-### [Adapt a document or message for a different audience](../walkthroughs/chat-adapt-audience.md)
+    ### [Catch up on a long email thread in seconds](../walkthroughs/chat-email-chain-summary.md)
+    Open any email thread and know exactly where things stand — and what's being asked of you.
 
-### [Plan your week from your calendar and inbox](../walkthroughs/chat-plan-week.md)
+    ### [Build a meeting agenda from context and notes](../walkthroughs/chat-meeting-agenda.md)
+    Never start from a blank page — build a structured, time-slotted agenda from whatever context you have.
+
+    ### [Brainstorm solutions with structured tradeoffs](../walkthroughs/chat-brainstorm.md)
+    Get past the blank page: structured options with honest tradeoffs so you can make a faster, better decision.
+
+    ### [Adapt a document or message for a different audience](../walkthroughs/chat-adapt-audience.md)
+    Transform any piece of content for a new audience in one prompt — no rewriting from scratch.
+
+    ### [Plan your week from your calendar and inbox](../walkthroughs/chat-plan-week.md)
+    Start every Monday with a clear view of what matters, what needs prep, and what you can safely defer.
+
+---
+    Start every Monday with a clear view of what matters, what needs prep, and what you can safely defer.
+
+---
 ---
 
 ## Borrow, don't build

@@ -71,24 +71,41 @@ There are two paths:
 
 Start with the end-to-end hand-off — it's the page that makes delegation click.
 
-### [Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md)
-**Start here.**
+??? note "Cowork walkthroughs"
 
-### [Stand up a recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)
+    ??? note "Cowork walkthroughs"
 
-### [Synthesize many documents into one brief](../walkthroughs/cowork-multi-doc-synthesis.md)
+    ### [Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md)
+    **Start here.** Describe an outcome — Cowork plans and runs the steps autonomously, no prompt-chaining required.
 
-### [Build a deck from raw notes](../walkthroughs/cowork-deck-from-notes.md)
+    ### [Stand up a recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)
+    Describe the Monday-morning digest you wish existed — once — and let it run every week without re-prompting.
 
-### [Build a “Cowork recipe” library for your org](../walkthroughs/cowork-recipe-library.md)
-For champions scaling the pattern.
-### [Research a market and write a landscape brief](../walkthroughs/cowork-market-research-brief.md)
+    ### [Synthesize many documents into one brief](../walkthroughs/cowork-multi-doc-synthesis.md)
+    Point Cowork at a stack of documents and get back one coherent brief — the throughline, not the pile.
 
-### [Draft a 30/60/90-day onboarding plan for a new team member](../walkthroughs/cowork-onboarding-plan.md)
+    ### [Build a deck from raw notes](../walkthroughs/cowork-deck-from-notes.md)
+    Hand over messy notes and get back a structured deck with slide flow, headings, and talking points.
 
-### [Build a competitive comparison from multiple source documents](../walkthroughs/cowork-competitive-comparison.md)
+    ### [Build a "Cowork recipe" library for your org](../walkthroughs/cowork-recipe-library.md)
+    **For champions.** Capture a great Cowork task as a reusable recipe so it doesn't die with the run.
 
-### [Draft an RFP or proposal response from scattered source docs](../walkthroughs/cowork-rfp-response.md)
+    ### [Research a market and write a landscape brief](../walkthroughs/cowork-market-research-brief.md)
+    Hand Cowork a topic and a set of inputs — get back a structured market brief in minutes, not half a day.
+
+    ### [Draft a 30/60/90-day onboarding plan for a new team member](../walkthroughs/cowork-onboarding-plan.md)
+    Go from "someone's starting Monday" to a complete, personalised onboarding plan in one Cowork session.
+
+    ### [Build a competitive comparison from multiple source documents](../walkthroughs/cowork-competitive-comparison.md)
+    Turn a folder of competitor briefs and product pages into a structured comparison matrix ready for review.
+
+    ### [Draft an RFP or proposal response from scattered source docs](../walkthroughs/cowork-rfp-response.md)
+    Turn an RFP and your scattered internal docs into a structured first-draft response — shape and polish, don't start from nothing.
+
+---
+    Turn an RFP and your scattered internal docs into a structured first-draft response — shape and polish, don't start from nothing.
+
+---
 ---
 
 ## Borrow, don't build

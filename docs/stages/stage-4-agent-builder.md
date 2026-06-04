@@ -27,23 +27,31 @@ You've handed Copilot the same kind of multi-step task more than once and though
 
 Start with the flagship — a team-knowledge agent is the most useful first build for most people.
 
-### [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
-**The flagship.**
+??? note "Agent Builder walkthroughs"
 
-### [Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)
+    ### [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
+    **The flagship.** Point a no-code agent at your team's docs once — and let everyone ask questions in plain language.
 
-### [Seed your agent with starter prompts](../walkthroughs/agent-builder-starter-prompts.md)
+    ### [Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)
+    The difference between an agent people trust and one they abandon is the quality of its instructions.
 
-### [Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)
+    ### [Seed your agent with starter prompts](../walkthroughs/agent-builder-starter-prompts.md)
+    Good starter prompts tell people what the agent is for — without them having to guess at the blank cursor.
 
-### [Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)
-The decision page that points at Stage 5.
+    ### [Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)
+    Your first agent improves when five people use it and tell you what broke — here's how to run that loop.
 
-### [Build an onboarding agent for new hires](../walkthroughs/agent-builder-onboarding-agent.md)
+    ### [Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)
+    Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the decision map that points at Stage 5.
 
-### [Build an FAQ agent for a recurring process](../walkthroughs/agent-builder-faq-agent.md)
+    ### [Build an onboarding agent for new hires](../walkthroughs/agent-builder-onboarding-agent.md)
+    Give new team members a self-service agent for first-week questions — so you stop repeating yourself.
 
-### [Build a meeting-prep agent for a recurring 1:1 or standup](../walkthroughs/agent-builder-meeting-prep-agent.md)
+    ### [Build an FAQ agent for a recurring process](../walkthroughs/agent-builder-faq-agent.md)
+    Redirect the quick questions that consume your week to an agent that answers 24/7 from your own docs.
+
+    ### [Build a meeting-prep agent for a recurring 1:1 or standup](../walkthroughs/agent-builder-meeting-prep-agent.md)
+    Auto-generate talking points, agenda items, and context summaries before every recurring meeting.
 
 ---
 
