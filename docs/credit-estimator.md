@@ -337,8 +337,8 @@ function addRow(name, count, credits, isEscalation) {
   if (isEscalation) tr.classList.add('escalation-row');
   tr.innerHTML =
     '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+
-    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(count||1)+'" oninput="recalc()"></td>'+
-    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
+    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(count != null ? count : 1)+'" oninput="recalc()"></td>'+
+    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits != null ? credits : 1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
     '<td><button class="pt-del" title="Remove row" onclick="removeRow('+id+')">✕</button></td>';
   var tbody = isEscalation ? document.getElementById('escalation-tbody') : document.getElementById('normal-tbody');
