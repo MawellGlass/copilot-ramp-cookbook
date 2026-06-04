@@ -228,7 +228,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 <hr class="calc-divider">
 
 <!-- ── Prompt table ── -->
-<div class="section-label">Prompt mix — edit rows or add your own process steps</div>
+<div class="section-label">Edit rows or add your own process steps</div>
 
 <div class="prompt-table-wrap">
   <table id="prompt-table">
