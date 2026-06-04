@@ -84,7 +84,7 @@ Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups
 The single best "borrowed content" at this stage is the in-product **Prompt Gallery** — ready-to-run prompts for Word, Excel, PowerPoint, and Outlook. Point your team there instead of writing your own prompt list.
 
 > **📚 Learn more.**
-> [Copilot Prompt Gallery (in-product)](https://m365.cloud.microsoft/copilot-prompts) ·
+> [Copilot Prompt Gallery (in-product)](https://copilot.cloud.microsoft/prompts) ·
 > [Prompt Gallery adoption guide](https://adoption.microsoft.com/en-us/copilot/prompt-gallery/) ·
 > [The Art of the Prompt (session)](https://adoption.microsoft.com/en-us/customer-hub/drive-adoption-of-microsoft-365-copilot/session-2/) ·
 > [M365 Copilot Mechanics playlist](https://www.youtube.com/playlist?list=PLXtHYVsvn_b8MTl8mD8FBJIB_cSGkEaT9)
