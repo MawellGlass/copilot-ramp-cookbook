@@ -17,8 +17,9 @@ is the empowerment team's routing tool: answer a few questions and land on the s
 
 ## The decision tree
 
-The first fork is the one that matters most: **are you trying to *use* what's already there, or *build*
-something new?** Everything else follows from that.
+Lead with the **process, not the product**. The first question is simply *how often you'll need this* — a
+one-off versus a repeatable need — and the shape of the work does the rest. You don't have to know which
+tools exist to land in the right place.
 
 !!! tip "Prefer to click through it?"
     The [Path Finder](wizard.md) walks you through these same questions one at a time and lands you on a
@@ -26,33 +27,33 @@ something new?** Everything else follows from that.
 
 ```mermaid
 flowchart TD
-    Start([You have a need or idea]) --> Q1{Use what already exists<br/>or build something new?}
+    Start([You have a need or a process to support]) --> Q1{How often will<br/>you need this?}
 
-    Q1 -->|Use| U{What kind of help<br/>do you need?}
-    U -->|Quick task in the flow of work:<br/>draft, summarize, answer| Chat[["Stage 1 · Chat"]]
-    U -->|A ready-made specialist agent<br/>already in your license| FPA[["Stage 2 · First-party agent"]]
-    U -->|Hand off a whole<br/>multi-step task| Cowork[["Stage 3 · Cowork"]]
+    Q1 -->|Once or occasionally| A{What does the<br/>task look like?}
+    A -->|A quick, single step:<br/>draft, summarize, answer| Chat[["Stage 1 · Chat"]]
+    A -->|A multi-step job to<br/>hand off and let run| Cowork[["Stage 3 · Cowork"]]
+    A -->|A specialized job:<br/>research, analysis, facilitation| FPA[["Stage 2 · First-party agent"]]
 
-    Q1 -->|Build| B{What does the build need?}
-    B -->|Just a prompt and a few files,<br/>personal or team, no code| AB[["Stage 4 · Agent Builder"]]
-    B -->|Knowledge, actions and connectors,<br/>org-wide and governed| Studio[["Stage 5 · Copilot Studio"]]
-    B -->|Pro-code, autonomous, custom<br/>models or MCP at scale| Foundry[["Microsoft Foundry"]]
+    Q1 -->|Again and again| B{Who uses it, and<br/>what does it need?}
+    B -->|Just me or my team:<br/>a prompt and a few files, no code| AB[["Stage 4 · Agent Builder"]]
+    B -->|The whole org: knowledge,<br/>actions and governance| Studio[["Stage 5 · Copilot Studio"]]
+    B -->|Engineered: pro-code, autonomous,<br/>custom models or MCP| Foundry[["Microsoft Foundry"]]
 ```
 
 ---
 
 ## Read it as a table
 
-Prefer words to boxes? Same logic, top to bottom — the first row that matches is usually your answer.
+Prefer words to boxes? Find the row whose **need** matches yours — frequency first, then shape.
 
-| If you want to… | …and it looks like | Go to |
+| If your need is… | …and it looks like | Go to |
 | --- | --- | --- |
-| **Use** Copilot for a quick task | Draft, summarize, rewrite, answer — in the flow of work | [Stage 1 · Chat](../stages/stage-1-chat.md) |
-| **Use** a ready-made specialist | A capability already included in your license (research, analysis, facilitation) | [Stage 2 · First-party agents](../stages/stage-2-first-party.md) |
-| **Use** Copilot for a whole task | Hand off a multi-step job and let it run | [Stage 3 · Cowork](../stages/stage-3-cowork.md) |
-| **Build** something simple, fast | A prompt plus a few reference files, for you or your team, no code | [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md) |
-| **Build** for production | Real knowledge sources, actions/connectors, org-wide reach, lifecycle and governance | [Stage 5 · Copilot Studio](../stages/stage-5-studio.md) |
-| **Build** at the frontier | Pro-code, autonomous or triggered agents, custom models, MCP at scale | [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/) |
+| **One-off · quick** | A single step — draft, summarize, rewrite, answer — right now | [Stage 1 · Chat](../stages/stage-1-chat.md) |
+| **One-off · specialized** | Deep research, data analysis, or facilitation | [Stage 2 · First-party agents](../stages/stage-2-first-party.md) |
+| **One-off · multi-step** | A several-step job you'd rather hand off and let run | [Stage 3 · Cowork](../stages/stage-3-cowork.md) |
+| **Recurring · simple** | The same task again and again; a prompt plus a few files, no code | [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md) |
+| **Recurring · org-wide** | Real knowledge sources, actions/connectors, lifecycle and governance | [Stage 5 · Copilot Studio](../stages/stage-5-studio.md) |
+| **Recurring · engineered** | Pro-code, autonomous or triggered, custom models, MCP at scale | [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/) |
 
 ---
 

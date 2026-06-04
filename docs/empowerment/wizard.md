@@ -115,40 +115,40 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
   var TREE = {
     start: {
       step: 1,
-      q: "Are you trying to use what already exists, or build something new?",
-      sub: "This first fork decides almost everything that follows.",
+      q: "How often will you need this?",
+      sub: "Start with the process, not the product \u2014 the rhythm of the work points you to the right surface. You don't need to know the tools yet.",
       cols: 2,
       options: [
-        { ico: "\u26A1", title: "Use what's already there",
-          desc: "Get value from Copilot as it ships today — no building.", next: "use" },
-        { ico: "\uD83D\uDD27", title: "Build something new",
-          desc: "Create a reusable agent or app for a recurring need.", next: "build" }
+        { ico: "\u26A1", title: "Once or occasionally",
+          desc: "A specific task in front of me right now.", next: "once" },
+        { ico: "\uD83D\uDD01", title: "Again and again",
+          desc: "A repeatable need my team or org will reuse.", next: "recurring" }
       ]
     },
-    use: {
+    once: {
       step: 2,
-      q: "What kind of help do you need?",
-      sub: "You're using Copilot as-is. Pick the shape that matches.",
+      q: "What does the task look like?",
+      sub: "It's a one-off. Pick the shape that matches the work.",
       options: [
-        { ico: "\uD83D\uDCAC", title: "A quick task in the flow of work",
-          desc: "Draft, summarize, rewrite, or answer — right now.", next: "r_chat" },
-        { ico: "\uD83E\uDD16", title: "A ready-made specialist agent",
-          desc: "A capability already included in your license.", next: "r_fpa" },
-        { ico: "\uD83D\uDE80", title: "Hand off a whole multi-step task",
-          desc: "Delegate a multi-step job and let it run.", next: "r_cowork" }
+        { ico: "\uD83D\uDCAC", title: "A quick, single step",
+          desc: "Draft, summarize, rewrite, or answer \u2014 right now.", next: "r_chat" },
+        { ico: "\uD83D\uDE80", title: "A multi-step job to hand off",
+          desc: "Several steps I'd rather delegate and let run.", next: "r_cowork" },
+        { ico: "\uD83E\uDD16", title: "A specialized job",
+          desc: "Deep research, data analysis, or facilitation.", next: "r_fpa" }
       ]
     },
-    build: {
+    recurring: {
       step: 2,
-      q: "What does the build need?",
-      sub: "You're creating something reusable. How much does it have to do?",
+      q: "Who will use it, and what does it need?",
+      sub: "It'll happen again and again. How far does it need to reach?",
       options: [
-        { ico: "\uD83E\uDDF1", title: "Just a prompt and a few files",
-          desc: "Personal or team scope, no code.", next: "r_ab" },
-        { ico: "\uD83C\uDFE2", title: "Knowledge, actions & connectors",
-          desc: "Org-wide reach, governed and monitored.", next: "r_studio" },
-        { ico: "\uD83D\uDEF0\uFE0F", title: "Pro-code, autonomous, custom models or MCP",
-          desc: "At scale, beyond low-code.", next: "r_foundry" }
+        { ico: "\uD83E\uDDF1", title: "Just me or my team \u2014 keep it simple",
+          desc: "A prompt and a few reference files, no code.", next: "r_ab" },
+        { ico: "\uD83C\uDFE2", title: "The whole org \u2014 governed",
+          desc: "Real knowledge, actions, connectors, and lifecycle.", next: "r_studio" },
+        { ico: "\uD83D\uDEF0\uFE0F", title: "Engineered at scale",
+          desc: "Pro-code, autonomous, custom models or MCP.", next: "r_foundry" }
       ]
     }
   };
@@ -156,8 +156,8 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
   var RESULTS = {
     r_chat: {
       ico: "\uD83D\uDCAC", name: "Stage 1 \u00B7 Chat", stage: "Stage 1",
-      tagline: "The fastest value. A single task in the flow of work almost never needs you to build anything.",
-      why: "Your need is one task — draft, summarize, rewrite, or answer — and you want it now. Chat handles it inside the apps you already use.",
+      tagline: "The fastest value. A single task in the flow of work rarely needs anything more than Chat.",
+      why: "Your need is a one-off, single step \u2014 draft, summarize, rewrite, or answer \u2014 and you want it now. Chat handles it right inside the apps you already use.",
       watch: "If you find yourself pasting the same instructions over and over, that's a signal the work might graduate to an agent.",
       alt: "Recurring version of this task? Look at <b>Stage 4 \u00B7 Agent Builder</b> to package it.",
       href: "../../stages/stage-1-chat/", cta: "Go to Stage 1 \u00B7 Chat"
@@ -172,16 +172,16 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
     },
     r_cowork: {
       ico: "\uD83D\uDE80", name: "Stage 3 \u00B7 Cowork", stage: "Stage 3",
-      tagline: "When a task is multi-step but still a one-off, hand the whole thing off rather than building a reusable agent.",
-      why: "The job has several steps, but you don't need to do it again and again. Cowork takes the delegation and runs it end to end.",
+      tagline: "When a job is multi-step but you only need it this once, hand the whole thing off rather than standing up a reusable agent.",
+      why: "The job has several steps, but it's a one-off. Cowork takes the delegation and runs it end to end.",
       watch: "If the same multi-step job recurs weekly, building a reusable agent will pay off over repeating the hand-off.",
       alt: "Same task every week? Package it as a <b>Stage 4 \u00B7 Agent Builder</b> agent.",
       href: "../../stages/stage-3-cowork/", cta: "Go to Stage 3 \u00B7 Cowork"
     },
     r_ab: {
       ico: "\uD83E\uDDF1", name: "Stage 4 \u00B7 Agent Builder", stage: "Stage 4",
-      tagline: "The right home when the same delegated task keeps recurring and a prompt-plus-files agent solves it.",
-      why: "You need something reusable, but it's just instructions plus a few reference files — no code, no connectors. Personal or team scope.",
+      tagline: "The right home when the same task keeps recurring and a prompt-plus-files agent solves it.",
+      why: "The need recurs, but it's just instructions plus a few reference files \u2014 no code, no connectors. Personal or team scope.",
       watch: "Need real knowledge sources, actions, or org-wide governance? That's where Agent Builder stops and Studio begins.",
       alt: "Outgrowing it? Graduate the working agent into <b>Stage 5 \u00B7 Copilot Studio</b> \u2014 cheaper than over-building on day one.",
       href: "../../stages/stage-4-agent-builder/", cta: "Go to Stage 4 \u00B7 Agent Builder"
@@ -189,7 +189,7 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
     r_studio: {
       ico: "\uD83C\uDFE2", name: "Stage 5 \u00B7 Copilot Studio", stage: "Stage 5",
       tagline: "Where agents grow up: real knowledge sources, connectors and actions, publishing, monitoring, and governance.",
-      why: "The build needs grounded knowledge, actions or connectors, and org-wide reach with a lifecycle you can manage. That's Studio's home turf.",
+      why: "The need recurs and has to reach the whole org \u2014 with grounded knowledge, actions or connectors, and a lifecycle you can manage. That's Studio's home turf.",
       watch: "Studio is low-code, not no-code. Budget time for environments, data boundaries, and a publish/monitor loop.",
       alt: "Need pro-code, custom models, or autonomous agents at scale? Step up to <b>Microsoft Foundry</b>.",
       href: "../../stages/stage-5-studio/", cta: "Go to Stage 5 \u00B7 Copilot Studio"
@@ -197,7 +197,7 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
     r_foundry: {
       ico: "\uD83D\uDEF0\uFE0F", name: "Microsoft Foundry", stage: "Foundry",
       tagline: "The pro-code frontier: autonomous and triggered agents, custom models, evaluation, and MCP tools at scale.",
-      why: "You've outgrown low-code. The build needs custom models, autonomous or triggered execution, evaluation pipelines, or MCP tools — engineered and operated like software.",
+      why: "You've outgrown low-code. The need is engineered \u2014 custom models, autonomous or triggered execution, evaluation pipelines, or MCP tools \u2014 run and operated like software.",
       watch: "This is a developer platform. Make sure you have the engineering ownership and governance to run it.",
       alt: "Most teams reach Foundry by graduating a <b>Studio</b> agent \u2014 not by starting here.",
       href: "https://learn.microsoft.com/en-us/azure/ai-foundry/", cta: "Explore Microsoft Foundry", external: true
