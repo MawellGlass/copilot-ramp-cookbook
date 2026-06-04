@@ -207,9 +207,9 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <div class="hint" id="adopt-hint">% of unlicensed users who actively use the agent each month (embedded mode)</div>
   </div>
   <div class="calc-field">
-    <label for="workDays">Working days per month</label>
+    <label for="workDays">Average working days / month</label>
     <input type="number" id="workDays" min="1" max="31" value="22" oninput="recalc()">
-    <div class="hint">Standard = 22; used to derive avg daily interaction estimates from monthly totals</div>
+    <div class="hint">Standard = 22; divides the monthly interaction total to derive the avg interactions / day result</div>
   </div>
 </div>
 
@@ -281,10 +281,10 @@ function syncRange(toId, fromId) {
 
 var defaultRows = [
   // ── Core agent interactions ──
-  { name: 'Classic answer',                                    prompts: 66,   credits: 1    },
-  { name: 'Generative answer',                                 prompts: 44,   credits: 2    },
-  { name: 'Agent action',                                      prompts: 44,   credits: 5    },
-  { name: 'Tenant graph grounding for messages',               prompts: 22,   credits: 10   },
+  { name: 'Classic answer',                                    prompts: 1,    credits: 1    },
+  { name: 'Generative answer',                                 prompts: 1,    credits: 2    },
+  { name: 'Agent action',                                      prompts: 1,    credits: 5    },
+  { name: 'Tenant graph grounding for messages',               prompts: 1,    credits: 10   },
   { name: 'Agent flow actions (per 100 actions = 13 credits)', prompts: 1,    credits: 13   },
   // ── AI tools ──
   { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    prompts: 1, credits: 0.1  },
