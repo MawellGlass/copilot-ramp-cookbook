@@ -10,7 +10,7 @@ This is the **locked spec** for content. Two object types: **catalog stubs** (br
 ```yaml
 ---
 title: Turn a meeting into tracked follow-ups        # human title
-stage: chat                                          # chat | first-party | cowork | agent-builder | studio
+stage: chat                                          # chat | first-party | cowork | agent-builder | studio | foundry
 roles: [end-user, champion]                          # any of: end-user, champion, manager, maker, it-admin
 tags: [meetings, productivity, teams, outlook]       # free-form, used for the filter chips
 level: starter                                       # starter | intermediate | advanced
@@ -23,7 +23,7 @@ updated: 2026-06-03
 
 **Controlled vocabularies** (keep these tight so filters stay clean):
 
-- `stage`: `chat`, `first-party`, `cowork`, `agent-builder`, `studio`
+- `stage`: `chat`, `first-party`, `cowork`, `agent-builder`, `studio`, `foundry`
 - `roles`: `end-user`, `champion`, `manager`, `maker`, `it-admin`
 - `level`: `starter`, `intermediate`, `advanced`
 - `status`: `stub` (catalog entry only) → `walkthrough` (fully expanded page)

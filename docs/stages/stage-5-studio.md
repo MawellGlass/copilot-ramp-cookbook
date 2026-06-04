@@ -183,8 +183,8 @@ The full curated set for this stage lives in [Resources → Stage 5](../RESOURCE
 
 ---
 
-## You made it to the destination
+## Where this leads
 
-There's no "Stage 6" — from here you build, ship, and govern real agents. Keep a backlog of agents worth building from the [Use-Case Catalog](../CATALOG.md), and make the [ROI case](../walkthroughs/studio-roi-business-case.md) for the ones that matter.
+Copilot Studio is the destination for most agent-building. But when an agent has to be *engineered* — custom or fine-tuned models, autonomous orchestration, or MCP tools at scale — there's one more frontier beyond low-code. Most people never need it; keep a backlog from the [Use-Case Catalog](../CATALOG.md) and make the [ROI case](../walkthroughs/studio-roi-business-case.md) for the agents that matter.
 
-[→ Back to the full Use-Case Catalog](../CATALOG.md)
+[→ Stage 6 · Foundry](stage-6-foundry.md)

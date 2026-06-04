@@ -111,6 +111,22 @@ a proof-of-concept for our hosting approach (five static sites on GitHub Pages, 
 
 ---
 
+## Stage 6 · Foundry (the pro-code frontier)
+
+| Resource | What it is | Link |
+|----------|-----------|------|
+| **Microsoft Foundry docs** | The canonical Learn documentation set — build, evaluate, deploy AI apps and agents | [learn.microsoft.com/azure/ai-foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/) |
+| **Foundry Agent Service** | Build, deploy, and run agents with tools and orchestration | [learn.microsoft.com/azure/ai-foundry/agents](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/) |
+| **Standard agent setup** | Bring-your-own Azure resources so agent data stays in your tenant (project-level isolation) | [learn.microsoft.com/standard-agent-setup](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/standard-agent-setup) |
+| **Role-based access control in Foundry** | Least-privilege built-in roles and Entra ID authentication | [learn.microsoft.com/rbac-foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry) |
+| **Extend Microsoft 365 Copilot — options compared** | Where custom-engine (Foundry) agents fit next to declarative ones | [learn.microsoft.com/extensibility](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/) |
+| **Agent samples (low-code → pro-code)** | Microsoft-owned and community GitHub starting points | [learn.microsoft.com/agent-samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) |
+
+**Note:** Foundry is a fast-moving developer platform — these links track the product, so prefer them over
+any snapshot. Most teams reach Foundry only when low-code genuinely can't express the agent they need.
+
+---
+
 ## Governance & IT (cross-cutting, mostly Stages 4–5)
 
 | Resource | What it is | Link |

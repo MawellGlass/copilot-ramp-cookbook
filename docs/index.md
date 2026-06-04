@@ -25,6 +25,8 @@ hide:
   <a class="step" href="stages/stage-4-agent-builder/"><span class="n">STAGE 4</span><span class="t">Agent Builder</span><span class="d">Your first taste of <em>making</em>.</span></a>
   <span class="arrow">→</span>
   <a class="step dest" href="stages/stage-5-studio/"><span class="n">STAGE 5</span><span class="t">Copilot Studio</span><span class="d">Build real, production-grade agents.</span></a>
+  <span class="arrow">→</span>
+  <a class="step" href="stages/stage-6-foundry/"><span class="n">STAGE 6</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
 </div>
 
 <p class="audience"><strong>Who it's for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · IT/admins enabling each stage safely.</p>
@@ -42,13 +44,14 @@ Not every tool is for every person. This is where each role tends to spend time 
   <th><a href="stages/stage-3-cowork/"><span class="stagenum">STAGE 3</span>Cowork</a></th>
   <th><a href="stages/stage-4-agent-builder/"><span class="stagenum">STAGE 4</span>Agent Builder</a></th>
   <th><a href="stages/stage-5-studio/"><span class="stagenum">STAGE 5</span>Studio</a></th>
+  <th><a href="stages/stage-6-foundry/"><span class="stagenum">STAGE 6</span>Foundry</a></th>
 </tr></thead>
 <tbody>
-<tr><th>End user</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th>Champion</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
-<tr><th>Manager</th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
-<tr><th>Maker</th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
-<tr><th>IT / admin</th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
+<tr><th>End user</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th>Champion</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th>Manager</th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th>Maker</th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
+<tr><th>IT / admin</th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
 </tbody>
 </table>
 </div>
