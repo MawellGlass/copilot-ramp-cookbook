@@ -136,8 +136,9 @@ nav:
       - "Sales Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
   - AI Empowerment:
       - empowerment/index.md
-      - "Choose the Right Path": empowerment/decision-tree.md
-      - "Path Finder (interactive)": empowerment/wizard.md
+      - "Choose the Right Path":
+          - empowerment/decision-tree.md
+          - "Path Finder (interactive)": empowerment/wizard.md
       - "Security & Governance": empowerment/security.md
   - Resources:
       - Use-Case Catalog: CATALOG.md

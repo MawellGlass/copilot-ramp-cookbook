@@ -5,7 +5,7 @@ hide: [toc]
 
 # Path Finder
 
-Answer two quick questions about your scenario and we'll point you at the Copilot surface that fits — Chat,
+Answer a few quick questions about your scenario and we'll point you at the Copilot surface that fits — Chat,
 a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry. It's the
 [decision tree](decision-tree.md), made clickable.
 
@@ -114,7 +114,6 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
   // ── Decision graph (mirrors empowerment/decision-tree.md) ──────────────────
   var TREE = {
     start: {
-      step: 1,
       q: "How often will you need this?",
       sub: "Start with the process, not the product \u2014 the rhythm of the work points you to the right surface. You don't need to know the tools yet.",
       cols: 2,
@@ -125,30 +124,85 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
           desc: "A repeatable need my team or org will reuse.", next: "recurring" }
       ]
     },
+
     once: {
-      step: 2,
-      q: "What does the task look like?",
-      sub: "It's a one-off. Pick the shape that matches the work.",
+      q: "What does the one-off task look like?",
+      sub: "It's a one-off. Pick the shape that matches the work \u2014 we'll refine from there.",
       options: [
         { ico: "\uD83D\uDCAC", title: "A quick, single step",
-          desc: "Draft, summarize, rewrite, or answer \u2014 right now.", next: "r_chat" },
+          desc: "Draft, summarize, rewrite, or answer \u2014 right now.", next: "once_single" },
         { ico: "\uD83D\uDE80", title: "A multi-step job to hand off",
-          desc: "Several steps I'd rather delegate and let run.", next: "r_cowork" },
-        { ico: "\uD83E\uDD16", title: "A specialized job",
-          desc: "Deep research, data analysis, or facilitation.", next: "r_fpa" }
+          desc: "Several steps I'd rather delegate and let run.", next: "once_multi" },
+        { ico: "\uD83E\uDD16", title: "A specialized skill",
+          desc: "Deep research, data analysis, or facilitation.", next: "once_special" }
       ]
     },
-    recurring: {
-      step: 2,
-      q: "Who will use it, and what does it need?",
-      sub: "It'll happen again and again. How far does it need to reach?",
+    once_single: {
+      q: "Does it need anything beyond drafting or answering?",
+      sub: "A single step can still vary \u2014 does it stay inside your own writing, or reach for data?",
+      cols: 2,
       options: [
-        { ico: "\uD83E\uDDF1", title: "Just me or my team \u2014 keep it simple",
-          desc: "A prompt and a few reference files, no code.", next: "r_ab" },
+        { ico: "\u270D\uFE0F", title: "No \u2014 just write or answer",
+          desc: "Compose, summarize, rewrite, or explain in my apps.", next: "r_chat" },
+        { ico: "\uD83D\uDD0E", title: "Yes \u2014 pull data or analyze",
+          desc: "Reach into a specific source or run real analysis.", next: "r_fpa" }
+      ]
+    },
+    once_multi: {
+      q: "How hands-off should it run?",
+      sub: "Multi-step work can be fully delegated, or steered as one specialized skill.",
+      cols: 2,
+      options: [
+        { ico: "\uD83D\uDE80", title: "Fully delegate it",
+          desc: "Let it plan and run the steps end to end.", next: "r_cowork" },
+        { ico: "\uD83E\uDD16", title: "It's really one skill",
+          desc: "Deep research or analysis I'll guide.", next: "r_fpa" }
+      ]
+    },
+    once_special: {
+      q: "Might Microsoft already ship an agent for it?",
+      sub: "Specialized jobs often already exist \u2014 the best agent is the one you don't have to make.",
+      cols: 2,
+      options: [
+        { ico: "\uD83D\uDCE6", title: "Maybe \u2014 check first",
+          desc: "See what's bundled before building anything.", next: "r_fpa" },
+        { ico: "\uD83D\uDEE0\uFE0F", title: "No \u2014 assemble it myself",
+          desc: "Bespoke; I'll hand the whole job to Cowork.", next: "r_cowork" }
+      ]
+    },
+
+    recurring: {
+      q: "Who will use it, and how far does it reach?",
+      sub: "It'll happen again and again. How far does it need to travel?",
+      options: [
+        { ico: "\uD83E\uDDF1", title: "Just me or my team",
+          desc: "A repeatable helper for a small group.", next: "rec_team" },
         { ico: "\uD83C\uDFE2", title: "The whole org \u2014 governed",
-          desc: "Real knowledge, actions, connectors, and lifecycle.", next: "r_studio" },
+          desc: "Real knowledge, actions, and a managed lifecycle.", next: "rec_org" },
         { ico: "\uD83D\uDEF0\uFE0F", title: "Engineered at scale",
           desc: "Pro-code, autonomous, custom models or MCP.", next: "r_foundry" }
+      ]
+    },
+    rec_team: {
+      q: "What does it need under the hood?",
+      sub: "Team-scale agents split on one thing: do they need more than a prompt and files?",
+      cols: 2,
+      options: [
+        { ico: "\uD83D\uDCDD", title: "A prompt and a few files",
+          desc: "Instructions plus reference docs \u2014 no code.", next: "r_ab" },
+        { ico: "\uD83D\uDD0C", title: "Knowledge, actions, connectors",
+          desc: "Grounded data or real actions, governed.", next: "r_studio" }
+      ]
+    },
+    rec_org: {
+      q: "How will it be built and run?",
+      sub: "Org-wide and governed \u2014 the line now is low-code versus pro-code.",
+      cols: 2,
+      options: [
+        { ico: "\uD83C\uDFE2", title: "Low-code, in a studio",
+          desc: "Configured, published, and monitored without engineering.", next: "r_studio" },
+        { ico: "\uD83D\uDEF0\uFE0F", title: "Pro-code at scale",
+          desc: "Custom models, autonomous runs, or MCP tools.", next: "r_foundry" }
       ]
     }
   };
@@ -208,7 +262,7 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
     intro: true,
     ico: "\uD83E\uDDED",
     q: "Find your starting surface",
-    sub: "Two questions. Thirty seconds. A recommendation you can act on.",
+    sub: "A few quick questions. Under a minute. A recommendation you can act on.",
     cta: "Start"
   };
 
@@ -235,11 +289,24 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
     });
   }
 
+  function maxDepth(key) {
+    var node = TREE[key];
+    if (!node) return 0; // a result node ends the journey
+    var best = 0;
+    node.options.forEach(function (o) {
+      var d = maxDepth(o.next);
+      if (d > best) best = d;
+    });
+    return 1 + best;
+  }
+
   function renderNode(key) {
     var node = TREE[key];
+    var step = path.length;                          // depth of this question (1-indexed)
+    var total = (path.length - 1) + maxDepth(key);   // longest journey through this branch
     var dots = "";
-    for (var i = 1; i <= 2; i++) {
-      var cls = "pw-dot" + (i === node.step ? " active" : (i < node.step ? " done" : ""));
+    for (var i = 1; i <= total; i++) {
+      var cls = "pw-dot" + (i === step ? " active" : (i < step ? " done" : ""));
       dots += '<span class="' + cls + '"></span>';
     }
     var crumb = labels.length
@@ -253,7 +320,7 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
     }).join("");
     card.innerHTML =
       '<div class="pw-progress">' + dots +
-        '<span class="pw-step-label">Step ' + node.step + ' of 2</span></div>' +
+        '<span class="pw-step-label">Step ' + step + ' of ' + total + '</span></div>' +
       crumb +
       '<h3 class="pw-q">' + esc(node.q) + '</h3>' +
       '<p class="pw-sub">' + esc(node.sub) + '</p>' +
@@ -282,9 +349,11 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
       ? '<div class="pw-crumbs">Your path: ' + labels.map(function (l) { return '<span>' + esc(l) + '</span>'; }).join(" \u2192 ") + '</div>'
       : '';
     var ctaAttrs = r.external ? ' target="_blank" rel="noopener"' : '';
+    var doneDots = "";
+    for (var i = 0; i < path.length; i++) { doneDots += '<span class="pw-dot done"></span>'; }
     card.innerHTML =
       '<div class="pw-result">' +
-        '<div class="pw-progress"><span class="pw-dot done"></span><span class="pw-dot done"></span>' +
+        '<div class="pw-progress">' + doneDots +
           '<span class="pw-step-label">Recommendation</span></div>' +
         crumb +
         '<div class="pw-result-badge">Your recommended surface</div>' +
@@ -340,7 +409,7 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
 ---
 
 !!! tip "Prefer the full map?"
-    The Path Finder collapses the same logic into two clicks. To see every branch at once — or to read it as a
+    The Path Finder walks the same logic one question at a time. To see every branch at once — or to read it as a
     table — open [Choose the Right Path](decision-tree.md). When two destinations feel plausible, pick the
     **simpler** one first; it's far cheaper to graduate later than to over-build on day one.
 
