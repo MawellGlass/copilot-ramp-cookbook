@@ -1,0 +1,50 @@
+/* Role filter chips on the Use-Case Catalog (paired with javascripts/catalog.js). */
+.catalog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.cf-chip {
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color--light);
+  border-radius: 2rem;
+  padding: 0.3rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.cf-chip:hover {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-default-fg-color);
+}
+
+.cf-chip[aria-pressed="true"] {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.cf-count {
+  font-size: 0.62rem;
+  font-weight: 700;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  border-radius: 1rem;
+  padding: 0.05rem 0.4rem;
+  line-height: 1.4;
+}
+
+.cf-chip[aria-pressed="true"] .cf-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--md-primary-bg-color);
+}

@@ -60,6 +60,10 @@ theme:
 
 extra_css:
   - stylesheets/home.css
+  - stylesheets/catalog.css
+
+extra_javascript:
+  - javascripts/catalog.js
 
 plugins:
   - search

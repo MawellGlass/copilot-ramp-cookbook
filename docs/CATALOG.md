@@ -7,6 +7,8 @@ now, deepened on a cadence.
 Filter mentally by **Stage** (the heading) and **For:** (the role tag). On the live site these become
 clickable filter chips.
 
+<div id="catalog-filters" class="catalog-filters" markdown="0"></div>
+
 Legend — `★` = recommended starting point for that stage · `→ walkthrough` = already fully expanded.
 
 ---
