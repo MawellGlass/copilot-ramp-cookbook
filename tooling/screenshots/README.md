@@ -9,7 +9,7 @@ walkthroughs trustworthy.
 1. You log in to Microsoft 365 **once** in a real browser (handles MFA).
 2. Playwright saves that authenticated session to `.auth/state.json`.
 3. Each scenario script reuses the session, runs the walkthrough's steps in the live product, and
-   saves `{NN}-{name}.png` files into the repo's top-level `screenshots/{slug}/` folder.
+   saves `{NN}-{name}.png` files into `docs/screenshots/{slug}/` (the MkDocs-served folder).
 4. You uncomment the matching embeds in the walkthrough — done.
 
 ## Prerequisites
@@ -39,10 +39,11 @@ npm run auth
 npm run capture
 ```
 
-Output lands in `../../screenshots/{slug}/` (the repo's top-level `screenshots/` folder), e.g.
-`screenshots/chat-meeting-followups/01-open-copilot.png`.
+Output lands in `../../docs/screenshots/{slug}/` (the MkDocs-served `docs/screenshots/` folder), e.g.
+`docs/screenshots/chat-meeting-followups/01-open-copilot.png`.
 
-Then in the walkthrough (`walkthroughs/{slug}.md`), uncomment the gallery embeds under `## Screenshots`.
+Then in the walkthrough (`docs/walkthroughs/{slug}.md`), reference them as
+`../screenshots/{slug}/{NN}-{name}.png` under `## Screenshots`.
 
 ## Verifying selectors (important)
 

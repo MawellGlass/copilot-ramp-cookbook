@@ -6,8 +6,9 @@ import { join } from 'node:path';
  * Scenario: "Turn a meeting into tracked follow-ups" (Stage 1 · Copilot Chat).
  * Mirrors walkthroughs/chat-meeting-followups.md step-by-step.
  *
- * Output: ../../screenshots/chat-meeting-followups/{NN}-{name}.png
- * (relative to this file → lands in the repo's top-level screenshots/ folder)
+ * Output: ../../docs/screenshots/chat-meeting-followups/{NN}-{name}.png
+ * (relative to this file → lands in docs/screenshots/, which MkDocs serves and
+ *  walkthroughs reference as ../screenshots/{slug}/{NN}-{name}.png)
  *
  * ⚠️ SELECTORS ARE BEST-EFFORT. The M365 Copilot DOM changes often. Before a
  * real capture run, verify each selector with `npm run codegen` (Playwright
@@ -16,7 +17,7 @@ import { join } from 'node:path';
  */
 
 const SLUG = 'chat-meeting-followups';
-const OUT_DIR = join(__dirname, '..', '..', 'screenshots', SLUG);
+const OUT_DIR = join(__dirname, '..', '..', 'docs', 'screenshots', SLUG);
 
 const PROMPT = `Summarize the meeting "[meeting name]" from today. Give me:
 - Decisions made

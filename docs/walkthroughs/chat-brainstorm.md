@@ -62,6 +62,26 @@ Include at least one option I probably haven't considered.
    ```
 5. **Share for input.** Paste the options table into a Teams message or a Copilot Page and ask colleagues to weigh in before you decide.
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Open Microsoft 365 Copilot Chat and start a new chat.**
+
+![Microsoft 365 Copilot Chat ready for a prompt](../screenshots/chat-brainstorm/01-open-copilot.png)
+
+**2. Paste the structured brainstorm prompt into the composer.**
+
+![The brainstorm prompt entered in the Copilot composer](../screenshots/chat-brainstorm/02-prompt-entered.png)
+
+**3. Copilot returns five approaches — each with a one-sentence description, the key benefit, the biggest risk, and a rough cost to execute.**
+
+![Copilot's structured response showing options with tradeoffs](../screenshots/chat-brainstorm/03-response.png)
+
+**4. It closes with a clear recommendation and offers to turn the pick into a one-page proposal or a 30-day pilot plan.**
+
+![Copilot's recommended sequence and follow-up offer](../screenshots/chat-brainstorm/04-recommendation.png)
+
 ## Tips and variants
 
 - **For decisions with stakeholders:** add `"Also flag which option is most likely to face resistance from [stakeholder type], and why."` to the prompt.
