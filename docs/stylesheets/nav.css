@@ -1,0 +1,48 @@
+/* Collapsible navigation sections on desktop.
+ *
+ * Material for MkDocs only collapses nested navigation in the mobile drawer;
+ * on wide viewports (with `navigation.tabs`) nested sections are rendered
+ * permanently expanded. These rules restore click-to-collapse behavior for the
+ * primary sidebar so the Solution Templates sub-headers (Studio / Foundry) —
+ * and every other nested section — act like dropdowns.
+ *
+ * Sections start expanded (see javascripts/nav-expand.js); clicking a section
+ * label collapses or expands it. The chevron points down when expanded and
+ * right when collapsed.
+ */
+@media screen and (min-width: 76.25em) {
+  /* Animate the section body and clip it while collapsing. */
+  .md-sidebar--primary .md-nav__item--nested > .md-nav {
+    overflow: hidden;
+    transition: height 0.2s ease;
+  }
+
+  /* Collapse the body when the section toggle is unchecked. */
+  .md-sidebar--primary
+    .md-nav__item--nested
+    > input.md-nav__toggle:not(:checked)
+    ~ .md-nav {
+    height: 0 !important;
+    visibility: hidden;
+  }
+
+  /* Treat the section label as a clickable toggle. */
+  .md-sidebar--primary .md-nav__item--nested > label.md-nav__link {
+    cursor: pointer;
+  }
+
+  /* Chevron affordance: down when expanded, right when collapsed. */
+  .md-sidebar--primary
+    .md-nav__item--nested
+    > label.md-nav__link
+    .md-nav__icon {
+    transition: transform 0.2s ease;
+  }
+  .md-sidebar--primary
+    .md-nav__item--nested
+    > input.md-nav__toggle:not(:checked)
+    ~ label.md-nav__link
+    .md-nav__icon {
+    transform: rotate(-90deg);
+  }
+}

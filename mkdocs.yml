@@ -31,7 +31,7 @@ theme:
   features:
     - navigation.tabs            # top-level stages as tabs
     - navigation.tabs.sticky
-    - navigation.sections        # group walkthroughs under each stage
+    - navigation.expand          # sub-sections are collapsible dropdowns, expanded by default
     - navigation.top             # back-to-top button
     - navigation.footer          # prev/next links at page bottom
     - navigation.indexes
@@ -62,10 +62,12 @@ extra_css:
   - stylesheets/home.css
   - stylesheets/catalog.css
   - stylesheets/mermaid.css
+  - stylesheets/nav.css
 
 extra_javascript:
   - javascripts/catalog.js
   - javascripts/mermaid-render.js
+  - javascripts/nav-expand.js
 
 plugins:
   - search
