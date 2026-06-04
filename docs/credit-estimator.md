@@ -203,7 +203,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
   <div class="calc-field">
     <label for="workDays">Working days per month</label>
     <input type="number" id="workDays" min="1" max="31" value="22" oninput="recalc()">
-    <div class="hint">Standard = 22; adjust for holiday-heavy months</div>
+    <div class="hint">Standard = 22; used to derive avg daily interaction estimates from monthly totals</div>
   </div>
 </div>
 
@@ -217,9 +217,9 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <thead>
       <tr>
         <th>Agent feature / interaction type</th>
-        <th class="col-num">Interactions&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
+        <th class="col-num">Interactions&nbsp;/&nbsp;user&nbsp;/&nbsp;month</th>
         <th class="col-num">Copilot&nbsp;Credits&nbsp;/&nbsp;interaction</th>
-        <th class="col-num">Credits&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
+        <th class="col-num">Credits&nbsp;/&nbsp;user&nbsp;/&nbsp;month</th>
         <th></th>
       </tr>
     </thead>
@@ -245,8 +245,8 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 <div class="results-grid">
   <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl"><span id="lbl-billed">Unlicensed users (billed)</span></div></div>
   <div class="result-card"><div class="val" id="res-active">—</div><div class="lbl"><span id="lbl-active">Active unlicensed / month</span></div></div>
-  <div class="result-card"><div class="val" id="res-daily">—</div><div class="lbl">Total prompts / day</div></div>
-  <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total prompts / month</div></div>
+  <div class="result-card"><div class="val" id="res-daily">—</div><div class="lbl">Avg interactions / day</div></div>
+  <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total interactions / month</div></div>
   <div class="result-card"><div class="val" id="res-credits">—</div><div class="lbl">Credits / month (org)</div></div>
   <div class="result-card"><div class="val" id="res-per-user">—</div><div class="lbl">Credits / active user / month</div></div>
 </div>
@@ -275,10 +275,10 @@ function syncRange(toId, fromId) {
 
 var defaultRows = [
   // ── Core agent interactions ──
-  { name: 'Classic answer',                                    prompts: 3,    credits: 1    },
-  { name: 'Generative answer',                                 prompts: 2,    credits: 2    },
-  { name: 'Agent action',                                      prompts: 2,    credits: 5    },
-  { name: 'Tenant graph grounding for messages',               prompts: 1,    credits: 10   },
+  { name: 'Classic answer',                                    prompts: 66,   credits: 1    },
+  { name: 'Generative answer',                                 prompts: 44,   credits: 2    },
+  { name: 'Agent action',                                      prompts: 44,   credits: 5    },
+  { name: 'Tenant graph grounding for messages',               prompts: 22,   credits: 10   },
   { name: 'Agent flow actions (per 100 actions = 13 credits)', prompts: 0,    credits: 13   },
   // ── AI tools ──
   { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    prompts: 0, credits: 0.1  },
@@ -344,9 +344,9 @@ function recalc() {
   document.getElementById('foot-prompts').textContent = fmtDec(totalPpud);
   document.getElementById('foot-credits').textContent = fmtDec(totalCpud);
 
-  var dailyP   = active * totalPpud;
-  var monthlyP = dailyP * workDays;
-  var monthlyC = active * totalCpud * workDays;
+  var monthlyP = active * totalPpud;
+  var dailyP   = workDays > 0 ? monthlyP / workDays : 0;
+  var monthlyC = active * totalCpud;
   var perUser  = active > 0 ? monthlyC / active : 0;
 
   var lblBilled = document.getElementById('lbl-billed');
