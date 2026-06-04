@@ -380,6 +380,30 @@ Deploy an HR FAQ agent grounded on your policy docs — consistent, cited answer
 **Sample prompt:** `Draft a Copilot Studio agent design for an HR policies FAQ agent. Knowledge source: [our HR SharePoint site]. Top employee questions: [list]. Always cite the source document. For anything requiring individual judgment, redirect to HR.`
 → Fully written: `walkthroughs/studio-functional-hr-policy-faq.md`
 
+### IT: Triage support requests and answer from the knowledge base → walkthrough
+**For:** maker, it-admin · `status: walkthrough`
+Deflect tier-1 IT tickets with instant KB answers — and for anything that needs a human, collect the right information and raise the ticket automatically.
+**Sample prompt:** `Design a Copilot Studio IT helpdesk triage agent. KB: [IT SharePoint]. Top self-serviceable requests: [list 20]. When a ticket is needed, collect: category, urgency, description. Submit via Power Automate to [helpdesk system].`
+→ Fully written: `walkthroughs/studio-functional-it-helpdesk.md`
+
+### Finance: Self-service expense and procurement guidance → walkthrough
+**For:** maker, it-admin, champion · `status: walkthrough`
+Give employees instant answers on expense policy and procurement rules — and guide them into the right process rather than leaving them to hunt through the intranet.
+**Sample prompt:** `Design a Finance guidance agent. Knowledge source: [expense policy / procurement policy / travel policy]. Guide employees to the right form and escalate individual rulings to Finance.`
+→ Fully written: `walkthroughs/studio-functional-finance-expense.md`
+
+### Sales: Product intel and objection handling for sales reps → walkthrough
+**For:** maker, champion, manager · `status: walkthrough`
+Give every rep instant access to the right product story, competitive positioning, and objection responses — grounded on your actual sales content, available mid-call.
+**Sample prompt:** `Design a sales enablement agent. Knowledge sources: [battle cards / product docs / objection guide / case study library]. Give brief, confident answers with a recommended talk track. Escalate anything requiring custom pricing to the deal desk.`
+→ Fully written: `walkthroughs/studio-functional-sales-intel.md`
+
+### Legal & Compliance: Policy guidance and process navigation → walkthrough
+**For:** maker, it-admin, champion · `status: walkthrough`
+Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
+**Sample prompt:** `Design a compliance guidance agent. Knowledge sources: [GDPR policy / NDA process / COI policy / AUP]. Scope: process guidance only. Out of scope: legal advice, contract interpretation. Escalate to [legal intake channel].`
+→ Fully written: `walkthroughs/studio-functional-legal-compliance.md`
+
 ---
 
 ## Solution Templates
@@ -389,6 +413,16 @@ _Ready-to-build agent specs. Copy the system prompt, configure the topics, run t
 **Adapts to:** HR · IT · Finance · Legal · Any team with a policy doc library · `status: solution-template`
 A complete, copy-paste-ready agent spec: system prompt, topics, starter prompts, test cases, and deployment checklist. Works for any function — adapt the [bracketed] values and build.
 → Fully written: `solutions/policy-faq-agent.md`
+
+### IT Helpdesk Triage Agent → solution template
+**For:** maker, it-admin · `status: solution-template`
+Triage pattern: deflect with KB answers, collect structured fields, create ticket via Power Automate. Includes P1 escalation topic, known issues check, full PA action spec, and 8 test cases.
+→ Fully written: `solutions/it-helpdesk-triage-agent.md`
+
+### Onboarding Buddy Agent → solution template
+**For:** maker, champion, hr · `status: solution-template`
+Personalisation pattern: collects role, team, and start week to tailor first-week guidance. Includes welcome flow, checklist topic, conversation variables spec, and role-adaptive content structure.
+→ Fully written: `solutions/onboarding-buddy-agent.md`
 
 ---
 

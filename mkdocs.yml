@@ -112,6 +112,8 @@ nav:
   - Solution Templates:
       - solutions/index.md
       - "Policy FAQ Agent": solutions/policy-faq-agent.md
+      - "IT Helpdesk Triage Agent": solutions/it-helpdesk-triage-agent.md
+      - "Onboarding Buddy Agent": solutions/onboarding-buddy-agent.md
 
   - Resources:
       - Use-Case Catalog: CATALOG.md

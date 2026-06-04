@@ -1,0 +1,94 @@
+---
+title: "IT: Triage support requests and answer from the knowledge base"
+stage: studio
+roles: [maker, it-admin]
+tags: [copilot-studio, it, helpdesk, triage, knowledge, actions, power-automate, functional]
+level: intermediate
+time: 4–5 hours
+status: walkthrough
+updated: 2026-06-04
+---
+
+# IT: Triage support requests and answer from the knowledge base
+
+> **One-line value.** Deflect tier-1 IT tickets with instant KB answers — and for anything that needs a human, collect the right information and raise the ticket automatically.
+
+**Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Intermediate · **Time:** 4–5 hours
+
+## When to use this
+
+IT helpdesks spend a disproportionate amount of time on repeatable tier-1 questions: password resets, VPN access, software requests, "how do I…" queries. These are answerable from a knowledge base. The cost isn't the answer — it's the ticket volume and the routing noise.
+
+A triage agent changes the economics: it answers from the KB first, and only creates a ticket when the issue genuinely needs a human. When it does raise a ticket, it collects the structured information the helpdesk actually needs (category, urgency, description) before the engineer ever sees it — no back-and-forth to gather basics.
+
+**Why Stage 5:** This agent does more than answer questions. It makes a triage decision (KB answer vs. ticket) and takes an action (creating a ticket via Power Automate). That logic and the action layer require Copilot Studio — Agent Builder can't do it.
+
+## What you'll need
+
+- **Copilot Studio access** and a Power Platform environment
+- Your **IT knowledge base** in SharePoint or as uploaded docs (KB articles, known issues, how-to guides)
+- A **ticketing system** with a Power Automate connector (ServiceNow, Jira, Zendesk, or a SharePoint list as a lightweight alternative)
+- The **required fields** your helpdesk needs to process a ticket (category, urgency, short description, contact)
+
+## Design before you build
+
+Two questions to resolve with the helpdesk team first:
+
+1. **What are the top 20 requests that don't actually need a human?** These should be answered by knowledge, not a ticket.
+2. **What information must be on every ticket before the team picks it up?** Those are the fields your triage topic collects.
+
+```
+Design a Copilot Studio IT helpdesk triage agent.
+Knowledge base: [our IT SharePoint KB / these documents].
+Top self-serviceable requests: [list your 20].
+When a ticket is needed, collect: category ([hardware / software / access / other]),
+urgency ([blocking / degraded / low]), and a short description.
+Then submit via Power Automate to [ServiceNow / Jira / our SharePoint list].
+
+Give me: persona instructions, 3 topics to configure, and the triage
+decision flow — when does the agent answer vs. when does it create a ticket?
+```
+
+## Step by step
+
+1. **Create the agent.** Name it (e.g. "IT Help"), write instructions that set the triage behaviour:
+
+    > *You are the IT Help agent for [Company]. First, try to answer the user's request from the IT knowledge base. If the knowledge base covers it, answer with a clear resolution step and the source article. If the issue needs a human to resolve — or if the user says the KB answer didn't work — guide them through raising a support ticket.*
+
+2. **Add the knowledge source.** Point the agent at your IT KB (SharePoint site or uploaded articles). Test the top-20 self-serviceable queries directly in the Test pane before building any topics.
+
+3. **Build the triage topic.** This is the core of the agent. The flow:
+    - User describes an issue
+    - Agent checks if knowledge base covers it → if yes, answers
+    - If the user says it didn't work, or the issue is clearly action-required (e.g. "I need a new laptop") → moves to ticket collection
+    - Collects: category, urgency, description
+    - Confirms the details with the user before submitting
+
+    > 📷 *Screenshot — triage topic flow: KB answer node → "did that help?" branch → ticket collection.*
+
+4. **Connect the Power Automate action.** Build a flow that takes the collected fields and creates the ticket in your helpdesk system (or posts to a SharePoint list if no dedicated tool). Pass back the ticket reference number.
+
+    > 📷 *Screenshot — Power Automate flow creating a ServiceNow/Jira ticket with the collected fields.*
+
+5. **Build the confirmation topic.** After ticket creation, the agent confirms: "I've raised a ticket for you — reference [number]. The IT team will be in touch within [SLA]. Is there anything else?"
+
+6. **Test end-to-end.** Walk the happy path (KB answer works), the escalation path (KB answer doesn't help → ticket raised), and the direct path (user asks for something that clearly needs a ticket immediately). Confirm ticket numbers appear in the target system.
+
+## Make it better
+
+- **SLA awareness.** Update the confirmation message with the actual SLA by urgency tier ("blocking issues are typically picked up within 2 hours"). This reduces "where's my ticket?" follow-ups.
+- **Known issues broadcast.** Add a topic that checks a "known issues" SharePoint page — if the user's issue matches a known outage, the agent can say "we're already aware and working on it" before they raise a duplicate ticket.
+- **Closed-loop follow-up.** Connect a Power Automate flow that messages the user when their ticket is resolved. The agent doesn't have to be the endpoint — it can be the start of a loop.
+
+## Watch out for
+
+- **KB article quality.** The agent surfaces what's in the articles — if KB articles are incomplete, outdated, or written for IT engineers rather than end users, the answers will reflect that. Run a plain-language review of your top-20 articles before launch.
+- **Collecting too much in the triage topic.** Start with the minimum fields the helpdesk actually uses. Every extra question increases drop-off. Add fields after launch when you see what the team asks for repeatedly.
+- **Power Automate error handling.** Test what happens when the PA flow fails (connector down, authentication error). The triage topic should catch failures and offer a fallback: "I wasn't able to raise the ticket automatically — please email [helpdesk@] with these details."
+
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow) · [Power Automate connector](https://learn.microsoft.com/en-us/power-automate/)
+
+---
+
+!!! tip "Ready to build? Use the solution template."
+    The [IT Helpdesk Triage Agent solution template](../solutions/it-helpdesk-triage-agent.md) gives you the system prompt, triage topic flow, Power Automate action spec, test cases, and deployment checklist for this exact pattern.
