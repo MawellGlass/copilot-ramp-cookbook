@@ -5,7 +5,7 @@ hide: [toc]
 
 # Copilot Credit Estimator
 
-Estimate monthly M365 Copilot message-credit consumption for your org or team. Adjust the inputs — the results update instantly.
+Estimate monthly M365 Copilot message-credit consumption for your org or team. Adjust the inputs and the prompt table — results update instantly.
 
 !!! info "About message credits"
     M365 Copilot licenses include a base allotment of **message credits** consumed per interaction. Simple chat prompts typically use **1 credit**; agent invocations, complex multi-turn threads, and Copilot Studio interactions typically use **2–10 credits**. Your admin can view actual consumption in the Microsoft 365 admin center under **Copilot > Usage**.
@@ -13,334 +13,347 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 <div id="calc-wrap" markdown="0">
 
 <style>
-#calc-wrap {
-  font-family: inherit;
+#calc-wrap { font-family: inherit; }
+
+.section-label {
+  font-size: 0.78rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--md-default-fg-color--light);
+  margin: 1.5rem 0 0.6rem;
 }
 .calc-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem 2rem;
-  margin: 1.5rem 0;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 2rem; margin-bottom: 1.5rem;
 }
-@media (max-width: 700px) {
-  .calc-grid { grid-template-columns: 1fr; }
-}
+@media (max-width: 700px) { .calc-grid { grid-template-columns: 1fr; } }
 .calc-field label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--md-default-fg-color--light);
-  margin-bottom: 0.35rem;
+  display: block; font-size: 0.78rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light); margin-bottom: 0.35rem;
 }
-.calc-field .hint {
-  font-size: 0.72rem;
-  color: var(--md-default-fg-color--lighter);
-  margin-top: 0.2rem;
-}
-.calc-field input[type=number],
-.calc-field input[type=range] {
-  width: 100%;
-  box-sizing: border-box;
-}
+.calc-field .hint { font-size: 0.72rem; color: var(--md-default-fg-color--lighter); margin-top: 0.25rem; }
 .calc-field input[type=number] {
-  padding: 0.45rem 0.6rem;
-  border: 1px solid var(--md-default-fg-color--lighter);
-  border-radius: 4px;
-  background: var(--md-code-bg-color);
-  color: var(--md-default-fg-color);
-  font-size: 1rem;
+  width: 100%; box-sizing: border-box; padding: 0.45rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lighter); border-radius: 4px;
+  background: var(--md-code-bg-color); color: var(--md-default-fg-color); font-size: 1rem;
 }
-.calc-field input[type=range] {
-  accent-color: var(--md-primary-fg-color);
-  margin-top: 0.25rem;
+.range-row { display: flex; align-items: center; gap: 0.75rem; }
+.range-row input[type=range] { flex: 1; accent-color: var(--md-primary-fg-color); }
+.range-row input[type=number] { width: 70px !important; }
+
+/* prompt table */
+.prompt-table-wrap { overflow-x: auto; margin-bottom: 0.75rem; }
+#prompt-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+#prompt-table thead th {
+  text-align: left; font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light); padding: 0.4rem 0.6rem;
+  border-bottom: 2px solid var(--md-default-fg-color--lightest); white-space: nowrap;
 }
-.range-row {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+#prompt-table thead th.col-num { text-align: right; }
+#prompt-table tbody tr:hover td { background: var(--md-code-bg-color); }
+#prompt-table tbody td {
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: middle;
 }
-.range-row input[type=range] { flex: 1; }
-.range-val {
-  min-width: 3.5rem;
-  text-align: right;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--md-primary-fg-color);
+#prompt-table tfoot td {
+  padding: 0.5rem 0.6rem; border-top: 2px solid var(--md-default-fg-color--lightest);
+  font-weight: 700; font-size: 0.85rem;
 }
-.results-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
+#prompt-table tfoot .foot-label {
+  color: var(--md-default-fg-color--light); font-size: 0.72rem;
+  text-transform: uppercase; letter-spacing: 0.05em;
 }
-.result-card {
-  background: var(--md-code-bg-color);
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 6px;
-  padding: 1rem 1.25rem;
-  text-align: center;
+#prompt-table tfoot .foot-val { color: var(--md-primary-fg-color); }
+.pt-name {
+  width: 100%; min-width: 160px; box-sizing: border-box;
+  padding: 0.3rem 0.5rem; border: 1px solid transparent; border-radius: 4px;
+  background: transparent; color: var(--md-default-fg-color);
+  font-size: 0.9rem; font-family: inherit;
 }
-.result-card .val {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: var(--md-primary-fg-color);
-  line-height: 1.15;
+.pt-name:focus { border-color: var(--md-primary-fg-color); background: var(--md-code-bg-color); outline: none; }
+.pt-num {
+  width: 80px; padding: 0.3rem 0.4rem;
+  border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px;
+  background: var(--md-code-bg-color); color: var(--md-default-fg-color);
+  font-size: 0.9rem; text-align: right; font-family: inherit; box-sizing: border-box;
 }
-.result-card .lbl {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--md-default-fg-color--light);
-  margin-top: 0.3rem;
+.pt-num:focus { border-color: var(--md-primary-fg-color); outline: none; }
+.pt-calc {
+  text-align: right; font-weight: 600; color: var(--md-primary-fg-color);
+  min-width: 80px; white-space: nowrap;
 }
-.budget-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 1rem 0 0.5rem;
+.pt-del {
+  cursor: pointer; background: none; border: none;
+  color: var(--md-default-fg-color--lighter); font-size: 1.1rem;
+  padding: 0 0.3rem; line-height: 1; font-family: inherit; transition: color 0.15s;
 }
-.budget-row label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--md-default-fg-color--light);
-  white-space: nowrap;
-}
-.budget-row input[type=number] {
-  width: 130px;
-  padding: 0.4rem 0.6rem;
-  border: 1px solid var(--md-default-fg-color--lighter);
-  border-radius: 4px;
-  background: var(--md-code-bg-color);
-  color: var(--md-default-fg-color);
-  font-size: 1rem;
-}
-.budget-result {
-  font-size: 0.9rem;
-  color: var(--md-default-fg-color);
-}
-.budget-result strong {
-  color: var(--md-primary-fg-color);
-}
-.scenario-bar {
-  margin: 1.5rem 0 0.5rem;
-}
-.scenario-bar label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--md-default-fg-color--light);
-  margin-bottom: 0.5rem;
-  display: block;
-}
-.scenario-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.scenario-pill {
-  cursor: pointer;
-  padding: 0.3rem 0.75rem;
-  border-radius: 20px;
-  border: 1px solid var(--md-primary-fg-color);
-  background: transparent;
-  color: var(--md-primary-fg-color);
-  font-size: 0.8rem;
-  font-family: inherit;
+.pt-del:hover { color: #e53935; }
+.btn-add-row {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  cursor: pointer; padding: 0.35rem 0.9rem;
+  border: 1px dashed var(--md-primary-fg-color); border-radius: 4px;
+  background: transparent; color: var(--md-primary-fg-color);
+  font-size: 0.83rem; font-family: inherit; margin-bottom: 1.5rem;
   transition: background 0.15s, color 0.15s;
 }
-.scenario-pill:hover,
-.scenario-pill.active {
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+.btn-add-row:hover { background: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
+
+/* results */
+.results-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem; margin: 1.5rem 0;
 }
-hr.calc-divider {
-  border: none;
-  border-top: 1px solid var(--md-default-fg-color--lightest);
-  margin: 1.5rem 0;
+.result-card {
+  background: var(--md-code-bg-color); border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px; padding: 1rem 1.25rem; text-align: center;
 }
+.result-card .val { font-size: 1.8rem; font-weight: 700; color: var(--md-primary-fg-color); line-height: 1.15; }
+.result-card .lbl { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--md-default-fg-color--light); margin-top: 0.3rem; }
+
+/* budget */
+.budget-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin: 1rem 0 0.5rem; }
+.budget-row label {
+  font-size: 0.78rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--md-default-fg-color--light); white-space: nowrap;
+}
+.budget-row input[type=number] {
+  width: 150px; padding: 0.4rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lighter); border-radius: 4px;
+  background: var(--md-code-bg-color); color: var(--md-default-fg-color); font-size: 1rem;
+}
+.budget-result { font-size: 0.9rem; color: var(--md-default-fg-color); margin-top: 0.25rem; }
+.budget-result strong { color: var(--md-primary-fg-color); }
+
+/* presets */
+.scenario-bar { margin: 0 0 1rem; }
+.scenario-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.scenario-pill {
+  cursor: pointer; padding: 0.3rem 0.75rem; border-radius: 20px;
+  border: 1px solid var(--md-primary-fg-color); background: transparent;
+  color: var(--md-primary-fg-color); font-size: 0.8rem; font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+.scenario-pill:hover, .scenario-pill.active { background: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
+hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color--lightest); margin: 1.5rem 0; }
 </style>
 
-<!-- Scenario presets -->
+<!-- ── Presets ── -->
 <div class="scenario-bar">
-  <label>Quick presets</label>
+  <div class="section-label">Quick presets</div>
   <div class="scenario-pills">
-    <button class="scenario-pill" onclick="applyScenario('pilot')">Pilot team (50 users)</button>
-    <button class="scenario-pill" onclick="applyScenario('dept')">Department (500 users)</button>
-    <button class="scenario-pill" onclick="applyScenario('org')">Full org (5,000 users)</button>
-    <button class="scenario-pill" onclick="applyScenario('enterprise')">Enterprise (25,000 users)</button>
+    <button class="scenario-pill" onclick="applyScenario('pilot',event)">Pilot team (50 users)</button>
+    <button class="scenario-pill" onclick="applyScenario('dept',event)">Department (500 users)</button>
+    <button class="scenario-pill" onclick="applyScenario('org',event)">Full org (5,000 users)</button>
+    <button class="scenario-pill" onclick="applyScenario('enterprise',event)">Enterprise (25,000 users)</button>
   </div>
 </div>
 
 <hr class="calc-divider">
 
-<!-- Inputs -->
+<!-- ── Org inputs ── -->
+<div class="section-label">Organisation</div>
 <div class="calc-grid">
-
   <div class="calc-field">
     <label for="totalUsers">Total users in scope</label>
     <input type="number" id="totalUsers" min="1" value="500" oninput="recalc()">
-    <div class="hint">Employees, contractors, or team members you're modeling</div>
+    <div class="hint">Employees, contractors, or team members you're modelling</div>
   </div>
-
   <div class="calc-field">
-    <label for="licensePct">% with M365 Copilot license</label>
+    <label>% with M365 Copilot licence</label>
     <div class="range-row">
-      <input type="range" id="licensePctSlider" min="0" max="100" value="60" oninput="syncRange('licensePct','licensePctSlider'); recalc()">
-      <input type="number" id="licensePct" min="0" max="100" value="60" style="width:70px" oninput="syncRange('licensePctSlider','licensePct'); recalc()">
+      <input type="range" id="licensePctSlider" min="0" max="100" value="60" oninput="syncRange('licensePct','licensePctSlider');recalc()">
+      <input type="number" id="licensePct" min="0" max="100" value="60" oninput="syncRange('licensePctSlider','licensePct');recalc()">
       <span>%</span>
     </div>
-    <div class="hint">Typical pilots start at 10–20%; full rollouts at 60–100%</div>
+    <div class="hint">Pilots typically 10–20 %; full rollouts 60–100 %</div>
   </div>
-
   <div class="calc-field">
-    <label for="promptsPerDay">Avg prompts per licensed user / day</label>
-    <input type="number" id="promptsPerDay" min="0" value="8" oninput="recalc()">
-    <div class="hint">Light user ≈ 3–5; moderate ≈ 8–15; power user ≈ 20+</div>
+    <label>Expected adoption rate</label>
+    <div class="range-row">
+      <input type="range" id="adoptionRateSlider" min="0" max="100" value="70" oninput="syncRange('adoptionRate','adoptionRateSlider');recalc()">
+      <input type="number" id="adoptionRate" min="0" max="100" value="70" oninput="syncRange('adoptionRateSlider','adoptionRate');recalc()">
+      <span>%</span>
+    </div>
+    <div class="hint">% of licensed users who actively use Copilot each month</div>
   </div>
-
   <div class="calc-field">
     <label for="workDays">Working days per month</label>
     <input type="number" id="workDays" min="1" max="31" value="22" oninput="recalc()">
     <div class="hint">Standard = 22; adjust for holiday-heavy months</div>
   </div>
-
-  <div class="calc-field">
-    <label for="creditsPerPrompt">Credits consumed per prompt (avg)</label>
-    <input type="number" id="creditsPerPrompt" min="0.1" step="0.1" value="2" oninput="recalc()">
-    <div class="hint">Chat prompt ≈ 1; agent/Studio interaction ≈ 2–10; set your blended average</div>
-  </div>
-
-  <div class="calc-field">
-    <label for="adoptionRate">Expected adoption rate</label>
-    <div class="range-row">
-      <input type="range" id="adoptionRateSlider" min="0" max="100" value="70" oninput="syncRange('adoptionRate','adoptionRateSlider'); recalc()">
-      <input type="number" id="adoptionRate" min="0" max="100" value="70" style="width:70px" oninput="syncRange('adoptionRateSlider','adoptionRate'); recalc()">
-      <span>%</span>
-    </div>
-    <div class="hint">% of licensed users who actually use Copilot each month</div>
-  </div>
-
 </div>
 
 <hr class="calc-divider">
 
-<!-- Results -->
+<!-- ── Prompt table ── -->
+<div class="section-label">Prompt mix — edit rows or add your own process steps</div>
+
+<div class="prompt-table-wrap">
+  <table id="prompt-table">
+    <thead>
+      <tr>
+        <th>Prompt type / scenario</th>
+        <th class="col-num">Prompts&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
+        <th class="col-num">Credits&nbsp;/&nbsp;prompt</th>
+        <th class="col-num">Credits&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="prompt-tbody"></tbody>
+    <tfoot>
+      <tr>
+        <td class="foot-label">Total</td>
+        <td class="foot-val" id="foot-prompts" style="text-align:right">—</td>
+        <td></td>
+        <td class="foot-val" id="foot-credits" style="text-align:right">—</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<button class="btn-add-row" onclick="addRow()">+ Add prompt type</button>
+
+<hr class="calc-divider">
+
+<!-- ── Results ── -->
+<div class="section-label">Estimated monthly consumption</div>
 <div class="results-grid">
-  <div class="result-card">
-    <div class="val" id="res-licensed">—</div>
-    <div class="lbl">Licensed users</div>
-  </div>
-  <div class="result-card">
-    <div class="val" id="res-active">—</div>
-    <div class="lbl">Active users / month</div>
-  </div>
-  <div class="result-card">
-    <div class="val" id="res-daily">—</div>
-    <div class="lbl">Prompts / day (org)</div>
-  </div>
-  <div class="result-card">
-    <div class="val" id="res-monthly-prompts">—</div>
-    <div class="lbl">Prompts / month (org)</div>
-  </div>
-  <div class="result-card">
-    <div class="val" id="res-credits">—</div>
-    <div class="lbl">Credits / month (org)</div>
-  </div>
-  <div class="result-card">
-    <div class="val" id="res-per-user">—</div>
-    <div class="lbl">Credits / active user / month</div>
-  </div>
+  <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl">Licensed users</div></div>
+  <div class="result-card"><div class="val" id="res-active">—</div><div class="lbl">Active users / month</div></div>
+  <div class="result-card"><div class="val" id="res-daily">—</div><div class="lbl">Total prompts / day</div></div>
+  <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total prompts / month</div></div>
+  <div class="result-card"><div class="val" id="res-credits">—</div><div class="lbl">Credits / month (org)</div></div>
+  <div class="result-card"><div class="val" id="res-per-user">—</div><div class="lbl">Credits / active user / month</div></div>
 </div>
 
 <hr class="calc-divider">
 
-<!-- Budget check -->
+<!-- ── Budget check ── -->
+<div class="section-label">Budget check (optional)</div>
 <div class="budget-row">
-  <label for="creditBudget">Monthly credit budget (optional)</label>
-  <input type="number" id="creditBudget" min="0" placeholder="e.g. 500000" oninput="recalc()">
+  <label for="creditBudget">Monthly credit budget</label>
+  <input type="number" id="creditBudget" min="0" placeholder="e.g. 500 000" oninput="recalc()">
 </div>
 <div class="budget-result" id="budget-result"></div>
 
 <script>
 function fmt(n) {
-  if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M';
-  if (n >= 1e3) return (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K';
+  if (n >= 1e6) return (n/1e6).toFixed(1).replace(/\.0$/,'')+'M';
+  if (n >= 1e3) return (n/1e3).toFixed(1).replace(/\.0$/,'')+'K';
   return Math.round(n).toLocaleString();
 }
-
-function syncRange(targetId, sourceId) {
-  var v = document.getElementById(sourceId).value;
-  var t = document.getElementById(targetId);
-  if (t) t.value = v;
+function fmtDec(n) { return n % 1 === 0 ? n.toLocaleString() : n.toFixed(2); }
+function syncRange(toId, fromId) {
+  var el = document.getElementById(toId);
+  if (el) el.value = document.getElementById(fromId).value;
 }
 
-function recalc() {
-  var total        = parseFloat(document.getElementById('totalUsers').value) || 0;
-  var licensePct   = parseFloat(document.getElementById('licensePct').value) || 0;
-  var promptsDay   = parseFloat(document.getElementById('promptsPerDay').value) || 0;
-  var workDays     = parseFloat(document.getElementById('workDays').value) || 22;
-  var credits      = parseFloat(document.getElementById('creditsPerPrompt').value) || 1;
-  var adoptionRate = parseFloat(document.getElementById('adoptionRate').value) || 100;
+var defaultRows = [
+  { name: 'Copilot Chat — simple question',       prompts: 3,   credits: 1 },
+  { name: 'Copilot Chat — document summary',      prompts: 2,   credits: 2 },
+  { name: 'Copilot in Word / Excel / PowerPoint', prompts: 1,   credits: 2 },
+  { name: 'First-party agent (Researcher etc.)',  prompts: 1,   credits: 3 },
+  { name: 'Custom Agent Builder agent',           prompts: 0.5, credits: 5 },
+  { name: 'Copilot Studio interaction',           prompts: 0.5, credits: 8 },
+];
 
-  var licensed     = Math.round(total * licensePct / 100);
-  var active       = Math.round(licensed * adoptionRate / 100);
-  var dailyPrompts = active * promptsDay;
-  var monthlyPrompts = dailyPrompts * workDays;
-  var monthlyCredits = monthlyPrompts * credits;
-  var perUser      = active > 0 ? monthlyCredits / active : 0;
+var rowId = 0;
 
-  document.getElementById('res-licensed').textContent         = fmt(licensed);
-  document.getElementById('res-active').textContent           = fmt(active);
-  document.getElementById('res-daily').textContent            = fmt(dailyPrompts);
-  document.getElementById('res-monthly-prompts').textContent  = fmt(monthlyPrompts);
-  document.getElementById('res-credits').textContent          = fmt(monthlyCredits);
-  document.getElementById('res-per-user').textContent         = fmt(perUser);
-
-  var budgetEl = document.getElementById('creditBudget');
-  var resultEl = document.getElementById('budget-result');
-  var budget   = parseFloat(budgetEl.value);
-  if (budget > 0 && monthlyCredits > 0) {
-    var ratio = monthlyCredits / budget;
-    var months = budget / monthlyCredits;
-    if (ratio <= 1) {
-      resultEl.innerHTML = '✅ Your estimate of <strong>' + fmt(monthlyCredits) + ' credits/month</strong> fits within budget &mdash; you have <strong>' + fmt(budget - monthlyCredits) + ' credits headroom</strong> (' + Math.round((1 - ratio) * 100) + '% spare).';
-    } else {
-      resultEl.innerHTML = '⚠️ Your estimate of <strong>' + fmt(monthlyCredits) + ' credits/month</strong> exceeds budget by <strong>' + fmt(monthlyCredits - budget) + ' credits</strong> (' + Math.round((ratio - 1) * 100) + '% over). Consider reducing prompts/day, adoption rate, or licensed count.';
-    }
-  } else {
-    resultEl.innerHTML = '';
-  }
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
-var scenarios = {
-  pilot:      { totalUsers: 50,    licensePct: 100, promptsPerDay: 8,  adoptionRate: 80, creditsPerPrompt: 2, workDays: 22 },
-  dept:       { totalUsers: 500,   licensePct: 80,  promptsPerDay: 8,  adoptionRate: 70, creditsPerPrompt: 2, workDays: 22 },
-  org:        { totalUsers: 5000,  licensePct: 60,  promptsPerDay: 8,  adoptionRate: 65, creditsPerPrompt: 2, workDays: 22 },
-  enterprise: { totalUsers: 25000, licensePct: 40,  promptsPerDay: 8,  adoptionRate: 60, creditsPerPrompt: 3, workDays: 22 }
-};
-
-function applyScenario(key) {
-  var s = scenarios[key];
-  document.getElementById('totalUsers').value       = s.totalUsers;
-  document.getElementById('licensePct').value       = s.licensePct;
-  document.getElementById('licensePctSlider').value = s.licensePct;
-  document.getElementById('promptsPerDay').value    = s.promptsPerDay;
-  document.getElementById('workDays').value         = s.workDays;
-  document.getElementById('creditsPerPrompt').value = s.creditsPerPrompt;
-  document.getElementById('adoptionRate').value     = s.adoptionRate;
-  document.getElementById('adoptionRateSlider').value = s.adoptionRate;
-  document.querySelectorAll('.scenario-pill').forEach(function(el) { el.classList.remove('active'); });
-  event.target.classList.add('active');
+function addRow(name, prompts, credits) {
+  var id = ++rowId;
+  var tr = document.createElement('tr');
+  tr.dataset.rowId = id;
+  tr.innerHTML =
+    '<td><input class="pt-name" type="text" value="'+escHtml(name||'')+'" oninput="recalc()" placeholder="Describe this prompt type"></td>'+
+    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(prompts||1)+'" oninput="recalc()"></td>'+
+    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
+    '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
+    '<td><button class="pt-del" title="Remove row" onclick="removeRow('+id+')">✕</button></td>';
+  document.getElementById('prompt-tbody').appendChild(tr);
   recalc();
 }
 
-// Run on load
+function removeRow(id) {
+  var tbody = document.getElementById('prompt-tbody');
+  if (tbody.rows.length <= 1) return;
+  var tr = document.querySelector('[data-row-id="'+id+'"]');
+  if (tr) { tr.remove(); recalc(); }
+}
+
+function recalc() {
+  var total    = parseFloat(document.getElementById('totalUsers').value)   || 0;
+  var licPct   = parseFloat(document.getElementById('licensePct').value)   || 0;
+  var adoptPct = parseFloat(document.getElementById('adoptionRate').value) || 0;
+  var workDays = parseFloat(document.getElementById('workDays').value)     || 22;
+
+  var licensed = Math.round(total * licPct / 100);
+  var active   = Math.round(licensed * adoptPct / 100);
+
+  var totalPpud = 0, totalCpud = 0;
+  document.querySelectorAll('#prompt-tbody tr').forEach(function(tr) {
+    var ins = tr.querySelectorAll('.pt-num');
+    var p = parseFloat(ins[0].value) || 0;
+    var c = parseFloat(ins[1].value) || 0;
+    totalPpud += p;
+    totalCpud += p * c;
+    var cell = document.getElementById('row-sub-'+tr.dataset.rowId);
+    if (cell) cell.textContent = fmtDec(p * c);
+  });
+
+  document.getElementById('foot-prompts').textContent = fmtDec(totalPpud);
+  document.getElementById('foot-credits').textContent = fmtDec(totalCpud);
+
+  var dailyP  = active * totalPpud;
+  var monthlyP = dailyP * workDays;
+  var monthlyC = active * totalCpud * workDays;
+  var perUser  = active > 0 ? monthlyC / active : 0;
+
+  document.getElementById('res-licensed').textContent        = fmt(licensed);
+  document.getElementById('res-active').textContent          = fmt(active);
+  document.getElementById('res-daily').textContent           = fmt(dailyP);
+  document.getElementById('res-monthly-prompts').textContent = fmt(monthlyP);
+  document.getElementById('res-credits').textContent         = fmt(monthlyC);
+  document.getElementById('res-per-user').textContent        = fmt(perUser);
+
+  var budget   = parseFloat(document.getElementById('creditBudget').value);
+  var resultEl = document.getElementById('budget-result');
+  if (budget > 0 && monthlyC > 0) {
+    var ratio = monthlyC / budget;
+    if (ratio <= 1) {
+      resultEl.innerHTML = '✅ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> fits within budget — <strong>'+fmt(budget-monthlyC)+' credits headroom</strong> ('+Math.round((1-ratio)*100)+'% spare).';
+    } else {
+      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce prompt volume, adoption rate, or licensed count.';
+    }
+  } else { resultEl.innerHTML = ''; }
+}
+
+var scenarios = {
+  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80, workDays: 22 },
+  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70, workDays: 22 },
+  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65, workDays: 22 },
+  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60, workDays: 22 },
+};
+
+function applyScenario(key, evt) {
+  var s = scenarios[key];
+  document.getElementById('totalUsers').value         = s.totalUsers;
+  document.getElementById('licensePct').value         = s.licensePct;
+  document.getElementById('licensePctSlider').value   = s.licensePct;
+  document.getElementById('adoptionRate').value       = s.adoptionRate;
+  document.getElementById('adoptionRateSlider').value = s.adoptionRate;
+  document.getElementById('workDays').value           = s.workDays;
+  document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
+  if (evt && evt.target) evt.target.classList.add('active');
+  recalc();
+}
+
+defaultRows.forEach(function(r){ addRow(r.name, r.prompts, r.credits); });
 recalc();
 </script>
 
@@ -349,6 +362,47 @@ recalc();
 ---
 
 !!! tip "What to do with this number"
-    - **Credit budget planning** — share the monthly credit estimate with your IT/finance team alongside the number of licensed users to validate your M365 Copilot SKU allocation.
-    - **Adoption benchmarking** — as real usage data comes in from the admin center, compare actuals to this estimate to identify whether adoption is ahead or behind plan.
+    - **Credit budget planning** — share the monthly credit estimate with your IT/finance team alongside the licensed user count to validate your M365 Copilot SKU allocation.
+    - **Adoption benchmarking** — as real usage data comes in from the admin center, compare actuals to this estimate to see whether adoption is ahead or behind plan.
     - **Scenario planning** — run the estimator at 3 adoption-rate levels (conservative / target / optimistic) to bracket your credit spend.
+    if (ratio <= 1) {
+      resultEl.innerHTML = '✅ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> fits within budget — <strong>'+fmt(budget-monthlyC)+' credits headroom</strong> ('+Math.round((1-ratio)*100)+'% spare).';
+    } else {
+      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce prompt volume, adoption rate, or licensed count.';
+    }
+  } else { resultEl.innerHTML = ''; }
+}
+
+var scenarios = {
+  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80, workDays: 22 },
+  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70, workDays: 22 },
+  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65, workDays: 22 },
+  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60, workDays: 22 },
+};
+
+function applyScenario(key, evt) {
+  var s = scenarios[key];
+  document.getElementById('totalUsers').value         = s.totalUsers;
+  document.getElementById('licensePct').value         = s.licensePct;
+  document.getElementById('licensePctSlider').value   = s.licensePct;
+  document.getElementById('adoptionRate').value       = s.adoptionRate;
+  document.getElementById('adoptionRateSlider').value = s.adoptionRate;
+  document.getElementById('workDays').value           = s.workDays;
+  document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
+  if (evt && evt.target) evt.target.classList.add('active');
+  recalc();
+}
+
+defaultRows.forEach(function(r){ addRow(r.name, r.prompts, r.credits); });
+recalc();
+</script>
+
+</div>
+
+---
+
+!!! tip "What to do with this number"
+    - **Credit budget planning** — share the monthly credit estimate with your IT/finance team alongside the licensed user count to validate your M365 Copilot SKU allocation.
+    - **Adoption benchmarking** — as real usage data comes in from the admin center, compare actuals to this estimate to see whether adoption is ahead or behind plan.
+    - **Scenario planning** — run the estimator at 3 adoption-rate levels (conservative / target / optimistic) to bracket your credit spend.
+
