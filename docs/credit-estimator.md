@@ -284,7 +284,7 @@ var defaultRows = [
   { name: 'Generative answer',                                 count: 1, credits: 2    },
   { name: 'Agent action',                                      count: 1, credits: 5    },
   { name: 'Tenant graph grounding for messages',               count: 1, credits: 10   },
-  { name: 'Agent flow actions (per 100 actions = 13 credits)', count: 1, credits: 13   },
+  { name: 'Agent flow actions (per 100 actions = 13 credits)', count: 1, credits: 0.13 },
   // ── AI tools ──
   { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    count: 1, credits: 0.1  },
   { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', count: 1, credits: 1.5  },
