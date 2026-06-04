@@ -52,9 +52,9 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
   text-align: left; font-size: 0.72rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.05em;
   color: var(--md-default-fg-color--light); padding: 0.4rem 0.6rem;
-  border-bottom: 2px solid var(--md-default-fg-color--lightest); white-space: nowrap;
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
 }
-#prompt-table thead th.col-num { text-align: right; }
+#prompt-table thead th.col-num { text-align: right; width: 95px; }
 #prompt-table tbody tr:hover td { background: var(--md-code-bg-color); }
 #prompt-table tbody td {
   padding: 0.35rem 0.5rem;
@@ -220,9 +220,9 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <thead>
       <tr>
         <th>Agent feature / interaction type</th>
-        <th class="col-num">Interactions&nbsp;/&nbsp;user&nbsp;/&nbsp;month</th>
-        <th class="col-num">Copilot&nbsp;Credits&nbsp;/&nbsp;interaction</th>
-        <th class="col-num">Credits&nbsp;/&nbsp;user&nbsp;/&nbsp;month</th>
+        <th class="col-num">Interactions / user / month</th>
+        <th class="col-num">Copilot Credits / interaction</th>
+        <th class="col-num">Credits / user / month</th>
         <th></th>
       </tr>
     </thead>
