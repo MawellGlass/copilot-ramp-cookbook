@@ -29,8 +29,6 @@ Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups
 
 ??? note "Chat walkthroughs"
 
-    ??? note "Chat walkthroughs"
-
     ### [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)
     **The gateway use case.** Walk out of any meeting with decisions, owners, and due dates — in under a minute.
 
@@ -73,10 +71,6 @@ Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups
     ### [Plan your week from your calendar and inbox](../walkthroughs/chat-plan-week.md)
     Start every Monday with a clear view of what matters, what needs prep, and what you can safely defer.
 
----
-    Start every Monday with a clear view of what matters, what needs prep, and what you can safely defer.
-
----
 ---
 
 ## Borrow, don't build

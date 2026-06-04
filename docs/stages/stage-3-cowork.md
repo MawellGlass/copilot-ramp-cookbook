@@ -73,8 +73,6 @@ Start with the end-to-end hand-off — it's the page that makes delegation click
 
 ??? note "Cowork walkthroughs"
 
-    ??? note "Cowork walkthroughs"
-
     ### [Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md)
     **Start here.** Describe an outcome — Cowork plans and runs the steps autonomously, no prompt-chaining required.
 
@@ -102,10 +100,6 @@ Start with the end-to-end hand-off — it's the page that makes delegation click
     ### [Draft an RFP or proposal response from scattered source docs](../walkthroughs/cowork-rfp-response.md)
     Turn an RFP and your scattered internal docs into a structured first-draft response — shape and polish, don't start from nothing.
 
----
-    Turn an RFP and your scattered internal docs into a structured first-draft response — shape and polish, don't start from nothing.
-
----
 ---
 
 ## Borrow, don't build
