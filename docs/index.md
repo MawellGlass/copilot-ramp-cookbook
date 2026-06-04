@@ -13,7 +13,7 @@ hide:
 
 # Get started with Microsoft Copilot — then grow all the way to building agents.
 
-<p class="home-lede">Most people stall at "I have Copilot, now what?" This cookbook lays out a natural ramp: start by <em>using</em> Copilot, get comfortable letting agents do work for you, then take the leap to <em>building</em> your own — first in Agent Builder, then in Copilot Studio.</p>
+<p class="home-lede">Most people stall at "I have Copilot, now what?" This cookbook lays out a natural ramp: start by <em>using</em> Copilot, get comfortable letting agents do work for you, then take the leap to <em>building</em> your own — first in Agent Builder, then in Copilot Studio, and into Foundry when you need pro-code.</p>
 
 <div class="journey">
   <a class="step" href="stages/stage-1-chat/"><span class="n">STAGE 1</span><span class="t">Copilot Chat</span><span class="d">A daily habit and a first "wow."</span></a>
@@ -29,7 +29,7 @@ hide:
   <a class="step dest" href="stages/stage-6-foundry/"><span class="n">STAGE 6</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
 </div>
 
-<p class="audience"><strong>Who it's for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · IT/admins enabling each stage safely.</p>
+<p class="audience"><strong>Who it's for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · developers engineering pro-code agents in Foundry · IT/admins enabling each stage safely.</p>
 
 ## Find your starting point
 
@@ -51,6 +51,7 @@ Not every tool is for every person. This is where each role tends to spend time 
 <tr><th>Champion</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
 <tr><th>Manager</th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
 <tr><th>Maker</th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
+<tr><th>Developer</th> <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
 <tr><th>IT / admin</th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
 </tbody>
 </table>

@@ -60,11 +60,11 @@ Not sure where to jump in? Pick your role below — each section shows the highe
 
     [→ Stage 4 · Agent Builder](stages/stage-4-agent-builder.md)
 
--   💻 **Maker / Developer**
+-   💻 **Maker / Low-code builder**
 
     ---
 
-    You're ready to build agents that do real work in production — knowledge sources, actions, MCP tools, and governance.
+    You're ready to build agents that do real work in production — knowledge sources, actions, MCP tools, and governance — without writing code.
 
     **Start with:**
 
@@ -75,6 +75,21 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Test and evaluate before publishing](walkthroughs/studio-test-evaluate.md)
 
     [→ Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+
+-   ⚙️ **Developer / Pro-code engineer**
+
+    ---
+
+    You've outgrown low-code. You build agents as software — custom or fine-tuned models, autonomous orchestration, evaluation, and MCP tools at scale — on Azure.
+
+    **Start with:**
+
+    - [Cross into the pro-code frontier](stages/stage-6-foundry.md) — what Foundry is, and when it's the right call
+    - [Know when low-code isn't enough](empowerment/decision-tree.md) — the graduation decision
+    - [Understand the agent security model](empowerment/security.md) — identity, data boundary, and governance
+    - [Graduate from Agent Builder to Studio first](walkthroughs/agent-builder-vs-studio.md) — most agents stop there
+
+    [→ Stage 6 · Foundry](stages/stage-6-foundry.md)
 
 -   🔒 **IT Admin**
 
