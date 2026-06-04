@@ -8,7 +8,9 @@ hide: [toc]
 Estimate monthly M365 Copilot message-credit consumption for your org or team. Adjust the inputs and the prompt table — results update instantly.
 
 !!! info "Official billing rates — [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)"
-    Rates below are sourced directly from the **Microsoft Copilot Studio Billing rates and management** docs. **M365 Copilot licensed users incur no charge** for agent interactions where they are the authenticated user — credits apply to external/unlicensed user scenarios and Copilot Studio pay-as-you-go billing. Each agent turn may combine multiple features (e.g. a generative answer with tenant graph grounding = 2 + 10 = 12 credits).
+    Rates below are sourced from the **Microsoft Copilot Studio Billing rates and management** docs. Each agent turn may combine multiple features (e.g. a generative answer with tenant graph grounding = 2 + 10 = 12 credits).
+
+    **Key licensing rule:** When an agent is *embedded in Teams or the M365 Copilot app*, authenticated users with an **M365 Copilot license accrue zero credits** — only unlicensed users generate credit consumption. When deployed to *any other channel* (web widget, SharePoint, custom app, etc.), **all users are charged credits** regardless of M365 Copilot license status. Use the **Deployment type** toggle below to model the correct scenario.
 
 <div id="calc-wrap" markdown="0">
 
@@ -99,6 +101,17 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 }
 .btn-add-row:hover { background: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
 
+/* deploy toggle */
+.deploy-toggle { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.deploy-btn {
+  cursor: pointer; padding: 0.4rem 1.1rem; border-radius: 4px;
+  border: 1.5px solid var(--md-primary-fg-color); background: transparent;
+  color: var(--md-primary-fg-color); font-size: 0.85rem; font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+.deploy-btn.active { background: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
+.deploy-hint { font-size: 0.8rem; color: var(--md-default-fg-color--light); margin: 0.4rem 0 1rem; line-height: 1.5; }
+
 /* results */
 .results-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -151,6 +164,16 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 
 <hr class="calc-divider">
 
+<!-- ── Deployment type toggle ── -->
+<div class="section-label">Deployment type</div>
+<div class="deploy-toggle">
+  <button id="toggle-embedded" class="deploy-btn active" onclick="setDeployMode('embedded')">Embedded in Teams / M365 Copilot</button>
+  <button id="toggle-standalone" class="deploy-btn" onclick="setDeployMode('standalone')">Standalone / other channel</button>
+</div>
+<p id="deploy-hint" class="deploy-hint">M365 Copilot licensed users incur <strong>zero credits</strong>. Only unlicensed users generate credit consumption. Use the <em>% with M365 Copilot license</em> slider to set the licensed proportion.</p>
+
+<hr class="calc-divider">
+
 <!-- ── Org inputs ── -->
 <div class="section-label">Organization</div>
 <div class="calc-grid">
@@ -159,14 +182,14 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <input type="number" id="totalUsers" min="1" value="500" oninput="recalc()">
     <div class="hint">Employees, contractors, or team members you're modelling</div>
   </div>
-  <div class="calc-field">
-    <label>% with M365 Copilot licence</label>
+  <div class="calc-field" id="license-field">
+    <label>% with M365 Copilot license</label>
     <div class="range-row">
       <input type="range" id="licensePctSlider" min="0" max="100" value="60" oninput="syncRange('licensePct','licensePctSlider');recalc()">
       <input type="number" id="licensePct" min="0" max="100" value="60" oninput="syncRange('licensePctSlider','licensePct');recalc()">
       <span>%</span>
     </div>
-    <div class="hint">Pilots typically 10–20 %; full rollouts 60–100 %</div>
+    <div class="hint" id="license-hint">Embedded mode: licensed users accrue zero credits — only unlicensed users are billed. Pilots typically 10–20 %; full rollouts 60–100 %</div>
   </div>
   <div class="calc-field">
     <label>Expected adoption rate</label>
@@ -175,7 +198,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
       <input type="number" id="adoptionRate" min="0" max="100" value="70" oninput="syncRange('adoptionRateSlider','adoptionRate');recalc()">
       <span>%</span>
     </div>
-    <div class="hint">% of licensed users who actively use Copilot each month</div>
+    <div class="hint" id="adopt-hint">% of unlicensed users who actively use the agent each month (embedded mode)</div>
   </div>
   <div class="calc-field">
     <label for="workDays">Working days per month</label>
@@ -220,8 +243,8 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 <!-- ── Results ── -->
 <div class="section-label">Estimated monthly consumption</div>
 <div class="results-grid">
-  <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl">Licensed users</div></div>
-  <div class="result-card"><div class="val" id="res-active">—</div><div class="lbl">Active users / month</div></div>
+  <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl"><span id="lbl-billed">Unlicensed users (billed)</span></div></div>
+  <div class="result-card"><div class="val" id="res-active">—</div><div class="lbl"><span id="lbl-active">Active unlicensed / month</span></div></div>
   <div class="result-card"><div class="val" id="res-daily">—</div><div class="lbl">Total prompts / day</div></div>
   <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total prompts / month</div></div>
   <div class="result-card"><div class="val" id="res-credits">—</div><div class="lbl">Credits / month (org)</div></div>
@@ -301,8 +324,11 @@ function recalc() {
   var adoptPct = parseFloat(document.getElementById('adoptionRate').value) || 0;
   var workDays = parseFloat(document.getElementById('workDays').value)     || 22;
 
-  var licensed = Math.round(total * licPct / 100);
-  var active   = Math.round(licensed * adoptPct / 100);
+  var embedded   = document.getElementById('toggle-embedded').classList.contains('active');
+  var licensed   = Math.round(total * licPct / 100);
+  var unlicensed = total - licensed;
+  var billedBase = embedded ? unlicensed : total;
+  var active     = Math.round(billedBase * adoptPct / 100);
 
   var totalPpud = 0, totalCpud = 0;
   document.querySelectorAll('#prompt-tbody tr').forEach(function(tr) {
@@ -318,12 +344,22 @@ function recalc() {
   document.getElementById('foot-prompts').textContent = fmtDec(totalPpud);
   document.getElementById('foot-credits').textContent = fmtDec(totalCpud);
 
-  var dailyP  = active * totalPpud;
+  var dailyP   = active * totalPpud;
   var monthlyP = dailyP * workDays;
   var monthlyC = active * totalCpud * workDays;
   var perUser  = active > 0 ? monthlyC / active : 0;
 
-  document.getElementById('res-licensed').textContent        = fmt(licensed);
+  var lblBilled = document.getElementById('lbl-billed');
+  var lblActive = document.getElementById('lbl-active');
+  if (lblBilled) lblBilled.textContent = embedded ? 'Unlicensed users (billed)' : 'Total users (all billed)';
+  if (lblActive) lblActive.textContent = embedded ? 'Active unlicensed / month' : 'Active users / month';
+
+  var adoptHint = document.getElementById('adopt-hint');
+  if (adoptHint) adoptHint.textContent = embedded
+    ? '% of unlicensed users who actively use the agent each month (embedded mode)'
+    : '% of all users in scope who actively use the agent each month (standalone mode)';
+
+  document.getElementById('res-licensed').textContent        = fmt(billedBase);
   document.getElementById('res-active').textContent          = fmt(active);
   document.getElementById('res-daily').textContent           = fmt(dailyP);
   document.getElementById('res-monthly-prompts').textContent = fmt(monthlyP);
@@ -337,49 +373,21 @@ function recalc() {
     if (ratio <= 1) {
       resultEl.innerHTML = '✅ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> fits within budget — <strong>'+fmt(budget-monthlyC)+' credits headroom</strong> ('+Math.round((1-ratio)*100)+'% spare).';
     } else {
-      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce prompt volume, adoption rate, or licensed count.';
+      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce prompt volume, adoption rate, or credit mix.';
     }
   } else { resultEl.innerHTML = ''; }
 }
 
-var scenarios = {
-  pilot:      { totalUsers:   50, licensePct: 100, adoptionRate: 80, workDays: 22 },
-  dept:       { totalUsers:  500, licensePct:  80, adoptionRate: 70, workDays: 22 },
-  org:        { totalUsers: 5000, licensePct:  60, adoptionRate: 65, workDays: 22 },
-  enterprise: { totalUsers:25000, licensePct:  40, adoptionRate: 60, workDays: 22 },
-};
-
-function applyScenario(key, evt) {
-  var s = scenarios[key];
-  document.getElementById('totalUsers').value         = s.totalUsers;
-  document.getElementById('licensePct').value         = s.licensePct;
-  document.getElementById('licensePctSlider').value   = s.licensePct;
-  document.getElementById('adoptionRate').value       = s.adoptionRate;
-  document.getElementById('adoptionRateSlider').value = s.adoptionRate;
-  document.getElementById('workDays').value           = s.workDays;
-  document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
-  if (evt && evt.target) evt.target.classList.add('active');
+function setDeployMode(mode) {
+  var isEmbedded = mode === 'embedded';
+  document.getElementById('toggle-embedded').classList.toggle('active', isEmbedded);
+  document.getElementById('toggle-standalone').classList.toggle('active', !isEmbedded);
+  document.getElementById('deploy-hint').innerHTML = isEmbedded
+    ? 'M365 Copilot licensed users incur <strong>zero credits</strong>. Only unlicensed users generate credit consumption. Use the <em>% with M365 Copilot license</em> slider to set the licensed proportion.'
+    : 'All users generate credits regardless of M365 Copilot license status. The <em>% with M365 Copilot license</em> slider has no effect on credit calculation.';
+  var licField = document.getElementById('license-field');
+  if (licField) licField.style.opacity = isEmbedded ? '1' : '0.45';
   recalc();
-}
-
-defaultRows.forEach(function(r){ addRow(r.name, r.prompts, r.credits); });
-recalc();
-</script>
-
-</div>
-
----
-
-!!! tip "What to do with this number"
-    - **Credit budget planning** — share the monthly credit estimate with your IT/finance team alongside the licensed user count to validate your M365 Copilot SKU allocation.
-    - **Adoption benchmarking** — as real usage data comes in from the admin center, compare actuals to this estimate to see whether adoption is ahead or behind plan.
-    - **Scenario planning** — run the estimator at 3 adoption-rate levels (conservative / target / optimistic) to bracket your credit spend.
-    if (ratio <= 1) {
-      resultEl.innerHTML = '✅ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> fits within budget — <strong>'+fmt(budget-monthlyC)+' credits headroom</strong> ('+Math.round((1-ratio)*100)+'% spare).';
-    } else {
-      resultEl.innerHTML = '⚠️ Estimate of <strong>'+fmt(monthlyC)+' credits/month</strong> exceeds budget by <strong>'+fmt(monthlyC-budget)+' credits</strong> ('+Math.round((ratio-1)*100)+'% over). Reduce prompt volume, adoption rate, or licensed count.';
-    }
-  } else { resultEl.innerHTML = ''; }
 }
 
 var scenarios = {
