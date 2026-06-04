@@ -18,7 +18,7 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 <div id="calc-wrap" markdown="0">
 
 <style>
-#calc-wrap { font-family: inherit; }
+#calc-wrap { font-family: inherit; overflow-x: hidden; }
 
 .section-label {
   font-size: 0.78rem; font-weight: 600; text-transform: uppercase;
@@ -46,7 +46,7 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 .range-row input[type=number] { width: 70px !important; }
 
 /* prompt table */
-.prompt-table-wrap { overflow-x: auto; margin-bottom: 0.75rem; }
+.prompt-table-wrap { margin-bottom: 0.75rem; }
 #prompt-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; table-layout: fixed; }
 #prompt-table thead th {
   text-align: left; font-size: 0.72rem; font-weight: 700;
@@ -308,7 +308,7 @@ function addRow(name, prompts, credits) {
   var tr = document.createElement('tr');
   tr.dataset.rowId = id;
   tr.innerHTML =
-    '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();}" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+'
+    '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(prompts||1)+'" oninput="recalc()"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
