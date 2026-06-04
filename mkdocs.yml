@@ -124,16 +124,19 @@ nav:
       - "Stage 5 · Copilot Studio": stages/stage-5-studio.md
       - "Stage 6 · Foundry": stages/stage-6-foundry.md
 
-  - Studio Solution Templates:
+  - Solution Templates:
       - solutions/index.md
-      - "Policy FAQ Agent": solutions/policy-faq-agent.md
-      - "IT Helpdesk Triage Agent": solutions/it-helpdesk-triage-agent.md
-      - "Onboarding Buddy Agent": solutions/onboarding-buddy-agent.md
-      - "Sales Enablement Agent": solutions/sales-enablement-agent.md
-      - "Finance Expense & Procurement Agent": solutions/finance-expense-agent.md
-      - "Legal & Compliance Guidance Agent": solutions/legal-compliance-agent.md
-      - "IT Access Request Agent": solutions/it-access-request-agent.md
-      - "Sales Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
+      - Studio:
+          - "Policy FAQ Agent": solutions/policy-faq-agent.md
+          - "IT Helpdesk Triage Agent": solutions/it-helpdesk-triage-agent.md
+          - "Onboarding Buddy Agent": solutions/onboarding-buddy-agent.md
+          - "Sales Enablement Agent": solutions/sales-enablement-agent.md
+          - "Finance Expense & Procurement Agent": solutions/finance-expense-agent.md
+          - "Legal & Compliance Guidance Agent": solutions/legal-compliance-agent.md
+          - "IT Access Request Agent": solutions/it-access-request-agent.md
+          - "Sales Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
+      - Foundry:
+          - "Pro-Code Grounded Q&A Agent": solutions/foundry-knowledge-agent.md
   - AI Empowerment:
       - empowerment/index.md
       - "Choose the Right Path":

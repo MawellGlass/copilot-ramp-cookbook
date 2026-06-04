@@ -328,6 +328,12 @@ Extend the agent with external tools (the pattern Sean's F&O MCP demo uses).
 **Sample prompt:** `What MCP tools would a [supply chain] agent need, and what should each one do?`
 → Fully written: `walkthroughs/studio-mcp-tool-integration.md`
 
+### Connect an agent to a Microsoft Fabric data agent → walkthrough
+**For:** maker, it-admin · `status: walkthrough`
+Ground the agent on your warehouse, lakehouse, and semantic models so users ask questions of data in plain language — not just documents.
+**Sample prompt:** `Design a Studio agent that answers [sales/returns] questions from our Fabric [warehouse], always states the period and filters, and never invents a number.`
+→ Fully written: `walkthroughs/studio-fabric-agent.md`
+
 ### Publish your agent to Teams and the web → walkthrough
 **For:** maker, it-admin · `status: walkthrough`
 Ship the agent to where users already are.
@@ -491,6 +497,11 @@ Structured intake pattern: approved list check → collect required fields → c
 **For:** maker, champion, manager · `status: solution-template`
 Content assembly pattern: RFP question lookup, solution brief retrieval, and case study finder — all from the approved sales content library. Includes content gap identification and pricing escalation. Distinct from the Sales Enablement Agent (pre-call prep).
 → Fully written: `solutions/sales-proposal-rfp-agent.md`
+
+### Pro-Code Grounded Q&A Agent (Foundry) → solution template
+**For:** developer · `stage: foundry` · `status: solution-template`
+The pro-code counterpart to the Policy FAQ Agent: a code scaffold for a grounded Q&A agent with custom retrieval, an evaluation gate in CI, and code-owned identity. For workloads that genuinely outgrew Studio — climb here only when low-code can't carry the job.
+→ Fully written: `solutions/foundry-knowledge-agent.md`
 
 ### HR: Onboarding Buddy → functional walkthrough
 **For:** maker, it-admin, champion · `stage: studio` · `status: walkthrough`

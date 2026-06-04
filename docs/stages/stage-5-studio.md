@@ -38,6 +38,9 @@ Build these in order to establish the platform skills all functional agents depe
     ### [Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)
     Extend the agent with external tools.
 
+    ### [Connect a Studio agent to a Microsoft Fabric data agent](../walkthroughs/studio-fabric-agent.md)
+    Ground the agent on your warehouse and semantic models — answer questions from data, not just documents.
+
     ### [Trigger a Power Automate flow from inside a Studio agent](../walkthroughs/studio-power-automate-flow.md)
     Connect your agent to real business systems via Power Automate.
 
