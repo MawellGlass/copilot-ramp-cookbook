@@ -5,8 +5,8 @@ hide: [toc]
 
 # Copilot Credit Estimator
 
-!!! warning "Work in progress — do not use yet"
-    This page is still under development. Numbers, defaults, and logic are not finalised and should not be used for planning or budgeting.
+!!! warning "Still being worked on — use with caution"
+    This estimator is still under active development. Numbers, defaults, and logic may change, so treat the results as directional rather than final and double-check anything you rely on for planning or budgeting.
 
 Estimate monthly M365 Copilot message-credit consumption for your org or team. Adjust the inputs and the prompt table — results update instantly.
 
