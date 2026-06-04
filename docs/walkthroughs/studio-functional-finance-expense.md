@@ -87,4 +87,4 @@ happy-path conversation for an expense submission query.
 ---
 
 !!! tip "Ready to build? Use the solution template."
-    The [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md) covers the Finance domain with copy-paste system prompt, Finance-specific starter prompts, and a full test case table — adapt it for expense and procurement.
+    The [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md) gives you a copy-paste system prompt, Finance-specific topics, all 8 test cases, and a deployment checklist — adapt the bracketed values and build.

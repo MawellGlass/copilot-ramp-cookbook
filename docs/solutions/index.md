@@ -19,6 +19,8 @@ Ready-to-build Copilot Studio agent designs. Each template gives you everything 
 | [IT Helpdesk Triage Agent](it-helpdesk-triage-agent.md) | IT teams looking to deflect tier-1 tickets and automate ticket creation | 4–5 hours |
 | [Onboarding Buddy Agent](onboarding-buddy-agent.md) | HR and people teams wanting a personalised first-week guide for new starters | 3–4 hours |
 | [Sales Enablement Agent](sales-enablement-agent.md) | Sales teams needing instant competitive intel, case studies, and talk tracks | 3–4 hours |
+| [Finance Expense & Procurement Agent](finance-expense-agent.md) | Finance and ops teams wanting self-service answers on expense policy, procurement rules, and approval thresholds | 3–4 hours |
+| [Legal & Compliance Guidance Agent](legal-compliance-agent.md) | Legal and compliance teams wanting to deflect routine process questions with strict escalation controls | 3–4 hours |
 
 ---
 

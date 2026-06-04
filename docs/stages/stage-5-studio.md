@@ -90,7 +90,7 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
 
     Give employees instant answers on expense policy and procurement rules — and guide them into the right process rather than leaving them to hunt through the intranet.
 
-    Pairs with: [Policy FAQ Agent solution template — Finance tab](../solutions/policy-faq-agent.md)
+    Pairs with: [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md)
 
 ??? example "Sales — Product intel and objection handling"
 
@@ -106,7 +106,7 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
 
     Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
 
-    Pairs with: [Policy FAQ Agent solution template — Legal tab](../solutions/policy-faq-agent.md)
+    Pairs with: [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md)
 
 ---
 

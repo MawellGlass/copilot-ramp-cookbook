@@ -429,6 +429,16 @@ Multi-source knowledge pattern: competitive objections with talk tracks, case st
 Personalisation pattern: collects role, team, and start week to tailor first-week guidance. Includes welcome flow, checklist topic, conversation variables spec, and role-adaptive content structure.
 → Fully written: `solutions/onboarding-buddy-agent.md`
 
+### Finance Expense & Procurement Agent → solution template
+**For:** maker, champion, finance · `status: solution-template`
+Policy-grounded guidance pattern: expense policy, travel policy, procurement rules, and approval thresholds — with structured submission walkthrough, system links, and hard escalation for individual rulings and VAT/tax questions.
+→ Fully written: `solutions/finance-expense-agent.md`
+
+### Legal & Compliance Guidance Agent → solution template
+**For:** maker, champion, legal · `status: solution-template`
+Strict escalation pattern: process guidance on GDPR, NDA requests, data sharing, and COI declarations — with unconditional escalation for anything requiring legal judgment. Requires Legal sign-off before publishing.
+→ Fully written: `solutions/legal-compliance-agent.md`
+
 ---
 
 _Count: 5 stages, **56 use cases**, spanning all 5 roles. Every entry is a fully written walkthrough

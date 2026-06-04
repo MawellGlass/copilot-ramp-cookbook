@@ -94,4 +94,4 @@ escalation flow for any question that needs a qualified human.
 ---
 
 !!! tip "Ready to build? Use the solution template."
-    The [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md) includes a Legal / Compliance tab across the system prompt, escalation triggers, and starter prompts — adapt those sections directly.
+    The [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md) gives you a copy-paste system prompt with strict escalation rules, the full topic set, all 8 test cases including adversarial inputs, and the Legal sign-off checklist.
