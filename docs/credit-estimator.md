@@ -15,6 +15,14 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 
     **Key licensing rule:** When an agent is *embedded in Teams or the M365 Copilot app*, authenticated users with an **M365 Copilot license accrue zero credits** — only unlicensed users generate credit consumption. When deployed to *any other channel* (web widget, SharePoint, custom app, etc.), **all users are charged credits** regardless of M365 Copilot license status. Use the **Deployment type** toggle below to model the correct scenario.
 
+!!! tip "How to use this estimator"
+    1. **Set your org scope** — enter the number of users you're modelling and the proportion with an M365 Copilot license.
+    2. **Choose deployment type** — *Embedded in Teams / M365 Copilot* means licensed users accrue zero credits; *Standalone* charges all users regardless.
+    3. **Set interaction frequency** — estimate how many times a typical user interacts with the agent per month.
+    4. **Build your normal path** — for each row, set *Uses / interaction* to how many times that feature fires in a single conversation. Rows default to 0 — only count features your agent actually uses.
+    5. **Add an escalation path (optional)** — set an escalation rate and add extra steps that only fire when an interaction escalates (e.g. a query that can't be self-served triggers an additional lookup or handoff). The rate controls what percentage of interactions incur these extra costs.
+    6. **Check the results** — *Credits / month (org)* and *Credits / user / month* are the numbers to share with finance or IT for budget planning.
+
 <div id="calc-wrap" markdown="0">
 
 <style>
@@ -211,14 +219,14 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
   </div>
   <div class="calc-field">
     <label for="avgInteractions">Avg interactions / user / month</label>
-    <input type="number" id="avgInteractions" min="1" value="10" oninput="recalc()">
+    <input type="number" id="avgInteractions" min="0" step="0.5" value="10" oninput="recalc()">
     <div class="hint">How many times does a typical active user interact with this agent each month</div>
   </div>
   <div class="calc-field">
     <label>Escalation rate</label>
     <div class="range-row">
-      <input type="range" id="escalationRateSlider" min="0" max="100" value="20" oninput="syncRange('escalationRate','escalationRateSlider');recalc()">
-      <input type="number" id="escalationRate" min="0" max="100" value="20" oninput="syncRange('escalationRateSlider','escalationRate');recalc()">
+      <input type="range" id="escalationRateSlider" min="0" max="100" value="0" oninput="syncRange('escalationRate','escalationRateSlider');recalc()">
+      <input type="number" id="escalationRate" min="0" max="100" value="0" oninput="syncRange('escalationRateSlider','escalationRate');recalc()">
       <span>%</span>
     </div>
     <div class="hint">% of interactions that require additional handling beyond the normal path</div>
@@ -244,12 +252,12 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <tbody id="normal-tbody"></tbody>
     <tbody id="escalation-tbody">
       <tr class="section-divider-row">
-        <td colspan="5">Escalation path — <span id="esc-pct-label">20</span>% of interactions trigger these additional steps</td>
+        <td colspan="5">Escalation path — <span id="esc-pct-label">0</span>% of interactions trigger these additional steps</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td class="foot-label">Total</td>
+        <td class="foot-label">Effective credits / interaction</td>
         <td></td>
         <td></td>
         <td class="foot-val" id="foot-credits" style="text-align:right">—</td>
@@ -272,7 +280,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
   <div class="result-card"><div class="val" id="res-licensed">—</div><div class="lbl"><span id="lbl-billed">Unlicensed users (billed)</span></div></div>
   <div class="result-card"><div class="val" id="res-monthly-prompts">—</div><div class="lbl">Total interactions / month</div></div>
   <div class="result-card"><div class="val" id="res-credits">—</div><div class="lbl">Credits / month (org)</div></div>
-  <div class="result-card"><div class="val" id="res-per-user">—</div><div class="lbl">Credits / active user / month</div></div>
+  <div class="result-card"><div class="val" id="res-per-user">—</div><div class="lbl">Credits / user / month</div></div>
 </div>
 
 <hr class="calc-divider">
@@ -283,6 +291,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
   <label for="creditBudget">Monthly credit budget</label>
   <input type="number" id="creditBudget" min="0" placeholder="e.g. 500 000" oninput="recalc()">
 </div>
+<div class="hint" style="margin-bottom:0.5rem">Enter a monthly credit budget above to see headroom or overage against your estimate.</div>
 <div class="budget-result" id="budget-result"></div>
 
 <script>
@@ -299,20 +308,20 @@ function syncRange(toId, fromId) {
 
 var defaultRows = [
   // ── Core agent interactions ──
-  { name: 'Classic answer',                                    count: 1, credits: 1    },
-  { name: 'Generative answer',                                 count: 1, credits: 2    },
-  { name: 'Agent action',                                      count: 1, credits: 5    },
-  { name: 'Tenant graph grounding for messages',               count: 1, credits: 10   },
-  { name: 'Agent flow actions (per 100 actions = 13 credits)', count: 1, credits: 0.13 },
+  { name: 'Classic answer',                                    count: 0, credits: 1    },
+  { name: 'Generative answer',                                 count: 0, credits: 2    },
+  { name: 'Agent action',                                      count: 0, credits: 5    },
+  { name: 'Tenant graph grounding for messages',               count: 0, credits: 10   },
+  { name: 'Agent flow actions (per 100 actions = 13 credits)', count: 0, credits: 0.13 },
   // ── AI tools ──
-  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    count: 1, credits: 0.1  },
-  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', count: 1, credits: 1.5  },
-  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', count: 1, credits: 10   },
-  { name: 'AI tool — Content processing (per page = 8 credits)',                count: 1, credits: 8    },
+  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    count: 0, credits: 0.1  },
+  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', count: 0, credits: 1.5  },
+  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', count: 0, credits: 10   },
+  { name: 'AI tool — Content processing (per page = 8 credits)',                count: 0, credits: 8    },
   // ── Voice (if applicable) ──
-  { name: 'Voice — Basic (classic orchestration)',             count: 1, credits: 10   },
-  { name: 'Voice — Standard (generative orchestration)',       count: 1, credits: 35   },
-  { name: 'Voice — Premium (real-time)',                       count: 1, credits: 75   },
+  { name: 'Voice — Basic (classic orchestration)',             count: 0, credits: 10   },
+  { name: 'Voice — Standard (generative orchestration)',       count: 0, credits: 35   },
+  { name: 'Voice — Premium (real-time)',                       count: 0, credits: 75   },
 ];
 
 var rowId = 0;
@@ -348,9 +357,9 @@ function removeRow(id) {
 
 function recalc() {
   var total    = parseFloat(document.getElementById('totalUsers').value)   || 0;
-  var licPct   = parseFloat(document.getElementById('licensePct').value)   || 0;
-  var avgInt   = parseFloat(document.getElementById('avgInteractions').value) || 0;
-  var escPct   = parseFloat(document.getElementById('escalationRate').value)  || 0;
+  var licPct   = Math.min(100, Math.max(0, parseFloat(document.getElementById('licensePct').value)   || 0));
+  var avgInt   = Math.max(0, parseFloat(document.getElementById('avgInteractions').value) || 0);
+  var escPct   = Math.min(100, Math.max(0, parseFloat(document.getElementById('escalationRate').value)  || 0));
 
   var embedded   = document.getElementById('toggle-embedded').classList.contains('active');
   var licensed   = Math.round(total * licPct / 100);
@@ -419,10 +428,10 @@ function setDeployMode(mode) {
 }
 
 var scenarios = {
-  pilot:      { totalUsers:   50, licensePct: 100, escalationRate: 10 },
-  dept:       { totalUsers:  500, licensePct:  80, escalationRate: 20 },
-  org:        { totalUsers: 5000, licensePct:  60, escalationRate: 20 },
-  enterprise: { totalUsers:25000, licensePct:  40, escalationRate: 15 },
+  pilot:      { totalUsers:   50, licensePct:  30, escalationRate: 10, avgInteractions:  5 },
+  dept:       { totalUsers:  500, licensePct:  80, escalationRate: 20, avgInteractions: 10 },
+  org:        { totalUsers: 5000, licensePct:  60, escalationRate: 20, avgInteractions: 12 },
+  enterprise: { totalUsers:25000, licensePct:  40, escalationRate: 15, avgInteractions:  8 },
 };
 
 function applyScenario(key, evt) {
@@ -430,6 +439,7 @@ function applyScenario(key, evt) {
   document.getElementById('totalUsers').value           = s.totalUsers;
   document.getElementById('licensePct').value           = s.licensePct;
   document.getElementById('licensePctSlider').value     = s.licensePct;
+  document.getElementById('avgInteractions').value      = s.avgInteractions;
   document.getElementById('escalationRate').value       = s.escalationRate;
   document.getElementById('escalationRateSlider').value = s.escalationRate;
   document.querySelectorAll('.scenario-pill').forEach(function(el){ el.classList.remove('active'); });
