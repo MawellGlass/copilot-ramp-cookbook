@@ -52,7 +52,7 @@
       });
     });
 
-    var ORDER = ["end-user", "champion", "manager", "maker", "it-admin", "hr", "finance", "legal"];
+    var ORDER = ["end-user", "champion", "manager", "maker", "developer", "it-admin", "hr", "finance", "legal"];
     var LABELS = {
       "end-user": "End user",
       "it-admin": "IT / admin",

@@ -30,6 +30,34 @@ You've outgrown low-code. A Copilot Studio agent can't express what you need: yo
 
 ---
 
+## Walkthroughs — the pro-code frontier
+
+Unlike earlier stages, these are **developer walkthroughs**: representative SDK/CLI patterns and the
+decisions behind them, not click-by-click product tours. Foundry moves fast — each page links the
+authoritative Microsoft docs to verify against. Build them roughly in order.
+
+??? note "Core Foundry walkthroughs"
+
+    ### [Build your first pro-code agent with the Foundry Agent Service](../walkthroughs/foundry-first-agent.md)
+    **Start here.** Create an agent from the SDK, run a turn, and prove your project, identity, and plumbing work.
+
+    ### [Graduate a Copilot Studio agent into pro-code Foundry](../walkthroughs/foundry-graduate-from-studio.md)
+    The usual on-ramp — re-platform a proven low-code agent that hit a real ceiling.
+
+    ### [Give a Foundry agent custom tools and MCP integrations](../walkthroughs/foundry-mcp-tools.md)
+    Turn a talking agent into a doing agent with function tools and standards-based MCP.
+
+    ### [Evaluate and continuously monitor a Foundry agent](../walkthroughs/foundry-evaluate-monitor.md)
+    Score quality on a dataset before you ship, and watch it in production. For developers and IT/admin.
+
+    ### [Orchestrate multiple agents and autonomous runs](../walkthroughs/foundry-autonomous-orchestration.md)
+    Move from one agent to a system of agents that hand off work and run when triggered.
+
+    ### [Secure and govern Foundry agents in production](../walkthroughs/foundry-govern-secure.md)
+    Tenant-isolated data, least-privilege identity, and the governance plane. For IT/admin and developers.
+
+---
+
 ## Borrow, don't build
 
 Foundry is a deep, fast-moving developer platform — there's no value in re-documenting it here. Lean on

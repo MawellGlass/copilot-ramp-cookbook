@@ -408,6 +408,47 @@ Give employees instant answers on compliance policies and legal processes — wi
 
 ---
 
+## Stage 6 · Foundry
+_The pro-code frontier. Build only what the lower stages couldn't — with developers, in Azure._
+
+### ★ Build your first pro-code agent with the Foundry Agent Service → walkthrough
+**For:** developer · `status: walkthrough`
+Create an agent from the SDK, run a turn, and prove your project, identity, and plumbing work end to end.
+**Sample prompt:** `Outline the minimal code to create a Foundry agent that [does X], run one turn against it, and read the result.`
+→ Fully written: `walkthroughs/foundry-first-agent.md`
+
+### Graduate a Copilot Studio agent into pro-code Foundry → walkthrough
+**For:** developer, maker · `status: walkthrough`
+Re-platform a proven low-code agent that hit a real ceiling — carry the design across, test for parity, cut over deliberately.
+**Sample prompt:** `My Studio agent for [use case] needs [capability Studio can't do]. Outline what carries over to Foundry and what I rebuild.`
+→ Fully written: `walkthroughs/foundry-graduate-from-studio.md`
+
+### Give a Foundry agent custom tools and MCP integrations → walkthrough
+**For:** developer · `status: walkthrough`
+Turn a talking agent into a doing agent with your own function tools and standards-based MCP servers.
+**Sample prompt:** `Design the function tools a [domain] agent needs — names, inputs, outputs, and the boundaries each must respect.`
+→ Fully written: `walkthroughs/foundry-mcp-tools.md`
+
+### Evaluate and continuously monitor a Foundry agent → walkthrough
+**For:** developer, it-admin · `status: walkthrough`
+Score quality on a fixed dataset before you ship, gate releases on it, and watch the metrics in production.
+**Sample prompt:** `Help me design an evaluation dataset and metrics for a [RAG] agent: happy paths, edge cases, and adversarial rows.`
+→ Fully written: `walkthroughs/foundry-evaluate-monitor.md`
+
+### Orchestrate multiple agents and autonomous runs → walkthrough
+**For:** developer · `status: walkthrough`
+Move from one agent to a system of narrow specialists that hand off work — and that can run when triggered.
+**Sample prompt:** `Decompose [multi-step job] into specialist agents and an orchestrator, with the hand-off rules and guardrails.`
+→ Fully written: `walkthroughs/foundry-autonomous-orchestration.md`
+
+### Secure and govern Foundry agents in production → walkthrough
+**For:** it-admin, developer · `status: walkthrough`
+Tenant-isolated data, least-privilege Entra identity, and the governance plane before it goes live.
+**Sample prompt:** `Build a pre-production security checklist for a Foundry agent that accesses [systems]: data isolation, RBAC, secrets, oversight.`
+→ Fully written: `walkthroughs/foundry-govern-secure.md`
+
+---
+
 ## Solution Templates
 _Ready-to-build agent specs. Copy the system prompt, configure the topics, run the test cases, ship._
 
