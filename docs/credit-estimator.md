@@ -47,19 +47,20 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 
 /* prompt table */
 .prompt-table-wrap { overflow-x: auto; margin-bottom: 0.75rem; }
-#prompt-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+#prompt-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; table-layout: fixed; }
 #prompt-table thead th {
   text-align: left; font-size: 0.72rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.05em;
-  color: var(--md-default-fg-color--light); padding: 0.4rem 0.6rem;
+  color: var(--md-default-fg-color--light); padding: 0.5rem 0.75rem;
   border-bottom: 2px solid var(--md-default-fg-color--lightest);
 }
-#prompt-table thead th.col-num { text-align: right; width: 95px; }
+#prompt-table thead th.col-num { text-align: right; width: 108px; }
+#prompt-table thead th:last-child { width: 36px; }
 #prompt-table tbody tr:hover td { background: var(--md-code-bg-color); }
 #prompt-table tbody td {
-  padding: 0.35rem 0.5rem;
+  padding: 0.6rem 0.75rem;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  vertical-align: middle;
+  vertical-align: top;
 }
 #prompt-table tfoot td {
   padding: 0.5rem 0.6rem; border-top: 2px solid var(--md-default-fg-color--lightest);
@@ -71,17 +72,19 @@ Estimate monthly M365 Copilot message-credit consumption for your org or team. A
 }
 #prompt-table tfoot .foot-val { color: var(--md-primary-fg-color); }
 .pt-name {
-  width: 100%; min-width: 160px; box-sizing: border-box;
-  padding: 0.3rem 0.5rem; border: 1px solid transparent; border-radius: 4px;
+  display: block; width: 100%; box-sizing: border-box;
+  padding: 0.25rem 0.4rem; border: 1px solid transparent; border-radius: 4px;
   background: transparent; color: var(--md-default-fg-color);
-  font-size: 0.9rem; font-family: inherit;
+  font-size: 0.9rem; font-family: inherit; line-height: 1.45;
+  white-space: normal; word-break: break-word; min-height: 1.5em; cursor: text;
 }
 .pt-name:focus { border-color: var(--md-primary-fg-color); background: var(--md-code-bg-color); outline: none; }
+.pt-name:empty::before { content: attr(data-placeholder); color: var(--md-default-fg-color--lighter); pointer-events: none; }
 .pt-num {
-  width: 80px; padding: 0.3rem 0.4rem;
+  width: 100%; box-sizing: border-box; padding: 0.3rem 0.4rem;
   border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px;
   background: var(--md-code-bg-color); color: var(--md-default-fg-color);
-  font-size: 0.9rem; text-align: right; font-family: inherit; box-sizing: border-box;
+  font-size: 0.9rem; text-align: right; font-family: inherit;
 }
 .pt-num:focus { border-color: var(--md-primary-fg-color); outline: none; }
 .pt-calc {
@@ -305,7 +308,7 @@ function addRow(name, prompts, credits) {
   var tr = document.createElement('tr');
   tr.dataset.rowId = id;
   tr.innerHTML =
-    '<td><input class="pt-name" type="text" value="'+escHtml(name||'')+'" oninput="recalc()" placeholder="e.g. Generative answer"></td>'+
+    '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();}" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+'
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(prompts||1)+'" oninput="recalc()"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
