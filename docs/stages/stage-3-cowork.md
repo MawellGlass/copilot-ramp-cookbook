@@ -113,6 +113,11 @@ Rather than re-document Cowork process-by-process, lean on the work already out 
 
 The full curated set for this stage lives in [Resources → Stage 3](../RESOURCES.md).
 
+!!! info "Security at this stage"
+    Cowork chains many steps, but every one runs as *you* and stays inside the **Microsoft 365
+    boundary** — multi-step doesn't mean wider access. Purview sensitivity labels and audit still apply.
+    See the full picture in **[Security & Governance](../empowerment/security.md)**.
+
 ---
 
 ## Where this leads

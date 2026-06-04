@@ -68,6 +68,11 @@ Before you build from scratch, check the **Agent Library** — a catalog of prod
 
 The full curated set for this stage lives in [Resources → Stage 4](../RESOURCES.md).
 
+!!! info "Security at this stage"
+    You're building and **sharing** now, so governance starts to matter. A declarative agent is grounded
+    only on sources its audience can already access, and admins manage it from the **Microsoft 365 admin
+    center**. See the full picture in **[Security & Governance](../empowerment/security.md)**.
+
 ---
 
 ## Where this leads

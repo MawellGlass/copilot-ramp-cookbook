@@ -175,6 +175,12 @@ Studio has the deepest first-party learning bench of any stage. The official **L
 
 The full curated set for this stage lives in [Resources → Stage 5](../RESOURCES.md).
 
+!!! info "Security at this stage"
+    This is where the controls get rich: agents live in **Power Platform environments**, **DLP data
+    policies** govern their knowledge, connectors, and channels, maker audit flows into **Microsoft
+    Purview** (with Sentinel alerts), and you can add customer-managed keys and Customer Lockbox. See the
+    full picture in **[Security & Governance](../empowerment/security.md)**.
+
 ---
 
 ## You made it to the destination

@@ -86,6 +86,11 @@ The single best "borrowed content" at this stage is Microsoft's **Prompt Gallery
 
 The full curated set for this stage lives in [Resources → Stage 1](../RESOURCES.md).
 
+!!! info "Security at this stage"
+    Nothing to configure. Chat runs inside the **Microsoft 365 service boundary**, acts as *you*, and can
+    only see content you already have permission to open — and your prompts aren't used to train the
+    models. See the full picture in **[Security & Governance](../empowerment/security.md)**.
+
 ---
 
 ## Where this leads

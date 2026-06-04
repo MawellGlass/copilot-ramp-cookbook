@@ -86,6 +86,12 @@ The **Agents in Microsoft 365 hub** is the roster source of truth — it lists e
 
 The full curated set for this stage lives in [Resources → Stage 2](../RESOURCES.md).
 
+!!! info "Security at this stage"
+    The same Microsoft 365 boundary and your existing permissions apply — a first-party agent never
+    surfaces what you couldn't already open. Admins decide which agents are allowed from the
+    **Microsoft 365 admin center → Integrated apps**. See the full picture in
+    **[Security & Governance](../empowerment/security.md)**.
+
 ---
 
 ## Where this leads
