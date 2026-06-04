@@ -7,8 +7,8 @@ hide: [toc]
 
 Estimate monthly M365 Copilot message-credit consumption for your org or team. Adjust the inputs and the prompt table — results update instantly.
 
-!!! info "About message credits"
-    M365 Copilot licenses include a base allotment of **message credits** consumed per interaction. Simple chat prompts typically use **1 credit**; agent invocations, complex multi-turn threads, and Copilot Studio interactions typically use **2–10 credits**. Your admin can view actual consumption in the Microsoft 365 admin center under **Copilot > Usage**.
+!!! info "Official billing rates — [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)"
+    Rates below are sourced directly from the **Microsoft Copilot Studio Billing rates and management** docs. **M365 Copilot licensed users incur no charge** for agent interactions where they are the authenticated user — credits apply to external/unlicensed user scenarios and Copilot Studio pay-as-you-go billing. Each agent turn may combine multiple features (e.g. a generative answer with tenant graph grounding = 2 + 10 = 12 credits).
 
 <div id="calc-wrap" markdown="0">
 
@@ -193,9 +193,9 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
   <table id="prompt-table">
     <thead>
       <tr>
-        <th>Prompt type / scenario</th>
-        <th class="col-num">Prompts&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
-        <th class="col-num">Credits&nbsp;/&nbsp;prompt</th>
+        <th>Agent feature / interaction type</th>
+        <th class="col-num">Interactions&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
+        <th class="col-num">Copilot&nbsp;Credits&nbsp;/&nbsp;interaction</th>
         <th class="col-num">Credits&nbsp;/&nbsp;user&nbsp;/&nbsp;day</th>
         <th></th>
       </tr>
@@ -251,12 +251,21 @@ function syncRange(toId, fromId) {
 }
 
 var defaultRows = [
-  { name: 'Copilot Chat — simple question',       prompts: 3,   credits: 1 },
-  { name: 'Copilot Chat — document summary',      prompts: 2,   credits: 2 },
-  { name: 'Copilot in Word / Excel / PowerPoint', prompts: 1,   credits: 2 },
-  { name: 'First-party agent (Researcher etc.)',  prompts: 1,   credits: 3 },
-  { name: 'Custom Agent Builder agent',           prompts: 0.5, credits: 5 },
-  { name: 'Copilot Studio interaction',           prompts: 0.5, credits: 8 },
+  // ── Core agent interactions ──
+  { name: 'Classic answer',                                    prompts: 3,    credits: 1    },
+  { name: 'Generative answer',                                 prompts: 2,    credits: 2    },
+  { name: 'Agent action',                                      prompts: 2,    credits: 5    },
+  { name: 'Tenant graph grounding for messages',               prompts: 1,    credits: 10   },
+  { name: 'Agent flow actions (per 100 actions = 13 credits)', prompts: 0,    credits: 13   },
+  // ── AI tools ──
+  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    prompts: 0, credits: 0.1  },
+  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', prompts: 0, credits: 1.5  },
+  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', prompts: 0, credits: 10   },
+  { name: 'AI tool — Content processing (per page = 8 credits)',                prompts: 0, credits: 8    },
+  // ── Voice (if applicable) ──
+  { name: 'Voice — Basic (classic orchestration)',             prompts: 0,    credits: 10   },
+  { name: 'Voice — Standard (generative orchestration)',       prompts: 0,    credits: 35   },
+  { name: 'Voice — Premium (real-time)',                       prompts: 0,    credits: 75   },
 ];
 
 var rowId = 0;
@@ -270,7 +279,7 @@ function addRow(name, prompts, credits) {
   var tr = document.createElement('tr');
   tr.dataset.rowId = id;
   tr.innerHTML =
-    '<td><input class="pt-name" type="text" value="'+escHtml(name||'')+'" oninput="recalc()" placeholder="Describe this prompt type"></td>'+
+    '<td><input class="pt-name" type="text" value="'+escHtml(name||'')+'" oninput="recalc()" placeholder="e.g. Generative answer"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(prompts||1)+'" oninput="recalc()"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
