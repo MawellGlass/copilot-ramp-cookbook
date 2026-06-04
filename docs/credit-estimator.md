@@ -152,7 +152,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
 <hr class="calc-divider">
 
 <!-- ── Org inputs ── -->
-<div class="section-label">Organisation</div>
+<div class="section-label">Organization</div>
 <div class="calc-grid">
   <div class="calc-field">
     <label for="totalUsers">Total users in scope</label>

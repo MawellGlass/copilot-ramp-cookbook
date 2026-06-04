@@ -17,18 +17,18 @@ You trust Copilot for single prompts and find yourself wishing it could just *fi
 
 ## What you need
 
-- **Frontier programme enrolment** — see below.
+- **Frontier program enrollment** — see below.
 - A real, multi-step task with clear inputs (files, emails, a meeting) and a clear deliverable.
 - Willingness to delegate — and to review the output rather than do each step yourself.
 
 ---
 
-## The Frontier programme — early access prerequisite
+## The Frontier program — early access prerequisite
 
 !!! info "What is Frontier?"
-    **Microsoft 365 Copilot Frontier** is Microsoft's early-adopter programme that gives enrolled organisations exclusive access to new Copilot capabilities before they reach general availability (GA). Think of it as the fast lane for M365 Copilot customers who want to shape — and benefit from — the newest agentic and multi-step features.
+    **Microsoft 365 Copilot Frontier** is Microsoft's early-adopter program that gives enrolled organizations exclusive access to new Copilot capabilities before they reach general availability (GA). Think of it as the fast lane for M365 Copilot customers who want to shape — and benefit from — the newest agentic and multi-step features.
 
-    Cowork in its full form — autonomous multi-step task delegation, recurring background tasks, Copilot Pages — lands in Frontier *first*, often weeks or months ahead of GA. If you're seeing the walkthroughs in this stage described in Microsoft materials but can't find the features in your tenant, Frontier enrolment is the likely missing piece.
+    Cowork in its full form — autonomous multi-step task delegation, recurring background tasks, Copilot Pages — lands in Frontier *first*, often weeks or months ahead of GA. If you're seeing the walkthroughs in this stage described in Microsoft materials but can't find the features in your tenant, Frontier enrollment is the likely missing piece.
 
 ### What Frontier gives you
 
@@ -45,25 +45,25 @@ You trust Copilot for single prompts and find yourself wishing it could just *fi
 
 ### Prerequisites for joining
 
-To be eligible for Frontier your organisation needs:
+To be eligible for Frontier your organization needs:
 
-1. **Active Microsoft 365 Copilot licences** — Frontier is only available to organisations with paid M365 Copilot (not trial or Copilot-free tiers).
+1. **Active Microsoft 365 Copilot licenses** — Frontier is only available to organizations with paid M365 Copilot (not trial or Copilot-free tiers).
 2. **A designated Copilot Champion** — someone who will drive adoption, collect feedback, and serve as the internal point of contact with Microsoft.
-3. **An IT Admin who can accept the enrolment** — tenant-wide settings changes are sometimes required as features roll out.
+3. **An IT Admin who can accept the enrollment** — tenant-wide settings changes are sometimes required as features roll out.
 4. **Commitment to provide feedback** — Frontier is a two-way relationship; Microsoft expects enrolled orgs to share usage feedback.
 
-### How to enrol
+### How to enroll
 
 There are two paths:
 
 === "Via your Microsoft account team"
-    The most reliable route. Contact your **Microsoft Customer Success Manager (CSM)**, **Account Executive (AE)**, or **FastTrack contact** and ask to be nominated for Frontier. They can check eligibility and submit the enrolment request on your behalf. If you're not sure who your account team is, your Global Admin can find the contact in the Microsoft 365 Admin Centre under **Support → Your account team**.
+    The most reliable route. Contact your **Microsoft Customer Success Manager (CSM)**, **Account Executive (AE)**, or **FastTrack contact** and ask to be nominated for Frontier. They can check eligibility and submit the enrollment request on your behalf. If you're not sure who your account team is, your Global Admin can find the contact in the Microsoft 365 Admin Center under **Support → Your account team**.
 
 === "Self-service via the Frontier portal"
-    Eligible tenants can visit the Frontier portal at [m365.cloud.microsoft/frontier](https://m365.cloud.microsoft/frontier) *(sign-in required)* and request enrolment directly. The portal shows which Frontier features your tenant has access to and lets you opt in to new waves as they open.
+    Eligible tenants can visit the Frontier portal at [m365.cloud.microsoft/frontier](https://m365.cloud.microsoft/frontier) *(sign-in required)* and request enrollment directly. The portal shows which Frontier features your tenant has access to and lets you opt in to new waves as they open.
 
 !!! tip "Don't have Frontier yet?"
-    You can still work through many walkthroughs in this stage — basic end-to-end task delegation and document synthesis work with standard M365 Copilot. Walkthroughs that require recurring background automation or advanced Copilot Pages features are marked where Frontier enrolment is needed.
+    You can still work through many walkthroughs in this stage — basic end-to-end task delegation and document synthesis work with standard M365 Copilot. Walkthroughs that require recurring background automation or advanced Copilot Pages features are marked where Frontier enrollment is needed.
 
 ---
 
