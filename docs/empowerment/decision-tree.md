@@ -20,6 +20,10 @@ is the empowerment team's routing tool: answer a few questions and land on the s
 The first fork is the one that matters most: **are you trying to *use* what's already there, or *build*
 something new?** Everything else follows from that.
 
+!!! tip "Prefer to click through it?"
+    The [Path Finder](wizard.md) walks you through these same questions one at a time and lands you on a
+    recommendation card — two clicks to an answer.
+
 ```mermaid
 flowchart TD
     Start([You have a need or idea]) --> Q1{Use what already exists<br/>or build something new?}

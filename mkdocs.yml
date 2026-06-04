@@ -136,6 +136,7 @@ nav:
   - AI Empowerment:
       - empowerment/index.md
       - "Choose the Right Path": empowerment/decision-tree.md
+      - "Path Finder (interactive)": empowerment/wizard.md
   - Resources:
       - Use-Case Catalog: CATALOG.md
       - Quick Wins: quick-wins.md

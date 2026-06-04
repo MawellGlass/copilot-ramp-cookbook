@@ -40,7 +40,7 @@ Two jobs, repeated continuously:
 
 | Job | The question it answers | The tool we provide |
 | --- | --- | --- |
-| **Select the right tool** | *"My idea — does it belong in Chat, Cowork, Agent Builder, Studio, or Foundry?"* | [Choose the Right Path](decision-tree.md) decision tree |
+| **Select the right tool** | *"My idea — does it belong in Chat, Cowork, Agent Builder, Studio, or Foundry?"* | [Choose the Right Path](decision-tree.md) decision tree, or the interactive [Path Finder](wizard.md) |
 | **Prioritize the backlog** | *"We have 20 ideas — what do we do first, and who owns it?"* | Use-case intake & scoring *(coming next)* |
 
 The first routes a **person with an idea**. The second routes a **backlog of ideas**. Together they turn
@@ -71,7 +71,7 @@ This section is the **org-level companion** to the individual ladder:
 - New to the journey? Start with [Start Here](../start-here.md) and the [five stages](../the-journey.md).
 - Not sure a use case is even licensed? Check [Licensing & Prerequisites](../prerequisites.md).
 - Unsure of a term? The [Glossary](../glossary.md) links every concept back to where it shows up.
-- **Have an idea and want to route it?** Go straight to **[Choose the Right Path](decision-tree.md)**.
+- **Have an idea and want to route it?** Go straight to **[Choose the Right Path](decision-tree.md)** — or click through the **[Path Finder](wizard.md)**.
 
 > **📚 Learn more.**
 >
