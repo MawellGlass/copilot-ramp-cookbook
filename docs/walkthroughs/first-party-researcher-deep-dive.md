@@ -61,7 +61,22 @@ verify.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot with the **Researcher** agent. The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Researcher agent open in Microsoft 365 Copilot](../screenshots/first-party-researcher-deep-dive/01-open-researcher.png)
+**Open Researcher.** Start a conversation with the prebuilt Researcher agent from the agents rail.
+
+![The research prompt entered in the Researcher composer](../screenshots/first-party-researcher-deep-dive/02-prompt-entered.png)
+**Give it a structured brief.** Name the sections, the sources, the citation requirement, and a "so what."
+
+![Researcher asking clarifying scoping questions](../screenshots/first-party-researcher-deep-dive/03-clarifying-questions.png)
+**It scopes before it runs.** Researcher asks about timeframe, scope, and depth so the brief lands on target.
+
+![Researcher showing its live reasoning steps](../screenshots/first-party-researcher-deep-dive/04-reasoning.png)
+**Watch it reason.** Researcher plans, searches the web and your files, and shows each step as it works.
+
+![The finished cited brief with reasoning step count](../screenshots/first-party-researcher-deep-dive/05-brief.png)
+**A brief you can verify.** It returns a structured, cited brief — here after 78 reasoning steps — ready to spot-check.
 
 ## Make it better
 A first brief is a starting point — steer it like an analyst on your team:
