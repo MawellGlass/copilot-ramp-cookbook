@@ -223,7 +223,8 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <thead>
       <tr>
         <th>Agent feature / interaction type</th>
-        <th class="col-num">Credits / interaction</th>
+        <th class="col-num">Uses / interaction</th>
+        <th class="col-num">Credits / use</th>
         <th class="col-num">Credits / user / month</th>
         <th></th>
       </tr>
@@ -232,6 +233,7 @@ hr.calc-divider { border: none; border-top: 1px solid var(--md-default-fg-color-
     <tfoot>
       <tr>
         <td class="foot-label">Total</td>
+        <td></td>
         <td></td>
         <td class="foot-val" id="foot-credits" style="text-align:right">—</td>
         <td></td>
@@ -278,20 +280,20 @@ function syncRange(toId, fromId) {
 
 var defaultRows = [
   // ── Core agent interactions ──
-  { name: 'Classic answer',                                    credits: 1    },
-  { name: 'Generative answer',                                 credits: 2    },
-  { name: 'Agent action',                                      credits: 5    },
-  { name: 'Tenant graph grounding for messages',               credits: 10   },
-  { name: 'Agent flow actions (per 100 actions = 13 credits)', credits: 13   },
+  { name: 'Classic answer',                                    count: 1, credits: 1    },
+  { name: 'Generative answer',                                 count: 1, credits: 2    },
+  { name: 'Agent action',                                      count: 1, credits: 5    },
+  { name: 'Tenant graph grounding for messages',               count: 1, credits: 10   },
+  { name: 'Agent flow actions (per 100 actions = 13 credits)', count: 1, credits: 13   },
   // ── AI tools ──
-  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    credits: 0.1  },
-  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', credits: 1.5  },
-  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', credits: 10   },
-  { name: 'AI tool — Content processing (per page = 8 credits)',                credits: 8    },
+  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    count: 1, credits: 0.1  },
+  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', count: 1, credits: 1.5  },
+  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', count: 1, credits: 10   },
+  { name: 'AI tool — Content processing (per page = 8 credits)',                count: 1, credits: 8    },
   // ── Voice (if applicable) ──
-  { name: 'Voice — Basic (classic orchestration)',             credits: 10   },
-  { name: 'Voice — Standard (generative orchestration)',       credits: 35   },
-  { name: 'Voice — Premium (real-time)',                       credits: 75   },
+  { name: 'Voice — Basic (classic orchestration)',             count: 1, credits: 10   },
+  { name: 'Voice — Standard (generative orchestration)',       count: 1, credits: 35   },
+  { name: 'Voice — Premium (real-time)',                       count: 1, credits: 75   },
 ];
 
 var rowId = 0;
@@ -300,12 +302,13 @@ function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
-function addRow(name, credits) {
+function addRow(name, count, credits) {
   var id = ++rowId;
   var tr = document.createElement('tr');
   tr.dataset.rowId = id;
   tr.innerHTML =
     '<td><div class="pt-name" contenteditable="true" spellcheck="false" oninput="recalc()" data-placeholder="e.g. Generative answer">'+escHtml(name||'')+'</div></td>'+
+    '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(count||1)+'" oninput="recalc()"></td>'+
     '<td style="text-align:right"><input class="pt-num" type="number" min="0" step="0.1" value="'+(credits||1)+'" oninput="recalc()"></td>'+
     '<td class="pt-calc" id="row-sub-'+id+'">—</td>'+
     '<td><button class="pt-del" title="Remove row" onclick="removeRow('+id+')">✕</button></td>';
@@ -334,8 +337,10 @@ function recalc() {
 
   var totalCpud = 0;
   document.querySelectorAll('#prompt-tbody tr').forEach(function(tr) {
-    var c = parseFloat(tr.querySelector('.pt-num').value) || 0;
-    var sub = avgInt * c;
+    var ins = tr.querySelectorAll('.pt-num');
+    var n = parseFloat(ins[0].value) || 0;
+    var c = parseFloat(ins[1].value) || 0;
+    var sub = avgInt * n * c;
     totalCpud += sub;
     var cell = document.getElementById('row-sub-'+tr.dataset.rowId);
     if (cell) cell.textContent = fmtDec(sub);
@@ -406,7 +411,7 @@ function applyScenario(key, evt) {
   recalc();
 }
 
-defaultRows.forEach(function(r){ addRow(r.name, r.credits); });
+defaultRows.forEach(function(r){ addRow(r.name, r.count, r.credits); });
 recalc();
 </script>
 
