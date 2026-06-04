@@ -68,6 +68,8 @@ Build these in order to establish the platform skills all functional agents depe
 
 Agents designed for a specific business function. Each pairs with a [Solution Template](../solutions/index.md) you can copy, adapt, and build from directly.
 
+### HR
+
 ??? example "HR — Answer employee questions with a policies agent"
 
     **[HR: Answer employee questions with a policies agent](../walkthroughs/studio-functional-hr-policy-faq.md)**
@@ -75,6 +77,16 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
     Give every employee a 24/7 HR FAQ agent grounded on your policy docs — consistent, cited answers and a structured escalation path for anything that needs a human.
 
     Pairs with: [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md)
+
+??? example "HR — Guide new starters through a personalised first-week experience"
+
+    **[HR: Guide new starters through a personalised first-week experience](../walkthroughs/studio-functional-hr-onboarding.md)**
+
+    Give every new employee a 24/7 first-week companion that knows their role, team, and start week — adapts the checklist and guidance to who they are, not a generic handbook.
+
+    Pairs with: [Onboarding Buddy Agent solution template](../solutions/onboarding-buddy-agent.md)
+
+### IT
 
 ??? example "IT — Triage support requests and answer from the knowledge base"
 
@@ -84,6 +96,16 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
 
     Pairs with: [IT Helpdesk Triage Agent solution template](../solutions/it-helpdesk-triage-agent.md)
 
+??? example "IT — Self-service software and hardware access requests"
+
+    **[IT: Self-service software and hardware access requests](../walkthroughs/studio-functional-it-access-request.md)**
+
+    Let employees request software, hardware, and system access through a guided conversation — validated against the approved list and auto-routed to the right IT queue with a complete ticket.
+
+    Pairs with: [IT Access Request Agent solution template](../solutions/it-access-request-agent.md)
+
+### Finance
+
 ??? example "Finance — Self-service expense and procurement guidance"
 
     **[Finance: Self-service expense and procurement guidance](../walkthroughs/studio-functional-finance-expense.md)**
@@ -91,6 +113,16 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
     Give employees instant answers on expense policy and procurement rules — and guide them into the right process rather than leaving them to hunt through the intranet.
 
     Pairs with: [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md)
+
+??? example "Finance — Self-service spend and budget Q&A for budget owners"
+
+    **[Finance: Self-service spend and budget Q&A for budget owners](../walkthroughs/studio-functional-finance-budget-qa.md)**
+
+    Give budget owners instant answers on spend position, variance from plan, and the Finance approval process — without waiting for a Finance business partner to respond.
+
+    Pairs with: [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md)
+
+### Sales
 
 ??? example "Sales — Product intel and objection handling"
 
@@ -100,11 +132,29 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
 
     Pairs with: [Sales Enablement Agent solution template](../solutions/sales-enablement-agent.md)
 
+??? example "Sales — Build proposals and RFP responses with your approved content"
+
+    **[Sales: Build proposals and RFP responses with your approved content](../walkthroughs/studio-functional-sales-proposal.md)**
+
+    Help reps pull together the right content for proposals and RFP responses — grounded on your approved solution library and messaging — so the first draft takes 30 minutes instead of 3 hours.
+
+    Pairs with: [Sales Proposal & RFP Agent solution template](../solutions/sales-proposal-rfp-agent.md)
+
+### Legal & Compliance
+
 ??? example "Legal & Compliance — Policy guidance and process navigation"
 
     **[Legal & Compliance: Policy guidance and process navigation](../walkthroughs/studio-functional-legal-compliance.md)**
 
     Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
+
+    Pairs with: [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md)
+
+??? example "Legal — Guide employees through contract routing and requirements"
+
+    **[Legal: Guide employees through contract routing and requirements](../walkthroughs/studio-functional-legal-contract.md)**
+
+    Give employees a clear, consistent process for getting contracts reviewed — what type of contract, what Legal needs, and where to submit — without every query landing on the legal intake inbox first.
 
     Pairs with: [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md)
 

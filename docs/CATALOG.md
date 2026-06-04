@@ -439,6 +439,41 @@ Policy-grounded guidance pattern: expense policy, travel policy, procurement rul
 Strict escalation pattern: process guidance on GDPR, NDA requests, data sharing, and COI declarations — with unconditional escalation for anything requiring legal judgment. Requires Legal sign-off before publishing.
 → Fully written: `solutions/legal-compliance-agent.md`
 
+### IT Access Request Agent → solution template
+**For:** maker, it-admin · `status: solution-template`
+Structured intake pattern: approved list check → collect required fields → create ITSM ticket via Power Automate → confirm ticket number. Covers software, hardware, and system permissions requests. Includes Power Automate action spec.
+→ Fully written: `solutions/it-access-request-agent.md`
+
+### Sales Proposal & RFP Agent → solution template
+**For:** maker, champion, manager · `status: solution-template`
+Content assembly pattern: RFP question lookup, solution brief retrieval, and case study finder — all from the approved sales content library. Includes content gap identification and pricing escalation. Distinct from the Sales Enablement Agent (pre-call prep).
+→ Fully written: `solutions/sales-proposal-rfp-agent.md`
+
+### HR: Onboarding Buddy → functional walkthrough
+**For:** maker, it-admin, champion · `stage: studio` · `status: walkthrough`
+Personalised first-week experience using conversation variables (role, team, start week). Covers the full build from variable collection through week-adaptive content to benefits enrollment deadline handling.
+→ Fully written: `walkthroughs/studio-functional-hr-onboarding.md`
+
+### IT: Access Request Handler → functional walkthrough
+**For:** maker, it-admin, champion · `stage: studio` · `status: walkthrough`
+Software, hardware, and system access requests via guided conversation — approved list validation, structured field collection, ITSM ticket creation via Power Automate. Includes privileged access escalation pattern.
+→ Fully written: `walkthroughs/studio-functional-it-access-request.md`
+
+### Finance: Budget Q&A for budget owners → functional walkthrough
+**For:** maker, champion, manager · `stage: studio` · `status: walkthrough`
+Policy and process layer for budget owners: Finance deadlines, overspend approval process, reforecast guidance, and live data redirect to Finance portal. Clear scope boundary between policy questions and data queries.
+→ Fully written: `walkthroughs/studio-functional-finance-budget-qa.md`
+
+### Sales: Proposal & RFP Content Assistant → functional walkthrough
+**For:** maker, champion, manager · `stage: studio` · `status: walkthrough`
+Content library grounding pattern for proposals: RFP question lookup, solution brief retrieval, case study finder. Covers output format decisions, approved content perimeter, and content freshness requirements.
+→ Fully written: `walkthroughs/studio-functional-sales-proposal.md`
+
+### Legal: Contract Routing and Requirements → functional walkthrough
+**For:** maker, it-admin, champion · `stage: studio` · `status: walkthrough`
+Contract intake front-end: identifies contract type, collects required fields by type (NDA vs. SOW vs. services agreement), sets SLA expectations, routes to correct intake path. Can submit intake records via Power Automate.
+→ Fully written: `walkthroughs/studio-functional-legal-contract.md`
+
 ---
 
 _Count: 5 stages, **56 use cases**, spanning all 5 roles. Every entry is a fully written walkthrough

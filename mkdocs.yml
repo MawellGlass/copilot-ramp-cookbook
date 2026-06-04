@@ -117,6 +117,8 @@ nav:
       - "Sales Enablement Agent": solutions/sales-enablement-agent.md
       - "Finance Expense & Procurement Agent": solutions/finance-expense-agent.md
       - "Legal & Compliance Guidance Agent": solutions/legal-compliance-agent.md
+      - "IT Access Request Agent": solutions/it-access-request-agent.md
+      - "Sales Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
   - Resources:
       - Use-Case Catalog: CATALOG.md
       - Quick Wins: quick-wins.md

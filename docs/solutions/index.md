@@ -21,6 +21,8 @@ Ready-to-build Copilot Studio agent designs. Each template gives you everything 
 | [Sales Enablement Agent](sales-enablement-agent.md) | Sales teams needing instant competitive intel, case studies, and talk tracks | 3–4 hours |
 | [Finance Expense & Procurement Agent](finance-expense-agent.md) | Finance and ops teams wanting self-service answers on expense policy, procurement rules, and approval thresholds | 3–4 hours |
 | [Legal & Compliance Guidance Agent](legal-compliance-agent.md) | Legal and compliance teams wanting to deflect routine process questions with strict escalation controls | 3–4 hours |
+| [IT Access Request Agent](it-access-request-agent.md) | IT teams wanting guided software, hardware, and permissions requests with automatic ITSM ticket creation | 4–5 hours |
+| [Sales Proposal & RFP Agent](sales-proposal-rfp-agent.md) | Sales teams needing approved proposal content, RFP responses, and case studies assembled on demand | 3–4 hours |
 
 ---
 
