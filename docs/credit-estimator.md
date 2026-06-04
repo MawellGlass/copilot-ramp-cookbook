@@ -5,6 +5,9 @@ hide: [toc]
 
 # Copilot Credit Estimator
 
+!!! warning "Work in progress — do not use yet"
+    This page is still under development. Numbers, defaults, and logic are not finalised and should not be used for planning or budgeting.
+
 Estimate monthly M365 Copilot message-credit consumption for your org or team. Adjust the inputs and the prompt table — results update instantly.
 
 !!! info "Official billing rates — [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)"
