@@ -29,6 +29,7 @@ Read down the rungs in order. The **last one that still sounds like you** is rou
 | **[3 · Cowork](stages/stage-3-cowork.md)** | You trust Copilot for single steps and want to hand off whole tasks. | [Hand off an end-to-end task](walkthroughs/cowork-end-to-end-task.md) |
 | **[4 · Agent Builder](stages/stage-4-agent-builder.md)** | You keep repeating the same delegated task and think "I wish this just existed." | [Build a team-knowledge agent](walkthroughs/agent-builder-team-knowledge.md) |
 | **[5 · Copilot Studio](stages/stage-5-studio.md)** | Your simple agents are hitting limits — you need real knowledge, actions, and governance. | [Build your first Studio agent](walkthroughs/studio-first-agent.md) |
+| **[6 · Foundry](stages/stage-6-foundry.md)** | You've outgrown low-code — you need pro-code, custom models, autonomous orchestration, or MCP tools at scale. | [Cross into the pro-code frontier](stages/stage-6-foundry.md) |
 
 !!! note "You don't have to climb one rung at a time"
     Jump straight to where you are — but each stage is designed to make the next feel obvious rather than a cliff. The shift at each rung:
@@ -38,6 +39,7 @@ Read down the rungs in order. The **last one that still sounds like you** is rou
     - **Cowork** — let it run multi-step work
     - **Agent Builder** — build something simple, no code
     - **Copilot Studio** — build for production
+    - **Foundry** — engineer pro-code agents when low-code can't reach
 
 ---
 
