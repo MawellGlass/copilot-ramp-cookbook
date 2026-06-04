@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Make the ROI case for your agent
 
-> **One-line value.** A great agent that can't explain its value gets cut in the next budget review —
+> A great agent that can't explain its value gets cut in the next budget review —
 > build the ROI story in the language leadership funds, with numbers you can actually defend.
 
 **Stage:** Copilot Studio · **For:** Manager, Champion · **Level:** Intermediate · **Time:** 15 min
@@ -48,13 +48,10 @@ that collapses under the first hard question.
 ## Step by step
 1. **Establish the baseline honestly.** What did this work cost before the agent — time per instance times
    volume? A credible "before" is the foundation of the whole case.
-   > 📷 _Screenshot 01 — capturing the before-agent baseline._
 2. **Pull the real usage.** Use actual adoption numbers, not hopes. Time saved on light usage is a smaller
    but *believable* number — and believable wins budget.
-   > 📷 _Screenshot 02 — translating usage into time and cost saved._
 3. **Separate hard numbers from soft ones.** Label what's measured versus estimated. Leadership trusts the
    case more when you're the one pointing out its limits.
-   > 📷 _Screenshot 03 — an ROI summary with assumptions and soft numbers flagged._
 4. **Frame it for the decision:**
    ```
    Turn this into a one-slide summary: the number, the three assumptions behind
@@ -62,17 +59,8 @@ that collapses under the first hard question.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the product UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/studio-roi-business-case/ -->
-<!-- ![01 — Capturing the before-agent baseline](../screenshots/studio-roi-business-case/01-baseline.png) -->
-<!-- ![02 — Translating usage into time and cost saved](../screenshots/studio-roi-business-case/02-usage.png) -->
-<!-- ![03 — An ROI summary with assumptions and soft numbers flagged](../screenshots/studio-roi-business-case/03-summary.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 An ROI case is a living instrument:

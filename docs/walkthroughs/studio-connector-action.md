@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Give a Studio agent a real action with a connector
 
-> **One-line value.** The leap from "agent that answers" to "agent that *does*" is a connector — wire one
+> The leap from "agent that answers" to "agent that *does*" is a connector — wire one
 > in so your agent can read and write to a real system, not just talk about it.
 
 **Stage:** Copilot Studio · **For:** Maker, IT/Admin · **Level:** Advanced · **Time:** 25 min
@@ -49,13 +49,10 @@ action needs so it doesn't misfire on a bad input.
 ## Step by step
 1. **Add the action to your agent.** In Copilot Studio, attach the connector and the specific operation
    the agent should be able to call.
-   > 📷 _Screenshot 01 — adding a connector action to a Copilot Studio agent._
 2. **Map the inputs and outputs.** Tell the agent what to pass in (the order number) and what to return —
    and keep the response tight so it doesn't dump raw fields at the user.
-   > 📷 _Screenshot 02 — mapping the action's inputs and outputs._
 3. **Test with a real and a bad input.** Run a known-good case, then a missing one, and confirm both the
    success and failure paths behave. Actions fail loudly when inputs are wrong — design for it.
-   > 📷 _Screenshot 03 — testing the action's success and not-found paths._
 4. **Lock the scope with IT:**
    ```
    List exactly what this action can read and write, and confirm it can't reach
@@ -63,17 +60,8 @@ action needs so it doesn't misfire on a bad input.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot Studio UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/studio-connector-action/ -->
-<!-- ![01 — Adding a connector action to a Copilot Studio agent](../screenshots/studio-connector-action/01-add.png) -->
-<!-- ![02 — Mapping the action's inputs and outputs](../screenshots/studio-connector-action/02-map.png) -->
-<!-- ![03 — Testing the action's success and not-found paths](../screenshots/studio-connector-action/03-test.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 One action is the start of a capable agent:

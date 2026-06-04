@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Get up to speed on a long document fast
 
-> **One-line value.** A 30-page document reduced to the handful of things *your* role actually needs to
+> A 30-page document reduced to the handful of things *your* role actually needs to
 > know — plus the risks hiding on page 22 — before the meeting where everyone pretends they read it.
 
 **Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 3 min · **Saves:** ~20 min vs. manual
@@ -55,10 +55,8 @@ document is signal for you and asking it to throw away the rest.
 ## Step by step
 1. **Open the document and launch Copilot.** In Word, use the Copilot pane; elsewhere, reference the
    file from the Copilot app or Teams.
-   > 📷 _Screenshot 01 — opening Copilot on a long document._
 2. **Paste the role-framed prompt.** Copilot reads the whole file and returns the role-specific
    essentials, the commitments, and the risks.
-   > 📷 _Screenshot 02 — Copilot's role-filtered summary with risks._
 3. **Spot-check the risks against the source.** Risks and commitments are the high-stakes claims — open
    the cited section and confirm the document really says it before you repeat it.
 4. **Drill into whatever you'll be asked about:**
@@ -66,20 +64,10 @@ document is signal for you and asking it to throw away the rest.
    Pull every deadline and dollar figure from this doc into a table, and flag any
    that conflict with each other.
    ```
-   > 📷 _Screenshot 03 — Copilot extracting the details into a table._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-document-catch-up/ -->
-<!-- ![01 — Opening Copilot on a long document](../screenshots/chat-document-catch-up/01-open.png) -->
-<!-- ![02 — Copilot's role-filtered summary with risks](../screenshots/chat-document-catch-up/02-summary.png) -->
-<!-- ![03 — Copilot extracting the details into a table](../screenshots/chat-document-catch-up/03-table.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Same document, sharper asks:

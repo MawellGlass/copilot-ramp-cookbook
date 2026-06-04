@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # Sales: Product intel and objection handling for sales reps
 
-> **One-line value.** Give every rep instant access to the right product story, competitive positioning, and objection responses — grounded on your actual sales content, available mid-call.
+> Give every rep instant access to the right product story, competitive positioning, and objection responses — grounded on your actual sales content, available mid-call.
 
 **Stage:** Copilot Studio · **For:** Maker, Champion, Manager · **Level:** Intermediate · **Time:** 3–4 hours
 
@@ -63,7 +63,6 @@ answer format for a competitive objection query.
 
 3. **Build the competitive objection topic.** The highest-value topic. Trigger phrases: "[Competitor] vs us", "why not [competitor]", "the prospect mentioned [competitor]". The response should: name the competitor, give the key differentiator in 2-3 sentences, then provide a talk track the rep can use verbatim.
 
-    > 📷 *Screenshot — competitive objection topic with competitor name capture and talk track response node.*
 
 4. **Build the "find a case study" topic.** Reps often need a reference customer for a specific industry, use case, or company size. Trigger: "do we have a case study for [industry / use case / company size]?" The agent searches the case study library and returns the most relevant match with a link.
 

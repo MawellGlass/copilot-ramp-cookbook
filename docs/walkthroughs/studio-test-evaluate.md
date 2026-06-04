@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Test and evaluate a Studio agent before publishing
 
-> **One-line value.** Build confidence before your agent meets real users — run structured test cases, find failure modes, and fix them before they become support tickets.
+> Build confidence before your agent meets real users — run structured test cases, find failure modes, and fix them before they become support tickets.
 
 **Stage:** Copilot Studio · **For:** Maker, Champion · **Level:** Intermediate · **Time:** 30 min
 

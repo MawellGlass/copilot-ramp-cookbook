@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Research a market and write a landscape brief
 
-> **One-line value.** Hand Cowork a topic and a set of inputs — get back a structured market brief you'd normally spend half a day writing.
+> Hand Cowork a topic and a set of inputs — get back a structured market brief you'd normally spend half a day writing.
 
 **Stage:** Cowork · **For:** Manager, End user · **Level:** Intermediate · **Time:** 20 min
 

@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Share and co-edit an AI output with Copilot Pages
 
-> **One-line value.** Turn any Copilot response into a shared, editable collaborative page — no copy-pasting, no formatting, no emailing a draft doc back and forth.
+> Turn any Copilot response into a shared, editable collaborative page — no copy-pasting, no formatting, no emailing a draft doc back and forth.
 
 **Stage:** First-Party Agents · **For:** End user, Manager, Champion · **Level:** Starter · **Time:** 10 min
 

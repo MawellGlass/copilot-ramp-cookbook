@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Connect a Studio agent to a Microsoft Fabric data agent
 
-> **One-line value.** Most agents answer from documents — this one answers from your *data*. Wire a
+> Most agents answer from documents — this one answers from your *data*. Wire a
 > Microsoft Fabric data agent into Copilot Studio so users can ask questions of your warehouse, lakehouse,
 > and semantic models in plain language.
 
@@ -61,10 +61,8 @@ returning a wrong number.
 ## Step by step
 1. **Confirm the Fabric data agent works on its own.** In Fabric, test it with the exact questions your
    users will ask. If it's wrong there, Copilot Studio won't fix it — the data agent is the engine.
-   > 📷 _Screenshot 01 — testing the data agent inside Microsoft Fabric._
 2. **Add it as knowledge in Copilot Studio.** In your agent, add the Fabric data agent as a knowledge
    source / connection and authenticate to Fabric.
-   > 📷 _Screenshot 02 — adding a Fabric data agent as a knowledge source in Copilot Studio._
 3. **Decide the identity model with IT.** Choose whether the agent queries as the *signed-in user*
    (results respect each person's data permissions) or a fixed identity. This is a governance decision,
    not a default — get it right before anyone outside the build team uses it.
@@ -77,20 +75,10 @@ returning a wrong number.
 5. **Test the hard cases.** Ask a question it *can* answer, one just outside the data ("why did returns
    rise?" — analysis it can't do), and one a restricted user shouldn't see. Confirm honest answers and
    that permissions hold.
-   > 📷 _Screenshot 03 — testing a data question, an out-of-scope question, and a permissions case._
 
 ## Screenshots
-Captured from the real products with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop). Re-capture when the Fabric or Copilot Studio UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/studio-fabric-agent/ -->
-<!-- ![01 — Testing the data agent inside Microsoft Fabric](../screenshots/studio-fabric-agent/01-fabric-test.png) -->
-<!-- ![02 — Adding a Fabric data agent as a knowledge source in Copilot Studio](../screenshots/studio-fabric-agent/02-connect.png) -->
-<!-- ![03 — Testing data, out-of-scope, and permissions cases](../screenshots/studio-fabric-agent/03-test.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A connected data agent is the start of a genuinely useful analytics assistant:

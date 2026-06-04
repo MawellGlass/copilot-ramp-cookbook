@@ -1,3 +1,7 @@
+---
+title: Resources
+---
+
 # Resources — curated Microsoft links
 
 Every link below was verified live (June 2026). Organized by journey stage so each one slots into
@@ -88,7 +92,7 @@ didn't even have to build it" demos that warm customers up before they build the
 
 ---
 
-## Stage 5 · Copilot Studio (the destination)
+## Stage 5 · Copilot Studio (the low-code destination)
 
 | Resource | What it is | Link |
 |----------|-----------|------|

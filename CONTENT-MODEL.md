@@ -5,7 +5,17 @@ This is the **locked spec** for content. Two object types: **catalog stubs** (br
 
 ---
 
-## Frontmatter schema (every Markdown file)
+## Frontmatter schema (two tiers)
+
+Pages fall into two tiers:
+
+- **Content pages** — everything under `walkthroughs/`, `stages/`, and `solutions/`. These **require
+  the full schema** below so the site can filter across them.
+- **Meta / navigational pages** — `CATALOG.md`, `RESOURCES.md`, `glossary.md`, `prerequisites.md`,
+  `index.md` pages, and folder READMEs (e.g. `screenshots/README.md`). These are **exempt** from the
+  full schema; a single `title:` is enough (or none at all for folder READMEs that aren't in the nav).
+
+Full schema for **content pages**:
 
 ```yaml
 ---
@@ -38,7 +48,7 @@ consistency is what makes the site feel trustworthy and scannable.
 ```markdown
 # {Title}
 
-> **One-line value.** What the reader gets out of this, in a sentence.
+> {One-sentence reader payoff — what they get out of this.}
 
 **Stage:** {stage} · **For:** {roles} · **Level:** {level} · **Time:** {time}
 
@@ -63,31 +73,30 @@ The copy-paste prompt, in a code block, with the variable parts clearly marked:
 Then 1–2 sentences on *why this prompt works* (specific ask, named output format, etc.).
 
 ## Step by step
-Numbered steps with what the reader does AND what they should see back. Each step that has a
-matching screenshot ends with an inline anchor `> 📷 _Screenshot NN — short caption._` whose number
-maps to a file in the gallery below.
+Numbered steps with what the reader does AND what they should see back. Keep steps text-first and
+self-sufficient — the Microsoft Copilot UI changes often, so a reader should never need an image to
+follow along.
 
 1. Open ... → you'll see ...
-   > 📷 _Screenshot 01 — Copilot side panel open._
 2. Paste the prompt → Copilot returns ...
-   > 📷 _Screenshot 02 — structured action-item table._
 3. Refine: "make the due dates this week" → ...
 
 ## Screenshots
-The captured-from-the-real-product gallery. Images are produced by the Playwright capture tool
-(`tooling/screenshots/`) and land in `screenshots/{slug}/`. Embed each shot in order, with a caption
-that matches its inline anchor above. If a shot doesn't exist yet, leave the embed commented out and
-the inline `> 📷` anchor in place — never fabricate a UI image.
+We deliberately don't ship product screenshots that go stale. Every walkthrough ends with a short,
+honest note pointing readers back to the numbered steps (which we keep current) and to the Playwright
+capture tool in `tooling/screenshots/` for maintainers who want fresh, real captures. Use this exact
+block — never fabricate a UI image:
 
 ```markdown
-![01 — Copilot side panel open next to the Teams meeting recap](../screenshots/{slug}/01-open-copilot.png)
-![02 — Structured action-item table with owners and due dates](../screenshots/{slug}/02-response.png)
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 ```
 
-**Naming convention:** `screenshots/{slug}/{NN}-{short-name}.png` — `{slug}` matches the walkthrough
-filename (e.g. `chat-meeting-followups`), `{NN}` is a zero-padded order index, `{short-name}` is a
-kebab-case label. Walkthroughs live in `walkthroughs/`, so the relative embed path is
-`../screenshots/{slug}/{NN}-{short-name}.png`.
+**Capture tooling (optional, for maintainers):** the Playwright tool produces images named
+`screenshots/{slug}/{NN}-{short-name}.png` — `{slug}` matches the walkthrough filename
+(e.g. `chat-meeting-followups`), `{NN}` is a zero-padded order index, `{short-name}` is a
+kebab-case label. If you choose to embed real captures, place them under `screenshots/{slug}/`.
 
 ## Make it better
 Follow-up prompts / refinements that level up the result. This is where power emerges.
@@ -121,11 +130,16 @@ Honest limitations & gotchas. Builds trust.
 5. **Grounding > memory.** Product surfaces move fast. When in doubt, link the official doc in
    `RESOURCES.md` rather than describing stale UI.
 6. **Keep stubs to 5 lines.** A stub is title + value + sample prompt. Don't half-write a walkthrough.
-7. **Screenshots are captured, never faked.** Every image in the `## Screenshots` gallery must come
-   from the Playwright capture tool running the real scenario (`tooling/screenshots/`). Follow the
-   `screenshots/{slug}/{NN}-{short-name}.png` convention. Until a shot is captured, keep the inline
-   `> 📷` anchor and leave the gallery embed commented out — a missing image is fine; a fabricated one
-   breaks the site's trust contract.
+7. **Screenshots are captured, never faked.** We deliberately don't ship product screenshots that go
+   stale. End every walkthrough with the standard `## Screenshots` note (see the template above) that
+   points readers to the numbered steps and the Playwright capture tool (`tooling/screenshots/`). If a
+   maintainer chooses to embed real captures, they must come from that tool running the real scenario,
+   under the `screenshots/{slug}/{NN}-{short-name}.png` convention — never fabricate a UI image.
+
+> **Automated guard.** A content-QA check (`tooling/qa/check-content.py`) enforces these rules in CI
+> before the site builds. Run it locally with `python tooling/qa/check-content.py` before committing —
+> it flags leaked scaffolding labels, screenshot placeholders, unresolved catalog stubs, stale stage
+> counts, and missing frontmatter.
 
 ---
 
@@ -136,7 +150,7 @@ A catalog stub is the lightweight form — breadth without the production cost:
 ```markdown
 ### {Title}
 **Stage:** {stage} · **For:** {roles} · `status: stub`
-{One-line value.}
+{One-sentence reader payoff.}
 **Sample prompt:** `{a single paste-ready prompt}`
 ```
 

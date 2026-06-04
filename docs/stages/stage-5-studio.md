@@ -5,7 +5,7 @@ stage: studio
 
 # Stage 5 · Copilot Studio
 
-> **Build real agents. The destination of the ramp — low-code, production-grade agents with knowledge, actions, MCP tools, publishing, and governance.**
+> **Build real agents. The low-code destination of the ramp — production-grade agents with knowledge, actions, MCP tools, publishing, and governance (with Microsoft Foundry as the pro-code frontier beyond).**
 
 **The shift:** from "I built a simple agent" to "I build agents that do real work in production." By the time you arrive here, every earlier stage has made this feel like the obvious next step rather than a cliff — you already think in terms of knowledge, instructions, and delegated tasks. Studio just gives you the full toolbox.
 

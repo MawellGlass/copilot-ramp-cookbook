@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Track project milestones with the Planner agent
 
-> **One-line value.** Go from a goal and a list of tasks to a structured, assigned project plan — by describing the project in plain language, not filling in a form.
+> Go from a goal and a list of tasks to a structured, assigned project plan — by describing the project in plain language, not filling in a form.
 
 **Stage:** First-Party Agents · **For:** Manager, Champion · **Level:** Intermediate · **Time:** 10 min
 

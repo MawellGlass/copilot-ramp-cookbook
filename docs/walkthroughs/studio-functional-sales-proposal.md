@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # Sales: Build proposals and RFP responses with your approved content
 
-> **One-line value.** Help reps pull together the right content for proposals and RFP responses — grounded on your approved solution library and messaging — so the first draft takes 30 minutes instead of 3 hours.
+> Help reps pull together the right content for proposals and RFP responses — grounded on your approved solution library and messaging — so the first draft takes 30 minutes instead of 3 hours.
 
 **Stage:** Copilot Studio · **For:** Maker, Champion, Manager · **Level:** Intermediate · **Time:** 3–4 hours
 
@@ -70,7 +70,6 @@ finder, solution brief retrieval), and guidance on output format.
 
 6. **Add an "out of scope" escalation.** Any request for pricing, deal terms, or content the agent can't find escalates clearly: "I don't have approved content for that — contact sales enablement or your manager."
 
-    > 📷 *Screenshot — RFP question topic showing the question input, library search, and returned approved response with source link.*
 
 ## Make it better
 

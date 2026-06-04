@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # IT: Triage support requests and answer from the knowledge base
 
-> **One-line value.** Deflect tier-1 IT tickets with instant KB answers — and for anything that needs a human, collect the right information and raise the ticket automatically.
+> Deflect tier-1 IT tickets with instant KB answers — and for anything that needs a human, collect the right information and raise the ticket automatically.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Intermediate · **Time:** 4–5 hours
 
@@ -64,11 +64,9 @@ decision flow — when does the agent answer vs. when does it create a ticket?
     - Collects: category, urgency, description
     - Confirms the details with the user before submitting
 
-    > 📷 *Screenshot — triage topic flow: KB answer node → "did that help?" branch → ticket collection.*
 
 4. **Connect the Power Automate action.** Build a flow that takes the collected fields and creates the ticket in your helpdesk system (or posts to a SharePoint list if no dedicated tool). Pass back the ticket reference number.
 
-    > 📷 *Screenshot — Power Automate flow creating a ServiceNow/Jira ticket with the collected fields.*
 
 5. **Build the confirmation topic.** After ticket creation, the agent confirms: "I've raised a ticket for you — reference [number]. The IT team will be in touch within [SLA]. Is there anything else?"
 

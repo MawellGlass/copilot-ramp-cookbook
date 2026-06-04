@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # Legal & Compliance: Policy guidance and process navigation
 
-> **One-line value.** Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
+> Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 

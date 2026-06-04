@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Evaluate and continuously monitor a Foundry agent
 
-> **One-line value.** Treat agent quality like test coverage — measure it before you ship and watch it
+> Treat agent quality like test coverage — measure it before you ship and watch it
 > in production, so regressions show up on a dashboard instead of in a complaint.
 
 **Stage:** Foundry · **For:** Developer, IT/admin · **Level:** Advanced · **Time:** 75 min
@@ -72,10 +72,8 @@ every change and you can prove an edit improved things — or catch that it quie
    regression can never ship twice.
 
 ## Screenshots
-Pro-code stage — the artifacts are your dataset, the eval run output, and the monitoring dashboard, which
-evolve with the product. Work from your own results and the
-[evaluation docs](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-approach-gen-ai)
-rather than stale captures.
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 - **Add custom evaluators.** Built-ins cover general quality; write your own grader for domain rules

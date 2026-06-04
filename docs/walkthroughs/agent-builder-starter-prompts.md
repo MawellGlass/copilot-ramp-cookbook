@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Seed your agent with starter prompts
 
-> **One-line value.** A blank agent with a blinking cursor gets ignored — good starter prompts tell people
+> A blank agent with a blinking cursor gets ignored — good starter prompts tell people
 > what to ask on the first try, which is the difference between an agent that gets used and one that dies
 > quietly.
 
@@ -49,13 +49,10 @@ suggestions — not paragraphs.
 ## Step by step
 1. **Open your agent's starter-prompt settings.** Find where the suggested questions are configured — these
    are what a first-time user sees before they type anything.
-   > 📷 _Screenshot 01 — the starter-prompts configuration in Agent Builder._
 2. **Write each as a real question, not a category.** "Summarize the onboarding checklist" beats "Onboarding"
    — a question invites a tap; a label doesn't.
-   > 📷 _Screenshot 02 — four starter prompts phrased as real first questions._
 3. **Tap each one as a new user would.** Confirm the answer is genuinely impressive — a starter prompt that
    leads to a weak answer teaches people the agent is weak.
-   > 📷 _Screenshot 03 — a starter prompt producing a strong first answer._
 4. **Refine the one that underwhelmed:**
    ```
    Replace the weakest starter prompt with one that lands on the agent's single
@@ -63,17 +60,8 @@ suggestions — not paragraphs.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Agent Builder UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/agent-builder-starter-prompts/ -->
-<!-- ![01 — The starter-prompts configuration in Agent Builder](../screenshots/agent-builder-starter-prompts/01-config.png) -->
-<!-- ![02 — Four starter prompts phrased as real first questions](../screenshots/agent-builder-starter-prompts/02-prompts.png) -->
-<!-- ![03 — A starter prompt producing a strong first answer](../screenshots/agent-builder-starter-prompts/03-answer.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Starter prompts are a living signal:

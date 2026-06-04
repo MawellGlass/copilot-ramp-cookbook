@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Synthesize many documents into one brief
 
-> **One-line value.** Point Cowork at a stack of documents and get back one coherent brief — the throughline,
+> Point Cowork at a stack of documents and get back one coherent brief — the throughline,
 > the conflicts, the gaps — instead of reading all of them yourself and hoping you held it in your head.
 
 **Stage:** Cowork · **For:** Maker, Manager · **Level:** Intermediate · **Time:** 15 min
@@ -48,13 +48,10 @@ first), a *traceability requirement* (cite the source per claim), and asks Cowor
 ## Step by step
 1. **Give Cowork the full set and send the prompt.** It reads across every source and works the synthesis
    as one multi-step job, not a doc-by-doc summary.
-   > 📷 _Screenshot 01 — pointing Cowork at a set of documents to synthesize._
 2. **Read the bottom line first, then the conflicts.** The three-sentence top is the answer; the conflict
    flags are where you decide what still needs a human.
-   > 📷 _Screenshot 02 — Cowork's synthesized brief with source citations._
 3. **Trace the claims that matter.** For any load-bearing statement, follow the citation back to the
    source before you rely on it. Synthesis is only as good as its grounding.
-   > 📷 _Screenshot 03 — Cowork's per-claim source citations and conflict flags._
 4. **Tighten it for how you'll use it:**
    ```
    Cut it to one page, drop anything all the sources already agree on, and turn the
@@ -62,17 +59,8 @@ first), a *traceability requirement* (cite the source per claim), and asks Cowor
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Cowork UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/cowork-multi-doc-synthesis/ -->
-<!-- ![01 — Pointing Cowork at a set of documents to synthesize](../screenshots/cowork-multi-doc-synthesis/01-sources.png) -->
-<!-- ![02 — Cowork's synthesized brief with source citations](../screenshots/cowork-multi-doc-synthesis/02-brief.png) -->
-<!-- ![03 — Cowork's per-claim source citations and conflict flags](../screenshots/cowork-multi-doc-synthesis/03-citations.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Synthesis is a starting point, not an endpoint:

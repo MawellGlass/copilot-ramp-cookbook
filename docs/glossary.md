@@ -1,3 +1,7 @@
+---
+title: Glossary
+---
+
 # Glossary
 
 Plain-language definitions for the terms you'll meet on the ramp. Unofficial — when in doubt,
@@ -20,13 +24,13 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 - **BizChat** — the "chat over all your org content" experience inside Microsoft 365 Copilot — it searches
   across SharePoint, email, and Teams and returns a single cited answer.
 - **Copilot Studio** — the low-code platform for building *production* agents: custom topics, connectors,
-  authentication, publishing, and governance. The destination, [Stage 5](stages/stage-5-studio.md).
+  authentication, publishing, and governance. The low-code maker destination, [Stage 5](stages/stage-5-studio.md).
 - **Agent Builder** — the lightweight, in-product agent maker inside Microsoft 365 Copilot. You point it at
   knowledge, give it instructions, and share it — no code. Your first taste of *making*,
   [Stage 4](stages/stage-4-agent-builder.md).
 - **Microsoft Foundry** *(formerly Azure AI Foundry)* — the pro-code platform for building custom AI apps and
-  agents with full control over models, orchestration, and evaluation. One rung beyond Studio for advanced
-  builders.
+  agents with full control over models, orchestration, and evaluation. The pro-code frontier,
+  [Stage 6](stages/stage-6-foundry.md) — one rung beyond Studio for advanced builders.
 
 ---
 

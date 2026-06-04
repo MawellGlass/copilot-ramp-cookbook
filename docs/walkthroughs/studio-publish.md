@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Publish and govern your agent
 
-> **One-line value.** Building the agent is half the job — publishing it safely, to the right people, with
+> Building the agent is half the job — publishing it safely, to the right people, with
 > an owner and a way to watch it, is the other half. This is how a working agent becomes a *trusted* one.
 
 **Stage:** Copilot Studio · **For:** Maker, IT/Admin · **Level:** Advanced · **Time:** 20 min
@@ -46,13 +46,10 @@ after an incident.
 ## Step by step
 1. **Set the audience and environment.** Decide exactly who can reach the agent and in which environment it
    runs — this is the single most consequential governance choice.
-   > 📷 _Screenshot 01 — setting publish audience and environment in Copilot Studio._
 2. **Confirm the data and access scope with IT.** Walk through every source the agent touches and confirm
    the audience is allowed to see all of it. Publishing widens who can trigger those reaches.
-   > 📷 _Screenshot 02 — reviewing data sources and access scope before publish._
 3. **Publish, then test as a real user.** Publish to the chosen audience and immediately test from a
    non-maker account — the published experience can differ from the authoring view.
-   > 📷 _Screenshot 03 — the published agent tested from an end-user account._
 4. **Stand up the feedback loop:**
    ```
    Set up a simple way for users to flag a wrong answer, and tell me what I should
@@ -60,17 +57,8 @@ after an incident.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot Studio UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/studio-publish/ -->
-<!-- ![01 — Setting publish audience and environment in Copilot Studio](../screenshots/studio-publish/01-audience.png) -->
-<!-- ![02 — Reviewing data sources and access scope before publish](../screenshots/studio-publish/02-scope.png) -->
-<!-- ![03 — The published agent tested from an end-user account](../screenshots/studio-publish/03-test.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A published agent is a managed product, not a finished one:

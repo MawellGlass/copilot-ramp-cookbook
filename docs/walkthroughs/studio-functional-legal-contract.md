@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # Legal: Guide employees through contract routing and requirements
 
-> **One-line value.** Give employees a clear, consistent path for getting contracts reviewed — what type of contract, what Legal needs, where to submit — without every query landing on the legal team's intake channel first.
+> Give employees a clear, consistent path for getting contracts reviewed — what type of contract, what Legal needs, where to submit — without every query landing on the legal team's intake channel first.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 2–3 hours
 
@@ -74,7 +74,6 @@ collection flow for NDA and services agreement, and SLA messaging.
 
 6. **Add the "I need this urgently" handling.** A common override. The agent should acknowledge urgency, explain the expedited review process, state what "urgent" means for SLAs, and give the direct contact for genuinely time-critical situations.
 
-    > 📷 *Screenshot — contract type identification topic showing the branching for NDA, services agreement, SOW, and "other" — each routing to its own intake collection flow.*
 
 ## Make it better
 

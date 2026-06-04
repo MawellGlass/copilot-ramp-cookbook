@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # HR: Answer employee questions with a policies agent
 
-> **One-line value.** Give every employee a 24/7 HR FAQ agent that answers from your actual policies — reducing inbox volume for the HR team and delivering consistent, cited answers at any hour.
+> Give every employee a 24/7 HR FAQ agent that answers from your actual policies — reducing inbox volume for the HR team and delivering consistent, cited answers at any hour.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
@@ -66,11 +66,9 @@ This prompt produces a buildable spec in minutes. Bring it to Studio rather than
 
 2. **Add your knowledge source.** Point the agent at your HR SharePoint site or upload key policy docs. Before building any topics, test your top-10 questions directly in the Test pane. If grounding alone answers 7 of them well, you're in good shape — topics handle structured flows, knowledge handles the long tail.
 
-    > 📷 *Screenshot — knowledge source connected, test pane showing a cited answer.*
 
 3. **Build the escalation topic first.** This is the most important topic in any FAQ agent. Configure trigger phrases for personal or sensitive queries ("my performance review", "my salary", "raise a complaint", "I need to speak to someone") and give a clear, consistent redirect response. Don't rely on the knowledge layer to handle these gracefully — own it with a topic.
 
-    > 📷 *Screenshot — escalation topic trigger phrases and redirect message node.*
 
 4. **Build one structured flow topic.** Pick the question that is most time-sensitive or most frequently asked in a way where consistency matters — benefits enrollment deadlines, parental leave steps, or the offboarding process are common candidates. A topic gives a reliable, step-by-step answer every time rather than relying on the model to reconstruct the process.
 
@@ -78,16 +76,10 @@ This prompt produces a buildable spec in minutes. Bring it to Studio rather than
 
 6. **Publish to the HR Teams channel.** Add the agent as a Teams app and pin it in the HR general channel with a short intro message from the HR team: *"Ask me anything about our HR policies — I'll answer from the handbook and show you exactly where I got it."*
 
-    > 📷 *Screenshot — agent pinned in a Teams channel with the intro message.*
 
 ## Screenshots
 
-<!-- Uncomment once PNGs are captured into screenshots/studio-functional-hr-policy-faq/ -->
-<!-- ![01 — Knowledge source connected with test answer](../screenshots/studio-functional-hr-policy-faq/01-knowledge.png) -->
-<!-- ![02 — Escalation topic trigger phrases and redirect node](../screenshots/studio-functional-hr-policy-faq/02-escalation-topic.png) -->
-<!-- ![03 — Agent pinned in HR Teams channel](../screenshots/studio-functional-hr-policy-faq/03-teams-pin.png) -->
-
-> **Not captured yet.** Run the screenshot capture tool in `tooling/screenshots/` and uncomment the embeds above.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 

@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Build your first pro-code agent with the Foundry Agent Service
 
-> **One-line value.** Stand up an agent as *software* — created from an SDK, grounded on a tool,
+> Stand up an agent as *software* — created from an SDK, grounded on a tool,
 > and callable from your own code — the moment a low-code designer can't express what you need.
 
 **Stage:** Foundry · **For:** Developer · **Level:** Advanced · **Time:** 60 min
@@ -86,10 +86,8 @@ Entra ID, the same way it will in production.
    reproducible — the whole point of crossing into pro-code.
 
 ## Screenshots
-This is a pro-code stage: the "screens" are your terminal, your IDE, and the Azure portal — all of which
-change quickly. Rather than ship stale captures, follow the live UI in the
-[Foundry Agent Service quickstart](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/). No
-fabricated screenshots — the code above is the source of truth.
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Once the hello-agent runs, layer on capability — each is its own walkthrough:

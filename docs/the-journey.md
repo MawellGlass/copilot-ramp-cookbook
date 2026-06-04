@@ -5,7 +5,7 @@ hide: [toc]
 
 # The Journey
 
-Five stages. Each one builds on the last — but you can start wherever you are.
+Six stages. Each one builds on the last — but you can start wherever you are.
 
 <div class="grid cards" markdown>
 
@@ -58,6 +58,16 @@ Five stages. Each one builds on the last — but you can start wherever you are.
     **You're ready for this if** your agents need to call APIs, go beyond SharePoint, or be governed at scale.
 
     [→ Go to Stage 5](stages/stage-5-studio.md)
+
+-   **Stage 6 · Microsoft Foundry**
+
+    ---
+
+    The pro-code frontier. When low-code hits its ceiling, Microsoft Foundry gives developers full control — custom models, your own orchestration, evaluation and fine-tuning, and production-grade deployment.
+
+    **You're ready for this if** you have developers and need control low-code can't give you.
+
+    [→ Go to Stage 6](stages/stage-6-foundry.md)
 
 </div>
 

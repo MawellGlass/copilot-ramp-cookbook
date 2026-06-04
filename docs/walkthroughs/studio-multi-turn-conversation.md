@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Design a multi-turn conversation with fallback and clarification
 
-> **One-line value.** Build an agent that asks what it needs to know before it answers — and recovers gracefully when a user says something unexpected.
+> Build an agent that asks what it needs to know before it answers — and recovers gracefully when a user says something unexpected.
 
 **Stage:** Copilot Studio · **For:** Maker · **Level:** Intermediate · **Time:** 30 min
 

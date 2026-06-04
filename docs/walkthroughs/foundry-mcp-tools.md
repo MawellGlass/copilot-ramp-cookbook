@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Give a Foundry agent custom tools and MCP integrations
 
-> **One-line value.** Turn a talking agent into a *doing* agent — wire in your own functions and
+> Turn a talking agent into a *doing* agent — wire in your own functions and
 > standards-based MCP tools so it can query systems, take actions, and reach beyond its model.
 
 **Stage:** Foundry · **For:** Developer · **Level:** Advanced · **Time:** 75 min
@@ -76,10 +76,8 @@ couldn't.
    and log every tool call with its inputs. You're building an audit trail, not just a feature.
 
 ## Screenshots
-Pro-code stage — the meaningful artifacts are your tool code and the run's tool-call log, not a UI.
-Follow the current tool-registration and MCP screens in the
-[Foundry Agent Service docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/); no fabricated
-screenshots here.
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 - **Compose tools.** A research agent might pair a search tool, a calculator function, and an MCP tool

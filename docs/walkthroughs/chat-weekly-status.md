@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Draft a status update from your week's activity
 
-> **One-line value.** Turn a week of scattered emails, chats, and meetings into a crisp five-bullet
+> Turn a week of scattered emails, chats, and meetings into a crisp five-bullet
 > update for your manager — in the time it takes to refill your coffee.
 
 **Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~20 min vs. manual
@@ -55,10 +55,8 @@ the **structure** (shipped / in-progress / blocked), the **audience** (manager),
 ## Step by step
 1. **Open Copilot Chat and paste the prompt.** Use Microsoft 365 Copilot Chat at office.com or the
    Copilot app — anywhere it can see your work activity.
-   > 📷 _Screenshot 01 — the prompt typed into Microsoft 365 Copilot Chat._
 2. **Let it pull your week.** Copilot reads across your recent mail, chats, and meetings and returns a
    structured draft — shipped, in-progress, blocked — in five tight bullets.
-   > 📷 _Screenshot 02 — Copilot's drafted status update, grouped into shipped / in-progress / blocked._
 3. **Sanity-check against what you actually did.** Copilot only sees what's in your M365 footprint — a
    hallway conversation or offline work won't show up. Add anything it missed.
 4. **Refine in plain language:**
@@ -67,20 +65,10 @@ the **structure** (shipped / in-progress / blocked), the **audience** (manager),
    thing that's blocked so it's the headline. Add a one-line ask at the end.
    ```
    Copilot reshapes the draft in place.
-   > 📷 _Screenshot 03 — the refined update after the follow-up prompt._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-weekly-status/ -->
-<!-- ![01 — The prompt typed into Microsoft 365 Copilot Chat](../screenshots/chat-weekly-status/01-prompt.png) -->
-<!-- ![02 — Copilot's drafted status update](../screenshots/chat-weekly-status/02-draft.png) -->
-<!-- ![03 — The refined update after the follow-up](../screenshots/chat-weekly-status/03-refined.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Once the basic draft is solid, sharpen it into something you'll reuse every week:

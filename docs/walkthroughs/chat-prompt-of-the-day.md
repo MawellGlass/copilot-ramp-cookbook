@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Run a "Prompt of the Day" for your team
 
-> **One-line value.** Adoption isn't a launch, it's a habit. A 30-second daily prompt drip turns "we have
+> Adoption isn't a launch, it's a habit. A 30-second daily prompt drip turns "we have
 > Copilot" into "we use Copilot" — one small, specific win at a time.
 
 **Stage:** Copilot Chat · **For:** Champion · **Level:** Starter · **Time:** 10 min · **Saves:** ~30 min/week vs. manual
@@ -56,13 +56,10 @@ lands. A team that wins on day one comes back on day two — that's the whole me
 ## Step by step
 1. **Pick the channel and the cadence.** Post where the team already looks, once a day, same time. A drip
    they have to go find is a drip they'll miss.
-   > 📷 _Screenshot 01 — posting the first Prompt of the Day in a Teams channel._
 2. **Lead with the win, not the prompt.** One line of "here's what this saves you," then the paste-ready
    prompt. People try things that obviously pay off.
-   > 📷 _Screenshot 02 — a daily post: value line on top, paste-ready prompt below._
 3. **Celebrate the first reply.** When someone posts "that just saved me an hour," amplify it. Social proof
    from a peer beats any mandate from above.
-   > 📷 _Screenshot 03 — a teammate sharing a result, the champion amplifying it._
 4. **Refill the queue from real wins:**
    ```
    Based on the wins my team shared this week, draft next week's 5 prompts —
@@ -70,17 +67,8 @@ lands. A team that wins on day one comes back on day two — that's the whole me
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Teams UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-prompt-of-the-day/ -->
-<!-- ![01 — Posting the first Prompt of the Day in a Teams channel](../screenshots/chat-prompt-of-the-day/01-post.png) -->
-<!-- ![02 — A daily post: value line on top, paste-ready prompt below](../screenshots/chat-prompt-of-the-day/02-format.png) -->
-<!-- ![03 — A teammate sharing a result, the champion amplifying it](../screenshots/chat-prompt-of-the-day/03-win.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 The drip compounds when you turn it into a system:

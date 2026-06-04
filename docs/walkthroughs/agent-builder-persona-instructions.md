@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Give your agent a persona and instructions that stick
 
-> **One-line value.** The difference between an agent people trust and one they abandon is its
+> The difference between an agent people trust and one they abandon is its
 > instructions — learn to write the persona, the rules, and the "when unsure" behavior that make it
 > predictable.
 
@@ -50,13 +50,10 @@ docs), the *format* (short + cited), the *failure behavior* (say when unsure, ro
 ## Step by step
 1. **Open your agent and find the instructions field.** This is the box that governs behavior — separate
    from the knowledge source you connect.
-   > 📷 _Screenshot 01 — the instructions field in Agent Builder._
 2. **Write identity, rules, and tone — in that order.** Lead with who it is, then the hard rules
    (grounding, format, refusals), then the voice. Paste the block above and adapt it.
-   > 📷 _Screenshot 02 — a structured instruction block with identity, rules, and tone._
 3. **Test the edges, not the easy path.** Ask it something *not* in the docs and confirm it says so and
    routes you onward — that "graceful I-don't-know" is the whole game.
-   > 📷 _Screenshot 03 — the agent gracefully declining an out-of-scope question._
 4. **Tighten the instruction that failed:**
    ```
    When you can't answer, don't apologize twice — say it once, give the channel
@@ -64,17 +61,8 @@ docs), the *format* (short + cited), the *failure behavior* (say when unsure, ro
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Agent Builder UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/agent-builder-persona-instructions/ -->
-<!-- ![01 — The instructions field in Agent Builder](../screenshots/agent-builder-persona-instructions/01-field.png) -->
-<!-- ![02 — A structured instruction block with identity, rules, and tone](../screenshots/agent-builder-persona-instructions/02-block.png) -->
-<!-- ![03 — The agent gracefully declining an out-of-scope question](../screenshots/agent-builder-persona-instructions/03-decline.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Instructions are never "done" — they're tuned:

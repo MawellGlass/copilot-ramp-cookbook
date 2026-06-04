@@ -68,7 +68,7 @@ cd copilot-ramp-cookbook
 git init
 git branch -M main
 git add .
-git commit -m "Initial publish: Copilot Ramp Cookbook (35 walkthroughs + site scaffolding)"
+git commit -m "Initial publish: Copilot Ramp Cookbook (walkthroughs + site scaffolding)"
 ```
 
 Then create an **empty** repo on GitHub named `copilot-ramp-cookbook` (no README, no .gitignore —

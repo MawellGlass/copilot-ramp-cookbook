@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Answer routine HR and IT questions with Employee Self-Service
 
-> **One-line value.** Get the PTO balance, the policy, the "how do I…" answer in seconds — from approved
+> Get the PTO balance, the policy, the "how do I…" answer in seconds — from approved
 > sources, no ticket filed and no waiting on a queue.
 
 **Stage:** First-Party Agents · **For:** End user, IT/Admin · **Level:** Starter · **Time:** 10 min
@@ -47,13 +47,10 @@ That's the pattern that makes a self-service agent trusted: fast answer, with a 
 ## Step by step
 1. **Open Employee Self-Service and ask plainly.** No special syntax — ask the HR or IT question in
    natural language, the same way you'd message the help desk.
-   > 📷 _Screenshot 01 — asking an HR question in natural language._
 2. **Read the answer and the source.** The agent answers from approved sources and links them. Open the
    source for anything that affects a real decision — pay, leave, security.
-   > 📷 _Screenshot 02 — an answer with its approved-source citation._
 3. **Take the next action inline.** If it can route you to the request form or the right team, follow that
    path right there rather than re-finding it yourself.
-   > 📷 _Screenshot 03 — the agent pointing to the request form or next step._
 4. **Escalate cleanly when it's not routine:**
    ```
    This is a non-standard situation — [briefly describe]. Who's the right person
@@ -61,17 +58,8 @@ That's the pattern that makes a self-service agent trusted: fast answer, with a 
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the agent UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-employee-self-service/ -->
-<!-- ![01 — Asking an HR question in natural language](../screenshots/first-party-employee-self-service/01-ask.png) -->
-<!-- ![02 — An answer with its approved-source citation](../screenshots/first-party-employee-self-service/02-source.png) -->
-<!-- ![03 — The agent pointing to the request form or next step](../screenshots/first-party-employee-self-service/03-action.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Self-service is a flywheel — feed it and it speeds up:

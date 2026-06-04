@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Adapt a document or message for a different audience
 
-> **One-line value.** Transform any piece of content for a new audience in one prompt — no rewriting from scratch, no second-guessing the tone.
+> Transform any piece of content for a new audience in one prompt — no rewriting from scratch, no second-guessing the tone.
 
 **Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Intermediate · **Time:** 10 min · **Saves:** ~15 min vs. manual
 

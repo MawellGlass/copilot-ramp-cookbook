@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Orchestrate multiple agents and autonomous runs in Foundry
 
-> **One-line value.** Move from one agent answering a prompt to a *system* of agents that hand work to
+> Move from one agent answering a prompt to a *system* of agents that hand work to
 > each other and run when triggered — the engineered version of "delegate the whole job."
 
 **Stage:** Foundry · **For:** Developer · **Level:** Advanced · **Time:** 90 min
@@ -78,10 +78,8 @@ do-everything agent.
    [monitoring](foundry-evaluate-monitor.md).
 
 ## Screenshots
-Pro-code stage — the real artifacts are your workflow diagram and the run traces showing each hand-off,
-which are specific to your system. Follow the current orchestration UI in the
-[Foundry Agent Service docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/) rather than
-generic captures.
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 - **Specialize further.** Swap a general model for a cheaper or fine-tuned one on the narrow agents where

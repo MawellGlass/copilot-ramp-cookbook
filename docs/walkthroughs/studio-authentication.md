@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Secure a Studio agent with authentication
 
-> **One-line value.** Make sure only the right people can use your agent — and that it acts as the right identity when accessing data or systems on their behalf.
+> Make sure only the right people can use your agent — and that it acts as the right identity when accessing data or systems on their behalf.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Advanced · **Time:** 30 min
 

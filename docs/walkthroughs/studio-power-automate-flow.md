@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Trigger a Power Automate flow from inside a Studio agent
 
-> **One-line value.** Connect your agent to real business systems — create a ticket, update a record, send a notification — triggered by a natural-language conversation.
+> Connect your agent to real business systems — create a ticket, update a record, send a notification — triggered by a natural-language conversation.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Intermediate · **Time:** 30 min
 

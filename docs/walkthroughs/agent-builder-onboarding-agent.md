@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build an onboarding agent for new hires
 
-> **One-line value.** Give every new team member a self-service agent that answers first-week questions on demand — so you stop repeating the same onboarding conversation and new hires stop waiting for answers.
+> Give every new team member a self-service agent that answers first-week questions on demand — so you stop repeating the same onboarding conversation and new hires stop waiting for answers.
 
 **Stage:** Agent Builder · **For:** Manager, Champion, HR · **Level:** Intermediate · **Time:** 30 min
 

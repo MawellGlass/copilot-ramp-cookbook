@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Secure and govern Foundry agents in production
 
-> **One-line value.** Run pro-code agents like the production software they are — with tenant-isolated
+> Run pro-code agents like the production software they are — with tenant-isolated
 > data, least-privilege identity, and the same governance plane as your low-code agents.
 
 **Stage:** Foundry · **For:** IT/admin, Developer · **Level:** Advanced · **Time:** 60 min
@@ -68,11 +68,8 @@ boundary**. Standard setup puts the agent's memory and knowledge in resources yo
    who responds. An agent without an off switch and an owner isn't production-ready.
 
 ## Screenshots
-Pro-code stage — the artifacts are your Azure resource layout, role assignments, and governance
-dashboards, all specific to your tenant. Work from the
-[standard agent setup](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/standard-agent-setup)
-and [RBAC](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry) docs rather
-than stale captures.
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 - **Automate the guardrails.** Express the resource layout and role assignments as infrastructure-as-code

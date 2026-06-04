@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a meeting-prep agent for a recurring 1:1 or standup
 
-> **One-line value.** Auto-generate talking points, agenda items, and context summaries before every recurring meeting — without manually pulling anything.
+> Auto-generate talking points, agenda items, and context summaries before every recurring meeting — without manually pulling anything.
 
 **Stage:** Agent Builder · **For:** Manager, End user · **Level:** Intermediate · **Time:** 20 min
 

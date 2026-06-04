@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # Finance: Self-service spend and budget Q&A for budget owners
 
-> **One-line value.** Give budget owners instant answers on their spend position, variance from plan, and the Finance approval process — without waiting for a Finance business partner to respond.
+> Give budget owners instant answers on their spend position, variance from plan, and the Finance approval process — without waiting for a Finance business partner to respond.
 
 **Stage:** Copilot Studio · **For:** Maker, Champion, Manager · **Level:** Intermediate · **Time:** 3–4 hours
 
@@ -70,7 +70,6 @@ redirect), and the escalation flow for individual budget decisions.
 
 5. **Build the live data redirect topic.** Trigger phrases: "what have I spent", "where am I vs. budget", "my spend position", "actuals". Return a clear redirect to the Finance portal or Power BI report with a link, plus a note on what to look for once they are there.
 
-    > 📷 *Screenshot — overspend topic showing the approval threshold branch: under £5k (manager approval), £5k–£25k (Finance BP), above £25k (CFO sign-off).*
 
 ## Make it better
 

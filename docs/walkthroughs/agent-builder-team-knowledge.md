@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a team-knowledge agent over a SharePoint site
 
-> **One-line value.** Point a no-code agent at your team's docs once — and let everyone ask plain
+> Point a no-code agent at your team's docs once — and let everyone ask plain
 > questions of them and get cited answers, instead of pinging you.
 
 **Stage:** Agent Builder · **For:** Maker, Champion · **Level:** Intermediate · **Time:** 20 min
@@ -51,34 +51,18 @@ trustworthy team agent from a confident guesser.
 1. **Open Agent Builder.** In M365 Copilot, choose **Create an agent**. You can build by chatting
    (describe it) or by filling the **Configure** fields directly — name, description, instructions,
    knowledge.
-   > 📷 _Screenshot 01 — the Agent Builder create screen, Describe vs Configure tabs._
 2. **Add the knowledge source.** Paste your **SharePoint site / library URL** as the grounding source.
    This is the boundary — the agent answers from here, not the open web.
-   > 📷 _Screenshot 02 — adding the SharePoint site as a knowledge source._
 3. **Write the instructions** (the prompt above, adapted). Tone, citation requirement, and the "if
    unsure, point to HR" refusal rule all go here.
-   > 📷 _Screenshot 03 — the instructions field with tone, citations, and refusal behavior._
 4. **Add starter prompts** so users aren't staring at a blank box — 3–4 questions a teammate would
    actually ask ("What's our remote-work policy?", "How much PTO do I accrue?").
-   > 📷 _Screenshot 04 — starter prompts configured on the agent._
 5. **Test in the preview pane.** Ask a question you know the answer to. Confirm it answers *and* cites
    the right doc — then ask something deliberately off-topic to confirm it declines gracefully.
-   > 📷 _Screenshot 05 — the preview pane: a cited answer, then a graceful "not in the site" reply._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Agent Builder UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/agent-builder-team-knowledge/ -->
-<!-- ![01 — The Agent Builder create screen](../screenshots/agent-builder-team-knowledge/01-create.png) -->
-<!-- ![02 — Adding the SharePoint site as a knowledge source](../screenshots/agent-builder-team-knowledge/02-knowledge.png) -->
-<!-- ![03 — The instructions field](../screenshots/agent-builder-team-knowledge/03-instructions.png) -->
-<!-- ![04 — Starter prompts configured](../screenshots/agent-builder-team-knowledge/04-starters.png) -->
-<!-- ![05 — The preview pane with a cited answer](../screenshots/agent-builder-team-knowledge/05-preview.png) -->
-
-> **Not captured yet.** The five anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A working agent is the start — these turn it into something the team trusts and uses:
@@ -106,12 +90,12 @@ A working agent is the start — these turn it into something the team trusts an
 You just built a real, useful agent with no code. The next wall you'll hit is capability: declarative
 agents *answer from knowledge*, but they don't run custom logic or *do things* in other systems. When
 you need an agent that looks up an order, files a ticket, or follows a designed conversation, you
-graduate to **Stage 5 · Copilot Studio** — the pro-grade builder and the destination of this whole
-ramp.
+graduate to **Stage 5 · Copilot Studio** — the pro-grade builder and the low-code destination of this
+whole ramp (with Microsoft Foundry as the pro-code frontier beyond it).
 
 > **Next:** [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
 
 ## Related
 - [Cowork → Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md) — using delegation, just before you started building
-- Agent Builder → Decide: declarative agent vs. full Copilot Studio _(stub in `CATALOG.md`)_
+- [Agent Builder → Decide: declarative agent vs. full Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)
 - Stage 4 Resources: see `RESOURCES.md` → Agent Builder

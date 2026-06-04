@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # Finance: Self-service expense and procurement guidance
 
-> **One-line value.** Give every employee instant answers on expense policy and procurement rules — and guide them directly into the right process rather than leaving them to hunt through the intranet.
+> Give every employee instant answers on expense policy and procurement rules — and guide them directly into the right process rather than leaving them to hunt through the intranet.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
@@ -62,7 +62,6 @@ happy-path conversation for an expense submission query.
     - Walk through the steps: gather receipts, categorise the expense, enter in [system], attach receipts, submit for approval
     - End with a direct link to the expense portal
 
-    > 📷 *Screenshot — expense guidance topic with branching on employee type and a link node to the submission portal.*
 
 4. **Build the "out of scope / individual ruling" escalation topic.** Trigger phrases include "is this claimable", "can I expense", "is this allowed for me", "exception", "my manager said". Response: "That's a question I can't answer from policy alone — it needs a Finance team review. Please contact [contact/DL] and reference the policy section I've shared."
 

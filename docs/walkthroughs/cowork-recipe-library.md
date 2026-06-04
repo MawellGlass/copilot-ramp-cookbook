@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a "Cowork recipe" library for your org
 
-> **One-line value.** A great Cowork task someone ran once dies with them. Captured as a reusable recipe,
+> A great Cowork task someone ran once dies with them. Captured as a reusable recipe,
 > it becomes something the whole team reruns on demand — multiplying one person's best workflow across
 > everyone.
 
@@ -49,13 +49,10 @@ all four turns a vague "Cowork can do X" into a recipe a teammate can run withou
 ## Step by step
 1. **Harvest the proven workflows first.** Start from tasks people already run successfully — a recipe
    nobody asked for gathers dust. Mine your team's actual wins.
-   > 📷 _Screenshot 01 — collecting proven Cowork workflows from the team._
 2. **Write each as a four-part recipe.** Name, paste-ready description, inputs, deliverable. The inputs
    line is what people skip — and it's what makes a recipe reliably rerunnable.
-   > 📷 _Screenshot 02 — a recipe card: name, description, inputs, deliverable._
 3. **Put it where the team works.** A SharePoint page or Teams tab they can browse and copy from. A library
    nobody can find is a library nobody uses.
-   > 📷 _Screenshot 03 — the recipe library published as a SharePoint/Teams page._
 4. **Keep it alive with a contribution loop:**
    ```
    Draft a short message inviting the team to submit their best Cowork workflow,
@@ -63,17 +60,8 @@ all four turns a vague "Cowork can do X" into a recipe a teammate can run withou
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the product UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/cowork-recipe-library/ -->
-<!-- ![01 — Collecting proven Cowork workflows from the team](../screenshots/cowork-recipe-library/01-harvest.png) -->
-<!-- ![02 — A recipe card: name, description, inputs, deliverable](../screenshots/cowork-recipe-library/02-recipe.png) -->
-<!-- ![03 — The recipe library published as a SharePoint/Teams page](../screenshots/cowork-recipe-library/03-library.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A recipe library is a living asset, not a one-time doc:

@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Agents in Channels — post team-wide answers
 
-> **One-line value.** Drop a shared agent into a Teams channel so the whole team can @mention it and
+> Drop a shared agent into a Teams channel so the whole team can @mention it and
 > self-serve answers — instead of the same five questions landing in your DMs every week.
 
 **Stage:** First-Party Agents · **For:** Champion, IT/Admin · **Level:** Intermediate · **Time:** 10 min
@@ -55,13 +55,10 @@ things that make a shared agent trustworthy in public.
 ## Step by step
 1. **Add the agent to the channel.** As owner/admin, add the prebuilt or shared agent so it appears in
    the channel's app list and is @mentionable.
-   > 📷 _Screenshot 01 — adding a shared agent to a Teams channel._
 2. **Scope and instruct it.** Point it at the right knowledge source and give it the short, cite-the-
    source, say-when-unsure instructions above.
-   > 📷 _Screenshot 02 — scoping the channel agent to its knowledge source._
 3. **Test it in the open with a real question.** @mention it the way a teammate would and confirm the
    answer is right *and* cites the source doc.
-   > 📷 _Screenshot 03 — the agent answering an @mention with a cited source._
 4. **Announce it so people actually use it:**
    ```
    Draft a short channel post introducing the agent: what it answers, how to
@@ -69,17 +66,8 @@ things that make a shared agent trustworthy in public.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Teams UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-agents-in-channels/ -->
-<!-- ![01 — Adding a shared agent to a Teams channel](../screenshots/first-party-agents-in-channels/01-add.png) -->
-<!-- ![02 — Scoping the channel agent to its knowledge source](../screenshots/first-party-agents-in-channels/02-scope.png) -->
-<!-- ![03 — The agent answering an @mention with a cited source](../screenshots/first-party-agents-in-channels/03-answer.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A channel agent gets better with use:

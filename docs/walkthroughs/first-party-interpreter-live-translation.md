@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Translate a meeting in real time with Interpreter
 
-> **One-line value.** Run a cross-language Teams meeting without a human interpreter — the Interpreter
+> Run a cross-language Teams meeting without a human interpreter — the Interpreter
 > agent translates speech live, in your own voice, so everyone follows along in the language they think in.
 
 **Stage:** First-Party Agents · **For:** End user · **Level:** Starter · **Time:** 10 min
@@ -48,13 +48,10 @@ a robotic overlay. Naming both removes the two things people most often fumble o
 ## Step by step
 1. **Start or join the Teams meeting and open the agent.** Bring up Interpreter from the meeting's agents
    or Copilot surface — it runs in the call, not in a side chat.
-   > 📷 _Screenshot 01 — turning on Interpreter inside a Teams meeting._
 2. **Set the language pair.** Tell it which languages to bridge. Each participant experiences the call in
    their chosen language while everyone keeps speaking naturally.
-   > 📷 _Screenshot 02 — choosing the source and target languages._
 3. **Talk normally — let it interpret.** Speak in full thoughts and pause at natural breaks; the agent
    translates in near real time. Resist the urge to talk over it.
-   > 📷 _Screenshot 03 — live translated speech during the call._
 4. **Confirm understanding out loud:**
    ```
    Quick check — did that come through clearly on your end? Let me know if
@@ -63,17 +60,8 @@ a robotic overlay. Naming both removes the two things people most often fumble o
    Treating interpretation as a shared tool, not a black box, is what keeps the meeting flowing.
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Interpreter UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-interpreter-live-translation/ -->
-<!-- ![01 — Turning on Interpreter inside a Teams meeting](../screenshots/first-party-interpreter-live-translation/01-on.png) -->
-<!-- ![02 — Choosing the source and target languages](../screenshots/first-party-interpreter-live-translation/02-langs.png) -->
-<!-- ![03 — Live translated speech during the call](../screenshots/first-party-interpreter-live-translation/03-live.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Interpretation gets better when you set the call up for it:

@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Analyze a dataset with Analyst
 
-> **One-line value.** Ask a spreadsheet questions in plain English and get back the answer *and* the
+> Ask a spreadsheet questions in plain English and get back the answer *and* the
 > chart — no pivot tables, no formulas, no waiting on someone who "knows Excel."
 
 **Stage:** First-Party Agents · **For:** Manager, Maker · **Level:** Starter · **Time:** 10 min
@@ -48,14 +48,11 @@ specific and measurable — vague questions get vague analysis.
 ## Step by step
 1. **Open Analyst and bring in your data.** Find it in the Agent Store or agents rail, start a
    conversation, and attach or point to your file.
-   > 📷 _Screenshot 01 — opening the Analyst agent and attaching a data file._
 2. **Ask your question.** Analyst inspects the data, plans the analysis, and works through it in
    steps — you can watch the reasoning and the code it runs.
-   > 📷 _Screenshot 02 — Analyst working through the analysis with its steps shown._
 3. **Read the findings and the chart, then sanity-check.** Confirm the numbers are in a believable range
    and that Analyst used the columns you expected. A quick gut-check on one figure builds trust in the
    rest.
-   > 📷 _Screenshot 03 — Analyst's finished chart and findings._
 4. **Iterate like you're talking to an analyst:**
    ```
    Now break the top product down by region, and tell me which region is dragging
@@ -64,17 +61,8 @@ specific and measurable — vague questions get vague analysis.
    Analyst reruns just that slice and updates the chart.
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Analyst UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-analyst-dataset/ -->
-<!-- ![01 — Opening the Analyst agent and attaching a data file](../screenshots/first-party-analyst-dataset/01-open.png) -->
-<!-- ![02 — Analyst working through the analysis with its steps shown](../screenshots/first-party-analyst-dataset/02-working.png) -->
-<!-- ![03 — Analyst's finished chart and findings](../screenshots/first-party-analyst-dataset/03-chart.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A first chart is the start of a conversation, not the end:

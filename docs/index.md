@@ -130,4 +130,4 @@ The fastest way to start: open **[Turn a meeting into tracked follow-ups](walkth
 
 ## Where this came from
 
-The ramp is inspired by the grassroots, use-case-first spirit of [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) (a community project, unofficial). Where his book goes deep on Cowork across business processes, this site goes *wide* across the five-stage journey — pointing you toward Microsoft's own [Copilot hub](https://learn.microsoft.com/en-us/copilot/) and [Adoption Hub](https://adoption.microsoft.com/en-us/copilot/) at every step.
+The ramp is inspired by the grassroots, use-case-first spirit of [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) (a community project, unofficial). Where his book goes deep on Cowork across business processes, this site goes *wide* across the six-stage journey — pointing you toward Microsoft's own [Copilot hub](https://learn.microsoft.com/en-us/copilot/) and [Adoption Hub](https://adoption.microsoft.com/en-us/copilot/) at every step.

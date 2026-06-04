@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Auto-recap every meeting with Facilitator
 
-> **One-line value.** Stop prompting for meeting notes at all — let the Facilitator agent take
+> Stop prompting for meeting notes at all — let the Facilitator agent take
 > collaborative notes live, then hand you decisions and action items the moment the meeting ends.
 
 **Stage:** First-Party Agents · **For:** End user, Champion · **Level:** Starter · **Time:** 5 min
@@ -48,31 +48,16 @@ transcript — Facilitator is *already in the room*, watching the conversation a
 1. **Start (or join) a Teams meeting with Facilitator on.** When collaborative notes / Facilitator are
    enabled, you'll see a notes panel that fills in automatically as people talk — no one has to play
    scribe.
-   > 📷 _Screenshot 01 — the Facilitator notes panel open in a live Teams meeting._
 2. **Let it work.** As decisions are made and tasks handed out, Facilitator captures them into the
    live notes. You can keep your full attention on the conversation instead of typing.
-   > 📷 _Screenshot 02 — action items and decisions appearing in the notes panel mid-meeting._
 3. **Catch up any time** by @mentioning Facilitator with the prompt above. It summarizes what's
    happened so far and flags anything assigned to you.
-   > 📷 _Screenshot 03 — Facilitator's catch-up reply in the meeting chat._
 4. **Use the auto-recap after the meeting ends.** The decisions and action items are already
    captured — no re-watching, no after-the-fact summary prompt. Review, fix any owner, and share.
-   > 📷 _Screenshot 04 — the post-meeting recap with decisions and action items._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Teams / Facilitator UI changes — don't hand-edit
-images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-facilitator-auto-recap/ -->
-<!-- ![01 — The Facilitator notes panel open in a live Teams meeting](../screenshots/first-party-facilitator-auto-recap/01-facilitator-panel.png) -->
-<!-- ![02 — Action items and decisions appearing mid-meeting](../screenshots/first-party-facilitator-auto-recap/02-live-notes.png) -->
-<!-- ![03 — Facilitator's catch-up reply in the meeting chat](../screenshots/first-party-facilitator-auto-recap/03-catch-up.png) -->
-<!-- ![04 — The post-meeting recap with decisions and action items](../screenshots/first-party-facilitator-auto-recap/04-recap.png) -->
-
-> **Not captured yet.** The four anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Facilitator is one of a set of first-party agents — once auto-recap feels natural, reach for its
@@ -104,5 +89,5 @@ them by theme, draft a summary deck") and Copilot plans and runs the steps acros
 
 ## Related
 - [Chat → Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md) — the by-hand version this automates
-- First-Party → Deep-dive a topic with Researcher _(stub in `CATALOG.md`)_
+- [First-Party → Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)
 - Stage 2 Resources: see `RESOURCES.md` → First-Party Agents

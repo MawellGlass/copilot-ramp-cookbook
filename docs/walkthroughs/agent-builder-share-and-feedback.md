@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Pilot your agent with a team and gather feedback
 
-> **One-line value.** Your first agent is never right on day one — it's right after five people use it and
+> Your first agent is never right on day one — it's right after five people use it and
 > tell you where it's wrong. A small, structured pilot turns a private guess into a tested, trusted tool
 > the whole team will actually adopt.
 
@@ -50,13 +50,10 @@ punch list you can act on.
 ## Step by step
 1. **Share with a small, real group.** Pick pilots who'll actually use it for their work, then share the
    agent to just them. Small and real beats big and curious.
-   > 📷 _Screenshot 01 — sharing the agent with a handful of named pilots._
 2. **Send the invite with example questions.** Lead with two things to try. A pilot who gets a good answer
    in the first minute keeps going; one who guesses wrong gives up.
-   > 📷 _Screenshot 02 — the pilot invite with starter questions in a Teams channel._
 3. **Collect feedback in three buckets.** Worked / wrong / missing. Funnel it to one place so patterns are
    visible — three people hitting the same gap is your top fix.
-   > 📷 _Screenshot 03 — pilot feedback gathered into worked / wrong / missing._
 4. **Turn the feedback into agent changes:**
    ```
    Here's the feedback from my agent pilot, grouped as worked / wrong /
@@ -65,17 +62,8 @@ punch list you can act on.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Agent Builder UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/agent-builder-share-and-feedback/ -->
-<!-- ![01 — Sharing the agent with a handful of named pilots](../screenshots/agent-builder-share-and-feedback/01-share.png) -->
-<!-- ![02 — The pilot invite with starter questions in a Teams channel](../screenshots/agent-builder-share-and-feedback/02-invite.png) -->
-<!-- ![03 — Pilot feedback gathered into worked / wrong / missing](../screenshots/agent-builder-share-and-feedback/03-feedback.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A pilot is a loop, not a one-shot:

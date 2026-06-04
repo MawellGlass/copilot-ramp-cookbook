@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # HR: Guide new starters through a personalised first-week experience
 
-> **One-line value.** Give every new employee a 24/7 first-week companion that knows their role, team, and start week — so they spend less time hunting through handbooks and more time getting up to speed.
+> Give every new employee a 24/7 first-week companion that knows their role, team, and start week — so they spend less time hunting through handbooks and more time getting up to speed.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
@@ -71,7 +71,6 @@ first-day checklist topic with role-based branching.
 
 6. **Publish to a dedicated onboarding Teams channel.** Create a Teams channel for new starters and pin the agent. This is much higher visibility than burying it in a general HR channel.
 
-    > 📷 *Screenshot — conversation variables panel showing var_role_type, var_team, var_start_week with their collection prompts and branching logic.*
 
 ## Make it better
 

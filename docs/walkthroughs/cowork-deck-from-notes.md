@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a deck from raw notes
 
-> **One-line value.** Hand Cowork your messy notes and let it come back with a real slide deck —
+> Hand Cowork your messy notes and let it come back with a real slide deck —
 > structure, narrative, and draft slides — so you start from a v1 instead of a blank canvas.
 
 **Stage:** Cowork · **For:** End user, Champion · **Level:** Intermediate · **Time:** 15 min
@@ -49,13 +49,10 @@ its low-confidence slides** — so you know exactly where to apply judgment.
 ## Step by step
 1. **Point Cowork at your notes and send the prompt.** Cowork reads the source, proposes a structure, and
    assembles the draft slides — a multi-step job from one hand-off.
-   > 📷 _Screenshot 01 — handing raw notes to Cowork with the deck prompt._
 2. **Review the storyline before the slides.** The arc matters more than any single slide. Confirm the
    narrative lands before you polish wording.
-   > 📷 _Screenshot 02 — Cowork's proposed deck outline and draft slides._
 3. **Check the flagged slides first.** The slides Cowork was unsure about are where your domain knowledge
    earns its keep — fix those before the cosmetic pass.
-   > 📷 _Screenshot 03 — Cowork's low-confidence flags on specific slides._
 4. **Steer the revision in plain language:**
    ```
    Merge slides 3 and 4, make the recommendation slide the visual climax, and
@@ -63,17 +60,8 @@ its low-confidence slides** — so you know exactly where to apply judgment.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Cowork UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/cowork-deck-from-notes/ -->
-<!-- ![01 — Handing raw notes to Cowork with the deck prompt](../screenshots/cowork-deck-from-notes/01-handoff.png) -->
-<!-- ![02 — Cowork's proposed deck outline and draft slides](../screenshots/cowork-deck-from-notes/02-outline.png) -->
-<!-- ![03 — Cowork's low-confidence flags on specific slides](../screenshots/cowork-deck-from-notes/03-flags.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 One hand-off, many outputs:

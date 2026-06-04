@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Prep for a 1:1 in two minutes
 
-> **One-line value.** Walk into your next 1:1 with talking points pulled from the work you actually
+> Walk into your next 1:1 with talking points pulled from the work you actually
 > shared this week — not a blank notepad and a vague "so, how's it going?"
 
 **Stage:** Copilot Chat · **For:** Manager, End user · **Level:** Starter · **Time:** 2 min · **Saves:** ~15 min vs. manual
@@ -54,10 +54,8 @@ asking "what did we talk about" — you're asking "what should I bring to this c
 ## Step by step
 1. **Open Copilot and paste the prompt with their name.** Copilot pulls your recent shared threads and
    meetings and assembles the context.
-   > 📷 _Screenshot 01 — asking Copilot to prep a 1:1 by name._
 2. **Read the recap, the open items, and the suggested topics.** You get a tight picture of the
    relationship's current state plus three things you could raise.
-   > 📷 _Screenshot 02 — Copilot's prep: recent work, open loops, and three topics._
 3. **Sanity-check the "open / waiting on" list.** This is the highest-value part — confirm what's
    genuinely still in flight before you bring it up.
 4. **Sharpen it for this specific conversation:**
@@ -65,20 +63,10 @@ asking "what did we talk about" — you're asking "what should I bring to this c
    They mentioned feeling stretched last time. Add a check-in question about
    workload, and reorder the topics so the blocker we share is first.
    ```
-   > 📷 _Screenshot 03 — Copilot tailoring the talking points._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-prep-1on1/ -->
-<!-- ![01 — Asking Copilot to prep a 1:1 by name](../screenshots/chat-prep-1on1/01-ask.png) -->
-<!-- ![02 — Copilot's prep: recent work, open loops, and three topics](../screenshots/chat-prep-1on1/02-prep.png) -->
-<!-- ![03 — Copilot tailoring the talking points](../screenshots/chat-prep-1on1/03-tailor.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Same prep, more leverage:

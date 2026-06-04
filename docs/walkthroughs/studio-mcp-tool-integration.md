@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Add an MCP tool integration to your Studio agent
 
-> **One-line value.** Knowledge lets an agent *answer*; tools let it *act*. Wiring an MCP server into your
+> Knowledge lets an agent *answer*; tools let it *act*. Wiring an MCP server into your
 > Studio agent turns "here's what the docs say" into "done — I just looked it up in the live system and
 > made the change."
 
@@ -49,13 +49,10 @@ write action firing when it should have asked; deciding that up front is how you
 ## Step by step
 1. **Register the MCP server as a tool source.** Add the server endpoint to your agent and authenticate it.
    One connection makes every tool that server exposes available to the agent.
-   > 📷 _Screenshot 01 — adding an MCP server endpoint to the Studio agent._
 2. **Select and describe the tools.** Pick the specific operations to expose and give each a clear
    description — the agent uses that text to decide when to call it, so vague descriptions cause wrong calls.
-   > 📷 _Screenshot 02 — selecting MCP tools and writing their descriptions._
 3. **Set confirmation on write actions.** Read actions can run freely; anything that changes a system should
    pause for the user. Gate the writes — that single setting prevents most "it did *what*?" moments.
-   > 📷 _Screenshot 03 — requiring user confirmation before a write-action tool runs._
 4. **Test the happy path and a refusal:**
    ```
    Write a test plan for my agent's MCP tools: one happy-path scenario per
@@ -64,17 +61,8 @@ write action firing when it should have asked; deciding that up front is how you
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Studio tools UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/studio-mcp-tool-integration/ -->
-<!-- ![01 — Adding an MCP server endpoint to the Studio agent](../screenshots/studio-mcp-tool-integration/01-connect.png) -->
-<!-- ![02 — Selecting MCP tools and writing their descriptions](../screenshots/studio-mcp-tool-integration/02-tools.png) -->
-<!-- ![03 — Requiring user confirmation before a write-action tool runs](../screenshots/studio-mcp-tool-integration/03-confirm.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A tool connection gets sharper with discipline:

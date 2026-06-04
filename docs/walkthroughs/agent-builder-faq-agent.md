@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build an FAQ agent for a recurring process
 
-> **One-line value.** Redirect the "quick questions" that consume your week to an agent that answers them instantly, 24/7, from your own documentation — no queue, no wait, no interruption.
+> Redirect the "quick questions" that consume your week to an agent that answers them instantly, 24/7, from your own documentation — no queue, no wait, no interruption.
 
 **Stage:** Agent Builder · **For:** Champion, IT Admin, Manager · **Level:** Intermediate · **Time:** 20 min
 

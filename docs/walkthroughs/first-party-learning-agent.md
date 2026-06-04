@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Upskill in the flow of work with the Learning agent
 
-> **One-line value.** Learn the thing right when you need it. The Learning agent surfaces the right
+> Learn the thing right when you need it. The Learning agent surfaces the right
 > content — including LinkedIn Learning — at the moment a skill is in front of you, not weeks later in a
 > course you forgot to take.
 
@@ -49,13 +49,10 @@ difference between intending to learn and actually learning.
 ## Step by step
 1. **Open the Learning agent and state the goal.** Lead with the task and the date, not the topic — "build
    a Studio agent by Friday" gives it everything it needs to sequence.
-   > 📷 _Screenshot 01 — asking the Learning agent for a goal-based path._
 2. **Tell it your starting point.** A sentence on what you already know lets it skip the basics and aim at
    your real gap — the fastest learning is the learning you don't have to repeat.
-   > 📷 _Screenshot 02 — the agent tailoring the path to your baseline._
 3. **Take the first step now.** Do the "today" item immediately, while you're in the flow. In-the-moment
    learning sticks; bookmarked-for-later rarely happens.
-   > 📷 _Screenshot 03 — a sequenced learning path with today's first step._
 4. **Come back when you're stuck on the real task:**
    ```
    I hit [specific snag] while doing [the task]. What's the one piece of learning
@@ -63,17 +60,8 @@ difference between intending to learn and actually learning.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Learning agent UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-learning-agent/ -->
-<!-- ![01 — Asking the Learning agent for a goal-based path](../screenshots/first-party-learning-agent/01-goal.png) -->
-<!-- ![02 — The agent tailoring the path to your baseline](../screenshots/first-party-learning-agent/02-tailor.png) -->
-<!-- ![03 — A sequenced learning path with today's first step](../screenshots/first-party-learning-agent/03-path.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Just-in-time learning gets stickier with a little structure:

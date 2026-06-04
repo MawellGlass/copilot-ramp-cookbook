@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Know when to graduate from Agent Builder to Copilot Studio
 
-> **One-line value.** Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the
+> Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the
 > honest decision guide for when you've outgrown one and need the other, so you don't rebuild twice.
 
 **Stage:** Agent Builder · **For:** Maker, IT/Admin · **Level:** Intermediate · **Time:** 10 min
@@ -48,13 +48,10 @@ preference.
 ## Step by step
 1. **List what your agent can't do today.** Write the concrete wall you hit in Agent Builder — "needs to
    write back to our ticketing system," "needs different answers by region."
-   > 📷 _Screenshot 01 — mapping an agent's needs against Agent Builder's limits._
 2. **Match each need to the right tool.** Knowledge-grounded Q&A over M365 content → Agent Builder is fine.
    Connectors, multi-step actions, environments, analytics → Copilot Studio.
-   > 📷 _Screenshot 02 — a capability comparison guiding the build-where decision._
 3. **Decide before you build, not after.** The expensive mistake is building twice. If the job clearly
    needs Studio-class capability, start there — don't prototype into a dead end.
-   > 📷 _Screenshot 03 — the graduation decision, made deliberately._
 4. **Sanity-check the governance side with IT:**
    ```
    Draft the questions IT will ask before I publish a Studio agent — licensing,
@@ -62,17 +59,8 @@ preference.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the product UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/agent-builder-vs-studio/ -->
-<!-- ![01 — Mapping an agent's needs against Agent Builder's limits](../screenshots/agent-builder-vs-studio/01-needs.png) -->
-<!-- ![02 — A capability comparison guiding the build-where decision](../screenshots/agent-builder-vs-studio/02-compare.png) -->
-<!-- ![03 — The graduation decision, made deliberately](../screenshots/agent-builder-vs-studio/03-decide.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 The decision sharpens with reps:
@@ -104,5 +92,5 @@ destination this entire ramp has been climbing toward — is **Stage 5 · Copilo
 
 ## Related
 - [Agent Builder → Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md) — the Stage 4 flagship
-- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the destination this decision leads to
+- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the low-code destination this decision leads to
 - Stage 4 Resources: see `RESOURCES.md` → Agent Builder

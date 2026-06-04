@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Deep-dive a topic with Researcher
 
-> **One-line value.** Hand a hard question to the Researcher agent and get back a cited, structured
+> Hand a hard question to the Researcher agent and get back a cited, structured
 > brief that pulls from both your own files and the web — the work of an afternoon, in minutes.
 
 **Stage:** First-Party Agents · **For:** End user, Manager, Maker · **Level:** Starter · **Time:** 10 min
@@ -48,13 +48,10 @@ verify.
 ## Step by step
 1. **Open Researcher.** Find it in the Agent Store or the agents rail inside Microsoft 365 Copilot, and
    start a conversation.
-   > 📷 _Screenshot 01 — opening the Researcher agent in M365 Copilot._
 2. **Paste the prompt with your topic.** Researcher plans the work, then gathers and reasons across your
    files and the web — and shows its steps as it goes, so you can follow the reasoning.
-   > 📷 _Screenshot 02 — Researcher working through its multi-step plan._
 3. **Read the cited brief and spot-check.** Open a citation or two and confirm the source actually says
    what the brief claims. This is the habit that makes agent output trustworthy.
-   > 📷 _Screenshot 03 — the finished brief with inline citations._
 4. **Push deeper in plain language:**
    ```
    Expand the "what's changed" section, add a short risks subsection, and turn
@@ -63,17 +60,8 @@ verify.
    Researcher reruns just what's needed and updates the brief.
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Researcher UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-researcher-deep-dive/ -->
-<!-- ![01 — Opening the Researcher agent in M365 Copilot](../screenshots/first-party-researcher-deep-dive/01-open.png) -->
-<!-- ![02 — Researcher working through its multi-step plan](../screenshots/first-party-researcher-deep-dive/02-working.png) -->
-<!-- ![03 — The finished brief with inline citations](../screenshots/first-party-researcher-deep-dive/03-brief.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A first brief is a starting point — steer it like an analyst on your team:
@@ -106,5 +94,5 @@ deliverable.
 
 ## Related
 - [First-Party → Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md) — the Stage 2 flagship
-- Analyst, Interpreter, Project Manager agents _(stubs in `CATALOG.md`)_
+- [Analyst](../walkthroughs/first-party-analyst-dataset.md) · [Interpreter](../walkthroughs/first-party-interpreter-live-translation.md) · [Project Manager](../walkthroughs/first-party-project-manager.md) agents
 - Stage 2 Resources: see `RESOURCES.md` → First-Party Agents

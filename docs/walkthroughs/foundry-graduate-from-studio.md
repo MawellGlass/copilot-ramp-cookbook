@@ -12,7 +12,7 @@ updated: 2026-06-04
 
 # Graduate a Copilot Studio agent into pro-code Foundry
 
-> **One-line value.** Take a working low-code agent that has hit a real ceiling and re-platform it as
+> Take a working low-code agent that has hit a real ceiling and re-platform it as
 > engineered software — keeping the behaviour you proved, gaining the control you needed.
 
 **Stage:** Foundry · **For:** Developer, Maker · **Level:** Advanced · **Time:** 90 min
@@ -72,9 +72,8 @@ stay in Studio.
    evals, then move the rest. Keep the Studio agent as a fallback until the new one has earned trust.
 
 ## Screenshots
-Pro-code stage — the relevant screens are the Studio agent config you're carrying over and your IDE.
-Both change frequently, so rather than ship stale captures, work from your own agent's configuration and
-the [Foundry Agent Service docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/).
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 - **Only graduate what needs it.** If most of the agent is fine in Studio and *one* capability needs

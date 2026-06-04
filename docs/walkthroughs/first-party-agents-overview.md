@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # The first-party agents included with your M365 Copilot license
 
-> **One-line value.** You're probably paying for agents you've never opened. Microsoft ships a roster
+> You're probably paying for agents you've never opened. Microsoft ships a roster
 > of prebuilt agents *inside* the M365 Copilot license — this is the field guide to what each one is
 > for, so you delegate to the right one instead of prompting from scratch.
 
@@ -57,15 +57,14 @@ Every agent below is **built by Microsoft** and reached from the Agent Store ins
 | **Researcher** | A hard question that needs a *multi-step* investigation across your files **and** the web, returned as a cited brief — competitor moves, a technology you must get smart on, a market shift. | [Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md) |
 | **Analyst** | Turning a **spreadsheet into insight** — it reasons over your data (and can run Python) to find the trend, the top-N, the month-over-month change, and hand back a chart. The numbers partner to Researcher's narrative. | [Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md) |
 | **Facilitator** | **Real-time meeting notes** in Teams — it captures decisions and action items live and produces the recap automatically, so nobody has to be the scribe. | [Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md) ★ |
-| **Interpreter** | **Real-time speech translation** in a Teams meeting so a cross-language call runs without a human interpreter in the loop. | _Stub — see `CATALOG.md`_ |
+| **Interpreter** | **Real-time speech translation** in a Teams meeting so a cross-language call runs without a human interpreter in the loop. | [Translate live with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md) |
 | **Project Manager** | **Tracking a plan** — it turns a plan into tracked tasks, assigns and nudges owners, and surfaces what's slipping, working with Planner. | [Keep a project on track with Project Manager](../walkthroughs/first-party-project-manager.md) |
 | **Agents in Channels** | A **shared agent dropped into a Teams channel** so a whole team can self-serve answers from a common knowledge source — the team-wide version of a personal agent. | [Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md) |
-| **Agents in Communities** | The same idea in **Viva Engage communities** — a shared agent answering common questions where a broad community already gathers. | _Stub — see `CATALOG.md`_ |
-| **Workforce / Workplace insights** | **Adoption and collaboration signals** — where your team is getting value from Copilot and where they're underusing it, so champions can target enablement. | _Stub — see `CATALOG.md`_ |
-| **Learning** | **In-the-flow upskilling** — surfacing the right learning content (including LinkedIn Learning) at the moment someone needs a skill. | _Stub — see `CATALOG.md`_ |
-| **Employee Self-Service** | **Routine HR / IT questions** — benefits, policies, "how do I…" — answered from approved sources so people don't have to file a ticket for the simple stuff. | _Stub — see `CATALOG.md`_ |
+| **Agents in Communities** | The same idea in **Viva Engage communities** — a shared agent answering common questions where a broad community already gathers. | [Answer in Viva Engage with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md) |
+| **Workforce / Workplace insights** | **Adoption and collaboration signals** — where your team is getting value from Copilot and where they're underusing it, so champions can target enablement. | [Track adoption with Workforce insights](../walkthroughs/first-party-workforce-insights.md) |
+| **Learning** | **In-the-flow upskilling** — surfacing the right learning content (including LinkedIn Learning) at the moment someone needs a skill. | [Upskill in the flow with the Learning agent](../walkthroughs/first-party-learning-agent.md) |
+| **Employee Self-Service** | **Routine HR / IT questions** — benefits, policies, "how do I…" — answered from approved sources so people don't have to file a ticket for the simple stuff. | [Deflect routine tickets with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md) |
 
-> 📷 _Screenshot 01 — the Agent Store inside M365 Copilot, showing the built-in agents._
 
 **A note on availability.** These agents ship at different maturity tiers — some are generally available,
 others are in preview or rolling out through Microsoft's Frontier program, and **what's included can
@@ -76,10 +75,8 @@ build a process on a preview agent.
 ## Step by step
 1. **Open the Agent Store.** Find it in the agents rail inside Microsoft 365 Copilot — this is where every
    first-party agent lives, alongside any your org has added.
-   > 📷 _Screenshot 02 — opening the Agent Store from the M365 Copilot agents rail._
 2. **Match your task to the roster above.** Research → Researcher. Data → Analyst. Meeting → Facilitator.
    Resist the urge to do it all in plain Copilot Chat when a purpose-built agent owns the job.
-   > 📷 _Screenshot 03 — picking the agent that matches the task at hand._
 3. **Open the matching walkthrough and run its prompt.** Each linked page has a ready-to-paste prompt and
    a "why it works." Start with the ★ Facilitator flagship if you're new to agents.
 4. **Have Copilot pick for you when in doubt:**
@@ -89,17 +86,8 @@ build a process on a preview agent.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Agent Store UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-agents-overview/ -->
-<!-- ![01 — The Agent Store inside M365 Copilot showing the built-in agents](../screenshots/first-party-agents-overview/01-store.png) -->
-<!-- ![02 — Opening the Agent Store from the agents rail](../screenshots/first-party-agents-overview/02-rail.png) -->
-<!-- ![03 — Picking the agent that matches the task](../screenshots/first-party-agents-overview/03-pick.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 The roster is most powerful when you stop using agents in isolation:

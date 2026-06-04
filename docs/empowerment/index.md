@@ -4,7 +4,7 @@ title: AI Empowerment Team
 
 # Build your AI empowerment team
 
-The rest of this cookbook teaches an **individual** how to climb the five stages — from a first chat to a
+The rest of this cookbook teaches an **individual** how to climb the six stages — from a first chat to a
 production agent. This section is about the **organization** around that person: the internal team that
 decides *which* AI use cases to pursue, *who* owns them, and *which tool* each one belongs in.
 
@@ -68,7 +68,7 @@ These map directly onto the personas you already see across the cookbook — see
 
 This section is the **org-level companion** to the individual ladder:
 
-- New to the journey? Start with [Start Here](../start-here.md) and the [five stages](../the-journey.md).
+- New to the journey? Start with [Start Here](../start-here.md) and the [six stages](../the-journey.md).
 - Not sure a use case is even licensed? Check [Licensing & Prerequisites](../prerequisites.md).
 - Unsure of a term? The [Glossary](../glossary.md) links every concept back to where it shows up.
 - **Have an idea and want to route it?** Go straight to **[Choose the Right Path](decision-tree.md)** — or click through the **[Path Finder](wizard.md)**.

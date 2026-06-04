@@ -1,8 +1,13 @@
+---
+title: Use-Case Catalog
+---
+
 # Use-Case Catalog
 
-The full backlog across the journey. Each entry is a **stub** (title · value · sample prompt) until it
-graduates into a rich walkthrough under `walkthroughs/`. This is the "large swathe of use cases" — broad
-now, deepened on a cadence.
+The full backlog across the journey. Most entries are **fully written walkthroughs** (title · value ·
+sample prompt · step-by-step guidance); a few remain short stubs until they graduate into a rich
+walkthrough under `walkthroughs/`. This is the "large swathe of use cases" — broad now, deepened on a
+cadence.
 
 Filter mentally by **Stage** (the heading) and **For:** (the role tag). On the live site these become
 clickable filter chips.
@@ -308,7 +313,7 @@ Auto-generate talking points and agenda items before every recurring meeting —
 ---
 
 ## Stage 5 · Copilot Studio
-_Build real, production-grade agents. The destination._
+_Build real, production-grade agents. The low-code maker destination._
 
 ### ★ Build your first Studio agent with a knowledge source + topic → walkthrough
 **For:** maker · `status: walkthrough`
@@ -530,12 +535,13 @@ Contract intake front-end: identifies contract type, collects required fields by
 
 ---
 
-_Count: 5 stages, **56 use cases**, spanning all 5 roles. Every entry is a fully written walkthrough
-with a sample prompt, step-by-step guidance, and tips. The **flagship spine** (all five ★ starters)
-anchors the journey end-to-end. Stage 1 covers the full chat habit loop (14 walkthroughs). Stage 2
-covers the complete first-party agent roster plus Copilot Pages, Planner, and BizChat (14 walkthroughs).
-Stage 3 adds multi-step delegation patterns including market research, onboarding, competitive analysis,
-and RFP response (9 walkthroughs). Stage 4 covers no-code agent building including onboarding, FAQ,
-and meeting-prep agents (8 walkthroughs). Stage 5 covers production Studio builds including Power
-Automate integration, multi-turn conversation design, autonomous triggers, authentication, and
-pre-publish evaluation (11 walkthroughs)._
+_Six stages, 70+ use cases, spanning all six roles. Most entries are fully written walkthroughs
+with a sample prompt, step-by-step guidance, and tips. The **flagship spine** (the ★ starters)
+anchors the journey end-to-end. Stage 1 covers the full chat habit loop. Stage 2
+covers the complete first-party agent roster plus Copilot Pages, Planner, and BizChat. Stage 3 adds
+multi-step delegation patterns including market research, onboarding, competitive analysis, and RFP
+response. Stage 4 covers no-code agent building including onboarding, FAQ, and meeting-prep agents.
+Stage 5 covers production Studio builds including Power Automate integration, multi-turn conversation
+design, autonomous triggers, authentication, and pre-publish evaluation. Stage 6 takes makers into
+pro-code Microsoft Foundry — the Agent Service, MCP tools, evaluation and monitoring, orchestration,
+and production governance._

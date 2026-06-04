@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Find answers across your organization's content with BizChat
 
-> **One-line value.** Search your entire company's SharePoint, emails, and Teams conversations in one question — and get a cited answer, not a list of links.
+> Search your entire company's SharePoint, emails, and Teams conversations in one question — and get a cited answer, not a list of links.
 
 **Stage:** First-Party Agents · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min
 

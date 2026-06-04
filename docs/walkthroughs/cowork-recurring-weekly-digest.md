@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Stand up a recurring weekly digest
 
-> **One-line value.** Describe the Monday-morning digest you wish landed in your inbox — once — and let
+> Describe the Monday-morning digest you wish landed in your inbox — once — and let
 > Cowork compile and send it every week without you lifting a finger.
 
 **Stage:** Cowork · **For:** Champion, Manager · **Level:** Intermediate · **Time:** 10 min
@@ -49,13 +49,10 @@ once and it repeats.
 ## Step by step
 1. **Describe the recurring outcome.** Paste the task above. Cowork detects the "every Monday at 8am"
    cadence and proposes a **recurring task**, not a one-time run.
-   > 📷 _Screenshot 01 — Cowork recognizing the schedule and proposing a recurring task._
 2. **Confirm the cadence and scope.** Cowork shows you when it'll run and what it'll gather. Check the
    day, time, and source window before you approve.
-   > 📷 _Screenshot 02 — the recurring task's schedule and scope, ready to confirm._
 3. **Review the first run.** Don't trust-and-forget. Read the first digest end to end and confirm it's
    pulling the right mail and chats and grouping them sensibly.
-   > 📷 _Screenshot 03 — the first weekly digest Cowork produced._
 4. **Refine the recipe in plain language:**
    ```
    Also include channel posts where I'm @mentioned, skip newsletters and
@@ -64,17 +61,8 @@ once and it repeats.
    Cowork updates the standing task — every future run uses the new shape.
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Cowork UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/cowork-recurring-weekly-digest/ -->
-<!-- ![01 — Cowork recognizing the schedule and proposing a recurring task](../screenshots/cowork-recurring-weekly-digest/01-schedule.png) -->
-<!-- ![02 — The recurring task's schedule and scope](../screenshots/cowork-recurring-weekly-digest/02-confirm.png) -->
-<!-- ![03 — The first weekly digest Cowork produced](../screenshots/cowork-recurring-weekly-digest/03-digest.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A working digest for *you* is the seed of a digest for your *team*:

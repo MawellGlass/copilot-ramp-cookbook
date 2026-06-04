@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Catch up on a long email thread in seconds
 
-> **One-line value.** Open a 40-message thread and know exactly where things stand — and what's being asked of you — in under a minute.
+> Open a 40-message thread and know exactly where things stand — and what's being asked of you — in under a minute.
 
 **Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~15 min vs. manual
 

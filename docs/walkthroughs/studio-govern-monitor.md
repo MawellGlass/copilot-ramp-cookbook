@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Govern and monitor your agents at scale
 
-> **One-line value.** One agent is a project; a fleet is a platform. Governance and monitoring are what
+> One agent is a project; a fleet is a platform. Governance and monitoring are what
 > keep a growing set of agents safe, compliant, and trusted — so the program scales up instead of quietly
 > sprawling out of control.
 
@@ -50,13 +50,10 @@ everything on it gets ignored; a four-line checklist with clear thresholds gets 
 1. **Set the policy baseline first.** Define data boundaries, authentication, and publishing rights at the
    environment level so every new agent inherits the guardrails — governance by default beats governance by
    audit.
-   > 📷 _Screenshot 01 — setting environment-level data and publishing policies._
 2. **Inventory the live fleet.** Know every published agent, its owner, its knowledge sources, and what it
    can access. You can't govern what you can't see — the inventory is the foundation.
-   > 📷 _Screenshot 02 — the inventory of published agents with owners and access._
 3. **Watch the weekly signals.** Usage trends, error rates, and data access — read at the fleet level, not
    per-conversation. Rising errors or an agent touching data it shouldn't is your cue to act.
-   > 📷 _Screenshot 03 — the weekly analytics view across published agents._
 4. **Turn a red flag into an action:**
    ```
    One of my agents shows a spike in failed responses this week. Walk me
@@ -65,17 +62,8 @@ everything on it gets ignored; a four-line checklist with clear thresholds gets 
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Studio admin UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/studio-govern-monitor/ -->
-<!-- ![01 — Setting environment-level data and publishing policies](../screenshots/studio-govern-monitor/01-policy.png) -->
-<!-- ![02 — The inventory of published agents with owners and access](../screenshots/studio-govern-monitor/02-inventory.png) -->
-<!-- ![03 — The weekly analytics view across published agents](../screenshots/studio-govern-monitor/03-analytics.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Governance matures from gate to guardrail:

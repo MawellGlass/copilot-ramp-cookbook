@@ -1,3 +1,7 @@
+---
+title: Licensing & prerequisites
+---
+
 # Licensing & prerequisites
 
 The single most common blocker on the ramp is *"the walkthrough describes a feature I can't see."* Almost

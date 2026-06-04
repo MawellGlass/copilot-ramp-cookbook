@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a first-draft project plan
 
-> **One-line value.** Go from a blank page and a vague goal to a structured plan — phases, milestones,
+> Go from a blank page and a vague goal to a structured plan — phases, milestones,
 > owners, risks — that you can edit in five minutes instead of staring at for an hour.
 
 **Stage:** Copilot Chat · **For:** Champion, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~45 min vs. manual
@@ -55,10 +55,8 @@ correct the premise before you build on it.
 ## Step by step
 1. **Open Copilot and paste the prompt with your goal.** Copilot returns a structured plan: phases,
    a milestone table, owner roles, and a risk list.
-   > 📷 _Screenshot 01 — asking Copilot for a first-draft project plan._
 2. **Read the plan and the assumptions.** The assumptions line is gold — it tells you where Copilot
    guessed, which is exactly where you need to inject reality.
-   > 📷 _Screenshot 02 — Copilot's phased plan with a milestone table and risks._
 3. **Correct the premise, then refine.** Fix any wrong assumption first (a plan built on the wrong
    deadline is wrong everywhere), then tighten phases and owners.
 4. **Reshape it for how you'll actually use it:**
@@ -66,20 +64,10 @@ correct the premise before you build on it.
    Compress to three phases, add a "go / no-go" checkpoint after phase one, and
    rewrite the risks as a RAID-style table I can paste into our tracker.
    ```
-   > 📷 _Screenshot 03 — Copilot reshaping the plan into a tracker-ready format._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-project-plan/ -->
-<!-- ![01 — Asking Copilot for a first-draft project plan](../screenshots/chat-project-plan/01-ask.png) -->
-<!-- ![02 — Copilot's phased plan with a milestone table and risks](../screenshots/chat-project-plan/02-plan.png) -->
-<!-- ![03 — Copilot reshaping the plan into a tracker-ready format](../screenshots/chat-project-plan/03-reshape.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A plan is a living thing — keep steering:

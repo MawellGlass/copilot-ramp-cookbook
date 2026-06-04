@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Rewrite an email for a tougher audience
 
-> **One-line value.** Take the rambling, slightly-too-honest draft you'd never actually send and turn
+> Take the rambling, slightly-too-honest draft you'd never actually send and turn
 > it into something tight, diplomatic, and impossible to misread — in one prompt.
 
 **Stage:** Copilot Chat · **For:** End user · **Level:** Starter · **Time:** 3 min · **Saves:** ~10 min vs. manual
@@ -54,10 +54,8 @@ better" gives you generic results; specifying the audience is what makes the rew
 ## Step by step
 1. **Open your draft and launch Copilot.** In Outlook, use the Copilot rewrite/coaching option; or paste
    the draft into the Copilot app.
-   > 📷 _Screenshot 01 — pasting a rough draft into Copilot._
 2. **Send the rewrite prompt.** Copilot returns a tightened version with the ask up front and the tone
    dialed in.
-   > 📷 _Screenshot 02 — Copilot's rewritten, audience-tuned version._
 3. **Read it in the reader's voice.** Does the ask survive a 5-second skim? Did it keep every fact
    straight? This is where you catch anything over-softened or over-trimmed.
 4. **Tune it without starting over:**
@@ -65,20 +63,10 @@ better" gives you generic results; specifying the audience is what makes the rew
    A touch warmer in the opening line, and add a sentence acknowledging their
    timeline concern from last week.
    ```
-   > 📷 _Screenshot 03 — Copilot adjusting tone on request._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-rewrite-email/ -->
-<!-- ![01 — Pasting a rough draft into Copilot](../screenshots/chat-rewrite-email/01-draft.png) -->
-<!-- ![02 — Copilot's rewritten, audience-tuned version](../screenshots/chat-rewrite-email/02-rewrite.png) -->
-<!-- ![03 — Copilot adjusting tone on request](../screenshots/chat-rewrite-email/03-tune.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 One draft, many audiences:

@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a meeting agenda from context and notes
 
-> **One-line value.** Never start an agenda from a blank page — Copilot builds a structured, time-slotted agenda from whatever context you have in under two minutes.
+> Never start an agenda from a blank page — Copilot builds a structured, time-slotted agenda from whatever context you have in under two minutes.
 
 **Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Starter · **Time:** 5 min · **Saves:** ~10 min vs. manual
 

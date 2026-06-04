@@ -11,6 +11,16 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### Stage 6 · Microsoft Foundry added, plus a site-wide accuracy pass
+*June 4, 2026*
+
+- **Sixth stage** — the ramp now ends at **Microsoft Foundry**, the pro-code frontier beyond Copilot
+  Studio (the low-code maker destination). New Foundry walkthroughs cover the Agent Service, MCP tools,
+  evaluation and monitoring, orchestration, and production governance.
+- **Solution templates** — nine ready-to-adapt templates now span Copilot Studio and Foundry.
+- **Accuracy cleanup** — refreshed stage counts and framing across the site so every page tells one
+  story: a six-stage ramp across six roles.
+
 ### Added 21 new walkthroughs across all 5 stages
 *June 3, 2026*
 

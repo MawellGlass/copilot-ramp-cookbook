@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Keep a project on track with the Project Manager agent
 
-> **One-line value.** Hand the agent your plan and let it do the nagging — tracking action items,
+> Hand the agent your plan and let it do the nagging — tracking action items,
 > chasing owners, and flagging what's about to slip — so you stop being the human status-checker.
 
 **Stage:** First-Party Agents · **For:** Champion, Manager · **Level:** Starter · **Time:** 10 min
@@ -47,13 +47,10 @@ describing a standing job, not a one-time read.
 ## Step by step
 1. **Open Project Manager and give it the plan.** Find it in the Agent Store or agents rail and point it
    at your source — a doc, a meeting's action items, or a task board.
-   > 📷 _Screenshot 01 — pointing the Project Manager agent at a plan._
 2. **Review the tracked items.** The agent lists each action with owner, due date, and a status read.
    Confirm it parsed the owners and dates correctly before you rely on the tracking.
-   > 📷 _Screenshot 02 — the agent's tracked action items with risk flags._
 3. **Check the risk calls and the nudges.** It flags what's slipping and drafts the follow-ups — you
    approve the tone and the recipients before anything goes out.
-   > 📷 _Screenshot 03 — the agent's at-risk flags and draft owner nudges._
 4. **Set the cadence in plain language:**
    ```
    Give me this status every Friday at 3pm, only escalate items that are overdue
@@ -61,17 +58,8 @@ describing a standing job, not a one-time read.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the agent UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-project-manager/ -->
-<!-- ![01 — Pointing the Project Manager agent at a plan](../screenshots/first-party-project-manager/01-point.png) -->
-<!-- ![02 — The agent's tracked action items with risk flags](../screenshots/first-party-project-manager/02-track.png) -->
-<!-- ![03 — The agent's at-risk flags and draft owner nudges](../screenshots/first-party-project-manager/03-nudge.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Tracking is the floor; steering is the ceiling:

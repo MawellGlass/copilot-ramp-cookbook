@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Find where Copilot is landing with Workforce insights
 
-> **One-line value.** Stop guessing where Copilot is sticking. The insights surface shows where your team
+> Stop guessing where Copilot is sticking. The insights surface shows where your team
 > is getting real value and where they're underusing it — so you aim enablement at the gap, not the noise.
 
 **Stage:** First-Party Agents · **For:** Champion, Manager · **Level:** Starter · **Time:** 10 min
@@ -47,13 +47,10 @@ decide what to do next, not to admire the numbers.
 ## Step by step
 1. **Open the insights surface.** Find the adoption / workplace insights view for your team and frame the
    window you care about — last month is usually the right lens for "is it sticking."
-   > 📷 _Screenshot 01 — opening the Copilot adoption insights view._
 2. **Separate "using" from "getting value."** Logins aren't impact. Look for the apps and agents where
    usage is both *frequent* and *deep* — that's where value is real.
-   > 📷 _Screenshot 02 — comparing usage depth across apps and agents._
 3. **Find the underused high-value spot.** The gold is a capability with big potential and thin
    usage — that's where one good training session pays off most.
-   > 📷 _Screenshot 03 — an underused capability flagged for an enablement push._
 4. **Turn the signal into a plan:**
    ```
    Based on where we're underusing Copilot, draft a 3-step enablement plan for
@@ -61,17 +58,8 @@ decide what to do next, not to admire the numbers.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the insights UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-workforce-insights/ -->
-<!-- ![01 — Opening the Copilot adoption insights view](../screenshots/first-party-workforce-insights/01-open.png) -->
-<!-- ![02 — Comparing usage depth across apps and agents](../screenshots/first-party-workforce-insights/02-depth.png) -->
-<!-- ![03 — An underused capability flagged for an enablement push](../screenshots/first-party-workforce-insights/03-gap.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Insights compound when you close the loop:

@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Hand off an end-to-end task to Cowork
 
-> **One-line value.** Describe an *outcome*, not a prompt — and let Cowork plan and run the steps
+> Describe an *outcome*, not a prompt — and let Cowork plan and run the steps
 > across your email, files, and apps until a finished deliverable lands in your hands.
 
 **Stage:** Cowork · **For:** Champion, End user · **Level:** Intermediate · **Time:** 15 min
@@ -49,34 +49,20 @@ shape). Cowork turns that into a plan, executes each step, and shows its work �
 ## Step by step
 1. **State the outcome.** Paste the task above (swap in your own). Cowork reads it and lays out a plan
    — the steps it intends to take — before it runs them.
-   > 📷 _Screenshot 01 — Cowork's proposed plan for the support-email task._
 2. **Let it work, and watch the steps.** Cowork searches your mailbox, clusters the emails, ranks the
    themes, and drafts the deck. Each step is visible as it runs, so you can follow the reasoning.
-   > 📷 _Screenshot 02 — Cowork progressing through the steps (searching, grouping, drafting)._
 3. **Review the deliverable.** When it finishes, you get the actual slide deck — not a description of
    one. Open it and check the themes and examples against what you know.
-   > 📷 _Screenshot 03 — the finished deck of the top 5 support issues._
 4. **Refine in plain language.** Same conversational follow-ups as every other stage:
    ```
    Merge slides 2 and 4 — they're the same theme. And add a final slide
    recommending one fix for the top issue.
    ```
    Cowork reruns just what's needed and updates the deck.
-   > 📷 _Screenshot 04 — the revised deck after the follow-up._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Cowork UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/cowork-end-to-end-task/ -->
-<!-- ![01 — Cowork's proposed plan for the support-email task](../screenshots/cowork-end-to-end-task/01-plan.png) -->
-<!-- ![02 — Cowork progressing through the steps](../screenshots/cowork-end-to-end-task/02-steps.png) -->
-<!-- ![03 — The finished deck of the top 5 support issues](../screenshots/cowork-end-to-end-task/03-deck.png) -->
-<!-- ![04 — The revised deck after the follow-up](../screenshots/cowork-end-to-end-task/04-revised.png) -->
-
-> **Not captured yet.** The four anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Once a one-off hand-off feels natural, push on the two dimensions that make Cowork pay off:
@@ -111,5 +97,5 @@ packages the knowledge and the steps once, for everyone. You've gone from *using
 
 ## Related
 - [First-Party → Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md) — the single-job version of delegation
-- Cowork → Stand up a recurring weekly digest _(stub in `CATALOG.md`)_
+- [Cowork → Stand up a recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)
 - Stage 3 Resources: see `RESOURCES.md` → Cowork

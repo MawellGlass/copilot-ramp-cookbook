@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Build a competitive comparison from multiple source documents
 
-> **One-line value.** Turn a folder of competitor briefs, product pages, and analyst notes into a structured comparison matrix — ready for an exec review or sales enablement.
+> Turn a folder of competitor briefs, product pages, and analyst notes into a structured comparison matrix — ready for an exec review or sales enablement.
 
 **Stage:** Cowork · **For:** Manager, End user · **Level:** Intermediate · **Time:** 20 min
 

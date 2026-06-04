@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Draft a 30/60/90-day onboarding plan for a new team member
 
-> **One-line value.** Go from "someone's starting Monday" to a complete, personalized 30/60/90-day plan — in one Cowork session instead of an afternoon of writing.
+> Go from "someone's starting Monday" to a complete, personalized 30/60/90-day plan — in one Cowork session instead of an afternoon of writing.
 
 **Stage:** Cowork · **For:** Manager · **Level:** Intermediate · **Time:** 20 min
 

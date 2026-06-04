@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Catch up on a Teams thread you were @mentioned in
 
-> **One-line value.** Get pulled into an 80-message thread and know — in 30 seconds — what's being asked
+> Get pulled into an 80-message thread and know — in 30 seconds — what's being asked
 > of you and by when, without scrolling to the top.
 
 **Stage:** Copilot Chat · **For:** End user · **Level:** Starter · **Time:** 3 min · **Saves:** ~10 min vs. manual
@@ -54,10 +54,8 @@ enough context to act on it.
 ## Step by step
 1. **Open the thread and launch Copilot in Teams.** Use the Copilot button on the chat/channel, or the
    "Summarize" option on a long thread.
-   > 📷 _Screenshot 01 — opening Copilot on a long Teams thread._
 2. **Paste the prompt.** Copilot reads the whole thread and returns the gist, what's being asked of you,
    the deadline, and the few lines of context behind it.
-   > 📷 _Screenshot 02 — Copilot's response: the asks, the deadline, the context._
 3. **Check the "asked of me" list against the thread.** Confirm who set the deadline and that the ask is
    really yours — a quick scroll to the relevant message is enough.
 4. **Act without leaving the chat:**
@@ -65,20 +63,10 @@ enough context to act on it.
    Draft a reply that confirms I'll take the data-prep piece, and asks for an
    extra day on the review since I'm out Thursday.
    ```
-   > 📷 _Screenshot 03 — Copilot drafting the reply in place._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-catch-up-thread/ -->
-<!-- ![01 — Opening Copilot on a long Teams thread](../screenshots/chat-catch-up-thread/01-open.png) -->
-<!-- ![02 — Copilot's response: the asks, deadline, and context](../screenshots/chat-catch-up-thread/02-response.png) -->
-<!-- ![03 — Copilot drafting the reply in place](../screenshots/chat-catch-up-thread/03-reply.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Same thread, sharper questions:

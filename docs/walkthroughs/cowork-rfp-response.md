@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Draft an RFP or proposal response from scattered source docs
 
-> **One-line value.** Turn an RFP and your scattered internal docs into a structured first-draft response — so you're shaping and polishing rather than writing from nothing.
+> Turn an RFP and your scattered internal docs into a structured first-draft response — so you're shaping and polishing rather than writing from nothing.
 
 **Stage:** Cowork · **For:** End user, Manager · **Level:** Intermediate · **Time:** 30 min
 

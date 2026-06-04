@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Turn a meeting into tracked follow-ups
 
-> **One-line value.** Walk out of any meeting and have decisions, owners, and due dates captured in
+> Walk out of any meeting and have decisions, owners, and due dates captured in
 > under five minutes — without re-watching the recording.
 
 **Stage:** Copilot Chat · **For:** End user, Champion · **Level:** Starter · **Time:** 5 min · **Saves:** ~25 min vs. manual
@@ -58,12 +58,9 @@ Specific asks + named format = dramatically better results.
 ## Step by step
 1. **Open Copilot in Teams.** From the meeting's recap page, or the Copilot side panel, or
    Microsoft 365 Copilot Chat at office.com. You'll see the chat box.
-   > 📷 _Screenshot 01 — Copilot side panel open next to a Teams meeting recap._
 2. **Paste the prompt** (swap in your meeting name). Copilot reads the transcript and returns a
    structured summary — a short decisions list, an action-item table with owners and dates, and an
    open-questions list.
-   > 📷 _Screenshot 02 — the prompt typed into the Copilot chat box._
-   > 📷 _Screenshot 03 — Copilot's structured response: decisions, action-item table, open questions._
 3. **Sanity-check the owners and dates.** Skim the table. If a due date is missing or an owner looks
    wrong, that's expected — you'll fix it in the next step.
 4. **Refine in plain language:**
@@ -72,21 +69,10 @@ Specific asks + named format = dramatically better results.
    And the second item should be owned by Priya, not me.
    ```
    Copilot updates the table in place.
-   > 📷 _Screenshot 04 — the refined table after the follow-up prompt._
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Copilot UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/chat-meeting-followups/ -->
-<!-- ![01 — Copilot side panel open next to a Teams meeting recap](../screenshots/chat-meeting-followups/01-open-copilot.png) -->
-<!-- ![02 — The prompt typed into the Copilot chat box](../screenshots/chat-meeting-followups/02-prompt-entered.png) -->
-<!-- ![03 — Copilot's structured response: decisions, action-item table, open questions](../screenshots/chat-meeting-followups/03-response.png) -->
-<!-- ![04 — The refined table after the follow-up prompt](../screenshots/chat-meeting-followups/04-refined-table.png) -->
-
-> **Not captured yet.** The four anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Once the table is right, chain follow-ups to turn a summary into actual progress:

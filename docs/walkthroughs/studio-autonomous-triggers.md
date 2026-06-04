@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Configure an autonomous event-triggered agent
 
-> **One-line value.** Build an agent that acts when something happens — without waiting for a user to start a conversation. Automation, not just a chatbot.
+> Build an agent that acts when something happens — without waiting for a user to start a conversation. Automation, not just a chatbot.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Advanced · **Time:** 45 min
 

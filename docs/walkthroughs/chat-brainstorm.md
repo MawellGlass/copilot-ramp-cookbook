@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Brainstorm solutions with structured tradeoffs
 
-> **One-line value.** Get past the blank page instantly — Copilot generates structured options with honest tradeoffs so you can make a faster, better-informed decision.
+> Get past the blank page instantly — Copilot generates structured options with honest tradeoffs so you can make a faster, better-informed decision.
 
 **Stage:** Copilot Chat · **For:** End user, Manager · **Level:** Intermediate · **Time:** 10 min · **Saves:** ~20 min vs. manual
 

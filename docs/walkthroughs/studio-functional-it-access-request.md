@@ -11,7 +11,7 @@ updated: 2026-06-04
 
 # IT: Self-service software and hardware access requests
 
-> **One-line value.** Let employees request software, hardware, and system access through a guided conversation — validated against policy, fully collected, and routed to the right IT queue automatically.
+> Let employees request software, hardware, and system access through a guided conversation — validated against policy, fully collected, and routed to the right IT queue automatically.
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 4–5 hours
 
@@ -74,7 +74,6 @@ and the Power Automate action spec for ticket creation.
 
 6. **Create the Power Automate flow for ticket creation.** The action receives structured fields from the Studio agent and creates the ITSM record. Return the ticket ID to the agent for confirmation to the employee.
 
-    > 📷 *Screenshot — software request topic showing the approved-list check branch, the ticket creation action node, and the confirmation message with ticket number.*
 
 ## Make it better
 

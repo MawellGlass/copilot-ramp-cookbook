@@ -12,7 +12,7 @@ updated: 2026-06-03
 
 # Answer common questions with Agents in Communities
 
-> **One-line value.** Drop a shared agent into a Viva Engage community so the most-asked questions answer
+> Drop a shared agent into a Viva Engage community so the most-asked questions answer
 > themselves — where a broad audience already gathers, instead of in a dozen private DMs.
 
 **Stage:** First-Party Agents · **For:** Champion, IT/Admin · **Level:** Starter · **Time:** 10 min
@@ -47,13 +47,10 @@ builds credibility instead of becoming another thing nobody believes.
 ## Step by step
 1. **Pick the community and the knowledge it should answer from.** Choose a community with real recurring
    questions and a clean, approved source to ground on — garbage in, garbage out.
-   > 📷 _Screenshot 01 — selecting the Viva Engage community for the agent._
 2. **Make the shared agent available in the community.** Add it so members can @mention it inline, the
    same way they'd tag a person.
-   > 📷 _Screenshot 02 — the shared agent available in the community feed._
 3. **Seed it with the real questions.** Post the handful of questions your community repeats so early
    answers are visibly useful — the first good answer is what earns the next hundred.
-   > 📷 _Screenshot 03 — a member getting an answer with a source link in-feed._
 4. **Point newcomers at it:**
    ```
    Draft a short pinned post welcoming new members and showing them how to ask
@@ -61,17 +58,8 @@ builds credibility instead of becoming another thing nobody believes.
    ```
 
 ## Screenshots
-Captured from the real product with the Playwright tool in `tooling/screenshots/` (see that folder's
-README to run the loop yourself). Re-capture when the Viva Engage UI changes — don't hand-edit images.
 
-<!-- Uncomment each line once the matching PNG has been captured into screenshots/first-party-agents-in-communities/ -->
-<!-- ![01 — Selecting the Viva Engage community for the agent](../screenshots/first-party-agents-in-communities/01-community.png) -->
-<!-- ![02 — The shared agent available in the community feed](../screenshots/first-party-agents-in-communities/02-available.png) -->
-<!-- ![03 — A member getting an answer with a source link in-feed](../screenshots/first-party-agents-in-communities/03-answer.png) -->
-
-> **Not captured yet.** The three anchors above are placeholders. Run the capture tool
-> (`cd tooling/screenshots && npm install && npm run auth && npm run capture`), then uncomment the
-> embeds. Until then the page ships text-only — honest beats fabricated.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 A community agent is only as good as the loop around it:
