@@ -374,6 +374,22 @@ Run structured test cases across intent recognition, answer quality, edge cases,
 **Sample prompt:** `Build a test case table for my [expense policy] agent: golden path, paraphrase variants, boundary cases, and adversarial inputs.`
 → Fully written: `walkthroughs/studio-test-evaluate.md`
 
+### ★ HR: Answer employee questions with a policies agent → walkthrough
+**For:** maker, it-admin, champion · `status: walkthrough`
+Deploy an HR FAQ agent grounded on your policy docs — consistent, cited answers 24/7 and a structured escalation path for anything that needs a human.
+**Sample prompt:** `Draft a Copilot Studio agent design for an HR policies FAQ agent. Knowledge source: [our HR SharePoint site]. Top employee questions: [list]. Always cite the source document. For anything requiring individual judgment, redirect to HR.`
+→ Fully written: `walkthroughs/studio-functional-hr-policy-faq.md`
+
+---
+
+## Solution Templates
+_Ready-to-build agent specs. Copy the system prompt, configure the topics, run the test cases, ship._
+
+### Policy FAQ Agent → solution template
+**Adapts to:** HR · IT · Finance · Legal · Any team with a policy doc library · `status: solution-template`
+A complete, copy-paste-ready agent spec: system prompt, topics, starter prompts, test cases, and deployment checklist. Works for any function — adapt the [bracketed] values and build.
+→ Fully written: `solutions/policy-faq-agent.md`
+
 ---
 
 _Count: 5 stages, **56 use cases**, spanning all 5 roles. Every entry is a fully written walkthrough
