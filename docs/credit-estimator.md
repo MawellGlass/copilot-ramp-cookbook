@@ -285,16 +285,16 @@ var defaultRows = [
   { name: 'Generative answer',                                 prompts: 44,   credits: 2    },
   { name: 'Agent action',                                      prompts: 44,   credits: 5    },
   { name: 'Tenant graph grounding for messages',               prompts: 22,   credits: 10   },
-  { name: 'Agent flow actions (per 100 actions = 13 credits)', prompts: 0,    credits: 13   },
+  { name: 'Agent flow actions (per 100 actions = 13 credits)', prompts: 1,    credits: 13   },
   // ── AI tools ──
-  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    prompts: 0, credits: 0.1  },
-  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', prompts: 0, credits: 1.5  },
-  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', prompts: 0, credits: 10   },
-  { name: 'AI tool — Content processing (per page = 8 credits)',                prompts: 0, credits: 8    },
+  { name: 'AI tool — Text/generative basic  (per 10 responses = 1 credit)',    prompts: 1, credits: 0.1  },
+  { name: 'AI tool — Text/generative standard (per 10 responses = 15 credits)', prompts: 1, credits: 1.5  },
+  { name: 'AI tool — Text/generative premium (per 10 responses = 100 credits)', prompts: 1, credits: 10   },
+  { name: 'AI tool — Content processing (per page = 8 credits)',                prompts: 1, credits: 8    },
   // ── Voice (if applicable) ──
-  { name: 'Voice — Basic (classic orchestration)',             prompts: 0,    credits: 10   },
-  { name: 'Voice — Standard (generative orchestration)',       prompts: 0,    credits: 35   },
-  { name: 'Voice — Premium (real-time)',                       prompts: 0,    credits: 75   },
+  { name: 'Voice — Basic (classic orchestration)',             prompts: 1,    credits: 10   },
+  { name: 'Voice — Standard (generative orchestration)',       prompts: 1,    credits: 35   },
+  { name: 'Voice — Premium (real-time)',                       prompts: 1,    credits: 75   },
 ];
 
 var rowId = 0;
