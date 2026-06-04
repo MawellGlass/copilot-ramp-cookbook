@@ -113,8 +113,9 @@ Start with the end-to-end hand-off — it's the page that makes delegation click
 Rather than re-document Cowork process-by-process, lean on the work already out there. **Sean Galliher's Cowork Cookbook** applies Cowork across 15 end-to-end business processes — a community project (unofficial), and a great companion to this stage.
 
 > **📚 Learn more.**
-> [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) *(community, unofficial)* ·
-> [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources)
+>
+> - [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) *(community, unofficial)*
+> - [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources)
 
 The full curated set for this stage lives in [Resources → Stage 3](../RESOURCES.md).
 

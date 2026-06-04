@@ -165,12 +165,13 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
 Studio has the deepest first-party learning bench of any stage. The official **Learn docs** are the canonical build-to-govern path, and **Copilot Studio in a Day** is a free hands-on workshop that takes you from first agent to flows.
 
 > **📚 Learn more.**
-> [Copilot Studio official docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) ·
-> [Copilot Studio Resources (CAT)](https://aka.ms/copilotstudio/resources) ·
-> [Copilot Studio & agent samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) ·
-> [Mastering Copilot Studio (Learn Shows)](https://learn.microsoft.com/en-us/shows/mastering-copilot-studio/) ·
-> [Copilot Studio in a Day](https://aka.ms/CSIAD) ·
-> [Agent governance whitepaper + Agent 365](https://aka.ms/agent365/resources)
+>
+> - [Copilot Studio official docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+> - [Copilot Studio Resources (CAT)](https://aka.ms/copilotstudio/resources)
+> - [Copilot Studio & agent samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples)
+> - [Mastering Copilot Studio (Learn Shows)](https://learn.microsoft.com/en-us/shows/mastering-copilot-studio/)
+> - [Copilot Studio in a Day](https://aka.ms/CSIAD)
+> - [Agent governance whitepaper + Agent 365](https://aka.ms/agent365/resources)
 
 The full curated set for this stage lives in [Resources → Stage 5](../RESOURCES.md).
 

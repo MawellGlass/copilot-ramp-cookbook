@@ -60,10 +60,11 @@ Start with the flagship — a team-knowledge agent is the most useful first buil
 Before you build from scratch, check the **Agent Library** — a catalog of production-ready templates (declarative and Studio). A prebuilt template is the perfect "you didn't even have to build it" warm-up before your own first build.
 
 > **📚 Learn more.**
-> [Agent Library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview) ·
-> [Agent Builder vs Studio vs Foundry (decision framework)](https://aka.ms/copilotstudio/resources) ·
-> [Agent Platform Advisor](https://aka.ms/agentresources) ·
-> [April's AI Agents Academy (April Dunnam, Microsoft)](https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V)
+>
+> - [Agent Library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview)
+> - [Agent Builder vs Studio vs Foundry (decision framework)](https://aka.ms/copilotstudio/resources)
+> - [Agent Platform Advisor](https://aka.ms/agentresources)
+> - [April's AI Agents Academy (April Dunnam, Microsoft)](https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V)
 
 The full curated set for this stage lives in [Resources → Stage 4](../RESOURCES.md).
 

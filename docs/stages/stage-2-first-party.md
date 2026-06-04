@@ -78,10 +78,11 @@ Start with the roster — it maps every included agent to what it's for, so you 
 The **Agents in Microsoft 365 hub** is the roster source of truth — it lists each included agent and what it does, and it's kept current as Microsoft adds and graduates agents. Link to it rather than re-documenting the lineup.
 
 > **📚 Learn more.**
-> [Agents in Microsoft 365 (dedicated hub)](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/) ·
-> [Researcher & Analyst now GA (M365 blog)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/) ·
-> [Enabling human-agent teams (M365 blog)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/) ·
-> [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources)
+>
+> - [Agents in Microsoft 365 (dedicated hub)](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/)
+> - [Researcher & Analyst now GA (M365 blog)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/)
+> - [Enabling human-agent teams (M365 blog)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/)
+> - [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources)
 
 The full curated set for this stage lives in [Resources → Stage 2](../RESOURCES.md).
 
