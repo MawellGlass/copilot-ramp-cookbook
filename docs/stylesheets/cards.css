@@ -102,9 +102,16 @@
 
 /* ---------- pinned "first three habits" ---------- */
 .rc-pinned { margin: 1rem 0 1.4rem; }
+/* Force all three habit cards onto one row */
+.md-typeset .rc-pinned.grid {
+  grid-template-columns: repeat(3, 1fr);
+}
 .rc-pinned.grid.cards > ul > li {
   border-color: var(--md-primary-fg-color);
   box-shadow: 0 1px 2px rgba(20,30,50,.05), 0 8px 22px rgba(63,81,181,.08);
+}
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .rc-pinned.grid { grid-template-columns: 1fr; }
 }
 .rc-habit {
   display: inline-block;
