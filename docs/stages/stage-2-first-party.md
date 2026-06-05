@@ -66,6 +66,8 @@ You're probably paying for specialists you've never opened. Learn the roster, sw
 
 <div id="rc-filterbar"></div>
 
+<div class="rc-scrollbox" markdown>
+
 <section class="rc-bucket" markdown>
 
 ### Know your roster
@@ -239,6 +241,8 @@ Put shared agents where your team already works, then see where adoption is land
 </div>
 
 </section>
+
+</div>
 
 ---
 

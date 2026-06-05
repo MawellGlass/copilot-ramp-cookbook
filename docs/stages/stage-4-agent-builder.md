@@ -66,6 +66,8 @@ Build the flagship knowledge agent, make it trustworthy with sharp instructions,
 
 <div id="rc-filterbar"></div>
 
+<div class="rc-scrollbox" markdown>
+
 <section class="rc-bucket" markdown>
 
 ### Build your first agent
@@ -181,6 +183,8 @@ Recognize the limits of declarative building — and where Studio takes over.
 </div>
 
 </section>
+
+</div>
 
 ---
 

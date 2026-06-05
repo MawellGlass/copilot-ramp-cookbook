@@ -60,6 +60,8 @@ Browse by what you're trying to get done — or filter by who you are and how mu
 
 <div id="rc-filterbar"></div>
 
+<div class="rc-scrollbox" markdown>
+
 <section class="rc-bucket" markdown>
 
 ### Catch up faster
@@ -198,6 +200,8 @@ Turn "we have Copilot" into a habit other people pick up.
 </div>
 
 </section>
+
+</div>
 
 ---
 

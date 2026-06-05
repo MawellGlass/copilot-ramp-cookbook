@@ -68,6 +68,8 @@ Build these first — the platform skills every functional agent below depends o
 
 <div id="rc-filterbar"></div>
 
+<div class="rc-scrollbox" markdown>
+
 <section class="rc-bucket" markdown>
 
 ### Core Studio
@@ -151,11 +153,15 @@ Everything that makes a Studio agent real — designed conversation, tools and a
 
 </section>
 
+</div>
+
 ---
 
 ## Walkthroughs — functional use cases
 
 Agents designed for a specific business function. Each pairs with a [Solution Template](../solutions/index.md) you can copy, adapt, and build from directly.
+
+<div class="rc-scrollbox" markdown>
 
 <section class="rc-bucket" markdown>
 
@@ -285,6 +291,8 @@ Agents that navigate process, deflect support load, and coordinate operational w
 </div>
 
 </section>
+
+</div>
 
 ---
 

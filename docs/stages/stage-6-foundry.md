@@ -75,6 +75,8 @@ Unlike earlier stages, these are **developer walkthroughs** — representative S
 
 <div id="rc-filterbar"></div>
 
+<div class="rc-scrollbox" markdown>
+
 <section class="rc-bucket" markdown>
 
 ### Build your first pro-code agent
@@ -167,6 +169,8 @@ Go past building to *operating* — swap models safely, keep it affordable, and 
 </div>
 
 </section>
+
+</div>
 
 ---
 

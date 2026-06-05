@@ -109,6 +109,8 @@ Delegate one real task end-to-end, prove it on a stack of documents, then make t
 
 <div id="rc-filterbar"></div>
 
+<div class="rc-scrollbox" markdown>
+
 <section class="rc-bucket" markdown>
 
 ### Delegate a whole task
@@ -252,6 +254,8 @@ Capture a great run so it doesn't die with the session — make it reusable for 
 </div>
 
 </section>
+
+</div>
 
 ---
 
