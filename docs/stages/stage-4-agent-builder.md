@@ -184,18 +184,17 @@ Recognize the limits of declarative building — and where Studio takes over.
 
 ---
 
-## Borrow, don't build
+!!! borrow "Borrow, don't build"
+    Before you build from scratch, check the **Agent Library** — a catalog of production-ready templates
+    (declarative and Studio). A prebuilt template is the perfect "you didn't even have to build it"
+    warm-up before your own first build.
 
-Before you build from scratch, check the **Agent Library** — a catalog of production-ready templates (declarative and Studio). A prebuilt template is the perfect "you didn't even have to build it" warm-up before your own first build.
+    - [Agent Library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview) — production-ready templates to start from
+    - [Agent Builder vs Studio vs Foundry](https://aka.ms/copilotstudio/resources) — pick the right build surface
+    - [Agent Platform Advisor](https://aka.ms/agentresources) — decide where your agent should live
+    - [April's AI Agents Academy](https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V) — a video series on building agents (April Dunnam, Microsoft)
 
-> **📚 Learn more.**
->
-> - [Agent Library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview)
-> - [Agent Builder vs Studio vs Foundry (decision framework)](https://aka.ms/copilotstudio/resources)
-> - [Agent Platform Advisor](https://aka.ms/agentresources)
-> - [April's AI Agents Academy (April Dunnam, Microsoft)](https://www.youtube.com/playlist?list=PLINAH02_IDH9WhLAg1DyE_hJw7IoJuP0V)
-
-The full curated set for this stage lives in [Resources → Stage 4](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 4](../RESOURCES.md).
 
 !!! info "Security at this stage"
     You're building and **sharing** now, so governance starts to matter. A declarative agent is grounded

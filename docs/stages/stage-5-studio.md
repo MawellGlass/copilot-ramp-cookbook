@@ -418,20 +418,19 @@ Don't start from a blank canvas. Each **Studio solution template** is a copy-pas
 
 ---
 
-## Borrow, don't build
+!!! borrow "Borrow, don't build"
+    Studio has the deepest first-party learning bench of any stage. The official **Learn docs** are the
+    canonical build-to-govern path, and **Copilot Studio in a Day** is a free hands-on workshop that takes
+    you from first agent to flows.
 
-Studio has the deepest first-party learning bench of any stage. The official **Learn docs** are the canonical build-to-govern path, and **Copilot Studio in a Day** is a free hands-on workshop that takes you from first agent to flows.
+    - [Copilot Studio official docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) — the canonical build-to-govern reference
+    - [Copilot Studio Resources (CAT)](https://aka.ms/copilotstudio/resources) — the curated hub of Studio guidance
+    - [Copilot Studio & agent samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) — ready-made agents to learn from
+    - [Mastering Copilot Studio](https://learn.microsoft.com/en-us/shows/mastering-copilot-studio/) — a guided show series
+    - [Copilot Studio in a Day](https://aka.ms/CSIAD) — a free hands-on workshop
+    - [Agent governance whitepaper + Agent 365](https://aka.ms/agent365/resources) — how to govern agents at scale
 
-> **📚 Learn more.**
->
-> - [Copilot Studio official docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
-> - [Copilot Studio Resources (CAT)](https://aka.ms/copilotstudio/resources)
-> - [Copilot Studio & agent samples](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples)
-> - [Mastering Copilot Studio (Learn Shows)](https://learn.microsoft.com/en-us/shows/mastering-copilot-studio/)
-> - [Copilot Studio in a Day](https://aka.ms/CSIAD)
-> - [Agent governance whitepaper + Agent 365](https://aka.ms/agent365/resources)
-
-The full curated set for this stage lives in [Resources → Stage 5](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 5](../RESOURCES.md).
 
 !!! info "Security at this stage"
     This is where the controls get rich: agents live in **Power Platform environments**, **DLP data

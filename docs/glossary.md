@@ -11,6 +11,16 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
     Skim the group that matches where you are on the journey. Every term links to the stage or
     walkthrough where it actually shows up, so you can go from *"what is that?"* to *"show me"* in one click.
 
+!!! borrow "Borrow, don't build"
+    These are plain-language definitions to get you oriented — Microsoft owns the authoritative,
+    always-current glossary for each product. When a definition matters for customer-facing work, go to
+    the source.
+
+    - [Which Copilot is right for you](https://learn.microsoft.com/en-us/copilot/) — the Microsoft Learn hub that names and maps every Copilot
+    - [Microsoft 365 Copilot documentation](https://learn.microsoft.com/en-us/copilot/microsoft-365/) — canonical terms for Chat, agents, and Graph grounding
+    - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) — the official reference for makers and builders
+    - [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) — canonical terms for the pro-code platform
+
 ---
 
 ## Core products

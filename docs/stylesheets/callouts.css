@@ -1,0 +1,111 @@
+/* ── Branded callout family ──────────────────────────────────────────────────
+   A small set of recurring admonitions with locked visual identity. Readers
+   learn the icon + colour and scan by them — the rhythm becomes wayfinding.
+
+   Use as typed admonitions, e.g.:
+
+       !!! borrow "Borrow, don't build"
+           One sentence of framing.
+
+           - [Microsoft link](https://...) — one line on why you'd open it
+
+   Flagship:  borrow  (📚) — an authoritative Microsoft resource exists; go read it.
+   Siblings:  watch-out (⚠️) · leads (🪜) · try-it (▶️) · better (🔧) · unofficial (🚧)
+   Pick one icon per type and never deviate. Predictability is the brand.
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --rc-borrow:     #6750A4; /* purple  — go read the source of truth */
+  --rc-watchout:   #C9700A; /* amber   — a common trap / stale-fast behaviour */
+  --rc-leads:      #1A73C0; /* blue    — the next rung on the ramp */
+  --rc-tryit:      #2E7D32; /* green   — a copy-paste prompt to run now */
+  --rc-better:     #00796B; /* teal    — level-up follow-ups */
+  --rc-unofficial: #8A6D00; /* ochre   — community-built, not a Microsoft prescription */
+}
+
+/* Slightly stronger accents in dark mode so the colour still reads. */
+[data-md-color-scheme="slate"] {
+  --rc-borrow:     #B69DF8;
+  --rc-watchout:   #E8A33D;
+  --rc-leads:      #6FB1F0;
+  --rc-tryit:      #7CC47F;
+  --rc-better:     #4DB6AC;
+  --rc-unofficial: #D8B43A;
+}
+
+/* Shared shape: coloured left border, tinted title band, emoji icon.
+   The emoji replaces Material's monochrome masked icon for this type. */
+.md-typeset .admonition.borrow,
+.md-typeset details.borrow,
+.md-typeset .admonition.watch-out,
+.md-typeset details.watch-out,
+.md-typeset .admonition.leads,
+.md-typeset details.leads,
+.md-typeset .admonition.try-it,
+.md-typeset details.try-it,
+.md-typeset .admonition.better,
+.md-typeset details.better,
+.md-typeset .admonition.unofficial,
+.md-typeset details.unofficial {
+  border-color: var(--rc-callout, #448aff);
+}
+
+.md-typeset .borrow > .admonition-title,      .md-typeset .borrow > summary,
+.md-typeset .watch-out > .admonition-title,   .md-typeset .watch-out > summary,
+.md-typeset .leads > .admonition-title,       .md-typeset .leads > summary,
+.md-typeset .try-it > .admonition-title,      .md-typeset .try-it > summary,
+.md-typeset .better > .admonition-title,      .md-typeset .better > summary,
+.md-typeset .unofficial > .admonition-title,  .md-typeset .unofficial > summary {
+  background-color: color-mix(in srgb, var(--rc-callout, #448aff) 12%, transparent);
+}
+
+/* Replace the masked icon with a fixed emoji glyph. */
+.md-typeset .borrow > .admonition-title::before,      .md-typeset .borrow > summary::before,
+.md-typeset .watch-out > .admonition-title::before,   .md-typeset .watch-out > summary::before,
+.md-typeset .leads > .admonition-title::before,       .md-typeset .leads > summary::before,
+.md-typeset .try-it > .admonition-title::before,      .md-typeset .try-it > summary::before,
+.md-typeset .better > .admonition-title::before,      .md-typeset .better > summary::before,
+.md-typeset .unofficial > .admonition-title::before,  .md-typeset .unofficial > summary::before {
+  background-color: transparent;
+  -webkit-mask-image: none;
+          mask-image: none;
+  width: auto;
+  height: auto;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* ── Per-type colour + icon ─────────────────────────────────────────────── */
+
+.md-typeset .borrow,    .md-typeset details.borrow    { --rc-callout: var(--rc-borrow); }
+.md-typeset .borrow > .admonition-title::before,
+.md-typeset .borrow > summary::before { content: "📚"; }
+
+.md-typeset .watch-out, .md-typeset details.watch-out { --rc-callout: var(--rc-watchout); }
+.md-typeset .watch-out > .admonition-title::before,
+.md-typeset .watch-out > summary::before { content: "⚠️"; }
+
+.md-typeset .leads,     .md-typeset details.leads     { --rc-callout: var(--rc-leads); }
+.md-typeset .leads > .admonition-title::before,
+.md-typeset .leads > summary::before { content: "🪜"; }
+
+.md-typeset .try-it,    .md-typeset details.try-it    { --rc-callout: var(--rc-tryit); }
+.md-typeset .try-it > .admonition-title::before,
+.md-typeset .try-it > summary::before { content: "▶️"; }
+
+.md-typeset .better,    .md-typeset details.better    { --rc-callout: var(--rc-better); }
+.md-typeset .better > .admonition-title::before,
+.md-typeset .better > summary::before { content: "🔧"; }
+
+.md-typeset .unofficial,.md-typeset details.unofficial{ --rc-callout: var(--rc-unofficial); }
+.md-typeset .unofficial > .admonition-title::before,
+.md-typeset .unofficial > summary::before { content: "🚧"; }
+
+/* ── Home page: tie the cross-journey "Borrow" block to the same identity ── */
+.home-resources {
+  border-left: 0.2rem solid var(--rc-borrow);
+  padding-left: 1rem;
+}
+.home-resources .res-heading {
+  color: var(--rc-borrow);
+}

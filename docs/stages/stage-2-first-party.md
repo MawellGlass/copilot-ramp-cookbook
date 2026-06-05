@@ -242,18 +242,17 @@ Put shared agents where your team already works, then see where adoption is land
 
 ---
 
-## Borrow, don't build
+!!! borrow "Borrow, don't build"
+    The **Agents in Microsoft 365 hub** is the roster source of truth — it lists each included agent and
+    what it does, and it's kept current as Microsoft adds and graduates agents. Link to it rather than
+    re-documenting the lineup.
 
-The **Agents in Microsoft 365 hub** is the roster source of truth — it lists each included agent and what it does, and it's kept current as Microsoft adds and graduates agents. Link to it rather than re-documenting the lineup.
+    - [Agents in Microsoft 365 hub](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/) — the always-current roster of included agents
+    - [Researcher & Analyst now GA](https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/) — what the two flagship agents do
+    - [Enabling human-agent teams](https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/) — how agents fit into team workflows
+    - [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources) — the curated front door for everything M365 Copilot
 
-> **📚 Learn more.**
->
-> - [Agents in Microsoft 365 (dedicated hub)](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/)
-> - [Researcher & Analyst now GA (M365 blog)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/)
-> - [Enabling human-agent teams (M365 blog)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/)
-> - [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources)
-
-The full curated set for this stage lives in [Resources → Stage 2](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 2](../RESOURCES.md).
 
 !!! info "Security at this stage"
     The same Microsoft 365 boundary and your existing permissions apply — a first-party agent never

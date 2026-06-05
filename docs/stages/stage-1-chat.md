@@ -201,18 +201,17 @@ Turn "we have Copilot" into a habit other people pick up.
 
 ---
 
-## Borrow, don't build
+!!! borrow "Borrow, don't build"
+    The single best "borrowed content" at this stage is Microsoft's **Prompt Gallery** — a browsable,
+    filterable bank of ready-to-run prompts for Word, Excel, PowerPoint, and Outlook. Point your team
+    there instead of writing your own prompt list.
 
-The single best "borrowed content" at this stage is Microsoft's **Prompt Gallery** — a browsable, filterable bank of ready-to-run prompts for Word, Excel, PowerPoint, and Outlook. Point your team there instead of writing your own prompt list.
+    - [Copilot Prompt Gallery](https://adoption.microsoft.com/en-us/copilot/prompt-gallery/) — browse and copy ready-to-run prompts by app
+    - [Microsoft Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/) — use cases organized by role and function
+    - [The Art of the Prompt](https://adoption.microsoft.com/en-us/customer-hub/drive-adoption-of-microsoft-365-copilot/session-2/) — a guided session on prompt craft
+    - [M365 Copilot Mechanics playlist](https://www.youtube.com/playlist?list=PLXtHYVsvn_b8MTl8mD8FBJIB_cSGkEaT9) — short videos on how each feature works
 
-> **📚 Learn more.**
->
-> - [Copilot Prompt Gallery (browse & copy prompts)](https://adoption.microsoft.com/en-us/copilot/prompt-gallery/)
-> - [Microsoft Scenario Library (by role & function)](https://adoption.microsoft.com/en-us/scenario-library/)
-> - [The Art of the Prompt (session)](https://adoption.microsoft.com/en-us/customer-hub/drive-adoption-of-microsoft-365-copilot/session-2/)
-> - [M365 Copilot Mechanics playlist](https://www.youtube.com/playlist?list=PLXtHYVsvn_b8MTl8mD8FBJIB_cSGkEaT9)
-
-The full curated set for this stage lives in [Resources → Stage 1](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 1](../RESOURCES.md).
 
 !!! info "Security at this stage"
     Nothing to configure. Chat runs inside the **Microsoft 365 service boundary**, acts as *you*, and can

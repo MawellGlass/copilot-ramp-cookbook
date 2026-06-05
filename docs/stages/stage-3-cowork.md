@@ -255,16 +255,13 @@ Capture a great run so it doesn't die with the session — make it reusable for 
 
 ---
 
-## Borrow, don't build
+!!! borrow "Borrow, don't build"
+    Rather than re-document Cowork process-by-process, lean on the work already out there.
 
-Rather than re-document Cowork process-by-process, lean on the work already out there. **Sean Galliher's Cowork Cookbook** applies Cowork across 15 end-to-end business processes — a community project (unofficial), and a great companion to this stage.
+    - [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) — Cowork applied across 15 end-to-end business processes *(community, unofficial)*
+    - [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources) — the curated front door for everything M365 Copilot
 
-> **📚 Learn more.**
->
-> - [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) *(community, unofficial)*
-> - [M365 Copilot resources (CAT)](https://aka.ms/m365copilot/resources)
-
-The full curated set for this stage lives in [Resources → Stage 3](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 3](../RESOURCES.md).
 
 !!! info "Security at this stage"
     Cowork chains many steps, but every one runs as *you* and stays inside the **Microsoft 365

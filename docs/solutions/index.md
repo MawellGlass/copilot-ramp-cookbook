@@ -114,3 +114,14 @@ Reach for these only when a Studio agent genuinely can't carry the job — custo
 
 !!! info "More templates coming"
     This library grows as new patterns are validated in the field. Each template starts as a walkthrough, gets tested with real customers, and graduates here when the pattern is repeatable. Have one to contribute? Open an issue on GitHub.
+
+---
+
+!!! borrow "Borrow, don't build"
+    These templates are starting points — the canonical reference for the products they're built in stays
+    with Microsoft. Build against the official docs, not our paraphrase of them.
+
+    - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) — the build-to-govern reference for every low-code template
+    - [Agent Library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-library-overview) — Microsoft's own catalog of production-ready agent templates
+    - [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) — the canonical reference for every pro-code blueprint
+    - [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/) — build, deploy, and run pro-code agents with tools and orchestration

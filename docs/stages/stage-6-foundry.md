@@ -234,21 +234,18 @@ These walkthroughs pair with copy-and-adapt **Foundry solution templates** — a
 
 ---
 
-## Borrow, don't build
+!!! borrow "Borrow, don't build"
+    Foundry is a deep, fast-moving developer platform — there's no value in re-documenting it here. Lean
+    on Microsoft's own authoritative material, which stays current with the product.
 
-Foundry is a deep, fast-moving developer platform — there's no value in re-documenting it here. Lean on
-Microsoft's own authoritative material, which stays current with the product.
+    - [Microsoft Foundry docs](https://learn.microsoft.com/en-us/azure/ai-foundry/) — the canonical front door: build, evaluate, deploy
+    - [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/) — build, deploy, and run agents with tools and orchestration
+    - [Standard agent setup](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/standard-agent-setup) — bring-your-own Azure resources for project-level data isolation
+    - [Role-based access control in Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry) — least-privilege built-in roles and Entra ID auth
+    - [Extend Microsoft 365 Copilot — options compared](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/) — where custom-engine (Foundry) agents fit next to declarative ones
+    - [Agent samples (low-code → pro-code)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) — Microsoft-owned and community starting points
 
-> **📚 Learn more.**
->
-> - [Microsoft Foundry docs](https://learn.microsoft.com/en-us/azure/ai-foundry/) — the canonical front door: build, evaluate, deploy.
-> - [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/) — build, deploy, and run agents with tools and orchestration.
-> - [Standard agent setup (your data stays in your tenant)](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/standard-agent-setup) — bring-your-own Azure resources for project-level data isolation.
-> - [Role-based access control in Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry) — least-privilege built-in roles and Entra ID auth.
-> - [Extend Microsoft 365 Copilot — options compared](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/) — where custom-engine (Foundry) agents fit next to declarative ones.
-> - [Agent samples (low-code → pro-code)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) — Microsoft-owned and community starting points.
-
-The full curated set for this stage lives in [Resources → Stage 6](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 6](../RESOURCES.md).
 
 !!! info "Security at this stage"
     Foundry agents run on **Azure** with **Entra ID authentication and Azure RBAC**, and the standard setup

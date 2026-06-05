@@ -39,6 +39,25 @@ The one deliberate exception is [Sean Galliher's Cowork Cookbook](https://cowork
 
 ---
 
+## "Borrow, don't build"
+
+When Microsoft already publishes the canonical reference, we link to it instead of paraphrasing. This
+site exists to get you to the right Microsoft resource at the right moment in your ramp — not to compete
+with it. Every **Borrow, don't build** block is a deliberate handoff to the source of truth.
+
+You'll see it as a recurring callout — always the same icon (📚), the same shape, and the same promise:
+one line of framing, then a short list of Microsoft links, each with a reason you'd open it. When you see
+it, stop searching third-party blogs and go to the source.
+
+!!! borrow "Borrow, don't build"
+    This is the component itself. Wherever Microsoft owns the material, you'll find one of these pointing
+    you straight at it.
+
+    - [Which Copilot is right for you](https://learn.microsoft.com/en-us/copilot/) — the Microsoft Learn hub that maps every Copilot
+    - [Microsoft 365 Copilot Adoption Hub](https://adoption.microsoft.com/en-us/copilot/) — the flagship adoption site for getting started and going further
+
+---
+
 ## Where it came from
 
 The use-case-first, grassroots spirit is inspired by [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) *(community, unofficial)*. Where Sean goes deep on Cowork across business processes, this site goes *wide* across the six-stage journey, pointing you toward Microsoft's own front doors at every step:
