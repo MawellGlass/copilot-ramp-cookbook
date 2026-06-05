@@ -62,7 +62,10 @@ write action firing when it should have asked; deciding that up front is how you
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft Copilot Studio (Contoso environment). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Add tool gallery filtered to Model Context Protocol, listing MCP servers and an Add new MCP card](../screenshots/studio-mcp-tool-integration/01-mcp-tools.png)
+**Filter the tool gallery to Model Context Protocol — connect an existing MCP server or add your own, and the agent gains every action that server exposes.**
 
 ## Make it better
 A tool connection gets sharper with discipline:

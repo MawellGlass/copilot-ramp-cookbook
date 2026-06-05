@@ -61,7 +61,10 @@ action needs so it doesn't misfire on a bad input.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft Copilot Studio (Contoso environment). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Add tool gallery showing Connector, Prompt, Workflows, REST API and MCP categories with connector cards](../screenshots/studio-connector-action/01-add-tool-gallery.png)
+**The Add tool gallery is where an agent stops just answering and starts acting — wire in a connector (Outlook, Teams, and hundreds more) to read and write a real system.**
 
 ## Make it better
 One action is the start of a capable agent:

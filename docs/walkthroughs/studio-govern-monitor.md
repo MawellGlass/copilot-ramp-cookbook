@@ -63,7 +63,13 @@ everything on it gets ignored; a four-line checklist with clear thresholds gets 
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft Copilot Studio (Contoso environment). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Analytics tab inviting you to publish to track usage, engagement and satisfaction metrics](../screenshots/studio-govern-monitor/01-analytics.png)
+**Analytics is the monitoring half — once published, the agent tracks usage, engagement, and satisfaction so you can read fleet-level signals weekly.**
+
+![Agent Settings showing Generative AI orchestration, moderation, security and connected-agent guardrails](../screenshots/studio-govern-monitor/02-settings-guardrails.png)
+**Settings is the governance half — orchestration, moderation level, security, and data-boundary controls are the guardrails every agent inherits.**
 
 ## Make it better
 Governance matures from gate to guardrail:

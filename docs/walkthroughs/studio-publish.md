@@ -58,7 +58,10 @@ after an incident.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft Copilot Studio (Contoso environment). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Channels tab showing published status, a Publish button, and Microsoft and other channel options](../screenshots/studio-publish/01-channels.png)
+**The Channels tab is the ship surface — publish once, then connect the agent to Teams, Microsoft 365, SharePoint, a website, and more.**
 
 ## Make it better
 A published agent is a managed product, not a finished one:

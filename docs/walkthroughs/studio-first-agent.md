@@ -63,7 +63,16 @@ random. The single biggest first-build mistake is skipping this and building top
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft Copilot Studio (Contoso environment). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Copilot Studio home asking "What would you like to build?" with a describe box and build-from-scratch cards](../screenshots/studio-first-agent/01-what-to-build.png)
+**Copilot Studio is the pro-grade builder — describe the agent, or start from scratch with an Agent, computer-using agent, or workflow.**
+
+![The Policy Buddy agent Overview tab with name, model selector, and instructions](../screenshots/studio-first-agent/02-agent-overview.png)
+**The agent workspace: Overview, Knowledge, Tools, plus a built-in Test pane, a model selector, and the same instructions discipline from Stage 4.**
+
+![The Topics tab listing custom and system topics with triggers and enabled toggles](../screenshots/studio-first-agent/03-topics.png)
+**Topics are the step Agent Builder couldn't do — structured conversations with their own triggers and a designed happy path.**
 
 ## Make it better
 Your first Studio agent is the foundation. These are the natural next builds in this stage:
