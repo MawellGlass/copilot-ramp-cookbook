@@ -33,7 +33,7 @@ hide:
 
 ## Find your starting point
 
-Not every tool is for every person. This is where each role tends to spend time day to day — a heavier dot means you're more likely to live there. Click any stage to jump to it.
+Not every tool is for every person. This is where each role tends to spend time day to day — a heavier dot means you're more likely to live there. Click a **role** for your guided path, or a **stage** to jump straight to it.
 
 <div class="matrix-wrap">
 <table class="home-matrix">
@@ -47,12 +47,12 @@ Not every tool is for every person. This is where each role tends to spend time 
   <th><a href="stages/stage-6-foundry/"><span class="stagenum">STAGE 6</span>Foundry</a></th>
 </tr></thead>
 <tbody>
-<tr><th>End user</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th>Champion</th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th>Manager</th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th>Maker</th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
-<tr><th>Developer</th> <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
-<tr><th>IT / admin</th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
+<tr><th><a href="roles/new-user/">End user</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th><a href="roles/champion/">Champion</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th><a href="roles/manager/">Manager</a></th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th><a href="roles/maker/">Maker</a></th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
+<tr><th><a href="roles/developer/">Developer</a></th> <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
+<tr><th><a href="roles/it-admin/">IT / admin</a></th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
 </tbody>
 </table>
 </div>

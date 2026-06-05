@@ -190,6 +190,31 @@ table.home-matrix tbody th {
   white-space: nowrap;
   font-size: .8rem;
   background: var(--md-default-bg-color);
+  padding: 0;
+}
+table.home-matrix tbody th a {
+  display: block;
+  padding: .65rem .55rem;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+table.home-matrix tbody th a::after {
+  content: "→";
+  margin-left: .35em;
+  opacity: 0;
+  transition: opacity .15s ease, transform .15s ease;
+  display: inline-block;
+}
+table.home-matrix tbody th a:hover,
+table.home-matrix tbody th a:focus-visible {
+  text-decoration: underline;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent);
+}
+table.home-matrix tbody th a:hover::after,
+table.home-matrix tbody th a:focus-visible::after {
+  opacity: .8;
+  transform: translateX(2px);
 }
 table.home-matrix tbody tr:last-child th,
 table.home-matrix tbody tr:last-child td { border-bottom: 0; }
