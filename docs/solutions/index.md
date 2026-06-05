@@ -104,6 +104,11 @@ Reach for these only when a Studio agent genuinely can't carry the job — custo
 | [Multi-Agent Workflow Orchestrator](foundry-orchestrator-agent.md) | Developers automating a multi-step process across specialist agents and tools, with deterministic control and a workflow-level eval gate | 2–4 days |
 | [High-Volume Document Processing Agent](foundry-document-processing-agent.md) | Ops, finance, or legal teams extracting structured data from documents at scale, with schema validation and a precision/recall gate | 2–4 days |
 | [Customer-Facing Support Agent](foundry-support-agent.md) | Developers building an external, action-taking support agent with strict guardrails, content safety, and continuous evaluation | 3–5 days |
+| [NL-to-SQL Analytics Agent](foundry-nl-to-sql-agent.md) | Developers building "ask your data warehouse" self-service analytics with a SQL-safety layer and a correctness gate | 2–4 days |
+| [Browser-Using (Computer-Use) Agent](foundry-computer-use-agent.md) | Developers automating web apps that have no API — sandboxed, allow-listed, and human-confirmed on irreversible actions | 3–5 days |
+| [Voice Agent / Contact-Center IVR](foundry-voice-agent.md) | Developers building a real-time phone agent — speech-to-text, grounded conversation, text-to-speech, clean human handoff | 3–5 days |
+| [Code-Review / PR-Triage Agent](foundry-code-review-agent.md) | Developers and devex teams adding advisory, private-repo PR review and reviewer routing — comments only, never merges | 2–4 days |
+| [Multi-Modal Document Classification Agent](foundry-document-classification-agent.md) | Developers sorting a high-volume document stream by vision + text, with confidence-based routing and a precision/recall gate | 2–4 days |
 
 ---
 

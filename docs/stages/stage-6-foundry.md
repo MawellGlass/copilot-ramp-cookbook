@@ -61,6 +61,28 @@ authoritative Microsoft docs to verify against. Build them roughly in order.
     ### [Secure and govern Foundry agents in production](../walkthroughs/foundry-govern-secure.md)
     Tenant-isolated data, least-privilege identity, and the governance plane. For IT/admin and developers.
 
+??? note "Production engineering walkthroughs — models, cost, and safety"
+
+    These go past building an agent to **operating** one as production software: swapping models safely,
+    keeping it affordable, and proving it's hard to break. Reach for them once an agent is real and busy.
+
+    ### [Fine-tune a domain model and serve it from a Foundry agent](../walkthroughs/foundry-fine-tune-serve.md)
+    The last lever when prompting and retrieval hit their ceiling — train the behaviour in, then serve it behind an agent.
+
+    ### [A/B and shadow-deploy a model swap behind a Foundry agent](../walkthroughs/foundry-ab-shadow-deploy.md)
+    Adopt a new or tuned model the way you ship risky code — shadow, canary, then promote on the numbers.
+
+    ### [Token-budgeting and cost optimization for a production agent](../walkthroughs/foundry-cost-optimization.md)
+    Make tokens a metric you watch, then cut spend at scale without quietly cutting quality.
+
+    ### [Build a red-team / safety eval harness](../walkthroughs/foundry-red-team-eval.md)
+    Try to break your own agent — repeatably — so adversarial regressions fail the build, not reach users.
+
+!!! tip "Pro-code solution templates"
+    These walkthroughs pair with copy-and-adapt **[Foundry solution templates](../solutions/index.md#foundry-templates-pro-code)** —
+    including the signature pro-code patterns: NL-to-SQL analytics, browser-using (computer-use) agents,
+    voice / contact-center IVR, private-repo code review, and multi-modal document classification at scale.
+
 ---
 
 ## Borrow, don't build

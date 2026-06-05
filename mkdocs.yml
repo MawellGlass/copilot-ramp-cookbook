@@ -162,6 +162,11 @@ nav:
           - "Multi-Agent Workflow Orchestrator": solutions/foundry-orchestrator-agent.md
           - "High-Volume Document Processing Agent": solutions/foundry-document-processing-agent.md
           - "Customer-Facing Support Agent": solutions/foundry-support-agent.md
+          - "NL-to-SQL Analytics Agent": solutions/foundry-nl-to-sql-agent.md
+          - "Browser-Using (Computer-Use) Agent": solutions/foundry-computer-use-agent.md
+          - "Voice Agent / Contact-Center IVR": solutions/foundry-voice-agent.md
+          - "Code-Review / PR-Triage Agent": solutions/foundry-code-review-agent.md
+          - "Multi-Modal Document Classification Agent": solutions/foundry-document-classification-agent.md
   - AI Empowerment:
       - empowerment/index.md
       - "Choose the Right Path":
