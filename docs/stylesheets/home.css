@@ -38,7 +38,7 @@
 .home-lede {
   font-size: 1.02rem;
   color: var(--md-default-fg-color--light);
-  max-width: 64ch;
+  max-width: none;
   margin: 0 0 1.6rem;
 }
 
