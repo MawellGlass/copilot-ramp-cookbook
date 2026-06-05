@@ -76,6 +76,18 @@ Start with the roster — it maps every included agent to what it's for, so you 
     ### [Find answers across your org's content with BizChat](../walkthroughs/first-party-bizchat-grounded.md)
     Search SharePoint, emails, and Teams in one question — and get a cited answer, not a list of links.
 
+    ### [Brief an account before a call with the Sales agent](../walkthroughs/first-party-sales-agent-brief.md)
+    Walk into every customer call already briefed — recent activity, open opportunities, and what to raise.
+
+    ### [Pressure-test a proposal with the Idea Coach](../walkthroughs/first-party-idea-coach-proposal.md)
+    Get the pushback a sharp colleague would give — before you hit send, while there's still time to fix it.
+
+    ### [Find a stretch assignment with the Skills agent](../walkthroughs/first-party-skills-stretch-assignment.md)
+    Match where you want to grow to concrete stretch assignments and internal openings in your org.
+
+    ### [Draft a self-assessment with the Career agent](../walkthroughs/first-party-career-self-assessment.md)
+    Point it at your year's work and edit a first-draft self-assessment instead of staring at a blank box.
+
 ---
 
 ## Borrow, don't build

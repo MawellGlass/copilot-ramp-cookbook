@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T15:19:18Z",
+  "generated": "2026-06-05T15:31:49Z",
   "items": [
     {
       "path": "walkthroughs/agent-builder-faq-agent/",
@@ -525,6 +525,22 @@
       "kind": "walkthrough"
     },
     {
+      "path": "walkthroughs/first-party-career-self-assessment/",
+      "title": "Draft a self-assessment with the Career agent",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "starter",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
       "path": "walkthroughs/first-party-copilot-pages/",
       "title": "Share and co-edit an AI output with Copilot Pages",
       "stage": "first-party",
@@ -568,6 +584,23 @@
       "fn": [],
       "level": "starter",
       "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-idea-coach-proposal/",
+      "title": "Pressure-test a proposal with the Idea Coach",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "starter",
+      "time": "10 min",
       "kind": "walkthrough"
     },
     {
@@ -639,6 +672,38 @@
         "maker"
       ],
       "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-sales-agent-brief/",
+      "title": "Brief an account before a call with the Sales agent",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-skills-stretch-assignment/",
+      "title": "Find a stretch assignment with the Skills agent",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [
+        "hr"
+      ],
       "level": "starter",
       "time": "10 min",
       "kind": "walkthrough"
