@@ -32,7 +32,7 @@ You've handed Copilot the same kind of multi-step task more than once and though
 
 Start with the flagship — a team-knowledge agent is the most useful first build for most people.
 
-??? note "Agent Builder walkthroughs"
+???+ note "Agent Builder walkthroughs"
 
     ### [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
     **The flagship.** Point a no-code agent at your team's docs once — and let everyone ask questions in plain language.

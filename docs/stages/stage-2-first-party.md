@@ -32,7 +32,7 @@ Chat is muscle memory and you want more horsepower for specific jobs — deep re
 
 Start with the roster — it maps every included agent to what it's for, so you know which specialist to reach for.
 
-??? note "First-party agent walkthroughs"
+???+ note "First-party agent walkthroughs"
 
     ### [The agents included in your M365 Copilot license](../walkthroughs/first-party-agents-overview.md)
     **Start here.** You're probably paying for agents you've never opened — this is the complete map.

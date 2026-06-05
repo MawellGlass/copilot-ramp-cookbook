@@ -27,7 +27,7 @@ You have a Microsoft 365 Copilot license and want quick wins that fit your exist
 
 Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups.md) is the gateway use case everything else builds from.
 
-??? note "Chat walkthroughs"
+???+ note "Chat walkthroughs"
 
     ### [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)
     **The gateway use case.** Walk out of any meeting with decisions, owners, and due dates — in under a minute.

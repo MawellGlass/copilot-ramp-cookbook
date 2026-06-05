@@ -75,7 +75,7 @@ There are two paths:
 
 Start with the end-to-end hand-off — it's the page that makes delegation click.
 
-??? note "Cowork walkthroughs"
+???+ note "Cowork walkthroughs"
 
     ### [Hand off an end-to-end task to Cowork](../walkthroughs/cowork-end-to-end-task.md)
     **Start here.** Describe an outcome — Cowork plans and runs the steps autonomously, no prompt-chaining required.
