@@ -60,7 +60,16 @@ that collapses under the first hard question.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Prompt giving Copilot a before-and-after with volumes, minutes, and a loaded rate](../screenshots/studio-roi-business-case/01-roi-prompt.png)
+**Give Copilot a real before-and-after — volumes, minutes per instance, and the fully-loaded rate — and ask it to do the math, not hand-wave.**
+
+![Copilot working the time-saved math and flagging which numbers are soft](../screenshots/studio-roi-business-case/02-roi-calculation.png)
+**Copilot works the savings explicitly (here, ~5 hours/week) and — crucially — flags the soft numbers, so you present a case that survives the first hard question rather than an inflated one.**
+
+![The explicit list of assumptions behind the ROI number](../screenshots/studio-roi-business-case/03-assumptions.png)
+**It lists the assumptions behind the number out loud, so the people approving the budget can see exactly what the case rests on.**
 
 ## Make it better
 An ROI case is a living instrument:

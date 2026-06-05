@@ -63,7 +63,16 @@ punch list you can act on.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Prompt asking Copilot to draft a one-week pilot invite with example questions and three feedback buckets](../screenshots/agent-builder-share-and-feedback/01-pilot-invite-prompt.png)
+**Ask Copilot to draft the pilot invite — clear scope, example questions, and feedback in three named buckets.**
+
+![The drafted invite with two example questions and worked/wrong/missing feedback buckets](../screenshots/agent-builder-share-and-feedback/02-pilot-invite.png)
+**The draft gives pilots an on-ramp (two questions to try) and asks for structured feedback — what worked, what was wrong, what was missing — so you get a punch list instead of silence.**
+
+![Copilot turning grouped pilot feedback into specific instruction changes labelled grounding vs instruction gaps](../screenshots/agent-builder-share-and-feedback/03-feedback-to-changes.png)
+**Feed the grouped feedback back in and Copilot returns specific instruction changes — and tells you which were grounding gaps versus instruction gaps, so you fix the right layer.**
 
 ## Make it better
 A pilot is a loop, not a one-shot:
