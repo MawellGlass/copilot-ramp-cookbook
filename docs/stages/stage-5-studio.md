@@ -166,6 +166,66 @@ Agents designed for a specific business function. Each pairs with a [Solution Te
 
     Pairs with: [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md)
 
+### Marketing
+
+??? example "Marketing — Turn a campaign brief into asset checklist and draft copy"
+
+    **[Marketing: brief to campaign drafts](../walkthroughs/studio-functional-marketing-campaign.md)**
+
+    Turn a one-paragraph brief into a complete asset checklist and on-brand first-draft copy — so the team starts every campaign from a draft, not a blank page, with unverified claims flagged for review.
+
+    Pairs with: [Marketing Campaign Agent solution template](../solutions/marketing-campaign-agent.md)
+
+### Customer Support
+
+??? example "Customer Support — Deflect common questions and draft agent replies"
+
+    **[Customer Support: deflect and draft, escalate the rest](../walkthroughs/studio-functional-support-deflection.md)**
+
+    The inward-facing cousin of the external Foundry support agent: it answers from approved help content, drafts send-ready replies, deflects the easy ones on self-serve, and escalates the edge cases.
+
+    Pairs with: [Customer Support Deflection Agent solution template](../solutions/support-deflection-agent.md)
+
+### Procurement
+
+??? example "Procurement — Sourcing requests with vendor shortlists and policy gates"
+
+    **[Procurement: request to vendors to policy gates](../walkthroughs/studio-functional-procurement-sourcing.md)**
+
+    Take a purchase request, return a shortlist of approved preferred vendors, and apply the policy gates automatically — so people source fast and stay on contract instead of going off-contract by accident.
+
+    Pairs with: [Procurement Sourcing Agent solution template](../solutions/procurement-sourcing-agent.md)
+
+### Field Service
+
+??? example "Field Service — Triage symptoms to likely cause and dispatch path"
+
+    **[Field Service: symptoms to dispatch path](../walkthroughs/studio-functional-field-service-triage.md)**
+
+    Take a reported symptom or fault code, return the most likely cause, and recommend the right dispatch path — self-fix, remote, or a truck roll with the right parts — behind a hard safety rule.
+
+    Pairs with: [Field Service Triage Agent solution template](../solutions/field-service-triage-agent.md)
+
+### Engineering
+
+??? example "Engineering — Match alerts to runbook steps and escalation"
+
+    **[Engineering: alert to runbook to escalation](../walkthroughs/studio-functional-engineering-oncall.md)**
+
+    Meet the on-call engineer when an alert fires: match it to the right runbook step, guide the fix one step at a time, and know exactly who to escalate to when the runbook runs out — read-first by design.
+
+    Pairs with: [Engineering On-Call Runbook Agent solution template](../solutions/engineering-oncall-runbook-agent.md)
+
+### Workplace & Operations
+
+??? example "Workplace — Plan an internal event end to end"
+
+    **[Workplace: plan an internal event end to end](../walkthroughs/studio-functional-events-coordination.md)**
+
+    Turn "I'm running an all-hands / offsite / team day" into an organised plan — logistics checklist, room and catering bookings, and drafted attendee comms — in one interaction, inside policy and budget.
+
+    Pairs with: [Event Coordination Agent solution template](../solutions/event-coordination-agent.md)
+
 ---
 
 ## Borrow, don't build

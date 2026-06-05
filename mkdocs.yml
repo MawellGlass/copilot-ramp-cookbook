@@ -151,6 +151,12 @@ nav:
           - "Sales · Enablement Agent": solutions/sales-enablement-agent.md
           - "Sales · Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
           - "Legal · Compliance Guidance Agent": solutions/legal-compliance-agent.md
+          - "Marketing · Campaign Agent": solutions/marketing-campaign-agent.md
+          - "Customer Support · Deflection Agent (internal)": solutions/support-deflection-agent.md
+          - "Procurement · Sourcing Agent": solutions/procurement-sourcing-agent.md
+          - "Field Service · Triage Agent": solutions/field-service-triage-agent.md
+          - "Engineering · On-Call Runbook Agent": solutions/engineering-oncall-runbook-agent.md
+          - "Workplace · Event Coordination Agent": solutions/event-coordination-agent.md
       - Foundry:
           - "Pro-Code Grounded Q&A Agent": solutions/foundry-knowledge-agent.md
           - "Multi-Agent Workflow Orchestrator": solutions/foundry-orchestrator-agent.md

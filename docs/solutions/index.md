@@ -56,6 +56,42 @@ Grouped by functional area. Start with the cross-functional **Policy FAQ Agent**
 |---|---|---|
 | [Legal & Compliance Guidance Agent](legal-compliance-agent.md) | Legal and compliance teams wanting to deflect routine process questions with strict escalation controls | 3–4 hours |
 
+### Marketing
+
+| Template | Best for | Time to build |
+|---|---|---|
+| [Marketing Campaign Agent](marketing-campaign-agent.md) | Marketing teams turning a campaign brief into an asset checklist and on-brand first-draft copy | 3–4 hours |
+
+### Customer Support
+
+| Template | Best for | Time to build |
+|---|---|---|
+| [Customer Support Deflection Agent (internal)](support-deflection-agent.md) | Support teams answering from approved help content, drafting replies, and deflecting common questions | 3–4 hours |
+
+### Procurement
+
+| Template | Best for | Time to build |
+|---|---|---|
+| [Procurement Sourcing Agent](procurement-sourcing-agent.md) | Procurement teams giving requesters a compliant vendor shortlist with policy gates and approval routing | 3–4 hours |
+
+### Field Service
+
+| Template | Best for | Time to build |
+|---|---|---|
+| [Field Service Triage Agent](field-service-triage-agent.md) | Field service teams triaging symptoms to likely cause and the right dispatch path, safely | 4–5 hours |
+
+### Engineering
+
+| Template | Best for | Time to build |
+|---|---|---|
+| [Engineering On-Call Runbook Agent](engineering-oncall-runbook-agent.md) | Engineering teams matching alerts to runbook steps and knowing the escalation path under pressure | 4–5 hours |
+
+### Workplace & Operations
+
+| Template | Best for | Time to build |
+|---|---|---|
+| [Event Coordination Agent](event-coordination-agent.md) | Workplace and ops teams planning internal events — rooms, catering, comms — within policy | 3–4 hours |
+
 ---
 
 ## Foundry templates (pro-code)
