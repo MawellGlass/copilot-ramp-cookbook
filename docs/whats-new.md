@@ -11,6 +11,30 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### Real product screenshots across the ramp
+*June 4, 2026*
+
+Walkthroughs are no longer text-only. We captured **authentic, in-product screenshots** from
+Microsoft 365 Copilot, Copilot Studio, and Agent Builder and wired them into galleries across
+Stages 1–5 — chat prompts and results, the agent store, Cowork plans, Agent Builder
+configuration, and Studio authoring and publishing. More than two dozen walkthroughs now show
+exactly what each step looks like, so you can match the product as you follow along.
+
+### AI Empowerment hub, capacity estimator, and expanded solution templates
+*June 4, 2026*
+
+- **[AI Empowerment](empowerment/index.md)** — a new section to help you pick the right tool: a
+  process-led **[decision tree](empowerment/decision-tree.md)**, an interactive
+  **[Path Finder](empowerment/wizard.md)**, and a **[Security & Governance](empowerment/security.md)**
+  page covering the native layer and the Agent 365 control plane.
+- **[Capacity & credit estimator](credit-estimator.md)** — an interactive worksheet to model
+  Copilot Studio message consumption by users, interactions, and scenario.
+- **Solution templates restructured** — templates now group under **Studio** and **Foundry**
+  parents, with new functional templates spanning HR, IT, Finance, Sales, and Legal.
+- **Site polish** — nested navigation dropdowns now open by default (and stay collapsible), plus
+  new **[Glossary](glossary.md)** and **[Licensing & Prerequisites](prerequisites.md)** pages, role
+  filter chips on the Use-Case Catalog, and automatic "last updated" dates on every page.
+
 ### Stage 6 · Microsoft Foundry added, plus a site-wide accuracy pass
 *June 4, 2026*
 
