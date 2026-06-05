@@ -293,3 +293,81 @@ table.home-matrix td.lvl0 .dot { color: var(--md-default-fg-color--lightest); }
   padding-top: .65rem;
   border-top: 1px dashed var(--md-default-fg-color--lightest);
 }
+
+/* ---------- choose-your-path persona strip ---------- */
+.path-eyebrow {
+  display: block;
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 .35rem;
+}
+.path-intro {
+  font-size: .9rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1rem;
+  max-width: 72ch;
+}
+.path-intro a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.path-intro a:hover { text-decoration: underline; }
+
+.path-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .7rem;
+  margin: 0 0 1.8rem;
+}
+
+.path-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .7rem;
+  padding: .9rem .95rem 1rem;
+  box-shadow: 0 1px 2px rgba(20,30,50,.06), 0 6px 18px rgba(20,30,50,.06);
+  transition: border-color .15s, transform .15s;
+}
+.path-card:hover {
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-2px);
+}
+.path-card .pc-role {
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--lighter);
+  margin-bottom: .3rem;
+}
+.path-card .pc-line {
+  font-size: .8rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.45;
+  margin: 0 0 .7rem;
+  flex: 1 1 auto;
+}
+.path-card .pc-cta {
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  line-height: 1.3;
+}
+.path-card .pc-cta:hover { text-decoration: underline; }
+.path-card .pc-2nd {
+  font-size: .74rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  margin-top: .4rem;
+  line-height: 1.3;
+}
+.path-card .pc-2nd:hover { color: var(--md-primary-fg-color); text-decoration: underline; }

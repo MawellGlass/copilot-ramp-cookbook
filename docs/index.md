@@ -15,6 +15,39 @@ hide:
 
 <p class="home-lede">Most people stall at "I have Copilot, now what?" This cookbook lays out a natural ramp: start by <em>using</em> Copilot, get comfortable letting agents do work for you, then take the leap to <em>building</em> your own — first in Agent Builder, then in Copilot Studio, and into Foundry when you need pro-code.</p>
 
+<p class="path-eyebrow">Choose your path</p>
+<p class="path-intro">New here? Pick the card that sounds like you — each jumps straight to one high-value first step. Prefer the full picture? <a href="start-by-role/">See all roles →</a></p>
+
+<div class="path-strip">
+  <div class="path-card">
+    <span class="pc-role">New user</span>
+    <p class="pc-line">You've got Copilot and want a fast first win — no building, no setup.</p>
+    <a class="pc-cta" href="walkthroughs/chat-meeting-followups/">Turn a meeting into tracked follow-ups →</a>
+  </div>
+  <div class="path-card">
+    <span class="pc-role">Team champion</span>
+    <p class="pc-line">You're driving adoption for a team — build the habit and scale what works.</p>
+    <a class="pc-cta" href="quick-wins/">Quick wins to share today →</a>
+    <a class="pc-2nd" href="empowerment/">Build your empowerment team →</a>
+  </div>
+  <div class="path-card">
+    <span class="pc-role">Maker</span>
+    <p class="pc-line">You're ready to build agents — start low-code and know where to draw the line.</p>
+    <a class="pc-cta" href="walkthroughs/agent-builder-vs-studio/">Agent Builder vs Studio →</a>
+  </div>
+  <div class="path-card">
+    <span class="pc-role">Developer</span>
+    <p class="pc-line">You've outgrown low-code and build agents as software on Azure.</p>
+    <a class="pc-cta" href="stages/stage-6-foundry/">Cross into the Foundry frontier →</a>
+  </div>
+  <div class="path-card">
+    <span class="pc-role">IT / admin</span>
+    <p class="pc-line">You enable each stage safely and keep agents governed at scale.</p>
+    <a class="pc-cta" href="prerequisites/">Licensing &amp; prerequisites →</a>
+    <a class="pc-2nd" href="empowerment/security/">Security &amp; governance →</a>
+  </div>
+</div>
+
 <div class="journey">
   <a class="step" href="stages/stage-1-chat/"><span class="n">STAGE 1</span><span class="t">Copilot Chat</span><span class="d">A daily habit and a first "wow."</span></a>
   <span class="arrow">→</span>
