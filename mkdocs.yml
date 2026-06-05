@@ -118,7 +118,7 @@ nav:
   - Start Here:
       - "Start by Stage": start-here.md
       - "Start by Role":
-          - start-by-role.md
+          - "Role Overview": start-by-role.md
           - "New user": roles/new-user.md
           - Manager: roles/manager.md
           - "Team champion": roles/champion.md
