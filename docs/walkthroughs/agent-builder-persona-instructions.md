@@ -62,7 +62,13 @@ docs), the *format* (short + cited), the *failure behavior* (say when unsure, ro
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Agent Builder (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Configure pane showing the agent name and a structured instructions block](../screenshots/agent-builder-persona-instructions/01-instructions-persona.png)
+**Identity first, then the hard rules, then the voice — the Instructions block reads like an operating manual, not a wish.**
+
+![The instructions editor popped out into a focused dialog](../screenshots/agent-builder-persona-instructions/02-instructions-editor.png)
+**Pop the instructions out for a focused edit — grounding, citation, refusal, and tone in five tight lines.**
 
 ## Make it better
 Instructions are never "done" — they're tuned:

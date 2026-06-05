@@ -60,7 +60,10 @@ preference.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Agent Builder (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Agent Builder More menu showing a Copy to Copilot Studio option](../screenshots/agent-builder-vs-studio/01-copy-to-studio-menu.png)
+**The graduation path is built in — when you outgrow the lightweight builder, "Copy to Copilot Studio" carries the agent into the pro-grade tool so you don't rebuild from scratch.**
 
 ## Make it better
 The decision sharpens with reps:

@@ -62,7 +62,22 @@ trustworthy team agent from a confident guesser.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Agent Builder (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Agent Builder home with a Describe box and templates](../screenshots/agent-builder-team-knowledge/01-agent-builder-home.png)
+**Agent Builder opens right inside Microsoft 365 Copilot — describe the agent in plain language or skip to Configure.**
+
+![The Policy Buddy describe prompt typed into the Describe box](../screenshots/agent-builder-team-knowledge/02-describe-prompt.png)
+**Describe the job once: name, knowledge boundary, tone, the citation rule, and what to do when the answer isn't there.**
+
+![Split view with build conversation on the left and the Configure panel on the right](../screenshots/agent-builder-team-knowledge/03-configure-dual-pane.png)
+**Agent Builder splits into a build conversation (left) and a live Configure panel (right) you can edit directly.**
+
+![Configure pane showing the Policy Buddy name and filled instructions](../screenshots/agent-builder-team-knowledge/04-instructions-filled.png)
+**The Instructions field is the operating manual — identity, the grounding rule, tone, and the "point to HR" refusal behavior.**
+
+![Knowledge section with SharePoint, Teams, Outlook and web source options and grounding toggles](../screenshots/agent-builder-team-knowledge/05-knowledge-sources.png)
+**Knowledge is where you ground it — point at a SharePoint site, then tighten scope with the source toggles.**
 
 ## Make it better
 A working agent is the start — these turn it into something the team trusts and uses:

@@ -61,7 +61,10 @@ suggestions — not paragraphs.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Agent Builder (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Suggested prompts section with three title-and-message starter prompts filled in](../screenshots/agent-builder-starter-prompts/01-suggested-prompts.png)
+**Each starter prompt is a title plus the real question it fires — give a new user a good answer in the first minute instead of a blank box.**
 
 ## Make it better
 Starter prompts are a living signal:
