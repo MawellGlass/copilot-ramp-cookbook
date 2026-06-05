@@ -308,7 +308,7 @@ table.home-matrix td.lvl0 .dot { color: var(--md-default-fg-color--lightest); }
   font-size: .9rem;
   color: var(--md-default-fg-color--light);
   margin: 0 0 1rem;
-  max-width: 72ch;
+  max-width: none;
 }
 .path-intro a {
   color: var(--md-primary-fg-color);
@@ -320,9 +320,15 @@ table.home-matrix td.lvl0 .dot { color: var(--md-default-fg-color--lightest); }
 
 .path-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: .7rem;
   margin: 0 0 1.8rem;
+}
+@media (max-width: 1100px) {
+  .path-strip { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .path-strip { grid-template-columns: repeat(2, 1fr); }
 }
 
 .path-card {
