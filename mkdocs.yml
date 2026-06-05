@@ -64,6 +64,7 @@ extra_css:
   - stylesheets/mermaid.css
   - stylesheets/nav.css
   - stylesheets/role-path.css
+  - stylesheets/cards.css
 
 extra_javascript:
   - javascripts/catalog.js
@@ -71,6 +72,7 @@ extra_javascript:
   - javascripts/nav-expand.js
   - javascripts/role-path.js
   - javascripts/feedback.js
+  - javascripts/card-filter.js
 
 hooks:
   - tooling/mkdocs_hooks.py       # regenerates docs/path-catalog.json before each build

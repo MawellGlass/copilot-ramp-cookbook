@@ -28,65 +28,217 @@ Chat is muscle memory and you want more horsepower for specific jobs — deep re
 
 ---
 
-## Walkthroughs in this stage
+## Start here — if you only do three things
 
-Start with the roster — it maps every included agent to what it's for, so you know which specialist to reach for.
+You're probably paying for specialists you've never opened. Learn the roster, switch on the one that pays you back passively, then put the showcase agent to work.
 
-???+ note "First-party agent walkthroughs"
+<div class="grid cards rc-pinned" markdown>
 
-    ### [The agents included in your M365 Copilot license](../walkthroughs/first-party-agents-overview.md)
-    **Start here.** You're probably paying for agents you've never opened — this is the complete map.
+-   <span class="rc-habit">Habit 1<small>Day 1</small></span>
 
-    ### [Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)
-    Stop prompting for meeting notes — Facilitator captures decisions, summaries, and action items automatically.
+    **[Learn the roster of included agents](../walkthroughs/first-party-agents-overview.md)**
 
-    ### [Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)
-    Hand a hard question to Researcher and get back a cited, structured report — not a list of links to follow.
+    You're probably paying for agents you've never opened — this is the complete map of what's included.
 
-    ### [Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md)
-    Ask a spreadsheet questions in plain English and get back the answer and the working — no formula needed.
+    <span class="rc-meta" data-time="10" data-roles="end-user champion manager maker it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Translate a meeting in real time with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md)
-    Run a cross-language Teams meeting without a human interpreter — real-time captions, any language pair.
+-   <span class="rc-habit">Habit 2<small>Week 1</small></span>
 
-    ### [Answer routine HR and IT questions with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md)
-    Get the PTO balance, the policy answer, or the 'how do I' answer in seconds — from approved sources.
+    **[Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)**
 
-    ### [Keep a project on track with the Project Manager agent](../walkthroughs/first-party-project-manager.md)
-    Hand the agent your plan and let it track action items, flag blockers, and send nudges.
+    Stop prompting for notes — Facilitator captures decisions, summaries, and action items automatically.
 
-    ### [Upskill in the flow of work with the Learning agent](../walkthroughs/first-party-learning-agent.md)
-    Learn the thing right when you need it — surfaced in the flow of work, not a scheduled course.
+    <span class="rc-meta" data-time="5" data-roles="end-user champion"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md)
-    Drop a shared agent into a Teams channel so the whole team can @mention it and get instant answers.
+-   <span class="rc-habit">Habit 3<small>Month 1</small></span>
 
-    ### [Answer common questions with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md)
-    Drop a shared agent into a Viva Engage community so the most-asked questions answer themselves.
+    **[Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)**
 
-    ### [Find where Copilot is landing with Workforce Insights](../walkthroughs/first-party-workforce-insights.md)
-    **For champions and managers.** See where Copilot is sticking and where to focus adoption energy.
+    Hand a hard question to Researcher and get back a cited, structured report — not a list of links.
 
-    ### [Share and co-edit an AI output with Copilot Pages](../walkthroughs/first-party-copilot-pages.md)
-    Turn any Copilot response into a shared, editable page — no copying, no formatting, no emailing a draft.
+    <span class="rc-meta" data-time="10" data-roles="end-user manager maker"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Track project milestones with the Planner agent](../walkthroughs/first-party-planner-agent.md)
-    Describe a project in plain language — get back a structured, assigned plan in the Planner app.
+</div>
 
-    ### [Find answers across your org's content with BizChat](../walkthroughs/first-party-bizchat-grounded.md)
+---
+
+## All walkthroughs
+
+<div id="rc-filterbar"></div>
+
+<section class="rc-bucket" markdown>
+
+### Know your roster
+Start here — map every included agent to the job it's built for.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[The agents included in your M365 Copilot license](../walkthroughs/first-party-agents-overview.md)**
+
+    You're probably paying for agents you've never opened — this is the complete map.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user champion manager maker it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-star">★ Starter</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Research, analyze & answer
+Hand the hard, multi-source questions to a specialist and get back cited, structured answers.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Deep-dive a topic with Researcher](../walkthroughs/first-party-researcher-deep-dive.md)**
+
+    Hand a hard question to Researcher and get back a cited, structured report — not a list of links.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user manager maker"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Analyze a dataset with Analyst](../walkthroughs/first-party-analyst-dataset.md)**
+
+    Ask a spreadsheet questions in plain English and get the answer and the working — no formula needed.
+
+    <span class="rc-meta" data-time="10" data-roles="manager maker"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+
+-   **[Find answers across your org's content with BizChat](../walkthroughs/first-party-bizchat-grounded.md)**
+
     Search SharePoint, emails, and Teams in one question — and get a cited answer, not a list of links.
 
-    ### [Brief an account before a call with the Sales agent](../walkthroughs/first-party-sales-agent-brief.md)
+    <span class="rc-meta" data-time="5" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Answer routine HR and IT questions with Employee Self-Service](../walkthroughs/first-party-employee-self-service.md)**
+
+    Get the PTO balance, the policy answer, or the 'how do I' answer in seconds — from approved sources.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Brief an account before a call with the Sales agent](../walkthroughs/first-party-sales-agent-brief.md)**
+
     Walk into every customer call already briefed — recent activity, open opportunities, and what to raise.
 
-    ### [Pressure-test a proposal with the Idea Coach](../walkthroughs/first-party-idea-coach-proposal.md)
-    Get the pushback a sharp colleague would give — before you hit send, while there's still time to fix it.
+    <span class="rc-meta" data-time="10" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Find a stretch assignment with the Skills agent](../walkthroughs/first-party-skills-stretch-assignment.md)
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Run better meetings
+Let an agent handle recap and translation so you can stay present in the room.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Auto-recap every meeting with Facilitator](../walkthroughs/first-party-facilitator-auto-recap.md)**
+
+    Stop prompting for notes — Facilitator captures decisions, summaries, and action items automatically.
+
+    <span class="rc-meta" data-time="5" data-roles="end-user champion"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Translate a meeting in real time with Interpreter](../walkthroughs/first-party-interpreter-live-translation.md)**
+
+    Run a cross-language Teams meeting without a human interpreter — real-time captions, any language pair.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Manage projects & deliver
+Hand off the plan-tracking and shared-output busywork to a specialist.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Keep a project on track with the Project Manager agent](../walkthroughs/first-party-project-manager.md)**
+
+    Hand the agent your plan and let it track action items, flag blockers, and send nudges.
+
+    <span class="rc-meta" data-time="10" data-roles="champion manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+
+-   **[Track project milestones with the Planner agent](../walkthroughs/first-party-planner-agent.md)**
+
+    Describe a project in plain language — get back a structured, assigned plan in the Planner app.
+
+    <span class="rc-meta" data-time="10" data-roles="manager champion end-user"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+
+-   **[Share and co-edit an AI output with Copilot Pages](../walkthroughs/first-party-copilot-pages.md)**
+
+    Turn any Copilot response into a shared, editable page — no copying, no formatting, no emailing a draft.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user champion manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Grow and get feedback
+Point a specialist at your own work to learn faster and sharpen what you ship.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Upskill in the flow of work with the Learning agent](../walkthroughs/first-party-learning-agent.md)**
+
+    Learn the thing right when you need it — surfaced in the flow of work, not a scheduled course.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Find a stretch assignment with the Skills agent](../walkthroughs/first-party-skills-stretch-assignment.md)**
+
     Match where you want to grow to concrete stretch assignments and internal openings in your org.
 
-    ### [Draft a self-assessment with the Career agent](../walkthroughs/first-party-career-self-assessment.md)
+    <span class="rc-meta" data-time="10" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Draft a self-assessment with the Career agent](../walkthroughs/first-party-career-self-assessment.md)**
+
     Point it at your year's work and edit a first-draft self-assessment instead of staring at a blank box.
+
+    <span class="rc-meta" data-time="15" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Pressure-test a proposal with the Idea Coach](../walkthroughs/first-party-idea-coach-proposal.md)**
+
+    Get the pushback a sharp colleague would give — before you hit send, while there's still time to fix it.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Scale to your team
+Put shared agents where your team already works, then see where adoption is landing.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Post team-wide answers with Agents in Channels](../walkthroughs/first-party-agents-in-channels.md)**
+
+    Drop a shared agent into a Teams channel so the whole team can @mention it and get instant answers.
+
+    <span class="rc-meta" data-time="10" data-roles="champion it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+-   **[Answer common questions with Agents in Communities](../walkthroughs/first-party-agents-in-communities.md)**
+
+    Drop a shared agent into a Viva Engage community so the most-asked questions answer themselves.
+
+    <span class="rc-meta" data-time="10" data-roles="champion it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+-   **[Find where Copilot is landing with Workforce Insights](../walkthroughs/first-party-workforce-insights.md)**
+
+    See where Copilot is sticking and where to focus adoption energy.
+
+    <span class="rc-meta" data-time="10" data-roles="champion manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+</div>
+
+</section>
 
 ---
 
@@ -113,6 +265,9 @@ The full curated set for this stage lives in [Resources → Stage 2](../RESOURCE
 
 ## Where this leads
 
-Once you've leaned on a few prebuilt specialists, the natural question is: *can Copilot run a whole task for me, not just one step?* That's Cowork.
-
-[→ Stage 3 · Cowork](stage-3-cowork.md)
+<div class="rc-exit" markdown>
+<div class="rc-exit-text" markdown>
+**Reaching for two or three specialists a week?** You've outgrown calling one agent at a time. The next question is whether Copilot can run a whole task for you, not just one step — that's Cowork.
+</div>
+[Continue to Stage 3 · Cowork →](stage-3-cowork.md){ .rc-exit-cta }
+</div>

@@ -1,0 +1,164 @@
+/* ──────────────────────────────────────────────────────────────────────────
+ * cards.css — stage-page walkthrough/template cards, chip filter, pinned
+ * "first three habits" block, and the cross-stage exit card.
+ * Built on Material CSS vars so light & dark both work with no extra rules.
+ * Companion script: docs/javascripts/card-filter.js
+ * ────────────────────────────────────────────────────────────────────────── */
+
+/* ---------- chips on every card ---------- */
+.rc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: .55rem !important;
+}
+.rc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  font-size: .68rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .3rem .52rem;
+  border-radius: 999px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
+.rc-chip-star {
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 9%, transparent);
+}
+.rc-chip-build {
+  border-color: #c98a00;
+  color: #9a6a00;
+  background: color-mix(in srgb, #c98a00 12%, transparent);
+}
+[data-md-color-scheme="slate"] .rc-chip-build { color: #f0c24a; }
+.rc-chip-adapt {
+  font-weight: 600;
+}
+
+/* keep Material card content tidy */
+.rc-grid.grid.cards > ul > li > :first-child,
+.rc-pinned.grid.cards > ul > li > :first-child { margin-top: 0; }
+.rc-grid li[hidden] { display: none !important; }
+
+/* ---------- filter bar (injected by card-filter.js) ---------- */
+.rc-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.6rem;
+  padding: .85rem 1.05rem;
+  margin: 1rem 0 1.5rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .75rem;
+  box-shadow: 0 1px 2px rgba(20,30,50,.06), 0 6px 18px rgba(20,30,50,.05);
+}
+.rc-filter-group { display: flex; align-items: center; gap: .55rem; }
+.rc-filter-label {
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--lighter);
+}
+.rc-seg { display: inline-flex; flex-wrap: wrap; gap: .3rem; }
+.rc-opt {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .74rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: .4rem .65rem;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  transition: border-color .15s, background .15s, color .15s;
+}
+.rc-opt:hover { border-color: var(--md-primary-fg-color); color: var(--md-primary-fg-color); }
+.rc-opt:focus-visible { outline: 2px solid var(--md-primary-fg-color); outline-offset: 2px; }
+.rc-opt.active {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+.rc-filter-count {
+  margin-left: auto;
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--lighter);
+}
+.rc-filter-empty {
+  margin: -0.6rem 0 1.4rem;
+  font-size: .82rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ---------- pinned "first three habits" ---------- */
+.rc-pinned { margin: 1rem 0 1.4rem; }
+.rc-pinned.grid.cards > ul > li {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 1px 2px rgba(20,30,50,.05), 0 8px 22px rgba(63,81,181,.08);
+}
+.rc-habit {
+  display: inline-block;
+  font-size: .6rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: .26rem .5rem .3rem;
+  border-radius: 6px;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  margin-bottom: .45rem;
+  line-height: 1.1;
+}
+.rc-habit small {
+  display: block;
+  font-weight: 700;
+  letter-spacing: .02em;
+  opacity: .85;
+  text-transform: none;
+}
+
+/* ---------- bucket sections ---------- */
+.rc-bucket { margin-top: 1.7rem; }
+.rc-bucket[hidden] { display: none !important; }
+.rc-bucket > h3 { margin-bottom: .15rem; }
+.rc-bucket > h3 + p { margin-top: .1rem; color: var(--md-default-fg-color--light); font-size: .9rem; }
+
+/* ---------- cross-stage exit card ---------- */
+.rc-exit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1.1rem;
+  margin: 2rem 0 .6rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: .8rem;
+  border: 1px solid var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 7%, var(--md-default-bg-color));
+}
+.rc-exit-text { flex: 1 1 18rem; }
+.rc-exit-text strong { display: block; font-size: 1rem; }
+.rc-exit-text p { margin: .15rem 0 0; color: var(--md-default-fg-color--light); font-size: .86rem; }
+.rc-exit a.rc-exit-cta {
+  flex: 0 0 auto;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: .6rem 1.05rem;
+  border-radius: .55rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color) !important;
+}
+.rc-exit a.rc-exit-cta:hover { filter: brightness(1.08); }
+
+@media (max-width: 48rem) {
+  .rc-filter-count { margin-left: 0; }
+}

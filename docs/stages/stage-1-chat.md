@@ -23,53 +23,181 @@ You have a Microsoft 365 Copilot license and want quick wins that fit your exist
 
 ---
 
-## Walkthroughs in this stage
+## Start here — if you only do three things
 
-Start at the top — [meeting follow-ups](../walkthroughs/chat-meeting-followups.md) is the gateway use case everything else builds from.
+Three habits, in order. Land these and Copilot stops being a tool you remember to open and becomes the way you work.
 
-???+ note "Chat walkthroughs"
+<div class="grid cards rc-pinned" markdown>
 
-    ### [Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)
-    **The gateway use case.** Walk out of any meeting with decisions, owners, and due dates — in under a minute.
+-   <span class="rc-habit">Habit 1<small>Day 1</small></span>
+    **[Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)**
 
-    ### [Draft a status update from your week's activity](../walkthroughs/chat-weekly-status.md)
-    Turn a scattered week of emails, chats, and meetings into a crisp five-bullet status update in 30 seconds.
+    Walk out of any meeting with decisions, owners, and due dates — in under a minute.
 
-    ### [Prep for a 1:1 in two minutes](../walkthroughs/chat-prep-1on1.md)
-    Walk into any 1:1 with sharp talking points pulled from the work you've actually done that week.
+    <span class="rc-meta" data-time="5" data-roles="end-user champion"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Get up to speed on a long document fast](../walkthroughs/chat-document-catch-up.md)
-    Get the three things your role actually needs from a 30-page document — without reading all of it.
+-   <span class="rc-habit">Habit 2<small>Week 1</small></span>
+    **[Catch up on a long email thread in seconds](../walkthroughs/chat-email-chain-summary.md)**
 
-    ### [Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)
-    Know what happened and what you're being asked — in 30 seconds, from a thread you didn't follow.
+    Open any thread and know exactly where things stand — and what's being asked of you.
 
-    ### [Build a first-draft project plan](../walkthroughs/chat-project-plan.md)
-    Go from a vague goal to a structured plan with phases, milestones, and owners — in one session.
+    <span class="rc-meta" data-time="5" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Rewrite an email for a tougher audience](../walkthroughs/chat-rewrite-email.md)
-    Turn the draft you'd never send into a message that actually lands — sharper, cleaner, more appropriate.
+-   <span class="rc-habit">Habit 3<small>Month 1</small></span>
+    **[Draft an exec briefing from background materials](../walkthroughs/chat-exec-briefing.md)**
 
-    ### [Run a "Prompt of the Day" for your team](../walkthroughs/chat-prompt-of-the-day.md)
-    **For champions.** Turn "we have Copilot" into a real daily habit with a 30-second team drip.
+    Walk into any exec meeting with sharp talking points pulled from your docs — not written at 8 PM.
 
-    ### [Draft an exec briefing from background materials](../walkthroughs/chat-exec-briefing.md)
-    Walk into any exec meeting with sharp talking points pulled from your docs — not written from scratch at 8 PM.
+    <span class="rc-meta" data-time="10" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Catch up on a long email thread in seconds](../walkthroughs/chat-email-chain-summary.md)
+</div>
+
+---
+
+## All walkthroughs
+
+Browse by what you're trying to get done — or filter by who you are and how much time you have.
+
+<div id="rc-filterbar"></div>
+
+<section class="rc-bucket" markdown>
+
+### Catch up faster
+Get back to a clear head fast — threads, docs, and inboxes.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Turn a meeting into tracked follow-ups](../walkthroughs/chat-meeting-followups.md)**
+
+    Walk out of any meeting with decisions, owners, and due dates — in under a minute.
+
+    <span class="rc-meta" data-time="5" data-roles="end-user champion"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-star">★ Starter</span></span>
+
+-   **[Catch up on a long email thread in seconds](../walkthroughs/chat-email-chain-summary.md)**
+
     Open any email thread and know exactly where things stand — and what's being asked of you.
 
-    ### [Build a meeting agenda from context and notes](../walkthroughs/chat-meeting-agenda.md)
-    Never start from a blank page — build a structured, time-slotted agenda from whatever context you have.
+    <span class="rc-meta" data-time="5" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
-    ### [Brainstorm solutions with structured tradeoffs](../walkthroughs/chat-brainstorm.md)
-    Get past the blank page: structured options with honest tradeoffs so you can make a faster, better decision.
+-   **[Get up to speed on a long document fast](../walkthroughs/chat-document-catch-up.md)**
 
-    ### [Adapt a document or message for a different audience](../walkthroughs/chat-adapt-audience.md)
+    Get the three things your role actually needs from a 30-page document — without reading all of it.
+
+    <span class="rc-meta" data-time="3" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 3 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Catch up on a Teams thread you were @mentioned in](../walkthroughs/chat-catch-up-thread.md)**
+
+    Know what happened and what you're being asked — in 30 seconds, from a thread you didn't follow.
+
+    <span class="rc-meta" data-time="3" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 3 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Communicate sharper
+Make the message land — rewrite, re-aim, and brief up.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Rewrite an email for a tougher audience](../walkthroughs/chat-rewrite-email.md)**
+
+    Turn the draft you'd never send into a message that actually lands — sharper, cleaner, more appropriate.
+
+    <span class="rc-meta" data-time="3" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 3 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Adapt a document or message for a different audience](../walkthroughs/chat-adapt-audience.md)**
+
     Transform any piece of content for a new audience in one prompt — no rewriting from scratch.
 
-    ### [Plan your week from your calendar and inbox](../walkthroughs/chat-plan-week.md)
+    <span class="rc-meta" data-time="10" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Draft an exec briefing from background materials](../walkthroughs/chat-exec-briefing.md)**
+
+    Walk into any exec meeting with sharp talking points pulled from your docs — not written from scratch at 8 PM.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Draft a status update from your week's activity](../walkthroughs/chat-weekly-status.md)**
+
+    Turn a scattered week of emails, chats, and meetings into a crisp five-bullet status update in 30 seconds.
+
+    <span class="rc-meta" data-time="5" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Plan and decide
+Get from a blank page to a real plan or a clear call.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Build a first-draft project plan](../walkthroughs/chat-project-plan.md)**
+
+    Go from a vague goal to a structured plan with phases, milestones, and owners — in one session.
+
+    <span class="rc-meta" data-time="5" data-roles="champion manager"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+-   **[Plan your week from your calendar and inbox](../walkthroughs/chat-plan-week.md)**
+
     Start every Monday with a clear view of what matters, what needs prep, and what you can safely defer.
+
+    <span class="rc-meta" data-time="5" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Brainstorm solutions with structured tradeoffs](../walkthroughs/chat-brainstorm.md)**
+
+    Get past the blank page: structured options with honest tradeoffs so you can make a faster, better decision.
+
+    <span class="rc-meta" data-time="10" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+-   **[Prep for a 1:1 in two minutes](../walkthroughs/chat-prep-1on1.md)**
+
+    Walk into any 1:1 with sharp talking points pulled from the work you've actually done that week.
+
+    <span class="rc-meta" data-time="2" data-roles="manager end-user"><span class="rc-chip rc-chip-time">⏱ 2 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Create from scratch
+Never start from a blank page again.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Build a meeting agenda from context and notes](../walkthroughs/chat-meeting-agenda.md)**
+
+    Never start from a blank page — build a structured, time-slotted agenda from whatever context you have.
+
+    <span class="rc-meta" data-time="5" data-roles="end-user manager champion"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Adopt as a team
+Turn "we have Copilot" into a habit other people pick up.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Run a "Prompt of the Day" for your team](../walkthroughs/chat-prompt-of-the-day.md)**
+
+    Turn "we have Copilot" into a real daily habit with a 30-second team drip.
+
+    <span class="rc-meta" data-time="10" data-roles="champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+</div>
+
+</section>
 
 ---
 
@@ -95,6 +223,9 @@ The full curated set for this stage lives in [Resources → Stage 1](../RESOURCE
 
 ## Where this leads
 
-Once chat is muscle memory, the next surprise is that you don't have to build anything to go further — Microsoft already ships purpose-built agents with your license.
-
-[→ Stage 2 · First-Party Agents](stage-2-first-party.md)
+<div class="rc-exit" markdown>
+<div class="rc-exit-text" markdown>
+**Reaching for chat 3+ times a week?** You're ready for the next surprise: you don't have to build anything to go further — Microsoft already ships purpose-built agents with your license.
+</div>
+[Continue to Stage 2 · First-Party Agents →](stage-2-first-party.md){ .rc-exit-cta }
+</div>

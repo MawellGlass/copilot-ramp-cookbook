@@ -28,47 +28,159 @@ You've handed Copilot the same kind of multi-step task more than once and though
 
 ---
 
-## Walkthroughs in this stage
+## Start here — if you only do three things
 
-Start with the flagship — a team-knowledge agent is the most useful first build for most people.
+Build the flagship knowledge agent, make it trustworthy with sharp instructions, then pilot it with real users and tune from their feedback.
 
-???+ note "Agent Builder walkthroughs"
+<div class="grid cards rc-pinned" markdown>
 
-    ### [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
-    **The flagship.** Point a no-code agent at your team's docs once — and let everyone ask questions in plain language.
+-   <span class="rc-habit">Habit 1<small>Day 1</small></span>
 
-    ### [Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)
+    **[Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)**
+
+    Point a no-code agent at your team's docs once — and let everyone ask questions in plain language.
+
+    <span class="rc-meta" data-time="20" data-roles="maker champion"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   <span class="rc-habit">Habit 2<small>Week 1</small></span>
+
+    **[Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)**
+
     The difference between an agent people trust and one they abandon is the quality of its instructions.
 
-    ### [Seed your agent with starter prompts](../walkthroughs/agent-builder-starter-prompts.md)
-    Good starter prompts tell people what the agent is for — without them having to guess at the blank cursor.
+    <span class="rc-meta" data-time="15" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    ### [Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)
+-   <span class="rc-habit">Habit 3<small>Month 1</small></span>
+
+    **[Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)**
+
     Your first agent improves when five people use it and tell you what broke — here's how to run that loop.
 
-    ### [Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)
-    Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the decision map that points at Stage 5.
+    <span class="rc-meta" data-time="15" data-roles="champion it-admin"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
 
-    ### [Build an onboarding agent for new hires](../walkthroughs/agent-builder-onboarding-agent.md)
+</div>
+
+---
+
+## All walkthroughs
+
+<div id="rc-filterbar"></div>
+
+<section class="rc-bucket" markdown>
+
+### Build your first agent
+The core loop — build it, make it stick, seed it, and pilot it.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)**
+
+    Point a no-code agent at your team's docs once — and let everyone ask questions in plain language.
+
+    <span class="rc-meta" data-time="20" data-roles="maker champion"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span> <span class="rc-chip rc-chip-star">★ Starter</span></span>
+
+-   **[Give your agent a persona and instructions that stick](../walkthroughs/agent-builder-persona-instructions.md)**
+
+    The difference between an agent people trust and one they abandon is the quality of its instructions.
+
+    <span class="rc-meta" data-time="15" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Seed your agent with starter prompts](../walkthroughs/agent-builder-starter-prompts.md)**
+
+    Good starter prompts tell people what the agent is for — without them having to guess at the blank cursor.
+
+    <span class="rc-meta" data-time="10" data-roles="maker champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Pilot your agent with a team and gather feedback](../walkthroughs/agent-builder-share-and-feedback.md)**
+
+    Your first agent improves when five people use it and tell you what broke — here's how to run that loop.
+
+    <span class="rc-meta" data-time="15" data-roles="champion it-admin"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Build for your team
+Stand up an agent that answers the questions your team keeps asking you.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Build an onboarding agent for new hires](../walkthroughs/agent-builder-onboarding-agent.md)**
+
     Give new team members a self-service agent for first-week questions — so you stop repeating yourself.
 
-    ### [Build an FAQ agent for a recurring process](../walkthroughs/agent-builder-faq-agent.md)
+    <span class="rc-meta" data-time="30" data-roles="manager champion hr"><span class="rc-chip rc-chip-time">⏱ 30 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+
+-   **[Build an FAQ agent for a recurring process](../walkthroughs/agent-builder-faq-agent.md)**
+
     Redirect the quick questions that consume your week to an agent that answers 24/7 from your own docs.
 
-    ### [Build a meeting-prep agent for a recurring 1:1 or standup](../walkthroughs/agent-builder-meeting-prep-agent.md)
+    <span class="rc-meta" data-time="20" data-roles="champion it-admin manager"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+
+-   **[Build a meeting-prep agent for a recurring 1:1 or standup](../walkthroughs/agent-builder-meeting-prep-agent.md)**
+
     Auto-generate talking points, agenda items, and context summaries before every recurring meeting.
 
-    ### [Build a "voice of customer" agent over your support inbox](../walkthroughs/agent-builder-voice-of-customer.md)
-    **Personal scope.** Ground an agent on your support email and ask it what customers are really saying — themes, frequency, urgency.
+    <span class="rc-meta" data-time="20" data-roles="manager end-user"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
 
-    ### [Build a personal research librarian over your OneDrive](../walkthroughs/agent-builder-research-librarian.md)
-    **Personal scope.** Turn years of saved files into a librarian you can ask — cited answers from your own accumulated knowledge.
+</div>
 
-    ### [Build a "writes in my voice" content coach from your sent mail](../walkthroughs/agent-builder-voice-content-coach.md)
-    **Personal scope.** Ground an agent on your Sent Items so it drafts and rewrites in your voice — not generic AI.
+</section>
 
-    ### [Build a sprint-review summarizer for your Friday demo](../walkthroughs/agent-builder-sprint-review-summarizer.md)
-    **Personal scope.** Turn every Friday demo into the same tidy recap — shipped, decisions, next, blockers — in one click.
+<section class="rc-bucket" markdown>
+
+### Build for yourself
+Ground a personal-scope agent on your own files and mail — value with an audience of one.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Build a "voice of customer" agent over your support inbox](../walkthroughs/agent-builder-voice-of-customer.md)**
+
+    Ground an agent on your support email and ask it what customers are really saying — themes, frequency, urgency.
+
+    <span class="rc-meta" data-time="20" data-roles="maker end-user"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Build a personal research librarian over your OneDrive](../walkthroughs/agent-builder-research-librarian.md)**
+
+    Turn years of saved files into a librarian you can ask — cited answers from your own accumulated knowledge.
+
+    <span class="rc-meta" data-time="20" data-roles="maker end-user"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Build a "writes in my voice" content coach from your sent mail](../walkthroughs/agent-builder-voice-content-coach.md)**
+
+    Ground an agent on your Sent Items so it drafts and rewrites in your voice — not generic AI.
+
+    <span class="rc-meta" data-time="20" data-roles="maker end-user"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Build a sprint-review summarizer for your Friday demo](../walkthroughs/agent-builder-sprint-review-summarizer.md)**
+
+    Turn every Friday demo into the same tidy recap — shipped, decisions, next, blockers — in one click.
+
+    <span class="rc-meta" data-time="20" data-roles="maker end-user developer"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Know when to level up
+Recognize the limits of declarative building — and where Studio takes over.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)**
+
+    Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the decision map that points at Stage 5.
+
+    <span class="rc-meta" data-time="10" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+</div>
+
+</section>
 
 ---
 
@@ -94,6 +206,9 @@ The full curated set for this stage lives in [Resources → Stage 4](../RESOURCE
 
 ## Where this leads
 
-When your simple agents start hitting limits — you need real actions, richer knowledge, multiple topics, or governance — you've outgrown declarative building. That's the cue for the low-code destination.
-
-[→ Stage 5 · Copilot Studio](stage-5-studio.md)
+<div class="rc-exit" markdown>
+<div class="rc-exit-text" markdown>
+**Your simple agents hitting limits three or more times?** When you need real actions, richer knowledge, multiple topics, or governance, you've outgrown declarative building. That's the cue for the low-code destination.
+</div>
+[Continue to Stage 5 · Copilot Studio →](stage-5-studio.md){ .rc-exit-cta }
+</div>

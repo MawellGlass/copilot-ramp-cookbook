@@ -28,203 +28,393 @@ Your declarative agents are bumping into limits: you need a real action against 
 
 ---
 
-## Walkthroughs — technical foundations
+## Start here — if you only do three things
 
-Build these in order to establish the platform skills all functional agents depend on.
+Build a real designed agent, give it an action against a real system, then ship it with a governance checklist.
 
-??? note "Core Studio walkthroughs"
+<div class="grid cards rc-pinned" markdown>
 
-    ### [Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
-    **Start here.** Go from Agent Builder to a real designed conversation with topics and grounding.
+-   <span class="rc-habit">Habit 1<small>Day 1</small></span>
 
-    ### [Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)
+    **[Build your first Studio agent with knowledge + a topic](../walkthroughs/studio-first-agent.md)**
+
+    Go from Agent Builder to a real designed conversation with topics and grounding.
+
+    <span class="rc-meta" data-time="45" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 45 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   <span class="rc-habit">Habit 2<small>Week 1</small></span>
+
+    **[Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)**
+
     Let the agent do things, not just answer — look up records, create tickets, trigger workflows.
 
-    ### [Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)
-    Extend the agent with external tools.
+    <span class="rc-meta" data-time="25" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 25 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    ### [Connect a Studio agent to a Microsoft Fabric data agent](../walkthroughs/studio-fabric-agent.md)
-    Ground the agent on your warehouse and semantic models — answer questions from data, not just documents.
+-   <span class="rc-habit">Habit 3<small>Month 1</small></span>
 
-    ### [Trigger a Power Automate flow from inside a Studio agent](../walkthroughs/studio-power-automate-flow.md)
-    Connect your agent to real business systems via Power Automate.
+    **[Publish and govern your agent](../walkthroughs/studio-publish.md)**
 
-    ### [Design a multi-turn conversation with fallback and clarification](../walkthroughs/studio-multi-turn-conversation.md)
-    Build an agent that asks what it needs to know and recovers gracefully.
-
-    ### [Configure an autonomous event-triggered agent](../walkthroughs/studio-autonomous-triggers.md)
-    Build an agent that acts when something happens — no user prompt required.
-
-    ### [Secure a Studio agent with authentication](../walkthroughs/studio-authentication.md)
-    Ensure only the right people can use your agent. For IT/admin.
-
-    ### [Test and evaluate a Studio agent before publishing](../walkthroughs/studio-test-evaluate.md)
-    Structured test cases before broad rollout.
-
-    ### [Publish and govern your agent](../walkthroughs/studio-publish.md)
     Ship to Teams and the web with a governance checklist.
 
-    ### [Govern and monitor your agents at scale](../walkthroughs/studio-govern-monitor.md)
-    ALM, analytics, and guardrails for a fleet of agents.
+    <span class="rc-meta" data-time="20" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    ### [Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)
-    Tie agent usage to outcomes. For managers and champions.
+</div>
 
 ---
 
-## Walkthroughs — functional use cases
+## All walkthroughs
 
-Agents designed for a specific business function. Each pairs with a [Solution Template](../solutions/index.md) you can copy, adapt, and build from directly.
+<div id="rc-filterbar"></div>
 
-### HR
+<section class="rc-bucket" markdown>
 
-??? example "HR — Answer employee questions with a policies agent"
+### Build the core agent
+The platform skills every Studio agent is built on — designed conversation and tools.
 
-    **[HR: Answer employee questions with a policies agent](../walkthroughs/studio-functional-hr-policy-faq.md)**
+<div class="grid cards rc-grid" markdown>
 
-    Give every employee a 24/7 HR FAQ agent grounded on your policy docs — consistent, cited answers and a structured escalation path for anything that needs a human.
+-   **[Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)**
 
-    Pairs with: [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md)
+    Go from Agent Builder to a real designed conversation with topics and grounding.
 
-??? example "HR — Guide new starters through a personalised first-week experience"
+    <span class="rc-meta" data-time="45" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 45 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span> <span class="rc-chip rc-chip-star">★ Starter</span></span>
 
-    **[HR: Guide new starters through a personalised first-week experience](../walkthroughs/studio-functional-hr-onboarding.md)**
+-   **[Design a multi-turn conversation with fallback and clarification](../walkthroughs/studio-multi-turn-conversation.md)**
 
-    Give every new employee a 24/7 first-week companion that knows their role, team, and start week — adapts the checklist and guidance to who they are, not a generic handbook.
+    Build an agent that asks what it needs to know and recovers gracefully.
 
-    Pairs with: [Onboarding Buddy Agent solution template](../solutions/onboarding-buddy-agent.md)
+    <span class="rc-meta" data-time="30" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 30 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-### IT
+-   **[Add an MCP tool integration to your Studio agent](../walkthroughs/studio-mcp-tool-integration.md)**
 
-??? example "IT — Triage support requests and answer from the knowledge base"
+    Extend the agent with external tools.
 
-    **[IT: Triage support requests and answer from the knowledge base](../walkthroughs/studio-functional-it-helpdesk.md)**
+    <span class="rc-meta" data-time="20" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    Deflect tier-1 IT tickets with instant KB answers — and for anything that needs a human, collect the right information and raise the ticket automatically.
+</div>
 
-    Pairs with: [IT Helpdesk Triage Agent solution template](../solutions/it-helpdesk-triage-agent.md)
+</section>
 
-??? example "IT — Self-service software and hardware access requests"
+<section class="rc-bucket" markdown>
 
-    **[IT: Self-service software and hardware access requests](../walkthroughs/studio-functional-it-access-request.md)**
+### Connect real actions & data
+Move beyond answering — let the agent act against real systems and warehouse data.
 
-    Let employees request software, hardware, and system access through a guided conversation — validated against the approved list and auto-routed to the right IT queue with a complete ticket.
+<div class="grid cards rc-grid" markdown>
 
-    Pairs with: [IT Access Request Agent solution template](../solutions/it-access-request-agent.md)
+-   **[Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)**
 
-### Finance
+    Let the agent do things, not just answer — look up records, create tickets, trigger workflows.
 
-??? example "Finance — Self-service expense and procurement guidance"
+    <span class="rc-meta" data-time="25" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 25 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    **[Finance: Self-service expense and procurement guidance](../walkthroughs/studio-functional-finance-expense.md)**
+-   **[Trigger a Power Automate flow from inside a Studio agent](../walkthroughs/studio-power-automate-flow.md)**
 
-    Give employees instant answers on expense policy and procurement rules — and guide them into the right process rather than leaving them to hunt through the intranet.
+    Connect your agent to real business systems via Power Automate.
 
-    Pairs with: [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md)
+    <span class="rc-meta" data-time="30" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 30 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-??? example "Finance — Self-service spend and budget Q&A for budget owners"
+-   **[Connect a Studio agent to a Microsoft Fabric data agent](../walkthroughs/studio-fabric-agent.md)**
 
-    **[Finance: Self-service spend and budget Q&A for budget owners](../walkthroughs/studio-functional-finance-budget-qa.md)**
+    Ground the agent on your warehouse and semantic models — answer questions from data, not just documents.
 
-    Give budget owners instant answers on spend position, variance from plan, and the Finance approval process — without waiting for a Finance business partner to respond.
+    <span class="rc-meta" data-time="40" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 40 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    Pairs with: [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md)
+</div>
 
-### Sales
+</section>
 
-??? example "Sales — Product intel and objection handling"
+<section class="rc-bucket" markdown>
 
-    **[Sales: Product intel and objection handling for sales reps](../walkthroughs/studio-functional-sales-intel.md)**
+### Make it autonomous & secure
+Let the agent act on events — and make sure only the right people can use it.
 
-    Give every rep instant access to the right product story, competitive positioning, and objection responses — grounded on your actual sales content, available mid-call.
+<div class="grid cards rc-grid" markdown>
 
-    Pairs with: [Sales Enablement Agent solution template](../solutions/sales-enablement-agent.md)
+-   **[Configure an autonomous event-triggered agent](../walkthroughs/studio-autonomous-triggers.md)**
 
-??? example "Sales — Build proposals and RFP responses with your approved content"
+    Build an agent that acts when something happens — no user prompt required.
 
-    **[Sales: Build proposals and RFP responses with your approved content](../walkthroughs/studio-functional-sales-proposal.md)**
+    <span class="rc-meta" data-time="45" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 45 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    Help reps pull together the right content for proposals and RFP responses — grounded on your approved solution library and messaging — so the first draft takes 30 minutes instead of 3 hours.
+-   **[Secure a Studio agent with authentication](../walkthroughs/studio-authentication.md)**
 
-    Pairs with: [Sales Proposal & RFP Agent solution template](../solutions/sales-proposal-rfp-agent.md)
+    Ensure only the right people can use your agent.
 
-### Legal & Compliance
+    <span class="rc-meta" data-time="30" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 30 min</span> <span class="rc-chip rc-chip-role">👤 IT</span></span>
 
-??? example "Legal & Compliance — Policy guidance and process navigation"
+</div>
 
-    **[Legal & Compliance: Policy guidance and process navigation](../walkthroughs/studio-functional-legal-compliance.md)**
+</section>
 
-    Give employees instant answers on compliance policies and legal processes — with strict scope controls and an unambiguous escalation path for anything that needs a qualified human.
+<section class="rc-bucket" markdown>
 
-    Pairs with: [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md)
+### Test, publish & govern
+Prove it before rollout, ship it, then manage a fleet at scale.
 
-??? example "Legal — Guide employees through contract routing and requirements"
+<div class="grid cards rc-grid" markdown>
 
-    **[Legal: Guide employees through contract routing and requirements](../walkthroughs/studio-functional-legal-contract.md)**
+-   **[Test and evaluate a Studio agent before publishing](../walkthroughs/studio-test-evaluate.md)**
 
-    Give employees a clear, consistent process for getting contracts reviewed — what type of contract, what Legal needs, and where to submit — without every query landing on the legal intake inbox first.
+    Structured test cases before broad rollout.
 
-    Pairs with: [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md)
+    <span class="rc-meta" data-time="30" data-roles="maker champion"><span class="rc-chip rc-chip-time">⏱ 30 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-### Marketing
+-   **[Publish and govern your agent](../walkthroughs/studio-publish.md)**
 
-??? example "Marketing — Turn a campaign brief into asset checklist and draft copy"
+    Ship to Teams and the web with a governance checklist.
 
-    **[Marketing: brief to campaign drafts](../walkthroughs/studio-functional-marketing-campaign.md)**
+    <span class="rc-meta" data-time="20" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    Turn a one-paragraph brief into a complete asset checklist and on-brand first-draft copy — so the team starts every campaign from a draft, not a blank page, with unverified claims flagged for review.
+-   **[Govern and monitor your agents at scale](../walkthroughs/studio-govern-monitor.md)**
 
-    Pairs with: [Marketing Campaign Agent solution template](../solutions/marketing-campaign-agent.md)
+    ALM, analytics, and guardrails for a fleet of agents.
 
-### Customer Support
+    <span class="rc-meta" data-time="20" data-roles="it-admin"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 IT</span></span>
 
-??? example "Customer Support — Deflect common questions and draft agent replies"
+</div>
 
-    **[Customer Support: deflect and draft, escalate the rest](../walkthroughs/studio-functional-support-deflection.md)**
+</section>
 
-    The inward-facing cousin of the external Foundry support agent: it answers from approved help content, drafts send-ready replies, deflects the easy ones on self-serve, and escalates the edge cases.
+<section class="rc-bucket" markdown>
 
-    Pairs with: [Customer Support Deflection Agent solution template](../solutions/support-deflection-agent.md)
+### Make the business case
+Tie agent usage to outcomes so the work gets funded.
 
-### Procurement
+<div class="grid cards rc-grid" markdown>
 
-??? example "Procurement — Sourcing requests with vendor shortlists and policy gates"
+-   **[Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)**
 
-    **[Procurement: request to vendors to policy gates](../walkthroughs/studio-functional-procurement-sourcing.md)**
+    Tie agent usage to outcomes.
 
-    Take a purchase request, return a shortlist of approved preferred vendors, and apply the policy gates automatically — so people source fast and stay on contract instead of going off-contract by accident.
+    <span class="rc-meta" data-time="15" data-roles="manager champion"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
 
-    Pairs with: [Procurement Sourcing Agent solution template](../solutions/procurement-sourcing-agent.md)
+</div>
 
-### Field Service
+</section>
 
-??? example "Field Service — Triage symptoms to likely cause and dispatch path"
+<section class="rc-bucket" markdown>
 
-    **[Field Service: symptoms to dispatch path](../walkthroughs/studio-functional-field-service-triage.md)**
+### Employee services (HR · IT · Finance)
+Function-specific agents that answer routine questions and run guided requests. Each pairs with a solution template below.
 
-    Take a reported symptom or fault code, return the most likely cause, and recommend the right dispatch path — self-fix, remote, or a truck roll with the right parts — behind a hard safety rule.
+<div class="grid cards rc-grid" markdown>
 
-    Pairs with: [Field Service Triage Agent solution template](../solutions/field-service-triage-agent.md)
+-   **[HR: Answer employee questions with a policies agent](../walkthroughs/studio-functional-hr-policy-faq.md)**
 
-### Engineering
+    A 24/7 HR FAQ agent grounded on your policy docs — consistent, cited answers and a structured escalation path.
 
-??? example "Engineering — Match alerts to runbook steps and escalation"
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin champion"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    **[Engineering: alert to runbook to escalation](../walkthroughs/studio-functional-engineering-oncall.md)**
+-   **[HR: Guide new starters through a personalised first week](../walkthroughs/studio-functional-hr-onboarding.md)**
 
-    Meet the on-call engineer when an alert fires: match it to the right runbook step, guide the fix one step at a time, and know exactly who to escalate to when the runbook runs out — read-first by design.
+    A first-week companion that adapts the checklist and guidance to a new hire's role, team, and start week.
 
-    Pairs with: [Engineering On-Call Runbook Agent solution template](../solutions/engineering-oncall-runbook-agent.md)
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin champion"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-### Workplace & Operations
+-   **[IT: Triage support requests and answer from the knowledge base](../walkthroughs/studio-functional-it-helpdesk.md)**
 
-??? example "Workplace — Plan an internal event end to end"
+    Deflect tier-1 tickets with instant KB answers — and raise a complete ticket automatically when a human is needed.
 
-    **[Workplace: plan an internal event end to end](../walkthroughs/studio-functional-events-coordination.md)**
+    <span class="rc-meta" data-time="270" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 4–5 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-    Turn "I'm running an all-hands / offsite / team day" into an organised plan — logistics checklist, room and catering bookings, and drafted attendee comms — in one interaction, inside policy and budget.
+-   **[IT: Self-service software and hardware access requests](../walkthroughs/studio-functional-it-access-request.md)**
 
-    Pairs with: [Event Coordination Agent solution template](../solutions/event-coordination-agent.md)
+    Guided software, hardware, and access requests — validated and auto-routed to the right IT queue.
+
+    <span class="rc-meta" data-time="270" data-roles="maker it-admin champion"><span class="rc-chip rc-chip-time">⏱ 4–5 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Finance: Self-service expense and procurement guidance](../walkthroughs/studio-functional-finance-expense.md)**
+
+    Instant answers on expense policy and procurement rules — and a guided path into the right process.
+
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin champion"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Finance: Spend and budget Q&A for budget owners](../walkthroughs/studio-functional-finance-budget-qa.md)**
+
+    Instant answers on spend position, variance from plan, and the approval process — without waiting on Finance.
+
+    <span class="rc-meta" data-time="210" data-roles="maker champion manager"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Revenue & growth (Sales · Marketing)
+Agents that put approved content and intel in front of the people who sell and market.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Sales: Product intel and objection handling](../walkthroughs/studio-functional-sales-intel.md)**
+
+    Give every rep the right product story, competitive positioning, and objection responses — mid-call.
+
+    <span class="rc-meta" data-time="210" data-roles="maker champion manager"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Sales: Build proposals and RFP responses](../walkthroughs/studio-functional-sales-proposal.md)**
+
+    Assemble proposal and RFP content from your approved library — first draft in 30 minutes, not 3 hours.
+
+    <span class="rc-meta" data-time="210" data-roles="maker champion manager"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Marketing: Turn a brief into a checklist and draft copy](../walkthroughs/studio-functional-marketing-campaign.md)**
+
+    Turn a one-paragraph brief into an asset checklist and on-brand first-draft copy, with claims flagged for review.
+
+    <span class="rc-meta" data-time="210" data-roles="maker marketer"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Risk, support & operations
+Agents that navigate process, deflect support load, and coordinate operational work safely.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Legal & Compliance: Policy guidance and process navigation](../walkthroughs/studio-functional-legal-compliance.md)**
+
+    Instant answers on compliance policies and legal processes — with strict scope and a clear escalation path.
+
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin champion"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Legal: Guide employees through contract routing](../walkthroughs/studio-functional-legal-contract.md)**
+
+    A clear, consistent process for getting contracts reviewed — type, requirements, and where to submit.
+
+    <span class="rc-meta" data-time="150" data-roles="maker it-admin champion"><span class="rc-chip rc-chip-time">⏱ 2–3 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Customer Support: Deflect common questions and draft replies](../walkthroughs/studio-functional-support-deflection.md)**
+
+    Answer from approved help content, draft send-ready replies, deflect the easy ones, and escalate the edge cases.
+
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Procurement: Sourcing requests with vendor shortlists](../walkthroughs/studio-functional-procurement-sourcing.md)**
+
+    Take a purchase request, return a shortlist of approved vendors, and apply the policy gates automatically.
+
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Field Service: Triage symptoms to dispatch path](../walkthroughs/studio-functional-field-service-triage.md)**
+
+    Take a symptom or fault code, return the likely cause, and recommend the right dispatch path — behind a hard safety rule.
+
+    <span class="rc-meta" data-time="270" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 4–5 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Engineering: Match alerts to runbook steps and escalation](../walkthroughs/studio-functional-engineering-oncall.md)**
+
+    Match an alert to the right runbook step, guide the fix one step at a time, and know exactly who to escalate to.
+
+    <span class="rc-meta" data-time="270" data-roles="maker developer it-admin"><span class="rc-chip rc-chip-time">⏱ 4–5 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+-   **[Workplace: Plan an internal event end to end](../walkthroughs/studio-functional-events-coordination.md)**
+
+    Turn "I'm running an all-hands" into an organised plan — logistics, bookings, and drafted comms — within policy.
+
+    <span class="rc-meta" data-time="210" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 3–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
+
+</div>
+
+</section>
+
+---
+
+## Build something deployable
+
+Don't start from a blank canvas. Each **Studio solution template** is a copy-paste spec — system prompt, knowledge guidance, topics, test cases, and a deployment checklist — that a maker can build in a half-day. Copy, adapt to your function, and ship.
+
+<div class="grid cards" markdown>
+
+-   **[Policy FAQ Agent](../solutions/policy-faq-agent.md)**
+
+    Answers policy and process questions from your org's documents — the cross-functional starting point.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 2–3 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: HR · IT · Finance · Legal</span></span>
+
+-   **[Onboarding Buddy Agent](../solutions/onboarding-buddy-agent.md)**
+
+    A personalised first-week guide that adapts to each new starter's role, team, and start week.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: HR</span></span>
+
+-   **[IT Helpdesk Triage Agent](../solutions/it-helpdesk-triage-agent.md)**
+
+    Deflect tier-1 tickets with instant KB answers and automate ticket creation for the rest.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 4–5 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: IT</span></span>
+
+-   **[IT Access Request Agent](../solutions/it-access-request-agent.md)**
+
+    Guided software, hardware, and permissions requests with automatic ITSM ticket creation.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 4–5 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: IT</span></span>
+
+-   **[Finance Expense & Procurement Agent](../solutions/finance-expense-agent.md)**
+
+    Self-service answers on expense policy, procurement rules, and approval thresholds.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Finance</span></span>
+
+-   **[Sales Enablement Agent](../solutions/sales-enablement-agent.md)**
+
+    Instant competitive intel, case studies, and talk tracks, grounded on your sales content.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Sales</span></span>
+
+-   **[Sales Proposal & RFP Agent](../solutions/sales-proposal-rfp-agent.md)**
+
+    Approved proposal content, RFP responses, and case studies assembled on demand.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Sales</span></span>
+
+-   **[Legal & Compliance Guidance Agent](../solutions/legal-compliance-agent.md)**
+
+    Deflect routine process questions with strict scope and escalation controls.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Legal</span></span>
+
+-   **[Marketing Campaign Agent](../solutions/marketing-campaign-agent.md)**
+
+    Turn a campaign brief into an asset checklist and on-brand first-draft copy.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Marketing</span></span>
+
+-   **[Customer Support Deflection Agent](../solutions/support-deflection-agent.md)**
+
+    Answer from approved help content, draft replies, and deflect common questions.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Support</span></span>
+
+-   **[Procurement Sourcing Agent](../solutions/procurement-sourcing-agent.md)**
+
+    A compliant vendor shortlist with policy gates and approval routing.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Procurement</span></span>
+
+-   **[Field Service Triage Agent](../solutions/field-service-triage-agent.md)**
+
+    Triage symptoms to the likely cause and the right dispatch path, safely.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 4–5 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Field Service</span></span>
+
+-   **[Engineering On-Call Runbook Agent](../solutions/engineering-oncall-runbook-agent.md)**
+
+    Match alerts to runbook steps and the escalation path under pressure — read-first by design.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 4–5 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Engineering</span></span>
+
+-   **[Event Coordination Agent](../solutions/event-coordination-agent.md)**
+
+    Plan internal events — rooms, catering, comms — within policy and budget.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–4 hrs to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: Workplace</span></span>
+
+</div>
 
 ---
 
@@ -253,6 +443,9 @@ The full curated set for this stage lives in [Resources → Stage 5](../RESOURCE
 
 ## Where this leads
 
-Copilot Studio is the destination for most agent-building. But when an agent has to be *engineered* — custom or fine-tuned models, autonomous orchestration, or MCP tools at scale — there's one more frontier beyond low-code. Most people never need it; keep a backlog from the [Use-Case Catalog](../CATALOG.md) and make the [ROI case](../walkthroughs/studio-roi-business-case.md) for the agents that matter.
-
-[→ Stage 6 · Foundry](stage-6-foundry.md)
+<div class="rc-exit" markdown>
+<div class="rc-exit-text" markdown>
+**Shipping Studio agents but hitting a real ceiling?** When an agent has to be *engineered* — custom or fine-tuned models, autonomous orchestration, or MCP tools at scale — there's one more frontier beyond low-code. Most people never need it.
+</div>
+[Continue to Stage 6 · Foundry →](stage-6-foundry.md){ .rc-exit-cta }
+</div>

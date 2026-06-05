@@ -35,53 +35,202 @@ You've outgrown low-code. A Copilot Studio agent can't express what you need: yo
 
 ---
 
-## Walkthroughs — the pro-code frontier
+## Start here — if you only do three things
 
-Unlike earlier stages, these are **developer walkthroughs**: representative SDK/CLI patterns and the
-decisions behind them, not click-by-click product tours. Foundry moves fast — each page links the
-authoritative Microsoft docs to verify against. Build them roughly in order.
+Prove the plumbing with a first SDK agent, re-platform a real agent that hit a ceiling, then put an evaluation gate around it before it ships.
 
-??? note "Core Foundry walkthroughs"
+<div class="grid cards rc-pinned" markdown>
 
-    ### [Build your first pro-code agent with the Foundry Agent Service](../walkthroughs/foundry-first-agent.md)
-    **Start here.** Create an agent from the SDK, run a turn, and prove your project, identity, and plumbing work.
+-   <span class="rc-habit">Habit 1<small>Day 1</small></span>
 
-    ### [Graduate a Copilot Studio agent into pro-code Foundry](../walkthroughs/foundry-graduate-from-studio.md)
+    **[Build your first pro-code agent with the Foundry Agent Service](../walkthroughs/foundry-first-agent.md)**
+
+    Create an agent from the SDK, run a turn, and prove your project, identity, and plumbing work.
+
+    <span class="rc-meta" data-time="60" data-roles="developer"><span class="rc-chip rc-chip-time">⏱ 60 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   <span class="rc-habit">Habit 2<small>Week 1</small></span>
+
+    **[Graduate a Copilot Studio agent into pro-code Foundry](../walkthroughs/foundry-graduate-from-studio.md)**
+
     The usual on-ramp — re-platform a proven low-code agent that hit a real ceiling.
 
-    ### [Give a Foundry agent custom tools and MCP integrations](../walkthroughs/foundry-mcp-tools.md)
+    <span class="rc-meta" data-time="90" data-roles="developer maker"><span class="rc-chip rc-chip-time">⏱ 90 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   <span class="rc-habit">Habit 3<small>Month 1</small></span>
+
+    **[Evaluate and continuously monitor a Foundry agent](../walkthroughs/foundry-evaluate-monitor.md)**
+
+    Score quality on a dataset before you ship, and watch it in production.
+
+    <span class="rc-meta" data-time="75" data-roles="developer it-admin"><span class="rc-chip rc-chip-time">⏱ 75 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+</div>
+
+---
+
+## All walkthroughs
+
+Unlike earlier stages, these are **developer walkthroughs** — representative SDK/CLI patterns and the decisions behind them, not click-by-click product tours. Foundry moves fast; each page links the authoritative Microsoft docs to verify against.
+
+<div id="rc-filterbar"></div>
+
+<section class="rc-bucket" markdown>
+
+### Build your first pro-code agent
+Stand up the agent, re-platform a proven one, and give it real tools.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Build your first pro-code agent with the Foundry Agent Service](../walkthroughs/foundry-first-agent.md)**
+
+    Create an agent from the SDK, run a turn, and prove your project, identity, and plumbing work.
+
+    <span class="rc-meta" data-time="60" data-roles="developer"><span class="rc-chip rc-chip-time">⏱ 60 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span> <span class="rc-chip rc-chip-star">★ Starter</span></span>
+
+-   **[Graduate a Copilot Studio agent into pro-code Foundry](../walkthroughs/foundry-graduate-from-studio.md)**
+
+    The usual on-ramp — re-platform a proven low-code agent that hit a real ceiling.
+
+    <span class="rc-meta" data-time="90" data-roles="developer maker"><span class="rc-chip rc-chip-time">⏱ 90 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   **[Give a Foundry agent custom tools and MCP integrations](../walkthroughs/foundry-mcp-tools.md)**
+
     Turn a talking agent into a doing agent with function tools and standards-based MCP.
 
-    ### [Evaluate and continuously monitor a Foundry agent](../walkthroughs/foundry-evaluate-monitor.md)
-    Score quality on a dataset before you ship, and watch it in production. For developers and IT/admin.
+    <span class="rc-meta" data-time="75" data-roles="developer"><span class="rc-chip rc-chip-time">⏱ 75 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
 
-    ### [Orchestrate multiple agents and autonomous runs](../walkthroughs/foundry-autonomous-orchestration.md)
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Orchestrate, evaluate & govern
+Move from one agent to a governed system you can trust in production.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Orchestrate multiple agents and autonomous runs](../walkthroughs/foundry-autonomous-orchestration.md)**
+
     Move from one agent to a system of agents that hand off work and run when triggered.
 
-    ### [Secure and govern Foundry agents in production](../walkthroughs/foundry-govern-secure.md)
-    Tenant-isolated data, least-privilege identity, and the governance plane. For IT/admin and developers.
+    <span class="rc-meta" data-time="90" data-roles="developer"><span class="rc-chip rc-chip-time">⏱ 90 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
 
-??? note "Production engineering walkthroughs — models, cost, and safety"
+-   **[Evaluate and continuously monitor a Foundry agent](../walkthroughs/foundry-evaluate-monitor.md)**
 
-    These go past building an agent to **operating** one as production software: swapping models safely,
-    keeping it affordable, and proving it's hard to break. Reach for them once an agent is real and busy.
+    Score quality on a dataset before you ship, and watch it in production.
 
-    ### [Fine-tune a domain model and serve it from a Foundry agent](../walkthroughs/foundry-fine-tune-serve.md)
+    <span class="rc-meta" data-time="75" data-roles="developer it-admin"><span class="rc-chip rc-chip-time">⏱ 75 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   **[Secure and govern Foundry agents in production](../walkthroughs/foundry-govern-secure.md)**
+
+    Tenant-isolated data, least-privilege identity, and the governance plane.
+
+    <span class="rc-meta" data-time="60" data-roles="it-admin developer"><span class="rc-chip rc-chip-time">⏱ 60 min</span> <span class="rc-chip rc-chip-role">👤 IT</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Operate it in production
+Go past building to *operating* — swap models safely, keep it affordable, and prove it's hard to break.
+
+<div class="grid cards rc-grid" markdown>
+
+-   **[Fine-tune a domain model and serve it from a Foundry agent](../walkthroughs/foundry-fine-tune-serve.md)**
+
     The last lever when prompting and retrieval hit their ceiling — train the behaviour in, then serve it behind an agent.
 
-    ### [A/B and shadow-deploy a model swap behind a Foundry agent](../walkthroughs/foundry-ab-shadow-deploy.md)
+    <span class="rc-meta" data-time="180" data-roles="developer it-admin"><span class="rc-chip rc-chip-time">⏱ 2–4 hrs</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   **[A/B and shadow-deploy a model swap behind a Foundry agent](../walkthroughs/foundry-ab-shadow-deploy.md)**
+
     Adopt a new or tuned model the way you ship risky code — shadow, canary, then promote on the numbers.
 
-    ### [Token-budgeting and cost optimization for a production agent](../walkthroughs/foundry-cost-optimization.md)
+    <span class="rc-meta" data-time="90" data-roles="developer it-admin"><span class="rc-chip rc-chip-time">⏱ 90 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   **[Token-budgeting and cost optimization for a production agent](../walkthroughs/foundry-cost-optimization.md)**
+
     Make tokens a metric you watch, then cut spend at scale without quietly cutting quality.
 
-    ### [Build a red-team / safety eval harness](../walkthroughs/foundry-red-team-eval.md)
+    <span class="rc-meta" data-time="90" data-roles="developer it-admin"><span class="rc-chip rc-chip-time">⏱ 90 min</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+-   **[Build a red-team / safety eval harness](../walkthroughs/foundry-red-team-eval.md)**
+
     Try to break your own agent — repeatably — so adversarial regressions fail the build, not reach users.
 
-!!! tip "Pro-code solution templates"
-    These walkthroughs pair with copy-and-adapt **[Foundry solution templates](../solutions/index.md#foundry-templates-pro-code)** —
-    including the signature pro-code patterns: NL-to-SQL analytics, browser-using (computer-use) agents,
-    voice / contact-center IVR, private-repo code review, and multi-modal document classification at scale.
+    <span class="rc-meta" data-time="120" data-roles="developer it-admin"><span class="rc-chip rc-chip-time">⏱ 2 hrs</span> <span class="rc-chip rc-chip-role">👤 Developer</span></span>
+
+</div>
+
+</section>
+
+---
+
+## Build something deployable
+
+These walkthroughs pair with copy-and-adapt **Foundry solution templates** — a representative code scaffold, an evaluation gate, and a deployment checklist. Reach for one only when a Studio agent genuinely can't carry the job.
+
+<div class="grid cards" markdown>
+
+-   **[Pro-Code Grounded Q&A Agent](../solutions/foundry-knowledge-agent.md)**
+
+    Custom retrieval, an evaluation gate, and code-owned identity for grounded Q&A that outgrew Studio.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 1–2 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: any grounded Q&A workload</span></span>
+
+-   **[Multi-Agent Workflow Orchestrator](../solutions/foundry-orchestrator-agent.md)**
+
+    Automate a multi-step process across specialist agents with deterministic control and a workflow-level eval gate.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 2–4 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: research → draft → review, intake → enrich → route</span></span>
+
+-   **[High-Volume Document Processing Agent](../solutions/foundry-document-processing-agent.md)**
+
+    Extract structured data from documents at scale, with schema validation and a precision/recall gate.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 2–4 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: invoice/PO extraction, contract clauses, claims intake</span></span>
+
+-   **[Customer-Facing Support Agent](../solutions/foundry-support-agent.md)**
+
+    An external, action-taking support agent with strict guardrails, content safety, and continuous evaluation.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–5 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: order/account support, entitlement checks, ticketing</span></span>
+
+-   **[NL-to-SQL Analytics Agent](../solutions/foundry-nl-to-sql-agent.md)**
+
+    "Ask your data warehouse" self-service analytics with a SQL-safety layer and a correctness gate.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 2–4 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: self-service BI, ops/finance/product analytics</span></span>
+
+-   **[Browser-Using (Computer-Use) Agent](../solutions/foundry-computer-use-agent.md)**
+
+    Automate web apps that have no API — sandboxed, allow-listed, and human-confirmed on irreversible actions.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–5 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: legacy web apps, form-filling, portal data-gathering</span></span>
+
+-   **[Voice Agent / Contact-Center IVR](../solutions/foundry-voice-agent.md)**
+
+    A real-time phone agent — speech-to-text, grounded conversation, text-to-speech, clean human handoff.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 3–5 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: support lines, booking lines, helpdesk hotlines</span></span>
+
+-   **[Code-Review / PR-Triage Agent](../solutions/foundry-code-review-agent.md)**
+
+    Advisory, private-repo PR review and reviewer routing — comments only, never merges.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 2–4 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: PR triage, review assistance, reviewer routing</span></span>
+
+-   **[Multi-Modal Document Classification Agent](../solutions/foundry-document-classification-agent.md)**
+
+    Sort a high-volume document stream by vision + text, with confidence-based routing and a precision/recall gate.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-build">⏱ 2–4 days to build</span> <span class="rc-chip rc-chip-adapt">⚙️ Adapts to: intake routing, claims triage, content moderation</span></span>
+
+</div>
 
 ---
 
@@ -111,8 +260,9 @@ The full curated set for this stage lives in [Resources → Stage 6](../RESOURCE
 
 ## You've reached the frontier
 
-There's no Stage 7. From Chat to Foundry, the ramp has taken you from a daily habit to engineered, governed
-agents — pick the **lowest** stage that solves each problem, and only climb when the work demands it. Keep a
-backlog of agents worth building from the [Use-Case Catalog](../CATALOG.md).
-
-[→ Back to the full Use-Case Catalog](../CATALOG.md)
+<div class="rc-exit" markdown>
+<div class="rc-exit-text" markdown>
+**There's no Stage 7.** From Chat to Foundry, the ramp has taken you from a daily habit to engineered, governed agents — pick the *lowest* stage that solves each problem, and only climb when the work demands it. Keep a backlog of agents worth building.
+</div>
+[Back to the full Use-Case Catalog →](../CATALOG.md){ .rc-exit-cta }
+</div>
