@@ -67,7 +67,13 @@ document is signal for you and asking it to throw away the rest.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The catch-up prompt asking Copilot to find and summarize a recent document](../screenshots/chat-document-catch-up/01-prompt-entered.png)
+**Point it at the document.** Ask for key points, decisions, open questions, and your next step.
+
+![Copilot's grounded catch-up citing the actual document](../screenshots/chat-document-catch-up/02-response.png)
+**Get a grounded catch-up.** Copilot names the real file, cites it, and pulls out what matters — so you skim, not read.
 
 ## Make it better
 Same document, sharper asks:

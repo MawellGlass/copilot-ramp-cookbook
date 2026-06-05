@@ -68,7 +68,13 @@ the **structure** (shipped / in-progress / blocked), the **audience** (manager),
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The weekly-status prompt scoping the window, sources, and structure](../screenshots/chat-weekly-status/01-prompt-entered.png)
+**Scope the window and the structure.** Last 5 working days across email, Teams, and meetings — shipped / in progress / blocked.
+
+![Copilot's grounded status update drawn from the week's activity](../screenshots/chat-weekly-status/02-response.png)
+**Get a draft grounded in your real week.** Copilot reads across your activity and returns tight, skimmable bullets.
 
 ## Make it better
 Once the basic draft is solid, sharpen it into something you'll reuse every week:

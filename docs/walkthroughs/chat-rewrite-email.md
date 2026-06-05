@@ -66,7 +66,13 @@ better" gives you generic results; specifying the audience is what makes the rew
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![A wordy draft email and the rewrite instruction in the Copilot composer](../screenshots/chat-rewrite-email/01-prompt-entered.png)
+**Hand it the draft and the audience.** Paste the email and name the reader, the length, and the guardrails.
+
+![Copilot's tightened rewrite leading with the ask](../screenshots/chat-rewrite-email/02-response.png)
+**Get back a version that leads with the ask.** Shorter, direct, one clear next step — facts intact.
 
 ## Make it better
 One draft, many audiences:

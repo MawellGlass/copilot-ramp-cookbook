@@ -67,7 +67,13 @@ correct the premise before you build on it.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The project-plan prompt for a CRM migration in the Copilot composer](../screenshots/chat-project-plan/01-prompt-entered.png)
+**Give it the goal and the shape.** Name the deadline, the structure (phases → milestones → owners), and the artifact you want.
+
+![Copilot's milestone table with phases, target dates, and owner roles](../screenshots/chat-project-plan/02-response.png)
+**Get a structured first cut.** Phases, a milestone table with owner roles, and a risk list you can edit down.
 
 ## Make it better
 A plan is a living thing — keep steering:

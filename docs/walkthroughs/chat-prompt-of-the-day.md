@@ -68,7 +68,13 @@ lands. A team that wins on day one comes back on day two — that's the whole me
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The prompt asking for 5 role-specific starter prompts in the Copilot composer](../screenshots/chat-prompt-of-the-day/01-prompt-entered.png)
+**Ask for role-specific, real-task prompts.** One line of value each, easiest-win first.
+
+![Copilot's five paste-ready starter prompts ordered easiest-win first](../screenshots/chat-prompt-of-the-day/02-response.png)
+**Get a week's worth of drip prompts.** Each tied to a real task, with the business value spelled out.
 
 ## Make it better
 The drip compounds when you turn it into a system:
