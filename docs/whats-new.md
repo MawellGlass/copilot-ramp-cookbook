@@ -11,6 +11,44 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### Stage pages redesigned: cards, filters, and a clear "first three things"
+*June 5, 2026*
+
+Every stage page (1–6) was rebuilt around how people actually choose what to try next:
+
+- **Job-to-be-done buckets** — walkthroughs are now grouped by the outcome you want (e.g. Stage 1's
+  *Catch up faster*, *Communicate sharper*, *Plan and decide*) instead of one long alphabetical list.
+- **Walkthrough cards** — each entry is a card with a one-line value, a ⏱ time estimate, a 👤 role,
+  and a ★ marker on the best starting point.
+- **Role + time filters** — a chip bar at the top of each stage filters the cards by role
+  (End user, Manager, Champion, Maker, Developer, IT) and by time, with a live count.
+- **"If you only do three things"** — a pinned block at the top of every stage highlights the three
+  highest-leverage walkthroughs, sequenced as Day 1 / Week 1 / Month 1.
+- **Know when to climb** — each stage ends with a card that tells you when you're ready for the next one.
+
+### "Build something deployable" template galleries on Stages 5 & 6
+*June 5, 2026*
+
+Stages 5 and 6 now end with a dedicated template gallery so makers and developers can go straight from
+reading to building. Each card shows **⏱ time to build** and **⚙️ what it adapts to** — 14 low-code
+**Studio** templates (HR, IT, Finance, Sales, Legal, Marketing, Support, Procurement, Field Service,
+Engineering, Workplace) and 9 pro-code **Foundry** blueprints (grounded Q&A, orchestration, document
+processing, support, NL-to-SQL, computer-use, voice/IVR, code review, and document classification).
+
+### Library expansion: 95 walkthroughs and 23 solution templates
+*June 5, 2026*
+
+- **Functional Studio agents** — 16 new function-specific walkthroughs, each paired with a copy-and-adapt
+  solution template, spanning HR, IT, Finance, Sales, Legal & Compliance, Marketing, Customer Support,
+  Procurement, Field Service, Engineering, and Workplace operations.
+- **Foundry production engineering** — new developer walkthroughs for operating an agent as software:
+  [fine-tune and serve a domain model](walkthroughs/foundry-fine-tune-serve.md),
+  [A/B and shadow-deploy a model swap](walkthroughs/foundry-ab-shadow-deploy.md),
+  [token-budgeting and cost optimization](walkthroughs/foundry-cost-optimization.md), and a
+  [red-team / safety eval harness](walkthroughs/foundry-red-team-eval.md).
+- **Where it stands** — the cookbook now spans **95 walkthroughs** and **23 ready-to-adapt solution
+  templates** across the six-stage ramp.
+
 ### Real product screenshots across the ramp
 *June 4, 2026*
 
