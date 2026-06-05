@@ -129,16 +129,19 @@ nav:
   - Solution Templates:
       - solutions/index.md
       - Studio:
-          - "Policy FAQ Agent": solutions/policy-faq-agent.md
-          - "IT Helpdesk Triage Agent": solutions/it-helpdesk-triage-agent.md
-          - "Onboarding Buddy Agent": solutions/onboarding-buddy-agent.md
-          - "Sales Enablement Agent": solutions/sales-enablement-agent.md
-          - "Finance Expense & Procurement Agent": solutions/finance-expense-agent.md
-          - "Legal & Compliance Guidance Agent": solutions/legal-compliance-agent.md
-          - "IT Access Request Agent": solutions/it-access-request-agent.md
-          - "Sales Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
+          - "Policy FAQ Agent (cross-functional)": solutions/policy-faq-agent.md
+          - "HR · Onboarding Buddy Agent": solutions/onboarding-buddy-agent.md
+          - "IT · Helpdesk Triage Agent": solutions/it-helpdesk-triage-agent.md
+          - "IT · Access Request Agent": solutions/it-access-request-agent.md
+          - "Finance · Expense & Procurement Agent": solutions/finance-expense-agent.md
+          - "Sales · Enablement Agent": solutions/sales-enablement-agent.md
+          - "Sales · Proposal & RFP Agent": solutions/sales-proposal-rfp-agent.md
+          - "Legal · Compliance Guidance Agent": solutions/legal-compliance-agent.md
       - Foundry:
           - "Pro-Code Grounded Q&A Agent": solutions/foundry-knowledge-agent.md
+          - "Multi-Agent Workflow Orchestrator": solutions/foundry-orchestrator-agent.md
+          - "High-Volume Document Processing Agent": solutions/foundry-document-processing-agent.md
+          - "Customer-Facing Support Agent": solutions/foundry-support-agent.md
   - AI Empowerment:
       - empowerment/index.md
       - "Choose the Right Path":

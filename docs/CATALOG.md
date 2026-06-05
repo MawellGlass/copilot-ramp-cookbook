@@ -508,6 +508,21 @@ Content assembly pattern: RFP question lookup, solution brief retrieval, and cas
 The pro-code counterpart to the Policy FAQ Agent: a code scaffold for a grounded Q&A agent with custom retrieval, an evaluation gate in CI, and code-owned identity. For workloads that genuinely outgrew Studio — climb here only when low-code can't carry the job.
 → Fully written: `solutions/foundry-knowledge-agent.md`
 
+### Multi-Agent Workflow Orchestrator (Foundry) → solution template
+**For:** developer · `stage: foundry` · `status: solution-template`
+A code-owned orchestrator that decomposes a request, routes sub-tasks to specialist agents, and gates the end-to-end workflow in CI. For multi-step processes one agent can't sequence — not for jobs a single agent handles.
+→ Fully written: `solutions/foundry-orchestrator-agent.md`
+
+### High-Volume Document Processing Agent (Foundry) → solution template
+**For:** developer · `stage: foundry` · `status: solution-template`
+A batch/event-driven extraction agent: typed schema output, runtime validation, exception routing to humans, and a precision/recall gate against a labelled set. For document volume with a quality bar — not low-volume ad hoc summarising.
+→ Fully written: `solutions/foundry-document-processing-agent.md`
+
+### Customer-Facing Support Agent (Foundry) → solution template
+**For:** developer · `stage: foundry` · `status: solution-template`
+An external, action-taking support agent: grounded answers plus scoped tools (order lookup, ticket creation), code-owned guardrails and content safety, and a pre-ship plus continuous evaluation gate. The highest-risk pattern here — internal/read-only jobs belong in the grounded Q&A template instead.
+→ Fully written: `solutions/foundry-support-agent.md`
+
 ### HR: Onboarding Buddy → functional walkthrough
 **For:** maker, it-admin, champion · `stage: studio` · `status: walkthrough`
 Personalised first-week experience using conversation variables (role, team, start week). Covers the full build from variable collection through week-adaptive content to benefits enrollment deadline handling.
