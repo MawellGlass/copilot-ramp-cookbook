@@ -9,6 +9,12 @@
  * Sections start expanded (see javascripts/nav-expand.js); clicking a section
  * label collapses or expands it. The chevron points down when expanded and
  * right when collapsed.
+ *
+ * NOTE: Material marks active-trail nested toggles as `indeterminate`, and an
+ * indeterminate checkbox is NOT matched by `:checked` — so a sub-section that
+ * contains (or sits alongside) the current page would stay collapsed even after
+ * nav-expand.js sets `checked = true`. We therefore treat `:indeterminate`
+ * toggles as expanded too, so every nested dropdown is open by default.
  */
 @media screen and (min-width: 76.25em) {
   /* Animate the section body and clip it while collapsing. */
@@ -17,10 +23,11 @@
     transition: height 0.2s ease;
   }
 
-  /* Collapse the body when the section toggle is unchecked. */
+  /* Collapse the body only when the section toggle is explicitly closed
+     (unchecked AND not indeterminate). Indeterminate = active trail, kept open. */
   .md-sidebar--primary
     .md-nav__item--nested
-    > input.md-nav__toggle:not(:checked)
+    > input.md-nav__toggle:not(:checked):not(:indeterminate)
     ~ .md-nav {
     height: 0 !important;
     visibility: hidden;
@@ -40,7 +47,7 @@
   }
   .md-sidebar--primary
     .md-nav__item--nested
-    > input.md-nav__toggle:not(:checked)
+    > input.md-nav__toggle:not(:checked):not(:indeterminate)
     ~ label.md-nav__link
     .md-nav__icon {
     transform: rotate(-90deg);
