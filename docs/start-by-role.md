@@ -26,7 +26,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Catch up on a Teams thread in seconds](walkthroughs/chat-catch-up-thread.md)
     - [Catch up on a long email thread in seconds](walkthroughs/chat-email-chain-summary.md)
 
-    [→ Stage 1 · Chat](stages/stage-1-chat.md)
+    [→ See your full path](roles/new-user.md)
 
 -   🧑‍💼 **Manager**
 
@@ -42,7 +42,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Draft a 30/60/90-day onboarding plan](walkthroughs/cowork-onboarding-plan.md)
     - [Build a meeting-prep agent for recurring 1:1s](walkthroughs/agent-builder-meeting-prep-agent.md)
 
-    [→ Stage 3 · Cowork](stages/stage-3-cowork.md)
+    [→ See your full path](roles/manager.md)
 
 -   📣 **Champion / Adoption Lead**
 
@@ -58,7 +58,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Build an FAQ agent for a recurring process](walkthroughs/agent-builder-faq-agent.md)
     - [Build a Cowork recipe library for your org](walkthroughs/cowork-recipe-library.md)
 
-    [→ Stage 4 · Agent Builder](stages/stage-4-agent-builder.md)
+    [→ See your full path](roles/champion.md)
 
 -   💻 **Maker / Low-code builder**
 
@@ -74,7 +74,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Configure an autonomous event-triggered agent](walkthroughs/studio-autonomous-triggers.md)
     - [Test and evaluate before publishing](walkthroughs/studio-test-evaluate.md)
 
-    [→ Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+    [→ See your full path](roles/maker.md)
 
 -   ⚙️ **Developer / Pro-code engineer**
 
@@ -89,7 +89,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Understand the agent security model](empowerment/security.md) — identity, data boundary, and governance
     - [Graduate from Agent Builder to Studio first](walkthroughs/agent-builder-vs-studio.md) — most agents stop there
 
-    [→ Stage 6 · Foundry](stages/stage-6-foundry.md)
+    [→ See your full path](roles/developer.md)
 
 -   🔒 **IT Admin**
 
@@ -105,7 +105,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
     - [Find where Copilot is landing with Workforce insights](walkthroughs/first-party-workforce-insights.md)
     - [Know when to graduate from Agent Builder to Studio](walkthroughs/agent-builder-vs-studio.md)
 
-    [→ Stage 5 · Copilot Studio](stages/stage-5-studio.md)
+    [→ See your full path](roles/it-admin.md)
 
 </div>
 

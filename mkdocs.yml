@@ -63,11 +63,13 @@ extra_css:
   - stylesheets/catalog.css
   - stylesheets/mermaid.css
   - stylesheets/nav.css
+  - stylesheets/role-path.css
 
 extra_javascript:
   - javascripts/catalog.js
   - javascripts/mermaid-render.js
   - javascripts/nav-expand.js
+  - javascripts/role-path.js
 
 plugins:
   - search
@@ -115,7 +117,14 @@ nav:
   - Home: index.md
   - Start Here:
       - "Start by Stage": start-here.md
-      - "Start by Role": start-by-role.md
+      - "Start by Role":
+          - start-by-role.md
+          - "New user": roles/new-user.md
+          - Manager: roles/manager.md
+          - "Team champion": roles/champion.md
+          - Maker: roles/maker.md
+          - Developer: roles/developer.md
+          - "IT / admin": roles/it-admin.md
 
   - The Journey:
       - the-journey.md

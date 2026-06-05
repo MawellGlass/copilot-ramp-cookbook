@@ -1,0 +1,175 @@
+/* ──────────────────────────────────────────────────────────────────────────
+ * role-path.css — styling for the interactive persona "proposed path" engine
+ * (docs/javascripts/role-path.js). Built on Material CSS vars so light & dark
+ * both work with no extra rules.
+ * ────────────────────────────────────────────────────────────────────────── */
+
+#role-path { margin: 1.4rem 0 0.5rem; }
+
+/* ---------- control bar ---------- */
+.rp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem 1.6rem;
+  padding: 1rem 1.15rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .75rem;
+  box-shadow: 0 1px 2px rgba(20,30,50,.06), 0 6px 18px rgba(20,30,50,.06);
+  margin-bottom: 1.1rem;
+}
+.rp-control { display: flex; flex-direction: column; gap: .4rem; }
+.rp-control-label {
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--lighter);
+}
+.rp-seg {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+.rp-opt {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .78rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: .42rem .7rem;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  transition: border-color .15s, background .15s, color .15s;
+}
+.rp-opt:hover { border-color: var(--md-primary-fg-color); color: var(--md-primary-fg-color); }
+.rp-opt:focus-visible { outline: 2px solid var(--md-primary-fg-color); outline-offset: 2px; }
+.rp-opt.active {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* ---------- summary line ---------- */
+.rp-summary {
+  font-size: .82rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1rem;
+}
+.rp-summary strong { color: var(--md-default-fg-color); }
+
+/* ---------- timeline ---------- */
+.rp-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.rp-step {
+  display: flex;
+  gap: .9rem;
+  padding: 0 0 1rem .25rem;
+  position: relative;
+}
+/* connector line */
+.rp-step::before {
+  content: "";
+  position: absolute;
+  left: 1.0rem;
+  top: 2rem;
+  bottom: -0.1rem;
+  width: 2px;
+  background: var(--md-default-fg-color--lightest);
+}
+.rp-step:last-child::before { display: none; }
+
+.rp-num {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-size: .85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.rp-step.is-optional .rp-num {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+}
+
+.rp-body {
+  flex: 1 1 auto;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .6rem;
+  padding: .7rem .9rem .8rem;
+  margin-top: -.1rem;
+  transition: border-color .15s, transform .15s;
+}
+.rp-body:hover { border-color: var(--md-primary-fg-color); transform: translateY(-1px); }
+
+.rp-stage {
+  display: block;
+  font-size: .6rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--lighter);
+  margin-bottom: .15rem;
+}
+.rp-title {
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  line-height: 1.3;
+}
+.rp-title:hover { text-decoration: underline; }
+.rp-why {
+  font-size: .8rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.45;
+  margin: .25rem 0 0;
+}
+
+/* ---------- step tags ---------- */
+.rp-tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .5rem; }
+.rp-tag {
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .15rem .45rem;
+  border-radius: 20px;
+  line-height: 1.4;
+}
+.rp-tag-goal {
+  color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 13%, transparent);
+}
+.rp-tag-dept {
+  color: #1a7f57;
+  background: color-mix(in srgb, #1a7f57 13%, transparent);
+}
+[data-md-color-scheme="slate"] .rp-tag-dept { color: #5ad6a0; }
+.rp-tag-opt {
+  color: var(--md-default-fg-color--light);
+  background: var(--md-code-bg-color);
+}
+
+/* ---------- empty state ---------- */
+.rp-empty {
+  font-size: .85rem;
+  color: var(--md-default-fg-color--light);
+  padding: 1rem 1.15rem;
+  border: 1px dashed var(--md-default-fg-color--lightest);
+  border-radius: .6rem;
+}
