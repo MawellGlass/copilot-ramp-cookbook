@@ -70,6 +70,7 @@ extra_javascript:
   - javascripts/mermaid-render.js
   - javascripts/nav-expand.js
   - javascripts/role-path.js
+  - javascripts/feedback.js
 
 hooks:
   - tooling/mkdocs_hooks.py       # regenerates docs/path-catalog.json before each build

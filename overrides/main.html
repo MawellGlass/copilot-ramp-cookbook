@@ -2,8 +2,40 @@
 
 {% block content %}
   {{ super() }}
-  <div class="md-typeset" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest);">
-    <p style="font-size: 0.75rem; color: var(--md-default-fg-color--light);">
+  {% if page and not page.is_homepage %}
+    {%- set fb_repo = "https://github.com/MawellGlass/copilot-ramp-cookbook" -%}
+    {%- set fb_url = page.canonical_url or page.url -%}
+    {%- set fb_down_title = "Didn't work: " ~ page.title -%}
+    {%- set fb_down_body = "**Page:** " ~ fb_url ~ "\n**Title:** " ~ page.title ~ "\n\n**What I was trying to do:**\n\n\n**Where the ramp broke for me (what was confusing, missing, or wrong):**\n\n\n**Anything else:**\n" -%}
+    {%- set fb_up_title = "Worked well: " ~ page.title -%}
+    {%- set fb_up_body = "**Page:** " ~ fb_url ~ "\n\nThis page helped. One thing that would make it even better:\n" -%}
+    {%- set fb_down_href = fb_repo ~ "/issues/new?labels=feedback&title=" ~ (fb_down_title | urlencode) ~ "&body=" ~ (fb_down_body | urlencode) -%}
+    {%- set fb_up_href = fb_repo ~ "/issues/new?labels=feedback&title=" ~ (fb_up_title | urlencode) ~ "&body=" ~ (fb_up_body | urlencode) -%}
+    <div class="md-typeset page-feedback" data-feedback>
+      <div class="pf-ask">
+        <span class="pf-q">Was this page helpful?</span>
+        <div class="pf-btns" role="group" aria-label="Was this page helpful?">
+          <button class="pf-btn" type="button" data-pf="up" aria-label="Yes, this page helped">
+            <span aria-hidden="true">👍</span> Yes
+          </button>
+          <button class="pf-btn" type="button" data-pf="down" aria-label="No, this page didn't work for me">
+            <span aria-hidden="true">👎</span> No
+          </button>
+        </div>
+      </div>
+      <p class="pf-thanks pf-thanks-up" hidden>
+        Thanks — glad it helped. Spotted something to improve anyway?
+        <a href="{{ fb_up_href }}" target="_blank" rel="noopener noreferrer">Suggest it →</a>
+      </p>
+      <p class="pf-thanks pf-thanks-down" hidden>
+        Sorry this didn't land.
+        <a href="{{ fb_down_href }}" target="_blank" rel="noopener noreferrer">Tell us what broke →</a>
+        so we can fix that rung of the ramp.
+      </p>
+    </div>
+  {% endif %}
+  <div class="md-typeset page-foot-links">
+    <p>
       Found an issue or want to suggest an improvement?
       <a href="https://github.com/MawellGlass/copilot-ramp-cookbook/issues/new?title=Feedback+on+this+page&labels=feedback" target="_blank" rel="noopener noreferrer">Open a GitHub issue</a>
       &nbsp;&middot;&nbsp;

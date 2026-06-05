@@ -402,3 +402,71 @@ table.home-matrix td.lvl0 .dot { color: var(--md-default-fg-color--lightest); }
   line-height: 1.3;
 }
 .path-card .pc-2nd:hover { color: var(--md-primary-fg-color); text-decoration: underline; }
+
+/* ---------- page feedback widget ("Was this page helpful?") ---------- */
+.page-feedback {
+  margin-top: 2.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+.page-feedback .pf-ask {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+}
+.page-feedback .pf-q {
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+}
+.page-feedback .pf-btns {
+  display: inline-flex;
+  gap: .5rem;
+}
+.page-feedback .pf-btn {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 2rem;
+  padding: .3rem .9rem;
+  line-height: 1.4;
+  transition: border-color .15s, color .15s, background .15s, transform .1s;
+}
+.page-feedback .pf-btn:hover {
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 7%, transparent);
+}
+.page-feedback .pf-btn:active { transform: translateY(1px); }
+.page-feedback .pf-thanks {
+  font-size: .8rem;
+  color: var(--md-default-fg-color--light);
+  margin: .35rem 0 0;
+}
+.page-feedback .pf-thanks a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.page-feedback .pf-thanks a:hover { text-decoration: underline; }
+
+.page-foot-links {
+  margin-top: 1.1rem;
+}
+.page-foot-links p {
+  font-size: .72rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+.page-foot-links a { color: var(--md-primary-fg-color); }
+.page-feedback + .page-foot-links {
+  margin-top: .85rem;
+  padding-top: .65rem;
+  border-top: 1px dashed var(--md-default-fg-color--lightest);
+}
