@@ -87,7 +87,13 @@ build a process on a preview agent.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in the Microsoft 365 Copilot Agent Store (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Agent Store inside Microsoft 365 Copilot, showing pinned agents in the rail and a catalog of agents.](../screenshots/first-party-agents-overview/01-agent-store.png)
+**The Agent Store is the front door — your pinned agents in the left rail, the searchable catalog in the middle.**
+
+![The "Built by Microsoft" section of the Agent Store listing first-party agents like Learning, Workforce Insights, and Planner.](../screenshots/first-party-agents-overview/02-built-by-microsoft.png)
+**"Built by Microsoft" is the roster — Learning, Workforce Insights, Planner, Surveys and more, included with the license.**
 
 ## Make it better
 The roster is most powerful when you stop using agents in isolation:

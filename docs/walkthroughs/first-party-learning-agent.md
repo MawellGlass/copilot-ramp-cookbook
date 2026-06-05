@@ -61,7 +61,19 @@ difference between intending to learn and actually learning.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in the Microsoft 365 Copilot Learning agent (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Learning agent's personalized landing page with a "What do you want to learn?" prompt box.](../screenshots/first-party-learning-agent/01-open-learning.png)
+**Open the Learning agent and it greets you with "What do you want to learn?" plus tabs for you, your org, and recent activity.**
+
+![A goal-and-deadline learning prompt typed into the Learning agent's composer.](../screenshots/first-party-learning-agent/02-prompt-entered.png)
+**Tie the ask to a real task and deadline — and say what you already know — so it can sequence a shortest path.**
+
+![The Learning agent's time-boxed "Copilot Studio Learning Plan" response with a demo-first overview.](../screenshots/first-party-learning-agent/03-learning-plan.png)
+**It returns a sequenced, demo-first plan — what to do today versus what can wait.**
+
+![A specific Microsoft Learn course recommendation with provider and duration inside the Learning agent's plan.](../screenshots/first-party-learning-agent/04-course-recommendation.png)
+**Each step links a specific course — provider and duration included — so you can start in one click.**
 
 ## Make it better
 Just-in-time learning gets stickier with a little structure:
