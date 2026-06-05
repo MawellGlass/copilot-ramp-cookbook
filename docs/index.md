@@ -104,6 +104,21 @@ Each stage has an **overview**, **use cases** you can filter by your role, and *
 
 [Start at Stage 1 → Copilot Chat](stages/stage-1-chat.md){ .md-button .md-button--primary }
 
+---
+
+## How to read a walkthrough
+
+Before you dive in, here's the shape every walkthrough on this site follows — so you always know where to look:
+
+- **Try it now — the prompt.** A copy-paste prompt you can run in under a minute.
+- **Step by step.** The full path, with screenshots.
+- **Make it better / Watch out for.** How to level up, and the traps to avoid.
+- **Where this leads.** The next rung on the ramp.
+
+The fastest way to start: open **[Turn a meeting into tracked follow-ups](walkthroughs/chat-meeting-followups.md)** and paste the prompt into Copilot Chat.
+
+---
+
 !!! tip "Leading a rollout, not just learning yourself?"
     The stages above ramp an *individual*. If you're standing up Copilot for an *organization*, see
     **[Build your AI empowerment team](empowerment/index.md)** — who's on the team, and a
@@ -148,19 +163,6 @@ Each stage has an **overview**, **use cases** you can filter by your role, and *
 </div>
 <p class="res-rule">Stage-specific links live on each stage page and in full in <a href="RESOURCES/">Resources</a>.</p>
 </div>
-
----
-
-## How to read a walkthrough
-
-Every walkthrough on this site follows the same shape, so you always know where to look:
-
-- **Try it now — the prompt.** A copy-paste prompt you can run in under a minute.
-- **Step by step.** The full path, with screenshots.
-- **Make it better / Watch out for.** How to level up, and the traps to avoid.
-- **Where this leads.** The next rung on the ramp.
-
-The fastest way to start: open **[Turn a meeting into tracked follow-ups](walkthroughs/chat-meeting-followups.md)** and paste the prompt into Copilot Chat.
 
 ---
 
