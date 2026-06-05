@@ -28,19 +28,59 @@ Think of agent security as **two layers stacked on top of each other**:
 
 ```mermaid
 flowchart TB
-    A365["<b>Agent 365 — the control plane</b><br/>registry · Entra Agent ID · Purview · Defender · observability"]
-    subgraph envs["Native layer — where agents are built &amp; used"]
+    %% ── Control plane ───────────────────────────────────────────────
+    A365["<b>Microsoft Agent 365</b> — the control plane<br/><small>registry · Entra Agent ID · Purview · Defender · AI observability</small>"]
+
+    %% ── Native layer, grouped by how much you build ─────────────────
+    subgraph NATIVE["<b>Native layer</b> — where agents are built &amp; used"]
         direction LR
-        C1["Chat"]
-        C2["First-party<br/>agents"]
-        C3["Cowork"]
-        C4["Agent<br/>Builder"]
-        C5["Copilot<br/>Studio"]
-        C6["Foundry"]
+        subgraph USE["Use — ready out of the box"]
+            direction TB
+            C1["Chat"]
+            C2["First-party agents"]
+            C3["Cowork"]
+        end
+        subgraph LOW["Build — low-code"]
+            direction TB
+            C4["Agent Builder"]
+            C5["Copilot Studio"]
+        end
+        subgraph PRO["Build — pro-code"]
+            direction TB
+            C6["Foundry"]
+        end
     end
-    F["<b>Shared foundations</b><br/>Microsoft Entra identity · Microsoft Purview · your data boundary"]
-    A365 --> envs
-    envs --> F
+
+    %% ── Shared foundations ──────────────────────────────────────────
+    subgraph FND["<b>Shared foundations</b> — the same controls everywhere"]
+        direction LR
+        ENT["<b>Microsoft Entra</b><br/><small>identity &amp; access</small>"]
+        PUR["<b>Microsoft Purview</b><br/><small>labels · DLP · audit</small>"]
+        DEF["<b>Microsoft Defender</b><br/><small>threat signals</small>"]
+        BND["<b>Your data boundary</b><br/><small>tenant &amp; region</small>"]
+    end
+
+    A365 ==>|"governs every agent like an employee"| NATIVE
+    NATIVE ==>|"every agent inherits these"| FND
+
+    %% ── Styling ─────────────────────────────────────────────────────
+    classDef plane fill:#3f4db5,stroke:#27307f,stroke-width:2px,color:#ffffff;
+    classDef use fill:#e8eefc,stroke:#3f4db5,stroke-width:1.5px,color:#1b2559;
+    classDef low fill:#fff3e0,stroke:#d98324,stroke-width:1.5px,color:#5c3a09;
+    classDef pro fill:#f4e9fd,stroke:#8b3fd1,stroke-width:1.5px,color:#3d1466;
+    classDef fnd fill:#eceff4,stroke:#5b6472,stroke-width:1.5px,color:#1f2733;
+
+    class A365 plane;
+    class C1,C2,C3 use;
+    class C4,C5 low;
+    class C6 pro;
+    class ENT,PUR,DEF,BND fnd;
+
+    style NATIVE fill:#ffffff,stroke:#c8cdd6,stroke-width:1px,color:#1f2733;
+    style FND fill:#f7f8fa,stroke:#c8cdd6,stroke-width:1px,color:#1f2733;
+    style USE fill:#f5f8ff,stroke:#aab4e8,stroke-width:1px,color:#1b2559;
+    style LOW fill:#fffaf2,stroke:#e8c79a,stroke-width:1px,color:#5c3a09;
+    style PRO fill:#faf4ff,stroke:#d3b3ec,stroke-width:1px,color:#3d1466;
 ```
 
 The two layers share the same foundations — **Microsoft Entra** for identity and **Microsoft Purview**
