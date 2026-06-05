@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T15:38:01Z",
+  "generated": "2026-06-05T15:43:48Z",
   "items": [
     {
       "path": "walkthroughs/agent-builder-faq-agent/",
@@ -63,6 +63,20 @@
       "kind": "walkthrough"
     },
     {
+      "path": "walkthroughs/agent-builder-research-librarian/",
+      "title": "Build a personal research librarian over your OneDrive",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "end-user"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
       "path": "walkthroughs/agent-builder-share-and-feedback/",
       "title": "Pilot your agent with a team and gather feedback",
       "stage": "agent-builder",
@@ -76,6 +90,21 @@
       ],
       "level": "intermediate",
       "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-sprint-review-summarizer/",
+      "title": "Build a sprint-review summarizer for your Friday demo",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "end-user",
+        "developer"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
       "kind": "walkthrough"
     },
     {
@@ -100,6 +129,34 @@
       "roles": [
         "maker",
         "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-voice-content-coach/",
+      "title": "Build a \"writes in my voice\" content coach from your sent mail",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "end-user"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-voice-of-customer/",
+      "title": "Build a \"voice of customer\" agent over your support inbox",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "end-user"
       ],
       "fn": [],
       "level": "intermediate",

@@ -58,6 +58,18 @@ Start with the flagship — a team-knowledge agent is the most useful first buil
     ### [Build a meeting-prep agent for a recurring 1:1 or standup](../walkthroughs/agent-builder-meeting-prep-agent.md)
     Auto-generate talking points, agenda items, and context summaries before every recurring meeting.
 
+    ### [Build a "voice of customer" agent over your support inbox](../walkthroughs/agent-builder-voice-of-customer.md)
+    **Personal scope.** Ground an agent on your support email and ask it what customers are really saying — themes, frequency, urgency.
+
+    ### [Build a personal research librarian over your OneDrive](../walkthroughs/agent-builder-research-librarian.md)
+    **Personal scope.** Turn years of saved files into a librarian you can ask — cited answers from your own accumulated knowledge.
+
+    ### [Build a "writes in my voice" content coach from your sent mail](../walkthroughs/agent-builder-voice-content-coach.md)
+    **Personal scope.** Ground an agent on your Sent Items so it drafts and rewrites in your voice — not generic AI.
+
+    ### [Build a sprint-review summarizer for your Friday demo](../walkthroughs/agent-builder-sprint-review-summarizer.md)
+    **Personal scope.** Turn every Friday demo into the same tidy recap — shipped, decisions, next, blockers — in one click.
+
 ---
 
 ## Borrow, don't build
