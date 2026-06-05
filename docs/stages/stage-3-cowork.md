@@ -104,6 +104,18 @@ Start with the end-to-end hand-off — it's the page that makes delegation click
     ### [Draft an RFP or proposal response from scattered source docs](../walkthroughs/cowork-rfp-response.md)
     Turn an RFP and your scattered internal docs into a structured first-draft response — shape and polish, don't start from nothing.
 
+    ### [Run a full QBR prep cycle in Cowork](../walkthroughs/cowork-qbr-prep-cycle.md)
+    Account data → deck → talking points → follow-ups: hand off the whole quarterly-review cycle and review four deliverables instead of building them.
+
+    ### [Build an incident postmortem from Teams, tickets, and email](../walkthroughs/cowork-incident-postmortem.md)
+    Reconstruct the timeline, root cause, and action items from three scattered sources into one blameless draft.
+
+    ### [Generate a weekly customer-health digest across your accounts](../walkthroughs/cowork-customer-health-digest.md)
+    Describe the Monday digest once and let Cowork rank your whole book of business worst-first — so you know where to spend your week.
+
+    ### [Coordinate a hiring loop end-to-end in Cowork](../walkthroughs/cowork-hiring-loop.md)
+    Intake → JD → interview kit → debrief synthesis: run a rigorous, fair hiring loop as one delegated process.
+
 ---
 
 ## Borrow, don't build

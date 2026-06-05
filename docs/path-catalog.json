@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T15:31:49Z",
+  "generated": "2026-06-05T15:38:01Z",
   "items": [
     {
       "path": "walkthroughs/agent-builder-faq-agent/",
@@ -335,6 +335,23 @@
       "kind": "walkthrough"
     },
     {
+      "path": "walkthroughs/cowork-customer-health-digest/",
+      "title": "Generate a weekly customer-health digest across your accounts",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "25 min",
+      "kind": "walkthrough"
+    },
+    {
       "path": "walkthroughs/cowork-deck-from-notes/",
       "title": "Build a deck from raw notes",
       "stage": "cowork",
@@ -360,6 +377,41 @@
       "fn": [],
       "level": "intermediate",
       "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-hiring-loop/",
+      "title": "Coordinate a hiring loop end-to-end in Cowork",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "manager",
+        "end-user",
+        "champion"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "intermediate",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-incident-postmortem/",
+      "title": "Build an incident postmortem from Teams, tickets, and email",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion",
+        "developer"
+      ],
+      "fn": [
+        "it"
+      ],
+      "level": "intermediate",
+      "time": "25 min",
       "kind": "walkthrough"
     },
     {
@@ -404,6 +456,23 @@
       ],
       "level": "intermediate",
       "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-qbr-prep-cycle/",
+      "title": "Run a full QBR prep cycle in Cowork",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "25 min",
       "kind": "walkthrough"
     },
     {
