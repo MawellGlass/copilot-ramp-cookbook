@@ -82,7 +82,7 @@ answer format for a competitive objection query.
 - **The agent taking positions the company hasn't approved.** Reps will test the agent with edge questions about competitors. If the knowledge base has informal commentary or early-draft content, the agent will surface it. Audit what's in the SharePoint sources before going live.
 - **Pricing.** Never include current list prices in the knowledge source unless Finance has signed off on the agent surfacing them. Pricing changes faster than the agent's knowledge base. Always escalate to the deal desk.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

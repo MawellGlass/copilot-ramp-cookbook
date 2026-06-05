@@ -171,7 +171,7 @@ The highest-value topic. Fires when a rep mentions a competitor by name.
 - **Competitive news monitoring** — an autonomous agent that monitors competitor news feeds and posts a weekly "competitive intel brief" to the Sales channel
 - **Post-call debrief** — a companion agent that takes rough call notes and structures them into CRM fields, action items, and a suggested follow-up email
 
-> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

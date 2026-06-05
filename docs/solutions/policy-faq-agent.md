@@ -217,7 +217,7 @@ Run all 8 before publishing. Do not skip the adversarial tests — they catch th
 - **A second function agent** — an IT Helpdesk agent alongside an HR one, with a shared "who to contact" reference page for cross-function escalations.
 - **Analytics-driven iteration** — check the Topics analytics in Studio after 2 weeks. The questions that go unanswered tell you exactly what to add next.
 
-> **📚 References.** [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics) · [Test your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-test-bot)
+> **📚 References.** [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics) · [Test your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-test-bot)
 
 ---
 

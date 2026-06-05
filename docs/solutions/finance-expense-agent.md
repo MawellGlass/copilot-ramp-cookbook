@@ -167,7 +167,7 @@ This topic must fire hard. These questions have individual answers the policy ca
 - **Month-end deadline surfacing** — Finance maintains a "current deadlines" SharePoint page; the agent surfaces the next expense cut-off date as a starter prompt answer
 - **Receipt pre-check** — an agent that takes a description of an expense and returns a policy verdict and the right category before the employee submits, reducing rejection rates
 
-> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

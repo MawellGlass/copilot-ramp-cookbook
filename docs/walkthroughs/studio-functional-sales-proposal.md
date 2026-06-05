@@ -83,7 +83,7 @@ finder, solution brief retrieval), and guidance on output format.
 - **Pricing requests.** Reps under deadline pressure will ask for pricing in the same conversation. The agent must refuse cleanly and redirect to deal desk — configure this as a topic, not just an instruction.
 - **NDA-protected case studies.** Audit the content library before connecting it. Any case study that names a customer under NDA must not be in the knowledge source.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

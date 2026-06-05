@@ -83,7 +83,7 @@ redirect), and the escalation flow for individual budget decisions.
 - **Reforecast process changes.** Finance processes change every cycle. The reforecast documents must be updated before each cycle opens — and a Finance team owner must own this refresh.
 - **Approval thresholds in the instructions.** Put all overspend thresholds in the SharePoint policy document, not in the agent instructions. When Finance revises the approval tiers, the agent updates automatically.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Power BI connector](https://learn.microsoft.com/en-us/power-automate/dataverse/list-rows)
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power BI connector](https://learn.microsoft.com/en-us/power-automate/dataverse/list-rows)
 
 ---
 

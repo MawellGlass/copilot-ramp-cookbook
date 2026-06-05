@@ -93,7 +93,7 @@ _We deliberately don't ship screenshots that go stale — the Microsoft Copilot 
 - **Overpromising on personal questions.** Test adversarial inputs before launch ("Am I eligible for a bonus?", "Why was I passed over for promotion?"). The instructions and escalation topic must handle these without the model improvising.
 - **SharePoint permissions.** Test citation links as a regular employee, not as the maker — the links must resolve for the people who'll actually use the agent.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Add knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Add knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

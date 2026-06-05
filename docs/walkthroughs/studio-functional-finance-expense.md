@@ -81,7 +81,7 @@ happy-path conversation for an expense submission query.
 - **VAT, tax, and compliance nuances.** Keep the agent out of tax advice entirely. If a question touches VAT reclaim eligibility or tax treatment of specific expenses, escalate unconditionally to Finance or Tax.
 - **System URL rot.** If you link to expense portals or form URLs in topics or knowledge docs, those links break when systems are upgraded. Build a simple SharePoint page that holds current links and point the agent at that page rather than hardcoding URLs.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
 
 ---
 

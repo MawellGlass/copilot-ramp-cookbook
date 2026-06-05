@@ -69,7 +69,7 @@ Go from a list to a plan:
 - **Find the people.** "Who in my org has the role I'm targeting, and what should I ask them in a coffee chat?"
 - **Close a specific gap.** "I'm missing [skill] — find learning and a project that would build it."
 
-> **📚 Learn more.** The [Microsoft Viva Skills](https://learn.microsoft.com/en-us/viva/skilling/)
+> **📚 Learn more.** The [Microsoft Viva Learning](https://learn.microsoft.com/en-us/viva/learning/)
 > documentation and the [Agents in Microsoft 365 hub](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/)
 > describe how skills and growth capabilities work across Microsoft 365.
 

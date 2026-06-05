@@ -89,7 +89,7 @@ escalation flow for any question that needs a qualified human.
 - **Employees treating the agent as authoritative.** Make the scope clear in the intro message and in every out-of-scope response. Add a footer disclaimer to the agent's description: "This agent provides process guidance from approved documents. It does not constitute legal advice."
 - **Documents that shouldn't be in the knowledge source.** Legal departments often have sensitive internal documents on the same SharePoint site as policy docs. Audit what's being indexed before launch — the agent will surface anything in the knowledge source.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

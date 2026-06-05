@@ -164,7 +164,7 @@ The highest-value topic. A rep describes or pastes an RFP question and the agent
 - **CRM integration** — connect to Salesforce or Dynamics to pull the opportunity's industry and stage, and surface tailored content without the rep specifying it manually
 - **Content gap tracker** — log RFP questions where no approved response was found and surface these monthly to sales enablement as a library gap report
 
-> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 

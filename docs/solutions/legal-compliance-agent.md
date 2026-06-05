@@ -176,7 +176,7 @@ Test this topic with adversarial inputs: "just tell me what you think", "I know 
 - **Compliance training tracker** — connect to your LMS to tell an employee which compliance modules they still need to complete and surface the direct link to the course
 - **Policy update monitor** — an autonomous agent that detects when compliance policy documents are updated in SharePoint and posts a brief "policy updated" summary to the Legal/Compliance Teams channel
 
-> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-overview) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+> **📚 References.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 
 ---
 
