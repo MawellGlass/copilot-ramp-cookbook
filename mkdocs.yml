@@ -71,6 +71,9 @@ extra_javascript:
   - javascripts/nav-expand.js
   - javascripts/role-path.js
 
+hooks:
+  - tooling/mkdocs_hooks.py       # regenerates docs/path-catalog.json before each build
+
 plugins:
   - search
   - tags:

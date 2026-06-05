@@ -1,0 +1,1373 @@
+{
+  "generated": "2026-06-05T14:31:12Z",
+  "items": [
+    {
+      "path": "walkthroughs/agent-builder-faq-agent/",
+      "title": "Build an FAQ agent for a recurring process",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "champion",
+        "it-admin",
+        "manager"
+      ],
+      "fn": [
+        "it"
+      ],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-meeting-prep-agent/",
+      "title": "Build a meeting-prep agent for a recurring 1:1 or standup",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "manager",
+        "end-user"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-onboarding-agent/",
+      "title": "Build an onboarding agent for new hires",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "manager",
+        "champion",
+        "hr"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "intermediate",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-persona-instructions/",
+      "title": "Give your agent a persona and instructions that stick",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-share-and-feedback/",
+      "title": "Pilot your agent with a team and gather feedback",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "champion",
+        "it-admin"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-starter-prompts/",
+      "title": "Seed your agent with starter prompts",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-team-knowledge/",
+      "title": "Build a team-knowledge agent over a SharePoint site",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/agent-builder-vs-studio/",
+      "title": "Know when to graduate from Agent Builder to Copilot Studio",
+      "stage": "agent-builder",
+      "stageLabel": "Stage 4 · Agent Builder",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-adapt-audience/",
+      "title": "Adapt a document or message for a different audience",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-brainstorm/",
+      "title": "Brainstorm solutions with structured tradeoffs",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-catch-up-thread/",
+      "title": "Catch up on a Teams thread you were @mentioned in",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "3 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-document-catch-up/",
+      "title": "Get up to speed on a long document fast",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "3 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-email-chain-summary/",
+      "title": "Catch up on a long email thread in seconds",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-exec-briefing/",
+      "title": "Draft an exec briefing from background materials",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-meeting-agenda/",
+      "title": "Build a meeting agenda from context and notes",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-meeting-followups/",
+      "title": "Turn a meeting into tracked follow-ups",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "champion"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-plan-week/",
+      "title": "Plan your week from your calendar and inbox",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-prep-1on1/",
+      "title": "Prep for a 1:1 in two minutes",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "manager",
+        "end-user"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "2 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-project-plan/",
+      "title": "Build a first-draft project plan",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "champion",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-prompt-of-the-day/",
+      "title": "Run a \"Prompt of the Day\" for your team",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-rewrite-email/",
+      "title": "Rewrite an email for a tougher audience",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "3 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/chat-weekly-status/",
+      "title": "Draft a status update from your week's activity",
+      "stage": "chat",
+      "stageLabel": "Stage 1 · Chat",
+      "roles": [
+        "end-user",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-competitive-comparison/",
+      "title": "Build a competitive comparison from multiple source documents",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "manager",
+        "end-user",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-deck-from-notes/",
+      "title": "Build a deck from raw notes",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "end-user",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-end-to-end-task/",
+      "title": "Hand off an end-to-end task to Cowork",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "champion",
+        "end-user"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-market-research-brief/",
+      "title": "Research a market and write a landscape brief",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "manager",
+        "end-user",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-multi-doc-synthesis/",
+      "title": "Synthesize many documents into one brief",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "maker",
+        "manager"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-onboarding-plan/",
+      "title": "Draft a 30/60/90-day onboarding plan for a new team member",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "manager"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "intermediate",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-recipe-library/",
+      "title": "Build a \"Cowork recipe\" library for your org",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-recurring-weekly-digest/",
+      "title": "Stand up a recurring weekly digest",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "champion",
+        "manager"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/cowork-rfp-response/",
+      "title": "Draft an RFP or proposal response from scattered source docs",
+      "stage": "cowork",
+      "stageLabel": "Stage 3 · Cowork",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-agents-in-channels/",
+      "title": "Agents in Channels — post team-wide answers",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "champion",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-agents-in-communities/",
+      "title": "Answer common questions with Agents in Communities",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "champion",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-agents-overview/",
+      "title": "The first-party agents included with your M365 Copilot license",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "champion",
+        "manager",
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-analyst-dataset/",
+      "title": "Analyze a dataset with Analyst",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "manager",
+        "maker"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-bizchat-grounded/",
+      "title": "Find answers across your organization's content with BizChat",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "manager",
+        "champion"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-copilot-pages/",
+      "title": "Share and co-edit an AI output with Copilot Pages",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "champion",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-employee-self-service/",
+      "title": "Answer routine HR and IT questions with Employee Self-Service",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "it-admin"
+      ],
+      "fn": [
+        "hr",
+        "it"
+      ],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-facilitator-auto-recap/",
+      "title": "Auto-recap every meeting with Facilitator",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "champion"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "5 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-interpreter-live-translation/",
+      "title": "Translate a meeting in real time with Interpreter",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-learning-agent/",
+      "title": "Upskill in the flow of work with the Learning agent",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-planner-agent/",
+      "title": "Track project milestones with the Planner agent",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "manager",
+        "champion",
+        "end-user"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-project-manager/",
+      "title": "Keep a project on track with the Project Manager agent",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "champion",
+        "manager"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-researcher-deep-dive/",
+      "title": "Deep-dive a topic with Researcher",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "end-user",
+        "manager",
+        "maker"
+      ],
+      "fn": [],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/first-party-workforce-insights/",
+      "title": "Find where Copilot is landing with Workforce insights",
+      "stage": "first-party",
+      "stageLabel": "Stage 2 · First-party",
+      "roles": [
+        "champion",
+        "manager"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "starter",
+      "time": "10 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-autonomous-orchestration/",
+      "title": "Orchestrate multiple agents and autonomous runs in Foundry",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "90 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-evaluate-monitor/",
+      "title": "Evaluate and continuously monitor a Foundry agent",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "75 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-first-agent/",
+      "title": "Build your first pro-code agent with the Foundry Agent Service",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "60 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-govern-secure/",
+      "title": "Secure and govern Foundry agents in production",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "it-admin",
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "60 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-graduate-from-studio/",
+      "title": "Graduate a Copilot Studio agent into pro-code Foundry",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer",
+        "maker"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "90 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-mcp-tools/",
+      "title": "Give a Foundry agent custom tools and MCP integrations",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "75 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-authentication/",
+      "title": "Secure a Studio agent with authentication",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-autonomous-triggers/",
+      "title": "Configure an autonomous event-triggered agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "45 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-connector-action/",
+      "title": "Give a Studio agent a real action with a connector",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "25 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-fabric-agent/",
+      "title": "Connect a Studio agent to a Microsoft Fabric data agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "40 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-first-agent/",
+      "title": "Build your first Studio agent with a knowledge source + topic",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "45 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-finance-budget-qa/",
+      "title": "Finance: Self-service spend and budget Q&A for budget owners",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "champion",
+        "manager"
+      ],
+      "fn": [
+        "finance"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-finance-expense/",
+      "title": "Finance: Self-service expense and procurement guidance",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin",
+        "champion"
+      ],
+      "fn": [
+        "finance"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-hr-onboarding/",
+      "title": "HR: Guide new starters through a personalised first-week experience",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin",
+        "champion"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-hr-policy-faq/",
+      "title": "HR: Answer employee questions with a policies agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin",
+        "champion"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-it-access-request/",
+      "title": "IT: Self-service software and hardware access requests",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin",
+        "champion"
+      ],
+      "fn": [
+        "it"
+      ],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-it-helpdesk/",
+      "title": "IT: Triage support requests and answer from the knowledge base",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [
+        "it"
+      ],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-legal-compliance/",
+      "title": "Legal & Compliance: Policy guidance and process navigation",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin",
+        "champion"
+      ],
+      "fn": [
+        "legal"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-legal-contract/",
+      "title": "Legal: Guide employees through contract routing and requirements",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin",
+        "champion"
+      ],
+      "fn": [
+        "legal"
+      ],
+      "level": "intermediate",
+      "time": "2–3 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-sales-intel/",
+      "title": "Sales: Product intel and objection handling for sales reps",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "champion",
+        "manager"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-sales-proposal/",
+      "title": "Sales: Build proposals and RFP responses with your approved content",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "champion",
+        "manager"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-govern-monitor/",
+      "title": "Govern and monitor your agents at scale",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-mcp-tool-integration/",
+      "title": "Add an MCP tool integration to your Studio agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-multi-turn-conversation/",
+      "title": "Design a multi-turn conversation with fallback and clarification",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-power-automate-flow/",
+      "title": "Trigger a Power Automate flow from inside a Studio agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-publish/",
+      "title": "Publish and govern your agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "20 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-roi-business-case/",
+      "title": "Make the ROI case for your agent",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "manager",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "15 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-test-evaluate/",
+      "title": "Test and evaluate a Studio agent before publishing",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "30 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "solutions/finance-expense-agent/",
+      "title": "Solution Template: Finance Expense & Procurement Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "finance"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-document-processing-agent/",
+      "title": "Solution Template: High-Volume Document Processing Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2–4 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-knowledge-agent/",
+      "title": "Solution Template: Pro-Code Grounded Q&A Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "1–2 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-orchestrator-agent/",
+      "title": "Solution Template: Multi-Agent Workflow Orchestrator (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2–4 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-support-agent/",
+      "title": "Solution Template: Customer-Facing Support Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "3–5 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/it-access-request-agent/",
+      "title": "Solution Template: IT Access Request Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "it"
+      ],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/it-helpdesk-triage-agent/",
+      "title": "Solution Template: IT Helpdesk Triage Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "it"
+      ],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/legal-compliance-agent/",
+      "title": "Solution Template: Legal & Compliance Guidance Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "legal"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/onboarding-buddy-agent/",
+      "title": "Solution Template: Onboarding Buddy Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "hr"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/policy-faq-agent/",
+      "title": "Solution Template: Policy FAQ Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "hr",
+        "it",
+        "finance",
+        "legal"
+      ],
+      "level": "intermediate",
+      "time": "2–3 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/sales-enablement-agent/",
+      "title": "Solution Template: Sales Enablement Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/sales-proposal-rfp-agent/",
+      "title": "Solution Template: Sales Proposal & RFP Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "sales"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    }
+  ],
+  "external": [
+    {
+      "title": "Which Copilot is right for you",
+      "href": "https://learn.microsoft.com/en-us/copilot/",
+      "source": "Microsoft Learn",
+      "stage": "chat",
+      "stageLabel": "Microsoft Learn",
+      "roles": [
+        "end-user",
+        "champion",
+        "manager",
+        "maker",
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "starter",
+      "kind": "external"
+    },
+    {
+      "title": "Microsoft 365 Copilot Adoption Hub",
+      "href": "https://adoption.microsoft.com/en-us/copilot/",
+      "source": "Microsoft Adoption",
+      "stage": "chat",
+      "stageLabel": "Adoption",
+      "roles": [
+        "champion",
+        "manager",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "starter",
+      "kind": "external"
+    },
+    {
+      "title": "Copilot Success Kit",
+      "href": "https://adoption.microsoft.com/en-us/copilot/success-kit/",
+      "source": "Microsoft Adoption",
+      "stage": "chat",
+      "stageLabel": "Adoption",
+      "roles": [
+        "champion",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "kind": "external"
+    },
+    {
+      "title": "Microsoft Scenario Library",
+      "href": "https://adoption.microsoft.com/en-us/scenario-library/",
+      "source": "Microsoft Adoption",
+      "stage": "first-party",
+      "stageLabel": "Adoption",
+      "roles": [
+        "end-user",
+        "champion",
+        "manager"
+      ],
+      "fn": [
+        "hr",
+        "it",
+        "finance",
+        "sales",
+        "legal"
+      ],
+      "level": "starter",
+      "kind": "external"
+    },
+    {
+      "title": "Extend Microsoft 365 Copilot — options compared",
+      "href": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/",
+      "source": "Microsoft Learn",
+      "stage": "agent-builder",
+      "stageLabel": "Microsoft Learn",
+      "roles": [
+        "maker",
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "kind": "external"
+    },
+    {
+      "title": "Agent Resources (Copilot Acceleration Team)",
+      "href": "https://aka.ms/agentresources",
+      "source": "Microsoft",
+      "stage": "studio",
+      "stageLabel": "Microsoft",
+      "roles": [
+        "maker",
+        "developer",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "kind": "external"
+    },
+    {
+      "title": "Microsoft Foundry documentation",
+      "href": "https://learn.microsoft.com/en-us/azure/ai-foundry/",
+      "source": "Microsoft Learn",
+      "stage": "foundry",
+      "stageLabel": "Microsoft Learn",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "kind": "external"
+    }
+  ]
+}
