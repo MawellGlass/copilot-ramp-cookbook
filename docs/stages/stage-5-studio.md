@@ -62,14 +62,16 @@ Build a real designed agent, give it an action against a real system, then ship 
 
 ---
 
-## All walkthroughs
+## Walkthroughs — technical foundations
+
+Build these first — the platform skills every functional agent below depends on.
 
 <div id="rc-filterbar"></div>
 
 <section class="rc-bucket" markdown>
 
-### Build the core agent
-The platform skills every Studio agent is built on — designed conversation and tools.
+### Core Studio
+Everything that makes a Studio agent real — designed conversation, tools and actions, autonomy and security, testing, publishing, governance, and the ROI case.
 
 <div class="grid cards rc-grid" markdown>
 
@@ -91,17 +93,6 @@ The platform skills every Studio agent is built on — designed conversation and
 
     <span class="rc-meta" data-time="20" data-roles="maker"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-</div>
-
-</section>
-
-<section class="rc-bucket" markdown>
-
-### Connect real actions & data
-Move beyond answering — let the agent act against real systems and warehouse data.
-
-<div class="grid cards rc-grid" markdown>
-
 -   **[Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md)**
 
     Let the agent do things, not just answer — look up records, create tickets, trigger workflows.
@@ -120,17 +111,6 @@ Move beyond answering — let the agent act against real systems and warehouse d
 
     <span class="rc-meta" data-time="40" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 40 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
-</div>
-
-</section>
-
-<section class="rc-bucket" markdown>
-
-### Make it autonomous & secure
-Let the agent act on events — and make sure only the right people can use it.
-
-<div class="grid cards rc-grid" markdown>
-
 -   **[Configure an autonomous event-triggered agent](../walkthroughs/studio-autonomous-triggers.md)**
 
     Build an agent that acts when something happens — no user prompt required.
@@ -142,17 +122,6 @@ Let the agent act on events — and make sure only the right people can use it.
     Ensure only the right people can use your agent.
 
     <span class="rc-meta" data-time="30" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 30 min</span> <span class="rc-chip rc-chip-role">👤 IT</span></span>
-
-</div>
-
-</section>
-
-<section class="rc-bucket" markdown>
-
-### Test, publish & govern
-Prove it before rollout, ship it, then manage a fleet at scale.
-
-<div class="grid cards rc-grid" markdown>
 
 -   **[Test and evaluate a Studio agent before publishing](../walkthroughs/studio-test-evaluate.md)**
 
@@ -172,17 +141,6 @@ Prove it before rollout, ship it, then manage a fleet at scale.
 
     <span class="rc-meta" data-time="20" data-roles="it-admin"><span class="rc-chip rc-chip-time">⏱ 20 min</span> <span class="rc-chip rc-chip-role">👤 IT</span></span>
 
-</div>
-
-</section>
-
-<section class="rc-bucket" markdown>
-
-### Make the business case
-Tie agent usage to outcomes so the work gets funded.
-
-<div class="grid cards rc-grid" markdown>
-
 -   **[Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)**
 
     Tie agent usage to outcomes.
@@ -192,6 +150,12 @@ Tie agent usage to outcomes so the work gets funded.
 </div>
 
 </section>
+
+---
+
+## Walkthroughs — functional use cases
+
+Agents designed for a specific business function. Each pairs with a [Solution Template](../solutions/index.md) you can copy, adapt, and build from directly.
 
 <section class="rc-bucket" markdown>
 
