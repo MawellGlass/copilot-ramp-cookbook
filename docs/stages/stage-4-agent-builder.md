@@ -15,6 +15,11 @@ stage: agent-builder
 
 You've handed Copilot the same kind of multi-step task more than once and thought *"I wish this just existed."* You're ready to point an agent at your own files or a SharePoint site and give it a persona — without writing code.
 
+!!! question "Going the wrong way?"
+    An agent is a tool you *reuse*. If you're building one for a **one-off task** with no audience but
+    you, you've overshot — [drop back to Cowork](../right-sizing.md#agent-builder-to-cowork) and just
+    delegate it.
+
 ## What you need
 
 - Access to the agent-building surface in Copilot (Agent Builder / Copilot Studio's lightweight authoring).

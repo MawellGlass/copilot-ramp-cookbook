@@ -137,6 +137,7 @@ nav:
       - "Stage 4 · Agent Builder": stages/stage-4-agent-builder.md
       - "Stage 5 · Copilot Studio": stages/stage-5-studio.md
       - "Stage 6 · Foundry": stages/stage-6-foundry.md
+      - "Right-sizing — drop back a stage": right-sizing.md
 
   - Solution Templates:
       - solutions/index.md

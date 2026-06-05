@@ -26,7 +26,8 @@ Without a dedicated team, predictable patterns show up:
 - **Twenty ideas, no prioritization.** Every department has a wish list; nothing ships because nothing is
   ranked.
 - **Wrong-tool sprawl.** A throwaway task gets built as a full Copilot Studio agent; a production workflow gets
-  trapped in a personal Agent Builder agent. Effort lands in the wrong place.
+  trapped in a personal Agent Builder agent. Effort lands in the wrong place. (Spot it early with the
+  [downward arrows](../right-sizing.md) — when to drop back a stage.)
 - **Governance as an afterthought.** Data boundaries and lifecycle get bolted on *after* something is live —
   the most expensive time to add them.
 

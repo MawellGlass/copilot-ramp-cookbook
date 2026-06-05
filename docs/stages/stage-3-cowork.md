@@ -15,6 +15,10 @@ stage: cowork
 
 You trust Copilot for single prompts and find yourself wishing it could just *finish the whole thing* — pull the inputs, do the steps, hand you a result. That's exactly what Cowork is for.
 
+!!! question "Going the wrong way?"
+    Cowork earns its overhead on real multi-step work. If you've spun up a session for **one rewrite,
+    summary, or lookup**, you've overshot — [drop back to Chat](../right-sizing.md#cowork-to-chat).
+
 ## What you need
 
 - **Frontier program enrollment** — see below.

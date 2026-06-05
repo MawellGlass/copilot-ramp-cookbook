@@ -15,6 +15,11 @@ stage: first-party
 
 Chat is muscle memory and you want more horsepower for specific jobs — deep research, data analysis, meeting facilitation, live translation — without learning to build anything.
 
+!!! question "Going the wrong way?"
+    The specialists earn their wait on genuinely hard, multi-source asks. If you're invoking Researcher
+    for a fact Chat answers in one line, you've overshot —
+    [drop back to Chat](../right-sizing.md#first-party-to-chat).
+
 ## What you need
 
 - A Microsoft 365 Copilot license (the same one from Stage 1).

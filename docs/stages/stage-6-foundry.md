@@ -21,6 +21,11 @@ stage: foundry
 
 You've outgrown low-code. A Copilot Studio agent can't express what you need: you require a **custom or fine-tuned model**, **autonomous multi-agent orchestration**, **rigorous evaluation and monitoring**, or **MCP tools and integrations at engineering scale**. You have developers, an Azure subscription, and a deployment pipeline — and the problem justifies building like software.
 
+!!! question "Going the wrong way?"
+    Foundry is the easiest place to over-engineer. If you're writing **glue code for a single linear
+    task** or rebuilding a connector Studio already ships, you've overshot —
+    [drop back to Studio](../right-sizing.md#foundry-to-studio).
+
 ## What you need
 
 - An **Azure subscription** and a **Microsoft Foundry project** to build in.
