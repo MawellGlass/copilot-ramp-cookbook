@@ -5,9 +5,9 @@ hide: [toc]
 
 # Path Finder
 
-Answer a few quick questions about your scenario and we'll point you at the Copilot surface that fits — Chat,
-a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry. It's the
-[decision tree](decision-tree.md), made clickable.
+Answer six quick questions about your process — cadence, complexity, reach, data, actions, and how much you
+want to build — and we'll recommend a **primary** Copilot surface plus a **backup**, with the strengths and
+trade-offs of each. It's the [decision tree](decision-tree.md), made clickable and weighted.
 
 !!! warning "Unofficial — a guide, not a rule"
     This routes the *typical* case. Real decisions also weigh licensing, data sensitivity, and who owns the
@@ -105,178 +105,245 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
 .pw-cta:hover { opacity: 0.92; transform: translateY(-1px); }
 .pw-crumbs { font-size: 0.8rem; color: var(--md-default-fg-color--lighter); margin-bottom: 0.9rem; }
 .pw-crumbs span { color: var(--md-default-fg-color--light); }
+
+/* primary + backup results */
+.pw-answers { font-size: 0.82rem; color: var(--md-default-fg-color--light); margin-bottom: 1rem; }
+.pw-answers b { color: var(--md-default-fg-color); font-weight: 600; }
+.pw-backup { margin-top: 1.7rem; padding-top: 1.4rem; border-top: 1px dashed var(--md-default-fg-color--lightest); }
+.pw-backup-badge { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--md-default-fg-color--light); margin-bottom: 0.5rem; }
+.pw-backup .pw-result-head h2 { font-size: 1.3rem; }
+.pw-backup .pw-result-head .ico { font-size: 1.9rem; }
+.pw-runner-note { color: var(--md-default-fg-color--light); font-size: 0.98rem; margin: 0 0 0.4rem; }
+
+/* pros / cons grid */
+.pw-pc { display: grid; gap: 0.9rem 1.4rem; margin: 1rem 0 0.4rem; }
+@media (min-width: 640px) { .pw-pc { grid-template-columns: 1fr 1fr; } }
+.pw-pc-col h4 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.45rem; }
+.pw-pc-col.pros h4 { color: #2e9e57; }
+.pw-pc-col.cons h4 { color: #d08641; }
+.pw-pc-col.pros h4::before { content: "\2713  "; }
+.pw-pc-col.cons h4::before { content: "\26A0  "; }
+.pw-pc-col ul { list-style: none; margin: 0; padding: 0; }
+.pw-pc-col li { position: relative; padding-left: 1.3rem; margin: 0.32rem 0; font-size: 0.9rem; line-height: 1.45; }
+.pw-pc-col.pros li::before { content: "\2713"; position: absolute; left: 0; color: #2e9e57; font-weight: 700; }
+.pw-pc-col.cons li::before { content: "\2013"; position: absolute; left: 0; color: #d08641; font-weight: 700; }
+.pw-cta.secondary { background: transparent; color: var(--pw-accent) !important; border: 1.5px solid var(--pw-accent); }
+.pw-cta.secondary:hover { background: var(--md-code-bg-color); }
 </style>
 
 <div class="pw-card" id="pw-card" aria-live="polite"></div>
 
 <script>
 (function () {
-  // ── Decision graph (mirrors empowerment/decision-tree.md) ──────────────────
-  var TREE = {
-    start: {
-      q: "How often will you need this?",
-      sub: "Start with the process, not the product \u2014 the rhythm of the work points you to the right surface. You don't need to know the tools yet.",
-      cols: 2,
+  // ── Scoring model (mirrors empowerment/decision-tree.md, expanded) ─────────
+  // Simpler-first order; also used as the tie-breaker when two surfaces tie.
+  var ORDER = ["r_chat", "r_fpa", "r_cowork", "r_ab", "r_studio", "r_foundry"];
+
+  var QUESTIONS = [
+    {
+      q: "How often will this happen?",
+      sub: "Start with the rhythm of the work, not the tool \u2014 cadence is the strongest single signal.",
       options: [
         { ico: "\u26A1", title: "Once or occasionally",
-          desc: "A specific task in front of me right now.", next: "once" },
-        { ico: "\uD83D\uDD01", title: "Again and again",
-          desc: "A repeatable need my team or org will reuse.", next: "recurring" }
+          desc: "A task in front of me now; not a standing need.",
+          w: { r_chat: 2, r_cowork: 2, r_fpa: 1 } },
+        { ico: "\uD83D\uDD01", title: "Regularly \u2014 a repeatable need",
+          desc: "Daily or weekly; my team will reuse it.",
+          w: { r_ab: 2, r_fpa: 1, r_studio: 1 } },
+        { ico: "\u267E\uFE0F", title: "Continuously \u2014 always-on",
+          desc: "Runs on a schedule or trigger for many people.",
+          w: { r_studio: 2, r_foundry: 2 } }
       ]
     },
-
-    once: {
-      q: "What does the one-off task look like?",
-      sub: "It's a one-off. Pick the shape that matches the work \u2014 we'll refine from there.",
+    {
+      q: "How many steps does the work involve?",
+      sub: "One move, or a chain of them that has to run in order?",
       options: [
-        { ico: "\uD83D\uDCAC", title: "A quick, single step",
-          desc: "Draft, summarize, rewrite, or answer \u2014 right now.", next: "once_single" },
-        { ico: "\uD83D\uDE80", title: "A multi-step job to hand off",
-          desc: "Several steps I'd rather delegate and let run.", next: "once_multi" },
-        { ico: "\uD83E\uDD16", title: "A specialized skill",
-          desc: "Deep research, data analysis, or facilitation.", next: "once_special" }
+        { ico: "\u270D\uFE0F", title: "A single step",
+          desc: "Draft, summarize, rewrite, or answer.",
+          w: { r_chat: 3, r_fpa: 1 } },
+        { ico: "\uD83E\uDDF5", title: "A few steps in sequence",
+          desc: "Gather, then process, then produce.",
+          w: { r_cowork: 2, r_ab: 1, r_studio: 1 } },
+        { ico: "\uD83D\uDEF0\uFE0F", title: "Many steps, orchestrated",
+          desc: "Branching logic, or runs triggered by an event.",
+          w: { r_studio: 2, r_foundry: 2, r_cowork: 1 } }
       ]
     },
-    once_single: {
-      q: "Does it need anything beyond drafting or answering?",
-      sub: "A single step can still vary \u2014 does it stay inside your own writing, or reach for data?",
-      cols: 2,
+    {
+      q: "Who relies on the result?",
+      sub: "How far does the output need to travel beyond you?",
       options: [
-        { ico: "\u270D\uFE0F", title: "No \u2014 just write or answer",
-          desc: "Compose, summarize, rewrite, or explain in my apps.", next: "r_chat" },
-        { ico: "\uD83D\uDD0E", title: "Yes \u2014 pull data or analyze",
-          desc: "Reach into a specific source or run real analysis.", next: "r_fpa" }
+        { ico: "\uD83E\uDDD1", title: "Just me",
+          desc: "My own day-to-day productivity.",
+          w: { r_chat: 2, r_cowork: 1, r_fpa: 1 } },
+        { ico: "\uD83D\uDC65", title: "My team",
+          desc: "A small group reuses the same helper.",
+          w: { r_ab: 2, r_fpa: 1, r_studio: 1 } },
+        { ico: "\uD83C\uDFE2", title: "The whole org or external users",
+          desc: "Many people depend on it being right.",
+          w: { r_studio: 2, r_foundry: 1 } }
       ]
     },
-    once_multi: {
-      q: "How hands-off should it run?",
-      sub: "Multi-step work can be fully delegated, or steered as one specialized skill.",
-      cols: 2,
+    {
+      q: "What does it need to know?",
+      sub: "Where does the grounding come from \u2014 you, your files, or live systems?",
       options: [
-        { ico: "\uD83D\uDE80", title: "Fully delegate it",
-          desc: "Let it plan and run the steps end to end.", next: "r_cowork" },
-        { ico: "\uD83E\uDD16", title: "It's really one skill",
-          desc: "Deep research or analysis I'll guide.", next: "r_fpa" }
+        { ico: "\uD83D\uDCAC", title: "Only what I give it in the moment",
+          desc: "Context I paste, attach, or have open.",
+          w: { r_chat: 2, r_cowork: 1 } },
+        { ico: "\uD83D\uDCC1", title: "My own files or a knowledge base",
+          desc: "A fixed set of reference documents.",
+          w: { r_ab: 2, r_fpa: 1, r_studio: 1 } },
+        { ico: "\uD83D\uDD0C", title: "Live connected systems and data",
+          desc: "CRM, databases, line-of-business apps.",
+          w: { r_studio: 3, r_foundry: 2 } }
       ]
     },
-    once_special: {
-      q: "Might Microsoft already ship an agent for it?",
-      sub: "Specialized jobs often already exist \u2014 the best agent is the one you don't have to make.",
-      cols: 2,
+    {
+      q: "Does it act, or just inform?",
+      sub: "Reading and drafting is one thing \u2014 changing systems is another.",
       options: [
-        { ico: "\uD83D\uDCE6", title: "Maybe \u2014 check first",
-          desc: "See what's bundled before building anything.", next: "r_fpa" },
-        { ico: "\uD83D\uDEE0\uFE0F", title: "No \u2014 assemble it myself",
-          desc: "Bespoke; I'll hand the whole job to Cowork.", next: "r_cowork" }
+        { ico: "\uD83D\uDCD6", title: "Just answers and drafts",
+          desc: "Read-only; I take it from there.",
+          w: { r_chat: 2, r_fpa: 1, r_ab: 1 } },
+        { ico: "\uD83E\uDE84", title: "Acts across my everyday tools",
+          desc: "Moves work through my apps for me.",
+          w: { r_cowork: 2, r_ab: 1, r_studio: 1 } },
+        { ico: "\u2699\uFE0F", title: "Executes in business systems",
+          desc: "Writes records or triggers transactions.",
+          w: { r_studio: 3, r_foundry: 2 } }
       ]
     },
-
-    recurring: {
-      q: "Who will use it, and how far does it reach?",
-      sub: "It'll happen again and again. How far does it need to travel?",
+    {
+      q: "How much do you want to build and own?",
+      sub: "Be honest about the effort and governance you can take on.",
       options: [
-        { ico: "\uD83E\uDDF1", title: "Just me or my team",
-          desc: "A repeatable helper for a small group.", next: "rec_team" },
-        { ico: "\uD83C\uDFE2", title: "The whole org \u2014 governed",
-          desc: "Real knowledge, actions, and a managed lifecycle.", next: "rec_org" },
-        { ico: "\uD83D\uDEF0\uFE0F", title: "Engineered at scale",
-          desc: "Pro-code, autonomous, custom models or MCP.", next: "r_foundry" }
-      ]
-    },
-    rec_team: {
-      q: "What does it need under the hood?",
-      sub: "Team-scale agents split on one thing: do they need more than a prompt and files?",
-      cols: 2,
-      options: [
-        { ico: "\uD83D\uDCDD", title: "A prompt and a few files",
-          desc: "Instructions plus reference docs \u2014 no code.", next: "r_ab" },
-        { ico: "\uD83D\uDD0C", title: "Knowledge, actions, connectors",
-          desc: "Grounded data or real actions, governed.", next: "r_studio" }
-      ]
-    },
-    rec_org: {
-      q: "How will it be built and run?",
-      sub: "Org-wide and governed \u2014 the line now is low-code versus pro-code.",
-      cols: 2,
-      options: [
-        { ico: "\uD83C\uDFE2", title: "Low-code, in a studio",
-          desc: "Configured, published, and monitored without engineering.", next: "r_studio" },
-        { ico: "\uD83D\uDEF0\uFE0F", title: "Pro-code at scale",
-          desc: "Custom models, autonomous runs, or MCP tools.", next: "r_foundry" }
+        { ico: "\uD83C\uDF81", title: "Nothing \u2014 use what already exists",
+          desc: "Fastest path; no maintenance.",
+          w: { r_chat: 2, r_fpa: 2, r_cowork: 1 } },
+        { ico: "\uD83E\uDDE9", title: "Low-code config I'll maintain",
+          desc: "Assemble and publish without engineering.",
+          w: { r_ab: 2, r_studio: 2 } },
+        { ico: "\uD83D\uDEE0\uFE0F", title: "Pro-code, engineered and operated",
+          desc: "Full control; I have developer ownership.",
+          w: { r_foundry: 3, r_studio: 1 } }
       ]
     }
-  };
+  ];
 
-  var RESULTS = {
+  var SURFACES = {
     r_chat: {
-      ico: "\uD83D\uDCAC", name: "Stage 1 \u00B7 Chat", stage: "Stage 1",
-      tagline: "The fastest value. A single task in the flow of work rarely needs anything more than Chat.",
-      why: "Your need is a one-off, single step \u2014 draft, summarize, rewrite, or answer \u2014 and you want it now. Chat handles it right inside the apps you already use.",
-      watch: "If you find yourself pasting the same instructions over and over, that's a signal the work might graduate to an agent.",
-      alt: "Recurring version of this task? Look at <b>Stage 4 \u00B7 Agent Builder</b> to package it.",
+      ico: "\uD83D\uDCAC", name: "Stage 1 \u00B7 Chat",
+      tagline: "The fastest value \u2014 a single task in the flow of work, with no setup.",
+      pros: [
+        "Zero setup \u2014 lives in the apps you already use",
+        "Instant; nothing to build, govern, or maintain",
+        "Ideal for drafting, summarizing, rewriting, and Q&A"
+      ],
+      cons: [
+        "Nothing is reusable \u2014 you re-prompt every time",
+        "No grounding in live or connected systems",
+        "Won't take actions or run multi-step jobs on its own"
+      ],
       href: "../../stages/stage-1-chat/", cta: "Go to Stage 1 \u00B7 Chat"
     },
     r_fpa: {
-      ico: "\uD83E\uDD16", name: "Stage 2 \u00B7 First-party agents", stage: "Stage 2",
-      tagline: "Before you build, check what Microsoft already ships. The best agent is the one you don't have to make.",
-      why: "You need a specialist — research, analysis, facilitation — and there's a good chance it already exists in your license, ready to use.",
-      watch: "Coverage varies by license and tenant settings. Confirm the agent is available to you before you plan around it.",
-      alt: "Nothing fits? You may need to build \u2014 see <b>Stage 4 \u00B7 Agent Builder</b> or <b>Stage 5 \u00B7 Copilot Studio</b>.",
+      ico: "\uD83E\uDD16", name: "Stage 2 \u00B7 First-party agents",
+      tagline: "Specialist agents Microsoft already ships \u2014 the best agent is the one you don't build.",
+      pros: [
+        "Pre-built and tuned by Microsoft \u2014 no build effort",
+        "Deep skills (research, analysis, facilitation) out of the box",
+        "Governed and supported inside your license"
+      ],
+      cons: [
+        "Availability varies by license and tenant settings",
+        "Limited customization for a niche process",
+        "May not match proprietary data or workflows"
+      ],
       href: "../../stages/stage-2-first-party/", cta: "Go to Stage 2 \u00B7 First-party agents"
     },
     r_cowork: {
-      ico: "\uD83D\uDE80", name: "Stage 3 \u00B7 Cowork", stage: "Stage 3",
-      tagline: "When a job is multi-step but you only need it this once, hand the whole thing off rather than standing up a reusable agent.",
-      why: "The job has several steps, but it's a one-off. Cowork takes the delegation and runs it end to end.",
-      watch: "If the same multi-step job recurs weekly, building a reusable agent will pay off over repeating the hand-off.",
-      alt: "Same task every week? Package it as a <b>Stage 4 \u00B7 Agent Builder</b> agent.",
+      ico: "\uD83D\uDE80", name: "Stage 3 \u00B7 Cowork",
+      tagline: "Hand off a whole multi-step job once \u2014 no reusable agent to stand up.",
+      pros: [
+        "Delegates an end-to-end job in a single hand-off",
+        "Nothing to build \u2014 perfect for one-off orchestration",
+        "Works across your everyday content and apps"
+      ],
+      cons: [
+        "Not reusable \u2014 you re-delegate each time it recurs",
+        "Lighter governance and monitoring than a published agent",
+        "Best for personal scope, not org-wide rollout"
+      ],
       href: "../../stages/stage-3-cowork/", cta: "Go to Stage 3 \u00B7 Cowork"
     },
     r_ab: {
-      ico: "\uD83E\uDDF1", name: "Stage 4 \u00B7 Agent Builder", stage: "Stage 4",
-      tagline: "The right home when the same task keeps recurring and a prompt-plus-files agent solves it.",
-      why: "The need recurs, but it's just instructions plus a few reference files \u2014 no code, no connectors. Personal or team scope.",
-      watch: "Need real knowledge sources, actions, or org-wide governance? That's where Agent Builder stops and Studio begins.",
-      alt: "Outgrowing it? Graduate the working agent into <b>Stage 5 \u00B7 Copilot Studio</b> \u2014 cheaper than over-building on day one.",
+      ico: "\uD83E\uDDF1", name: "Stage 4 \u00B7 Agent Builder",
+      tagline: "Package a recurring task as a no-code agent \u2014 a prompt plus a few files.",
+      pros: [
+        "No-code: instructions plus a few reference files",
+        "Reusable and shareable with your team",
+        "Quick to stand up and iterate"
+      ],
+      cons: [
+        "No connectors, live data, or write-actions",
+        "Lighter governance than Studio",
+        "Personal/team scope \u2014 not an org-grade lifecycle"
+      ],
       href: "../../stages/stage-4-agent-builder/", cta: "Go to Stage 4 \u00B7 Agent Builder"
     },
     r_studio: {
-      ico: "\uD83C\uDFE2", name: "Stage 5 \u00B7 Copilot Studio", stage: "Stage 5",
-      tagline: "Where agents grow up: real knowledge sources, connectors and actions, publishing, monitoring, and governance.",
-      why: "The need recurs and has to reach the whole org \u2014 with grounded knowledge, actions or connectors, and a lifecycle you can manage. That's Studio's home turf.",
-      watch: "Studio is low-code, not no-code. Budget time for environments, data boundaries, and a publish/monitor loop.",
-      alt: "Need pro-code, custom models, or autonomous agents at scale? Step up to <b>Microsoft Foundry</b>.",
+      ico: "\uD83C\uDFE2", name: "Stage 5 \u00B7 Copilot Studio",
+      tagline: "Where agents grow up \u2014 knowledge, connectors, actions, publishing, and governance.",
+      pros: [
+        "Real knowledge sources, connectors, and actions",
+        "Publish, monitor, and govern across the org",
+        "Low-code \u2014 no full engineering team required"
+      ],
+      cons: [
+        "Setup cost: environments, data boundaries, publish/monitor loop",
+        "Low-code, not no-code \u2014 a genuine learning curve",
+        "Overkill for a simple personal helper"
+      ],
       href: "../../stages/stage-5-studio/", cta: "Go to Stage 5 \u00B7 Copilot Studio"
     },
     r_foundry: {
-      ico: "\uD83D\uDEF0\uFE0F", name: "Microsoft Foundry", stage: "Foundry",
-      tagline: "The pro-code frontier: autonomous and triggered agents, custom models, evaluation, and MCP tools at scale.",
-      why: "You've outgrown low-code. The need is engineered \u2014 custom models, autonomous or triggered execution, evaluation pipelines, or MCP tools \u2014 run and operated like software.",
-      watch: "This is a developer platform. Make sure you have the engineering ownership and governance to run it.",
-      alt: "Most teams reach Foundry by graduating a <b>Studio</b> agent \u2014 not by starting here.",
+      ico: "\uD83D\uDEF0\uFE0F", name: "Microsoft Foundry",
+      tagline: "The pro-code frontier \u2014 custom models, autonomous and triggered agents, evaluation, MCP tools.",
+      pros: [
+        "Pro-code control: custom models, autonomous runs, MCP tools",
+        "Evaluation pipelines and scale-grade operations",
+        "Maximum flexibility for engineered solutions"
+      ],
+      cons: [
+        "Requires engineering ownership and ongoing ops",
+        "Highest build and governance cost",
+        "Overkill until you've outgrown low-code"
+      ],
       href: "https://learn.microsoft.com/en-us/azure/ai-foundry/", cta: "Explore Microsoft Foundry", external: true
     }
   };
 
   var INTRO = {
-    intro: true,
     ico: "\uD83E\uDDED",
     q: "Find your starting surface",
-    sub: "A few quick questions. Under a minute. A recommendation you can act on.",
+    sub: "Six quick questions about your process \u2014 under two minutes. You'll get a primary recommendation plus a backup, with the trade-offs of each.",
     cta: "Start"
   };
 
   var card = document.getElementById("pw-card");
   if (!card) return;
 
-  var path = [];   // stack of node keys visited (questions only)
-  var labels = []; // chosen option titles, for the breadcrumb
+  var picks = [];  // chosen option objects, one per answered question
+  var cur = 0;     // current question index; === QUESTIONS.length on the result
 
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
   function renderIntro() {
+    cur = 0;
     card.innerHTML =
       '<div class="pw-result" style="text-align:center">' +
         '<div style="font-size:3rem;line-height:1;margin-bottom:0.6rem">' + INTRO.ico + '</div>' +
@@ -285,35 +352,24 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
         '<button class="pw-cta" id="pw-start" style="border:none;cursor:pointer">' + esc(INTRO.cta) + ' \u2192</button>' +
       '</div>';
     document.getElementById("pw-start").addEventListener("click", function () {
-      path = ["start"]; labels = []; renderNode("start");
+      picks = []; renderQuestion(0);
     });
   }
 
-  function maxDepth(key) {
-    var node = TREE[key];
-    if (!node) return 0; // a result node ends the journey
-    var best = 0;
-    node.options.forEach(function (o) {
-      var d = maxDepth(o.next);
-      if (d > best) best = d;
-    });
-    return 1 + best;
-  }
-
-  function renderNode(key) {
-    var node = TREE[key];
-    var step = path.length;                          // depth of this question (1-indexed)
-    var total = (path.length - 1) + maxDepth(key);   // longest journey through this branch
+  function renderQuestion(i) {
+    cur = i;
+    var node = QUESTIONS[i];
+    var step = i + 1, total = QUESTIONS.length;
     var dots = "";
-    for (var i = 1; i <= total; i++) {
-      var cls = "pw-dot" + (i === step ? " active" : (i < step ? " done" : ""));
+    for (var d = 1; d <= total; d++) {
+      var cls = "pw-dot" + (d === step ? " active" : (d < step ? " done" : ""));
       dots += '<span class="' + cls + '"></span>';
     }
-    var crumb = labels.length
-      ? '<div class="pw-crumbs">Your path: ' + labels.map(function (l) { return '<span>' + esc(l) + '</span>'; }).join(" \u2192 ") + '</div>'
+    var crumb = picks.length
+      ? '<div class="pw-crumbs">Your path: ' + picks.map(function (p) { return '<span>' + esc(p.title) + '</span>'; }).join(" \u2192 ") + '</div>'
       : '';
     var opts = node.options.map(function (o, idx) {
-      return '<button class="pw-option" data-next="' + o.next + '" data-idx="' + idx + '">' +
+      return '<button class="pw-option" data-idx="' + idx + '">' +
         '<span class="ico">' + o.ico + '</span>' +
         '<span class="txt"><b>' + esc(o.title) + '</b><span>' + esc(o.desc) + '</span></span>' +
       '</button>';
@@ -330,39 +386,69 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
         '<span class="pw-spacer"></span>' +
         '<button class="pw-btn" id="pw-restart">Start over</button>' +
       '</div>';
-
     card.querySelectorAll(".pw-option").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var next = btn.getAttribute("data-next");
-        labels.push(node.options[+btn.getAttribute("data-idx")].title);
-        if (RESULTS[next]) { renderResult(next); }
-        else { path.push(next); renderNode(next); }
+        var idx = +btn.getAttribute("data-idx");
+        picks[i] = node.options[idx];
+        picks.length = i + 1;               // drop any answers from a previous, longer run
+        if (i + 1 < QUESTIONS.length) { renderQuestion(i + 1); }
+        else { renderResult(); }
       });
     });
     document.getElementById("pw-back").addEventListener("click", goBack);
     document.getElementById("pw-restart").addEventListener("click", restart);
   }
 
-  function renderResult(key) {
-    var r = RESULTS[key];
-    var crumb = labels.length
-      ? '<div class="pw-crumbs">Your path: ' + labels.map(function (l) { return '<span>' + esc(l) + '</span>'; }).join(" \u2192 ") + '</div>'
-      : '';
-    var ctaAttrs = r.external ? ' target="_blank" rel="noopener"' : '';
+  function rank() {
+    var scores = {};
+    ORDER.forEach(function (k) { scores[k] = 0; });
+    picks.forEach(function (p) {
+      for (var k in p.w) { scores[k] = (scores[k] || 0) + p.w[k]; }
+    });
+    return ORDER.slice().sort(function (a, b) {
+      if (scores[b] !== scores[a]) { return scores[b] - scores[a]; }
+      return ORDER.indexOf(a) - ORDER.indexOf(b); // tie-break: simpler surface first
+    });
+  }
+
+  function pcBlock(s) {
+    var pros = s.pros.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join("");
+    var cons = s.cons.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join("");
+    return '<div class="pw-pc">' +
+      '<div class="pw-pc-col pros"><h4>Strengths</h4><ul>' + pros + '</ul></div>' +
+      '<div class="pw-pc-col cons"><h4>Trade-offs</h4><ul>' + cons + '</ul></div>' +
+    '</div>';
+  }
+
+  function renderResult() {
+    cur = QUESTIONS.length;
+    var ranked = rank();
+    var primary = SURFACES[ranked[0]];
+    var backup = SURFACES[ranked[1]];
+    var answers = picks.map(function (p) { return '<b>' + esc(p.title) + '</b>'; }).join(" \u00B7 ");
+    var pAttrs = primary.external ? ' target="_blank" rel="noopener"' : '';
+    var bAttrs = backup.external ? ' target="_blank" rel="noopener"' : '';
     var doneDots = "";
-    for (var i = 0; i < path.length; i++) { doneDots += '<span class="pw-dot done"></span>'; }
+    for (var i = 0; i < QUESTIONS.length; i++) { doneDots += '<span class="pw-dot done"></span>'; }
     card.innerHTML =
       '<div class="pw-result">' +
         '<div class="pw-progress">' + doneDots +
           '<span class="pw-step-label">Recommendation</span></div>' +
-        crumb +
-        '<div class="pw-result-badge">Your recommended surface</div>' +
-        '<div class="pw-result-head"><span class="ico">' + r.ico + '</span><h2>' + esc(r.name) + '</h2></div>' +
-        '<p class="pw-tagline">' + esc(r.tagline) + '</p>' +
-        '<div class="pw-detail"><h4>Why this fits</h4><p>' + esc(r.why) + '</p></div>' +
-        '<div class="pw-detail"><h4>Watch out for</h4><p>' + esc(r.watch) + '</p></div>' +
-        '<div class="pw-alt">' + r.alt + '</div>' +
-        '<a class="pw-cta" href="' + r.href + '"' + ctaAttrs + '>' + esc(r.cta) + ' \u2192</a>' +
+        '<div class="pw-answers">Your answers: ' + answers + '</div>' +
+        '<div class="pw-primary">' +
+          '<div class="pw-result-badge">Primary recommendation</div>' +
+          '<div class="pw-result-head"><span class="ico">' + primary.ico + '</span><h2>' + esc(primary.name) + '</h2></div>' +
+          '<p class="pw-tagline">' + esc(primary.tagline) + '</p>' +
+          pcBlock(primary) +
+          '<a class="pw-cta" href="' + primary.href + '"' + pAttrs + '>' + esc(primary.cta) + ' \u2192</a>' +
+        '</div>' +
+        '<div class="pw-backup">' +
+          '<div class="pw-backup-badge">Backup option \u2014 if that isn\u2019t quite right</div>' +
+          '<div class="pw-result-head"><span class="ico">' + backup.ico + '</span><h2>' + esc(backup.name) + '</h2></div>' +
+          '<p class="pw-runner-note">' + esc(backup.tagline) + '</p>' +
+          pcBlock(backup) +
+          '<a class="pw-cta secondary" href="' + backup.href + '"' + bAttrs + '>' + esc(backup.cta) + ' \u2192</a>' +
+        '</div>' +
         '<div class="pw-actions">' +
           '<button class="pw-btn" id="pw-back">\u2190 Back</button>' +
           '<span class="pw-spacer"></span>' +
@@ -374,19 +460,18 @@ a first-party agent, Cowork, Agent Builder, Copilot Studio, or Microsoft Foundry
   }
 
   function goBack() {
-    // On a result, labels has one more entry than the question stack: step back to
-    // the last question rather than skipping it.
-    if (labels.length === path.length && path.length > 0) {
-      labels.pop();
-      renderNode(path[path.length - 1]);
-      return;
+    if (cur >= QUESTIONS.length) {          // on the result
+      picks.pop();
+      renderQuestion(QUESTIONS.length - 1);
+    } else if (cur > 0) {
+      picks.pop();
+      renderQuestion(cur - 1);
+    } else {
+      renderIntro();
     }
-    labels.pop();
-    if (path.length > 1) { path.pop(); renderNode(path[path.length - 1]); }
-    else { renderIntro(); }
   }
 
-  function restart() { path = []; labels = []; renderIntro(); }
+  function restart() { picks = []; renderIntro(); }
 
   function init() {
     var el = document.getElementById("pw-card");
