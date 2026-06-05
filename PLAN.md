@@ -1,9 +1,19 @@
 # Copilot Ramp Cookbook — Build Plan
 
 > A public, community-built "single source" that walks customers through the Microsoft Copilot
-> maturity journey — from first chat to building production agents in Copilot Studio.
+> maturity journey — from first chat to building and operating production agents in Microsoft Foundry.
 >
 > _Unofficial. Not affiliated with or endorsed by Microsoft._
+
+---
+
+> [!NOTE]
+> **Historical planning document.** This is the original build plan, kept for provenance. The live
+> site has since evolved: the journey now runs **six** stages and ends at **Microsoft Foundry**
+> (pro-code agents), with **Copilot Studio** as Stage 5 rather than the destination. The diagram,
+> IA tree, and matrix below have been updated to the six-stage shape; the phase log and open
+> decisions are preserved as a snapshot of the early plan. For the current source of truth, see
+> the live site, `README.md`, and `CATALOG.md`.
 
 ---
 
@@ -15,15 +25,17 @@ This site answers that by laying out a **natural, grassroots ramp** and giving p
 reusable use cases at every step. The journey:
 
 ```
-Copilot Chat  →  First-Party Agents  →  Cowork  →  Agent Builder  →  Copilot Studio
-   (use it)        (use what's built)    (let it    (build simple   (build real
-                                          run work)   agents)         agents — the goal)
+Copilot Chat → First-Party Agents → Cowork → Agent Builder → Copilot Studio → Microsoft Foundry
+  (use it)       (use what's built)  (let it   (build simple   (build real    (build & operate
+                                      run work)  agents)         low-code        pro-code agents
+                                                                 agents)         — the destination)
 ```
 
 Each stage lowers the activation energy for the next. By the time a customer is comfortable
-delegating multi-step work to Cowork and assembling declarative agents in Agent Builder, the
-jump to **Copilot Studio** (pro-grade, low-code agents) feels like the obvious next step rather
-than a cliff.
+delegating multi-step work to Cowork, assembling declarative agents in Agent Builder, and shipping
+low-code agents in **Copilot Studio**, the jump to **Microsoft Foundry** (pro-code agents with
+custom code, your own evaluation gate, and identity you own) feels like the obvious next step
+rather than a cliff — and only for the workloads that genuinely need it.
 
 ## 2. Who it's for
 
@@ -53,7 +65,9 @@ Home
 │     └── (same shape)
 ├── Stage 4 · Agent Builder
 │     └── (same shape)
-├── Stage 5 · Copilot Studio   ◄── the destination
+├── Stage 5 · Copilot Studio
+│     └── (same shape)
+├── Stage 6 · Microsoft Foundry   ◄── the destination
 │     └── (same shape)
 │
 ├── Use-Case Catalog (the full matrix, filterable by stage AND role AND tag)
@@ -64,20 +78,22 @@ Home
 **Why journey-first (not role-first):** the customer's core question is *sequencing* — "what's next?"
 Role is how they narrow within a stage, not how they navigate the whole site. Sean's cookbook is
 organized by business process because his scope is one product (Cowork) applied across processes;
-our scope is *five products in sequence*, so the ladder is the spine.
+our scope is *six products in sequence*, so the ladder is the spine.
 
 ### The matrix
 
-|                     | End user | Champion | Manager | Maker | IT/Admin |
-|---------------------|:--------:|:--------:|:-------:|:-----:|:--------:|
-| **1 · Chat**        | ●●●      | ●●       | ●●      | ●     | ●        |
-| **2 · First-Party** | ●●●      | ●●       | ●●      | ●     | ●        |
-| **3 · Cowork**      | ●●       | ●●●      | ●●      | ●●    | ●        |
-| **4 · Agent Builder** | ●      | ●●       | ●       | ●●●   | ●●       |
-| **5 · Studio**      | —        | ●        | ●       | ●●●   | ●●●      |
+|                     | End user | Champion | Manager | Maker | IT/Admin | Developer |
+|---------------------|:--------:|:--------:|:-------:|:-----:|:--------:|:---------:|
+| **1 · Chat**        | ●●●      | ●●       | ●●      | ●     | ●        | ●         |
+| **2 · First-Party** | ●●●      | ●●       | ●●      | ●     | ●        | ●         |
+| **3 · Cowork**      | ●●       | ●●●      | ●●      | ●●    | ●        | ●         |
+| **4 · Agent Builder** | ●      | ●●       | ●       | ●●●   | ●●       | ●         |
+| **5 · Studio**      | —        | ●        | ●       | ●●●   | ●●●      | ●●        |
+| **6 · Foundry**     | —        | —        | ●       | ●●    | ●●       | ●●●       |
 
 (● = relative number of use cases we'll seed. Density shifts from "everyone uses Chat" toward
-"makers + IT build Studio agents," which mirrors the real adoption curve.)
+"makers + IT build Studio agents" and finally "developers build & operate pro-code agents in
+Foundry," which mirrors the real adoption curve.)
 
 ## 4. Content strategy — breadth now, depth at a controlled pace
 
