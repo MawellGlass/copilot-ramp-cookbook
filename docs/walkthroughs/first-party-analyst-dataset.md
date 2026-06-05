@@ -62,7 +62,19 @@ specific and measurable — vague questions get vague analysis.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot with the **Analyst** agent. The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Analyst agent open in Microsoft 365 Copilot](../screenshots/first-party-analyst-dataset/01-open-analyst.png)
+**Open Analyst.** Start a conversation with the prebuilt Analyst agent — it suggests data-first prompts to get you going.
+
+![A specific, measurable analysis prompt entered in the Analyst composer](../screenshots/first-party-analyst-dataset/02-prompt-entered.png)
+**Ask a pointed question.** Name the metric, the ranking, the time frame, and the output you want.
+
+![Analyst writing and running Python to analyze the data](../screenshots/first-party-analyst-dataset/03-reasoning.png)
+**Watch it work.** Analyst writes and runs code in the open — so you can see *how* it got the number, not just the number.
+
+![The finished line chart of profit-margin trends for the top 5 products](../screenshots/first-party-analyst-dataset/04-chart.png)
+**A chart you can drop into a deck.** Analyst returns the findings *and* the visual, ready to reuse.
 
 ## Make it better
 A first chart is the start of a conversation, not the end:
