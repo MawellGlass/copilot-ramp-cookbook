@@ -61,7 +61,13 @@ all four turns a vague "Cowork can do X" into a recipe a teammate can run withou
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Prompt asking Copilot to draft five reusable Cowork task recipes for a finance team](../screenshots/cowork-recipe-library/01-recipe-prompt.png)
+**Ask Copilot to draft reusable, paste-ready task recipes for a whole team.**
+
+![A finance recipe with a clear name, paste-ready task description, and the inputs it needs](../screenshots/cowork-recipe-library/02-recipes-response.png)
+**Each recipe comes back with the four parts that make it rerunnable cold — a clear name, the exact task description to paste, the inputs it needs, and the deliverable it produces.**
 
 ## Make it better
 A recipe library is a living asset, not a one-time doc:

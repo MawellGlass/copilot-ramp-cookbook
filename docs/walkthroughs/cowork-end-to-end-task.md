@@ -62,7 +62,13 @@ shape). Cowork turns that into a plan, executes each step, and shows its work �
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Cowork composer with an end-to-end task typed in](../screenshots/cowork-end-to-end-task/01-task-entered.png)
+**Describe the outcome, not the steps — the whole multi-step task goes in as a single hand-off.**
+
+![Copilot searching the mailbox and grounding its plan with citations](../screenshots/cowork-end-to-end-task/02-grounded-plan.png)
+**Cowork reads the task, searches your real data, and grounds its plan — here it transparently reports what it found in the mailbox (with citations) rather than fabricating a deck from data it doesn't have.**
 
 ## Make it better
 Once a one-off hand-off feels natural, push on the two dimensions that make Cowork pay off:

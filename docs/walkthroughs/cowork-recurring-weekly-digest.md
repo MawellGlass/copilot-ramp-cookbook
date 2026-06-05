@@ -62,7 +62,10 @@ once and it repeats.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![The Schedule a prompt panel showing cadence, time, day-of-week, and end-date controls](../screenshots/cowork-recurring-weekly-digest/01-schedule-prompt.png)
+**The Schedule a prompt panel turns a one-off task into a standing one — set the cadence, time, days, and end date, and Copilot reruns it on its own.**
 
 ## Make it better
 A working digest for *you* is the seed of a digest for your *team*:

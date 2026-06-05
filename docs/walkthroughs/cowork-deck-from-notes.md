@@ -61,7 +61,16 @@ its low-confidence slides** — so you know exactly where to apply judgment.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Raw notes pasted into Copilot with a request to build a 7-slide leadership deck](../screenshots/cowork-deck-from-notes/01-notes-prompt.png)
+**Hand Cowork your raw notes plus the shape of the deck you want — length, audience, narrative arc, and a request to flag its low-confidence slides.**
+
+![A slide-by-slide deck outline with titles, content, and drafted speaker notes](../screenshots/cowork-deck-from-notes/02-deck-structure.png)
+**Cowork returns a real slide-by-slide outline with titles, content, and drafted speaker notes — a v1 deck instead of a blank canvas.**
+
+![Copilot flagging its least-confident slides and offering to build a PowerPoint file](../screenshots/cowork-deck-from-notes/03-flagged-slides.png)
+**It flags the slides it was least sure about so you know where to apply judgment, then offers to turn the outline into a polished PowerPoint file.**
 
 ## Make it better
 One hand-off, many outputs:

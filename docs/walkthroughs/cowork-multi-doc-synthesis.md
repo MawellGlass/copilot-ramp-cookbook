@@ -60,7 +60,16 @@ first), a *traceability requirement* (cite the source per claim), and asks Cowor
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+![Three conflicting sources pasted in with a request for one cited brief](../screenshots/cowork-multi-doc-synthesis/01-sources-prompt.png)
+**Paste the full set of sources and tell Cowork what the brief is for — bottom-line-first, cited per claim, with conflicts flagged.**
+
+![The brief leading with a three-sentence bottom line and where the sources agree](../screenshots/cowork-multi-doc-synthesis/02-bottom-line.png)
+**The brief leads with a three-sentence bottom line, then lays out where the sources agree — each point cited back to its source.**
+
+![The brief surfacing where the sources conflict and what is missing](../screenshots/cowork-multi-doc-synthesis/03-conflicts-gaps.png)
+**Then it surfaces exactly where the sources conflict and what's missing — the part you can't get from reading any single document.**
 
 ## Make it better
 Synthesis is a starting point, not an endpoint:
