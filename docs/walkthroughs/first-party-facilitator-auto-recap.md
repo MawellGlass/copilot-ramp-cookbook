@@ -57,7 +57,22 @@ transcript — Facilitator is *already in the room*, watching the conversation a
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in a Microsoft Teams meeting with the **Facilitator** agent. The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+<!-- SCREENSHOTS PENDING CAPTURE — a maintainer runs the Playwright tool in `tooling/screenshots/` (npm run auth, then npm run capture for first-party-facilitator-auto-recap) to generate these PNGs, then removes this comment wrapper to publish them. Facilitator is an in-meeting agent, so these are captured from a live Teams meeting. Until then nothing renders, so the page never shows a broken image.
+
+**1. Facilitator on.** A Teams meeting with collaborative notes / Facilitator enabled, notes panel visible.
+![A Teams meeting with the Facilitator notes panel on](../screenshots/first-party-facilitator-auto-recap/01-facilitator-on.png)
+
+**2. Notes filling in live.** Decisions and action items captured automatically as people talk.
+![The collaborative notes panel filling in during the meeting](../screenshots/first-party-facilitator-auto-recap/02-live-notes.png)
+
+**3. Catch me up.** @mentioning Facilitator to summarize what you've missed and what's assigned to you.
+![Facilitator answering a live catch-up request in the meeting chat](../screenshots/first-party-facilitator-auto-recap/03-catch-up.png)
+
+**4. Auto-recap.** After the meeting ends, the decisions and action items are already captured.
+![The post-meeting recap with decisions and action items](../screenshots/first-party-facilitator-auto-recap/04-recap.png)
+-->
 
 ## Make it better
 Facilitator is one of a set of first-party agents — once auto-recap feels natural, reach for its

@@ -66,7 +66,19 @@ enough context to act on it.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Thread open, Copilot ready.** The thread you were @mentioned in, with the composer ready.
+![A Teams thread open with Copilot Chat ready](../screenshots/chat-catch-up-thread/01-open-thread.png)
+
+**2. Prompt entered.** The catch-up prompt typed into the composer.
+![The catch-up prompt typed into the composer](../screenshots/chat-catch-up-thread/02-prompt-entered.png)
+
+**3. What's being asked of you.** The gist, the ask, the deadline, and the few lines of context to reply.
+![Copilot's response with the ask, the deadline, and context](../screenshots/chat-catch-up-thread/03-response.png)
+
+**4. Reply drafted.** A reply taking the data-prep piece and asking for an extra day.
+![A drafted reply confirming the task and requesting more time](../screenshots/chat-catch-up-thread/04-drafted-reply.png)
 
 ## Make it better
 Same thread, sharper questions:

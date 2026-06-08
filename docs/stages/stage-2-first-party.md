@@ -9,6 +9,11 @@ stage: first-party
 
 **The shift:** from "Copilot answers my questions" to "Copilot has specialists I can call on." These agents are included, discoverable, and ready — the easiest possible step up from chat because there's nothing to set up.
 
+!!! tip "\"What can I even do?\" — start from the app you have open"
+    Many of these agents surface right inside the apps you already use. The
+    **[Start by Product picker](../start-by-product.md)** maps them to **Teams**, **Excel**,
+    **Copilot Chat**, and more — pick your app and get three things to try right now.
+
 ---
 
 ## When you're ready for this stage

@@ -72,7 +72,19 @@ Specific asks + named format = dramatically better results.
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Open Copilot Chat.** The composer is ready for your prompt.
+![Microsoft 365 Copilot Chat open with an empty composer](../screenshots/chat-meeting-followups/01-open-copilot.png)
+
+**2. Prompt entered.** The meeting-summary prompt pasted in, meeting name filled, ready to send.
+![The meeting follow-ups prompt typed into the composer](../screenshots/chat-meeting-followups/02-prompt-entered.png)
+
+**3. Structured response.** Decisions, an action-item table with owners and due dates, and the open questions.
+![Copilot's response with a decisions list and an action-item table](../screenshots/chat-meeting-followups/03-response.png)
+
+**4. Refined in place.** After one plain-language follow-up — missing due dates filled and an owner corrected.
+![The action-item table updated with new due dates and a corrected owner](../screenshots/chat-meeting-followups/04-refined-table.png)
 
 ## Make it better
 Once the table is right, chain follow-ups to turn a summary into actual progress:

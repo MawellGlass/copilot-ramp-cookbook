@@ -44,6 +44,22 @@ After any Copilot response in Microsoft 365 Copilot Chat, you'll see an **Edit i
 4. **Share the page.** Use the **Share** button in the top-right of the page to copy a link or send it directly in Teams. Recipients can open and edit without needing to request access.
 5. **Collaborate in real time.** Team members can add comments, edit sections, and @mention each other — the page updates live like a Loop component.
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat and Copilot Pages. The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. A Copilot output worth keeping.** A shareable operational brief generated in Microsoft 365 Copilot Chat.
+![A Copilot Chat response worth sharing](../screenshots/first-party-copilot-pages/01-copilot-output.png)
+
+**2. Edit in Pages.** The "Edit in Pages" control in the response toolbar.
+![The Edit in Pages button in the Copilot response toolbar](../screenshots/first-party-copilot-pages/02-edit-in-pages.png)
+
+**3. The editable page.** The response opens beside the chat as a Loop-based Copilot Page — a fully editable canvas.
+![The Copilot response opened as an editable page](../screenshots/first-party-copilot-pages/03-page-editing.png)
+
+**4. Share the page.** The Share menu — copy a page link, or embed the page as a live component in your Microsoft 365 apps. Recipients open and co-edit without requesting access.
+![The Share menu on the Copilot Page](../screenshots/first-party-copilot-pages/04-share-page.png)
+
 ## Tips and variants
 
 - **Embed in a Teams channel:** paste the Copilot Page link into a channel tab — it renders as an editable page right inside Teams.

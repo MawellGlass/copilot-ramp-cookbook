@@ -107,6 +107,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:              # renders :octicons-*: icon shortcodes (e.g. Next: links)
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - tables
@@ -132,6 +135,14 @@ nav:
           - Maker: roles/maker.md
           - Developer: roles/developer.md
           - "IT / admin": roles/it-admin.md
+      - "Start by Product":
+          - "Product Picker": start-by-product.md
+          - Outlook: products/outlook.md
+          - Teams: products/teams.md
+          - Word: products/word.md
+          - PowerPoint: products/powerpoint.md
+          - Excel: products/excel.md
+          - "Microsoft 365 Copilot Chat": products/copilot-chat.md
 
   - The Journey:
       - the-journey.md

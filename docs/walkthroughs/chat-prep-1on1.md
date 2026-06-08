@@ -66,7 +66,22 @@ asking "what did we talk about" — you're asking "what should I bring to this c
 
 ## Screenshots
 
-_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+<!-- SCREENSHOTS PENDING CAPTURE — a maintainer runs the Playwright tool in `tooling/screenshots/` (npm run auth, then npm run capture for chat-prep-1on1) to generate these PNGs, then removes this comment wrapper to publish them. Until then nothing renders, so the page never shows a broken image.
+
+**1. Open Copilot Chat.** The composer is ready for your prompt.
+![Microsoft 365 Copilot Chat open with an empty composer](../screenshots/chat-prep-1on1/01-open-copilot.png)
+
+**2. Prompt entered.** The 1:1 prep prompt typed in with the person's name filled in.
+![The 1:1 prep prompt typed into the composer](../screenshots/chat-prep-1on1/02-prompt-entered.png)
+
+**3. Recap and topics.** The shared-work recap, the open / waiting-on list, and three suggested topics.
+![Copilot's recap with open items and suggested 1:1 topics](../screenshots/chat-prep-1on1/03-response.png)
+
+**4. Sharpened for this conversation.** A workload check-in added and the shared blocker moved to the top.
+![The topic list reordered with a workload check-in question added](../screenshots/chat-prep-1on1/04-refined.png)
+-->
 
 ## Make it better
 Same prep, more leverage:

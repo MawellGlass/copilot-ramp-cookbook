@@ -60,6 +60,25 @@ Total meeting time: [30 minutes].
    ```
 5. **Paste into the meeting invite.** Copy the agenda into the Teams invite body — attendees see it in their calendar and can prep.
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Context pasted in.** Copilot Chat open with your notes or brief in the composer.
+![Copilot Chat open with meeting context pasted in](../screenshots/chat-meeting-agenda/01-open-copilot.png)
+
+**2. Prompt entered.** The agenda prompt typed in with meeting type, audience, and time.
+![The agenda prompt typed into the composer](../screenshots/chat-meeting-agenda/02-prompt-entered.png)
+
+**3. A time-slotted agenda.** Each item with a time slot and a one-line goal, plus a parking-lot bucket.
+![A time-slotted agenda with goals and a parking-lot bucket](../screenshots/chat-meeting-agenda/03-agenda.png)
+
+**4. Timing adjusted.** One item shortened and the time redistributed across the agenda.
+![The agenda with one item shortened and time redistributed](../screenshots/chat-meeting-agenda/04-adjust-timing.png)
+
+**5. Pre-reads added.** A suggested piece of pre-read material attached to each agenda item.
+![Each agenda item with a suggested pre-read](../screenshots/chat-meeting-agenda/05-pre-reads.png)
+
 ## Tips and variants
 
 - **No notes?** Just describe the meeting goal: `"We need to decide whether to extend the deadline for [project]."` Copilot generates the structure.

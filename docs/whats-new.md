@@ -11,6 +11,23 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### Six more Stage 1 chat walkthroughs now show real in-product screenshots
+*June 5, 2026*
+
+We captured **authentic, live Microsoft 365 Copilot Chat screenshots** for six more Stage 1
+walkthroughs and published them — every step now shows exactly what the product does:
+
+- [Summarize meeting follow-ups](walkthroughs/chat-meeting-followups.md) (4 shots)
+- [Adapt content for a different audience](walkthroughs/chat-adapt-audience.md) (5 shots)
+- [Build a meeting agenda](walkthroughs/chat-meeting-agenda.md) (5 shots)
+- [Write an executive briefing](walkthroughs/chat-exec-briefing.md) (5 shots)
+- [Summarize a long email chain](walkthroughs/chat-email-chain-summary.md) (5 shots)
+- [Catch up on a thread and draft a reply](walkthroughs/chat-catch-up-thread.md) (4 shots)
+
+That's **28 new screenshots**, taken from a signed-in Copilot session against a demo tenant.
+Stage 1 chat now has **12 of 14** walkthroughs fully illustrated; the remaining two depend on
+calendar and colleague data and are staged for a future capture.
+
 ### Stage pages redesigned: cards, filters, and a clear "first three things"
 *June 5, 2026*
 

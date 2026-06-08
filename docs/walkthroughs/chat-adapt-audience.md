@@ -54,6 +54,25 @@ They care most about [outcome — e.g., cost and risk / speed to market / compli
 4. **Check for leftover jargon.** Skim for acronyms or technical terms and ask: `"Simplify [term] for someone who doesn't work in [domain]."`
 5. **Run a length check.** If the output is still too long: `"Cut this to [word count] without losing the recommendation or the main supporting reason."`
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Original content ready.** Copilot Chat open with the source document or message pasted in.
+![Copilot Chat open with the original content pasted in](../screenshots/chat-adapt-audience/01-open-copilot.png)
+
+**2. Prompt entered.** The adapt-for-audience prompt typed in with audience, outcome, tone, and length.
+![The adapt-for-audience prompt typed into the composer](../screenshots/chat-adapt-audience/02-prompt-entered.png)
+
+**3. Adapted version.** The content rewritten for the new audience with the ask up front.
+![The content rewritten for a new audience](../screenshots/chat-adapt-audience/03-adapted.png)
+
+**4. Recommendation first.** The key ask moved to the very first line.
+![The recommendation moved to the first line](../screenshots/chat-adapt-audience/04-lead-first.png)
+
+**5. Length trimmed.** Cut to the target length without losing the recommendation or main reason.
+![The adapted content trimmed to the target length](../screenshots/chat-adapt-audience/05-length-cut.png)
+
 ## Tips and variants
 
 - **Side-by-side comparison:** ask Copilot to produce a table with the original version vs. adapted version so you can see exactly what changed.

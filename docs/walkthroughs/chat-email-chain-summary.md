@@ -56,6 +56,25 @@ Summarize this email thread:
    2-3 sentences, professional tone.
    ```
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Thread ready in Copilot Chat.** The email thread open (or pasted into the composer).
+![Microsoft 365 Copilot Chat ready with the email thread](../screenshots/chat-email-chain-summary/01-open-thread.png)
+
+**2. Prompt entered.** The four-question summary prompt typed into the composer.
+![The email summary prompt typed into the composer](../screenshots/chat-email-chain-summary/02-prompt-entered.png)
+
+**3. The summary.** Core issue, the positions raised, where things stand, and anything asked of you.
+![Copilot's structured summary of the email thread](../screenshots/chat-email-chain-summary/03-summary.png)
+
+**4. Dig deeper.** Quoting the specific message behind a position.
+![Copilot quoting the specific message behind a position](../screenshots/chat-email-chain-summary/04-dig-deeper.png)
+
+**5. Reply drafted.** A short, professional reply built straight from the summary.
+![A short drafted reply in a professional tone](../screenshots/chat-email-chain-summary/05-drafted-reply.png)
+
 ## Tips and variants
 
 - **"What changed since [date]?"** — useful for catching up on a thread you were already on.

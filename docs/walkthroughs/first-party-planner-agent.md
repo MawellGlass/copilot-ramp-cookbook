@@ -73,6 +73,22 @@ Break each milestone into 3-5 tasks and suggest assignments based on the names I
 - **Weekly nudge:** ask `"What was completed on [project] this week and what's coming up next week?"` before each standup.
 - **Risk surfacing:** `"Are there any tasks with no due date or no owner in [project]?"` — finds gaps before they become problems.
 
+## Screenshots
+
+Captured live with the **Planner (Frontier)** agent in Microsoft 365 Copilot Chat.
+
+**1. Add the Planner agent.** Start a new chat and attach **Planner (Frontier)** — type `@Planner` in the composer or pick it from the agent rail.
+![The Planner agent attached to a new Copilot chat](../screenshots/first-party-planner-agent/01-open-planner.png)
+
+**2. Describe the project.** One prompt with the goal, the team, and dated milestones — no forms.
+![The project-plan prompt entered in the composer](../screenshots/first-party-planner-agent/02-prompt-entered.png)
+
+**3. A structured plan, ready to save.** Planner returns an editable plan — milestones as goals, 3–5 tasks each with start/due dates and priority — and a **Save plan** button to push it straight into Planner.
+![The generated project plan with milestones, tasks, and a Save plan button](../screenshots/first-party-planner-agent/03-plan-created.png)
+
+**4. Ask about it in plain language.** Follow-up questions get plain-language answers — here, who owns each milestone and whose workload is heaviest, with an offer to rebalance.
+![A plain-language workload summary from the Planner agent](../screenshots/first-party-planner-agent/04-status-question.png)
+
 ## Next:
 
 [:octicons-arrow-right-24: Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)

@@ -372,15 +372,17 @@
       buildSummary(cfg, sel, steps.length) +
       buildTimeline(steps) +
       actions +
-      (ctx.pickerOpen ? buildPicker(ctx) : "");
+      (ctx.pickerOpen ? buildPicker(ctx) : "") +
+      buildShare(ctx);
 
     wire(ctx);
+    wireShare(ctx);
   }
 
   function save(ctx) {
     try {
       localStorage.setItem("rp:" + ctx.cfg.key,
-        JSON.stringify({ added: ctx.persist.added, removed: ctx.persist.removed }));
+        JSON.stringify({ added: ctx.persist.added, removed: ctx.persist.removed, name: ctx.name || "" }));
     } catch (e) { /* ignore quota / privacy mode */ }
   }
 
@@ -496,15 +498,364 @@
     wirePicker(ctx);
   }
 
+  // ── Share / serialize ───────────────────────────────────────────────────
+  // The whole tuned state (variable selections + manual add/remove + the
+  // optional path name) is packed into a single URL-safe query param so a path
+  // can be reopened exactly as built on any device.
+  function serialize(ctx) {
+    var payload = {
+      v: ctx.sel,
+      a: ctx.persist.added,
+      r: ctx.persist.removed,
+      n: ctx.name || ""
+    };
+    return encodeURIComponent(JSON.stringify(payload));
+  }
+
+  function shareURL(ctx) {
+    return location.origin + location.pathname + "?p=" + serialize(ctx);
+  }
+
+  function entryURL(entry) {
+    return location.origin + entry.page + "?p=" + entry.p;
+  }
+
+  // Hydrate ctx from a serialized ?p= value (shared link or "My Paths" Open).
+  function applyShared(ctx, raw) {
+    try {
+      var data = JSON.parse(decodeURIComponent(raw));
+      if (data && data.v && typeof data.v === "object") {
+        (ctx.cfg.variables || []).forEach(function (k) {
+          if (typeof data.v[k] === "string") ctx.sel[k] = data.v[k];
+        });
+      }
+      if (data && Array.isArray(data.a)) ctx.persist.added = data.a.slice();
+      if (data && Array.isArray(data.r)) ctx.persist.removed = data.r.slice();
+      if (data && typeof data.n === "string") ctx.name = data.n.slice(0, 80);
+    } catch (e) { /* ignore malformed share state */ }
+  }
+
+  function defaultMessage(name) {
+    if (name) {
+      return "I thought this Copilot ramp would help you get started \u2014 here\u2019s the path I set up, \u201c" +
+        name + "\u201d:";
+    }
+    return "I thought this Copilot ramp would help you get started \u2014 here\u2019s the exact path I\u2019d follow:";
+  }
+
+  function shareSubject(name) {
+    return name
+      ? "A Copilot path to get you started \u2014 \u201c" + name + "\u201d"
+      : "A Copilot path to get you started";
+  }
+
+  // All one-click targets are plain hrefs — no SDKs, no extra deps. Everything
+  // user-supplied is URL-encoded with encodeURIComponent so ampersands / spaces
+  // in the path name survive intact.
+  function popTargets(url, msg, name) {
+    var body = msg + "\n\n" + url;
+    return {
+      email: "mailto:?subject=" + encodeURIComponent(shareSubject(name)) +
+             "&body=" + encodeURIComponent(body),
+      teams: "https://teams.microsoft.com/share?href=" + encodeURIComponent(url) +
+             "&msgText=" + encodeURIComponent(msg),
+      linkedin: "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(url),
+      body: body
+    };
+  }
+
+  function copyText(str, btn, okLabel) {
+    var flash = function () {
+      if (!btn) return;
+      if (!btn.getAttribute("data-label")) btn.setAttribute("data-label", btn.textContent);
+      btn.textContent = okLabel || "Copied!";
+      setTimeout(function () {
+        var orig = btn.getAttribute("data-label");
+        if (orig != null) btn.textContent = orig;
+      }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(str).then(flash, function () { fallbackCopy(str); flash(); });
+    } else { fallbackCopy(str); flash(); }
+  }
+
+  function fallbackCopy(str) {
+    try {
+      var ta = document.createElement("textarea");
+      ta.value = str;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "absolute";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    } catch (e) { /* ignore */ }
+  }
+
+  // "My Paths" — a small list of named, saved paths shared across personas.
+  function loadSaved() {
+    try {
+      var raw = localStorage.getItem("rp:mypaths");
+      if (raw) { var a = JSON.parse(raw); if (Array.isArray(a)) return a; }
+    } catch (e) { /* ignore */ }
+    return [];
+  }
+
+  function saveSaved(list) {
+    try { localStorage.setItem("rp:mypaths", JSON.stringify(list)); } catch (e) { /* ignore */ }
+  }
+
+  function fmtDate(ts) {
+    try { return new Date(ts).toLocaleDateString(undefined, { month: "short", day: "numeric" }); }
+    catch (e) { return ""; }
+  }
+
+  // Resolve the URL + name the popover should act on: a saved entry when one was
+  // opened via "My Paths", otherwise the live builder state.
+  function shareCtxTarget(ctx) {
+    if (ctx.share && ctx.share.entry) {
+      var e = ctx.share.entry;
+      return { url: entryURL(e), name: e.name || "" };
+    }
+    return { url: shareURL(ctx), name: ctx.name || "" };
+  }
+
+  // ── Share block (name field + actions + My Paths + popover) ───────────────
+  function buildShare(ctx) {
+    var nameId = "rp-name-" + ctx.cfg.key;
+    var saved = ctx.saved || [];
+    var savedHtml = "";
+    if (saved.length) {
+      savedHtml =
+        '<div class="rp-saved">' +
+          '<div class="rp-saved-head">My saved paths</div>' +
+          saved.map(function (e) {
+            return '<div class="rp-saved-item">' +
+              '<div class="rp-saved-info">' +
+                '<span class="rp-saved-name">' + esc(e.name) + "</span>" +
+                '<span class="rp-saved-meta">' + esc(e.persona || e.key || "") +
+                  (e.ts ? " &middot; " + esc(fmtDate(e.ts)) : "") + "</span>" +
+              "</div>" +
+              '<div class="rp-saved-act">' +
+                '<a class="rp-saved-open" href="' + esc(entryURL(e)) + '">Open</a>' +
+                '<button type="button" class="rp-saved-send" data-eid="' + esc(e.id) +
+                  '" aria-label="Send saved path to someone">Send</button>' +
+                '<button type="button" class="rp-saved-del" data-eid="' + esc(e.id) +
+                  '" aria-label="Delete saved path">Delete</button>' +
+              "</div>" +
+            "</div>";
+          }).join("") +
+        "</div>";
+    }
+
+    return '<div class="rp-share">' +
+      '<div class="rp-share-name">' +
+        '<label class="rp-share-name-label" for="' + nameId + '">Name this path (optional)</label>' +
+        '<input id="' + nameId + '" class="rp-share-name-input" type="text" maxlength="60" ' +
+          'placeholder="e.g. New-manager fast start" value="' + esc(ctx.name || "") + '" />' +
+      "</div>" +
+      '<p class="rp-share-warn">\u26A0\uFE0F The name you give this path is visible to anyone you share the link with.</p>' +
+      '<div class="rp-share-bar">' +
+        '<div class="rp-share-actions">' +
+          '<button type="button" class="rp-share-send">\uD83D\uDCE8 Send this to someone</button>' +
+          '<button type="button" class="rp-share-copy">\uD83D\uDD17 Copy link only</button>' +
+          '<button type="button" class="rp-share-save">\u2B50 Save to My Paths</button>' +
+        "</div>" +
+        (ctx.share && ctx.share.open ? buildPopover(ctx) : "") +
+      "</div>" +
+      savedHtml +
+    "</div>";
+  }
+
+  function buildPopover(ctx) {
+    var t = shareCtxTarget(ctx);
+    if (!ctx.share.touched) ctx.share.msg = defaultMessage(t.name);
+    var msg = ctx.share.msg;
+    var pt = popTargets(t.url, msg, t.name);
+    return '<div class="rp-pop" role="dialog" aria-modal="false" aria-label="Send this path to someone">' +
+      '<div class="rp-pop-head">' +
+        '<span class="rp-pop-title">Send this to someone</span>' +
+        '<button type="button" class="rp-pop-close" aria-label="Close share panel">\u2715</button>' +
+      "</div>" +
+      '<label class="rp-pop-lbl" for="rp-pop-msg">Your message</label>' +
+      '<textarea id="rp-pop-msg" class="rp-pop-msg" rows="4">' + esc(msg) + "</textarea>" +
+      '<label class="rp-pop-lbl" for="rp-pop-url">Link (sent on its own line)</label>' +
+      '<input id="rp-pop-url" class="rp-pop-url" type="text" readonly value="' + esc(t.url) +
+        '" aria-label="Share link" />' +
+      '<p class="rp-pop-warn">\u26A0\uFE0F The path name travels inside this link \u2014 anyone you send it to can read it.</p>' +
+      '<div class="rp-pop-targets">' +
+        '<a class="rp-pop-t rp-pop-email" href="' + esc(pt.email) + '" aria-label="Share by email">\uD83D\uDCE7 Email</a>' +
+        '<a class="rp-pop-t rp-pop-teams" href="' + esc(pt.teams) +
+          '" target="_blank" rel="noopener" aria-label="Share to Teams">\uD83D\uDC65 Teams</a>' +
+        '<button type="button" class="rp-pop-t rp-pop-copymsg" aria-label="Copy message and link">\uD83D\uDCCB Copy message</button>' +
+        '<a class="rp-pop-t rp-pop-linkedin" href="' + esc(pt.linkedin) +
+          '" target="_blank" rel="noopener" aria-label="Share on LinkedIn">\uD83D\uDD17 LinkedIn</a>' +
+      "</div>" +
+    "</div>";
+  }
+
+  // Keep the open popover's link + (untouched) message + target hrefs in sync
+  // when the name field changes, without a full re-render (preserves typing).
+  function syncPopover(ctx) {
+    if (!ctx.share || !ctx.share.open) return;
+    var pop = ctx.mount.querySelector(".rp-pop");
+    if (!pop) return;
+    var t = shareCtxTarget(ctx);
+    var urlEl = pop.querySelector(".rp-pop-url");
+    if (urlEl) urlEl.value = t.url;
+    if (!ctx.share.touched) {
+      ctx.share.msg = defaultMessage(t.name);
+      var msgEl = pop.querySelector(".rp-pop-msg");
+      if (msgEl && document.activeElement !== msgEl) msgEl.value = ctx.share.msg;
+    }
+    updatePopTargets(ctx, pop);
+  }
+
+  function updatePopTargets(ctx, pop) {
+    var t = shareCtxTarget(ctx);
+    var pt = popTargets(t.url, ctx.share.msg, t.name);
+    var em = pop.querySelector(".rp-pop-email"); if (em) em.setAttribute("href", pt.email);
+    var tm = pop.querySelector(".rp-pop-teams"); if (tm) tm.setAttribute("href", pt.teams);
+    var li = pop.querySelector(".rp-pop-linkedin"); if (li) li.setAttribute("href", pt.linkedin);
+  }
+
+  function wireShare(ctx) {
+    var mount = ctx.mount;
+
+    // Name field — live, focus-preserving (no full re-render while typing).
+    var nameInput = mount.querySelector(".rp-share-name-input");
+    if (nameInput) nameInput.addEventListener("input", function () {
+      ctx.name = nameInput.value;
+      save(ctx);
+      syncPopover(ctx);
+    });
+
+    var sendBtn = mount.querySelector(".rp-share-send");
+    if (sendBtn) sendBtn.addEventListener("click", function () {
+      ctx.share.open = true;
+      ctx.share.entry = null;
+      ctx.share.touched = false;
+      ctx.share.justOpened = true;
+      render(ctx);
+    });
+
+    var copyBtn = mount.querySelector(".rp-share-copy");
+    if (copyBtn) copyBtn.addEventListener("click", function () {
+      copyText(shareURL(ctx), copyBtn, "\uD83D\uDD17 Link copied!");
+    });
+
+    var saveBtn = mount.querySelector(".rp-share-save");
+    if (saveBtn) saveBtn.addEventListener("click", function () {
+      var name = (ctx.name || "").trim() || (ctx.cfg.title || ctx.cfg.key || "My path");
+      ctx.saved = (ctx.saved || []).concat([{
+        id: "p" + Date.now().toString(36),
+        name: name,
+        key: ctx.cfg.key,
+        persona: ctx.cfg.title || ctx.cfg.key,
+        page: location.pathname,
+        p: serialize(ctx),
+        ts: Date.now()
+      }]);
+      saveSaved(ctx.saved);
+      render(ctx);
+    });
+
+    // Saved-path row actions.
+    mount.querySelectorAll(".rp-saved-send").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-eid");
+        var e = (ctx.saved || []).filter(function (x) { return x.id === id; })[0];
+        if (!e) return;
+        ctx.share.open = true;
+        ctx.share.entry = e;
+        ctx.share.touched = false;
+        ctx.share.justOpened = true;
+        render(ctx);
+      });
+    });
+    mount.querySelectorAll(".rp-saved-del").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-eid");
+        ctx.saved = (ctx.saved || []).filter(function (x) { return x.id !== id; });
+        saveSaved(ctx.saved);
+        render(ctx);
+      });
+    });
+
+    wirePopover(ctx);
+  }
+
+  function wirePopover(ctx) {
+    var mount = ctx.mount;
+    // Drop any stale outside-click listener from a previous render.
+    if (ctx._docClick) { document.removeEventListener("click", ctx._docClick, true); ctx._docClick = null; }
+
+    var pop = mount.querySelector(".rp-pop");
+    if (!pop) return;
+
+    var closeBtn = pop.querySelector(".rp-pop-close");
+    var msgEl = pop.querySelector(".rp-pop-msg");
+    var copyMsgBtn = pop.querySelector(".rp-pop-copymsg");
+
+    function closePop() {
+      ctx.share.open = false;
+      ctx.share.entry = null;
+      render(ctx);
+      var send = ctx.mount.querySelector(".rp-share-send");
+      if (send) send.focus();
+    }
+
+    if (closeBtn) closeBtn.addEventListener("click", closePop);
+
+    if (msgEl) msgEl.addEventListener("input", function () {
+      ctx.share.touched = true;
+      ctx.share.msg = msgEl.value;
+      updatePopTargets(ctx, pop);
+    });
+
+    if (copyMsgBtn) copyMsgBtn.addEventListener("click", function () {
+      var t = shareCtxTarget(ctx);
+      copyText(ctx.share.msg + "\n\n" + t.url, copyMsgBtn, "\uD83D\uDCCB Copied!");
+    });
+
+    // Esc to dismiss + Tab focus trap while the popover is open.
+    pop.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") { ev.preventDefault(); closePop(); return; }
+      if (ev.key !== "Tab") return;
+      var f = pop.querySelectorAll('a[href], button:not([disabled]), textarea, input:not([type=hidden])');
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+      else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+    });
+
+    // Non-modal: a click fully outside the builder closes the popover, but
+    // clicks anywhere inside (tuning variables, picker) keep it open + synced.
+    ctx._docClick = function (ev) {
+      if (!ctx.share.open) return;
+      if (ctx.mount.contains(ev.target)) return;
+      closePop();
+    };
+    document.addEventListener("click", ctx._docClick, true);
+
+    if (ctx.share.justOpened) {
+      ctx.share.justOpened = false;
+      if (msgEl) { msgEl.focus(); try { msgEl.setSelectionRange(msgEl.value.length, msgEl.value.length); } catch (e) {} }
+      else if (closeBtn) closeBtn.focus();
+    }
+  }
+
   // ── Init ──────────────────────────────────────────────────────────────────
   function loadPersist(key) {
-    var out = { added: [], removed: [] };
+    var out = { added: [], removed: [], name: "" };
     try {
       var raw = localStorage.getItem("rp:" + key);
       if (raw) {
         var p = JSON.parse(raw);
         if (Array.isArray(p.added)) out.added = p.added;
         if (Array.isArray(p.removed)) out.removed = p.removed;
+        if (typeof p.name === "string") out.name = p.name;
       }
     } catch (e) { /* ignore */ }
     return out;
@@ -547,6 +898,16 @@
       pf: { stage: "all", fn: "all", level: "all", q: "", everything: false },
       inPath: {}
     };
+
+    // Share / My-Paths state.
+    ctx.name = ctx.persist.name || "";
+    ctx.saved = loadSaved();
+    ctx.share = { open: false, entry: null, msg: "", touched: false, justOpened: false };
+
+    // A shared link (or "My Paths" Open) carries the full state in ?p=.
+    var sharedP = null;
+    try { sharedP = new URLSearchParams(location.search).get("p"); } catch (e) { /* ignore */ }
+    if (sharedP) applyShared(ctx, sharedP);
 
     // First paint without the catalog (picker still works once it loads).
     render(ctx);

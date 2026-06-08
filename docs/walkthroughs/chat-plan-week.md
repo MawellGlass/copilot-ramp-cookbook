@@ -56,6 +56,28 @@ Look at my calendar and inbox for this week. Tell me:
    Which meeting on my calendar this week is least critical and could be declined or shortened?
    ```
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+<!-- SCREENSHOTS PENDING CAPTURE — a maintainer runs the Playwright tool in `tooling/screenshots/` (npm run auth, then npm run capture for chat-plan-week) to generate these PNGs, then removes this comment wrapper to publish them. Until then nothing renders, so the page never shows a broken image.
+
+**1. Copilot Chat open.** Grounded on your calendar and inbox, composer ready.
+![Copilot Chat open, ready to plan the week](../screenshots/chat-plan-week/01-open-copilot.png)
+
+**2. Prompt entered.** The four-part weekly-planning prompt typed into the composer.
+![The weekly-planning prompt typed into the composer](../screenshots/chat-plan-week/02-prompt-entered.png)
+
+**3. The weekly brief.** Top commitments, open decisions to close, what to deprioritize, and time crunches.
+![Copilot's structured weekly brief](../screenshots/chat-plan-week/03-weekly-brief.png)
+
+**4. Prep for one meeting.** Drilling into who's attending, the agenda, and open items for an important meeting.
+![Copilot's prep details for one meeting](../screenshots/chat-plan-week/04-meeting-prep.png)
+
+**5. Protect a focus block.** Surfacing the least-critical meeting to decline or shorten.
+![Copilot surfacing the least-critical meeting to decline](../screenshots/chat-plan-week/05-focus-block.png)
+-->
+
 ## Tips and variants
 
 - **End-of-week version:** run the same prompt on Friday afternoon with "this week" to write your status update — it doubles as the inputs for [Draft a status update](chat-weekly-status.md).

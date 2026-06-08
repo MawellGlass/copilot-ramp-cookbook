@@ -58,6 +58,25 @@ Summarize what you find and tell me where each piece of information came from.
    Who is the owner of that policy document and when was it last updated?
    ```
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (BizChat, Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Open BizChat.** Microsoft 365 Copilot Chat in Work mode, grounded on your org's content.
+![Microsoft 365 Copilot Chat open in Work mode](../screenshots/first-party-bizchat-grounded/01-open-copilot.png)
+
+**2. Prompt entered.** The cross-content question typed into the composer.
+![The BizChat question typed into the composer](../screenshots/first-party-bizchat-grounded/02-prompt-entered.png)
+
+**3. A cited answer.** A synthesized answer that groups themes across email and Teams, with a labelled **Source** link for each you can click to verify.
+![A synthesized answer with a labelled source citation](../screenshots/first-party-bizchat-grounded/03-cited-answer.png)
+
+**4. Narrow the scope.** The same question re-scoped to a date range — here, just the last 7 days of email — each topic still cited.
+![The answer narrowed to the last 7 days of email](../screenshots/first-party-bizchat-grounded/04-narrow-scope.png)
+
+**5. Go deeper.** A follow-up pinning down who sent a specific item and when, with the source email linked to open.
+![A follow-up answer identifying the sender and arrival time, with the source linked](../screenshots/first-party-bizchat-grounded/05-follow-up.png)
+
 ## Tips and variants
 
 - **People-based search:** `"What has [colleague's name] shared recently about [topic]?"` — useful for catching up on a teammate's work.

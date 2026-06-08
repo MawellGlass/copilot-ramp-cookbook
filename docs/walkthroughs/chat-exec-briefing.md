@@ -57,6 +57,25 @@ Flag the one thing most likely to generate a question.
    ```
 5. **Copy to your meeting notes or invite.** A 5-point briefing in the calendar invite body is all the prep most attendees need.
 
+## Screenshots
+
+Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+
+**1. Source material ready.** Copilot Chat open with the background doc or emails pasted in.
+![Copilot Chat open with source material ready](../screenshots/chat-exec-briefing/01-open-copilot.png)
+
+**2. Prompt entered.** The exec-briefing prompt typed in with the audience filled in.
+![The exec briefing prompt typed into the composer](../screenshots/chat-exec-briefing/02-prompt-entered.png)
+
+**3. The 5-point briefing.** Each point one sentence, leading with outcomes, with the likely question flagged.
+![A five-point exec briefing returned by Copilot](../screenshots/chat-exec-briefing/03-briefing.png)
+
+**4. Lead rewritten.** Point 1 rewritten to lead with the business outcome, not the activity.
+![Point one rewritten to lead with the business outcome](../screenshots/chat-exec-briefing/04-rewrite-lead.png)
+
+**5. Likely question expanded.** The point most likely to draw pushback, with the risk and a short answer.
+![The likely-question point expanded with risk and a short answer](../screenshots/chat-exec-briefing/05-expand-question.png)
+
 ## Tips and variants
 
 - **Tighter output:** add `"Each point max 20 words."` to the prompt.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T15:43:48Z",
+  "generated": "2026-06-08T13:34:19Z",
   "items": [
     {
       "path": "walkthroughs/agent-builder-faq-agent/",
@@ -851,12 +851,40 @@
       "kind": "walkthrough"
     },
     {
+      "path": "walkthroughs/foundry-ab-shadow-deploy/",
+      "title": "A/B and shadow-deploy a model swap behind a Foundry agent",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "90 min",
+      "kind": "walkthrough"
+    },
+    {
       "path": "walkthroughs/foundry-autonomous-orchestration/",
       "title": "Orchestrate multiple agents and autonomous runs in Foundry",
       "stage": "foundry",
       "stageLabel": "Stage 6 · Foundry",
       "roles": [
         "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "90 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-cost-optimization/",
+      "title": "Token-budgeting and cost optimization for a production agent",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer",
+        "it-admin"
       ],
       "fn": [],
       "level": "advanced",
@@ -875,6 +903,20 @@
       "fn": [],
       "level": "advanced",
       "time": "75 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-fine-tune-serve/",
+      "title": "Fine-tune a domain model and serve it from a Foundry agent",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2–4 hours (plus training time)",
       "kind": "walkthrough"
     },
     {
@@ -929,6 +971,20 @@
       "fn": [],
       "level": "advanced",
       "time": "75 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/foundry-red-team-eval/",
+      "title": "Build a red-team / safety eval harness",
+      "stage": "foundry",
+      "stageLabel": "Stage 6 · Foundry",
+      "roles": [
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2 hours",
       "kind": "walkthrough"
     },
     {
@@ -998,6 +1054,49 @@
       "fn": [],
       "level": "advanced",
       "time": "45 min",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-engineering-oncall/",
+      "title": "Engineering: alert to runbook to escalation",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "developer",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-events-coordination/",
+      "title": "Workplace: plan an internal event end to end",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-field-service-triage/",
+      "title": "Field Service: symptoms to dispatch path",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "4–5 hours",
       "kind": "walkthrough"
     },
     {
@@ -1136,6 +1235,36 @@
       "kind": "walkthrough"
     },
     {
+      "path": "walkthroughs/studio-functional-marketing-campaign/",
+      "title": "Marketing: brief to campaign drafts",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "marketer"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-procurement-sourcing/",
+      "title": "Procurement: request to vendors to policy gates",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [
+        "finance"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
       "path": "walkthroughs/studio-functional-sales-intel/",
       "title": "Sales: Product intel and objection handling for sales reps",
       "stage": "studio",
@@ -1165,6 +1294,20 @@
       "fn": [
         "sales"
       ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "walkthrough"
+    },
+    {
+      "path": "walkthroughs/studio-functional-support-deflection/",
+      "title": "Customer Support: deflect and draft, escalate the rest",
+      "stage": "studio",
+      "stageLabel": "Stage 5 · Studio",
+      "roles": [
+        "maker",
+        "it-admin"
+      ],
+      "fn": [],
       "level": "intermediate",
       "time": "3–4 hours",
       "kind": "walkthrough"
@@ -1265,6 +1408,48 @@
       "kind": "walkthrough"
     },
     {
+      "path": "solutions/engineering-oncall-runbook-agent/",
+      "title": "Solution Template: Engineering On-Call Runbook Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/event-coordination-agent/",
+      "title": "Solution Template: Event Coordination Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/field-service-triage-agent/",
+      "title": "Solution Template: Field Service Triage Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "4–5 hours",
+      "kind": "solution-template"
+    },
+    {
       "path": "solutions/finance-expense-agent/",
       "title": "Solution Template: Finance Expense & Procurement Agent",
       "stage": "studio",
@@ -1278,6 +1463,45 @@
       ],
       "level": "intermediate",
       "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-code-review-agent/",
+      "title": "Solution Template: Code-Review / PR-Triage Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2–4 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-computer-use-agent/",
+      "title": "Solution Template: Browser-Using (Computer-Use) Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "3–5 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-document-classification-agent/",
+      "title": "Solution Template: Multi-Modal Document Classification Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2–4 days",
       "kind": "solution-template"
     },
     {
@@ -1307,6 +1531,19 @@
       "kind": "solution-template"
     },
     {
+      "path": "solutions/foundry-nl-to-sql-agent/",
+      "title": "Solution Template: NL-to-SQL Analytics Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "2–4 days",
+      "kind": "solution-template"
+    },
+    {
       "path": "solutions/foundry-orchestrator-agent/",
       "title": "Solution Template: Multi-Agent Workflow Orchestrator (Foundry)",
       "stage": "foundry",
@@ -1322,6 +1559,19 @@
     {
       "path": "solutions/foundry-support-agent/",
       "title": "Solution Template: Customer-Facing Support Agent (Foundry)",
+      "stage": "foundry",
+      "stageLabel": "Solution template",
+      "roles": [
+        "developer"
+      ],
+      "fn": [],
+      "level": "advanced",
+      "time": "3–5 days",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/foundry-voice-agent/",
+      "title": "Solution Template: Voice Agent / Contact-Center IVR (Foundry)",
       "stage": "foundry",
       "stageLabel": "Solution template",
       "roles": [
@@ -1381,6 +1631,20 @@
       "kind": "solution-template"
     },
     {
+      "path": "solutions/marketing-campaign-agent/",
+      "title": "Solution Template: Marketing Campaign Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
       "path": "solutions/onboarding-buddy-agent/",
       "title": "Solution Template: Onboarding Buddy Agent",
       "stage": "studio",
@@ -1416,6 +1680,22 @@
       "kind": "solution-template"
     },
     {
+      "path": "solutions/procurement-sourcing-agent/",
+      "title": "Solution Template: Procurement Sourcing Agent",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [
+        "finance"
+      ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
       "path": "solutions/sales-enablement-agent/",
       "title": "Solution Template: Sales Enablement Agent",
       "stage": "studio",
@@ -1443,6 +1723,20 @@
       "fn": [
         "sales"
       ],
+      "level": "intermediate",
+      "time": "3–4 hours",
+      "kind": "solution-template"
+    },
+    {
+      "path": "solutions/support-deflection-agent/",
+      "title": "Solution Template: Customer Support Deflection Agent (internal)",
+      "stage": "studio",
+      "stageLabel": "Solution template",
+      "roles": [
+        "maker",
+        "champion"
+      ],
+      "fn": [],
       "level": "intermediate",
       "time": "3–4 hours",
       "kind": "solution-template"
