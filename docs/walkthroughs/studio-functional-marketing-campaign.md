@@ -35,7 +35,9 @@ Reach for this when your marketers spend the first hour of every campaign re-der
 
 ---
 
-## Design before you build
+## Try it now — the prompt
+
+Paste this into the agent's instructions and adapt the brackets — it works because the claims boundary and the `[VERIFY]` convention are written as rules, so drafts never assert an unapproved claim.
 
 Decide the agent's job and its limits before you open Studio. The single most important design decision is the **claims boundary**: the agent drafts copy, but it must never assert a product claim, stat, or price that isn't in your approved source material.
 
@@ -78,6 +80,10 @@ Rules:
 
 ---
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - Add a **localization** topic that adapts approved copy for a market's tone and disclaimers.
@@ -92,11 +98,18 @@ Rules:
 - **Channel specs drifting.** Platforms change limits and disclaimer rules — review the spec sheet on a schedule.
 - **Treating drafts as final.** This agent accelerates the first draft; it does not replace human review and the approval gate. Keep the sign-off step real.
 
----
+## Where this leads (the ramp)
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+Drafting on-brand copy from a brief is a real time-saver. When you want to learn which hooks and subject lines actually win — testing variants against live performance — Azure AI Foundry's A/B and shadow deployment turns that into a measured experiment.
 
----
+> **Next:** [Foundry: A/B and shadow deployment](foundry-ab-shadow-deploy.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Marketing Campaign Agent solution template](../solutions/marketing-campaign-agent.md) has the copy-paste system prompt, topic specs, knowledge-source table, Power Automate action spec, and a full test matrix.

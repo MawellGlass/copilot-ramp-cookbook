@@ -35,7 +35,9 @@ A Policies agent shifts the pattern: employees get an immediate, sourced answer,
 - A **Teams channel** to publish to (the HR general channel works well as a first home)
 - **30 minutes with someone from HR** to validate the top 10 questions and confirm the escalation contact
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to draft the full agent spec before you open Studio — it works because it forces the top-10 questions and the escalation contact to be decided first, so you build from a real spec instead of in the tool.
 
 Before opening Studio, answer three questions with your HR contact:
 
@@ -93,9 +95,18 @@ _We deliberately don't ship screenshots that go stale — the Microsoft Copilot 
 - **Overpromising on personal questions.** Test adversarial inputs before launch ("Am I eligible for a bonus?", "Why was I passed over for promotion?"). The instructions and escalation topic must handle these without the model improvising.
 - **SharePoint permissions.** Test citation links as a regular employee, not as the maker — the links must resolve for the people who'll actually use the agent.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Add knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+## Where this leads (the ramp)
 
----
+A grounded, cited FAQ agent is one of the safest Studio wins. When it's fielding thousands of questions and you need proof it stays accurate as policies change, Azure AI Foundry's continuous evaluation turns spot-checking into a monitored, measured guarantee.
+
+> **Next:** [Foundry: evaluate and monitor continuously](foundry-evaluate-monitor.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Add knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md) gives you a copy-paste system prompt, topics spec, starter prompts, and a pre-built test case table for this exact agent pattern — for HR, IT, Finance, or Legal.

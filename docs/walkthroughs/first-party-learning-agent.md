@@ -18,6 +18,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** End user, Champion · **Level:** Starter · **Time:** 10 min
 
+**Status:** Generally available — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 You've got a task next week that needs a skill you don't quite have yet — your first real pivot table, a
 Copilot Studio agent, presenting to an exec. The old path was "go find a course someday." The **Learning**

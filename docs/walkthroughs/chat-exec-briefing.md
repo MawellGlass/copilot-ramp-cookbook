@@ -86,3 +86,9 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 ## Next:
 
 [:octicons-arrow-right-24: Adapt the output for a different audience](chat-adapt-audience.md)
+
+## Where this leads (the ramp)
+
+Hand-assembling a briefing from a pile of docs works for one meeting; doing it weekly across many sources gets old fast. The first-party Researcher agent does the deep read across your materials and returns a grounded briefing on demand.
+
+> **Next:** [Researcher agent: deep-dive across your sources](first-party-researcher-deep-dive.md)

@@ -18,6 +18,8 @@ updated: 2026-06-05
 
 **Stage:** First-Party Agents · **For:** End user, Manager, Champion · **Level:** Starter · **Time:** 10 min
 
+**Status:** Check current status — this agent isn't individually listed on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/); confirm availability there before assuming it's GA.
+
 ## When to use this
 You've written the proposal — a new initiative, a budget ask, a recommendation — and it *feels* done. But
 "feels done" and "survives scrutiny" are different things. The **Idea Coach** is a first-party Copilot

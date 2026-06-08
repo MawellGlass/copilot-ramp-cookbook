@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** Champion, IT/Admin · **Level:** Starter · **Time:** 10 min
 
+**Status:** Public preview — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 The same five questions keep landing in your community feed — "what's our policy on X," "where's the
 onboarding doc," "who owns Y." **Agents in Communities** lets you place a shared agent inside a Viva

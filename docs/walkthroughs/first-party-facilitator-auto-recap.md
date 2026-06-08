@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** End user, Champion · **Level:** Starter · **Time:** 5 min
 
+**Status:** Generally available — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 In Stage 1 you learned to summarize a meeting *by hand* — paste a prompt, name the meeting, get a table.
 If you find yourself doing that after *every* call, that's the signal you're ready to delegate it.

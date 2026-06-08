@@ -75,3 +75,9 @@ Target audience: [exec / product team / sales team]. Target length: [1-2 pages].
 ## Next:
 
 [:octicons-arrow-right-24: Build a competitive comparison from multiple sources](cowork-competitive-comparison.md)
+
+## Where this leads (the ramp)
+
+You're already saving this as a Cowork recipe to re-run each quarter — that instinct is exactly what Agent Builder is for. It turns a repeatable task description into a durable, shareable agent, so your team runs the brief without rebuilding the prompt.
+
+> **Next:** [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)

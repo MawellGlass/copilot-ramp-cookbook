@@ -32,7 +32,9 @@ These are process navigation questions. They don't require legal judgment — th
 - A contract intake form or shared inbox that the agent can direct employees to — or a Power Automate flow to submit the intake
 - Legal team buy-in: they need to agree on the routing logic before building begins
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the system prompt, type-identification topic, and intake flows — it works because it separates routing from review, keeping the agent on process and off legal judgment.
 
 Work through these with Legal before opening Studio:
 
@@ -75,6 +77,10 @@ collection flow for NDA and services agreement, and SLA messaging.
 6. **Add the "I need this urgently" handling.** A common override. The agent should acknowledge urgency, explain the expedited review process, state what "urgent" means for SLAs, and give the direct contact for genuinely time-critical situations.
 
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Automatic intake submission.** Connect to a Power Automate flow that takes the collected fields and submits the intake record directly to the Legal team's queue (ServiceNow, a SharePoint list, or an email template with structured fields). No manual copy-paste required.
@@ -87,9 +93,18 @@ collection flow for NDA and services agreement, and SLA messaging.
 - **Routing outdated after org changes.** Contract routing often changes when Legal team structure or policies change. Build a review with Legal into any major org change process.
 - **Don't replace the intake form — supplement it.** If Legal already has a working intake form, the agent front-ends it (collects information conversationally and then submits). Don't build a parallel process that Legal can't see.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics) · [Power Automate integration](https://learn.microsoft.com/en-us/power-automate/)
+## Where this leads (the ramp)
 
----
+This agent routes contracts; it deliberately never reads the clauses. The day you want an agent that actually analyses contract terms — safely and on your own paper — you've crossed into custom-model territory that Azure AI Foundry serves.
+
+> **Next:** [Foundry: fine-tune and serve a model](foundry-fine-tune-serve.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+- [Power Automate integration](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md) covers the escalation-first design pattern — adapt the system prompt for contract routing, swap in the contract intake process document, and build the contract type identification topic first.

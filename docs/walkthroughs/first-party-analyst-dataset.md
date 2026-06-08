@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** Manager, Maker · **Level:** Starter · **Time:** 10 min
 
+**Status:** Generally available — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 You have a data file — sales by product, tickets by week, spend by team — and a question you can't
 answer at a glance. Normally that means wrestling a pivot table or pinging the one analyst on the team.

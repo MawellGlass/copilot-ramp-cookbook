@@ -100,13 +100,30 @@ Based on these notes, draft a meeting recap with:
 
 Save the recap to your notes folder — it becomes the source for next week's prep.
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Team standup variant:** change the instructions to pull from Planner tasks and active project docs instead of 1:1 email context.
 - **Skip-level prep:** build a variant specifically for quarterly skip-levels — it can pull highlights from the previous quarter's notes.
 - **Share with your 1:1 partner:** if both people run the same agent, you each come to the meeting with the same context already loaded — no "so where were we" warmup.
 - **Calendar integration:** before the meeting, ask the agent: `"What's the context on each person attending today's standup?"` — it pulls recent activity for each team member.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Know when to graduate from Agent Builder to Copilot Studio](agent-builder-vs-studio.md)
+- **Stale "open items."** If your notes folder isn't updated, the agent re-surfaces items that were already resolved. Capture the recap each week so the next prep is accurate.
+- **Thin context, thin brief.** With no notes source connected, the brief leans only on recent email and gets generic. Point it at a real notes folder.
+- **Treating the brief as the meeting.** It's a 2-minute prep, not a substitute for the conversation — skim it, don't read it aloud.
+
+## Where this leads (the ramp)
+
+Right now you still have to open the agent and ask for the brief. The next rung is having it run itself — Copilot Studio adds triggers so the prep lands in your inbox before the meeting, no click required.
+
+> **Next:** [Copilot Studio: trigger an agent automatically](studio-autonomous-triggers.md)
+
+## Related
+
+- [Know when to graduate from Agent Builder to Copilot Studio](agent-builder-vs-studio.md)
+- [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)

@@ -28,6 +28,19 @@ Copilot Pages solves the handoff problem. One click turns a Copilot response int
 - A Copilot response worth sharing (a summary, a plan, a research output)
 - Colleagues who have access to Microsoft 365
 
+## Try it now — the prompt
+
+Run this in Microsoft 365 Copilot Chat to produce an output worth turning into a shared page — then use **Edit in Pages** on the response:
+
+```
+Draft a one-page project status brief for [project name] based on our recent
+emails, chats, and documents. Include: where things stand, what's blocked,
+decisions still needed, and the next three milestones with owners. Write it so
+the team can edit and add to it as a working document.
+```
+
+**Why this prompt works:** it asks for a structured, editable working document rather than a quick answer, so the response is already shaped for a Page the team can refine together.
+
 ## How it works
 
 After any Copilot response in Microsoft 365 Copilot Chat, you'll see an **Edit in Pages** button (or an option to open the response as a Page). This creates a Loop-based page pre-populated with the AI content — immediately shareable, collaborative, and editable.
@@ -60,13 +73,26 @@ Captured live in Microsoft 365 Copilot Chat and Copilot Pages. The product UI mo
 **4. Share the page.** The Share menu — copy a page link, or embed the page as a live component in your Microsoft 365 apps. Recipients open and co-edit without requesting access.
 ![The Share menu on the Copilot Page](../screenshots/first-party-copilot-pages/04-share-page.png)
 
-## Tips and variants
+## Make it better
 
 - **Embed in a Teams channel:** paste the Copilot Page link into a channel tab — it renders as an editable page right inside Teams.
 - **Use it for meeting prep:** generate talking points or an agenda in Copilot, push to a Page, share with attendees, and let them add context before the meeting.
 - **Iterative research:** have each team member add their own inputs to the page, then ask Copilot to re-summarize with the new context added.
 - **Pages as a knowledge capture habit:** at the end of a major project, prompt Copilot for a lessons-learned summary and save it as a Page in the team's SharePoint.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Find answers across your organization's content with BizChat](first-party-bizchat-grounded.md)
+- **Access mismatch.** A Page has its own sharing settings — confirm recipients can open it, and don't push content into a Page that's broader than the audience should see.
+- **Edits don't flow back to chat.** Once you push to a Page, the chat response and the Page are separate — keep editing in the Page, not the original response.
+- **Half-baked outputs.** Pages amplifies whatever you start with; clean up the response before sharing so the team builds on a solid draft, not a rough one.
+
+## Where this leads (the ramp)
+
+Pages turns a single output into something your team can build on together. The next step up is having that shareable artifact generated for you on a cadence — Cowork can run a recurring job and hand you a fresh, page-ready digest every week.
+
+> **Next:** [Cowork: a recurring weekly digest](cowork-recurring-weekly-digest.md)
+
+## Related
+
+- [Find answers across your organization's content with BizChat](first-party-bizchat-grounded.md)
+- [Stage 2 · First-Party Agents](../stages/stage-2-first-party.md)

@@ -90,13 +90,30 @@ Ask the agent each starter prompt. For any answer that's wrong or incomplete:
 
 Share the agent directly in Teams before the new hire's first day. Include a note: *"This agent knows most of what you'll want to know in week 1 — just ask it in plain language."*
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Refresh the knowledge:** update the SharePoint source docs whenever policies or processes change — the agent picks up the changes automatically.
 - **Role-specific variants:** clone the base agent and add a role-specific knowledge source (e.g., a sales process guide for SDRs, a coding standards doc for engineers).
 - **Feedback loop:** ask the agent at the end of each new hire's first month: `"What questions did you ask the agent that it couldn't answer well?"` — use the gaps to improve the docs.
 - **Buddy agent:** create a parallel version for the onboarding buddy with instructions focused on their role in the process.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Give your agent a persona and instructions that stick](agent-builder-persona-instructions.md)
+- **Out-of-date onboarding docs.** New hires will trust a wrong answer. Confirm the handbook, IT guide, and tools list are current before sharing, and assign an owner to keep them fresh.
+- **Answering beyond the docs.** If asked something the source doesn't cover, the agent should say so and point to a person — not improvise a policy.
+- **Sharing too late.** The value is front-loaded; share it before day one, not in week two.
+
+## Where this leads (the ramp)
+
+A no-code onboarding agent answers questions well, but it can't kick off the actual onboarding workflow — provisioning access, filing forms, notifying IT. In Copilot Studio the same agent connects to those systems and acts, not just answers.
+
+> **Next:** [Copilot Studio: an HR onboarding agent](studio-functional-hr-onboarding.md)
+
+## Related
+
+- [Give your agent a persona and instructions that stick](agent-builder-persona-instructions.md)
+- [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)

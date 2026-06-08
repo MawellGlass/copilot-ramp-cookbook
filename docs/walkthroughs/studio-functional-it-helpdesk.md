@@ -30,7 +30,9 @@ A triage agent changes the economics: it answers from the KB first, and only cre
 - A **ticketing system** with a Power Automate connector (ServiceNow, Jira, Zendesk, or a SharePoint list as a lightweight alternative)
 - The **required fields** your helpdesk needs to process a ticket (category, urgency, short description, contact)
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the persona, topics, and triage decision flow — it works because it makes the answer-vs-ticket boundary explicit, which is the decision the whole agent turns on.
 
 Two questions to resolve with the helpdesk team first:
 
@@ -72,6 +74,10 @@ decision flow — when does the agent answer vs. when does it create a ticket?
 
 6. **Test end-to-end.** Walk the happy path (KB answer works), the escalation path (KB answer doesn't help → ticket raised), and the direct path (user asks for something that clearly needs a ticket immediately). Confirm ticket numbers appear in the target system.
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **SLA awareness.** Update the confirmation message with the actual SLA by urgency tier ("blocking issues are typically picked up within 2 hours"). This reduces "where's my ticket?" follow-ups.
@@ -84,9 +90,18 @@ decision flow — when does the agent answer vs. when does it create a ticket?
 - **Collecting too much in the triage topic.** Start with the minimum fields the helpdesk actually uses. Every extra question increases drop-off. Add fields after launch when you see what the team asks for repeatedly.
 - **Power Automate error handling.** Test what happens when the PA flow fails (connector down, authentication error). The triage topic should catch failures and offer a fallback: "I wasn't able to raise the ticket automatically — please email [helpdesk@] with these details."
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow) · [Power Automate connector](https://learn.microsoft.com/en-us/power-automate/)
+## Where this leads (the ramp)
 
----
+Answering from the KB and raising clean tickets is a strong tier-1 deflection play. When ticket volume is high and you need to prove — continuously — that the agent resolves rather than misroutes, Azure AI Foundry's evaluation and monitoring is the upgrade.
+
+> **Next:** [Foundry: evaluate and monitor continuously](foundry-evaluate-monitor.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
+- [Power Automate connector](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [IT Helpdesk Triage Agent solution template](../solutions/it-helpdesk-triage-agent.md) gives you the system prompt, triage topic flow, Power Automate action spec, test cases, and deployment checklist for this exact pattern.

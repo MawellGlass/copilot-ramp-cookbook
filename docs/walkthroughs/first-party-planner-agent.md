@@ -16,6 +16,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** Manager, Champion · **Level:** Intermediate · **Time:** 10 min
 
+**Status:** Check current status — this agent isn't individually listed on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/); confirm availability there before assuming it's GA.
+
 ## When to use this
 
 You're spinning up a project and need to create tasks, assign owners, and set due dates. Normally that means opening Planner or Project, creating a plan from scratch, and manually filling in each task. The Planner agent in Microsoft 365 lets you do that by describing the project conversationally instead.
@@ -92,3 +94,9 @@ Captured live with the **Planner (Frontier)** agent in Microsoft 365 Copilot Cha
 ## Next:
 
 [:octicons-arrow-right-24: Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
+
+## Where this leads (the ramp)
+
+The Planner agent is great at standing up and tracking the plan; it still expects you to do the work inside each task. Cowork picks up from there, executing a multi-step task end to end across your apps rather than just listing it.
+
+> **Next:** [Cowork: run an end-to-end task across apps](cowork-end-to-end-task.md)

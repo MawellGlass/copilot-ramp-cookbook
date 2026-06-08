@@ -18,6 +18,8 @@ updated: 2026-06-05
 
 **Stage:** First-Party Agents · **For:** End user, Manager · **Level:** Starter · **Time:** 10 min
 
+**Status:** Check current status — this agent isn't individually listed on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/); confirm availability there before assuming it's GA.
+
 ## When to use this
 You have a call in fifteen minutes and you're about to skim the CRM, scroll your email, and hope you
 didn't miss anything. The **Sales agent** (surfaced as *Sales Chat* inside Microsoft 365 Copilot for

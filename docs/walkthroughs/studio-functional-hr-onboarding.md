@@ -30,7 +30,9 @@ An onboarding agent changes this. It knows who the employee is — their role, t
 - A first-week checklist from HR — ideally broken down by role type or team
 - 30 minutes with HR to agree on what "personalised" means: what actually differs by role, location, or team
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the system prompt, conversation variables, and first-day topic — it works because it captures role, team, and week up front, which is what makes the guidance feel personalised.
 
 The key design decision: **how much personalisation is worth the build effort?** Start with three variables:
 
@@ -72,6 +74,10 @@ first-day checklist topic with role-based branching.
 6. **Publish to a dedicated onboarding Teams channel.** Create a Teams channel for new starters and pin the agent. This is much higher visibility than burying it in a general HR channel.
 
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Pre-populate variables where possible.** If your HR system (Workday, SAP, etc.) can push role and team to a Teams welcome message, use a Power Automate flow to send a proactive message with the variables already set — no collection step needed.
@@ -84,9 +90,18 @@ first-day checklist topic with role-based branching.
 - **Over-personalising before you have the data.** Don't build 12 role variants on day one. Start with 2–3 broad categories and refine based on the questions that actually come in.
 - **Benefits enrollment deadline accuracy.** If the agent says "you have 30 days to enrol" and the window has already started, an employee may miss it. Source the deadline from a Finance or HR-maintained SharePoint page rather than hardcoding it in the agent instructions.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Conversation variables](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables) · [Publish to Teams](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams)
+## Where this leads (the ramp)
 
----
+Conversation variables get you genuine personalisation inside Studio. Once onboarding means pulling role and team from your HR system of record and provisioning access proactively, the workflow has outgrown topics — Azure AI Foundry is where it graduates.
+
+> **Next:** [Foundry: graduate a Studio agent](foundry-graduate-from-studio.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Conversation variables](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables)
+- [Publish to Teams](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Onboarding Buddy Agent solution template](../solutions/onboarding-buddy-agent.md) has the full system prompt with conversation variables, the week-adaptive topic structure, and the role-personalisation pattern — copy it and adapt the bracketed values.

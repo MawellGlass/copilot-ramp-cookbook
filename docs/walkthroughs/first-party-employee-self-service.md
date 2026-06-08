@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** End user, IT/Admin · **Level:** Starter · **Time:** 10 min
 
+**Status:** Check current status — this agent isn't individually listed on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/); confirm availability there before assuming it's GA.
+
 ## When to use this
 It's the question that's too small to file a ticket for but too specific to guess at — "how much PTO do I
 have left," "what's our travel policy," "how do I set up the VPN." The **Employee Self-Service** agent

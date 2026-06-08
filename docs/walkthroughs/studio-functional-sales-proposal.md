@@ -30,7 +30,9 @@ A proposal content agent levels this: it surfaces the right approved content for
 - A named sales enablement owner who maintains the library
 - **30 minutes with Sales leadership** to agree on what constitutes "approved" content vs. content the agent should never surface (e.g., pricing sheets, internal deal notes)
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the system prompt, the three retrieval topics, and the output format — it works because it fixes the content perimeter (approved in, pricing out) before any drafting begins.
 
 Two decisions before building:
 
@@ -71,6 +73,10 @@ finder, solution brief retrieval), and guidance on output format.
 6. **Add an "out of scope" escalation.** Any request for pricing, deal terms, or content the agent can't find escalates clearly: "I don't have approved content for that — contact sales enablement or your manager."
 
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Draft mode.** Once the content library is high quality, add a "draft this section" capability: the agent uses the approved content as grounding and drafts a proposal section tailored to the customer context (industry, deal stage, specific requirements). Always include a "review before sending" note.
@@ -83,9 +89,18 @@ finder, solution brief retrieval), and guidance on output format.
 - **Pricing requests.** Reps under deadline pressure will ask for pricing in the same conversation. The agent must refuse cleanly and redirect to deal desk — configure this as a topic, not just an instruction.
 - **NDA-protected case studies.** Audit the content library before connecting it. Any case study that names a customer under NDA must not be in the knowledge source.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+## Where this leads (the ramp)
 
----
+Surfacing approved content and linking sources is the safe first cut. The moment you want drafts tailored automatically from CRM — industry, stage, and deal size pulled from Salesforce or Dynamics — you need pro-code tool connections, which Azure AI Foundry's MCP tooling provides.
+
+> **Next:** [Foundry: connect pro-code tools with MCP](foundry-mcp-tools.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Sales Proposal & RFP Agent solution template](../solutions/sales-proposal-rfp-agent.md) has the full system prompt, content library structure, the three core topics, and 8 test cases including the pricing escalation and NDA edge cases.

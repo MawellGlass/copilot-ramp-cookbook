@@ -31,7 +31,9 @@ An access request agent structures the conversation from the start: it checks wh
 - The required fields for a software request vs. a hardware request (they differ)
 - IT approval policy documented: what requires manager sign-off before IT will action it?
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the system prompt, request topics, and the ticket action spec — it works because it checks the approved-list and required fields before creating a ticket, so requests arrive complete.
 
 Three decisions before building:
 
@@ -75,6 +77,10 @@ and the Power Automate action spec for ticket creation.
 6. **Create the Power Automate flow for ticket creation.** The action receives structured fields from the Studio agent and creates the ITSM record. Return the ticket ID to the agent for confirmation to the employee.
 
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Ticket status queries.** Add a "where is my request?" topic that takes a ticket number and returns current status from the ITSM system — closing the loop without an IT team member having to respond.
@@ -87,9 +93,18 @@ and the Power Automate action spec for ticket creation.
 - **Security on privileged access.** Do not let the agent create tickets for privileged roles (admin access, production system access, domain controller access) without a mandatory manager approval step — regardless of how the employee frames the request.
 - **ITSM field validation.** Tickets submitted with missing required fields will be rejected or stall. Test every path to ensure all required ITSM fields are collected before the ticket creation action fires.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow) · [Power Automate integration](https://learn.microsoft.com/en-us/power-automate/)
+## Where this leads (the ramp)
 
----
+Creating tickets from a guided conversation is a real step up from a portal form. When access requests touch privileged roles and production systems at scale, the approval and identity controls you need move into Azure AI Foundry's governance and security tier.
+
+> **Next:** [Foundry: govern and secure agents](foundry-govern-secure.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
+- [Power Automate integration](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [IT Access Request Agent solution template](../solutions/it-access-request-agent.md) has the full system prompt, approved-list knowledge source structure, all three request topics, the Power Automate action spec for ticket creation, and 8 test cases.

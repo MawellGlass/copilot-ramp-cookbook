@@ -36,7 +36,9 @@ Reach for this when internal event planning is a scavenger hunt: which rooms hol
 
 ---
 
-## Design before you build
+## Try it now — the prompt
+
+Paste this into the agent's instructions and adapt the brackets — it works because the booking and budget guardrails are stated as hard rules, so the agent suggests but never commits cost on its own.
 
 The defining design decision is keeping **bookings and budgets safe**. The agent moves fast and can commit cost, so two boundaries must be firm: it never confirms a booking the organiser hasn't approved, and anything over the budget band requires an explicit approval before it books.
 
@@ -78,6 +80,10 @@ Rules:
 
 ---
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - Add **RSVP tracking** that updates the headcount and catering count automatically.
@@ -93,11 +99,18 @@ Rules:
 - **Off-contract venues/caterers.** Keep the source lists to approved options only.
 - **Accessibility as an afterthought.** Bake accessibility into the checklist, not a follow-up.
 
----
+## Where this leads (the ramp)
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+Booking rooms, gating budgets, and drafting comms from Studio topics covers internal events cleanly. When coordination spans many systems and the branching logic outgrows what topics can hold, Azure AI Foundry is where the same workflow graduates to pro-code orchestration.
 
----
+> **Next:** [Foundry: graduate a Studio agent](foundry-graduate-from-studio.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Event Coordination Agent solution template](../solutions/event-coordination-agent.md) has the system prompt, topic specs, knowledge-source table, Power Automate booking spec, and a full test matrix.

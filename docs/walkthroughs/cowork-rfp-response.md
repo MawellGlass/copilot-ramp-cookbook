@@ -73,3 +73,9 @@ Tone: [professional and direct / formal government / conversational B2B].
 ## Next:
 
 [:octicons-arrow-right-24: Build a deck from raw notes](cowork-deck-from-notes.md)
+
+## Where this leads (the ramp)
+
+Once your proposal team is running this RFP workflow on every bid, the task description itself becomes worth productizing. Agent Builder turns it into a reusable proposal-response agent — grounded on your capability library — that anyone on the team can launch.
+
+> **Next:** [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)

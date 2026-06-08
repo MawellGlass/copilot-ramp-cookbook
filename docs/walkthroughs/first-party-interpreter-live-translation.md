@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** End user · **Level:** Starter · **Time:** 10 min
 
+**Status:** Generally available — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 You're on a Teams call where not everyone shares a first language — a customer in São Paulo, a supplier
 in Tokyo, a teammate in Munich — and the meeting keeps stalling on "sorry, can you repeat that?"

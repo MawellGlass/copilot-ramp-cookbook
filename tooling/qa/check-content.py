@@ -17,6 +17,11 @@ What it checks:
   5. Tier-aware frontmatter: walkthroughs need title+stage+status; stage pages
      need title+stage; solution templates need title+status. Stage values must
      be in the controlled vocabulary.
+  6. Walkthrough pages (status: walkthrough) contain every required template
+     section heading.
+  7. Walkthrough pages include a prompt: a "Try it now" heading or a fenced
+     code block.
+  8. No Markdown image embeds point at missing local files.
 """
 from __future__ import annotations
 
@@ -102,6 +107,44 @@ for path in sorted(DOCS.rglob("*.md")):
         require_keys(relpath, fm, ("title", "stage"))
     elif relpath.startswith("docs/solutions/") and path.name != "index.md":
         require_keys(relpath, fm, ("title", "status"))
+
+    # 6 & 7. Locked-template completeness on walkthrough pages.
+    if fm and fm.get("status") == "walkthrough":
+        headings = [
+            re.sub(r"^#+", "", line).strip().lower()
+            for line in text.splitlines()
+            if re.match(r"#{1,6}\s+\S", line)
+        ]
+        required_sections = (
+            "When to use this",
+            "What you'll need",
+            "Step by step",
+            "Make it better",
+            "Watch out for",
+            "Where this leads",
+            "Screenshots",
+        )
+        for section in required_sections:
+            if not any(section.lower() in heading for heading in headings):
+                errors.append(f"{relpath}: missing required section '{section}'")
+
+        has_prompt_heading = any("try it now" in heading for heading in headings)
+        has_code_fence = any(line.startswith("```") for line in text.splitlines())
+        if not (has_prompt_heading or has_code_fence):
+            errors.append(
+                f"{relpath}: no prompt — needs a 'Try it now' section or a fenced prompt block"
+            )
+
+    # 8. No broken local image references (all tiers).
+    for match in re.finditer(r"!\[[^\]]*\]\(([^)]+)\)", text):
+        target = match.group(1).strip().split()[0]
+        if target.startswith(("http://", "https://", "data:", "//")):
+            continue
+        target_path = target.split("#", 1)[0].split("?", 1)[0]
+        if not target_path:
+            continue
+        if not (path.parent / target_path).exists():
+            errors.append(f"{relpath}: broken image reference -> {target}")
 
 
 if errors:

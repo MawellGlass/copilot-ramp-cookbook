@@ -105,13 +105,30 @@ In **Channels**, for any channel where the agent is published, ensure authentica
 
 For autonomous agents or scenarios where no user is present, use **Service Principal** authentication instead. Register the app in Entra ID, grant application-level permissions (not delegated), and configure the agent with those credentials. Consult your IT admin for service account setup.
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Role-based access:** after authentication, use the user's group membership (via a Microsoft Graph call in a Power Automate flow) to show different content to different roles.
 - **Conditional access:** apply Entra Conditional Access policies to the app registration to enforce MFA or restrict access to managed devices.
 - **Token refresh:** delegated tokens expire. Copilot Studio handles refresh automatically for interactive sessions — for long-running autonomous agents, use application credentials instead.
 - **Audit logging:** authenticated agents generate sign-in logs in Entra ID — use these for compliance and to see who is using the agent.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Test and evaluate a Studio agent before publishing](studio-test-evaluate.md)
+- **Anyone-with-the-URL access.** Unless authentication is set to **Required** on every published channel, users can bypass sign-in by hitting the agent directly. Lock down each channel, not just the test panel.
+- **Over-broad API permissions.** Grant only the scopes the agent's connectors actually need — each extra permission widens what a compromised agent can reach.
+- **Secret expiry.** Client secrets expire, and a delegated agent silently stops working when they do. Track the expiry date and rotate before it lapses.
+
+## Where this leads (the ramp)
+
+Wiring Entra sign-in into one Studio agent is the right control for an internal tool. When agents start acting autonomously across systems — with their own managed identities and token exchange — you've reached the platform-security problems Azure AI Foundry is built to handle.
+
+> **Next:** [Foundry: govern and secure agents](foundry-govern-secure.md)
+
+## Related
+
+- [Test and evaluate a Studio agent before publishing](studio-test-evaluate.md)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)

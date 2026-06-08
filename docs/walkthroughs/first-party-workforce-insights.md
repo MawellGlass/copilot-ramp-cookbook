@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** Champion, Manager · **Level:** Starter · **Time:** 10 min
 
+**Status:** Frontier (early access) — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 You rolled Copilot out, ran a couple of trainings, and now the honest question is: *is it actually
 landing?* **Workforce / Workplace insights** turns adoption from a feeling into a picture — which apps and

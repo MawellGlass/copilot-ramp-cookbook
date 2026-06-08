@@ -80,3 +80,9 @@ Audience: [sales team / product team / leadership team].
 ## Next:
 
 [:octicons-arrow-right-24: Research a market and write a landscape brief](cowork-market-research-brief.md)
+
+## Where this leads (the ramp)
+
+Running this comparison once is a half-day saved; running it every quarter means rebuilding the same task each time. In Agent Builder you can package the whole competitive-research routine as a Research Librarian agent your team invokes on demand.
+
+> **Next:** [Agent Builder: build a Research Librarian agent](agent-builder-research-librarian.md)

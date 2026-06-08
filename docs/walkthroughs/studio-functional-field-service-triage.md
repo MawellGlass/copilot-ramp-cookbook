@@ -36,7 +36,9 @@ Reach for this when dispatch decisions depend on knowledge that lives in manuals
 
 ---
 
-## Design before you build
+## Try it now — the prompt
+
+Paste this into the agent's instructions and adapt the brackets — it works because the hazard rule and the single-dispatch-path instruction force a safe, decisive recommendation instead of a hedge.
 
 The defining design decision here is **safety**. Before anything else, agree the hazard classes — electrical, gas, pressure, height, anything that smokes, sparks, or leaks — and make the rule absolute: those never get a self-fix recommendation, they escalate to a qualified technician.
 
@@ -75,6 +77,10 @@ Rules:
 
 ---
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - Accept a **photo** of the unit or error display so the agent can match visually documented faults.
@@ -90,11 +96,18 @@ Rules:
 - **Over-confident matching.** If the symptom is ambiguous, the agent must route to a human, not invent the most plausible cause. Verify the "no match" path works.
 - **Parts accuracy.** A wrong part hint causes a second truck roll. Keep the parts-to-model mapping clean.
 
----
+## Where this leads (the ramp)
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+Studio handles the structured triage and the safety gate well. When you want the agent to match faults from photos or learn from outcome feedback, you need a custom-tuned model — and serving that is Azure AI Foundry's job.
 
----
+> **Next:** [Foundry: fine-tune and serve a model](foundry-fine-tune-serve.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Field Service Triage Agent solution template](../solutions/field-service-triage-agent.md) has the system prompt, topic specs, knowledge-source table, Power Automate work-order spec, and the safety-first test matrix.

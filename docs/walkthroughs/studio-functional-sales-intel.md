@@ -30,7 +30,9 @@ A sales enablement agent centralises all of that. Reps can ask a question mid-ca
 - Input from **Sales leadership or an experienced rep** on the top 20 questions reps ask before a call
 - Clarity on **what the agent should not answer** — anything requiring real-time pricing, custom deal terms, or legal commitments must stay human
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the persona, topics, and a sample answer format — it works because it asks for the top objections and a talk-track style up front, so answers come back rep-ready rather than spec-heavy.
 
 Sales agents differ from internal FAQ agents: the audience is savvier, the queries are more situational ("what do I say to a mid-market CFO who's worried about integration complexity?"), and the cost of a wrong answer is a lost deal rather than a mis-filed expense.
 
@@ -70,6 +72,10 @@ answer format for a competitive objection query.
 
 6. **Test with real scenarios.** Ask the top-5 competitive objections, 3 case study requests, and 2 persona-based "what's our story" queries. Have an experienced rep review the answers — they'll immediately know if the agent is returning useful content or generic product-speak.
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Trigger it from Teams during call prep.** Pin the agent in the Sales team channel so reps naturally reach for it while prepping. A pinned agent is used; a link-in-a-doc is forgotten.
@@ -82,9 +88,18 @@ answer format for a competitive objection query.
 - **The agent taking positions the company hasn't approved.** Reps will test the agent with edge questions about competitors. If the knowledge base has informal commentary or early-draft content, the agent will surface it. Audit what's in the SharePoint sources before going live.
 - **Pricing.** Never include current list prices in the knowledge source unless Finance has signed off on the agent surfacing them. Pricing changes faster than the agent's knowledge base. Always escalate to the deal desk.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+## Where this leads (the ramp)
 
----
+Studio's strength here is searching several approved sources at once. When reps need deeper, real-time synthesis — richer retrieval, live CRM context, lower latency mid-call — a pro-code grounded agent in Azure AI Foundry is the next build.
+
+> **Next:** [Foundry: build your first pro-code agent](foundry-first-agent.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Sales Enablement Agent solution template](../solutions/sales-enablement-agent.md) gives you the system prompt, all four topics spec’d out, starter prompts validated for reps, a test case table including adversarial pricing tests, and a deployment checklist.

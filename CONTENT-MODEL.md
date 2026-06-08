@@ -82,10 +82,19 @@ follow along.
 3. Refine: "make the due dates this week" → ...
 
 ## Screenshots
-We deliberately don't ship product screenshots that go stale. Every walkthrough ends with a short,
-honest note pointing readers back to the numbered steps (which we keep current) and to the Playwright
-capture tool in `tooling/screenshots/` for maintainers who want fresh, real captures. Use this exact
-block — never fabricate a UI image:
+Screenshots are **two-state**. A walkthrough either embeds *real* captures — produced by the
+Playwright tool in `tooling/screenshots/` and committed under `docs/screenshots/{slug}/` — or it
+carries the standard no-screenshot note. There is no third option: never reference a screenshot path
+that isn't committed (it renders as a broken image), and never fabricate or mock up a UI image.
+
+**State A — captured.** If the scenario has been run through the Playwright tool and the PNGs are
+committed, embed them inline at the relevant step using the
+`docs/screenshots/{slug}/{NN}-{short-name}.png` convention — `{slug}` matches the walkthrough
+filename (e.g. `chat-meeting-followups`), `{NN}` is a zero-padded order index, `{short-name}` is a
+kebab-case label. Only embed paths that actually exist in the repo.
+
+**State B — not captured.** If the scenario hasn't been captured, end the walkthrough with this exact
+block — never fabricate a UI image to fill the gap:
 
 ```markdown
 ## Screenshots
@@ -93,10 +102,7 @@ block — never fabricate a UI image:
 _We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 ```
 
-**Capture tooling (optional, for maintainers):** the Playwright tool produces images named
-`screenshots/{slug}/{NN}-{short-name}.png` — `{slug}` matches the walkthrough filename
-(e.g. `chat-meeting-followups`), `{NN}` is a zero-padded order index, `{short-name}` is a
-kebab-case label. If you choose to embed real captures, place them under `screenshots/{slug}/`.
+> **CI verifies every referenced screenshot file exists.** (P4 implements this.)
 
 ## Make it better
 Follow-up prompts / refinements that level up the result. This is where power emerges.
@@ -130,11 +136,11 @@ Honest limitations & gotchas. Builds trust.
 5. **Grounding > memory.** Product surfaces move fast. When in doubt, link the official doc in
    `RESOURCES.md` rather than describing stale UI.
 6. **Keep stubs to 5 lines.** A stub is title + value + sample prompt. Don't half-write a walkthrough.
-7. **Screenshots are captured, never faked.** We deliberately don't ship product screenshots that go
-   stale. End every walkthrough with the standard `## Screenshots` note (see the template above) that
-   points readers to the numbered steps and the Playwright capture tool (`tooling/screenshots/`). If a
-   maintainer chooses to embed real captures, they must come from that tool running the real scenario,
-   under the `screenshots/{slug}/{NN}-{short-name}.png` convention — never fabricate a UI image.
+7. **Screenshots are captured, never faked.** Screenshots are two-state: a walkthrough either embeds
+   *real* captures produced by the Playwright tool (`tooling/screenshots/`) and committed under
+   `docs/screenshots/{slug}/{NN}-{short-name}.png`, or it uses the standard `## Screenshots` no-capture
+   note (see the template above). Never reference a screenshot path that isn't committed (broken
+   images), and never fabricate a UI image. CI verifies every referenced screenshot file exists.
 
 > **Automated guard.** A content-QA check (`tooling/qa/check-content.py`) enforces these rules in CI
 > before the site builds. Run it locally with `python tooling/qa/check-content.py` before committing —

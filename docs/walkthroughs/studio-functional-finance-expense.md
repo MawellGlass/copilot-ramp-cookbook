@@ -30,7 +30,9 @@ These are answerable from policy documents — but employees often can't find th
 - The **expense submission portal or system URL** (Concur, SAP, a SharePoint form — whatever your org uses)
 - **30 minutes with Finance** to agree on what the agent covers, what it doesn't, and who to escalate to
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to scaffold the persona, topics, and happy path — it works because it pins thresholds to source documents and routes individual rulings to a human, the two things Finance agents most often get wrong.
 
 Finance has a wider blast radius than HR if the agent gives a wrong answer — an employee who over-claims expenses because the agent said it was fine creates a real problem. Resolve these with Finance before building:
 
@@ -69,6 +71,10 @@ happy-path conversation for an expense submission query.
 
 6. **Test edge cases.** Run: "Can I expense a client dinner that cost £400?" — the agent should give the policy answer on entertainment limits, not rule on the specific case. "What's the approval threshold for software purchases?" — must return the current figure from the policy doc.
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Link directly to forms.** The single biggest UX improvement is ending a guidance answer with "Here's the link: [expense portal / PO system / approval form]." Employees who get the policy answer and the form link in one response are far more likely to submit correctly.
@@ -81,9 +87,18 @@ happy-path conversation for an expense submission query.
 - **VAT, tax, and compliance nuances.** Keep the agent out of tax advice entirely. If a question touches VAT reclaim eligibility or tax treatment of specific expenses, escalate unconditionally to Finance or Tax.
 - **System URL rot.** If you link to expense portals or form URLs in topics or knowledge docs, those links break when systems are upgraded. Build a simple SharePoint page that holds current links and point the agent at that page rather than hardcoding URLs.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
+## Where this leads (the ramp)
 
----
+Guiding employees to the right form and policy is the high-value, low-risk first layer. When the agent needs to actually file the claim in Concur or SAP — not just link to it — you're into pro-code tool integration, and that's where Azure AI Foundry's MCP tooling comes in.
+
+> **Next:** [Foundry: connect pro-code tools with MCP](foundry-mcp-tools.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md) gives you a copy-paste system prompt, Finance-specific topics, all 8 test cases, and a deployment checklist — adapt the bracketed values and build.

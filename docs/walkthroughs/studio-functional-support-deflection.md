@@ -36,7 +36,9 @@ Reach for this when your support team answers the same questions over and over, 
 
 ---
 
-## Design before you build
+## Try it now — the prompt
+
+Paste this into the agent's instructions and adapt the bracketed parts — it works because the "grounded or escalate" rule is built in, so the agent never improvises a support answer.
 
 The defining design decision is **grounded or escalate — nothing in between**. The agent answers only from approved content; when there's no grounded answer, it escalates rather than improvising. A confidently wrong support answer erodes trust and creates rework. And drafts stay drafts: the agent never messages customers directly — a human reviews and sends.
 
@@ -77,6 +79,10 @@ Rules:
 
 ---
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - Add **sentiment-aware routing** so frustrated customers reach a human faster.
@@ -92,11 +98,18 @@ Rules:
 - **Drafts becoming auto-sends.** Keep the human review step real; the agent never messages customers directly.
 - **Measuring deflection wrong.** Baseline before launch so the deflection number means something.
 
----
+## Where this leads (the ramp)
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+This agent deflects internally and drafts for a human to send. The moment you need it to face customers directly and take real actions at scale, you've outgrown Studio — that's the graduation to Azure AI Foundry.
 
----
+> **Next:** [Stage 6 · Azure AI Foundry](../stages/stage-6-foundry.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Customer Support Deflection Agent solution template](../solutions/support-deflection-agent.md) has the system prompt, topic specs, knowledge-source table, the Studio-vs-Foundry comparison, Power Automate ticket spec, and a full test matrix.

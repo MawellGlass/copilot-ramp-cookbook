@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** End user, Manager, Maker · **Level:** Starter · **Time:** 10 min
 
+**Status:** Generally available — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 You need to get smart on something fast — a competitor, a technology, a market shift — and a one-line
 chat answer won't cut it. **Researcher** is a prebuilt first-party agent designed for exactly this: it

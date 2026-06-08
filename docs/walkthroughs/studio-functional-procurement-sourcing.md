@@ -36,7 +36,9 @@ Reach for this when employees buy things without knowing the rules — the appro
 
 ---
 
-## Design before you build
+## Try it now — the prompt
+
+Paste this into the agent's instructions and adapt the brackets — it works because the policy gates and the "never commit spend" rule are explicit, so the agent prepares compliant requests without approving them.
 
 The defining design decision is the **policy boundary**: the agent *prepares* a compliant request and *routes* it, but it never approves spend, signs, or negotiates. Everything it recommends has to be backed by current policy — an out-of-date threshold either blocks legitimate buys or waves through ones that needed approval.
 
@@ -76,6 +78,10 @@ Rules:
 
 ---
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - Add a **budget check** so the agent confirms the cost center has budget before routing.
@@ -91,11 +97,18 @@ Rules:
 - **Blocked vendors slipping through.** Make sure under-review and blocked suppliers are excluded from the source list, not just deprioritised.
 - **Sole-source loopholes.** Require a documented justification and flag it for review — don't let "I prefer this vendor" bypass competition rules.
 
----
+## Where this leads (the ramp)
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+Evaluating policy gates and opening a requisition from one conversation keeps buyers on-contract. When sourcing spans many systems — supplier data, budget, approvals, the ERP — and you want it coordinated end to end, that orchestration lives in Azure AI Foundry.
 
----
+> **Next:** [Foundry: autonomous multi-agent orchestration](foundry-autonomous-orchestration.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Procurement Sourcing Agent solution template](../solutions/procurement-sourcing-agent.md) has the system prompt, topic specs, knowledge-source table, the policy-gate matrix, Power Automate requisition spec, and a full test matrix.

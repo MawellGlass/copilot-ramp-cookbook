@@ -88,3 +88,9 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 ## Next:
 
 [:octicons-arrow-right-24: Turn the meeting into tracked follow-ups](chat-meeting-followups.md)
+
+## Where this leads (the ramp)
+
+Building the agenda is the front half of a well-run meeting; the back half is the recap and the follow-ups. The first-party Facilitator agent closes that loop automatically the moment the meeting ends.
+
+> **Next:** [Facilitator agent: auto-recap every meeting](first-party-facilitator-auto-recap.md)

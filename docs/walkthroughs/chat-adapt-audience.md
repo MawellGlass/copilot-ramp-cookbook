@@ -83,3 +83,9 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 ## Next:
 
 [:octicons-arrow-right-24: Rewrite an email for a tougher audience](chat-rewrite-email.md)
+
+## Where this leads (the ramp)
+
+Reframing the same content for each new audience by hand works, but you're re-describing your readers to Copilot every single time. The built-in Copilot agents let you bake those audience profiles in once, so the right tone and length come pre-loaded — that's Stage 2.
+
+> **Next:** [Stage 2 · Built-in Copilot agents](../stages/stage-2-first-party.md)

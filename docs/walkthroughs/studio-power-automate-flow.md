@@ -87,13 +87,30 @@ In the Studio test panel, trigger the topic with one of your trigger phrases. Wa
 
 Add a **Condition** node after the action call that checks the return status. If the flow returned an error, route to a message: `"Something went wrong. Please try again or contact [support]."` — never let the agent silently fail.
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Use child flows for reuse:** if multiple topics need the same action (e.g., "notify a manager"), put the logic in a single Power Automate child flow and call it from each parent flow.
 - **Approval flows:** Power Automate's approval connector lets your agent submit multi-step approvals — the agent collects the request, the flow routes it for sign-off, and the agent confirms back when approved.
 - **Adaptive Cards for confirmation:** instead of a text confirmation, return an Adaptive Card from the flow to give users a rich summary of what was created.
 - **Debugging:** use Power Automate's run history to debug flow failures — Studio won't show you what happened inside the flow.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Govern and monitor your agents at scale](studio-govern-monitor.md)
+- **Silent action failures.** Always branch on the flow's return status and tell the user when something didn't go through — never let the agent confirm an action that failed.
+- **Debugging blind.** Studio won't show you what happened inside the flow; use Power Automate's run history when an action misbehaves.
+- **Unscoped permissions.** The flow runs with its connection's permissions — confirm it can only touch what this agent should.
+
+## Where this leads (the ramp)
+
+Power Automate connectors cover an enormous amount of ground, but some integrations need custom code, real-time APIs, or tools your flow can't express. That's the point where Azure AI Foundry's pro-code tool calling — via MCP — picks up.
+
+> **Next:** [Foundry: connect pro-code tools with MCP](foundry-mcp-tools.md)
+
+## Related
+
+- [Govern and monitor your agents at scale](studio-govern-monitor.md)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)

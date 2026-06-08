@@ -18,6 +18,8 @@ updated: 2026-06-05
 
 **Stage:** First-Party Agents · **For:** End user, Manager · **Level:** Starter · **Time:** 10 min
 
+**Status:** Check current status — this agent isn't individually listed on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/); confirm availability there before assuming it's GA.
+
 ## When to use this
 You're ready for more — a bigger project, a different team, a step toward a role you've been eyeing — but
 "look at the internal jobs board" is a weak plan. The **Skills agent** is a newer first-party capability

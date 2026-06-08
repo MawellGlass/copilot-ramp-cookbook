@@ -34,7 +34,9 @@ This walkthrough builds the policy and process layer first — the highest value
 - A Finance business partner contact or shared inbox for escalation
 - Optional: a Power BI report or Finance portal link for live spend data
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to generate the agent's system prompt, topics, and escalation flow — it works because it draws the policy-vs-live-data line up front, so the build starts with a clear scope.
 
 **Draw the line between policy questions and data queries before building.**
 
@@ -71,6 +73,10 @@ redirect), and the escalation flow for individual budget decisions.
 5. **Build the live data redirect topic.** Trigger phrases: "what have I spent", "where am I vs. budget", "my spend position", "actuals". Return a clear redirect to the Finance portal or Power BI report with a link, plus a note on what to look for once they are there.
 
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Power BI integration.** Connect to a Power BI dataset and surface the budget owner's actual vs. plan directly in the agent. "You are £12,400 over plan in headcount as of last month-end" — no portal navigation required.
@@ -83,9 +89,18 @@ redirect), and the escalation flow for individual budget decisions.
 - **Reforecast process changes.** Finance processes change every cycle. The reforecast documents must be updated before each cycle opens — and a Finance team owner must own this refresh.
 - **Approval thresholds in the instructions.** Put all overspend thresholds in the SharePoint policy document, not in the agent instructions. When Finance revises the approval tiers, the agent updates automatically.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power BI connector](https://learn.microsoft.com/en-us/power-automate/dataverse/list-rows)
+## Where this leads (the ramp)
 
----
+A policy-and-redirect agent is the safe place to start. The moment you wire in live, per-owner budget data — where one wrong row exposes another team's numbers — the access-control and identity guarantees you need live at the Azure AI Foundry tier.
+
+> **Next:** [Foundry: govern and secure agents](foundry-govern-secure.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Power BI connector](https://learn.microsoft.com/en-us/power-automate/dataverse/list-rows)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md) covers the Finance knowledge-grounding and escalation pattern — adapt the scope section and swap in the budget owner topics described here.

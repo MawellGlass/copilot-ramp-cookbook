@@ -92,3 +92,9 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 ## Next:
 
 [:octicons-arrow-right-24: Build a first-draft project plan for your chosen approach](chat-project-plan.md)
+
+## Where this leads (the ramp)
+
+Once you're running structured brainstorms regularly, you'll want the strongest option to survive past the chat window. The first-party Idea Coach agent takes a raw brainstorm and shapes it into a sponsor-ready proposal — no copy-paste required.
+
+> **Next:** [Idea Coach: turn a brainstorm into a proposal](first-party-idea-coach-proposal.md)

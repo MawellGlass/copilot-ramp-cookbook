@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** Champion, Manager · **Level:** Starter · **Time:** 10 min
 
+**Status:** Public preview — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 You built the plan (maybe with Copilot — see the Stage 1 walkthrough). Now comes the unglamorous part:
 keeping it alive. Who owns what, what's due, what's quietly slipping. **Project Manager** is the prebuilt

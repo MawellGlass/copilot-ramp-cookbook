@@ -72,3 +72,9 @@ Format as a structured document I can hand to the new hire on day 1.
 ## Next:
 
 [:octicons-arrow-right-24: Build a "Cowork recipe" library for your org](cowork-recipe-library.md)
+
+## Where this leads (the ramp)
+
+Drafting the 30/60/90 plan per hire works, but every manager on your team is reinventing it. Agent Builder lets you bottle this into a shared Onboarding agent, so the same quality plan is one prompt away for everyone.
+
+> **Next:** [Agent Builder: build an Onboarding agent](agent-builder-onboarding-agent.md)

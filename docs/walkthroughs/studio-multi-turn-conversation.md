@@ -91,13 +91,30 @@ I'm sorry I couldn't help with that. Let me connect you with [support team].
 
 Don't loop endlessly — a dead end is better than a frustrating loop.
 
-## Tips and design principles
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **One question, one variable.** Don't ask compound questions ("What product and what region?"). Ask one at a time.
 - **Show options when possible.** Choices reduce ambiguity and make the agent feel more reliable.
 - **Fallback is a signal, not a failure.** High fallback rates tell you which topics to build next.
 - **Test with real users, not just yourself.** The questions real users ask rarely match what the builder expected.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Configure an autonomous event-triggered agent](studio-autonomous-triggers.md)
+- **Looping on the same clarification.** Never re-ask a clarification question more than once — offer a "none of the above" path instead of trapping the user.
+- **Over-asking.** If a topic needs more than 2–3 questions, its scope is too broad — split it rather than interrogating the user.
+- **Treating fallback as done.** A rising fallback rate is a backlog of topics to build, not a number to ignore.
+
+## Where this leads (the ramp)
+
+Hand-built clarification loops and fallback topics scale to a point — then maintaining the decision tree becomes the job. When the conversation is too open-ended to script, Azure AI Foundry lets the model drive the dialog instead of your topic graph.
+
+> **Next:** [Foundry: build your first pro-code agent](foundry-first-agent.md)
+
+## Related
+
+- [Configure an autonomous event-triggered agent](studio-autonomous-triggers.md)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)

@@ -85,3 +85,9 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 ## Next:
 
 [:octicons-arrow-right-24: Draft a reply or rewrite an email for a tougher audience](chat-rewrite-email.md)
+
+## Where this leads (the ramp)
+
+Summarizing each hot thread the moment you open it is a great habit — but you're still the one who has to open it. A first-party Project Manager agent watches the workstream for you and surfaces the decisions, risks, and asks without you triaging the inbox.
+
+> **Next:** [Project Manager agent: track a workstream automatically](first-party-project-manager.md)

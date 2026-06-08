@@ -32,7 +32,9 @@ A guidance agent handles the process and policy layer. It does not give legal ad
 - **Sign-off from Legal** before publishing — this is the one agent where the team who owns the content should review and approve the agent before it goes live
 - A named escalation contact or intake channel for the legal team
 
-## Design before you build
+## Try it now — the prompt
+
+Run this prompt in Copilot Chat to draft the persona, topics, and escalation flow — it works because it defines what counts as "legal advice" up front, so the refusal boundary is structural rather than improvised.
 
 Before touching Studio, work through these with Legal or Compliance:
 
@@ -77,6 +79,10 @@ escalation flow for any question that needs a qualified human.
 
 6. **Get Legal review before publishing.** Send the agent a set of test questions and share the responses with the legal team for review. This is non-negotiable for this domain. Their sign-off is your protection if an employee later claims the agent gave them wrong guidance.
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - **Version-stamp the knowledge sources.** When policies are updated, the SharePoint docs should have a "last updated" date visible. Employees who see an answer can check when the policy was last reviewed — it builds trust.
@@ -89,9 +95,18 @@ escalation flow for any question that needs a qualified human.
 - **Employees treating the agent as authoritative.** Make the scope clear in the intro message and in every out-of-scope response. Add a footer disclaimer to the agent's description: "This agent provides process guidance from approved documents. It does not constitute legal advice."
 - **Documents that shouldn't be in the knowledge source.** Legal departments often have sensitive internal documents on the same SharePoint site as policy docs. Audit what's being indexed before launch — the agent will surface anything in the knowledge source.
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+## Where this leads (the ramp)
 
----
+Studio lets you own the escalation logic explicitly — essential for a domain where hedging is a failure. When the agent faces the public or higher stakes, you'll want to attack that refusal boundary systematically, and Azure AI Foundry's red-team evaluation is built to do exactly that.
+
+> **Next:** [Foundry: red-team and evaluate](foundry-red-team-eval.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md) gives you a copy-paste system prompt with strict escalation rules, the full topic set, all 8 test cases including adversarial inputs, and the Legal sign-off checklist.

@@ -109,13 +109,30 @@ Manually trigger the Power Automate flow with a test event before going live. Ve
 
 After go-live, review the agent's output daily for the first week. Autonomous agents can fail silently or produce low-quality output at scale. Use the Power Automate run history and the Copilot Studio Analytics tab to spot issues.
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Start with a narrow scope.** Your first autonomous agent should do one thing reliably — summarize files in one SharePoint library, not all files everywhere. Expand scope only after the narrow version is stable.
 - **Human-in-the-loop:** for high-stakes actions (sending external emails, modifying records), add an approval step in Power Automate before the agent acts. The agent proposes, a human approves, the flow executes.
 - **Scheduled digest:** the Recurrence trigger in Power Automate + a Studio summarization agent is the cleanest way to build a weekly digest from SharePoint or Teams content.
 - **Cost awareness:** autonomous agents consume generative AI capacity. Add logging to track run volume and cost against your environment's AI capacity allocation.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Govern and monitor your agents at scale](studio-govern-monitor.md)
+- **Silent failure.** With no user watching, a broken run goes unnoticed — wire failure notifications and a run log before you rely on it.
+- **Scope sprawl.** Start with one library, one trigger, one action; expand only once the narrow version is stable.
+- **Runaway capacity cost.** Autonomous runs consume generative AI capacity at machine speed — log run volume and watch it against your allocation.
+
+## Where this leads (the ramp)
+
+A single trigger-and-act agent is powerful, but real automation usually means many agents handing work to each other and recovering from failure on their own. That orchestration ceiling is where Azure AI Foundry takes over.
+
+> **Next:** [Foundry: autonomous multi-agent orchestration](foundry-autonomous-orchestration.md)
+
+## Related
+
+- [Govern and monitor your agents at scale](studio-govern-monitor.md)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)

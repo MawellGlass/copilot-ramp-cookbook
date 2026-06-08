@@ -88,3 +88,9 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 ## Next:
 
 [:octicons-arrow-right-24: Draft a status update from your week's activity](chat-weekly-status.md)
+
+## Where this leads (the ramp)
+
+Running your Monday planning prompt by hand is a solid ritual, but it still depends on you remembering to run it. The built-in Copilot agents can carry recurring routines like this so the weekly brief shows up without you asking — that's Stage 2.
+
+> **Next:** [Stage 2 · Built-in Copilot agents](../stages/stage-2-first-party.md)

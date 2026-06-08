@@ -87,3 +87,9 @@ Captured live in Microsoft 365 Copilot Chat (BizChat, Work mode). The product UI
 ## Next:
 
 [:octicons-arrow-right-24: Share the answer as a collaborative Copilot Page](first-party-copilot-pages.md)
+
+## Where this leads (the ramp)
+
+A cited BizChat answer is perfect when one good question gets you what you need. When the question is really a research project — read these twelve documents, reconcile them, and produce a deliverable — Cowork runs that as a multi-step task instead of a single turn.
+
+> **Next:** [Cowork: synthesize a deliverable across many documents](cowork-multi-doc-synthesis.md)

@@ -36,7 +36,9 @@ Reach for this when your incident response depends on runbooks that are correct 
 
 ---
 
-## Design before you build
+## Try it now — the prompt
+
+Paste this into the agent's instructions and adapt the brackets — it works because read-first safety and one-step-at-a-time pacing are written into the rules, so the agent can't run ahead of the responder.
 
 The defining design decision is **read-first safety**. The agent suggests diagnostics and read-only checks freely, but any step that changes production state must be restated and explicitly confirmed by the engineer. And it must never invent a step the runbook doesn't contain — during an incident, a confident wrong action makes everything worse.
 
@@ -77,6 +79,10 @@ Rules:
 
 ---
 
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
 ## Make it better
 
 - Let the agent **read recent metrics/logs** to confirm whether a runbook step had the intended effect.
@@ -92,11 +98,18 @@ Rules:
 - **Stale runbooks and ownership.** Outdated procedures or wrong on-call data send the responder the wrong way. Keep sources current and dated.
 - **Over-reliance before validation.** Don't put it in the critical path until it's passed a drill.
 
----
+## Where this leads (the ramp)
 
-> **📚 Learn more.** [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) · [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) · [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+This agent guides one responder through one incident, with a human confirming every risky step. When you want agents that watch telemetry, correlate signals, and coordinate a response across services on their own, you've reached what Azure AI Foundry's autonomous orchestration is built for.
 
----
+> **Next:** [Foundry: autonomous multi-agent orchestration](foundry-autonomous-orchestration.md)
+
+## Related
+
+- [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Engineering On-Call Runbook Agent solution template](../solutions/engineering-oncall-runbook-agent.md) has the system prompt, topic specs, knowledge-source table, Power Automate incident spec, and the read-first test matrix.

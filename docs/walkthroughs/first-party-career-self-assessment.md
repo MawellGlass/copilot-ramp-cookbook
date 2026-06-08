@@ -18,6 +18,8 @@ updated: 2026-06-05
 
 **Stage:** First-Party Agents · **For:** End user, Manager · **Level:** Starter · **Time:** 15 min
 
+**Status:** Check current status — this agent isn't individually listed on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/); confirm availability there before assuming it's GA.
+
 ## When to use this
 It's review time and the hardest part is remembering. Real impact from eight months ago has evaporated
 from memory, and the blank self-assessment form is doing you no favors. The **Career agent** is a newer

@@ -118,13 +118,30 @@ Before publishing, define your go/no-go criteria. A reasonable bar for an intern
 - ✅ Fallback topic provides a useful recovery path for all misses
 - ✅ At least one real user from the target audience says it's ready
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Regression testing:** save your test case table. After any knowledge update, re-run the full table to catch regressions.
 - **Analytics after launch:** once live, the Copilot Studio **Analytics** tab shows unrecognized intents and escalation rates — use these as your ongoing test backlog.
 - **Automated testing:** for high-stakes agents, explore the Copilot Studio API to run test cases programmatically as part of a CI/CD-style release process.
 - **Test the unhappy path too:** make sure the agent fails gracefully (with a useful redirect) not just correctly.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Publish and govern your agent](studio-publish.md)
+- **"Mostly right" as a pass.** For policy or compliance topics, partial answers are fails — hold the bar.
+- **Skipping adversarial cases.** A 90% golden-path score means nothing if a prompt-injection attempt slips through; test those every release.
+- **Testing only yourself.** Real users phrase things you won't — pilot with the target audience before broad rollout.
+
+## Where this leads (the ramp)
+
+A structured manual test pass is the right gate before publishing one agent. Once you're running many agents — or need evaluation baked into a release pipeline — Azure AI Foundry turns this hand-run table into continuous, automated evaluation and monitoring.
+
+> **Next:** [Foundry: evaluate and monitor continuously](foundry-evaluate-monitor.md)
+
+## Related
+
+- [Publish and govern your agent](studio-publish.md)
+- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)

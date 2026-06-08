@@ -89,13 +89,30 @@ If any answer is wrong, fix the source document — don't try to correct the age
 
 Share the agent in the Teams channel where questions come in. Pin it as a tab. Add a message: `"Before pinging us, try the [Agent Name] agent — it can answer most [policy] questions instantly."`
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Measure deflection:** after 2 weeks, count whether the questions have dropped. If not, look at what the agent couldn't answer and fill those gaps in the docs.
 - **Multi-policy agent:** once your first agent is working, duplicate it and add a second knowledge source for a related policy. Keep each agent narrowly scoped rather than building one big "HR agent."
 - **Escalation path:** in the instructions, add: `"If someone is frustrated or the question requires human judgment, direct them to [team alias / Planner task link]."` — gives the agent an off-ramp.
 - **IT helpdesk variant:** connect the agent to your IT ticketing system's FAQ or the Microsoft Admin Center docs for common IT support questions.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Pilot your agent with a team and gather feedback](agent-builder-share-and-feedback.md)
+- **Thin docs, confident answers.** The agent is only as good as its source — a sparse or out-of-date document produces fluent but wrong answers. Fix the docs before blaming the agent.
+- **Scope creep.** A narrow scope keeps it reliable; the moment you widen it past what the docs cover, it starts guessing. Keep separate agents narrow rather than one broad one.
+- **No deflection measurement.** If you don't baseline the question volume, you won't know whether it's working — count before and after.
+
+## Where this leads (the ramp)
+
+A no-code FAQ agent handles the easy questions; what it can't do is plug into your ticketing system, run across multiple channels, or report on how much load it actually deflected. Copilot Studio rebuilds the same agent with those enterprise controls — see it applied to support deflection.
+
+> **Next:** [Copilot Studio: a support-deflection agent](studio-functional-support-deflection.md)
+
+## Related
+
+- [Pilot your agent with a team and gather feedback](agent-builder-share-and-feedback.md)
+- [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)

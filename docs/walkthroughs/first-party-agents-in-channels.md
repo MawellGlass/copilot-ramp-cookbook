@@ -17,6 +17,8 @@ updated: 2026-06-03
 
 **Stage:** First-Party Agents · **For:** Champion, IT/Admin · **Level:** Intermediate · **Time:** 10 min
 
+**Status:** Public preview — verify current availability on the [Agents in Microsoft 365 roster](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/).
+
 ## When to use this
 Every team has a person who knows "where's the onboarding checklist?" and "what's our PTO policy?" — and
 that person is drowning in repeat questions. Putting an agent **in the channel** changes the model: the
