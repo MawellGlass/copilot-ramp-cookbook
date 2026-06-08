@@ -13,16 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Check links with lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          # Check all markdown files in docs/ — skip anchors (fast mode) and
-          # ignore known rate-limited or login-required URLs.
+          # Check only external http/https links in docs/ — internal relative
+          # links use MkDocs use_directory_urls rewriting, which lychee can't
+          # resolve, so restricting schemes avoids false positives. (MkDocs
+          # build --strict already validates internal links.)
           args: >
             --verbose
             --no-progress
+            --scheme https
+            --scheme http
             --exclude "localhost"
             --exclude "127.0.0.1"
             --exclude "aka.ms"
