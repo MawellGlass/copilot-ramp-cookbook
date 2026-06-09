@@ -11,6 +11,37 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### The home "Find your starting point" matrix is now fully accessible
+*June 9, 2026*
+
+The role × stage matrix on the home page now works for screen-reader and keyboard users — with
+**no visual change** at all:
+
+- Each cell announces its meaning in words (e.g. *"End user — Stage 1 Copilot Chat: Primary, lives
+  here"*) instead of reading the dots aloud.
+- The table has a descriptive caption and proper row and column headers, so it's navigable cell by cell.
+- Decorative arrows and the legend's dot glyphs are now hidden from assistive technology.
+- The dots, colors, and layout look exactly as they did before.
+
+### Every Stage 1 chat walkthrough now links to Microsoft's own guidance
+*June 9, 2026*
+
+Each Stage 1 · Chat walkthrough's **Learn more** note now deep-links to the specific Microsoft
+adoption or scenario article for that task — the matching Copilot Prompt Gallery, Scenario Library,
+or Success Kit entry — instead of a generic landing page, so you can go straight from the recipe to
+Microsoft's official write-up.
+
+### Live product screenshots, a "Start by Product" path, and tidier walkthrough cards
+*June 8, 2026*
+
+- **Start by Product** — a new navigation path lets you enter the cookbook from the app you already
+  use: a [Product Picker](start-by-product.md) plus dedicated Outlook, Teams, Word, PowerPoint,
+  Excel, and Microsoft 365 Copilot Chat pages.
+- **More authentic screenshots** — additional in-product captures published across the walkthrough
+  galleries, with a cleaner **two-up card layout** that's easier to scan.
+- **Rollout-status labels** — walkthroughs and capabilities that are still rolling out or in public
+  preview are now labeled, so you know what to expect before you try.
+
 ### Six more Stage 1 chat walkthroughs now show real in-product screenshots
 *June 5, 2026*
 
