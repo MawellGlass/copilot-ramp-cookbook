@@ -17,15 +17,15 @@ hide:
 
 <div class="journey">
   <a class="step" href="stages/stage-1-chat/"><span class="n">STAGE 1</span><span class="t">Copilot Chat</span><span class="d">A daily habit and a first "wow."</span></a>
-  <span class="arrow">→</span>
+  <span class="arrow" aria-hidden="true">→</span>
   <a class="step" href="stages/stage-2-first-party/"><span class="n">STAGE 2</span><span class="t">First-Party Agents</span><span class="d">Delegate to what Microsoft already built.</span></a>
-  <span class="arrow">→</span>
+  <span class="arrow" aria-hidden="true">→</span>
   <a class="step" href="stages/stage-3-cowork/"><span class="n">STAGE 3</span><span class="t">Cowork</span><span class="d">Hand off whole multi-step tasks.</span></a>
-  <span class="arrow">→</span>
+  <span class="arrow" aria-hidden="true">→</span>
   <a class="step" href="stages/stage-4-agent-builder/"><span class="n">STAGE 4</span><span class="t">Agent Builder</span><span class="d">Your first taste of <em>making</em>.</span></a>
-  <span class="arrow">→</span>
+  <span class="arrow" aria-hidden="true">→</span>
   <a class="step dest" href="stages/stage-5-studio/"><span class="n">STAGE 5</span><span class="t">Copilot Studio</span><span class="d">Build real, production-grade agents.</span></a>
-  <span class="arrow">→</span>
+  <span class="arrow" aria-hidden="true">→</span>
   <a class="step dest" href="stages/stage-6-foundry/"><span class="n">STAGE 6</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
 </div>
 
@@ -37,31 +37,32 @@ Not every tool is for every person. This is where each role tends to spend time 
 
 <div class="matrix-wrap">
 <table class="home-matrix">
+<caption class="sr-only">Role-by-stage proficiency matrix. For each role, how heavily they tend to work in each of the six stages — rated Primary (lives here), Regular, Occasional, or Rarely.</caption>
 <thead><tr>
-  <th class="corner">Your role</th>
-  <th><a href="stages/stage-1-chat/"><span class="stagenum">STAGE 1</span>Copilot Chat</a></th>
-  <th><a href="stages/stage-2-first-party/"><span class="stagenum">STAGE 2</span>First-Party</a></th>
-  <th><a href="stages/stage-3-cowork/"><span class="stagenum">STAGE 3</span>Cowork</a></th>
-  <th><a href="stages/stage-4-agent-builder/"><span class="stagenum">STAGE 4</span>Agent Builder</a></th>
-  <th><a href="stages/stage-5-studio/"><span class="stagenum">STAGE 5</span>Studio</a></th>
-  <th><a href="stages/stage-6-foundry/"><span class="stagenum">STAGE 6</span>Foundry</a></th>
+  <th class="corner" scope="col">Your role</th>
+  <th scope="col"><a href="stages/stage-1-chat/"><span class="stagenum">STAGE 1</span>Copilot Chat</a></th>
+  <th scope="col"><a href="stages/stage-2-first-party/"><span class="stagenum">STAGE 2</span>First-Party</a></th>
+  <th scope="col"><a href="stages/stage-3-cowork/"><span class="stagenum">STAGE 3</span>Cowork</a></th>
+  <th scope="col"><a href="stages/stage-4-agent-builder/"><span class="stagenum">STAGE 4</span>Agent Builder</a></th>
+  <th scope="col"><a href="stages/stage-5-studio/"><span class="stagenum">STAGE 5</span>Studio</a></th>
+  <th scope="col"><a href="stages/stage-6-foundry/"><span class="stagenum">STAGE 6</span>Foundry</a></th>
 </tr></thead>
 <tbody>
-<tr><th><a href="roles/new-user/">End user</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th><a href="roles/champion/">Champion</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th><a href="roles/manager/">Manager</a></th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th><a href="roles/maker/">Maker</a></th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
-<tr><th><a href="roles/developer/">Developer</a></th> <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
-<tr><th><a href="roles/it-admin/">IT / admin</a></th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
+<tr><th scope="row"><a href="roles/new-user/">End user</a></th>  <td class="lvl3" aria-label="End user — Stage 1 Copilot Chat: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl3" aria-label="End user — Stage 2 First-Party: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl2" aria-label="End user — Stage 3 Cowork: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl1" aria-label="End user — Stage 4 Agent Builder: Occasional"><span class="dot" aria-hidden="true">●○○</span></td><td class="lvl0" aria-label="End user — Stage 5 Studio: Rarely"><span class="dot" aria-hidden="true">○○○</span></td><td class="lvl0" aria-label="End user — Stage 6 Foundry: Rarely"><span class="dot" aria-hidden="true">○○○</span></td></tr>
+<tr><th scope="row"><a href="roles/champion/">Champion</a></th>  <td class="lvl3" aria-label="Champion — Stage 1 Copilot Chat: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl3" aria-label="Champion — Stage 2 First-Party: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl2" aria-label="Champion — Stage 3 Cowork: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="Champion — Stage 4 Agent Builder: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="Champion — Stage 5 Studio: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl0" aria-label="Champion — Stage 6 Foundry: Rarely"><span class="dot" aria-hidden="true">○○○</span></td></tr>
+<tr><th scope="row"><a href="roles/manager/">Manager</a></th>   <td class="lvl3" aria-label="Manager — Stage 1 Copilot Chat: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl2" aria-label="Manager — Stage 2 First-Party: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl3" aria-label="Manager — Stage 3 Cowork: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl1" aria-label="Manager — Stage 4 Agent Builder: Occasional"><span class="dot" aria-hidden="true">●○○</span></td><td class="lvl1" aria-label="Manager — Stage 5 Studio: Occasional"><span class="dot" aria-hidden="true">●○○</span></td><td class="lvl0" aria-label="Manager — Stage 6 Foundry: Rarely"><span class="dot" aria-hidden="true">○○○</span></td></tr>
+<tr><th scope="row"><a href="roles/maker/">Maker</a></th>     <td class="lvl2" aria-label="Maker — Stage 1 Copilot Chat: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="Maker — Stage 2 First-Party: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="Maker — Stage 3 Cowork: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl3" aria-label="Maker — Stage 4 Agent Builder: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl3" aria-label="Maker — Stage 5 Studio: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl1" aria-label="Maker — Stage 6 Foundry: Occasional"><span class="dot" aria-hidden="true">●○○</span></td></tr>
+<tr><th scope="row"><a href="roles/developer/">Developer</a></th> <td class="lvl2" aria-label="Developer — Stage 1 Copilot Chat: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl1" aria-label="Developer — Stage 2 First-Party: Occasional"><span class="dot" aria-hidden="true">●○○</span></td><td class="lvl2" aria-label="Developer — Stage 3 Cowork: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl1" aria-label="Developer — Stage 4 Agent Builder: Occasional"><span class="dot" aria-hidden="true">●○○</span></td><td class="lvl3" aria-label="Developer — Stage 5 Studio: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl3" aria-label="Developer — Stage 6 Foundry: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td></tr>
+<tr><th scope="row"><a href="roles/it-admin/">IT / admin</a></th><td class="lvl2" aria-label="IT / admin — Stage 1 Copilot Chat: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="IT / admin — Stage 2 First-Party: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="IT / admin — Stage 3 Cowork: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl2" aria-label="IT / admin — Stage 4 Agent Builder: Regular"><span class="dot" aria-hidden="true">●●○</span></td><td class="lvl3" aria-label="IT / admin — Stage 5 Studio: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td><td class="lvl3" aria-label="IT / admin — Stage 6 Foundry: Primary, lives here"><span class="dot" aria-hidden="true">●●●</span></td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="matrix-key">
-  <span class="k3"><b>●●●</b> Primary — lives here</span>
-  <span class="k2"><b>●●○</b> Regular</span>
-  <span class="k1"><b>●○○</b> Occasional</span>
-  <span class="k0"><b>○○○</b> Rarely</span>
+  <span class="k3"><b aria-hidden="true">●●●</b> Primary — lives here</span>
+  <span class="k2"><b aria-hidden="true">●●○</b> Regular</span>
+  <span class="k1"><b aria-hidden="true">●○○</b> Occasional</span>
+  <span class="k0"><b aria-hidden="true">○○○</b> Rarely</span>
 </div>
 
 <p class="path-eyebrow">Choose your path</p>
