@@ -77,19 +77,25 @@ Captured live in Microsoft 365 Copilot Chat (BizChat, Work mode). The product UI
 **5. Go deeper.** A follow-up pinning down who sent a specific item and when, with the source email linked to open.
 ![A follow-up answer identifying the sender and arrival time, with the source linked](../screenshots/first-party-bizchat-grounded/05-follow-up.png)
 
-## Tips and variants
+## Make it better
 
 - **People-based search:** `"What has [colleague's name] shared recently about [topic]?"` — useful for catching up on a teammate's work.
 - **Decision archaeology:** `"Was there ever a decision made about [X]? Summarize the context."` — surfaces decisions from old threads you weren't part of.
 - **Content gap check:** `"Is there any documentation in SharePoint about [process]? If not, summarize what you can find from emails and Teams."` — useful for champions building knowledge bases.
 - **Compare to the public web:** unlike a standard web search, BizChat grounds on *your* org's data. For topics that span internal and external knowledge, you may want to supplement with a standard Researcher deep-dive.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Share the answer as a collaborative Copilot Page](first-party-copilot-pages.md)
+- **Citations show where an answer came from, not that it's complete.** BizChat only sees content you have permission to see, so a gap can look like an absence.
+- **A confident synthesis across many sources can blur conflicting messages.** When the answer matters, open the cited items and read them.
+- **Recency varies by source.** Ask “as of when?” before you treat a grounded answer as current.
 
 ## Where this leads (the ramp)
 
 A cited BizChat answer is perfect when one good question gets you what you need. When the question is really a research project — read these twelve documents, reconcile them, and produce a deliverable — Cowork runs that as a multi-step task instead of a single turn.
 
 > **Next:** [Cowork: synthesize a deliverable across many documents](cowork-multi-doc-synthesis.md)
+
+## Related
+
+- [Share the answer as a collaborative Copilot Page](first-party-copilot-pages.md)

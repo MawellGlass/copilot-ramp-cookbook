@@ -70,19 +70,29 @@ Audience: [sales team / product team / leadership team].
    Rewrite the narrative section to be more direct about our biggest risk and our clearest differentiator.
    ```
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Win/loss lens:** add a section `"Based on the positioning differences, what situations favor us and what situations favor each competitor?"` — useful for sales coaching.
 - **From web research:** if you don't have existing docs, ask the **Researcher** agent to gather competitor intelligence first, then hand the output to Cowork for structuring.
 - **Refresh cadence:** save the task description as a recipe and re-run it quarterly with updated source documents.
 - **Product team variant:** add `"Feature comparison table: list specific capabilities and mark each competitor as 'Yes / Partial / No' for each."` — useful for roadmap prioritization.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Research a market and write a landscape brief](cowork-market-research-brief.md)
+- **The matrix is only as balanced as your sources.** Thin or dated material on one competitor produces a confidently wrong cell.
+- **Cowork won't flag what's missing unless you ask.** Empty or vague cells need a “what evidence supports this?” pass.
+- **Positioning claims pulled from marketing docs describe how a competitor sells, not how they perform.** Keep the two separate.
 
 ## Where this leads (the ramp)
 
 Running this comparison once is a half-day saved; running it every quarter means rebuilding the same task each time. In Agent Builder you can package the whole competitive-research routine as a Research Librarian agent your team invokes on demand.
 
 > **Next:** [Agent Builder: build a Research Librarian agent](agent-builder-research-librarian.md)
+
+## Related
+
+- [Research a market and write a landscape brief](cowork-market-research-brief.md)

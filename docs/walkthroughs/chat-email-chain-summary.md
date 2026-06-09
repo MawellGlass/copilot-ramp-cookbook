@@ -75,19 +75,25 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 **5. Reply drafted.** A short, professional reply built straight from the summary.
 ![A short drafted reply in a professional tone](../screenshots/chat-email-chain-summary/05-drafted-reply.png)
 
-## Tips and variants
+## Make it better
 
 - **"What changed since [date]?"** — useful for catching up on a thread you were already on.
 - **In Teams:** the same prompt works in the Teams Copilot side panel for a long chat thread.
 - **Forward context:** after the summary, ask for a 3-sentence TL;DR to share with someone who needs background.
 - **"What's the decision that needs to be made?"** — a single-question follow-up that cuts straight to the point.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Draft a reply or rewrite an email for a tougher audience](chat-rewrite-email.md)
+- **A summary flattens a heated thread.** If tone or urgency matters, open the original before you reply.
+- **“Who said what” is inferred from the thread.** On forwarded or quoted chains it can misattribute a position, so spot-check before you quote someone.
+- **It only sees the messages in front of it.** Side conversations and DMs that shaped the thread won't be in the summary.
 
 ## Where this leads (the ramp)
 
 Summarizing each hot thread the moment you open it is a great habit — but you're still the one who has to open it. A first-party Project Manager agent watches the workstream for you and surfaces the decisions, risks, and asks without you triaging the inbox.
 
 > **Next:** [Project Manager agent: track a workstream automatically](first-party-project-manager.md)
+
+## Related
+
+- [Draft a reply or rewrite an email for a tougher audience](chat-rewrite-email.md)

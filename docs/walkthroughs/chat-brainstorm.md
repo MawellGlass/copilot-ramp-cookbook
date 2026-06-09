@@ -82,19 +82,25 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 
 ![Copilot's recommended sequence and follow-up offer](../screenshots/chat-brainstorm/04-recommendation.png)
 
-## Tips and variants
+## Make it better
 
 - **For decisions with stakeholders:** add `"Also flag which option is most likely to face resistance from [stakeholder type], and why."` to the prompt.
 - **For technical decisions:** replace "team, time, cost" with "technical complexity, dependencies, and reversibility."
 - **Quick version:** ask for 3 options with just benefit + risk if you need speed over depth.
 - **Expand to a decision brief:** after picking an option, ask Copilot to draft a one-page decision brief you can share for sign-off.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Build a first-draft project plan for your chosen approach](chat-project-plan.md)
+- **The five options can sound more distinct than they are.** Watch for the same idea dressed up three different ways.
+- **The recommendation reflects how you framed the problem, not independent judgment.** A biased prompt yields a biased pick.
+- **Risk and cost estimates are rough by design.** Treat them as conversation starters, not numbers to plan against.
 
 ## Where this leads (the ramp)
 
 Once you're running structured brainstorms regularly, you'll want the strongest option to survive past the chat window. The first-party Idea Coach agent takes a raw brainstorm and shapes it into a sponsor-ready proposal — no copy-paste required.
 
 > **Next:** [Idea Coach: turn a brainstorm into a proposal](first-party-idea-coach-proposal.md)
+
+## Related
+
+- [Build a first-draft project plan for your chosen approach](chat-project-plan.md)

@@ -76,19 +76,25 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 **5. Likely question expanded.** The point most likely to draw pushback, with the risk and a short answer.
 ![The likely-question point expanded with risk and a short answer](../screenshots/chat-exec-briefing/05-expand-question.png)
 
-## Tips and variants
+## Make it better
 
 - **Tighter output:** add `"Each point max 20 words."` to the prompt.
 - **Two-sided view:** add `"Include one 'concern' bullet — something a skeptic might raise."`
 - **From a deck:** open the PowerPoint in Copilot — it reads slide titles and speaker notes with the same prompt.
 - **Prep someone else:** forward the Copilot output to whoever is actually in the meeting.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Adapt the output for a different audience](chat-adapt-audience.md)
+- **Leading with the outcome is persuasive — make sure it's defensible.** Confirm the outcome Copilot asserts is one you can actually stand behind.
+- **The “likely question” is a guess at what the room will push on.** You know the audience; add the question Copilot missed.
+- **Five tight points can hide an inconvenient detail.** Check that nothing material got compressed away.
 
 ## Where this leads (the ramp)
 
 Hand-assembling a briefing from a pile of docs works for one meeting; doing it weekly across many sources gets old fast. The first-party Researcher agent does the deep read across your materials and returns a grounded briefing on demand.
 
 > **Next:** [Researcher agent: deep-dive across your sources](first-party-researcher-deep-dive.md)
+
+## Related
+
+- [Adapt the output for a different audience](chat-adapt-audience.md)

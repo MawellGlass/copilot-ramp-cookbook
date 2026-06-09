@@ -61,22 +61,7 @@ That's the pattern that makes a self-service agent trusted: fast answer, with a 
 
 ## Screenshots
 
-Captured live with the **Employee Self-Service** agent in Microsoft 365 Copilot. The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
-
-<!-- SCREENSHOTS PENDING CAPTURE — a maintainer runs the Playwright tool in `tooling/screenshots/` (npm run auth, then npm run capture for first-party-employee-self-service) to generate these PNGs, then removes this comment wrapper to publish them. This is a tenant-specific agent grounded on approved HR/IT sources, so it must be captured where it's enabled. Until then nothing renders, so the page never shows a broken image.
-
-**1. Open the agent.** The Employee Self-Service agent ready to take a plain-language question.
-![The Employee Self-Service agent open and ready](../screenshots/first-party-employee-self-service/01-open-agent.png)
-
-**2. Answer with sources.** The PTO balance, carryover policy, and how-to — each with a source link.
-![The agent's answer with linked approved sources](../screenshots/first-party-employee-self-service/02-answer-with-source.png)
-
-**3. Take the next action.** Routing straight to the time-off request form or the right team.
-![The agent routing to the request form inline](../screenshots/first-party-employee-self-service/03-take-action.png)
-
-**4. Escalate cleanly.** For a non-routine case, the agent points to the right person and what to include.
-![The agent handing off a non-routine case to a human](../screenshots/first-party-employee-self-service/04-escalate.png)
--->
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
 ## Make it better
 Self-service is a flywheel — feed it and it speeds up:

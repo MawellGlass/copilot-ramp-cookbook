@@ -65,19 +65,29 @@ Target audience: [exec / product team / sales team]. Target length: [1-2 pages].
    ```
 6. **Push to a Copilot Page** and share with stakeholders for review.
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Use Researcher as a source:** if you don't have source docs, ask Researcher to do a deep-dive on the topic first, then hand its output to Cowork for structuring.
 - **SWOT format:** replace the 5-section structure with `"Format this as a SWOT analysis: Strengths, Weaknesses, Opportunities, Threats."` for a one-page view.
 - **Competitive matrix:** ask for `"A comparison table: key players as rows, dimensions (pricing / features / target customer / go-to-market) as columns."` instead of a narrative.
 - **Recurring update:** save the task description as a Cowork recipe and re-run it quarterly with updated sources.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Build a competitive comparison from multiple sources](cowork-competitive-comparison.md)
+- **The “implication for us” section is where Cowork is weakest.** It connects market facts to your situation by guessing, so that part needs your judgment.
+- **A brief reads as authoritative even when a source was thin.** Spot-check the claims that would change a decision.
+- **Market data ages fast.** Note the source dates and re-run the brief rather than trusting a stale one.
 
 ## Where this leads (the ramp)
 
 You're already saving this as a Cowork recipe to re-run each quarter — that instinct is exactly what Agent Builder is for. It turns a repeatable task description into a durable, shareable agent, so your team runs the brief without rebuilding the prompt.
 
 > **Next:** [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)
+
+## Related
+
+- [Build a competitive comparison from multiple sources](cowork-competitive-comparison.md)

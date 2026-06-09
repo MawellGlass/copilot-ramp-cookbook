@@ -73,19 +73,25 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 **5. Length trimmed.** Cut to the target length without losing the recommendation or main reason.
 ![The adapted content trimmed to the target length](../screenshots/chat-adapt-audience/05-length-cut.png)
 
-## Tips and variants
+## Make it better
 
 - **Side-by-side comparison:** ask Copilot to produce a table with the original version vs. adapted version so you can see exactly what changed.
 - **Multiple audiences at once:** `"Give me two versions: one for the engineering team and one for the product exec."` — useful for all-hands comms.
 - **International adaptation:** add `"Avoid US-centric idioms and cultural references. This will be read by a global audience."` for cross-region content.
 - **Email subject line:** after adapting the body, ask: `"Write three subject line options for this email, each under 8 words."`
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Rewrite an email for a tougher audience](chat-rewrite-email.md)
+- **Adapting tone is not the same as changing facts.** Check that the rewrite didn't soften a hard number or drop a caveat just to fit the audience.
+- **The audience you name is a guess at what they care about.** If you're wrong about their priorities, Copilot optimizes the message for the wrong thing.
+- **A polished tone can mask a thin argument.** Re-read for substance, not just for smoothness.
 
 ## Where this leads (the ramp)
 
 Reframing the same content for each new audience by hand works, but you're re-describing your readers to Copilot every single time. The built-in Copilot agents let you bake those audience profiles in once, so the right tone and length come pre-loaded — that's Stage 2.
 
 > **Next:** [Stage 2 · Built-in Copilot agents](../stages/stage-2-first-party.md)
+
+## Related
+
+- [Rewrite an email for a tougher audience](chat-rewrite-email.md)

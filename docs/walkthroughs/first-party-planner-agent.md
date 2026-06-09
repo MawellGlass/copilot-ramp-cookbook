@@ -69,7 +69,7 @@ Break each milestone into 3-5 tasks and suggest assignments based on the names I
    Give me a 5-bullet project status update for [project] I can share in a standup.
    ```
 
-## Tips and variants
+## Make it better
 
 - **From meeting notes:** paste in notes from a project kickoff and ask the Planner agent to extract the tasks and assignments.
 - **Weekly nudge:** ask `"What was completed on [project] this week and what's coming up next week?"` before each standup.
@@ -91,12 +91,18 @@ Captured live with the **Planner (Frontier)** agent in Microsoft 365 Copilot Cha
 **4. Ask about it in plain language.** Follow-up questions get plain-language answers — here, who owns each milestone and whose workload is heaviest, with an offer to rebalance.
 ![A plain-language workload summary from the Planner agent](../screenshots/first-party-planner-agent/04-status-question.png)
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)
+- **A generated plan looks authoritative, but the dates and owners are guesses.** Confirm capacity before you save it into Planner.
+- **“At risk / overdue” reflects what's in Planner, not reality.** If the team updates tasks late, the status lies.
+- **Auto-assignment spreads work by what it can see, not by who's actually swamped.** Sanity-check the workload before you commit people.
 
 ## Where this leads (the ramp)
 
 The Planner agent is great at standing up and tracking the plan; it still expects you to do the work inside each task. Cowork picks up from there, executing a multi-step task end to end across your apps rather than just listing it.
 
 > **Next:** [Cowork: run an end-to-end task across apps](cowork-end-to-end-task.md)
+
+## Related
+
+- [Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md)

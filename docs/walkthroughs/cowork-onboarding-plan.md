@@ -62,19 +62,29 @@ Format as a structured document I can hand to the new hire on day 1.
 5. **Add your own section.** Paste in a "our team norms" paragraph at the top — things like how decisions get made, how to raise blockers, and who to go to for what.
 6. **Share before day 1.** Send the plan via email or as a Copilot Page before the first day so the new hire can read it over the weekend.
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **For a role with existing docs:** attach your team's readme, the project wiki, or existing onboarding notes — Cowork will incorporate them into the plan.
 - **Buddy/mentor plan:** add a section: `"Draft a parallel plan for the onboarding buddy — what their role is in each phase and the 3 most important things they should do to support the new hire."`
 - **Kickoff email:** after the plan is ready, ask: `"Draft a welcome email to the new hire with a link to this plan and a warm summary of what their first week will look like."`
 - **Post-90-day:** at the end of the period, ask Cowork to produce a 90-day retrospective brief based on your check-in notes.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Build a "Cowork recipe" library for your org](cowork-recipe-library.md)
+- **A 30/60/90 plan is a starting frame, not a contract.** The delivery goals especially need a reality check against the new hire's real ramp time.
+- **Generic stakeholder types are placeholders.** Replace “key partner team” with real names before you hand it over, or it reads as boilerplate.
+- **The plan reflects the role as you described it.** If the actual job differs from the job description, the plan will too.
 
 ## Where this leads (the ramp)
 
 Drafting the 30/60/90 plan per hire works, but every manager on your team is reinventing it. Agent Builder lets you bottle this into a shared Onboarding agent, so the same quality plan is one prompt away for everyone.
 
 > **Next:** [Agent Builder: build an Onboarding agent](agent-builder-onboarding-agent.md)
+
+## Related
+
+- [Build a "Cowork recipe" library for your org](cowork-recipe-library.md)

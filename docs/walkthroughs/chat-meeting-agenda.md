@@ -79,18 +79,24 @@ Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fa
 **5. Pre-reads added.** A suggested piece of pre-read material attached to each agenda item.
 ![Each agenda item with a suggested pre-read](../screenshots/chat-meeting-agenda/05-pre-reads.png)
 
-## Tips and variants
+## Make it better
 
 - **No notes?** Just describe the meeting goal: `"We need to decide whether to extend the deadline for [project]."` Copilot generates the structure.
 - **Recurring meeting?** Save the prompt as a recurring Teams chat with yourself and re-run it each week with updated context.
 - **After the meeting:** use the same context to ask Copilot to draft the recap email.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Turn the meeting into tracked follow-ups](chat-meeting-followups.md)
+- **Time slots are estimates, not promises.** The discussion that matters always runs long, so build in slack.
+- **An agenda built from your notes inherits your blind spots.** Ask whether anything the attendees care about is missing.
+- **A parking-lot bucket only works if someone owns it afterward.** Don't let it become a graveyard.
 
 ## Where this leads (the ramp)
 
 Building the agenda is the front half of a well-run meeting; the back half is the recap and the follow-ups. The first-party Facilitator agent closes that loop automatically the moment the meeting ends.
 
 > **Next:** [Facilitator agent: auto-recap every meeting](first-party-facilitator-auto-recap.md)
+
+## Related
+
+- [Turn the meeting into tracked follow-ups](chat-meeting-followups.md)

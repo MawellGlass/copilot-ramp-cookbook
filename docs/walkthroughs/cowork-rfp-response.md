@@ -63,19 +63,29 @@ Tone: [professional and direct / formal government / conversational B2B].
    Review the full draft against the RFP requirements. Are there any requirements that haven't been addressed?
    ```
 
-## Tips and variants
+## Screenshots
+
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
+
+## Make it better
 
 - **Executive summary first:** once all sections are drafted, ask Cowork to write the executive summary last — it can draw from the complete draft for accuracy.
 - **Word count management:** add `"Each section should stay within the word limit specified in the RFP. Note the actual word count at the end of each section."` to the task.
 - **Past proposal library:** if you have past winning proposals, attach them as additional source material — Cowork will draw on the strongest language and structure.
 - **Compliance matrix:** ask for `"A separate compliance matrix table: each RFP requirement as a row, with the section number where we addressed it."` — saves time if the evaluator requires it.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Build a deck from raw notes](cowork-deck-from-notes.md)
+- **Work the `[NEEDS HUMAN INPUT]` flags before anything else.** Those gaps are exactly where an unedited draft loses the bid.
+- **Cowork drafts from your capability docs and can overstate a claim your evidence doesn't fully support.** Every compliance-relevant line needs a human check.
+- **A section can read well and still miss a requirement.** Run the final compliance pass against the RFP requirements list, not the draft.
 
 ## Where this leads (the ramp)
 
 Once your proposal team is running this RFP workflow on every bid, the task description itself becomes worth productizing. Agent Builder turns it into a reusable proposal-response agent — grounded on your capability library — that anyone on the team can launch.
 
 > **Next:** [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)
+
+## Related
+
+- [Build a deck from raw notes](cowork-deck-from-notes.md)

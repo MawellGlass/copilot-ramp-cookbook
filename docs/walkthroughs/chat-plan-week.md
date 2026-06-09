@@ -58,39 +58,27 @@ Look at my calendar and inbox for this week. Tell me:
 
 ## Screenshots
 
-Captured live in Microsoft 365 Copilot Chat (Work mode). The product UI moves fast — if what you see differs, trust the numbered steps above, which we keep current.
+_We deliberately don't ship screenshots that go stale — the Microsoft Copilot UI changes often. Follow the numbered steps above, which we keep current. Maintainers can regenerate fresh captures with the Playwright tool in `tooling/screenshots/`._
 
-<!-- SCREENSHOTS PENDING CAPTURE — a maintainer runs the Playwright tool in `tooling/screenshots/` (npm run auth, then npm run capture for chat-plan-week) to generate these PNGs, then removes this comment wrapper to publish them. Until then nothing renders, so the page never shows a broken image.
-
-**1. Copilot Chat open.** Grounded on your calendar and inbox, composer ready.
-![Copilot Chat open, ready to plan the week](../screenshots/chat-plan-week/01-open-copilot.png)
-
-**2. Prompt entered.** The four-part weekly-planning prompt typed into the composer.
-![The weekly-planning prompt typed into the composer](../screenshots/chat-plan-week/02-prompt-entered.png)
-
-**3. The weekly brief.** Top commitments, open decisions to close, what to deprioritize, and time crunches.
-![Copilot's structured weekly brief](../screenshots/chat-plan-week/03-weekly-brief.png)
-
-**4. Prep for one meeting.** Drilling into who's attending, the agenda, and open items for an important meeting.
-![Copilot's prep details for one meeting](../screenshots/chat-plan-week/04-meeting-prep.png)
-
-**5. Protect a focus block.** Surfacing the least-critical meeting to decline or shorten.
-![Copilot surfacing the least-critical meeting to decline](../screenshots/chat-plan-week/05-focus-block.png)
--->
-
-## Tips and variants
+## Make it better
 
 - **End-of-week version:** run the same prompt on Friday afternoon with "this week" to write your status update — it doubles as the inputs for [Draft a status update](chat-weekly-status.md).
 - **Manager lens:** add `"Also flag anything where a direct report may need support or unblocking."` to the prompt.
 - **Before a big week:** add `"I have a major [deliverable / presentation / review] on [day]. Flag anything that conflicts with prep time for that."`
 - **As a habit:** pin this prompt or save it as a Microsoft 365 Copilot Chat favorite for single-click Monday access.
 
-## Next:
+## Watch out for
 
-[:octicons-arrow-right-24: Draft a status update from your week's activity](chat-weekly-status.md)
+- **The brief is only as complete as your calendar and inbox.** Work that lives in someone else's head won't show up.
+- **“Least critical meeting to decline” is a suggestion from titles and attendees, not politics.** You know which meeting you actually can't skip.
+- **A plan written Monday drifts by Wednesday.** Re-running it midweek beats treating it as fixed.
 
 ## Where this leads (the ramp)
 
 Running your Monday planning prompt by hand is a solid ritual, but it still depends on you remembering to run it. The built-in Copilot agents can carry recurring routines like this so the weekly brief shows up without you asking — that's Stage 2.
 
 > **Next:** [Stage 2 · Built-in Copilot agents](../stages/stage-2-first-party.md)
+
+## Related
+
+- [Draft a status update from your week's activity](chat-weekly-status.md)
