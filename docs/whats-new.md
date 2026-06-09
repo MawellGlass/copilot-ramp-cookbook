@@ -11,6 +11,20 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### A new "Skills" page ties reusable capabilities together across the whole ramp
+*June 9, 2026*
+
+"Skill" was an overloaded word — it could mean the first-party Skills agent, your personal skill level,
+or a reusable capability. A new [Skills page](skills.md) pins down the third meaning and shows how the
+same idea shows up at every stage:
+
+- A **saved prompt** in Chat, a **Cowork recipe**, an **Agent Builder** agent, and a **Studio action**
+  are all the same instinct — capture it once, reuse it, share it.
+- A disambiguation callout separates "skill" (a reusable capability) from the Skills *agent* and from
+  the new / some / experienced **skill level** slider on the role paths.
+- The Cowork recipe walkthroughs and the Stage 5 Studio foundations now link to it, and the Glossary
+  has a matching **Skill** entry.
+
 ### Six more Stage 1 chat walkthroughs now show real in-product screenshots
 *June 5, 2026*
 

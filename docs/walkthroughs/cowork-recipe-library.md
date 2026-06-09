@@ -92,7 +92,8 @@ A recipe library is a living asset, not a one-time doc:
   uses — never. Bias toward growth and tidy as you go.
 
 ## Where this leads (the ramp)
-A recipe you rerun constantly is begging to become something you don't have to rerun at all. Once a Cowork
+A captured recipe is a **[Cowork skill](../skills.md)** — a reusable capability the whole team can rerun,
+not a one-off. And a recipe you rerun constantly is begging to become something you don't have to rerun at all. Once a Cowork
 workflow is stable and repeated, the next move is to *build* it — an agent that owns the job instead of a
 task you keep kicking off. That's **Stage 4 · Agent Builder**: your first declarative agent.
 

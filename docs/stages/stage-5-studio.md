@@ -64,7 +64,7 @@ Build a real designed agent, give it an action against a real system, then ship 
 
 ## Walkthroughs — technical foundations
 
-Build these first — the platform skills every functional agent below depends on.
+Build these first — the platform skills every functional agent below depends on. Each one is a reusable **[skill](../skills.md)**: a connector action, an MCP tool, or a designed topic you build once and reuse across agents.
 
 <div id="rc-filterbar"></div>
 
