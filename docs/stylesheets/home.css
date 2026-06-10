@@ -61,7 +61,7 @@
   flex: 1 1 150px;
   display: flex;
   flex-direction: column;
-  padding: .85rem .85rem;
+  padding: 1.55rem .85rem .85rem;
   border-radius: .55rem;
   text-decoration: none;
   color: var(--md-default-fg-color);
@@ -71,6 +71,14 @@
 .journey .step:hover {
   background: var(--md-code-bg-color);
   text-decoration: none;
+}
+
+.journey .arrow {
+  align-self: center;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0 .15rem;
 }
 
 .journey .step .n {
