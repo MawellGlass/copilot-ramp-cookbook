@@ -85,12 +85,12 @@ Take it from summary to communication:
   sending, especially the decisions and owners.
 - **Declarative summarizes, it doesn't trigger.** This agent generates the recap when you ask — it can't
   *automatically* run the instant the demo ends. For event-triggered automation you're looking past
-  declarative building (Stage 5+).
+  declarative building (Stage 6+).
 
 ## Where this leads (the ramp)
 You built a recurring agent that produces consistent output — and immediately wished it would just *fire on
 its own* after the demo and post the recap for you. That wish (real triggers, real actions, real workflow)
-is exactly what **Stage 5 · Copilot Studio** is for.
+is exactly what **Stage 6 · Copilot Studio** is for.
 
 > **Next:** [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
 

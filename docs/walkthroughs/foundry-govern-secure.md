@@ -94,6 +94,6 @@ solves each problem, and only operate at the frontier when the work truly demand
 the [Use-Case Catalog](../CATALOG.md).
 
 ## Related
-- [Stage 6 · Foundry](../stages/stage-6-foundry.md) — the stage this hardens for production
+- [Stage 7 · Foundry](../stages/stage-7-foundry.md) — the stage this hardens for production
 - [Security & Governance](../empowerment/security.md) — how every stage's controls fit together
 - [Evaluate and monitor a Foundry agent](foundry-evaluate-monitor.md) — the oversight half of governance

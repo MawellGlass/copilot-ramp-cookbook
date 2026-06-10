@@ -135,4 +135,4 @@ A single trigger-and-act agent is powerful, but real automation usually means ma
 ## Related
 
 - [Govern and monitor your agents at scale](studio-govern-monitor.md)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)

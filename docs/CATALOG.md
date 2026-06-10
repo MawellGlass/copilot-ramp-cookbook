@@ -312,7 +312,7 @@ Auto-generate talking points and agenda items before every recurring meeting —
 
 ---
 
-## Stage 5 · Copilot Studio
+## Stage 6 · Copilot Studio
 _Build real, production-grade agents. The low-code maker destination._
 
 ### ★ Build your first Studio agent with a knowledge source + topic → walkthrough
@@ -419,7 +419,7 @@ Give employees instant answers on compliance policies and legal processes — wi
 
 ---
 
-## Stage 6 · Foundry
+## Stage 7 · Foundry
 _The pro-code frontier. Build only what the lower stages couldn't — with developers, in Azure._
 
 ### ★ Build your first pro-code agent with the Foundry Agent Service → walkthrough
@@ -550,13 +550,13 @@ Contract intake front-end: identifies contract type, collects required fields by
 
 ---
 
-_Six stages, 70+ use cases, spanning all six roles. Most entries are fully written walkthroughs
+_Seven stages, 70+ use cases, spanning all six roles. Most entries are fully written walkthroughs
 with a sample prompt, step-by-step guidance, and tips. The **flagship spine** (the ★ starters)
 anchors the journey end-to-end. Stage 1 covers the full chat habit loop. Stage 2
 covers the complete first-party agent roster plus Copilot Pages, Planner, and BizChat. Stage 3 adds
 multi-step delegation patterns including market research, onboarding, competitive analysis, and RFP
 response. Stage 4 covers no-code agent building including onboarding, FAQ, and meeting-prep agents.
-Stage 5 covers production Studio builds including Power Automate integration, multi-turn conversation
-design, autonomous triggers, authentication, and pre-publish evaluation. Stage 6 takes makers into
+Stage 6 covers production Studio builds including Power Automate integration, multi-turn conversation
+design, autonomous triggers, authentication, and pre-publish evaluation. Stage 7 takes makers into
 pro-code Microsoft Foundry — the Agent Service, MCP tools, evaluation and monitoring, orchestration,
 and production governance._

@@ -100,7 +100,7 @@ Surfacing approved content and linking sources is the safe first cut. The moment
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Sales Proposal & RFP Agent solution template](../solutions/sales-proposal-rfp-agent.md) has the full system prompt, content library structure, the three core topics, and 8 test cases including the pricing escalation and NDA edge cases.

@@ -99,13 +99,13 @@ A working agent is the start — these turn it into something the team trusts an
 - **Garbage in, garbage cited.** It cites faithfully, including stale or wrong docs. Clean up the
   SharePoint source first; the agent is only as good as what it reads.
 - **Declarative has a ceiling.** If you start needing custom multi-step logic or to *take actions*
-  (create a ticket, look up an order), you've outgrown Agent Builder — that's the cue for Stage 5.
+  (create a ticket, look up an order), you've outgrown Agent Builder — that's the cue for Stage 6.
 
 ## Where this leads (the ramp)
 You just built a real, useful agent with no code. The next wall you'll hit is capability: declarative
 agents *answer from knowledge*, but they don't run custom logic or *do things* in other systems. When
 you need an agent that looks up an order, files a ticket, or follows a designed conversation, you
-graduate to **Stage 5 · Copilot Studio** — the pro-grade builder and the low-code destination of this
+graduate to **Stage 6 · Copilot Studio** — the pro-grade builder and the low-code destination of this
 whole ramp (with Microsoft Foundry as the pro-code frontier beyond it).
 
 > **Next:** [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)

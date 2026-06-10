@@ -103,7 +103,7 @@ Most people who stall with Copilot stall because they treat it like a search box
       "skill": ["experienced"]
     },
     {
-      "stage": "Stage 5 · Studio",
+      "stage": "Stage 6 · Studio",
       "stageKey": "studio",
       "title": "Preview an agent built for your function",
       "href": "../../walkthroughs/first-party-agents-overview/",

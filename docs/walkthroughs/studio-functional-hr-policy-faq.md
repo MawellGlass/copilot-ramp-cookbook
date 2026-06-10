@@ -26,7 +26,7 @@ A Policies agent shifts the pattern: employees get an immediate, sourced answer,
 - The failure mode is safe — the agent says "I can't answer that, here's who to contact"
 - Adoption seeds naturally from an HR Teams channel pin
 
-**This is a Stage 5 job** (not just Agent Builder) because you need a structured escalation topic — a clear, reliable path for anything personal or sensitive that must route to a human — and you want source citations on every answer so employees actually trust it.
+**This is a Stage 6 job** (not just Agent Builder) because you need a structured escalation topic — a clear, reliable path for anything personal or sensitive that must route to a human — and you want source citations on every answer so employees actually trust it.
 
 ## What you'll need
 
@@ -86,7 +86,7 @@ _We deliberately don't ship screenshots that go stale — the Microsoft Copilot 
 ## Make it better
 
 - **Add starter prompts** — employees don't know what to ask a blank chat box. Four prompts ("How much annual leave do I get?", "When is benefits enrollment?", "How do I request parental leave?", "What's our remote work policy?") remove the activation barrier immediately.
-- **Connect a Power Automate action** — once the agent answers "how do I request leave?", it can offer to open the request form. That's the Stage 5 payoff: the agent doesn't just inform, it acts.
+- **Connect a Power Automate action** — once the agent answers "how do I request leave?", it can offer to open the request form. That's the Stage 6 payoff: the agent doesn't just inform, it acts.
 - **Schedule a monthly policy review** — the agent is only as current as the SharePoint it points at. Set a calendar reminder when HR publishes policy updates.
 
 ## Watch out for
@@ -106,7 +106,7 @@ A grounded, cited FAQ agent is one of the safest Studio wins. When it's fielding
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Add knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Policy FAQ Agent solution template](../solutions/policy-faq-agent.md) gives you a copy-paste system prompt, topics spec, starter prompts, and a pre-built test case table for this exact agent pattern — for HR, IT, Finance, or Legal.

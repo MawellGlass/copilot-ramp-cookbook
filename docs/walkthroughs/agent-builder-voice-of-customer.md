@@ -87,7 +87,7 @@ Turn a theme-finder into an early-warning system:
 ## Where this leads (the ramp)
 You built a personal agent that *analyzes* — but it still only reads and reports. When you want an agent
 that **takes action** (file the urgent ones as tickets, route requests, look something up in another
-system), declarative building hits its ceiling. That's the cue for **Stage 5 · Copilot Studio**.
+system), declarative building hits its ceiling. That's the cue for **Stage 6 · Copilot Studio**.
 
 > **Next:** [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
 

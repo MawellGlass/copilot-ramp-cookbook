@@ -99,7 +99,7 @@ A pilot is a loop, not a one-shot:
 ## Where this leads (the ramp)
 A pilot doesn't just improve the agent — it tells you where the *ceiling* is. The fixes your pilots ask
 for that Agent Builder can't deliver — calling a system, running a multi-step flow, richer logic — are the
-exact signal you've outgrown declarative building. That's the bridge to **Stage 5 · Copilot Studio**: know
+exact signal you've outgrown declarative building. That's the bridge to **Stage 6 · Copilot Studio**: know
 when to graduate.
 
 > **Next:** [Agent Builder → Decide: declarative agent vs. full Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)

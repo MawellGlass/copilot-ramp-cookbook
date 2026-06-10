@@ -35,14 +35,14 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       "skill": ["new", "some"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Build your first Studio agent",
       "href": "../../walkthroughs/studio-first-agent/",
       "why": "The foundational build — topics, knowledge, and a working conversation end to end."
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Give your agent a real action",
       "href": "../../walkthroughs/studio-connector-action/",
@@ -52,7 +52,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Handle real multi-turn conversations",
       "href": "../../walkthroughs/studio-multi-turn-conversation/",
@@ -60,7 +60,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       "skill": ["some", "experienced"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Add an MCP tool to your agent",
       "href": "../../walkthroughs/studio-mcp-tool-integration/",
@@ -68,7 +68,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       "skill": ["experienced"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Build the function walkthrough end to end",
       "href": "../../walkthroughs/studio-first-agent/",
@@ -83,7 +83,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Test and evaluate before publishing",
       "href": "../../walkthroughs/studio-test-evaluate/",
@@ -91,7 +91,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       "skill": ["some", "experienced"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Publish and roll out your agent",
       "href": "../../walkthroughs/studio-publish/",
@@ -100,7 +100,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       "weightGoal": { "build": 1 }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Govern and monitor what you shipped",
       "href": "../../walkthroughs/studio-govern-monitor/",
@@ -124,7 +124,7 @@ The maker path is a build sequence: know when to graduate past Agent Builder, st
       "weightGoal": { "build": 2 }
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "When to graduate to Foundry",
       "href": "../../walkthroughs/foundry-graduate-from-studio/",

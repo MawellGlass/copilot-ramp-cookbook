@@ -87,7 +87,7 @@ Sharpen the coach over time:
 ## Where this leads (the ramp)
 You built a personal agent that *generates* in your style. Its ceiling is that it only writes — it can't
 pull a live figure, post to a system, or run a designed workflow. When you need an agent that *does* things,
-not just drafts them, you move to **Stage 5 · Copilot Studio**.
+not just drafts them, you move to **Stage 6 · Copilot Studio**.
 
 > **Next:** [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
 

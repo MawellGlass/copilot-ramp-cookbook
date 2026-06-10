@@ -21,7 +21,7 @@ updated: 2026-06-05
 
 Reach for this when your incident response depends on runbooks that are correct but hard to find under pressure, and an escalation matrix that nobody remembers at 3 a.m. A runbook agent turns "which wiki page was that?" into a guided, one-step-at-a-time response — and bootstraps the incident channel and paging when the runbook doesn't resolve it.
 
-**Why Stage 5:** This agent orchestrates a real response flow: match the alert, walk the runbook conditionally, gate any production-changing step behind a confirmation, then open an incident and page the next tier through Power Automate. The conditional stepping and the integrated actions are what make this a Copilot Studio agent rather than a simple knowledge lookup.
+**Why Stage 6:** This agent orchestrates a real response flow: match the alert, walk the runbook conditionally, gate any production-changing step behind a confirmation, then open an incident and page the next tier through Power Automate. The conditional stepping and the integrated actions are what make this a Copilot Studio agent rather than a simple knowledge lookup.
 
 ---
 
@@ -109,7 +109,7 @@ This agent guides one responder through one incident, with a human confirming ev
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Engineering On-Call Runbook Agent solution template](../solutions/engineering-oncall-runbook-agent.md) has the system prompt, topic specs, knowledge-source table, Power Automate incident spec, and the read-first test matrix.

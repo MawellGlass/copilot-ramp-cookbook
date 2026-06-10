@@ -9,9 +9,10 @@
 
 > [!NOTE]
 > **Historical planning document.** This is the original build plan, kept for provenance. The live
-> site has since evolved: the journey now runs **six** stages and ends at **Microsoft Foundry**
-> (pro-code agents), with **Copilot Studio** as Stage 5 rather than the destination. The diagram,
-> IA tree, and matrix below have been updated to the six-stage shape; the phase log and open
+> site has since evolved: the journey now runs **seven** stages and ends at **Microsoft Foundry**
+> (pro-code agents), with **Copilot Studio** as Stage 6 and a new **Autopilots** stage (Scout) at
+> Stage 5 rather than the destination. The diagram,
+> IA tree, and matrix below have been updated to the seven-stage shape; the phase log and open
 > decisions are preserved as a snapshot of the early plan. For the current source of truth, see
 > the live site, `README.md`, and `CATALOG.md`.
 
@@ -65,9 +66,11 @@ Home
 │     └── (same shape)
 ├── Stage 4 · Agent Builder
 │     └── (same shape)
-├── Stage 5 · Copilot Studio
+├── Stage 5 · Autopilots
 │     └── (same shape)
-├── Stage 6 · Microsoft Foundry   ◄── the destination
+├── Stage 6 · Copilot Studio
+│     └── (same shape)
+├── Stage 7 · Microsoft Foundry   ◄── the destination
 │     └── (same shape)
 │
 ├── Use-Case Catalog (the full matrix, filterable by stage AND role AND tag)
@@ -89,7 +92,7 @@ our scope is *six products in sequence*, so the ladder is the spine.
 | **3 · Cowork**      | ●●       | ●●●      | ●●      | ●●    | ●        | ●         |
 | **4 · Agent Builder** | ●      | ●●       | ●       | ●●●   | ●●       | ●         |
 | **5 · Studio**      | —        | ●        | ●       | ●●●   | ●●●      | ●●        |
-| **6 · Foundry**     | —        | —        | ●       | ●●    | ●●       | ●●●       |
+| **7 · Foundry**     | —        | —        | ●       | ●●    | ●●       | ●●●       |
 
 (● = relative number of use cases we'll seed. Density shifts from "everyone uses Chat" toward
 "makers + IT build Studio agents" and finally "developers build & operate pro-code agents in

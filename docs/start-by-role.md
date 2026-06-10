@@ -84,7 +84,7 @@ Not sure where to jump in? Pick your role below — each section shows the highe
 
     **Start with:**
 
-    - [Cross into the pro-code frontier](stages/stage-6-foundry.md) — what Foundry is, and when it's the right call
+    - [Cross into the pro-code frontier](stages/stage-7-foundry.md) — what Foundry is, and when it's the right call
     - [Know when low-code isn't enough](empowerment/decision-tree.md) — the graduation decision
     - [Understand the agent security model](empowerment/security.md) — identity, data boundary, and governance
     - [Graduate from Agent Builder to Studio first](walkthroughs/agent-builder-vs-studio.md) — most agents stop there

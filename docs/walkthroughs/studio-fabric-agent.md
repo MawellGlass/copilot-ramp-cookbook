@@ -108,7 +108,7 @@ A connected data agent is the start of a genuinely useful analytics assistant:
 A data-grounded Studio agent is one of the strongest cases for the platform — self-serve answers over
 governed enterprise data. When the analytics get heavy enough that you need custom orchestration,
 evaluation gates, and your own code over Fabric, that's the signal to look at
-[Stage 6 · Foundry](../stages/stage-6-foundry.md). Until then, keep it in Studio where IT can govern it.
+[Stage 7 · Foundry](../stages/stage-7-foundry.md). Until then, keep it in Studio where IT can govern it.
 
 ## Related
 - [Give a Studio agent a real action with a connector](studio-connector-action.md) — act on the data it reads

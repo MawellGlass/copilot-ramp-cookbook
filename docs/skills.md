@@ -84,9 +84,25 @@ cold instead of reinventing the prompt. The ones worth capturing first:
 
 </div>
 
+## Autopilots (Scout) skills — capabilities for an always-on agent { #autopilots-scout-skills }
+
+In [Stage 5 · Autopilots](stages/stage-5-autopilots.md), a skill is the same reusable capability — but
+handed to an **always-on, autonomous agent** like **Scout** so it can carry the task out *in the
+background*, without you starting it each time.
+
+- A **Cowork recipe** is a skill you *describe* and run on demand.
+- An **Autopilot skill** is that same instinct equipped onto an agent that's always watching: the
+  capability Scout draws on to do the job when its trigger fires, then report back.
+
+!!! info "Emerging and gated"
+    Autopilots are a newer, **gated** capability, and the way you equip and manage their skills is still
+    rolling out by tenant, license, and region. This lens stays scoped to what exists today and will grow
+    as the capability does — once Scout-skill walkthroughs are ready they'll be cataloged here. Until
+    then, treat the first-party product hubs as the source of truth before any customer-facing claims.
+
 ## Studio skills — a specific kind of tool
 
-In [Stage 5 · Copilot Studio](stages/stage-5-studio.md), **skill** is a precise product term — not a
+In [Stage 6 · Copilot Studio](stages/stage-6-studio.md), **skill** is a precise product term — not a
 synonym for *tool*. Today a Studio skill is **one specific type of tool**: an existing **pro-code
 agent**, built with the **Bot Framework** or the **Microsoft 365 Agents SDK**, that you register so
 your Studio agent can call it as a tool from a topic
@@ -99,7 +115,7 @@ walkthrough. As skills in Studio evolve, this section will expand alongside them
 !!! note "Skills vs. tools in Studio"
     Connector actions, Power Automate flows, MCP tools, prompts, and topics are all **tools** — the
     broad set of things an agent can call. A **skill** is just *one* of those tool types (the embedded
-    pro-code agent above). So the Studio building blocks in [Stage 5](stages/stage-5-studio.md) —
+    pro-code agent above). So the Studio building blocks in [Stage 6](stages/stage-6-studio.md) —
     connector actions, MCP tools, flows, Fabric connections, triggers — are **tools**, not skills.
     Build them there; they're the foundation a skill plugs into.
 
@@ -109,7 +125,7 @@ walkthrough. As skills in Studio evolve, this section will expand alongside them
 
 The arc is the same instinct growing up. A **Cowork recipe** is a skill you *describe* in plain
 language. When a recipe is stable, repeated, and worth making bulletproof, it's ready to graduate into
-a real capability in [Stage 5 · Copilot Studio](stages/stage-5-studio.md) — built as a **tool**
+a real capability in [Stage 6 · Copilot Studio](stages/stage-6-studio.md) — built as a **tool**
 (a connector action, flow, or MCP tool) an agent calls against a real system, governed and shared.
 
-> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · or [Stage 5 · Studio](stages/stage-5-studio.md) for the tools an agent calls.
+> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · [Stage 5 · Autopilots](stages/stage-5-autopilots.md) for equipping an always-on agent like Scout · or [Stage 6 · Studio](stages/stage-6-studio.md) for the tools an agent calls.

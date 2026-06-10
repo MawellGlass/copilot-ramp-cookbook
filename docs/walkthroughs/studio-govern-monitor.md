@@ -103,4 +103,4 @@ tolerated experiment into a funded platform. That's the final move: **make the b
 ## Related
 - [Copilot Studio → Publish your agent to Teams and the web](../walkthroughs/studio-publish.md) — the publish step governance wraps around
 - [Copilot Studio → Measure ROI and build the business case](../walkthroughs/studio-roi-business-case.md) — where fleet data becomes a funding argument
-- Stage 5 Resources: see `RESOURCES.md` → Copilot Studio
+- Stage 6 Resources: see `RESOURCES.md` → Copilot Studio

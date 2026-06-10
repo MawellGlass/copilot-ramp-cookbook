@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-08T22:06:21Z",
+  "generated": "2026-06-10T16:08:37Z",
   "items": [
     {
       "path": "walkthroughs/agent-builder-faq-agent/",
@@ -854,7 +854,7 @@
       "path": "walkthroughs/foundry-ab-shadow-deploy/",
       "title": "A/B and shadow-deploy a model swap behind a Foundry agent",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer",
         "it-admin"
@@ -868,7 +868,7 @@
       "path": "walkthroughs/foundry-autonomous-orchestration/",
       "title": "Orchestrate multiple agents and autonomous runs in Foundry",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer"
       ],
@@ -881,7 +881,7 @@
       "path": "walkthroughs/foundry-cost-optimization/",
       "title": "Token-budgeting and cost optimization for a production agent",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer",
         "it-admin"
@@ -895,7 +895,7 @@
       "path": "walkthroughs/foundry-evaluate-monitor/",
       "title": "Evaluate and continuously monitor a Foundry agent",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer",
         "it-admin"
@@ -909,7 +909,7 @@
       "path": "walkthroughs/foundry-fine-tune-serve/",
       "title": "Fine-tune a domain model and serve it from a Foundry agent",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer",
         "it-admin"
@@ -923,7 +923,7 @@
       "path": "walkthroughs/foundry-first-agent/",
       "title": "Build your first pro-code agent with the Foundry Agent Service",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer"
       ],
@@ -936,7 +936,7 @@
       "path": "walkthroughs/foundry-govern-secure/",
       "title": "Secure and govern Foundry agents in production",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "it-admin",
         "developer"
@@ -950,7 +950,7 @@
       "path": "walkthroughs/foundry-graduate-from-studio/",
       "title": "Graduate a Copilot Studio agent into pro-code Foundry",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer",
         "maker"
@@ -964,7 +964,7 @@
       "path": "walkthroughs/foundry-mcp-tools/",
       "title": "Give a Foundry agent custom tools and MCP integrations",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer"
       ],
@@ -977,7 +977,7 @@
       "path": "walkthroughs/foundry-red-team-eval/",
       "title": "Build a red-team / safety eval harness",
       "stage": "foundry",
-      "stageLabel": "Stage 6 · Foundry",
+      "stageLabel": "Stage 7 · Foundry",
       "roles": [
         "developer",
         "it-admin"
@@ -991,7 +991,7 @@
       "path": "walkthroughs/studio-authentication/",
       "title": "Secure a Studio agent with authentication",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1005,7 +1005,7 @@
       "path": "walkthroughs/studio-autonomous-triggers/",
       "title": "Configure an autonomous event-triggered agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1019,7 +1019,7 @@
       "path": "walkthroughs/studio-connector-action/",
       "title": "Give a Studio agent a real action with a connector",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1033,7 +1033,7 @@
       "path": "walkthroughs/studio-fabric-agent/",
       "title": "Connect a Studio agent to a Microsoft Fabric data agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1047,7 +1047,7 @@
       "path": "walkthroughs/studio-first-agent/",
       "title": "Build your first Studio agent with a knowledge source + topic",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker"
       ],
@@ -1060,7 +1060,7 @@
       "path": "walkthroughs/studio-functional-engineering-oncall/",
       "title": "Engineering: alert to runbook to escalation",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "developer",
@@ -1075,7 +1075,7 @@
       "path": "walkthroughs/studio-functional-events-coordination/",
       "title": "Workplace: plan an internal event end to end",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1089,7 +1089,7 @@
       "path": "walkthroughs/studio-functional-field-service-triage/",
       "title": "Field Service: symptoms to dispatch path",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1103,7 +1103,7 @@
       "path": "walkthroughs/studio-functional-finance-budget-qa/",
       "title": "Finance: Self-service spend and budget Q&A for budget owners",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "champion",
@@ -1120,7 +1120,7 @@
       "path": "walkthroughs/studio-functional-finance-expense/",
       "title": "Finance: Self-service expense and procurement guidance",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin",
@@ -1137,7 +1137,7 @@
       "path": "walkthroughs/studio-functional-hr-onboarding/",
       "title": "HR: Guide new starters through a personalised first-week experience",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin",
@@ -1154,7 +1154,7 @@
       "path": "walkthroughs/studio-functional-hr-policy-faq/",
       "title": "HR: Answer employee questions with a policies agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin",
@@ -1171,7 +1171,7 @@
       "path": "walkthroughs/studio-functional-it-access-request/",
       "title": "IT: Self-service software and hardware access requests",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin",
@@ -1188,7 +1188,7 @@
       "path": "walkthroughs/studio-functional-it-helpdesk/",
       "title": "IT: Triage support requests and answer from the knowledge base",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1204,7 +1204,7 @@
       "path": "walkthroughs/studio-functional-legal-compliance/",
       "title": "Legal & Compliance: Policy guidance and process navigation",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin",
@@ -1221,7 +1221,7 @@
       "path": "walkthroughs/studio-functional-legal-contract/",
       "title": "Legal: Guide employees through contract routing and requirements",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin",
@@ -1238,7 +1238,7 @@
       "path": "walkthroughs/studio-functional-marketing-campaign/",
       "title": "Marketing: brief to campaign drafts",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "marketer"
@@ -1252,7 +1252,7 @@
       "path": "walkthroughs/studio-functional-procurement-sourcing/",
       "title": "Procurement: request to vendors to policy gates",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1268,7 +1268,7 @@
       "path": "walkthroughs/studio-functional-sales-intel/",
       "title": "Sales: Product intel and objection handling for sales reps",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "champion",
@@ -1285,7 +1285,7 @@
       "path": "walkthroughs/studio-functional-sales-proposal/",
       "title": "Sales: Build proposals and RFP responses with your approved content",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "champion",
@@ -1302,7 +1302,7 @@
       "path": "walkthroughs/studio-functional-support-deflection/",
       "title": "Customer Support: deflect and draft, escalate the rest",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1316,7 +1316,7 @@
       "path": "walkthroughs/studio-govern-monitor/",
       "title": "Govern and monitor your agents at scale",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "it-admin"
       ],
@@ -1329,7 +1329,7 @@
       "path": "walkthroughs/studio-mcp-tool-integration/",
       "title": "Add an MCP tool integration to your Studio agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker"
       ],
@@ -1342,7 +1342,7 @@
       "path": "walkthroughs/studio-multi-turn-conversation/",
       "title": "Design a multi-turn conversation with fallback and clarification",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker"
       ],
@@ -1355,7 +1355,7 @@
       "path": "walkthroughs/studio-power-automate-flow/",
       "title": "Trigger a Power Automate flow from inside a Studio agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1369,7 +1369,7 @@
       "path": "walkthroughs/studio-publish/",
       "title": "Publish and govern your agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "it-admin"
@@ -1383,7 +1383,7 @@
       "path": "walkthroughs/studio-roi-business-case/",
       "title": "Make the ROI case for your agent",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "manager",
         "champion"
@@ -1397,7 +1397,7 @@
       "path": "walkthroughs/studio-test-evaluate/",
       "title": "Test and evaluate a Studio agent before publishing",
       "stage": "studio",
-      "stageLabel": "Stage 5 · Studio",
+      "stageLabel": "Stage 6 · Studio",
       "roles": [
         "maker",
         "champion"

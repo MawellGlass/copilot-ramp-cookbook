@@ -213,7 +213,7 @@ Run all 8 before publishing. Do not skip the adversarial tests — they catch th
 
 ## What to build next
 
-- **Power Automate action** — once the agent answers "how do I submit an expense?", offer to open the form directly. That's Stage 5 doing what Stage 4 can't.
+- **Power Automate action** — once the agent answers "how do I submit an expense?", offer to open the form directly. That's Stage 6 doing what Stage 4 can't.
 - **A second function agent** — an IT Helpdesk agent alongside an HR one, with a shared "who to contact" reference page for cross-function escalations.
 - **Analytics-driven iteration** — check the Topics analytics in Studio after 2 weeks. The questions that go unanswered tell you exactly what to add next.
 

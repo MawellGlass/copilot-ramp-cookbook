@@ -21,7 +21,7 @@ Finance teams spend significant time fielding queries that have clear, policy-ba
 
 These are answerable from policy documents — but employees often can't find the policy, misread it, or submit incorrectly anyway. A Finance guidance agent closes that loop: it gives the right answer, cites the policy, and offers to take the employee to the right form or system in one step.
 
-**What makes this Stage 5** (not just Agent Builder): the most valuable Finance agents don't just answer — they guide the employee into the process and, where possible, pre-fill or link to the next action. That structured guidance flow and the ability to connect to tools like expense systems require topics and actions, not just knowledge.
+**What makes this Stage 6** (not just Agent Builder): the most valuable Finance agents don't just answer — they guide the employee into the process and, where possible, pre-fill or link to the next action. That structured guidance flow and the ability to connect to tools like expense systems require topics and actions, not just knowledge.
 
 ## What you'll need
 
@@ -98,7 +98,7 @@ Guiding employees to the right form and policy is the high-value, low-risk first
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md) gives you a copy-paste system prompt, Finance-specific topics, all 8 test cases, and a deployment checklist — adapt the bracketed values and build.

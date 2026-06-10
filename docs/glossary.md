@@ -34,13 +34,13 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 - **BizChat** — the "chat over all your org content" experience inside Microsoft 365 Copilot — it searches
   across SharePoint, email, and Teams and returns a single cited answer.
 - **Copilot Studio** — the low-code platform for building *production* agents: custom topics, connectors,
-  authentication, publishing, and governance. The low-code maker destination, [Stage 5](stages/stage-5-studio.md).
+  authentication, publishing, and governance. The low-code maker destination, [Stage 6](stages/stage-6-studio.md).
 - **Agent Builder** — the lightweight, in-product agent maker inside Microsoft 365 Copilot. You point it at
   knowledge, give it instructions, and share it — no code. Your first taste of *making*,
   [Stage 4](stages/stage-4-agent-builder.md).
 - **Microsoft Foundry** *(formerly Azure AI Foundry)* — the pro-code platform for building custom AI apps and
   agents with full control over models, orchestration, and evaluation. The pro-code frontier,
-  [Stage 6](stages/stage-6-foundry.md) — one rung beyond Studio for advanced builders.
+  [Stage 7](stages/stage-7-foundry.md) — one rung beyond Studio for advanced builders.
 
 ---
 
@@ -69,10 +69,12 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 ## Building blocks
 
 - **Skill** — a **reusable, packaged capability you save once and reuse or share**. Today the clearest
-  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **Copilot Studio**, *skill*
+  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **[Autopilots](stages/stage-5-autopilots.md)**,
+  that same instinct is equipped onto an always-on agent like **Scout** so it draws on the capability
+  in the background (emerging and gated). In **Copilot Studio**, *skill*
   is a precise term for **one specific kind of tool** — an embedded pro-code agent (Bot Framework /
   Microsoft 365 Agents SDK) registered so your agent can call it; the connector actions, flows, and
-  MCP tools in [Stage 5](stages/stage-5-studio.md) are **tools**, not skills. See the
+  MCP tools in [Stage 6](stages/stage-6-studio.md) are **tools**, not skills. See the
   [Skills Catalog](skills.md). *Not* the first-party **Skills agent** (career stretch assignments) or
   your personal **skill level**.
 - **Grounding** — giving an agent the specific content it should answer from (a SharePoint site, a set of

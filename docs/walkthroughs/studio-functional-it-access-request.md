@@ -104,7 +104,7 @@ Creating tickets from a guided conversation is a real step up from a portal form
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
 - [Power Automate integration](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [IT Access Request Agent solution template](../solutions/it-access-request-agent.md) has the full system prompt, approved-list knowledge source structure, all three request topics, the Power Automate action spec for ticket creation, and 8 test cases.

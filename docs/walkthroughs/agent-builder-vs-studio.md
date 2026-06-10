@@ -89,7 +89,7 @@ The decision sharpens with reps:
 ## Where this leads (the ramp)
 This is the hinge of the whole journey. You've gone from *using* Copilot to *building* lightweight agents,
 and you've just learned to recognize when the job demands the pro-grade tool. That tool — and the
-destination this entire ramp has been climbing toward — is **Stage 5 · Copilot Studio**.
+destination this entire ramp has been climbing toward — is **Stage 6 · Copilot Studio**.
 
 > **Next:** [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md)
 

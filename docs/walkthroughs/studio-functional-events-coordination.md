@@ -21,7 +21,7 @@ updated: 2026-06-05
 
 Reach for this when internal event planning is a scavenger hunt: which rooms hold 40 people, which caterer is on contract, what the budget rules are, and what the invite should say. An event coordination agent assembles the checklist, suggests and books approved rooms and catering, and drafts the comms — keeping everything inside policy and within budget.
 
-**Why Stage 5:** This agent doesn't just answer questions — it orchestrates a multi-part workflow with real side effects: it reserves rooms, submits catering requests, and routes anything over budget for approval through Power Automate. Coordinating those branching actions behind a budget/approval gate is exactly what Copilot Studio topics and flows are for.
+**Why Stage 6:** This agent doesn't just answer questions — it orchestrates a multi-part workflow with real side effects: it reserves rooms, submits catering requests, and routes anything over budget for approval through Power Automate. Coordinating those branching actions behind a budget/approval gate is exactly what Copilot Studio topics and flows are for.
 
 ---
 
@@ -110,7 +110,7 @@ Booking rooms, gating budgets, and drafting comms from Studio topics covers inte
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Event Coordination Agent solution template](../solutions/event-coordination-agent.md) has the system prompt, topic specs, knowledge-source table, Power Automate booking spec, and a full test matrix.

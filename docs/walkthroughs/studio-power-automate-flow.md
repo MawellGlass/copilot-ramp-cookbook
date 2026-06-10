@@ -113,4 +113,4 @@ Power Automate connectors cover an enormous amount of ground, but some integrati
 ## Related
 
 - [Govern and monitor your agents at scale](studio-govern-monitor.md)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)

@@ -21,7 +21,7 @@ updated: 2026-06-05
 
 Reach for this when your support team answers the same questions over and over, and the answers already exist in your help center and macros. An internal deflection agent surfaces the grounded answer, drafts the reply in your voice, and — on a self-serve channel — resolves the repetitive ones before they become tickets. It's the **inward-facing cousin** of a customer-facing agent: same knowledge, but it helps your agents and deflects internally rather than talking to customers directly.
 
-**Why Stage 5:** This is more than a search box. The agent runs intake, retrieves a grounded answer, checks a live known-issues feed, drafts a reply, and routes out-of-scope questions to the right queue — updating the ticket through Power Automate. That branching plus the ticketing action is Copilot Studio's wheelhouse. When you eventually need an agent that faces customers *and* takes real actions at scale, that's the graduation to the [external Foundry support agent](../solutions/foundry-support-agent.md).
+**Why Stage 6:** This is more than a search box. The agent runs intake, retrieves a grounded answer, checks a live known-issues feed, drafts a reply, and routes out-of-scope questions to the right queue — updating the ticket through Power Automate. That branching plus the ticketing action is Copilot Studio's wheelhouse. When you eventually need an agent that faces customers *and* takes real actions at scale, that's the graduation to the [external Foundry support agent](../solutions/foundry-support-agent.md).
 
 ---
 
@@ -102,14 +102,14 @@ _We deliberately don't ship screenshots that go stale — the Microsoft Copilot 
 
 This agent deflects internally and drafts for a human to send. The moment you need it to face customers directly and take real actions at scale, you've outgrown Studio — that's the graduation to Azure AI Foundry.
 
-> **Next:** [Stage 6 · Azure AI Foundry](../stages/stage-6-foundry.md)
+> **Next:** [Stage 7 · Azure AI Foundry](../stages/stage-7-foundry.md)
 
 ## Related
 
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Customer Support Deflection Agent solution template](../solutions/support-deflection-agent.md) has the system prompt, topic specs, knowledge-source table, the Studio-vs-Foundry comparison, Power Automate ticket spec, and a full test matrix.

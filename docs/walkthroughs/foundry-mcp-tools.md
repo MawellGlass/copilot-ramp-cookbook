@@ -103,5 +103,5 @@ is covered by [evaluation and monitoring](foundry-evaluate-monitor.md) and
 
 ## Related
 - [Build your first pro-code agent](foundry-first-agent.md) — the agent these tools attach to
-- [Stage 5 → Add an MCP tool integration](studio-mcp-tool-integration.md) — the low-code version of this idea
+- [Stage 6 → Add an MCP tool integration](studio-mcp-tool-integration.md) — the low-code version of this idea
 - [Secure and govern Foundry agents](foundry-govern-secure.md) — the identity behind every tool call

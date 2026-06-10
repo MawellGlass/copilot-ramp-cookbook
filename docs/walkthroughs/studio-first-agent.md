@@ -99,12 +99,12 @@ Your first Studio agent is the foundation. These are the natural next builds in 
 You've reached the low-code destination — and it has depth. From here the journey is *within*
 Studio: wire up **connectors and actions** so the agent takes action, add **MCP / tool integrations**,
 nail the **publish + governance** story, and **measure ROI** to justify and expand the program. When
-low-code hits its ceiling, **Microsoft Foundry** ([Stage 6](../stages/stage-6-foundry.md)) is the
+low-code hits its ceiling, **Microsoft Foundry** ([Stage 7](../stages/stage-7-foundry.md)) is the
 pro-code frontier beyond.
 
-> **Next (within Stage 5):** [Connect an agent to a system with a connector / action](../walkthroughs/studio-connector-action.md)
+> **Next (within Stage 6):** [Connect an agent to a system with a connector / action](../walkthroughs/studio-connector-action.md)
 
 ## Related
 - [Agent Builder → Build a team-knowledge agent over a SharePoint site](../walkthroughs/agent-builder-team-knowledge.md) — the no-code agent you outgrew to get here
 - [Studio → Govern and monitor agents at scale](../walkthroughs/studio-govern-monitor.md)
-- Stage 5 Resources: see `RESOURCES.md` → Copilot Studio
+- Stage 6 Resources: see `RESOURCES.md` → Copilot Studio

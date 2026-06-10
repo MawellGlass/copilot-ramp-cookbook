@@ -294,7 +294,7 @@ trade-offs of each. It's the [decision tree](decision-tree.md), made clickable a
       href: "../../stages/stage-4-agent-builder/", cta: "Go to Stage 4 \u00B7 Agent Builder"
     },
     r_studio: {
-      ico: "\uD83C\uDFE2", name: "Stage 5 \u00B7 Copilot Studio",
+      ico: "\uD83C\uDFE2", name: "Stage 6 \u00B7 Copilot Studio",
       tagline: "Where agents grow up \u2014 knowledge, connectors, actions, publishing, and governance.",
       pros: [
         "Real knowledge sources, connectors, and actions",
@@ -306,7 +306,7 @@ trade-offs of each. It's the [decision tree](decision-tree.md), made clickable a
         "Low-code, not no-code \u2014 a genuine learning curve",
         "Overkill for a simple personal helper"
       ],
-      href: "../../stages/stage-5-studio/", cta: "Go to Stage 5 \u00B7 Copilot Studio"
+      href: "../../stages/stage-6-studio/", cta: "Go to Stage 6 \u00B7 Copilot Studio"
     },
     r_foundry: {
       ico: "\uD83D\uDEF0\uFE0F", name: "Microsoft Foundry",

@@ -23,7 +23,7 @@ stage actually needs.
 | **[2 · First-Party Agents](stages/stage-2-first-party.md)** | Microsoft 365 Copilot license | Some agents roll out in waves | IT + the agent's admin controls |
 | **[3 · Cowork](stages/stage-3-cowork.md)** | Microsoft 365 Copilot license | **Frontier** enrollment for the full feature set | Account team / Global Admin |
 | **[4 · Agent Builder](stages/stage-4-agent-builder.md)** | Microsoft 365 Copilot license | Agent Builder enabled for makers | IT (maker permissions) |
-| **[5 · Copilot Studio](stages/stage-5-studio.md)** | Copilot Studio license + Power Platform environment | Connectors, auth, publishing rights | IT / Power Platform admin |
+| **[6 · Copilot Studio](stages/stage-6-studio.md)** | Copilot Studio license + Power Platform environment | Connectors, auth, publishing rights | IT / Power Platform admin |
 
 ---
 
@@ -58,7 +58,7 @@ stage actually needs.
 - **Special access:** Your tenant must allow makers to *create and share* agents; some orgs restrict this.
 - **Admin must:** Grant agent-creation/sharing permissions and set any approval or publishing controls.
 
-### Stage 5 · Copilot Studio
+### Stage 6 · Copilot Studio
 - **License:** A **Copilot Studio** license (standalone capacity or a qualifying bundle) plus a **Power
   Platform environment** to build in.
 - **Special access:** Building real agents pulls in more moving parts — **connectors** to other systems,
@@ -73,7 +73,7 @@ stage actually needs.
 
 ??? question "I can't see a feature a walkthrough describes — what do I check?"
     1. **License** — do you have a Microsoft 365 Copilot license assigned (Stages 1–4) or a Copilot Studio
-       license (Stage 5)? Your IT admin can confirm.
+       license (Stage 6)? Your IT admin can confirm.
     2. **Rollout wave** — for first-party agents and newer capabilities, the feature may still be rolling out
        to your tenant.
     3. **Frontier** — for the advanced Cowork features, your tenant may need

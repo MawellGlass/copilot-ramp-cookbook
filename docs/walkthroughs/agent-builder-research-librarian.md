@@ -86,7 +86,7 @@ Grow it from finder to thinking partner:
 ## Where this leads (the ramp)
 You built a personal agent that answers from your knowledge. The next limit is capability: a librarian
 *reads*, but it can't *act* — fetch a live record, file something, follow a designed multi-step flow. When
-you need that, you graduate to **Stage 5 · Copilot Studio**.
+you need that, you graduate to **Stage 6 · Copilot Studio**.
 
 > **Next:** [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md)
 

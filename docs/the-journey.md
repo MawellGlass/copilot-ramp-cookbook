@@ -5,7 +5,7 @@ hide: [toc]
 
 # The Journey
 
-Six stages. Each one builds on the last — but you can start wherever you are.
+Seven stages. Each one builds on the last — but you can start wherever you are.
 
 <div class="grid cards" markdown>
 
@@ -49,7 +49,17 @@ Six stages. Each one builds on the last — but you can start wherever you are.
 
     [→ Go to Stage 4](stages/stage-4-agent-builder.md)
 
--   **Stage 5 · Copilot Studio**
+-   **Stage 5 · Autopilots**
+
+    ---
+
+    Always-on, autonomous agents like **Scout** that run a defined job in the background — triggered by events, not by your prompt. An emerging, **gated** capability: real where you have it, but not yet available to everyone.
+
+    **You're ready for this if** you have a recurring job that shouldn't wait for you to start it — and access to an Autopilot in your tenant.
+
+    [→ Go to Stage 5](stages/stage-5-autopilots.md)
+
+-   **Stage 6 · Copilot Studio**
 
     ---
 
@@ -57,9 +67,9 @@ Six stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** your agents need to call APIs, go beyond SharePoint, or be governed at scale.
 
-    [→ Go to Stage 5](stages/stage-5-studio.md)
+    [→ Go to Stage 6](stages/stage-6-studio.md)
 
--   **Stage 6 · Microsoft Foundry**
+-   **Stage 7 · Microsoft Foundry**
 
     ---
 
@@ -67,7 +77,7 @@ Six stages. Each one builds on the last — but you can start wherever you are.
 
     **You're ready for this if** you have developers and need control low-code can't give you.
 
-    [→ Go to Stage 6](stages/stage-6-foundry.md)
+    [→ Go to Stage 7](stages/stage-7-foundry.md)
 
 </div>
 

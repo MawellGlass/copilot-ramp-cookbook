@@ -144,4 +144,4 @@ A structured manual test pass is the right gate before publishing one agent. Onc
 ## Related
 
 - [Publish and govern your agent](studio-publish.md)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)

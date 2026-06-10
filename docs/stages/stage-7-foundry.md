@@ -1,9 +1,9 @@
 ---
-title: "Stage 6 · Foundry"
+title: "Stage 7 · Foundry"
 stage: foundry
 ---
 
-# Stage 6 · Foundry
+# Stage 7 · Foundry
 
 > **The pro-code frontier. When a low-code agent can't reach far enough — custom models, autonomous orchestration, evaluation, and MCP tools at scale — you cross into Microsoft Foundry.**
 
@@ -31,7 +31,7 @@ You've outgrown low-code. A Copilot Studio agent can't express what you need: yo
 - An **Azure subscription** and a **Microsoft Foundry project** to build in.
 - **Developer skills** — SDKs (Python/.NET/JS), source control, and CI/CD.
 - An **engineering owner** for the Azure resources, identity, and networking behind the agent.
-- A clear reason you couldn't solve it in [Stage 5 · Copilot Studio](stage-5-studio.md). If you *could*, start there.
+- A clear reason you couldn't solve it in [Stage 6 · Copilot Studio](stage-6-studio.md). If you *could*, start there.
 
 ---
 
@@ -249,7 +249,7 @@ These walkthroughs pair with copy-and-adapt **Foundry solution templates** — a
     - [Extend Microsoft 365 Copilot — options compared](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/) — where custom-engine (Foundry) agents fit next to declarative ones
     - [Agent samples (low-code → pro-code)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-samples) — Microsoft-owned and community starting points
 
-    The full curated set for this stage lives in [Resources → Stage 6](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 7](../RESOURCES.md).
 
 !!! info "Security at this stage"
     Foundry agents run on **Azure** with **Entra ID authentication and Azure RBAC**, and the standard setup

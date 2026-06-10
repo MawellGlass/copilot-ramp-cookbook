@@ -131,4 +131,4 @@ Wiring Entra sign-in into one Studio agent is the right control for an internal 
 ## Related
 
 - [Test and evaluate a Studio agent before publishing](studio-test-evaluate.md)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)

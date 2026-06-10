@@ -41,7 +41,7 @@ Your path is governance-first. Start by confirming the prerequisites and the age
       "why": "Before custom agents, get a handle on what ships in the box across the tenant."
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Secure an agent with authentication",
       "href": "../../walkthroughs/studio-authentication/",
@@ -49,7 +49,7 @@ Your path is governance-first. Start by confirming the prerequisites and the age
       "goal": ["team", "build"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Govern and monitor agents at scale",
       "href": "../../walkthroughs/studio-govern-monitor/",
@@ -57,7 +57,7 @@ Your path is governance-first. Start by confirming the prerequisites and the age
       "weightGoal": { "team": 1 }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Set up a governed publish process",
       "href": "../../walkthroughs/studio-publish/",
@@ -83,7 +83,7 @@ Your path is governance-first. Start by confirming the prerequisites and the age
       "weightGoal": { "build": 1 }
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "Govern and secure pro-code agents",
       "href": "../../walkthroughs/foundry-govern-secure/",
@@ -92,7 +92,7 @@ Your path is governance-first. Start by confirming the prerequisites and the age
       "optional": true
     },
     {
-      "stage": "Stage 5 · Studio",
+      "stage": "Stage 6 · Studio",
       "stageKey": "studio",
       "title": "Review a functional agent you'll oversee",
       "href": "../../walkthroughs/studio-functional-it-access-request/",
