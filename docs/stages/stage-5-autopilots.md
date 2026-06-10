@@ -10,11 +10,11 @@ stage: autopilots
 **The shift:** from "I run an agent when I need it" to "an agent runs *for* me." Stages 1–4 were all on-demand — you start a chat, call an agent, kick off a recipe, or build a simple one. Autopilots flip the model: the agent is *always on*, triggered by events and signals rather than a prompt, doing a defined job continuously.
 
 !!! info "An emerging stage — availability varies"
-    Autopilots are a newer, **gated** capability: Microsoft announced **Scout** and the broader
-    *Autopilots* always-on agent category in 2026, and access is still rolling out by tenant, license,
-    and region. This stage is marked **pioneer** for that reason — it's real and worth adopting where you
-    have it, but **not every user will have access yet**. Treat the first-party product hubs as the source
-    of truth and re-check before customer-facing claims.
+    Autopilots are a newer, **gated** capability: Microsoft is bringing always-on agents like **Scout**
+    to market, and access is still rolling out by tenant, license, and region. This stage is marked
+    **pioneer** for that reason — it's real and worth adopting where you have it, but **not every user
+    will have access yet**. Treat the first-party product hubs as the source of truth and re-check before
+    customer-facing claims.
 
 ---
 
