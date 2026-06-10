@@ -23,7 +23,7 @@ These are answerable from policy documents — but they consistently land on the
 
 A guidance agent handles the process and policy layer. It does not give legal advice. That distinction is not just a disclaimer — it needs to be structurally enforced in the agent's design: anything requiring judgment, interpretation, or a legal opinion routes unconditionally to a human.
 
-**Why this is Stage 5:** the escalation logic needs to be airtight, not probabilistic. A topic-based "this is out of scope — here is exactly who to contact" path is more reliable than relying on the knowledge layer to know when to stop. Studio lets you own that logic explicitly.
+**Why this is Stage 6:** the escalation logic needs to be airtight, not probabilistic. A topic-based "this is out of scope — here is exactly who to contact" path is more reliable than relying on the knowledge layer to know when to stop. Studio lets you own that logic explicitly.
 
 ## What you'll need
 
@@ -106,7 +106,7 @@ Studio lets you own the escalation logic explicitly — essential for a domain w
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md) gives you a copy-paste system prompt with strict escalation rules, the full topic set, all 8 test cases including adversarial inputs, and the Legal sign-off checklist.

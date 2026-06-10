@@ -92,6 +92,6 @@ organizational muscle to run a fleet of them. The resources below are where that
 > **Next:** [Copilot Studio → Make the ROI case for your agent](../walkthroughs/studio-roi-business-case.md)
 
 ## Related
-- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the Stage 5 flagship
+- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the Stage 6 flagship
 - [Copilot Studio → Give a Studio agent a real action with a connector](../walkthroughs/studio-connector-action.md) — what you publish
-- Stage 5 Resources: see `RESOURCES.md` → Copilot Studio
+- Stage 6 Resources: see `RESOURCES.md` → Copilot Studio

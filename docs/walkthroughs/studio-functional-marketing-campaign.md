@@ -21,7 +21,7 @@ updated: 2026-06-05
 
 Reach for this when your marketers spend the first hour of every campaign re-deriving the same things: which assets the campaign needs, what the brand voice sounds like, and where the approved messaging lives. A Studio agent collapses that into a single brief-to-drafts interaction, grounded on your real brand and messaging content.
 
-**Why Stage 5:** Agent Builder is excellent for a quick "answer from these docs" assistant, but this agent does more than answer — it runs a structured intake, branches by channel, drafts multiple assets, and (optionally) logs the campaign and routes it for approval through Power Automate. That multi-step orchestration with an action at the end is exactly what Copilot Studio's topics and flows are built for.
+**Why Stage 6:** Agent Builder is excellent for a quick "answer from these docs" assistant, but this agent does more than answer — it runs a structured intake, branches by channel, drafts multiple assets, and (optionally) logs the campaign and routes it for approval through Power Automate. That multi-step orchestration with an action at the end is exactly what Copilot Studio's topics and flows are built for.
 
 ---
 
@@ -109,7 +109,7 @@ Drafting on-brand copy from a brief is a real time-saver. When you want to learn
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Marketing Campaign Agent solution template](../solutions/marketing-campaign-agent.md) has the copy-paste system prompt, topic specs, knowledge-source table, Power Automate action spec, and a full test matrix.

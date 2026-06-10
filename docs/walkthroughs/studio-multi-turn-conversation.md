@@ -117,4 +117,4 @@ Hand-built clarification loops and fallback topics scale to a point — then mai
 ## Related
 
 - [Configure an autonomous event-triggered agent](studio-autonomous-triggers.md)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)

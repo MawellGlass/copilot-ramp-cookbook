@@ -7,7 +7,7 @@ hide: [toc]
 
 The rest of this cookbook points **up**: each stage unlocks the next. But the ramp runs both ways.
 The most expensive mistake in AI adoption isn't moving too slowly — it's solving a Stage 2 problem
-with a Stage 5 tool. A throwaway task built as a governed Studio agent. A single rewrite spun up as a
+with a Stage 6 tool. A throwaway task built as a governed Studio agent. A single rewrite spun up as a
 Cowork project. Glue code in Foundry for something a connector already does.
 
 **Climbing is a skill. Knowing when to climb back down is a discipline.** This page is the set of
@@ -20,7 +20,7 @@ Cowork project. Glue code in Foundry for something a connector already does.
 
 ---
 
-## Stage 6 → Stage 5 · Foundry back to Copilot Studio { #foundry-to-studio }
+## Stage 7 → Stage 6 · Foundry back to Copilot Studio { #foundry-to-studio }
 
 Foundry is the pro-code frontier. It's also the easiest place to over-engineer, because anything is
 *possible* there.
@@ -31,13 +31,13 @@ Foundry is the pro-code frontier. It's also the easiest place to over-engineer, 
     - The agent will be used by **one team**, on **internal data**, with **no custom model** in sight.
     - **You** are the only person who could maintain the code — there's no engineering team behind it.
 
-**Drop back to [Stage 5 · Copilot Studio](stages/stage-5-studio.md).** If you don't need a custom or
+**Drop back to [Stage 6 · Copilot Studio](stages/stage-6-studio.md).** If you don't need a custom or
 fine-tuned model, autonomous multi-agent orchestration, or pro-code MCP tooling at scale, Studio gives
 you knowledge, actions, publishing, and governance for a fraction of the effort.
 
 ---
 
-## Stage 5 → Stage 4 · Studio back to Agent Builder { #studio-to-agent-builder }
+## Stage 6 → Stage 4 · Studio back to Agent Builder { #studio-to-agent-builder }
 
 This is the most common overshoot on the whole ramp — and the one the empowerment team sees most: a
 personal productivity helper built as a full, governed Studio agent.
@@ -52,6 +52,23 @@ personal productivity helper built as a full, governed Studio agent.
 answer over your files or a SharePoint site with a clear persona, build it declaratively. You can always
 graduate it to Studio later — the [graduation walkthrough](walkthroughs/foundry-graduate-from-studio.md)
 exists for exactly that moment, and so does the reverse instinct.
+
+---
+
+## Stage 5 → Stage 4 · Autopilots back to Agent Builder { #autopilots-to-agent-builder }
+
+Autopilots like **Scout** are always-on, autonomous agents. They earn their keep on a *recurring,
+background* job — one triggered by an event or signal, not a task you're happy to start yourself.
+
+!!! warning "You've gone too far if…"
+    - The job only needs to run **when you ask** — there's no event or signal that should set it off on its own.
+    - You wanted a simple **answer-over-my-files** helper, not an agent that acts without you in the loop.
+    - The capability is **gated** in your tenant and a declarative agent would unblock you today.
+
+**Drop back to [Stage 4 · Agent Builder](stages/stage-4-agent-builder.md).** If you just need an
+on-demand agent over your own knowledge with a clear persona, build it declaratively — no always-on
+autonomy required. (And if you actually need real actions or org-wide publishing, that's *up* to
+[Stage 6 · Copilot Studio](stages/stage-6-studio.md), not back to Autopilots.)
 
 ---
 

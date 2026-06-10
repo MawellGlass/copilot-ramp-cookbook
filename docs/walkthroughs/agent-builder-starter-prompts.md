@@ -90,7 +90,7 @@ Starter prompts are a living signal:
 ## Where this leads (the ramp)
 You've now made an agent both *capable* and *discoverable* — and you may be bumping into the ceiling of
 what the lightweight builder allows. When you want real connectors, publishing controls, and analytics,
-that's the graduation to **Stage 5 · Copilot Studio**.
+that's the graduation to **Stage 6 · Copilot Studio**.
 
 > **Next:** [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md)
 

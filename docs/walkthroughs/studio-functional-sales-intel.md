@@ -21,7 +21,7 @@ Sales reps lose deals not because they don't know the product — but because th
 
 A sales enablement agent centralises all of that. Reps can ask a question mid-call prep ("What do we say when a prospect asks about [competitor]?"), get an answer grounded on your actual approved content, and walk into the conversation confident. The agent doesn't replace the rep — it makes the information problem disappear.
 
-**Why Stage 5** (not just Agent Builder): the value compounds when the agent can search across *multiple* knowledge sources simultaneously — battle cards, product docs, case study library, approved objection responses — and return a synthesised answer for a specific situation. Agent Builder handles one source. Studio handles many.
+**Why Stage 6** (not just Agent Builder): the value compounds when the agent can search across *multiple* knowledge sources simultaneously — battle cards, product docs, case study library, approved objection responses — and return a synthesised answer for a specific situation. Agent Builder handles one source. Studio handles many.
 
 ## What you'll need
 
@@ -99,7 +99,7 @@ Studio's strength here is searching several approved sources at once. When reps 
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Sales Enablement Agent solution template](../solutions/sales-enablement-agent.md) gives you the system prompt, all four topics spec’d out, starter prompts validated for reps, a test case table including adversarial pricing tests, and a deployment checklist.

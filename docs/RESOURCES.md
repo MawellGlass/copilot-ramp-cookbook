@@ -17,8 +17,8 @@ the matching stage page on the site. These are the "broad set of resources to le
 
 > Verification note: product surfaces move fast (Cowork, Agent Builder, first-party agents). Treat
 > these hubs as the source of truth and re-check before customer-facing claims. **New as of June 2026:**
-> Microsoft announced **Scout** and a new "Autopilots" always-on agent category — worth tracking as a
-> future stage, but not yet folded into the journey.
+> Microsoft announced **Scout** and a new "Autopilots" always-on agent category — now folded into the
+> journey as **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)** (emerging and gated).
 
 ---
 
@@ -92,7 +92,7 @@ didn't even have to build it" demos that warm customers up before they build the
 
 ---
 
-## Stage 5 · Copilot Studio (the low-code destination)
+## Stage 6 · Copilot Studio (the low-code destination)
 
 | Resource | What it is | Link |
 |----------|-----------|------|
@@ -115,7 +115,7 @@ a proof-of-concept for our hosting approach (five static sites on GitHub Pages, 
 
 ---
 
-## Stage 6 · Foundry (the pro-code frontier)
+## Stage 7 · Foundry (the pro-code frontier)
 
 | Resource | What it is | Link |
 |----------|-----------|------|

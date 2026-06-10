@@ -99,6 +99,6 @@ multi-step and autonomous — move to [orchestration](foundry-autonomous-orchest
 it's [governed and secured](foundry-govern-secure.md) like the production software it now is.
 
 ## Related
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md) — where the agent came from
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md) — where the agent came from
 - [Build your first pro-code agent](foundry-first-agent.md) — the plumbing this builds on
 - [Secure and govern Foundry agents](foundry-govern-secure.md) — the production bar

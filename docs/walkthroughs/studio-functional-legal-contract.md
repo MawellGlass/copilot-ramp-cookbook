@@ -104,7 +104,7 @@ This agent routes contracts; it deliberately never reads the clauses. The day yo
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Configure topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)
 - [Power Automate integration](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Legal & Compliance Guidance Agent solution template](../solutions/legal-compliance-agent.md) covers the escalation-first design pattern — adapt the system prompt for contract routing, swap in the contract intake process document, and build the contract type identification topic first.

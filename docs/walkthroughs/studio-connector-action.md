@@ -98,6 +98,6 @@ production-grade publishing. Build out from the working samples and the hands-on
 > **Next:** [Copilot Studio → Publish and govern your agent](../walkthroughs/studio-publish.md)
 
 ## Related
-- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the Stage 5 flagship
+- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the Stage 6 flagship
 - [Copilot Studio → Publish and govern your agent](../walkthroughs/studio-publish.md) — what comes after it works
-- Stage 5 Resources: see `RESOURCES.md` → Copilot Studio
+- Stage 6 Resources: see `RESOURCES.md` → Copilot Studio

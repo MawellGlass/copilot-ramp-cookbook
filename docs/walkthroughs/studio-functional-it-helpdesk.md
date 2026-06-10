@@ -21,7 +21,7 @@ IT helpdesks spend a disproportionate amount of time on repeatable tier-1 questi
 
 A triage agent changes the economics: it answers from the KB first, and only creates a ticket when the issue genuinely needs a human. When it does raise a ticket, it collects the structured information the helpdesk actually needs (category, urgency, description) before the engineer ever sees it — no back-and-forth to gather basics.
 
-**Why Stage 5:** This agent does more than answer questions. It makes a triage decision (KB answer vs. ticket) and takes an action (creating a ticket via Power Automate). That logic and the action layer require Copilot Studio — Agent Builder can't do it.
+**Why Stage 6:** This agent does more than answer questions. It makes a triage decision (KB answer vs. ticket) and takes an action (creating a ticket via Power Automate). That logic and the action layer require Copilot Studio — Agent Builder can't do it.
 
 ## What you'll need
 
@@ -101,7 +101,7 @@ Answering from the KB and raising clean tickets is a strong tier-1 deflection pl
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Add actions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow)
 - [Power Automate connector](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [IT Helpdesk Triage Agent solution template](../solutions/it-helpdesk-triage-agent.md) gives you the system prompt, triage topic flow, Power Automate action spec, test cases, and deployment checklist for this exact pattern.

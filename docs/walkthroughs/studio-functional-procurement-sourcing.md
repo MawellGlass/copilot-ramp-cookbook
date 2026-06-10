@@ -21,7 +21,7 @@ updated: 2026-06-05
 
 Reach for this when employees buy things without knowing the rules — the approved vendor, the spend threshold that triggers an approval, when a competitive bid is required. The result is off-contract "maverick" spend and approval surprises. A sourcing agent gives requesters a compliant starting point: the right vendors and the exact gates their request has to clear, before anything is approved.
 
-**Why Stage 5:** This is more than a policy lookup. The agent runs an intake, returns a category-specific vendor shortlist, evaluates the request against several policy gates (threshold, preferred-supplier, sole-source, competitive-bid), routes to the right approver, and opens a requisition through Power Automate. That rules evaluation plus the action is squarely Copilot Studio territory.
+**Why Stage 6:** This is more than a policy lookup. The agent runs an intake, returns a category-specific vendor shortlist, evaluates the request against several policy gates (threshold, preferred-supplier, sole-source, competitive-bid), routes to the right approver, and opens a requisition through Power Automate. That rules evaluation plus the action is squarely Copilot Studio territory.
 
 ---
 
@@ -108,7 +108,7 @@ Evaluating policy gates and opening a requisition from one conversation keeps bu
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Procurement Sourcing Agent solution template](../solutions/procurement-sourcing-agent.md) has the system prompt, topic specs, knowledge-source table, the policy-gate matrix, Power Automate requisition spec, and a full test matrix.

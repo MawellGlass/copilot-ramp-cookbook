@@ -176,7 +176,7 @@ Recognize the limits of declarative building — and where Studio takes over.
 
 -   **[Know when to graduate from Agent Builder to Copilot Studio](../walkthroughs/agent-builder-vs-studio.md)**
 
-    Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the decision map that points at Stage 5.
+    Agent Builder is the fast on-ramp; Copilot Studio is the highway — this is the decision map that points at Stage 6.
 
     <span class="rc-meta" data-time="10" data-roles="maker it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Maker</span></span>
 
@@ -211,7 +211,7 @@ Recognize the limits of declarative building — and where Studio takes over.
 
 <div class="rc-exit" markdown>
 <div class="rc-exit-text" markdown>
-**Your simple agents hitting limits three or more times?** When you need real actions, richer knowledge, multiple topics, or governance, you've outgrown declarative building. That's the cue for the low-code destination.
+**Got a job that shouldn't wait for you to start it?** The next rung is always-on, autonomous agents like **Scout** that own a recurring job in the background — triggered by events, not your prompt. An emerging, **gated** capability: real where you have it, and the bridge toward building production agents in Studio.
 </div>
-[Continue to Stage 5 · Copilot Studio →](stage-5-studio.md){ .rc-exit-cta }
+[Continue to Stage 5 · Autopilots →](stage-5-autopilots.md){ .rc-exit-cta }
 </div>

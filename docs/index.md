@@ -24,9 +24,11 @@ hide:
   <span class="arrow">→</span>
   <a class="step" href="stages/stage-4-agent-builder/"><span class="n">STAGE 4</span><span class="t">Agent Builder</span><span class="d">Your first taste of <em>making</em>.</span></a>
   <span class="arrow">→</span>
-  <a class="step dest" href="stages/stage-5-studio/"><span class="n">STAGE 5</span><span class="t">Copilot Studio</span><span class="d">Build real, production-grade agents.</span></a>
+  <a class="step pioneer" href="stages/stage-5-autopilots/"><span class="n">STAGE 5</span><span class="t">Autopilots</span><span class="d">Always-on agents like Scout — where available.</span></a>
   <span class="arrow">→</span>
-  <a class="step dest" href="stages/stage-6-foundry/"><span class="n">STAGE 6</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
+  <a class="step dest" href="stages/stage-6-studio/"><span class="n">STAGE 6</span><span class="t">Copilot Studio</span><span class="d">Build real, production-grade agents.</span></a>
+  <span class="arrow">→</span>
+  <a class="step dest" href="stages/stage-7-foundry/"><span class="n">STAGE 7</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
 </div>
 
 <p class="audience"><strong>Who it's for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · developers engineering pro-code agents in Foundry · IT/admins enabling each stage safely.</p>
@@ -43,16 +45,17 @@ Not every tool is for every person. This is where each role tends to spend time 
   <th><a href="stages/stage-2-first-party/"><span class="stagenum">STAGE 2</span>First-Party</a></th>
   <th><a href="stages/stage-3-cowork/"><span class="stagenum">STAGE 3</span>Cowork</a></th>
   <th><a href="stages/stage-4-agent-builder/"><span class="stagenum">STAGE 4</span>Agent Builder</a></th>
-  <th><a href="stages/stage-5-studio/"><span class="stagenum">STAGE 5</span>Studio</a></th>
-  <th><a href="stages/stage-6-foundry/"><span class="stagenum">STAGE 6</span>Foundry</a></th>
+  <th><a href="stages/stage-5-autopilots/"><span class="stagenum">STAGE 5</span>Autopilots</a></th>
+  <th><a href="stages/stage-6-studio/"><span class="stagenum">STAGE 6</span>Studio</a></th>
+  <th><a href="stages/stage-7-foundry/"><span class="stagenum">STAGE 7</span>Foundry</a></th>
 </tr></thead>
 <tbody>
-<tr><th><a href="roles/new-user/">End user</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th><a href="roles/champion/">Champion</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th><a href="roles/manager/">Manager</a></th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
-<tr><th><a href="roles/maker/">Maker</a></th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
-<tr><th><a href="roles/developer/">Developer</a></th> <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
-<tr><th><a href="roles/it-admin/">IT / admin</a></th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
+<tr><th><a href="roles/new-user/">End user</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th><a href="roles/champion/">Champion</a></th>  <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th><a href="roles/manager/">Manager</a></th>   <td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl0"><span class="dot">○○○</span></td></tr>
+<tr><th><a href="roles/maker/">Maker</a></th>     <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl1"><span class="dot">●○○</span></td></tr>
+<tr><th><a href="roles/developer/">Developer</a></th> <td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl1"><span class="dot">●○○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
+<tr><th><a href="roles/it-admin/">IT / admin</a></th><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl2"><span class="dot">●●○</span></td><td class="lvl3"><span class="dot">●●●</span></td><td class="lvl3"><span class="dot">●●●</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -168,4 +171,4 @@ The fastest way to start: open **[Turn a meeting into tracked follow-ups](walkth
 
 ## Where this came from
 
-The ramp is inspired by the grassroots, use-case-first spirit of [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) (a community project, unofficial). Where his book goes deep on Cowork across business processes, this site goes *wide* across the six-stage journey — pointing you toward Microsoft's own [Copilot hub](https://learn.microsoft.com/en-us/copilot/) and [Adoption Hub](https://adoption.microsoft.com/en-us/copilot/) at every step.
+The ramp is inspired by the grassroots, use-case-first spirit of [Sean Galliher's Cowork Cookbook](https://coworkcookbook.com/) (a community project, unofficial). Where his book goes deep on Cowork across business processes, this site goes *wide* across the seven-stage journey — pointing you toward Microsoft's own [Copilot hub](https://learn.microsoft.com/en-us/copilot/) and [Adoption Hub](https://adoption.microsoft.com/en-us/copilot/) at every step.

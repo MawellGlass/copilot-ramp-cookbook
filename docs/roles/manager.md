@@ -116,7 +116,7 @@ The biggest manager win isn't a flashy demo — it's reclaiming the 30 minutes o
       "pace": ["ramp"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Build the ROI business case",
       "href": "../../walkthroughs/studio-roi-business-case/",
@@ -125,7 +125,7 @@ The biggest manager win isn't a flashy demo — it's reclaiming the 30 minutes o
       "weightGoal": { "build": 1 }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Govern and monitor what your team ships",
       "href": "../../walkthroughs/studio-govern-monitor/",
@@ -134,7 +134,7 @@ The biggest manager win isn't a flashy demo — it's reclaiming the 30 minutes o
       "optional": true
     },
     {
-      "stage": "Stage 5 · Studio",
+      "stage": "Stage 6 · Studio",
       "stageKey": "studio",
       "title": "Preview an agent built for your function",
       "href": "../../walkthroughs/first-party-agents-overview/",

@@ -36,7 +36,7 @@ flowchart TD
 
     Q1 -->|Again and again| B{Who uses it, and<br/>what does it need?}
     B -->|Just me or my team:<br/>a prompt and a few files, no code| AB[["Stage 4 · Agent Builder"]]
-    B -->|The whole org: knowledge,<br/>actions and governance| Studio[["Stage 5 · Copilot Studio"]]
+    B -->|The whole org: knowledge,<br/>actions and governance| Studio[["Stage 6 · Copilot Studio"]]
     B -->|Engineered: pro-code, autonomous,<br/>custom models or MCP| Foundry[["Microsoft Foundry"]]
 ```
 
@@ -52,8 +52,8 @@ Prefer words to boxes? Find the row whose **need** matches yours — frequency f
 | **One-off · specialized** | Deep research, data analysis, or facilitation | [Stage 2 · First-party agents](../stages/stage-2-first-party.md) |
 | **One-off · multi-step** | A several-step job you'd rather hand off and let run | [Stage 3 · Cowork](../stages/stage-3-cowork.md) |
 | **Recurring · simple** | The same task again and again; a prompt plus a few files, no code | [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md) |
-| **Recurring · org-wide** | Real knowledge sources, actions/connectors, lifecycle and governance | [Stage 5 · Copilot Studio](../stages/stage-5-studio.md) |
-| **Recurring · engineered** | Pro-code, autonomous or triggered, custom models, MCP at scale | [Stage 6 · Foundry](../stages/stage-6-foundry.md) |
+| **Recurring · org-wide** | Real knowledge sources, actions/connectors, lifecycle and governance | [Stage 6 · Copilot Studio](../stages/stage-6-studio.md) |
+| **Recurring · engineered** | Pro-code, autonomous or triggered, custom models, MCP at scale | [Stage 7 · Foundry](../stages/stage-7-foundry.md) |
 
 ---
 
@@ -67,9 +67,9 @@ Prefer words to boxes? Find the row whose **need** matches yours — frequency f
   the whole thing off rather than building a reusable agent.
 - **[Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md)** — the right home when the same delegated task
   keeps recurring and a prompt-plus-files agent solves it. No code, personal or team scope.
-- **[Stage 5 · Copilot Studio](../stages/stage-5-studio.md)** — where agents grow up: real knowledge sources,
+- **[Stage 6 · Copilot Studio](../stages/stage-6-studio.md)** — where agents grow up: real knowledge sources,
   connectors and actions, publishing, monitoring, and governance for org-wide use.
-- **[Stage 6 · Foundry](../stages/stage-6-foundry.md)** — the pro-code frontier:
+- **[Stage 7 · Foundry](../stages/stage-7-foundry.md)** — the pro-code frontier:
   autonomous and triggered agents, custom models, evaluation, and MCP tools at scale.
 
 !!! tip "When in doubt, climb only one rung"
@@ -81,4 +81,4 @@ Prefer words to boxes? Find the row whose **need** matches yours — frequency f
 >
 > - [Which Copilot is right for you](https://learn.microsoft.com/en-us/copilot/) — Microsoft's official front door.
 > - [Extend Microsoft 365 Copilot — options compared](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/) — declarative vs. custom-engine agents.
-> - [Stage 6 · Foundry](../stages/stage-6-foundry.md) — when you outgrow low-code.
+> - [Stage 7 · Foundry](../stages/stage-7-foundry.md) — when you outgrow low-code.

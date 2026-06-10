@@ -11,6 +11,20 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### New Stage 5 · Autopilots — always-on agents (Scout), with a skills lens
+*June 12, 2026*
+
+The journey now runs **seven stages**: a new **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)**
+slots in between Agent Builder and Copilot Studio, covering **always-on, autonomous agents** — with
+**Scout** as the flagship example. Copilot Studio moves to **Stage 6** and Microsoft Foundry to
+**Stage 7**; the journey ribbon, role matrix, and right-sizing guide all reflect the new shape.
+
+- Autopilots is an **emerging, gated** capability — the page stays honest about *available-but-gated*
+  framing and points at the first-party hubs as the source of truth.
+- The [Skills Catalog](skills.md#autopilots-scout-skills) gains an **Autopilots (Scout) skills** lens:
+  the same reusable-capability instinct, equipped onto an always-on agent so it works in the background.
+- The **Glossary** *Skill* entry now spans Cowork recipes, Autopilots/Scout, and Studio tools.
+
 ### A new "Skills Catalog" collects reusable Cowork and Studio skills
 *June 9, 2026*
 
@@ -107,7 +121,7 @@ exactly what each step looks like, so you can match the product as you follow al
   new **[Glossary](glossary.md)** and **[Licensing & Prerequisites](prerequisites.md)** pages, role
   filter chips on the Use-Case Catalog, and automatic "last updated" dates on every page.
 
-### Stage 6 · Microsoft Foundry added, plus a site-wide accuracy pass
+### Stage 7 · Microsoft Foundry added, plus a site-wide accuracy pass
 *June 4, 2026*
 
 - **Sixth stage** — the ramp now ends at **Microsoft Foundry**, the pro-code frontier beyond Copilot
@@ -150,7 +164,7 @@ The cookbook grew from 35 to 56 walkthroughs. New additions:
 - [Build an FAQ agent for a recurring process](walkthroughs/agent-builder-faq-agent.md)
 - [Build a meeting-prep agent for a recurring 1:1 or standup](walkthroughs/agent-builder-meeting-prep-agent.md)
 
-**Stage 5 · Copilot Studio (5 new)**
+**Stage 6 · Copilot Studio (5 new)**
 
 - [Trigger a Power Automate flow from inside a Studio agent](walkthroughs/studio-power-automate-flow.md)
 - [Design a multi-turn conversation with fallback and clarification](walkthroughs/studio-multi-turn-conversation.md)
@@ -187,7 +201,7 @@ First public release of the Copilot Ramp Cookbook on GitHub Pages.
 
 **Stage 4 · Agent Builder (5 walkthroughs)** — team knowledge agent, persona & instructions, starter prompts, share & feedback, Agent Builder vs. Studio
 
-**Stage 5 · Copilot Studio (6 walkthroughs)** — first Studio agent, connector action, MCP tool integration, publish, govern & monitor, ROI business case
+**Stage 6 · Copilot Studio (6 walkthroughs)** — first Studio agent, connector action, MCP tool integration, publish, govern & monitor, ROI business case
 
 ---
 

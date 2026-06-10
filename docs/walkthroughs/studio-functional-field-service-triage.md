@@ -21,7 +21,7 @@ updated: 2026-06-05
 
 Reach for this when dispatch decisions depend on knowledge that lives in manuals, fault-code tables, and the heads of your most experienced techs. The cost of getting it wrong is real: an unnecessary truck roll, or a visit without the right part. A triage agent puts that knowledge one question away and pre-fills the work order so the assigned tech starts informed.
 
-**Why Stage 5:** This isn't a single Q&A lookup. The agent runs a structured intake, branches on a hard safety rule, ranks likely causes, chooses one of three dispatch paths, and then creates a work order through Power Automate. The branching logic and the action at the end are why this belongs in Copilot Studio rather than a low-code Agent Builder bot.
+**Why Stage 6:** This isn't a single Q&A lookup. The agent runs a structured intake, branches on a hard safety rule, ranks likely causes, chooses one of three dispatch paths, and then creates a work order through Power Automate. The branching logic and the action at the end are why this belongs in Copilot Studio rather than a low-code Agent Builder bot.
 
 ---
 
@@ -107,7 +107,7 @@ Studio handles the structured triage and the safety gate well. When you want the
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Field Service Triage Agent solution template](../solutions/field-service-triage-agent.md) has the system prompt, topic specs, knowledge-source table, Power Automate work-order spec, and the safety-first test matrix.

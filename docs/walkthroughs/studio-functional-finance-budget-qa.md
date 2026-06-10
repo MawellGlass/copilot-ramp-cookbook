@@ -100,7 +100,7 @@ A policy-and-redirect agent is the safe place to start. The moment you wire in l
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Knowledge overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)
 - [Power BI connector](https://learn.microsoft.com/en-us/power-automate/dataverse/list-rows)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Finance Expense & Procurement Agent solution template](../solutions/finance-expense-agent.md) covers the Finance knowledge-grounding and escalation pattern — adapt the scope section and swap in the budget owner topics described here.

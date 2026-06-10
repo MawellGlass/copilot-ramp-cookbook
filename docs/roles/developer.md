@@ -28,7 +28,7 @@ The fastest mistake here is starting in Foundry when Studio would have done. So 
       "skill": ["new", "some"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Stand up a Studio agent for grounding",
       "href": "../../walkthroughs/studio-first-agent/",
@@ -36,7 +36,7 @@ The fastest mistake here is starting in Foundry when Studio would have done. So 
       "skill": ["new", "some"]
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "See how MCP tools work in Studio first",
       "href": "../../walkthroughs/studio-mcp-tool-integration/",
@@ -44,21 +44,21 @@ The fastest mistake here is starting in Foundry when Studio would have done. So 
       "skill": ["some", "experienced"]
     },
     {
-      "stage": "Stage 5 → 6",
+      "stage": "Stage 6 → 7",
       "stageKey": "foundry",
       "title": "Graduate from Studio to Foundry",
       "href": "../../walkthroughs/foundry-graduate-from-studio/",
       "why": "Confirm you actually need pro-code — and bring your Studio agent's design with you."
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "Build your first Foundry agent",
       "href": "../../walkthroughs/foundry-first-agent/",
       "why": "The engineered baseline — code, models, and an agent you run like a service."
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "Add MCP tools to your agent",
       "href": "../../walkthroughs/foundry-mcp-tools/",
@@ -66,14 +66,14 @@ The fastest mistake here is starting in Foundry when Studio would have done. So 
       "weightGoal": { "build": 1 }
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "Evaluate and monitor in production",
       "href": "../../walkthroughs/foundry-evaluate-monitor/",
       "why": "Treat quality as an engineering discipline — measure it, don't guess at it."
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "Run autonomous orchestration",
       "href": "../../walkthroughs/foundry-autonomous-orchestration/",
@@ -83,7 +83,7 @@ The fastest mistake here is starting in Foundry when Studio would have done. So 
       "weightGoal": { "build": 2 }
     },
     {
-      "stage": "Stage 6 · Foundry",
+      "stage": "Stage 7 · Foundry",
       "stageKey": "foundry",
       "title": "Govern and secure your agents",
       "href": "../../walkthroughs/foundry-govern-secure/",

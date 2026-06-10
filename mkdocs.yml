@@ -150,8 +150,9 @@ nav:
       - "Stage 2 · First-Party Agents": stages/stage-2-first-party.md
       - "Stage 3 · Cowork": stages/stage-3-cowork.md
       - "Stage 4 · Agent Builder": stages/stage-4-agent-builder.md
-      - "Stage 5 · Copilot Studio": stages/stage-5-studio.md
-      - "Stage 6 · Foundry": stages/stage-6-foundry.md
+      - "Stage 5 · Autopilots": stages/stage-5-autopilots.md
+      - "Stage 6 · Copilot Studio": stages/stage-6-studio.md
+      - "Stage 7 · Foundry": stages/stage-7-foundry.md
       - "Right-sizing — drop back a stage": right-sizing.md
 
   - Solution Templates:

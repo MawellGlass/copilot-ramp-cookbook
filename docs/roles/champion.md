@@ -90,7 +90,7 @@ Champions succeed by making Copilot *visible* and *low-friction*. The path below
       "weightGoal": { "team": 1 }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Build the ROI business case",
       "href": "../../walkthroughs/studio-roi-business-case/",
@@ -99,7 +99,7 @@ Champions succeed by making Copilot *visible* and *low-friction*. The path below
       "weightGoal": { "build": 1 }
     },
     {
-      "stage": "Stage 5 · Copilot Studio",
+      "stage": "Stage 6 · Copilot Studio",
       "stageKey": "studio",
       "title": "Govern and monitor the agents in play",
       "href": "../../walkthroughs/studio-govern-monitor/",
@@ -108,7 +108,7 @@ Champions succeed by making Copilot *visible* and *low-friction*. The path below
       "optional": true
     },
     {
-      "stage": "Stage 5 · Studio",
+      "stage": "Stage 6 · Studio",
       "stageKey": "studio",
       "title": "Showcase an agent built for your function",
       "href": "../../walkthroughs/first-party-agents-overview/",

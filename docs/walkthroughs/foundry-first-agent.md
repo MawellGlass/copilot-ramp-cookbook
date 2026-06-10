@@ -24,7 +24,7 @@ updated: 2026-06-04
     which stay current with the product.
 
 ## When to use this
-You've outgrown [Stage 5 · Copilot Studio](../stages/stage-5-studio.md): you need the agent to live in
+You've outgrown [Stage 6 · Copilot Studio](../stages/stage-6-studio.md): you need the agent to live in
 source control, run in your CI/CD pipeline, call a model you chose and configured, and be invoked from
 your own application code. This is the first rung of the frontier — the "hello agent" that proves your
 project, identity, and SDK plumbing all work before you build anything real.
@@ -115,6 +115,6 @@ This is the foundation everything else builds on. From here you can
 frontier; pick the lowest stage that solves each problem and only build here when the work demands it.
 
 ## Related
-- [Stage 6 · Foundry](../stages/stage-6-foundry.md) — when (and when not) to cross into pro-code
+- [Stage 7 · Foundry](../stages/stage-7-foundry.md) — when (and when not) to cross into pro-code
 - [Graduate a Copilot Studio agent into Foundry](foundry-graduate-from-studio.md) — the usual on-ramp
-- Stage 6 Resources: see [`RESOURCES.md` → Stage 6](../RESOURCES.md)
+- Stage 7 Resources: see [`RESOURCES.md` → Stage 7](../RESOURCES.md)

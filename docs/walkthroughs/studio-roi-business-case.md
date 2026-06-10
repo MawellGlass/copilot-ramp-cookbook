@@ -101,6 +101,6 @@ ROI story is what earns the room to climb it again, bigger, with the next set of
 > value lens.
 
 ## Related
-- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the Stage 5 flagship
+- [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md) — the Stage 6 flagship
 - [Copilot Studio → Publish and govern your agent](../walkthroughs/studio-publish.md) — the agent this case justifies
-- Stage 5 Resources: see `RESOURCES.md` → Copilot Studio
+- Stage 6 Resources: see `RESOURCES.md` → Copilot Studio

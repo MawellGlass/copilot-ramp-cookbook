@@ -99,4 +99,4 @@ reaches 500 people. That's the next step: **ship it safely**.
 ## Related
 - [Copilot Studio → Connect an agent to a system with a connector / action](../walkthroughs/studio-connector-action.md) — the connector cousin of MCP tools
 - [Copilot Studio → Build your first Studio agent with a knowledge source + topic](../walkthroughs/studio-first-agent.md) — the agent you're extending
-- Stage 5 Resources: see `RESOURCES.md` → Copilot Studio
+- Stage 6 Resources: see `RESOURCES.md` → Copilot Studio

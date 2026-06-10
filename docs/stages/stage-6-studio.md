@@ -1,9 +1,9 @@
 ---
-title: "Stage 5 · Copilot Studio"
+title: "Stage 6 · Copilot Studio"
 stage: studio
 ---
 
-# Stage 5 · Copilot Studio
+# Stage 6 · Copilot Studio
 
 > **Build real agents. The low-code destination of the ramp — production-grade agents with knowledge, actions, MCP tools, publishing, and governance (with Microsoft Foundry as the pro-code frontier beyond).**
 
@@ -402,7 +402,7 @@ Don't start from a blank canvas. Each **Studio solution template** is a copy-pas
     - [Copilot Studio in a Day](https://aka.ms/CSIAD) — a free hands-on workshop
     - [Agent governance whitepaper + Agent 365](https://aka.ms/agent365/resources) — how to govern agents at scale
 
-    The full curated set for this stage lives in [Resources → Stage 5](../RESOURCES.md).
+    The full curated set for this stage lives in [Resources → Stage 6](../RESOURCES.md).
 
 !!! info "Security at this stage"
     This is where the controls get rich: agents live in **Power Platform environments**, **DLP data
@@ -418,5 +418,5 @@ Don't start from a blank canvas. Each **Studio solution template** is a copy-pas
 <div class="rc-exit-text" markdown>
 **Shipping Studio agents but hitting a real ceiling?** When an agent has to be *engineered* — custom or fine-tuned models, autonomous orchestration, or MCP tools at scale — there's one more frontier beyond low-code. Most people never need it.
 </div>
-[Continue to Stage 6 · Foundry →](stage-6-foundry.md){ .rc-exit-cta }
+[Continue to Stage 7 · Foundry →](stage-7-foundry.md){ .rc-exit-cta }
 </div>

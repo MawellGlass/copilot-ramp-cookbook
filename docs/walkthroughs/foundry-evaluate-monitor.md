@@ -100,4 +100,4 @@ software. Quality measurement is what lets you build here responsibly.
 ## Related
 - [Build your first pro-code agent](foundry-first-agent.md) — the agent under test
 - [Give a Foundry agent custom tools and MCP](foundry-mcp-tools.md) — tools your evals should cover
-- [Stage 5 → Test and evaluate a Studio agent](studio-test-evaluate.md) — the low-code sibling of this
+- [Stage 6 → Test and evaluate a Studio agent](studio-test-evaluate.md) — the low-code sibling of this

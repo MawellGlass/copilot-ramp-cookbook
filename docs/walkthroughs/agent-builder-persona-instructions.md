@@ -94,7 +94,7 @@ Instructions are never "done" — they're tuned:
 ## Where this leads (the ramp)
 You can now shape *how* an agent behaves — which is most of what makes one usable. The natural next
 questions are "how do I make it discoverable?" and "when do I outgrow this builder?" Those point straight
-at **Stage 5 · Copilot Studio**, where the same authoring instincts get pro-grade controls.
+at **Stage 6 · Copilot Studio**, where the same authoring instincts get pro-grade controls.
 
 > **Next:** [Copilot Studio → Build your first Copilot Studio agent](../walkthroughs/studio-first-agent.md)
 

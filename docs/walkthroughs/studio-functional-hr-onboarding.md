@@ -101,7 +101,7 @@ Conversation variables get you genuine personalisation inside Studio. Once onboa
 - [Copilot Studio docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Conversation variables](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables)
 - [Publish to Teams](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams)
-- [Stage 5 · Copilot Studio](../stages/stage-5-studio.md)
+- [Stage 6 · Copilot Studio](../stages/stage-6-studio.md)
 
 !!! tip "Ready to build? Use the solution template."
     The [Onboarding Buddy Agent solution template](../solutions/onboarding-buddy-agent.md) has the full system prompt with conversation variables, the week-adaptive topic structure, and the role-personalisation pattern — copy it and adapt the bracketed values.

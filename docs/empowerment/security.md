@@ -207,7 +207,7 @@ ladder, the controls deepen with you:
 - **Just getting started?** The native protections above already cover you in [Stage 1 · Chat](../stages/stage-1-chat.md)
   and [Stage 2 · First-Party Agents](../stages/stage-2-first-party.md) — nothing to configure.
 - **Building shareable agents?** Governance shifts toward makers and environments in
-  [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md) and [Stage 5 · Copilot Studio](../stages/stage-5-studio.md).
+  [Stage 4 · Agent Builder](../stages/stage-4-agent-builder.md) and [Stage 6 · Copilot Studio](../stages/stage-6-studio.md).
 - **Running production agents at scale?** That's where **Foundry** and the **Agent 365** control plane
   earn their keep — full tenant isolation plus org-wide governance.
 

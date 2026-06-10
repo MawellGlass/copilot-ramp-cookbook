@@ -265,11 +265,43 @@ The walkthroughs above aren't all one-offs — the recurring and templated ones 
 **[skills](../skills.md)**: capture the recipe once and the whole team reruns it cold. The ones worth
 saving first:
 
-- **[Recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)** — a standing Monday-morning digest that runs itself.
-- **[Customer-health digest](../walkthroughs/cowork-customer-health-digest.md)** — rank your whole book of business worst-first, on a schedule.
-- **[Multi-document brief](../walkthroughs/cowork-multi-doc-synthesis.md)** — a repeatable "stack of docs → one brief" recipe.
-- **[QBR prep cycle](../walkthroughs/cowork-qbr-prep-cycle.md)** — the whole quarterly-review cycle as one rerunnable flow.
-- **[Build a recipe library](../walkthroughs/cowork-recipe-library.md)** — capture any great run so it doesn't die with the session.
+<div class="rc-scrollbox" markdown>
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **[Recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)**
+
+    A standing Monday-morning digest that runs itself — describe it once, rerun it every week.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Reusable skill</span></span>
+
+-   **[Customer-health digest](../walkthroughs/cowork-customer-health-digest.md)**
+
+    Rank your whole book of business worst-first, on a schedule, so you know where to spend the week.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Reusable skill</span></span>
+
+-   **[Multi-document brief](../walkthroughs/cowork-multi-doc-synthesis.md)**
+
+    A repeatable "stack of docs → one coherent brief" recipe the whole team can rerun.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Reusable skill</span></span>
+
+-   **[QBR prep cycle](../walkthroughs/cowork-qbr-prep-cycle.md)**
+
+    The whole quarterly-review cycle — data → deck → talking points → follow-ups — as one rerunnable flow.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Reusable skill</span></span>
+
+-   **[Build a recipe library](../walkthroughs/cowork-recipe-library.md)**
+
+    Capture any great run so it doesn't die with the session — the foundation for everything above.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Reusable skill</span></span>
+
+</div>
+
+</div>
 
 Browse them all in the **[Skills Catalog](../skills.md)**.
 

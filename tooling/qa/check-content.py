@@ -32,7 +32,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DOCS = ROOT / "docs"
 
-STAGE_VOCAB = {"chat", "first-party", "cowork", "agent-builder", "studio", "foundry"}
+STAGE_VOCAB = {"chat", "first-party", "cowork", "agent-builder", "autopilots", "studio", "foundry"}
 
 # Dated changelog entries may keep their historical counts.
 HISTORY_PAGES = {"docs/whats-new.md"}
