@@ -86,9 +86,45 @@ As the category grows, more Autopilots and patterns will land here. The rest of 
 
 ---
 
-## What an Autopilot can own
+## Start here — if you only do three things
 
-Until you have Scout in your tenant, these are **illustrative patterns** rather than click-by-click walkthroughs — the shape of the jobs an always-on agent is built to take off your plate. Every one is **gated** today, so treat them as where this is heading and re-check the first-party hubs before customer-facing claims.
+You can't fully drive this stage until Scout reaches your tenant — so the first move is to find out where you stand, then line up the recurring job you'll hand off the moment it's switched on.
+
+<div class="grid cards rc-pinned" markdown>
+
+-   <span class="rc-habit">Habit 1<small>Day 1</small></span>
+
+    **[Check whether Scout is switched on for you](#which-autopilots-microsoft-offers)**
+
+    Autopilots are gated — confirm availability for your tenant, license, and region before you plan around them.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">Gated · verify</span></span>
+
+-   <span class="rc-habit">Habit 2<small>Week 1</small></span>
+
+    **[Pick one recurring job to hand off](#all-walkthroughs)**
+
+    Choose a single always-on pattern below — a queue to watch, a digest to keep current, or a follow-through to automate.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Example · gated</span></span>
+
+-   <span class="rc-habit">Habit 3<small>Month 1</small></span>
+
+    **[Equip it with the right skills](#skills-in-autopilots)**
+
+    Give Scout the reusable capabilities it needs to carry the job out on its own, drawn from the Skills Catalog.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Champion</span> <span class="rc-chip rc-chip-skill">Gated · emerging</span></span>
+
+</div>
+
+---
+
+## All walkthroughs
+
+These are **starter patterns** for Scout, not click-by-click pages — illustrative until Autopilots are switched on in your tenant. Each shows the rough effort to stand it up and who it's for, so filter by role or time to find your first one.
+
+<div id="rc-filterbar"></div>
 
 <div class="rc-scrollbox" markdown>
 
@@ -97,19 +133,19 @@ Until you have Scout in your tenant, these are **illustrative patterns** rather 
 ### Watch & alert
 Scout keeps an eye on a queue or signal and raises a hand only when something needs a human.
 
-<div class="grid cards rc-skill-grid" markdown>
+<div class="grid cards rc-grid" markdown>
 
 -   **[Watch a queue and flag what needs you](../skills.md#autopilots-scout-skills)**
 
     Scout monitors an inbox, channel, or ticket queue and surfaces only the items that need your judgment — the rest it handles or holds.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+    <span class="rc-meta" data-time="10" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
 -   **[Stand watch during a launch or incident](../skills.md#autopilots-scout-skills)**
 
     Scout keeps an eye on the release window and pings the right people the moment a signal looks off.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+    <span class="rc-meta" data-time="15" data-roles="manager"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
 
 </div>
 
@@ -120,19 +156,19 @@ Scout keeps an eye on a queue or signal and raises a hand only when something ne
 ### Keep things current
 Scout maintains something on a cadence so it's never stale and no one has to remember to refresh it.
 
-<div class="grid cards rc-skill-grid" markdown>
+<div class="grid cards rc-grid" markdown>
 
 -   **[Run an always-on weekly digest](../skills.md#autopilots-scout-skills)**
 
     The Monday digest Scout assembles and posts on schedule — the standing version of a Cowork recipe.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Champion</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+    <span class="rc-meta" data-time="10" data-roles="champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
 
 -   **[Keep a customer-health list fresh](../skills.md#autopilots-scout-skills)**
 
     The worst-first account ranking, recomputed continuously so the list is current whenever you open it.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+    <span class="rc-meta" data-time="10" data-roles="manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
 
 </div>
 
@@ -143,19 +179,19 @@ Scout maintains something on a cadence so it's never stale and no one has to rem
 ### Trigger the follow-through
 An event fires and Scout runs the routine next steps end-to-end, so nothing slips between the cracks.
 
-<div class="grid cards rc-skill-grid" markdown>
+<div class="grid cards rc-grid" markdown>
 
 -   **[Run the same follow-through on every trigger](../skills.md#autopilots-scout-skills)**
 
     When a defined event happens, Scout kicks off the predictable next steps without waiting to be asked.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+    <span class="rc-meta" data-time="5" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
 
 -   **[Hand off recurring busywork end-to-end](../skills.md#autopilots-scout-skills)**
 
     A defined, repeating job Scout owns from signal to result — you set the goal and the guardrails once.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Champion</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+    <span class="rc-meta" data-time="15" data-roles="champion"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
 
 </div>
 
