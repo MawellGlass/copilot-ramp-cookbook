@@ -44,6 +44,85 @@ Autopilots are **always-on, autonomous agents**. Where an Agent Builder agent an
 
 ---
 
+## What an Autopilot can own
+
+Until you have Scout in your tenant, these are **illustrative patterns** rather than click-by-click walkthroughs — the shape of the jobs an always-on agent is built to take off your plate. Every one is **gated** today, so treat them as where this is heading and re-check the first-party hubs before customer-facing claims.
+
+<div class="rc-scrollbox" markdown>
+
+<section class="rc-bucket" markdown>
+
+### Watch & alert
+Scout keeps an eye on a queue or signal and raises a hand only when something needs a human.
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **[Watch a queue and flag what needs you](../skills.md#autopilots-scout-skills)**
+
+    Scout monitors an inbox, channel, or ticket queue and surfaces only the items that need your judgment — the rest it handles or holds.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+-   **[Stand watch during a launch or incident](../skills.md#autopilots-scout-skills)**
+
+    Scout keeps an eye on the release window and pings the right people the moment a signal looks off.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Keep things current
+Scout maintains something on a cadence so it's never stale and no one has to remember to refresh it.
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **[Run an always-on weekly digest](../skills.md#autopilots-scout-skills)**
+
+    The Monday digest Scout assembles and posts on schedule — the standing version of a Cowork recipe.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Champion</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+-   **[Keep a customer-health list fresh](../skills.md#autopilots-scout-skills)**
+
+    The worst-first account ranking, recomputed continuously so the list is current whenever you open it.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+</div>
+
+</section>
+
+<section class="rc-bucket" markdown>
+
+### Trigger the follow-through
+An event fires and Scout runs the routine next steps end-to-end, so nothing slips between the cracks.
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **[Run the same follow-through on every trigger](../skills.md#autopilots-scout-skills)**
+
+    When a defined event happens, Scout kicks off the predictable next steps without waiting to be asked.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+-   **[Hand off recurring busywork end-to-end](../skills.md#autopilots-scout-skills)**
+
+    A defined, repeating job Scout owns from signal to result — you set the goal and the guardrails once.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Champion</span> <span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+</div>
+
+</section>
+
+</div>
+
+---
+
 ## Skills in Autopilots
 
 This is where the **[Skills Catalog](../skills.md)** meets always-on agents. A *skill* is a reusable, packaged capability you save once and reuse — and an Autopilot like Scout is something you can **equip with skills** so it can carry that task out autonomously.
