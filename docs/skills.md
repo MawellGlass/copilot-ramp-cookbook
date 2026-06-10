@@ -92,9 +92,9 @@ agent**, built with the **Bot Framework** or the **Microsoft 365 Agents SDK**, t
 your Studio agent can call it as a tool from a topic
 ([how it works](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills)).
 
-That's the honest scope **today** — a narrow, pro-code capability. There's no point-and-click
-walkthrough for building one yet, so the catalog doesn't pretend otherwise. This section will grow as
-the skill surface in Studio expands, and we'll update it when it does.
+As of **today**, that's the focused, pro-code definition of a Studio skill. The catalog reflects what's
+available now, so you'll find guidance scoped to this specific capability rather than a broader
+walkthrough. As skills in Studio evolve, this section will expand alongside them.
 
 !!! note "Skills vs. tools in Studio"
     Connector actions, Power Automate flows, MCP tools, prompts, and topics are all **tools** — the
