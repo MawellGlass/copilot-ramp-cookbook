@@ -6,9 +6,16 @@ title: Skills Catalog
 
 A **skill** is a **reusable, packaged capability you save once and reuse — or share — instead of
 rebuilding it from scratch.** On the ramp, skills show up in two places: a **Cowork recipe** (a
-multi-step task you capture so the team can rerun it) and a **Studio capability** (an action,
-connector, or MCP tool that lets an agent *do* something in a real system). Different surfaces, same
-instinct — capture it once, reuse it.
+multi-step task you capture so the team can rerun it) and a **Studio tool** (an action, connector, or
+MCP tool that lets an agent *do* something in a real system). Different surfaces, same instinct —
+capture it once, reuse it.
+
+!!! warning "A note on the word *skill* in Copilot Studio"
+    Copilot Studio has a feature literally named **Skills** — and it means something narrower than the
+    cookbook's sense. There, a *skill* is an existing **pro-code agent** (built with the Bot Framework
+    or the **Microsoft 365 Agents SDK**) that you register so your Studio agent can call it as a tool.
+    The Studio entries in this catalog are **tools/actions** (connector actions, flows, MCP tools) —
+    *not* that feature. See [Use skills in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills).
 
 This page is the **catalog** — the reusable skills worth building first, grouped by where they live.
 Each links to the [walkthrough](CATALOG.md) that builds or describes it. Think of skills as the
@@ -20,9 +27,13 @@ skill is something you *keep*.
     above). It is **not**:
 
     - the **[Skills agent](walkthroughs/first-party-skills-stretch-assignment.md)** — a first-party
-      agent that helps you find a *career* stretch assignment; or
+      agent that helps you find a *career* stretch assignment;
     - your personal **skill level** (new / some / experienced) — the slider on the
-      [role paths](start-by-role.md) that tailors a journey to your experience.
+      [role paths](start-by-role.md) that tailors a journey to your experience; or
+    - the **Skills** feature *inside Copilot Studio* — a narrower, product-specific thing: registering
+      an existing **pro-code agent** (Bot Framework or **Microsoft 365 Agents SDK**) so your Studio
+      agent can call it as a tool. The Studio items in this catalog are **tools/actions**, not that
+      feature.
 
     When this page says "skill," it always means *a reusable capability you save and reuse*.
 
@@ -79,12 +90,21 @@ cold instead of reinventing the prompt. The ones worth capturing first:
 
 </div>
 
-## Studio skills — actions, connectors & tools
+## Studio skills — tools an agent can call
 
-In [Stage 5 · Copilot Studio](stages/stage-5-studio.md), a skill becomes a **packaged capability
-that lets an agent *do* something** — a connector action against a system of record, a Power Automate
-flow, or an MCP tool. You build it once and reuse it across agents. The platform skills worth
-building first:
+In [Stage 5 · Copilot Studio](stages/stage-5-studio.md), a skill becomes a **reusable capability that
+lets an agent *do* something** in a real system. In the product you build these as **tools** — a
+connector action against a system of record, a Power Automate flow, or an MCP tool — and reuse them
+across agents.
+
+!!! info "How Copilot Studio uses the word *skill*"
+    The entries below are Studio **tools/actions** — that's what you add and click in the maker.
+    Copilot Studio *also* has a feature literally named **Skills**: registering an existing **pro-code
+    agent** (Bot Framework or **Microsoft 365 Agents SDK**) so your agent can call it as a tool. This
+    catalog uses *skill* in the cookbook's broader sense; none of the entries below are the Studio
+    **Skills** feature. See [Use skills in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills).
+
+The platform tools worth building first:
 
 <div class="grid cards" markdown>
 

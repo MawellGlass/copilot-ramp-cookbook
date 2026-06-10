@@ -19,7 +19,9 @@ or a reusable capability. The new [Skills Catalog](skills.md) pins down the thir
 reusable skills worth building first:
 
 - **Cowork skills** — saved, reusable **recipes** the team can rerun (weekly digest, QBR prep cycle, …).
-- **Studio skills** — packaged **actions, connectors, and MCP tools** an agent uses to do real work.
+- **Studio skills** — the **tools** an agent calls to do real work (connector actions, flows, MCP
+  tools). In the product, *Skills* is a separate, narrower feature (embedding a pro-code agent) — the
+  catalog flags the difference.
 - **Stage 3** and **Stage 5** now carry a "Useful skills" list alongside their walkthroughs, and the
   Glossary has a matching **Skill** entry.
 - A disambiguation callout separates "skill" (a reusable capability) from the Skills *agent* and from

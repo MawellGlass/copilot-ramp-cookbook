@@ -160,7 +160,9 @@ Everything that makes a Studio agent real — designed conversation, tools and a
 ## Useful skills
 
 Each technical foundation above is a reusable **[skill](../skills.md)** — build it once, reuse it
-across every agent. The platform skills worth building first:
+across every agent. In Copilot Studio you build these as **tools** (connector actions, flows, MCP
+tools); the product *also* has a separate **Skills** feature for embedding a pro-code agent. The
+platform tools worth building first:
 
 - **[Connector action](../walkthroughs/studio-connector-action.md)** — let an agent look up records, create tickets, trigger workflows.
 - **[MCP tool integration](../walkthroughs/studio-mcp-tool-integration.md)** — extend an agent with external tools.
