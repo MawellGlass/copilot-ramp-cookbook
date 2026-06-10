@@ -241,7 +241,7 @@ Run a rigorous, fair multi-stage people process as one delegated flow.
 <section class="rc-bucket" markdown>
 
 ### Adopt as a team
-Capture a great run so it doesn't die with the session — make it reusable for everyone.
+Capture a great run so it doesn't die with the session — make it a reusable **[skill](../skills.md)** the whole team can rerun.
 
 <div class="grid cards rc-grid" markdown>
 

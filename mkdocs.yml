@@ -153,7 +153,6 @@ nav:
       - "Stage 5 · Copilot Studio": stages/stage-5-studio.md
       - "Stage 6 · Foundry": stages/stage-6-foundry.md
       - "Right-sizing — drop back a stage": right-sizing.md
-      - "Skills — reusable capabilities": skills.md
 
   - Solution Templates:
       - solutions/index.md
@@ -193,6 +192,7 @@ nav:
       - Quick Wins: quick-wins.md
       - "Licensing & Prerequisites": prerequisites.md
       - Glossary: glossary.md
+      - "Skills — reusable capabilities": skills.md
       - Credit Estimator: credit-estimator.md
       - "What's New": whats-new.md
       - Resources: RESOURCES.md
