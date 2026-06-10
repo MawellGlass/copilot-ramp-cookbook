@@ -51,6 +51,34 @@ This is where the **[Skills Catalog](../skills.md)** meets always-on agents. A *
 - A **Cowork recipe** ([Stage 3](stage-3-cowork.md)) is a skill you *describe* and run on demand.
 - An **Autopilot skill** is that same instinct handed to an always-on agent: the capability Scout draws on to do the job in the background, without you starting it each time.
 
+A few illustrative examples of what an always-on agent could be equipped with — the set is **emerging and gated**, so treat these as the shape of things rather than a finished menu:
+
+<div class="rc-scrollbox" markdown>
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **[Always-on weekly digest](../skills.md#autopilots-scout-skills)**
+
+    The Monday digest Scout assembles and posts on schedule — no one has to remember to start it.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+-   **[Inbox & signal triage](../skills.md#autopilots-scout-skills)**
+
+    Scout watches for what actually needs you and surfaces it, so the noise never reaches your desk.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+-   **[Continuous customer-health watch](../skills.md#autopilots-scout-skills)**
+
+    The worst-first account-ranking recipe from Cowork, kept always-on so the list is never stale.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">🧩 Example · gated</span></span>
+
+</div>
+
+</div>
+
 That's the honest scope today — the way you equip and manage Autopilot skills is still emerging and gated alongside the rest of the stage, so the catalog keeps the **Autopilots (Scout) skills** lens scoped to what exists now and will grow as the capability does. See **[Skills Catalog → Autopilots](../skills.md#autopilots-scout-skills)**.
 
 ---
