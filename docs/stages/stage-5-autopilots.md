@@ -40,7 +40,49 @@ You've got a job that shouldn't wait for you to start it — monitoring a queue,
 
 Autopilots are **always-on, autonomous agents**. Where an Agent Builder agent answers when you call it, an Autopilot is given a job and a trigger, then runs in the background — noticing when something happens, deciding what to do, and acting — surfacing results or asking for a check-in rather than waiting for a prompt.
 
-**Scout** is the flagship example today: a first-party autonomous agent that works proactively on your behalf. For now this stage is about **Scout specifically** — as the category grows, more Autopilots and patterns will land here.
+**Scout** is the flagship example today: a first-party autonomous agent that works proactively on your behalf. But it isn't the only one — Microsoft is bringing a growing set of autonomous agents to market that follow the same always-on pattern, several of them role- or department-specific and living in their own product areas rather than a single hub.
+
+---
+
+## Which Autopilots Microsoft offers
+
+Scout is the general-purpose Autopilot for knowledge workers, but the always-on, autonomous pattern shows up across Microsoft's portfolio. The roster below is the current shape of what's emerging.
+
+!!! warning "Verify before you rely on any of these"
+    **Availability, gating, and naming vary by license, product, and region**, and the category is moving
+    fast. Some of these also overlap in name with the *on-demand* specialists in
+    [Stage 2 · First-Party Agents](stage-2-first-party.md) — but here they run **autonomously**. Treat the
+    first-party product hubs as the source of truth and confirm status before any customer-facing claim.
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **Scout** · _flagship_
+
+    A general-purpose always-on agent for knowledge workers — it proactively watches, researches, and surfaces what you need without being asked each time. The headline Autopilot and the focus of this stage.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Gated · rolling out</span></span>
+
+-   **Sales Agent** · _Microsoft 365 Copilot_
+
+    Autonomously researches and qualifies leads and drafts outreach in the background, so sellers walk into every conversation already briefed.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Check current status</span></span>
+
+-   **Customer Service Agent** · _Copilot Service / Dynamics 365_
+
+    Handles common customer cases end-to-end on its own, escalating to a person only when human judgment is needed.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Check current status</span></span>
+
+-   **Security triage agents** · _Security Copilot_
+
+    Always-on agents that investigate alerts — like reported phishing — autonomously and hand analysts a recommended verdict to act on.
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Check current status</span></span>
+
+</div>
+
+As the category grows, more Autopilots and patterns will land here. The rest of this stage focuses on **Scout**, since it's the one most knowledge workers will reach first.
 
 ---
 
