@@ -24,7 +24,7 @@ hide:
   <span class="arrow">→</span>
   <a class="step" href="stages/stage-4-agent-builder/"><span class="n">STAGE 4</span><span class="t">Agent Builder</span><span class="d">Your first taste of <em>making</em>.</span></a>
   <span class="arrow">→</span>
-  <a class="step pioneer" href="stages/stage-5-autopilots/"><span class="n">STAGE 5</span><span class="t">Autopilots</span><span class="d">Always-on agents like Scout — where available.</span></a>
+  <a class="step pioneer" href="stages/stage-5-autopilots/"><span class="n">STAGE 5</span><span class="t">Autonomous Agents</span><span class="d">Always-on agents that run on a trigger — where available.</span></a>
   <span class="arrow">→</span>
   <a class="step dest" href="stages/stage-6-studio/"><span class="n">STAGE 6</span><span class="t">Copilot Studio</span><span class="d">Build real, production-grade agents.</span></a>
   <span class="arrow">→</span>
@@ -45,7 +45,7 @@ Not every tool is for every person. This is where each role tends to spend time 
   <th><a href="stages/stage-2-first-party/"><span class="stagenum">STAGE 2</span>First-Party</a></th>
   <th><a href="stages/stage-3-cowork/"><span class="stagenum">STAGE 3</span>Cowork</a></th>
   <th><a href="stages/stage-4-agent-builder/"><span class="stagenum">STAGE 4</span>Agent Builder</a></th>
-  <th><a href="stages/stage-5-autopilots/"><span class="stagenum">STAGE 5</span>Autopilots</a></th>
+  <th><a href="stages/stage-5-autopilots/"><span class="stagenum">STAGE 5</span>Autonomous Agents</a></th>
   <th><a href="stages/stage-6-studio/"><span class="stagenum">STAGE 6</span>Studio</a></th>
   <th><a href="stages/stage-7-foundry/"><span class="stagenum">STAGE 7</span>Foundry</a></th>
 </tr></thead>

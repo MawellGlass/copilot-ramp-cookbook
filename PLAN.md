@@ -10,7 +10,7 @@
 > [!NOTE]
 > **Historical planning document.** This is the original build plan, kept for provenance. The live
 > site has since evolved: the journey now runs **seven** stages and ends at **Microsoft Foundry**
-> (pro-code agents), with **Copilot Studio** as Stage 6 and a new **Autopilots** stage (Scout) at
+> (pro-code agents), with **Copilot Studio** as Stage 6 and a new **Autonomous Agents** stage at
 > Stage 5 rather than the destination. The diagram,
 > IA tree, and matrix below have been updated to the seven-stage shape; the phase log and open
 > decisions are preserved as a snapshot of the early plan. For the current source of truth, see
@@ -66,7 +66,7 @@ Home
 │     └── (same shape)
 ├── Stage 4 · Agent Builder
 │     └── (same shape)
-├── Stage 5 · Autopilots
+├── Stage 5 · Autonomous Agents
 │     └── (same shape)
 ├── Stage 6 · Copilot Studio
 │     └── (same shape)

@@ -11,19 +11,34 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
-### New Stage 5 · Autopilots — always-on agents (Scout), with a skills lens
-*June 12, 2026*
+### Stage 5 reframed — "Autonomous & Always-On Agents," with real Microsoft sourcing
+*June 10, 2026*
 
-The journey now runs **seven stages**: a new **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)**
-slots in between Agent Builder and Copilot Studio, covering **always-on, autonomous agents** — with
-**Scout** as the flagship example. Copilot Studio moves to **Stage 6** and Microsoft Foundry to
-**Stage 7**; the journey ribbon, role matrix, and right-sizing guide all reflect the new shape.
+Stage 5 has been **reframed** from its original "Autopilots / Scout" framing to
+**[Autonomous & Always-On Agents](stages/stage-5-autopilots.md)** — the honest, product-accurate version.
+Rather than a single branded family, the stage now describes the **autonomous pattern showing up across
+Microsoft's portfolio**, each gated and varying by license:
 
-- Autopilots is an **emerging, gated** capability — the page stays honest about *available-but-gated*
-  framing and points at the first-party hubs as the source of truth.
-- The [Skills Catalog](skills.md#autopilots-scout-skills) gains an **Autopilots (Scout) skills** lens:
+- The roster now points at **real, citable** Microsoft surfaces — the **Agents in Microsoft 365** hub,
+  **Copilot Studio event triggers**, **Security Copilot agents**, and **Agent 365** governance — each
+  with a "check current status" link, since availability varies.
+- A curated **[Resources → Stage 5](RESOURCES.md)** section collects those Microsoft links.
+- The skills lens, glossary *Skill* entry, journey ribbon, role matrix, navigation, and right-sizing
+  guide were all updated to drop the "Scout" product name and use the generic "autonomous agent" framing.
+
+### New Stage 5 — always-on agents, with a skills lens
+*June 9, 2026*
+
+The journey expanded to **seven stages**: a new **[Stage 5](stages/stage-5-autopilots.md)** slots in
+between Agent Builder and Copilot Studio, covering **always-on, autonomous agents**. Copilot Studio
+moves to **Stage 6** and Microsoft Foundry to **Stage 7**; the journey ribbon, role matrix, and
+right-sizing guide all reflect the new shape.
+
+- It's an **emerging, gated** capability — the page stays honest about *available-but-gated* framing and
+  points at the Microsoft product hubs as the source of truth.
+- The [Skills Catalog](skills.md#autopilots-scout-skills) gains an **autonomous-agent skills** lens:
   the same reusable-capability instinct, equipped onto an always-on agent so it works in the background.
-- The **Glossary** *Skill* entry now spans Cowork recipes, Autopilots/Scout, and Studio tools.
+- The **Glossary** *Skill* entry now spans Cowork recipes, autonomous agents, and Studio tools.
 
 ### A new "Skills Catalog" collects reusable Cowork and Studio skills
 *June 9, 2026*

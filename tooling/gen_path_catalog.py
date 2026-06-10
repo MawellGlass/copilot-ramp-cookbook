@@ -38,7 +38,7 @@ STAGE_LABEL = {
     "first-party": "Stage 2 · First-party",
     "cowork": "Stage 3 · Cowork",
     "agent-builder": "Stage 4 · Agent Builder",
-    "autopilots": "Stage 5 · Autopilots",
+    "autopilots": "Stage 5 · Autonomous Agents",
     "studio": "Stage 6 · Studio",
     "foundry": "Stage 7 · Foundry",
 }
