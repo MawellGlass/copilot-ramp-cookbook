@@ -84,21 +84,21 @@ cold instead of reinventing the prompt. The ones worth capturing first:
 
 </div>
 
-## Autonomous agent skills — capabilities for an always-on agent { #autopilots-scout-skills }
+## Autopilots (Scout) skills — capabilities for an always-on agent { #autopilots-scout-skills }
 
-In [Stage 5 · Autonomous Agents](stages/stage-5-autopilots.md), a skill is the same reusable capability — but
-handed to an **always-on, autonomous agent** so it can carry the task out *in the
+In [Stage 5 · Autopilots](stages/stage-5-autopilots.md), a skill is the same reusable capability — but
+handed to an **always-on, autonomous agent** like **Scout** so it can carry the task out *in the
 background*, without you starting it each time.
 
 - A **Cowork recipe** is a skill you *describe* and run on demand.
-- An **autonomous-agent skill** is that same instinct equipped onto an agent that's always watching: the
-  capability it draws on to do the job when its trigger fires, then report back.
+- An **Autopilot skill** is that same instinct equipped onto an agent that's always watching: the
+  capability Scout draws on to do the job when its trigger fires, then report back.
 
 !!! info "Emerging and gated"
-    Autonomous agents are a newer, **gated** capability, and the way you equip and manage their skills is still
+    Autopilots are a newer, **gated** capability, and the way you equip and manage their skills is still
     rolling out by tenant, license, and region. This lens stays scoped to what exists today and will grow
-    as the capability does — once these skill walkthroughs are ready they'll be cataloged here. Until
-    then, treat the Microsoft product hubs as the source of truth before any customer-facing claims.
+    as the capability does — once Scout-skill walkthroughs are ready they'll be cataloged here. Until
+    then, treat the first-party product hubs as the source of truth before any customer-facing claims.
 
 ## Studio skills — a specific kind of tool
 
@@ -128,4 +128,4 @@ language. When a recipe is stable, repeated, and worth making bulletproof, it's 
 a real capability in [Stage 6 · Copilot Studio](stages/stage-6-studio.md) — built as a **tool**
 (a connector action, flow, or MCP tool) an agent calls against a real system, governed and shared.
 
-> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · [Stage 5 · Autonomous Agents](stages/stage-5-autopilots.md) for equipping an always-on agent · or [Stage 6 · Studio](stages/stage-6-studio.md) for the tools an agent calls.
+> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · [Stage 5 · Autopilots](stages/stage-5-autopilots.md) for equipping an always-on agent like Scout · or [Stage 6 · Studio](stages/stage-6-studio.md) for the tools an agent calls.
