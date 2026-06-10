@@ -172,14 +172,12 @@ table.home-matrix {
 
 table.home-matrix th,
 table.home-matrix td {
-  padding: .65rem .55rem;
+  padding: .55rem .5rem;
   text-align: center;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  border-left: 1px solid var(--md-default-fg-color--lightest);
   font-size: .8rem;
+  vertical-align: middle;
 }
-table.home-matrix th:first-child,
-table.home-matrix td:first-child { border-left: 0; }
 
 table.home-matrix thead th {
   background: var(--md-code-bg-color);
@@ -244,29 +242,51 @@ table.home-matrix tbody th a:focus-visible::after {
 table.home-matrix tbody tr:last-child th,
 table.home-matrix tbody tr:last-child td { border-bottom: 0; }
 
-table.home-matrix .dot { font-size: .78rem; letter-spacing: 2px; }
-table.home-matrix td.lvl3 {
-  background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+/* heatmap cells — graduated fill by intensity */
+table.home-matrix tbody td { transition: background .15s; }
+table.home-matrix td.lvl3 { background: color-mix(in srgb, var(--md-primary-fg-color) 16%, transparent); }
+table.home-matrix td.lvl2 { background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent); }
+table.home-matrix td.lvl1 { background: color-mix(in srgb, var(--md-primary-fg-color) 3%, transparent); }
+table.home-matrix td.lvl0 { background: transparent; }
+table.home-matrix tbody tr:hover td { background: color-mix(in srgb, var(--md-primary-fg-color) 5%, var(--md-code-bg-color)); }
+table.home-matrix tbody tr:hover td.lvl3 { background: color-mix(in srgb, var(--md-primary-fg-color) 22%, transparent); }
+table.home-matrix tbody tr:hover td.lvl2 { background: color-mix(in srgb, var(--md-primary-fg-color) 13%, transparent); }
+
+/* signal-bar meter — filled segments show intensity */
+.meter {
+  display: inline-flex;
+  gap: 3px;
+  align-items: flex-end;
+  height: 18px;
+  vertical-align: middle;
 }
-table.home-matrix td.lvl3 .dot { color: var(--md-primary-fg-color); font-weight: 800; }
-table.home-matrix td.lvl2 .dot { color: var(--md-primary-fg-color); }
-table.home-matrix td.lvl1 .dot { color: var(--md-default-fg-color--lighter); }
-table.home-matrix td.lvl0 .dot { color: var(--md-default-fg-color--lightest); }
+.meter i {
+  width: 6px;
+  border-radius: 2px;
+  background: var(--md-default-fg-color--lightest);
+  display: block;
+}
+.meter i:nth-child(1) { height: 9px; }
+.meter i:nth-child(2) { height: 13px; }
+.meter i:nth-child(3) { height: 18px; }
+.home-matrix td.lvl1 .meter i:nth-child(-n+1),
+.meter.lvl1 i:nth-child(-n+1) { background: var(--md-primary-fg-color); }
+.home-matrix td.lvl2 .meter i:nth-child(-n+2),
+.meter.lvl2 i:nth-child(-n+2) { background: var(--md-primary-fg-color); }
+.home-matrix td.lvl3 .meter i,
+.meter.lvl3 i { background: var(--md-primary-fg-color); }
 
 /* ---------- matrix key ---------- */
 .matrix-key {
   display: flex;
-  gap: 1rem;
+  gap: 1.1rem;
   flex-wrap: wrap;
+  align-items: center;
   font-size: .78rem;
   color: var(--md-default-fg-color--lighter);
-  margin: .5rem 0 1.6rem;
+  margin: .6rem 0 1.6rem;
 }
-.matrix-key b { letter-spacing: 2px; margin-right: .3em; }
-.matrix-key .k3 b { color: var(--md-primary-fg-color); font-weight: 800; }
-.matrix-key .k2 b { color: var(--md-primary-fg-color); }
-.matrix-key .k1 b { color: var(--md-default-fg-color--lighter); }
-.matrix-key .k0 b { color: var(--md-default-fg-color--lightest); }
+.matrix-key > span { display: inline-flex; align-items: center; gap: .45rem; }
 
 /* ---------- resources section ---------- */
 .home-resources {
