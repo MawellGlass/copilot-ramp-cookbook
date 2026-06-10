@@ -1,15 +1,19 @@
 ---
-title: Skills — reusable capabilities
-hide: [toc]
+title: Skills Catalog
 ---
 
-# Skills — capabilities you build once and reuse
+# Skills Catalog
 
 A **skill** is a **reusable, packaged capability you save once and reuse — or share — instead of
 rebuilding it from scratch.** On the ramp, skills show up in two places: a **Cowork recipe** (a
 multi-step task you capture so the team can rerun it) and a **Studio capability** (an action,
 connector, or MCP tool that lets an agent *do* something in a real system). Different surfaces, same
 instinct — capture it once, reuse it.
+
+This page is the **catalog** — the reusable skills worth building first, grouped by where they live.
+Each links to the [walkthrough](CATALOG.md) that builds or describes it. Think of skills as the
+durable counterpart to the prompts and walkthroughs in each stage: a prompt is something you *run*; a
+skill is something you *keep*.
 
 !!! note "Not to be confused with…"
     "Skill" is an overloaded word. On this site it means a **reusable capability** (the definition
@@ -41,28 +45,74 @@ it**. Skills are how one person's best workflow becomes everyone's default.
 
 ---
 
-## Where skills live on the ramp
+## Cowork skills — reusable recipes
 
-Skills show up at two points on the journey — and they're the same idea at two levels of power.
+In [Stage 3 · Cowork](stages/stage-3-cowork.md), a skill is a **reusable recipe**: a multi-step
+task captured once — with its name, inputs, and expected output — so anyone on the team can rerun it
+cold instead of reinventing the prompt. The ones worth capturing first:
 
-### Stage 3 · Cowork — a saved recipe
+<div class="grid cards" markdown>
 
-In [Cowork](stages/stage-3-cowork.md), a skill is a **reusable recipe**: a multi-step task,
-captured once with its name, inputs, and expected output, so anyone on the team can rerun it cold
-instead of reinventing the prompt. It's the difference between a clever one-off and an
-organizational capability.
+-   **[Recurring weekly digest](walkthroughs/cowork-recurring-weekly-digest.md)**
 
-- [Build a "Cowork recipe" library for your org](walkthroughs/cowork-recipe-library.md)
-- [Stand up a recurring weekly digest](walkthroughs/cowork-recurring-weekly-digest.md)
+    Describe the Monday-morning digest once and let it run every week without re-prompting.
 
-### Stage 5 · Studio — an action, connector, or tool
+-   **[Customer-health digest](walkthroughs/cowork-customer-health-digest.md)**
 
-In [Copilot Studio](stages/stage-5-studio.md), a skill becomes a **packaged capability that lets an
-agent *do* something** — a connector action against a system of record, a Power Automate flow, or an
-MCP tool. You build it once and reuse it across agents.
+    Rank your whole book of business worst-first, on a schedule — so you know where to spend the week.
 
-- [Give a Studio agent a real action with a connector](walkthroughs/studio-connector-action.md)
-- [Add an MCP / tool integration](walkthroughs/studio-mcp-tool-integration.md)
+-   **[Multi-document brief](walkthroughs/cowork-multi-doc-synthesis.md)**
+
+    A repeatable "stack of documents → one coherent brief" recipe.
+
+-   **[QBR prep cycle](walkthroughs/cowork-qbr-prep-cycle.md)**
+
+    Account data → deck → talking points → follow-ups, run as one rerunnable flow.
+
+-   **[Incident postmortem](walkthroughs/cowork-incident-postmortem.md)**
+
+    Reconstruct timeline, root cause, and actions from scattered sources into one blameless draft.
+
+-   **[Build a recipe library](walkthroughs/cowork-recipe-library.md)**
+
+    Capture any great Cowork run as a reusable recipe so it doesn't die with the session.
+
+</div>
+
+## Studio skills — actions, connectors & tools
+
+In [Stage 5 · Copilot Studio](stages/stage-5-studio.md), a skill becomes a **packaged capability
+that lets an agent *do* something** — a connector action against a system of record, a Power Automate
+flow, or an MCP tool. You build it once and reuse it across agents. The platform skills worth
+building first:
+
+<div class="grid cards" markdown>
+
+-   **[Connector action](walkthroughs/studio-connector-action.md)**
+
+    Let an agent look up records, create tickets, and trigger workflows — not just answer.
+
+-   **[MCP tool integration](walkthroughs/studio-mcp-tool-integration.md)**
+
+    Extend an agent with external tools via the Model Context Protocol.
+
+-   **[Power Automate flow](walkthroughs/studio-power-automate-flow.md)**
+
+    Connect an agent to real business systems through a flow.
+
+-   **[Fabric data agent connection](walkthroughs/studio-fabric-agent.md)**
+
+    Ground an agent on your warehouse and semantic models — answer from data, not just documents.
+
+-   **[Autonomous event trigger](walkthroughs/studio-autonomous-triggers.md)**
+
+    Have an agent act when something happens — no user prompt required.
+
+-   **[Multi-turn conversation design](walkthroughs/studio-multi-turn-conversation.md)**
+
+    A reusable topic that asks what it needs to know and recovers gracefully.
+
+</div>
 
 ---
 

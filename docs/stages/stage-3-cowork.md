@@ -259,6 +259,22 @@ Capture a great run so it doesn't die with the session — make it a reusable **
 
 ---
 
+## Useful skills
+
+The walkthroughs above aren't all one-offs — the recurring and templated ones become reusable
+**[skills](../skills.md)**: capture the recipe once and the whole team reruns it cold. The ones worth
+saving first:
+
+- **[Recurring weekly digest](../walkthroughs/cowork-recurring-weekly-digest.md)** — a standing Monday-morning digest that runs itself.
+- **[Customer-health digest](../walkthroughs/cowork-customer-health-digest.md)** — rank your whole book of business worst-first, on a schedule.
+- **[Multi-document brief](../walkthroughs/cowork-multi-doc-synthesis.md)** — a repeatable "stack of docs → one brief" recipe.
+- **[QBR prep cycle](../walkthroughs/cowork-qbr-prep-cycle.md)** — the whole quarterly-review cycle as one rerunnable flow.
+- **[Build a recipe library](../walkthroughs/cowork-recipe-library.md)** — capture any great run so it doesn't die with the session.
+
+Browse them all in the **[Skills Catalog](../skills.md)**.
+
+---
+
 !!! borrow "Borrow, don't build"
     Rather than re-document Cowork process-by-process, lean on the work already out there.
 
