@@ -1,17 +1,15 @@
 ---
-title: Skills — reuse across the ramp
+title: Skills — reusable capabilities
 hide: [toc]
 ---
 
-# Skills — the reusable capabilities that compound as you climb
-
-Most of this cookbook is about *moving up* a stage. This page is about something that runs
-**across** every stage: the habit of capturing what works once and **reusing** it, instead of
-re-typing it. That captured-and-reusable unit is what we'll call a **skill**.
+# Skills — capabilities you build once and reuse
 
 A **skill** is a **reusable, packaged capability you save once and reuse — or share — instead of
-rebuilding from scratch.** It might be a saved prompt, a documented Cowork recipe, an action that
-calls a real system, or an MCP tool. The form changes as you climb the ramp; the idea doesn't.
+rebuilding it from scratch.** On the ramp, skills show up in two places: a **Cowork recipe** (a
+multi-step task you capture so the team can rerun it) and a **Studio capability** (an action,
+connector, or MCP tool that lets an agent *do* something in a real system). Different surfaces, same
+instinct — capture it once, reuse it.
 
 !!! note "Not to be confused with…"
     "Skill" is an overloaded word. On this site it means a **reusable capability** (the definition
@@ -29,48 +27,50 @@ calls a real system, or an MCP tool. The form changes as you climb the ramp; the
 ## Why skills matter
 
 The difference between a team that *uses* Copilot and a team that *compounds* with it is reuse. A
-great prompt someone wrote once, a Cowork hand-off that saved half a day, an agent action that
-looks up a record — each is worth far more when it's **captured, named, and rerunnable by someone
-who didn't build it**. Skills are how one person's best workflow becomes everyone's default.
+Cowork hand-off that saved half a day, an agent action that looks up a record in a real system —
+each is worth far more when it's **captured, named, and rerunnable by someone who didn't build
+it**. Skills are how one person's best workflow becomes everyone's default.
 
 !!! borrow "Borrow, don't build"
     The exact feature names and limits move fast — Microsoft owns the authoritative reference. When a
     detail matters for customer-facing work, go to the source:
 
     - [Which Copilot is right for you](https://learn.microsoft.com/en-us/copilot/) — names and maps every Copilot
-    - [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts) — the in-product home of reusable prompts
+    - [Microsoft 365 Copilot documentation](https://learn.microsoft.com/en-us/copilot/microsoft-365/) — the reference for Cowork and how it runs multi-step tasks
     - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) — the reference for actions, connectors, and tools
-    - [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) — canonical terms for pro-code tools and functions
 
 ---
 
-## The same idea, one rung at a time
+## Where skills live on the ramp
 
-A skill takes a different shape at each stage — but every shape is "capture it once, reuse it
-later." Here's how the word shows up as you climb:
+Skills show up at two points on the journey — and they're the same idea at two levels of power.
 
-| Stage | A "skill" here is… | Where it shows up |
-|-------|--------------------|-------------------|
-| **[1 · Chat](stages/stage-1-chat.md)** | a **saved, reusable prompt** — the seed of every skill | [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts) |
-| **[2 · First-party agents](stages/stage-2-first-party.md)** | a **prebuilt agent** Microsoft already packaged for you to reuse | [Stage 2 overview](stages/stage-2-first-party.md) |
-| **[3 · Cowork](stages/stage-3-cowork.md)** | a **saved recipe** — a multi-step task captured so the team can rerun it | [Build a Cowork recipe library](walkthroughs/cowork-recipe-library.md) · [Recurring weekly digest](walkthroughs/cowork-recurring-weekly-digest.md) |
-| **[4 · Agent Builder](stages/stage-4-agent-builder.md)** | **instructions + knowledge** bundled into a declarative agent you share | [Stage 4 overview](stages/stage-4-agent-builder.md) |
-| **[5 · Studio](stages/stage-5-studio.md)** | a **packaged capability** — a connector action, an MCP tool, or a reusable topic/component | [Give an agent a real action](walkthroughs/studio-connector-action.md) · [Add an MCP tool](walkthroughs/studio-mcp-tool-integration.md) |
-| **[6 · Foundry](stages/stage-6-foundry.md)** | a **pro-code tool or function** an agent calls | [Stage 6 overview](stages/stage-6-foundry.md) |
+### Stage 3 · Cowork — a saved recipe
 
-The thread is deliberate: a **saved prompt** in Chat is the same instinct as a **Cowork recipe**,
-which is the same instinct as a **Studio action**. Each rung just makes the reusable thing more
-powerful — and more shareable.
+In [Cowork](stages/stage-3-cowork.md), a skill is a **reusable recipe**: a multi-step task,
+captured once with its name, inputs, and expected output, so anyone on the team can rerun it cold
+instead of reinventing the prompt. It's the difference between a clever one-off and an
+organizational capability.
+
+- [Build a "Cowork recipe" library for your org](walkthroughs/cowork-recipe-library.md)
+- [Stand up a recurring weekly digest](walkthroughs/cowork-recurring-weekly-digest.md)
+
+### Stage 5 · Studio — an action, connector, or tool
+
+In [Copilot Studio](stages/stage-5-studio.md), a skill becomes a **packaged capability that lets an
+agent *do* something** — a connector action against a system of record, a Power Automate flow, or an
+MCP tool. You build it once and reuse it across agents.
+
+- [Give a Studio agent a real action with a connector](walkthroughs/studio-connector-action.md)
+- [Add an MCP / tool integration](walkthroughs/studio-mcp-tool-integration.md)
 
 ---
 
 ## Where this leads
 
-The first time you save a prompt instead of retyping it, you've started thinking in skills. The first
-time a teammate reruns *your* recipe, you've started building org capability. And the moment a recipe
-is stable enough that nobody should have to rerun it by hand, you're ready to **build** it — that's
-[Stage 4 · Agent Builder](stages/stage-4-agent-builder.md) and, beyond it,
-[Stage 5 · Copilot Studio](stages/stage-5-studio.md), where a skill becomes a real action against a
-real system.
+The arc is the same instinct growing up. A Cowork recipe is a skill you *describe*; a Studio action
+is a skill you *build*. The moment a recipe is stable, repeated, and worth making bulletproof, it's
+ready to graduate into a real capability in [Stage 5 · Copilot Studio](stages/stage-5-studio.md) —
+an action against a real system, governed and shared.
 
-> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · or the [Glossary](glossary.md) for the rest of the vocabulary.
+> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · or [Stage 5 · Studio](stages/stage-5-studio.md) for actions and tools.

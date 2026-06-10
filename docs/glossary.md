@@ -68,9 +68,9 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 
 ## Building blocks
 
-- **Skill** — a **reusable, packaged capability you save once and reuse or share** — a saved prompt, a
-  Cowork recipe, an agent action, an MCP tool. The form changes by stage; the idea (capture it once,
-  rerun it) doesn't. See [Skills — reuse across the ramp](skills.md). *Not* the first-party **Skills
+- **Skill** — a **reusable, packaged capability you save once and reuse or share** — a Cowork recipe
+  ([Stage 3](stages/stage-3-cowork.md)) or a Studio action / connector / MCP tool
+  ([Stage 5](stages/stage-5-studio.md)). See [Skills](skills.md). *Not* the first-party **Skills
   agent** (career stretch assignments) or your personal **skill level**.
 - **Grounding** — giving an agent the specific content it should answer from (a SharePoint site, a set of
   files, a database) so its answers are based on *your* facts, not the model's general training.
