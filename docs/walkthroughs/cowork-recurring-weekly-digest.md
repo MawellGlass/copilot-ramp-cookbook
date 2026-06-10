@@ -90,7 +90,8 @@ A working digest for *you* is the seed of a digest for your *team*:
   forward it or post it to a channel.
 
 ## Where this leads (the ramp)
-Watch what happens the first time a teammate says *"can I get that Monday digest too?"* You're no longer
+A standing digest you've shaped once is a **[Cowork skill](../skills.md)** — a reusable capability, not a
+task you re-trigger. Watch what happens the first time a teammate says *"can I get that Monday digest too?"* You're no longer
 automating a task for yourself — you're packaging a *process* for other people. That's the jump from
 running tasks to **building an agent**: **Stage 4 · Agent Builder**, where the knowledge and the steps
 get bundled once, for everyone.

@@ -11,6 +11,23 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 
 ## June 2026
 
+### A new "Skills Catalog" collects reusable Cowork and Studio skills
+*June 9, 2026*
+
+"Skill" was an overloaded word — it could mean the first-party Skills agent, your personal skill level,
+or a reusable capability. The new [Skills Catalog](skills.md) pins down the third meaning and lists the
+reusable skills worth building first:
+
+- **Cowork skills** — saved, reusable **recipes** the team can rerun (weekly digest, QBR prep cycle, …).
+- **Studio skills** — framed realistically for today: in Copilot Studio a *skill* is **one specific
+  kind of tool** (an embedded pro-code Bot Framework / Microsoft 365 Agents SDK agent). Connector
+  actions, flows, and MCP tools are **tools**, not skills — so those stay in Stage 5 and the catalog
+  keeps the Studio *skill* entry scoped to what exists today.
+- **Stage 3** carries a "Useful skills" list alongside its walkthroughs, and the Glossary has a
+  matching **Skill** entry.
+- A disambiguation callout separates "skill" (a reusable capability) from the Skills *agent* and from
+  the new / some / experienced **skill level** slider on the role paths.
+
 ### Six more Stage 1 chat walkthroughs now show real in-product screenshots
 *June 5, 2026*
 

@@ -64,7 +64,7 @@ Build a real designed agent, give it an action against a real system, then ship 
 
 ## Walkthroughs — technical foundations
 
-Build these first — the platform skills every functional agent below depends on.
+Build these first — the platform tools every functional agent below depends on.
 
 <div id="rc-filterbar"></div>
 
