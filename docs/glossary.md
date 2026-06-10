@@ -69,8 +69,8 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 ## Building blocks
 
 - **Skill** — a **reusable, packaged capability you save once and reuse or share**. Today the clearest
-  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **[Autopilots](stages/stage-5-autopilots.md)**,
-  that same instinct is equipped onto an always-on agent like **Scout** so it draws on the capability
+  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **[Stage 5 · Autonomous Agents](stages/stage-5-autopilots.md)**,
+  that same instinct is equipped onto an always-on, autonomous agent so it draws on the capability
   in the background (emerging and gated). In **Copilot Studio**, *skill*
   is a precise term for **one specific kind of tool** — an embedded pro-code agent (Bot Framework /
   Microsoft 365 Agents SDK) registered so your agent can call it; the connector actions, flows, and

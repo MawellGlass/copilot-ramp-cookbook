@@ -55,9 +55,9 @@ exists for exactly that moment, and so does the reverse instinct.
 
 ---
 
-## Stage 5 → Stage 4 · Autopilots back to Agent Builder { #autopilots-to-agent-builder }
+## Stage 5 → Stage 4 · Autonomous agents back to Agent Builder { #autopilots-to-agent-builder }
 
-Autopilots like **Scout** are always-on, autonomous agents. They earn their keep on a *recurring,
+Autonomous and triggered agents are always-on by design. They earn their keep on a *recurring,
 background* job — one triggered by an event or signal, not a task you're happy to start yourself.
 
 !!! warning "You've gone too far if…"
@@ -68,7 +68,7 @@ background* job — one triggered by an event or signal, not a task you're happy
 **Drop back to [Stage 4 · Agent Builder](stages/stage-4-agent-builder.md).** If you just need an
 on-demand agent over your own knowledge with a clear persona, build it declaratively — no always-on
 autonomy required. (And if you actually need real actions or org-wide publishing, that's *up* to
-[Stage 6 · Copilot Studio](stages/stage-6-studio.md), not back to Autopilots.)
+[Stage 6 · Copilot Studio](stages/stage-6-studio.md), not back to an autonomous agent.)
 
 ---
 

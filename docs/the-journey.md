@@ -49,13 +49,13 @@ Seven stages. Each one builds on the last — but you can start wherever you are
 
     [→ Go to Stage 4](stages/stage-4-agent-builder.md)
 
--   **Stage 5 · Autopilots**
+-   **Stage 5 · Autonomous Agents**
 
     ---
 
-    Always-on, autonomous agents like **Scout** that run a defined job in the background — triggered by events, not by your prompt. An emerging, **gated** capability: real where you have it, but not yet available to everyone.
+    Always-on, autonomous agents that run a defined job in the background — triggered by an event or schedule, not by your prompt. An emerging, **gated** capability showing up across Microsoft's portfolio: real where you have it, but not yet available to everyone.
 
-    **You're ready for this if** you have a recurring job that shouldn't wait for you to start it — and access to an Autopilot in your tenant.
+    **You're ready for this if** you have a recurring job that shouldn't wait for you to start it — and access to an autonomous agent in your tenant.
 
     [→ Go to Stage 5](stages/stage-5-autopilots.md)
 

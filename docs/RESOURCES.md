@@ -16,9 +16,12 @@ the matching stage page on the site. These are the "broad set of resources to le
 > was held back.
 
 > Verification note: product surfaces move fast (Cowork, Agent Builder, first-party agents). Treat
-> these hubs as the source of truth and re-check before customer-facing claims. **New as of June 2026:**
-> Microsoft announced **Scout** and a new "Autopilots" always-on agent category — now folded into the
-> journey as **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)** (emerging and gated).
+> these hubs as the source of truth and re-check before customer-facing claims. **Emerging across the
+> portfolio:** autonomous and triggered agents are showing up in several Microsoft products — Copilot
+> Studio event triggers, the Sales and Customer Service agents, and Security Copilot agents — though
+> availability and gating vary by product, license, and region. The journey captures this as
+> **[Stage 5 · Autonomous & Always-On Agents](stages/stage-5-autopilots.md)**; confirm status on the
+> product hubs before any customer-facing claim.
 
 ---
 
@@ -92,6 +95,21 @@ didn't even have to build it" demos that warm customers up before they build the
 
 ---
 
+## Stage 5 · Autonomous & Always-On Agents
+
+| Resource | What it is | Link |
+|----------|-----------|------|
+| **Agents in Microsoft 365 (roster + Sales Agent)** | The canonical hub for the ready-made agents included with M365 Copilot — the source of truth for what exists and what's gated | [adoption.microsoft.com/ai-agents](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/) |
+| **Copilot Studio triggers (autonomous agents)** | Official Learn docs for wiring an agent to an event or schedule so it acts without being prompted — the build-your-own autonomous path | [learn.microsoft.com/copilot-studio/triggers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about) |
+| **Security Copilot agents** | Microsoft's autonomous agents for security teams (e.g. phishing-triage) that investigate and recommend a verdict | [learn.microsoft.com/copilot/security](https://learn.microsoft.com/en-us/copilot/security/) |
+| **Agent governance + Agent 365** | Lifecycle, compliance, and data-security guidance for running autonomous agents at scale | [aka.ms/agent365/resources](https://aka.ms/agent365/resources) |
+
+**Reuse tip:** availability and gating change fast here, so point readers to the **Agents in Microsoft 365
+hub** as the roster source of truth and have them confirm what's switched on for their tenant rather than
+relying on a snapshot.
+
+---
+
 ## Stage 6 · Copilot Studio (the low-code destination)
 
 | Resource | What it is | Link |
@@ -158,10 +176,6 @@ employee publishing under their own name. Applying that strictly:
   add a clearly-labeled **"Community voices"** section, she'd be a top pick — but that's a separate,
   explicitly-marked bucket, not this one.
 - Large independent channels (Kevin Stratvert, etc.) — out for the same reason.
-
-> **Open decision for Max:** keep the set strictly first-party (current state), or add a separate,
-> clearly-labeled **Community voices** shelf so standout MVPs like Lisa Crosbie can be surfaced without
-> implying Microsoft endorsement. Defaulting to strict until you say otherwise.
 
 ---
 
