@@ -5,17 +5,11 @@ title: Skills Catalog
 # Skills Catalog
 
 A **skill** is a **reusable, packaged capability you save once and reuse — or share — instead of
-rebuilding it from scratch.** On the ramp, skills show up in two places: a **Cowork recipe** (a
-multi-step task you capture so the team can rerun it) and a **Studio tool** (an action, connector, or
-MCP tool that lets an agent *do* something in a real system). Different surfaces, same instinct —
-capture it once, reuse it.
-
-!!! warning "A note on the word *skill* in Copilot Studio"
-    Copilot Studio has a feature literally named **Skills** — and it means something narrower than the
-    cookbook's sense. There, a *skill* is an existing **pro-code agent** (built with the Bot Framework
-    or the **Microsoft 365 Agents SDK**) that you register so your Studio agent can call it as a tool.
-    The Studio entries in this catalog are **tools/actions** (connector actions, flows, MCP tools) —
-    *not* that feature. See [Use skills in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills).
+rebuilding it from scratch.** The clearest example today is a **Cowork recipe** — a multi-step task
+you capture so the team can rerun it. In **Copilot Studio**, *skill* is a precise, narrower term: a
+specific kind of **tool** (an embedded pro-code agent), *not* a catch-all for everything an agent can
+do. Same instinct everywhere — capture it once, reuse it — but the Studio meaning is specific, so this
+catalog keeps the two straight.
 
 This page is the **catalog** — the reusable skills worth building first, grouped by where they live.
 Each links to the [walkthrough](CATALOG.md) that builds or describes it. Think of skills as the
@@ -42,9 +36,9 @@ skill is something you *keep*.
 ## Why skills matter
 
 The difference between a team that *uses* Copilot and a team that *compounds* with it is reuse. A
-Cowork hand-off that saved half a day, an agent action that looks up a record in a real system —
-each is worth far more when it's **captured, named, and rerunnable by someone who didn't build
-it**. Skills are how one person's best workflow becomes everyone's default.
+Cowork recipe that saved half a day, a Studio tool your agents reuse instead of rebuilding — each is
+worth far more when it's **captured, named, and rerunnable by someone who didn't build it**. Skills
+are how one person's best workflow becomes everyone's default.
 
 !!! borrow "Borrow, don't build"
     The exact feature names and limits move fast — Microsoft owns the authoritative reference. When a
@@ -90,57 +84,32 @@ cold instead of reinventing the prompt. The ones worth capturing first:
 
 </div>
 
-## Studio skills — tools an agent can call
+## Studio skills — a specific kind of tool
 
-In [Stage 5 · Copilot Studio](stages/stage-5-studio.md), a skill becomes a **reusable capability that
-lets an agent *do* something** in a real system. In the product you build these as **tools** — a
-connector action against a system of record, a Power Automate flow, or an MCP tool — and reuse them
-across agents.
+In [Stage 5 · Copilot Studio](stages/stage-5-studio.md), **skill** is a precise product term — not a
+synonym for *tool*. Today a Studio skill is **one specific type of tool**: an existing **pro-code
+agent**, built with the **Bot Framework** or the **Microsoft 365 Agents SDK**, that you register so
+your Studio agent can call it as a tool from a topic
+([how it works](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills)).
 
-!!! info "How Copilot Studio uses the word *skill*"
-    The entries below are Studio **tools/actions** — that's what you add and click in the maker.
-    Copilot Studio *also* has a feature literally named **Skills**: registering an existing **pro-code
-    agent** (Bot Framework or **Microsoft 365 Agents SDK**) so your agent can call it as a tool. This
-    catalog uses *skill* in the cookbook's broader sense; none of the entries below are the Studio
-    **Skills** feature. See [Use skills in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills).
+That's the honest scope **today** — a narrow, pro-code capability. There's no point-and-click
+walkthrough for building one yet, so the catalog doesn't pretend otherwise. This section will grow as
+the skill surface in Studio expands, and we'll update it when it does.
 
-The platform tools worth building first:
-
-<div class="grid cards" markdown>
-
--   **[Connector action](walkthroughs/studio-connector-action.md)**
-
-    Let an agent look up records, create tickets, and trigger workflows — not just answer.
-
--   **[MCP tool integration](walkthroughs/studio-mcp-tool-integration.md)**
-
-    Extend an agent with external tools via the Model Context Protocol.
-
--   **[Power Automate flow](walkthroughs/studio-power-automate-flow.md)**
-
-    Connect an agent to real business systems through a flow.
-
--   **[Fabric data agent connection](walkthroughs/studio-fabric-agent.md)**
-
-    Ground an agent on your warehouse and semantic models — answer from data, not just documents.
-
--   **[Autonomous event trigger](walkthroughs/studio-autonomous-triggers.md)**
-
-    Have an agent act when something happens — no user prompt required.
-
--   **[Multi-turn conversation design](walkthroughs/studio-multi-turn-conversation.md)**
-
-    A reusable topic that asks what it needs to know and recovers gracefully.
-
-</div>
+!!! note "Skills vs. tools in Studio"
+    Connector actions, Power Automate flows, MCP tools, prompts, and topics are all **tools** — the
+    broad set of things an agent can call. A **skill** is just *one* of those tool types (the embedded
+    pro-code agent above). So the Studio building blocks in [Stage 5](stages/stage-5-studio.md) —
+    connector actions, MCP tools, flows, Fabric connections, triggers — are **tools**, not skills.
+    Build them there; they're the foundation a skill plugs into.
 
 ---
 
 ## Where this leads
 
-The arc is the same instinct growing up. A Cowork recipe is a skill you *describe*; a Studio action
-is a skill you *build*. The moment a recipe is stable, repeated, and worth making bulletproof, it's
-ready to graduate into a real capability in [Stage 5 · Copilot Studio](stages/stage-5-studio.md) —
-an action against a real system, governed and shared.
+The arc is the same instinct growing up. A **Cowork recipe** is a skill you *describe* in plain
+language. When a recipe is stable, repeated, and worth making bulletproof, it's ready to graduate into
+a real capability in [Stage 5 · Copilot Studio](stages/stage-5-studio.md) — built as a **tool**
+(a connector action, flow, or MCP tool) an agent calls against a real system, governed and shared.
 
-> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · or [Stage 5 · Studio](stages/stage-5-studio.md) for actions and tools.
+> **Next:** [Stage 3 · Cowork](stages/stage-3-cowork.md) — where a saved recipe becomes a team skill · or [Stage 5 · Studio](stages/stage-5-studio.md) for the tools an agent calls.

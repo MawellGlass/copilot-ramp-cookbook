@@ -64,7 +64,7 @@ Build a real designed agent, give it an action against a real system, then ship 
 
 ## Walkthroughs — technical foundations
 
-Build these first — the platform skills every functional agent below depends on.
+Build these first — the platform tools every functional agent below depends on.
 
 <div id="rc-filterbar"></div>
 
@@ -154,23 +154,6 @@ Everything that makes a Studio agent real — designed conversation, tools and a
 </section>
 
 </div>
-
----
-
-## Useful skills
-
-Each technical foundation above is a reusable **[skill](../skills.md)** — build it once, reuse it
-across every agent. In Copilot Studio you build these as **tools** (connector actions, flows, MCP
-tools); the product *also* has a separate **Skills** feature for embedding a pro-code agent. The
-platform tools worth building first:
-
-- **[Connector action](../walkthroughs/studio-connector-action.md)** — let an agent look up records, create tickets, trigger workflows.
-- **[MCP tool integration](../walkthroughs/studio-mcp-tool-integration.md)** — extend an agent with external tools.
-- **[Power Automate flow](../walkthroughs/studio-power-automate-flow.md)** — connect an agent to real business systems.
-- **[Fabric data agent connection](../walkthroughs/studio-fabric-agent.md)** — ground an agent on your warehouse and semantic models.
-- **[Autonomous event trigger](../walkthroughs/studio-autonomous-triggers.md)** — have an agent act when something happens, no prompt required.
-
-Browse them all in the **[Skills Catalog](../skills.md)**.
 
 ---
 

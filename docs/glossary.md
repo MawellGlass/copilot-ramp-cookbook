@@ -68,12 +68,13 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 
 ## Building blocks
 
-- **Skill** — a **reusable, packaged capability you save once and reuse or share** — a Cowork recipe
-  ([Stage 3](stages/stage-3-cowork.md)) or a Studio **tool** (a connector action, flow, or MCP tool)
-  an agent calls to do real work ([Stage 5](stages/stage-5-studio.md)). See the
-  [Skills Catalog](skills.md). *Not* the first-party **Skills agent** (career stretch assignments),
-  your personal **skill level**, or Copilot Studio's **Skills** feature (embedding a pro-code
-  Bot Framework / Microsoft 365 Agents SDK agent as a tool).
+- **Skill** — a **reusable, packaged capability you save once and reuse or share**. Today the clearest
+  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **Copilot Studio**, *skill*
+  is a precise term for **one specific kind of tool** — an embedded pro-code agent (Bot Framework /
+  Microsoft 365 Agents SDK) registered so your agent can call it; the connector actions, flows, and
+  MCP tools in [Stage 5](stages/stage-5-studio.md) are **tools**, not skills. See the
+  [Skills Catalog](skills.md). *Not* the first-party **Skills agent** (career stretch assignments) or
+  your personal **skill level**.
 - **Grounding** — giving an agent the specific content it should answer from (a SharePoint site, a set of
   files, a database) so its answers are based on *your* facts, not the model's general training.
 - **Knowledge source** — the documents or sites an agent is grounded on. The single biggest driver of answer

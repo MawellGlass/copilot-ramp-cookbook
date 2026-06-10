@@ -19,11 +19,12 @@ or a reusable capability. The new [Skills Catalog](skills.md) pins down the thir
 reusable skills worth building first:
 
 - **Cowork skills** — saved, reusable **recipes** the team can rerun (weekly digest, QBR prep cycle, …).
-- **Studio skills** — the **tools** an agent calls to do real work (connector actions, flows, MCP
-  tools). In the product, *Skills* is a separate, narrower feature (embedding a pro-code agent) — the
-  catalog flags the difference.
-- **Stage 3** and **Stage 5** now carry a "Useful skills" list alongside their walkthroughs, and the
-  Glossary has a matching **Skill** entry.
+- **Studio skills** — framed realistically for today: in Copilot Studio a *skill* is **one specific
+  kind of tool** (an embedded pro-code Bot Framework / Microsoft 365 Agents SDK agent). Connector
+  actions, flows, and MCP tools are **tools**, not skills — so those stay in Stage 5 and the catalog
+  keeps the Studio *skill* entry scoped to what exists today.
+- **Stage 3** carries a "Useful skills" list alongside its walkthroughs, and the Glossary has a
+  matching **Skill** entry.
 - A disambiguation callout separates "skill" (a reusable capability) from the Skills *agent* and from
   the new / some / experienced **skill level** slider on the role paths.
 
