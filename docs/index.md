@@ -163,6 +163,16 @@ The fastest way to start: open **[Turn a meeting into tracked follow-ups](walkth
     <span class="rd">Microsoft's official "how the tech works" channel, hosted by Jeremy Chapman (Director, M365).</span>
     <span class="src">Microsoft · YouTube</span>
   </a>
+  <a class="reslink" href="https://microsoft.github.io/copilot-camp/" target="_blank" rel="noopener">
+    <span class="rt"><span aria-hidden="true">→</span>Copilot Camp</span>
+    <span class="rd">Hands-on labs to build agents and extensions — from no-code Studio to pro-code. Learn by building.</span>
+    <span class="src">Microsoft · GitHub</span>
+  </a>
+  <a class="reslink" href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener">
+    <span class="rt"><span aria-hidden="true">→</span>Generative AI for Beginners</span>
+    <span class="rd">A free 21-lesson course on the fundamentals behind Copilot and agents — prompts, models, and apps.</span>
+    <span class="src">Microsoft · GitHub</span>
+  </a>
 </div>
 <p class="res-rule">Stage-specific links live on each stage page and in full in <a href="RESOURCES/">Resources</a>.</p>
 </div>
