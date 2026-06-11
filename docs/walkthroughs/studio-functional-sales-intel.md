@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, Champion, Manager · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Sales Enablement Agent](../solutions/sales-enablement-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 Sales reps lose deals not because they don't know the product — but because they can't find the right information fast enough. The battle card is buried in SharePoint. The right case study is in a folder no one's indexed. The objection they just heard was handled in a call three months ago, but no one captured the response.

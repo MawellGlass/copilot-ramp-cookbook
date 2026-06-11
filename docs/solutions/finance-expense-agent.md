@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that gives employees instant, grounded answers on expense policy, procurement rules, and approval thresholds — and guides them directly into the right submission system rather than leaving them to work it out.
 
+> **🛠️ Build it step by step →** [Finance: Self-service expense and procurement guidance](../walkthroughs/studio-functional-finance-expense.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Policy document grounding → Guided process walkthrough → Link to form or system → Escalate individual rulings to Finance
 
 ---

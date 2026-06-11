@@ -11,6 +11,8 @@ updated: 2026-06-05
 
 > **What this builds.** A Copilot Studio agent that turns "I'm running an internal event" into an organised plan: it captures the event details, produces the **logistics checklist** (room, catering, AV, comms), kicks off the **bookings**, and drafts the **attendee communications** — so organising an all-hands, offsite, or team day takes minutes of coordination instead of a week of back-and-forth.
 
+> **🛠️ Build it step by step →** [Workplace: plan an internal event end to end](../walkthroughs/studio-functional-events-coordination.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Capture event details → build logistics checklist → reserve rooms / request catering → draft attendee comms
 
 ---

@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 2–3 hours
 
+> **🧱 Build-only walkthrough.** A hands-on Studio build with no separate solution-template blueprint — the steps below are the complete spec.
+
 ## When to use this
 
 Employees who need a contract reviewed often don't know where to start. Is this an NDA or a service agreement? Does this need Legal or can procurement handle it? What information does Legal need from me? How urgent is "urgent"?

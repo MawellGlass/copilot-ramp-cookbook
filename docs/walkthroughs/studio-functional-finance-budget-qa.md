@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, Champion, Manager · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **🧱 Build-only walkthrough.** A hands-on Studio build with no separate solution-template blueprint — the steps below are the complete spec.
+
 ## When to use this
 
 Budget owners — team managers, department heads, project owners — generate a consistent stream of Finance queries: "Where am I vs. plan?", "What's the process for requesting more budget?", "When is the reforecast deadline?", "I need to overspend on [item] — what do I do?"

@@ -15,6 +15,8 @@ updated: 2026-06-05
 
 **Stage:** Copilot Studio · **For:** Engineering teams, SREs, on-call responders · **Level:** Intermediate · **Time:** 4–5 hours
 
+> **📐 Full blueprint & test plan →** [Engineering On-Call Runbook Agent](../solutions/engineering-oncall-runbook-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ---
 
 ## When to use this

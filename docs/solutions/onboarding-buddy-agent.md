@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that personalises its onboarding guidance based on who the new employee is — their role, team, and start week — so they get the answers relevant to them rather than a generic employee handbook link.
 
+> **🛠️ Build it step by step →** [HR: Guide new starters through a personalised first-week experience](../walkthroughs/studio-functional-hr-onboarding.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Identify the employee → Personalise context → Guide through first-week questions → Escalate to a human buddy when needed
 
 ---

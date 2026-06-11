@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A production-ready Copilot Studio agent that answers policy and process questions from your org's documents. Works for any function — HR, IT, Finance, Legal. Ground it on your SharePoint, deploy to Teams. Copy, adapt, ship.
 
+> **🛠️ Build it step by step →** [HR: Answer employee questions with a policies agent](../walkthroughs/studio-functional-hr-policy-faq.md) — a worked Studio build of this blueprint (HR is the example; the template adapts to any function).
+
 **Adapts to:** HR · IT · Finance · Legal · Operations
 
 ---

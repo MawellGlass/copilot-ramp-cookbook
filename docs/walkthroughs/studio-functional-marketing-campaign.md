@@ -15,6 +15,8 @@ updated: 2026-06-05
 
 **Stage:** Copilot Studio · **For:** Marketing teams, campaign managers, content leads · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Marketing Campaign Agent](../solutions/marketing-campaign-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ---
 
 ## When to use this

@@ -496,6 +496,8 @@ Tenant-isolated data, least-privilege Entra identity, and the governance plane b
 ## Solution Templates
 _Ready-to-build agent specs. Copy the system prompt, configure the topics, run the test cases, ship._
 
+_Each Studio solution template is the **blueprint** (what & why); most pair with a click-by-click **build walkthrough** in the Stage 6 list above (the how). The pages cross-link both ways._
+
 ### Policy FAQ Agent → solution template
 **Adapts to:** HR · IT · Finance · Legal · Any team with a policy doc library · `status: solution-template`
 A complete, copy-paste-ready agent spec: system prompt, topics, starter prompts, test cases, and deployment checklist. Works for any function — adapt the [bracketed] values and build.

@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin · **Level:** Intermediate · **Time:** 4–5 hours
 
+> **📐 Full blueprint & test plan →** [IT Helpdesk Triage Agent](../solutions/it-helpdesk-triage-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 IT helpdesks spend a disproportionate amount of time on repeatable tier-1 questions: password resets, VPN access, software requests, "how do I…" queries. These are answerable from a knowledge base. The cost isn't the answer — it's the ticket volume and the routing noise.

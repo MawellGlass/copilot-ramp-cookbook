@@ -15,6 +15,8 @@ updated: 2026-06-05
 
 **Stage:** Copilot Studio · **For:** Customer support teams, support ops, CX leads · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Customer Support Deflection Agent (internal)](../solutions/support-deflection-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ---
 
 ## When to use this

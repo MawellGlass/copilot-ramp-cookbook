@@ -15,6 +15,8 @@ updated: 2026-06-05
 
 **Stage:** Copilot Studio · **For:** Field service teams, dispatchers, service operations · **Level:** Intermediate · **Time:** 4–5 hours
 
+> **📐 Full blueprint & test plan →** [Field Service Triage Agent](../solutions/field-service-triage-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ---
 
 ## When to use this

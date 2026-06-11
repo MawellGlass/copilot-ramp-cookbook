@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that deflects tier-1 IT queries with instant KB answers — and for anything that needs a human, collects the right structured information and raises the ticket automatically via Power Automate.
 
+> **🛠️ Build it step by step →** [IT: Triage support requests and answer from the knowledge base](../walkthroughs/studio-functional-it-helpdesk.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Triage → Answer from KB or collect fields → Create ticket → Confirm
 
 ---

@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 4–5 hours
 
+> **📐 Full blueprint & test plan →** [IT Access Request Agent](../solutions/it-access-request-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 Access requests are one of the most common IT processes — and one of the most poorly handled. Employees don't know what's on the approved list, submit incomplete requests, get them bounced back, and either give up or re-submit incorrectly. IT spends time triaging requests before they can even be actioned.

@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that gives sales reps instant, grounded access to product positioning, competitive responses, and approved talk tracks — available mid-call-prep, drawn from your actual sales content library.
 
+> **🛠️ Build it step by step →** [Sales: Product intel and objection handling for sales reps](../walkthroughs/studio-functional-sales-intel.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Multi-source knowledge search → Synthesised answer with talk track → Escalate pricing/deal terms to deal desk
 
 ---

@@ -11,6 +11,8 @@ updated: 2026-06-05
 
 > **What this builds.** A Copilot Studio agent that meets an on-call engineer at the worst moment — an alert just fired — and turns it into action: it matches the alert to the right **runbook step**, walks the responder through it, and knows the **escalation path** when the runbook runs out. Less fumbling through wikis at 3 a.m., faster mean-time-to-resolution.
 
+> **🛠️ Build it step by step →** [Engineering: alert to runbook to escalation](../walkthroughs/studio-functional-engineering-oncall.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Alert / symptom in → matching runbook step → guided remediation → escalation path when unresolved
 
 ---

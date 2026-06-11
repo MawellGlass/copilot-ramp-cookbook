@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Policy FAQ Agent](../solutions/policy-faq-agent.md) — the function-agnostic blueprint this HR build is based on (system prompt, topics, and test cases that adapt to any function).
+
 ## When to use this
 
 HR teams field the same questions all day: How much PTO do I have? What's the parental leave process? Where is the benefits enrollment portal? These are fully answerable from existing documents — but they still land in inboxes, Slack threads, and HR team chats continuously.

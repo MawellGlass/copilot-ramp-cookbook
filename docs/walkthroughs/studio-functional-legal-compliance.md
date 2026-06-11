@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Legal & Compliance Guidance Agent](../solutions/legal-compliance-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 Legal and compliance teams field a high volume of routine process questions that don't require a lawyer: How do we handle a subject access request? What's the process for getting an NDA signed? Can we share this data with a third party? Do I need to declare this?

@@ -15,6 +15,8 @@ updated: 2026-06-05
 
 **Stage:** Copilot Studio · **For:** Workplace & operations teams, EAs, event organisers · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Event Coordination Agent](../solutions/event-coordination-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ---
 
 ## When to use this

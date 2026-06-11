@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Finance Expense & Procurement Agent](../solutions/finance-expense-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 Finance teams spend significant time fielding queries that have clear, policy-based answers: What can I claim on expenses? What's the approval threshold for this purchase? How do I raise a PO? Where do I submit receipts?

@@ -12,6 +12,9 @@ Ready-to-build agent designs. Each template gives you everything needed to go fr
 
 **Most teams should start in Studio.** Climb to a Foundry template only when you hit a real ceiling.
 
+!!! tip "Template or walkthrough? Use both."
+    A **solution template** is the *blueprint* — the spec for **what** to build and **why**: the system prompt, knowledge-source guidance, topics, a test-case table, and a deployment checklist. Its matching **Studio walkthrough** (under [Stage 6](../stages/stage-6-studio.md)) is the **how** — the click-by-click build in Copilot Studio. Most function templates link straight to their walkthrough, and each walkthrough links back to its blueprint. Read the template to understand the design; follow the walkthrough to build it.
+
 ---
 
 ## Studio templates (low-code)

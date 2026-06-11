@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that gives employees instant, grounded answers on compliance policies and legal processes — with airtight scope controls and an unconditional escalation path for anything requiring legal judgment.
 
+> **🛠️ Build it step by step →** [Legal & Compliance: Policy guidance and process navigation](../walkthroughs/studio-functional-legal-compliance.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Policy document grounding → Process walkthrough → Unconditional escalation for anything requiring legal judgment
 
 ---
