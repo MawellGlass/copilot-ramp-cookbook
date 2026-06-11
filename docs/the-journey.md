@@ -53,9 +53,9 @@ Seven stages. Each one builds on the last — but you can start wherever you are
 
     ---
 
-    Always-on, autonomous agents like **Scout** that run a defined job in the background — triggered by events, not by your prompt. An emerging, **gated** capability: real where you have it, but not yet available to everyone.
+    **Autopilots** are a new category of always-on, autonomous agents that run a defined job in the background — triggered by events, not by your prompt. **Microsoft Scout** is the first one. In **Frontier private preview** today: real where you're enrolled, not yet available to everyone.
 
-    **You're ready for this if** you have a recurring job that shouldn't wait for you to start it — and access to an Autopilot in your tenant.
+    **You're ready for this if** you have a recurring job that shouldn't wait for you to start it — and access to Scout (the first Autopilot) in your tenant.
 
     [→ Go to Stage 5](stages/stage-5-autopilots.md)
 

@@ -12,13 +12,16 @@ the matching stage page on the site. These are the "broad set of resources to le
 > microsoft.com / learn.microsoft.com / aka.ms / official Microsoft YouTube/GitHub surface) **or
 > (b) published by a named Microsoft employee under their own name**. Community creators and MVPs —
 > however good — are **out of scope** for this curated set, so customers can trust every link as
-> first-party or first-party-adjacent. See "A note on named voices" below for who qualified and who
-> was held back.
+> first-party or first-party-adjacent.
 
 > Verification note: product surfaces move fast (Cowork, Agent Builder, first-party agents). Treat
 > these hubs as the source of truth and re-check before customer-facing claims. **New as of June 2026:**
-> Microsoft announced **Scout** and a new "Autopilots" always-on agent category — now folded into the
-> journey as **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)** (emerging and gated).
+> Microsoft introduced the **Autopilots** always-on agent category and **Microsoft Scout**, its first
+> Autopilot, on June 2, 2026 — a **Frontier private-preview** release now folded into the journey as
+> **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)**. The
+> [Microsoft Scout Learn page](https://learn.microsoft.com/en-us/microsoft-scout/) and the
+> [announcement blog](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/)
+> are the source of truth for setup and current availability.
 
 ---
 
@@ -92,6 +95,21 @@ didn't even have to build it" demos that warm customers up before they build the
 
 ---
 
+## Stage 5 · Autopilots
+
+| Resource | What it is | Link |
+|----------|-----------|------|
+| **Introducing Microsoft Scout (M365 blog)** | The June 2, 2026 announcement of the **Autopilots** always-on agent category and **Microsoft Scout**, its first Autopilot | [microsoft.com/m365-blog](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) |
+| **Microsoft Scout (Learn)** | Overview + setup instructions — the source of truth for turning Scout on and its current availability | [learn.microsoft.com/microsoft-scout](https://learn.microsoft.com/en-us/microsoft-scout/) |
+| **Work IQ APIs** | The work-context layer Scout is built on — the same intelligence opened up to developers | [microsoft.com/m365-blog](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/) |
+| **Frontier program** | The early-access path — Scout ships in private preview through Frontier | [m365.cloud.microsoft/frontier](https://m365.cloud.microsoft/frontier) |
+
+**Reuse tip:** the **Microsoft Scout (Learn)** page is the source of truth for setup and current
+availability — link to it from Stage 5 walkthroughs rather than restating prerequisites that may change
+during private preview.
+
+---
+
 ## Stage 6 · Copilot Studio (the low-code destination)
 
 | Resource | What it is | Link |
@@ -140,30 +158,5 @@ any snapshot. Most teams reach Foundry only when low-code genuinely can't expres
 
 ---
 
-## A note on named voices (who qualified, who was held back)
-
-The inclusion rule says a non-Microsoft-direct link is allowed **only** when it's a named Microsoft
-employee publishing under their own name. Applying that strictly:
-
-**Included** —
-- **April Dunnam** — Principal Cloud Advocate at Microsoft. Her "AI Agents Academy" is folded into
-  Stage 4. (`youtube.com/@aprildunnam`, `aprildunnam.com`)
-- **Jeremy Chapman** (Director, M365) via **Microsoft Mechanics**, and **Nicole Herskowitz** (CVP) via
-  the M365 blog — both are Microsoft-direct surfaces, listed by name above.
-
-**Held back (does not meet the rule)** —
-- **Lisa Crosbie** — an excellent Copilot Studio educator, but she is a **community MVP, not a
-  Microsoft employee**. Her Microsoft Learn creator page itself states *"Microsoft doesn't own or
-  review this content."* Under our locked rule she stays out of the curated set. If we later decide to
-  add a clearly-labeled **"Community voices"** section, she'd be a top pick — but that's a separate,
-  explicitly-marked bucket, not this one.
-- Large independent channels (Kevin Stratvert, etc.) — out for the same reason.
-
-> **Open decision for Max:** keep the set strictly first-party (current state), or add a separate,
-> clearly-labeled **Community voices** shelf so standout MVPs like Lisa Crosbie can be surfaced without
-> implying Microsoft endorsement. Defaulting to strict until you say otherwise.
-
----
-
-_All links verified 2026-06-03. When promoting a catalog stub to a full walkthrough, pull the matching
+_All links verified 2026-06-11. When promoting a catalog stub to a full walkthrough, pull the matching
 stage links above into that page's **Related / Resources** section._
