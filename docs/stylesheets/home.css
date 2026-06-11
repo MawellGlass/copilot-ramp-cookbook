@@ -136,6 +136,36 @@
   font-weight: 700;
 }
 
+.journey-legend {
+  margin: .85rem 0 0;
+  font-size: .8rem;
+  line-height: 1.7;
+  color: var(--md-default-fg-color--light);
+}
+.journey-legend .jl-badge {
+  display: inline-block;
+  font-size: .55rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-right: .15rem;
+  vertical-align: 1px;
+}
+.journey-legend .jl-badge + .jl-badge,
+.journey-legend .jl-dest {
+  margin-left: .25rem;
+}
+.journey-legend .jl-pioneer {
+  color: #b26a00;
+  background: color-mix(in srgb, #b26a00 14%, transparent);
+}
+.journey-legend .jl-dest {
+  color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+}
+
   align-self: center;
   color: var(--md-default-fg-color--lightest);
   font-size: 1.1rem;

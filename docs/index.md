@@ -31,6 +31,11 @@ hide:
   <a class="step dest" href="stages/stage-7-foundry/"><span class="n">STAGE 7</span><span class="t">Foundry</span><span class="d">The pro-code frontier, when you need it.</span></a>
 </div>
 
+<p class="journey-legend">
+  <span class="jl-badge jl-pioneer">Pioneer</span> a frontier capability that's real and worth adopting where you have it — but still in preview and not yet on every tenant.
+  <span class="jl-badge jl-dest">Destination</span> a mature place to settle in and build — generally available and production-grade.
+</p>
+
 <p class="audience"><strong>Who it's for:</strong> end users who want a first win · champions rolling Copilot out to a team · managers building the case · makers ready to build their first agent · developers engineering pro-code agents in Foundry · IT/admins enabling each stage safely.</p>
 
 ## Find your starting point
