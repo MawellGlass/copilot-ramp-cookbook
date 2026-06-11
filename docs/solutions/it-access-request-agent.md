@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that guides employees through software, hardware, and system access requests — validates against the approved list, collects all required fields, and creates the ITSM ticket automatically.
 
+> **🛠️ Build it step by step →** [IT: Self-service software and hardware access requests](../walkthroughs/studio-functional-it-access-request.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Approved list check → Structured intake collection → Ticket creation via Power Automate → Confirmation with ticket number
 
 ---

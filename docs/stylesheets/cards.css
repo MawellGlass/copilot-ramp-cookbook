@@ -68,6 +68,18 @@
 }
 .rc-scrollbox .rc-skill-grid { padding: .15rem; }
 
+/* ---------- hero card: one prominent, full-width emphasis card ---------- */
+/* Single card (e.g. the first Autopilot) rendered large and starred.
+   Reuses Material card markup + theme vars so light & dark both work. */
+.md-typeset .rc-hero.grid { grid-template-columns: 1fr; }
+.rc-hero.grid.cards > ul > li {
+  border-color: var(--md-primary-fg-color);
+  border-left-width: 4px;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, var(--md-default-bg-color));
+  box-shadow: 0 1px 2px rgba(20,30,50,.05), 0 10px 26px rgba(63,81,181,.10);
+}
+.rc-hero.grid.cards > ul > li > :first-child { margin-top: 0; }
+
 /* ---------- filter bar (injected by card-filter.js) ---------- */
 .rc-filter {
   display: flex;

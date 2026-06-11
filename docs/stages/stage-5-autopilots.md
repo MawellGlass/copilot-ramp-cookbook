@@ -38,9 +38,50 @@ You've got a job that shouldn't wait for you to start it — monitoring a queue,
 
 ## What Autopilots are
 
-Autopilots are **always-on, autonomous agents**. Where an Agent Builder agent answers when you call it, an Autopilot is given a job and a trigger, then runs in the background — noticing when something happens, deciding what to do, and acting — surfacing results or asking for a check-in rather than waiting for a prompt. Each one runs under its own governed Microsoft Entra identity, acting on your behalf within the permissions and policies you set.
+**Autopilots** are always-on, autonomous agents: each is given a job and a trigger, then runs in the background under its own governed Microsoft Entra identity — noticing when something happens, deciding what to do, and acting on your behalf within the permissions and policies you set. Where an Agent Builder agent answers when you *call* it, an Autopilot works *for* you between prompts.
 
-**Microsoft Scout** is the **first Autopilot** — [introduced June 2, 2026](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) as an always-on personal agent that builds context over time through Work IQ. It's the one Autopilot named today, and the focus of this stage. ([Microsoft Scout on Learn](https://learn.microsoft.com/en-us/microsoft-scout/))
+<div class="grid cards rc-grid rc-hero" markdown>
+
+-   **★ Microsoft Scout — the first Autopilot**
+
+    An always-on personal agent that builds context over time through Work IQ — [introduced June 2, 2026](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) as the first agent in the Autopilots category, and the focus of this stage.
+
+    **What Scout can do today:**
+
+    - Coordinate meeting times across time zones, and flag the meetings that matter
+    - Generate your prep ahead of time — with you in the loop
+    - Identify upcoming deliverables and block calendar time to protect them
+    - Spot stalled-decision risks before they become blockers
+
+    <span class="rc-meta"><span class="rc-chip rc-chip-star">★ First Autopilot</span> <span class="rc-chip rc-chip-skill">Frontier · private preview</span></span>
+
+    [Learn more about Microsoft Scout →](https://learn.microsoft.com/en-us/microsoft-scout/)
+
+</div>
+
+### What makes an agent an Autopilot
+
+<div class="grid cards rc-skill-grid" markdown>
+
+-   **Always-on**
+
+    Runs in the background, triggered by events and signals — not by a prompt you type each time.
+
+-   **Its own identity**
+
+    Acts under a governed Microsoft Entra identity, so everything it does is attributable to it.
+
+-   **Acts on your behalf**
+
+    Works within the permissions and policies you already have — never beyond your own access.
+
+-   **Governed — you stay in the loop**
+
+    Sensitive actions can require your sign-off, and Microsoft Purview sensitivity labels and DLP are enforced in the moment.
+
+</div>
+
+Scout is the **first** Autopilot — Microsoft has signaled the category will grow, and as new Autopilots ship they'll join Scout here.
 
 ---
 
@@ -72,7 +113,7 @@ You can't fully drive this stage until Scout reaches your tenant — so the firs
 
     Let Scout coordinate meeting times and prep in the background — under your governed identity, with you in the loop.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Frontier</span></span>
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Frontier · private preview</span></span>
 
 </div>
 

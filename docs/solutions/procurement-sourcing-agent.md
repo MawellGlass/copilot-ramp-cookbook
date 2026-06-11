@@ -11,6 +11,8 @@ updated: 2026-06-05
 
 > **What this builds.** A Copilot Studio agent that takes a purchase or sourcing request, returns a shortlist of **qualified, preferred vendors**, and enforces the **policy gates** — spend thresholds, approval routing, preferred-supplier rules — so requesters get a fast, compliant starting point instead of going off-contract by accident.
 
+> **🛠️ Build it step by step →** [Procurement: request to vendors to policy gates](../walkthroughs/studio-functional-procurement-sourcing.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Capture sourcing request → return qualified vendor shortlist → apply policy gates (thresholds · approvals · preferred-supplier rules) → route for approval
 
 ---

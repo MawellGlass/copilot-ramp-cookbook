@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, Champion, Manager · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Sales Proposal & RFP Agent](../solutions/sales-proposal-rfp-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 Proposals and RFP responses are high-effort, time-sensitive, and inconsistently executed. A rep who has been at the company for 2 years and knows the content library inside out produces a very different first draft from a rep who joined 3 months ago.

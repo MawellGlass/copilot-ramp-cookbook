@@ -11,6 +11,8 @@ updated: 2026-06-05
 
 > **What this builds.** A Copilot Studio agent that turns a short campaign brief into a structured **asset checklist** and **first-draft copy** — grounded on your brand voice, messaging framework, and channel specs — so a campaign goes from idea to reviewable draft in minutes instead of a half-day of blank-page work.
 
+> **🛠️ Build it step by step →** [Marketing: brief to campaign drafts](../walkthroughs/studio-functional-marketing-campaign.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Intake brief → assemble asset checklist by channel → draft on-brand copy → flag brand/legal approvals
 
 ---

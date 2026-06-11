@@ -11,6 +11,8 @@ updated: 2026-06-04
 
 > **What this builds.** A Copilot Studio agent that helps sales reps build proposals and RFP responses by surfacing approved content — the right solution brief, case study, or approved RFP answer — from your content library.
 
+> **🛠️ Build it step by step →** [Sales: Build proposals and RFP responses with your approved content](../walkthroughs/studio-functional-sales-proposal.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Content library search → Approved response or brief returned with source → Human review before customer delivery
 
 ---

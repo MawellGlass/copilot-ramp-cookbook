@@ -11,6 +11,8 @@ updated: 2026-06-05
 
 > **What this builds.** The inward-facing cousin of the [external Foundry support agent](foundry-support-agent.md): a Copilot Studio agent that lives *inside* your support team. When a question comes in, it surfaces the approved, grounded answer from your help content, drafts a reply the agent can send, and escalates the edge cases — deflecting the repetitive tickets so humans spend their time on the hard ones.
 
+> **🛠️ Build it step by step →** [Customer Support: deflect and draft, escalate the rest](../walkthroughs/studio-functional-support-deflection.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Customer question → grounded answer from help content → draft agent reply OR self-serve deflection → escalate edge cases
 
 ---

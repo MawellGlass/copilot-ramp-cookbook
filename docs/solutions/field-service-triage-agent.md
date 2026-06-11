@@ -11,6 +11,8 @@ updated: 2026-06-05
 
 > **What this builds.** A Copilot Studio agent that takes a reported symptom or fault code, returns the **most likely cause** from your equipment knowledge base, and recommends the right **dispatch path** — self-serve fix, remote resolution, or a truck roll with the right parts — so the easy ones never become a costly site visit.
 
+> **🛠️ Build it step by step →** [Field Service: symptoms to dispatch path](../walkthroughs/studio-functional-field-service-triage.md) — the click-by-click Studio build for this blueprint.
+
 **Pattern:** Capture symptoms / fault code → match to likely cause → recommend dispatch path (self-fix · remote · dispatch + parts)
 
 ---

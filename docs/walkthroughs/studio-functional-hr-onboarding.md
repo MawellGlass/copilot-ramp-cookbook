@@ -15,6 +15,8 @@ updated: 2026-06-04
 
 **Stage:** Copilot Studio · **For:** Maker, IT Admin, Champion · **Level:** Intermediate · **Time:** 3–4 hours
 
+> **📐 Full blueprint & test plan →** [Onboarding Buddy Agent](../solutions/onboarding-buddy-agent.md) — the copy-paste system prompt, topic specs, and test-case table behind this build.
+
 ## When to use this
 
 New starters are overwhelmed in their first week. Every employee has the same questions — What do I do first? Who is my IT contact? How do I enrol in benefits? Where is the onboarding handbook? — but every manager answers them differently, and the handbook is 80 pages long.
