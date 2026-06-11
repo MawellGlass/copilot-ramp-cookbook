@@ -5,16 +5,16 @@ stage: autopilots
 
 # Stage 5 · Autopilots
 
-> **Always-on agents that work in the background. Hand a recurring job to a ready-made autonomous agent — like Scout — that watches, decides, and acts without being prompted each time.**
+> **Always-on agents that work in the background. Hand a recurring job to a ready-made autonomous agent — Microsoft Scout is the first — that watches, decides, and acts without being prompted each time.**
 
 **The shift:** from "I run an agent when I need it" to "an agent runs *for* me." Stages 1–4 were all on-demand — you start a chat, call an agent, kick off a recipe, or build a simple one. Autopilots flip the model: the agent is *always on*, triggered by events and signals rather than a prompt, doing a defined job continuously.
 
 !!! info "An emerging stage — availability varies"
-    Autopilots are a newer, **gated** capability: Microsoft is bringing always-on agents like **Scout**
-    to market, and access is still rolling out by tenant, license, and region. This stage is marked
-    **pioneer** for that reason — it's real and worth adopting where you have it, but **not every user
-    will have access yet**. Treat the first-party product hubs as the source of truth and re-check before
-    customer-facing claims.
+    Autopilots are a newer, **gated** capability. **Microsoft Scout** — the first Autopilot — is in
+    **Frontier private preview**, so access is still rolling out by tenant, license, and region. This stage
+    is marked **pioneer** for that reason: it's real and worth adopting where you have it, but **not every
+    user will have access yet**. Treat the [Microsoft Scout Learn page](https://learn.microsoft.com/en-us/microsoft-scout/)
+    as the source of truth and re-check before customer-facing claims.
 
 ---
 
@@ -30,7 +30,7 @@ You've got a job that shouldn't wait for you to start it — monitoring a queue,
 
 ## What you need
 
-- Access to an Autopilots-class agent (such as **Scout**) in your tenant — confirm availability with your IT admin, since it's gated.
+- Access to **Microsoft Scout** (the first Autopilot) in your tenant — confirm availability with your IT admin, since it's in private preview.
 - A clearly defined, recurring job the agent can own, with a trigger or signal that should set it off.
 - Comfort with delegation: you set the goal and the guardrails, the agent runs continuously.
 
@@ -38,51 +38,9 @@ You've got a job that shouldn't wait for you to start it — monitoring a queue,
 
 ## What Autopilots are
 
-Autopilots are **always-on, autonomous agents**. Where an Agent Builder agent answers when you call it, an Autopilot is given a job and a trigger, then runs in the background — noticing when something happens, deciding what to do, and acting — surfacing results or asking for a check-in rather than waiting for a prompt.
+Autopilots are **always-on, autonomous agents**. Where an Agent Builder agent answers when you call it, an Autopilot is given a job and a trigger, then runs in the background — noticing when something happens, deciding what to do, and acting — surfacing results or asking for a check-in rather than waiting for a prompt. Each one runs under its own governed Microsoft Entra identity, acting on your behalf within the permissions and policies you set.
 
-**Scout** is the flagship example today: a first-party autonomous agent that works proactively on your behalf. But it isn't the only one — Microsoft is bringing a growing set of autonomous agents to market that follow the same always-on pattern, several of them role- or department-specific and living in their own product areas rather than a single hub.
-
----
-
-## Which Autopilots Microsoft offers
-
-Scout is the general-purpose Autopilot for knowledge workers, but the always-on, autonomous pattern shows up across Microsoft's portfolio. The roster below is the current shape of what's emerging.
-
-!!! warning "Verify before you rely on any of these"
-    **Availability, gating, and naming vary by license, product, and region**, and the category is moving
-    fast. Some of these also overlap in name with the *on-demand* specialists in
-    [Stage 2 · First-Party Agents](stage-2-first-party.md) — but here they run **autonomously**. Treat the
-    first-party product hubs as the source of truth and confirm status before any customer-facing claim.
-
-<div class="grid cards rc-skill-grid" markdown>
-
--   **Scout** · _flagship_
-
-    A general-purpose always-on agent for knowledge workers — it proactively watches, researches, and surfaces what you need without being asked each time. The headline Autopilot and the focus of this stage.
-
-    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Gated · rolling out</span></span>
-
--   **Sales Agent** · _Microsoft 365 Copilot_
-
-    Autonomously researches and qualifies leads and drafts outreach in the background, so sellers walk into every conversation already briefed.
-
-    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Check current status</span></span>
-
--   **Customer Service Agent** · _Copilot Service / Dynamics 365_
-
-    Handles common customer cases end-to-end on its own, escalating to a person only when human judgment is needed.
-
-    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Check current status</span></span>
-
--   **Security triage agents** · _Security Copilot_
-
-    Always-on agents that investigate alerts — like reported phishing — autonomously and hand analysts a recommended verdict to act on.
-
-    <span class="rc-meta"><span class="rc-chip rc-chip-skill">Check current status</span></span>
-
-</div>
-
-As the category grows, more Autopilots and patterns will land here. The rest of this stage focuses on **Scout**, since it's the one most knowledge workers will reach first.
+**Microsoft Scout** is the **first Autopilot** — [introduced June 2, 2026](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) as an always-on personal agent that builds context over time through Work IQ. It's the one Autopilot named today, and the focus of this stage. ([Microsoft Scout on Learn](https://learn.microsoft.com/en-us/microsoft-scout/))
 
 ---
 
@@ -94,27 +52,27 @@ You can't fully drive this stage until Scout reaches your tenant — so the firs
 
 -   <span class="rc-habit">Habit 1<small>Day 1</small></span>
 
-    **[Check whether Scout is switched on for you](#which-autopilots-microsoft-offers)**
+    **[Meet Microsoft Scout & what Autopilots are](../walkthroughs/autopilots-meet-scout.md)**
 
-    Autopilots are gated — confirm availability for your tenant, license, and region before you plan around them.
+    Pure learning, no access required — get the category-vs-product hierarchy straight and see what Scout actually does.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">Gated · verify</span></span>
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Everyone</span> <span class="rc-chip rc-chip-skill">No access required</span></span>
 
 -   <span class="rc-habit">Habit 2<small>Week 1</small></span>
 
-    **[Pick one recurring job to hand off](#all-walkthroughs)**
+    **[Find out if you can get Scout (and turn it on)](../walkthroughs/autopilots-get-access.md)**
 
-    Choose a single always-on pattern below — a queue to watch, a digest to keep current, or a follow-through to automate.
+    Confirm Frontier enrollment, the Intune policy + opt-in, and the GitHub Copilot license needed to install the desktop app.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Example · gated</span></span>
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 End user</span> <span class="rc-chip rc-chip-skill">Frontier · private preview</span></span>
 
 -   <span class="rc-habit">Habit 3<small>Month 1</small></span>
 
-    **[Equip it with the right skills](#skills-in-autopilots)**
+    **[Hand Scout its first always-on job](../walkthroughs/autopilots-coordinate-meetings.md)**
 
-    Give Scout the reusable capabilities it needs to carry the job out on its own, drawn from the Skills Catalog.
+    Let Scout coordinate meeting times and prep in the background — under your governed identity, with you in the loop.
 
-    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Champion</span> <span class="rc-chip rc-chip-skill">Gated · emerging</span></span>
+    <span class="rc-meta"><span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Frontier</span></span>
 
 </div>
 
@@ -122,7 +80,7 @@ You can't fully drive this stage until Scout reaches your tenant — so the firs
 
 ## All walkthroughs
 
-These are **starter patterns** for Scout, not click-by-click pages — illustrative until Autopilots are switched on in your tenant. Each shows the rough effort to stand it up and who it's for, so filter by role or time to find your first one.
+These walk you from learning what Scout is, to finding out if you can get it, to handing it its first always-on jobs. Each shows the rough effort and who it's for, so filter by role or time to find your starting point.
 
 <div id="rc-filterbar"></div>
 
@@ -130,22 +88,16 @@ These are **starter patterns** for Scout, not click-by-click pages — illustrat
 
 <section class="rc-bucket" markdown>
 
-### Watch & alert
-Scout keeps an eye on a queue or signal and raises a hand only when something needs a human.
+### Meet the category
+Get the hierarchy straight — Autopilots is the category, Scout is the first product — before you turn anything on.
 
 <div class="grid cards rc-grid" markdown>
 
--   **[Watch a queue and flag what needs you](../skills.md#autopilots-scout-skills)**
+-   **[★ Meet Microsoft Scout — and what Autopilots are](../walkthroughs/autopilots-meet-scout.md)**
 
-    Scout monitors an inbox, channel, or ticket queue and surfaces only the items that need your judgment — the rest it handles or holds.
+    The field guide: category vs. product, what Scout connects to, how it builds context with Work IQ, and what it can do today. No access required.
 
-    <span class="rc-meta" data-time="10" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
-
--   **[Stand watch during a launch or incident](../skills.md#autopilots-scout-skills)**
-
-    Scout keeps an eye on the release window and pings the right people the moment a signal looks off.
-
-    <span class="rc-meta" data-time="15" data-roles="manager"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+    <span class="rc-meta" data-time="10" data-roles="end-user champion manager maker it-admin"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Everyone</span> <span class="rc-chip rc-chip-skill">No access required</span></span>
 
 </div>
 
@@ -153,22 +105,16 @@ Scout keeps an eye on a queue or signal and raises a hand only when something ne
 
 <section class="rc-bucket" markdown>
 
-### Keep things current
-Scout maintains something on a cadence so it's never stale and no one has to remember to refresh it.
+### Get set up
+Scout is private preview — find out if you're eligible and what has to be true to switch it on.
 
 <div class="grid cards rc-grid" markdown>
 
--   **[Run an always-on weekly digest](../skills.md#autopilots-scout-skills)**
+-   **[Find out if you can get Scout — and turn it on](../walkthroughs/autopilots-get-access.md)**
 
-    The Monday digest Scout assembles and posts on schedule — the standing version of a Cowork recipe.
+    The honest on-ramp: Frontier enrollment, the Intune policy + opt-in attestation, and the GitHub Copilot license needed to install the desktop app.
 
-    <span class="rc-meta" data-time="10" data-roles="champion"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
-
--   **[Keep a customer-health list fresh](../skills.md#autopilots-scout-skills)**
-
-    The worst-first account ranking, recomputed continuously so the list is current whenever you open it.
-
-    <span class="rc-meta" data-time="10" data-roles="manager"><span class="rc-chip rc-chip-time">⏱ 10 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span></span>
+    <span class="rc-meta" data-time="15" data-roles="end-user champion it-admin"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 IT admin</span> <span class="rc-chip rc-chip-skill">Frontier · private preview</span></span>
 
 </div>
 
@@ -176,22 +122,22 @@ Scout maintains something on a cadence so it's never stale and no one has to rem
 
 <section class="rc-bucket" markdown>
 
-### Trigger the follow-through
-An event fires and Scout runs the routine next steps end-to-end, so nothing slips between the cracks.
+### Hand Scout an always-on job
+Once it's on, give Scout a standing job and let it work in the background under your guardrails.
 
 <div class="grid cards rc-grid" markdown>
 
--   **[Run the same follow-through on every trigger](../skills.md#autopilots-scout-skills)**
+-   **[Let Scout coordinate your meetings and prep](../walkthroughs/autopilots-coordinate-meetings.md)**
 
-    When a defined event happens, Scout kicks off the predictable next steps without waiting to be asked.
+    Scout lines up meeting times across time zones, flags what matters, and pulls prep together — keeping you in the loop.
 
-    <span class="rc-meta" data-time="5" data-roles="end-user"><span class="rc-chip rc-chip-time">⏱ 5 min</span> <span class="rc-chip rc-chip-role">👤 End user</span></span>
+    <span class="rc-meta" data-time="15" data-roles="end-user manager"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Frontier · private preview</span></span>
 
--   **[Hand off recurring busywork end-to-end](../skills.md#autopilots-scout-skills)**
+-   **[Have Scout watch your deliverables and flag risks](../walkthroughs/autopilots-track-deliverables.md)**
 
-    A defined, repeating job Scout owns from signal to result — you set the goal and the guardrails once.
+    Scout identifies what's coming due, blocks calendar time, and spots stalled decisions before they become blockers.
 
-    <span class="rc-meta" data-time="15" data-roles="champion"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Champion</span></span>
+    <span class="rc-meta" data-time="15" data-roles="manager champion end-user"><span class="rc-chip rc-chip-time">⏱ 15 min</span> <span class="rc-chip rc-chip-role">👤 Manager</span> <span class="rc-chip rc-chip-skill">Frontier · private preview</span></span>
 
 </div>
 
@@ -237,6 +183,25 @@ A few illustrative examples of what an always-on agent could be equipped with �
 </div>
 
 That's the honest scope today — the way you equip and manage Autopilot skills is still emerging and gated alongside the rest of the stage, so the catalog keeps the **Autopilots (Scout) skills** lens scoped to what exists now and will grow as the capability does. See **[Skills Catalog → Autopilots](../skills.md#autopilots-scout-skills)**.
+
+---
+
+!!! borrow "Borrow, don't build"
+    Microsoft owns the authoritative, always-current word on Scout — what it does, how to turn it on, and
+    where it's available. Link to these rather than restating preview details that change.
+
+    - [Introducing Microsoft Scout](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) — the June 2, 2026 announcement of the Autopilots category and its first agent
+    - [Microsoft Scout on Learn](https://learn.microsoft.com/en-us/microsoft-scout/) — overview and setup, the source of truth for availability
+    - [Work IQ APIs](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/) — the work-context layer Scout is built on
+    - [Frontier program](https://m365.cloud.microsoft/frontier) — the early-access path Scout ships through
+
+    The full curated set for this stage lives in [Resources → Stage 5](../RESOURCES.md).
+
+!!! info "Security at this stage"
+    An Autopilot acts on your behalf, so governance is built in: each agent runs under its own governed
+    Microsoft Entra identity, its access is limited to the resources and destinations you approve, sensitive
+    actions can require human sign-off, and Microsoft Purview sensitivity labels and DLP are enforced in the
+    moment. See the full picture in **[Security & Governance](../empowerment/security.md)**.
 
 ---
 

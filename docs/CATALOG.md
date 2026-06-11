@@ -312,6 +312,39 @@ Auto-generate talking points and agenda items before every recurring meeting —
 
 ---
 
+## Stage 5 · Autopilots
+_Always-on, autonomous agents that work in the background. Goal: hand a standing job to Microsoft Scout — the first Autopilot — and let it act on your behalf under your guardrails._
+
+> **Autopilots are a category; Scout is the first product in it.** Start with the field guide to get the
+> hierarchy straight, then find out if you can turn Scout on (it's in private preview via the Frontier
+> program) before you hand it a standing job.
+
+### ★ Meet Microsoft Scout — and what Autopilots are → walkthrough
+**For:** end-user, champion, manager, maker, it-admin · `status: walkthrough`
+The field guide to the category and the first product: what an Autopilot is, what Scout connects to, how it builds context with Work IQ, and what it can do today. No access required.
+**Sample prompt:** `Keep an eye on my week. When a meeting needs prep, pull the materials together and flag it before it starts — and check with me before acting on anything sensitive.`
+→ Fully written: `walkthroughs/autopilots-meet-scout.md`
+
+### Find out if you can get Scout — and turn it on → walkthrough
+**For:** end-user, champion, it-admin · `status: walkthrough`
+The honest on-ramp: confirm Frontier enrollment, the Intune policy and opt-in attestation, and the GitHub Copilot license needed to install the desktop app.
+**Sample prompt:** `Draft a message to my IT admin asking: are we in the Frontier program, is the Scout Intune policy configured and opted in, and do I have a GitHub Copilot license to install the desktop app?`
+→ Fully written: `walkthroughs/autopilots-get-access.md`
+
+### Let Scout coordinate your meetings and prep → walkthrough
+**For:** end-user, manager · `status: walkthrough`
+Hand Scout a standing job: coordinate meeting times across time zones, flag the meetings that matter, and pull prep together — with you in the loop.
+**Sample prompt:** `Take ownership of my meeting logistics this week: propose times that work across time zones, flag the meetings that matter, and draft prep before each one for me to review.`
+→ Fully written: `walkthroughs/autopilots-coordinate-meetings.md`
+
+### Have Scout watch your deliverables and flag risks → walkthrough
+**For:** manager, champion, end-user · `status: walkthrough`
+Give Scout a standing watch: identify what's coming due and block calendar time, and spot stalled decisions before they turn into blockers.
+**Sample prompt:** `Keep a standing watch on my deliverables: block calendar time for what's coming due, and flag decisions that have gone quiet before they become blockers.`
+→ Fully written: `walkthroughs/autopilots-track-deliverables.md`
+
+---
+
 ## Stage 6 · Copilot Studio
 _Build real, production-grade agents. The low-code maker destination._
 

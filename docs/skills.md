@@ -87,18 +87,20 @@ cold instead of reinventing the prompt. The ones worth capturing first:
 ## Autopilots (Scout) skills — capabilities for an always-on agent { #autopilots-scout-skills }
 
 In [Stage 5 · Autopilots](stages/stage-5-autopilots.md), a skill is the same reusable capability — but
-handed to an **always-on, autonomous agent** like **Scout** so it can carry the task out *in the
-background*, without you starting it each time.
+handed to an **always-on, autonomous agent**. **Autopilots** are Microsoft's category of such agents, and
+**Microsoft Scout** is the first one — so the capability is carried out *in the background*, without you
+starting it each time.
 
 - A **Cowork recipe** is a skill you *describe* and run on demand.
 - An **Autopilot skill** is that same instinct equipped onto an agent that's always watching: the
   capability Scout draws on to do the job when its trigger fires, then report back.
 
 !!! info "Emerging and gated"
-    Autopilots are a newer, **gated** capability, and the way you equip and manage their skills is still
-    rolling out by tenant, license, and region. This lens stays scoped to what exists today and will grow
-    as the capability does — once Scout-skill walkthroughs are ready they'll be cataloged here. Until
-    then, treat the first-party product hubs as the source of truth before any customer-facing claims.
+    Autopilots are a newer, **gated** capability — Scout is in **Frontier private preview** — and the way you
+    equip and manage their skills is still rolling out by tenant, license, and region. This lens stays scoped
+    to what exists today and will grow as the capability does — once Scout-skill walkthroughs are ready they'll
+    be cataloged here. Until then, treat the [Microsoft Scout Learn page](https://learn.microsoft.com/en-us/microsoft-scout/)
+    as the source of truth before any customer-facing claims.
 
 ## Studio skills — a specific kind of tool
 

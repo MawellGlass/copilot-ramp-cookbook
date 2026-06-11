@@ -57,6 +57,13 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 - **Frontier** — Microsoft's early-access program. The newest Copilot capabilities (including the fuller
   Cowork feature set) often land in Frontier *first*, weeks or months ahead of general availability. See the
   [Cowork stage](stages/stage-3-cowork.md) for how to check eligibility and enroll.
+- **Autopilot (category)** — Microsoft's category of **always-on, autonomous agents**: each runs under its
+  own governed Microsoft Entra identity and acts on your behalf in the background, within the permissions and
+  policies you set, instead of waiting for a prompt. Announced June 2, 2026. The focus of
+  [Stage 5](stages/stage-5-autopilots.md).
+- **Microsoft Scout** — the **first Autopilot**: an always-on personal agent that builds context over time
+  through Work IQ and can coordinate meetings, prep, and deliverables for you. In **Frontier private preview**
+  today. ([Microsoft Scout on Learn](https://learn.microsoft.com/en-us/microsoft-scout/))
 - **Declarative agent** — an agent defined by configuration, not code: instructions, knowledge sources, and
   starter prompts. What you build in [Agent Builder](stages/stage-4-agent-builder.md), and the simpler option
   in Studio.
@@ -69,9 +76,9 @@ Microsoft's [Copilot hub](https://learn.microsoft.com/en-us/copilot/) is the sou
 ## Building blocks
 
 - **Skill** — a **reusable, packaged capability you save once and reuse or share**. Today the clearest
-  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **[Autopilots](stages/stage-5-autopilots.md)**,
-  that same instinct is equipped onto an always-on agent like **Scout** so it draws on the capability
-  in the background (emerging and gated). In **Copilot Studio**, *skill*
+  example is a **Cowork recipe** ([Stage 3](stages/stage-3-cowork.md)). In **[Autopilots](stages/stage-5-autopilots.md)** — Microsoft's category of always-on agents —
+  that same instinct is equipped onto **Microsoft Scout**, the first Autopilot, so it draws on the capability
+  in the background (Frontier private preview). In **Copilot Studio**, *skill*
   is a precise term for **one specific kind of tool** — an embedded pro-code agent (Bot Framework /
   Microsoft 365 Agents SDK) registered so your agent can call it; the connector actions, flows, and
   MCP tools in [Stage 6](stages/stage-6-studio.md) are **tools**, not skills. See the

@@ -15,15 +15,34 @@ Updates to the Copilot Ramp Cookbook — new walkthroughs, improvements, and str
 *June 12, 2026*
 
 The journey now runs **seven stages**: a new **[Stage 5 · Autopilots](stages/stage-5-autopilots.md)**
-slots in between Agent Builder and Copilot Studio, covering **always-on, autonomous agents** — with
-**Scout** as the flagship example. Copilot Studio moves to **Stage 6** and Microsoft Foundry to
+slots in between Agent Builder and Copilot Studio, covering Microsoft's new category of **always-on,
+autonomous agents** — with **Microsoft Scout** as the first one ([introduced June 2, 2026](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/)).
+Copilot Studio moves to **Stage 6** and Microsoft Foundry to
 **Stage 7**; the journey ribbon, role matrix, and right-sizing guide all reflect the new shape.
 
 - Autopilots is an **emerging, gated** capability — the page stays honest about *available-but-gated*
-  framing and points at the first-party hubs as the source of truth.
+  framing and points at the [Microsoft Scout Learn page](https://learn.microsoft.com/en-us/microsoft-scout/) as the source of truth.
 - The [Skills Catalog](skills.md#autopilots-scout-skills) gains an **Autopilots (Scout) skills** lens:
   the same reusable-capability instinct, equipped onto an always-on agent so it works in the background.
 - The **Glossary** *Skill* entry now spans Cowork recipes, Autopilots/Scout, and Studio tools.
+
+### Stage 5 · Autopilots reframed — Microsoft Scout as the hero, four new walkthroughs
+*June 11, 2026*
+
+Stage 5 now draws the hierarchy cleanly: **Autopilots** is the **category** of always-on, autonomous agents
+Microsoft [introduced on June 2, 2026](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/),
+and **Microsoft Scout** is the **first** one. Every claim is grounded in Microsoft's own sources — the
+[announcement blog](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/)
+and the [Microsoft Scout Learn page](https://learn.microsoft.com/en-us/microsoft-scout/).
+
+- Four new walkthroughs: **[Meet Microsoft Scout](walkthroughs/autopilots-meet-scout.md)** (the field guide),
+  **[Find out if you can get Scout](walkthroughs/autopilots-get-access.md)**,
+  **[Let Scout coordinate your meetings](walkthroughs/autopilots-coordinate-meetings.md)**, and
+  **[Have Scout watch your deliverables](walkthroughs/autopilots-track-deliverables.md)**.
+- Honest about availability: Scout is in **Frontier private preview**, so the pages mark it as gated and
+  point to the Learn page as the source of truth for setup and current availability.
+- The home ribbon, the journey overview, the glossary, and the Skills Catalog all use the same
+  category→product wording.
 
 ### A new "Skills Catalog" collects reusable Cowork and Studio skills
 *June 9, 2026*
